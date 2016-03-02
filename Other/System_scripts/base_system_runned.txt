@@ -1,0 +1,63 @@
+hunolulu  1350  0.0  0.1  41800  4396 ?        Ss   13:33   0:00 init --user
+hunolulu  1442  0.0  0.0  40132  3372 ?        Ss   13:33   0:01 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-nIbOR5GuD0
+hunolulu  1453  0.0  0.0  23812  2236 ?        Ss   13:33   0:00 upstart-event-bridge
+hunolulu  1460  0.0  0.2  79684  7908 ?        Ss   13:33   0:00 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+hunolulu  1471  0.0  0.0  23820   200 ?        S    13:33   0:00 upstart-dbus-bridge --daemon --session --user --bus-name session
+hunolulu  1473  0.0  0.0  23820   200 ?        S    13:33   0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+hunolulu  1475  0.0  0.0  32396   268 ?        S    13:33   0:00 upstart-file-bridge --daemon --user
+hunolulu  1476  0.0  0.1 298820  6812 ?        SLl  13:33   0:00 gnome-keyring-daemon --start --components pkcs11,secrets
+hunolulu  1478  0.1  0.1 363808  7568 ?        Ssl  13:33   0:03 /usr/bin/ibus-daemon --daemonize --xim
+hunolulu  1506  0.0  0.8 815828 31432 ?        Ssl  13:33   0:00 /usr/lib/unity-settings-daemon/unity-settings-daemon
+hunolulu  1510  0.0  0.9 573668 36140 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/hud/hud-service
+hunolulu  1512  0.0  0.1 337572  7528 ?        Ssl  13:33   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+hunolulu  1514  0.0  0.5 586600 22144 ?        Ssl  13:33   0:00 gnome-session --session=ubuntu
+hunolulu  1516  0.1  0.7 448064 28692 ?        Ssl  13:33   0:02 /usr/lib/unity/unity-panel-service
+hunolulu  1520  0.0  0.0  39252  3424 ?        S    13:33   0:00 /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+hunolulu  1523  0.0  0.5 492964 20732 ?        Sl   13:33   0:01 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+hunolulu  1526  0.0  0.1 125020  5952 ?        Sl   13:33   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+hunolulu  1540  0.0  0.1 198316  5804 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfsd
+hunolulu  1549  0.0  0.1 345668  5516 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1001/gvfs -f -o big_writes
+hunolulu  1578  0.0  0.6 604140 24348 ?        Sl   13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-keyboard-service --use-gtk
+hunolulu  1580  0.0  0.1 336804  4596 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+hunolulu  1581  0.0  0.1 265360  5724 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+hunolulu  1586  0.0  0.2 280140 10092 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+hunolulu  1609  0.0  0.4 1165060 17328 ?       Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+hunolulu  1614  0.0  0.2 480996  9472 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+hunolulu  1615  0.0  0.5 449044 20164 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+hunolulu  1618  0.0  0.1 764380  6952 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+hunolulu  1632  0.0  0.2 286756  8240 ?        Ssl  13:33   0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+hunolulu  1663  0.0  0.2 449256  9844 ?        Sl   13:33   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+hunolulu  1696  0.0  0.4 482820 17164 ?        Sl   13:33   0:00 /usr/lib/evolution/evolution-source-registry
+hunolulu  1830  0.0  0.2 282592  8532 ?        Sl   13:33   0:00 /usr/lib/ibus/ibus-dconf
+hunolulu  1831  0.0  0.6 422140 25896 ?        Sl   13:33   0:00 /usr/lib/ibus/ibus-ui-gtk3
+hunolulu  1835  0.0  0.4 388920 16252 ?        Sl   13:33   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+hunolulu  1841  0.0  0.1 178180  4676 ?        Sl   13:33   0:00 /usr/lib/dconf/dconf-service
+hunolulu  1845  0.0  0.0  22312  2620 ?        S    13:33   0:00 syndaemon -i 1.0 -t -K -R
+hunolulu  1857  0.0  0.1 206876  6464 ?        Sl   13:33   0:00 /usr/lib/ibus/ibus-engine-simple
+hunolulu  1864  0.0  1.3 1075572 51988 ?       Sl   13:33   0:00 /usr/lib/evolution/evolution-calendar-factory
+hunolulu  1882  0.0  0.6 365356 25776 ?        Sl   13:33   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
+hunolulu  1892  1.2  2.9 1314948 113700 ?      Sl   13:33   0:32 compiz
+hunolulu  1898  0.0  0.4 479160 18688 ?        Sl   13:33   0:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+hunolulu  1900  0.0  1.2 874836 50052 ?        Sl   13:33   0:01 nautilus -n
+hunolulu  1907  0.0  1.0 850880 40896 ?        SLl  13:33   0:02 nm-applet
+hunolulu  1908  0.0  0.4 333836 17188 ?        Sl   13:33   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+hunolulu  1913  0.0  0.2 300644  8052 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+hunolulu  1953  0.0  0.1 287640  6060 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+hunolulu  1958  0.0  0.1 201920  5364 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+hunolulu  1962  0.0  0.1 214084  5900 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+hunolulu  1968  0.0  0.1  59900  6200 ?        S    13:33   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+hunolulu  1979  0.0  0.1 443596  7424 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.15 /org/gtk/gvfs/exec_spaw/0
+hunolulu  1985  0.0  0.1 272052  4648 ?        Sl   13:33   0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.15 /org/gtk/gvfs/exec_spaw/1
+hunolulu  1995  0.0  0.5 457224 19740 ?        Sl   13:33   0:00 telepathy-indicator
+hunolulu  2001  0.0  0.3 322740 12384 ?        Sl   13:33   0:00 /usr/lib/telepathy/mission-control-5
+hunolulu  2026  0.0  0.1 348876  7076 ?        Sl   13:33   0:00 /usr/bin/zeitgeist-daemon
+hunolulu  2032  0.0  0.3 234596 14068 ?        Sl   13:33   0:00 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+hunolulu  2034  0.0  0.3 483612 13768 ?        Sl   13:33   0:00 zeitgeist-datahub
+hunolulu  2049  0.0  0.0  12900   696 ?        S    13:33   0:00 /bin/cat
+hunolulu  2157  0.0  0.5 498944 21696 ?        Sl   13:34   0:00 update-notifier
+hunolulu  2187  0.0  0.2 379620  9324 ?        Sl   13:35   0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+hunolulu  2202  0.3  0.7 592612 28772 ?        Sl   13:35   0:07 gnome-terminal
+hunolulu  2209  0.0  0.0  14828  1972 ?        S    13:35   0:00 gnome-pty-helper
+hunolulu  2210  0.0  0.1  28488  5592 pts/1    Ss   13:35   0:00 bash
+hunolulu  3335  0.0  0.0  24132  2504 pts/1    R+   14:14   0:00 ps aux
+hunolulu  3336  0.0  0.0  17452  2332 pts/1    S+   14:14   0:00 grep --color=auto hunolulu
