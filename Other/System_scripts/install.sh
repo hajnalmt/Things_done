@@ -1,5 +1,5 @@
 # Installation script for ubuntu, linux
-# System must be dpkg based
+# System distribution must be dpkg based
 
 #################### Core Packages ###################
 # Installed packages on the system
@@ -12,7 +12,7 @@ WANTED_PACKS=(
 )
 
 # Install packages and autoremove needless ones
-echo "Do you want to add these packages to your system? [Y/N] ${WANTED_PACKS[@]}"
+echo -e "Do you want to add these packages to your system? [Y/N] \n ${WANTED_PACKS[@]}"
 read ANSWER
 while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
 do 
