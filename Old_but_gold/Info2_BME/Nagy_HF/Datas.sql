@@ -1,0 +1,64 @@
+INSERT INTO artists (Artist) VALUE('Fankadeli');
+INSERT INTO artists (Artist) VALUE('The Kooks');
+INSERT INTO artists (Artist) VALUE('Jason Mraz');
+INSERT INTO artists (Artist) VALUE('Kanye West');
+INSERT INTO artists (Artist) VALUE('The Connels');
+INSERT INTO artists (Artist) VALUE('Kowalsky meg a Vega');
+INSERT INTO artists (Artist) VALUE('Bruno Mars');
+INSERT INTO artists (Artist) VALUE('Fall Out Boy');
+INSERT INTO artists (Artist) VALUE('Fools Garden');
+
+INSERT INTO genres (Genre) VALUE('Rock');
+INSERT INTO genres (Genre) VALUE('Classic Rock');
+INSERT INTO genres (Genre) VALUE('Alternative');
+INSERT INTO genres (Genre) VALUE('Hip-Hop');
+
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Extra Credit EP', 3, 2009, 2);
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Ring',5, 1995, 2);
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Forradalom Rt', 6, 2007, 4);
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Szeretem', NULL, 2013, NULL);
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Folie á deux', 8, 2010, 1);
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Mega hit 8', 9, 1999, 3);
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Graduation', 4, 2010, 3);
+INSERT INTO album (Title, Artist, PublishingTime, Genre) VALUES('Suhancos', 1, 2008, 4);
+
+
+INSERT INTO track (Title, Length, Path) VALUES('I\'m yours', 238, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Grenade', 249, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Just the way you are', 242, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('I don\'t care', 219, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Lemon Tree', 191, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Heartless', 212, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Homecoming', 204, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Naive', 218, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Seaside', 101, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Mint hal a vízben', 230, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Ennyi csak', 246, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Aki mer az nyer', 230, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('\'74-\'75', 253, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('Love Lockdown', 232, 'D/Myself');
+INSERT INTO track (Title, Length, Path) VALUES('A pad', 233, 'D/Myself/Fanka');
+INSERT INTO track (Title, Length, Path) VALUES('Köszönöm', 342, 'D/Myself/Fanka');
+INSERT INTO track (Title, Length, Path) VALUES('Békét', 294, 'D/Myself/Fanka');
+INSERT INTO track (Title, Length, Path) VALUES('Bájoló', 253, 'D/Myself/Fanka');
+
+INSERT INTO list  VALUES(1, 1, 1);
+INSERT INTO list  VALUES(2, 13, 1);
+INSERT INTO list  VALUES(3, 10, 2);
+INSERT INTO list  VALUES(3, 11, 1);
+INSERT INTO list  VALUES(3, 12, 3);
+INSERT INTO list  VALUES(4, 2, 6);
+INSERT INTO list  VALUES(4, 3, 5);
+INSERT INTO list  VALUES(4, 8, 4);
+INSERT INTO list  VALUES(4, 9, 7);
+INSERT INTO list  VALUES(4, 15, 8);
+INSERT INTO list  VALUES(4, 16, 3);
+INSERT INTO list  VALUES(4, 18, 1);
+INSERT INTO list  VALUES(4, 13, 2);
+INSERT INTO list  VALUES(5, 4, 1);
+INSERT INTO list  VALUES(6, 5, 1);
+INSERT INTO list  VALUES(7, 6, 2);
+INSERT INTO list  VALUES(7, 7, 3);
+INSERT INTO list  VALUES(7, 14, 1);
+INSERT INTO list  VALUES(8, 17, 2);
+INSERT INTO list  VALUES(8, 18, 1);

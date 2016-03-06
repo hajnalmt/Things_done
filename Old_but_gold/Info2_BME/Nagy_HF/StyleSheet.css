@@ -1,0 +1,30 @@
+body {
+    background-image: url("http://kszz.hu/kepek/zene.jpg");
+    font-style: italic;
+}
+a:link{color: #f00}
+a:visited{color: #af520f }
+#keret{
+    width:  950px;
+    margin: auto;
+}
+
+#fejlec{
+    height: 50px;
+    font-size: x-large;
+    color: #f00;
+}
+
+#tartalom{
+    width: 1500px;
+    font-size: large;
+    color: #f00;
+    text-align: center;
+    font-weight: 700 ;
+}
+
+#lablec{
+    height: 30px;
+    font-size: small;
+    color: #1e30f4;
+}

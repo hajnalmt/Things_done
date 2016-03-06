@@ -1,0 +1,17 @@
+%%Kisbeadandó 6. - Hatodik javítása
+%%Javítsuk még egy kicsit a http://people.inf.elte.hu/toth_m/erlang/hatodik.erl megoldást.
+
+%%Kezeljük le azt a hibát is, ha nem létező modul nevet gépel be a user.
+%%Ilyen esetben ne kérjen be a program már függvény nevet.
+%%A read_par függvényt fejlesszük úgy, hogy kiírja azt is, hogy hányadik paraméter kéri be éppen.
+
+-module(hazi6).
+
+-compile(export_all).
+
+my_type([{Atom, Value} | Tail]) when is_atom(Atom), is_integer(Value) ->
+    my_type(Tail);
+my_type([]) ->
+    true;
+my_type(_) ->
+    false.

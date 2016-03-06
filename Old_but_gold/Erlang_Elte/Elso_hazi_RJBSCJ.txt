@@ -1,0 +1,63 @@
+﻿Kisbeadandó 1. - Shell feladatok
+Készítette: Hajnal Máté
+
+Az alábbi feladatokat az Erlang virtuális gép shell-jében kellene megoldani, majd a logot bemásolni.
+
+Indítsd el a VM-et és állítsd be munkakönyvtárnak az asztalodat.
+Töltsd le a masodik.erl fájlt innen: http://people.inf.elte.hu/toth_m/erlang/masodik.erl az Asztalodra, és fordítsd le.
+Kérdezd le, hogy milyen fordítási paraméterekkel lett lefordítva a masodik nevű modul.
+A masodik modul f függvényét értékeld ki az alma és a 3 paraméterekkel, és nézd meg, hogy egyenlőek-e az értékeik.
+Értékeld ki az f függvényt a 12 és az 5 helyen és írj kifejezést, ami összehasonlítja, hogy kisebb egyenlő-e az első érték a másiknál. A függvény úgy hívd meg, hogy a 12-t és az 5-t kettes számrendszerben felírt alakban adod meg.
+
+pwd().
+
+C:/Program Files/erl6.3/usr
+
+ok
+
+2>cd("C:/Users/Felhasználó/Desktop").      
+
+C:/Users/Felhasználó/Desktop
+
+ok
+
+3> pwd().
+
+C:/Users/Felhasználó/Desktop
+
+ok
+
+4> c(masodik).
+
+{ok,masodik}
+
+5> masodik:module_info(compile).
+
+[{options,[]},
+
+ {version,"5.0.3"},
+
+ {time,{2015,2,25,2,3,37}},
+
+ {source,"c:/Users/Felhasználó/Desktop/masodik.erl"}]
+
+6> masodik:f(alma)==masodik:f(3).
+
+false
+
+7> masodik:f(2#1100)<masodik:f(2#110).
+
+false
+
+8> masodik:f(2#1100)>masodik:f(2#110).
+
+true
+
+9> q().
+
+ok
+
+10> 
+
+Végeredmény: 100%
+

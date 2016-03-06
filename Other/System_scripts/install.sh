@@ -1,5 +1,6 @@
-# Installation script for ubuntu, linux
+# Installation script for Ubuntu, linux
 # System distribution must be dpkg based
+
 
 #################### Core Packages ###################
 # Installed packages on the system
@@ -7,7 +8,7 @@ INSTALLED_PACKS=$(dpkg -l | grep ^ii | sed 's_  _\t_g' | cut -f 2)
 # Wanted Packages stored in an array, just extend it by adding packages to it
 WANTED_PACKS=(
 	codeblocks dos2unix filezilla firefox git giggle gimp gparted geany \
-	ktorrent lm-sensors lp-solve mc mypaint p7zip p7zip-full putty \
+	ktorrent libappindicator1 libindicator7 libxss1 lm-sensors lp-solve mc mypaint p7zip p7zip-full putty \
 	qtcreator vifm vim vlc wpagui wpasupplicant
 )
 
@@ -25,13 +26,31 @@ if [ $ANSWER == "Y" ]; then
 fi
 
 #################### Additional Packages ###################
-# Additional Packages, which shuold be downloaded from the web
+# Additional Packages, which should be downloaded from the web
+# Packages: Chrome
 ARCH=$(uname -m)
 
+# Change to your home directory
+cd /~
+
+# Download packages from web and then install them
 if [ $ARCH == "x86_64" ]; then
-	echo "64 bites architektúra"
+	if [ -d Programs_64]; then
+		mkdir Programs_64
+	fi
+	cd ~/Programs_64
+	# Download packages from web.  
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo dpkg -i *.deb
+	
 elif [ $ARCH = "i386" ]; then	echo "32 bites architektúra" 
-	echo "32 bites architektúra"
+	if [ -d Programs_32]; then
+                mkdir Programs_32
+        fi
+        cd ~/Programs_32
+        # Download packages from web.  
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+	sudo dpkg -i *.deb
 else exit
 fi
  
@@ -39,7 +58,7 @@ fi
 
 #################### Additional Programs & Settings ####################
 
-#Freemind 
+# Freemind 
 
 # Git Settings
 git config --global user.name	"Hajnal Máté"

@@ -1,0 +1,6 @@
+﻿<parameters>
+  <parameter name="Parameter 5104604076935198268" friendlyName="Parameter for web application" description="Parameter for web application" defaultValue="" tags="IisApp">
+    <parameterValidation kind="AllowEmpty" />
+    <parameterEntry kind="ProviderPath" scope="iisApp" match="|AppPath|" tags="IisApp" />
+  </parameter>
+</parameters>

@@ -1,0 +1,10 @@
+﻿<parameters>
+  <parameter name="Parameter 5104604076935198268" friendlyName="Parameter for web application" description="Parameter for web application" defaultValue="" tags="IisApp">
+    <parameterValidation kind="AllowEmpty" />
+    <parameterEntry kind="ProviderPath" scope="iisApp" match="|AppPath|" tags="IisApp" />
+  </parameter>
+  <parameter name="Parameter 5689781082787777825" friendlyName="SetAcl for appdata" defaultValue="{Parameter 5104604076935198268}/App_Data" tags="Hidden, SetAcl">
+    <parameterValidation kind="AllowEmpty" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="|AppData|" />
+  </parameter>
+</parameters>
