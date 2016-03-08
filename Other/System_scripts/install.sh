@@ -28,7 +28,8 @@ fi
 
 #################### Additional Packages ###################
 # Additional Packages, which should be downloaded from the web
-# Packages: Chrome
+
+# Architecture type
 ARCH=$(uname -m)
 
 # Change to your home directory
@@ -101,14 +102,28 @@ elif [ $ARCH = "i386" ]; then
 
 else exit
 fi
- 
-
 
 #################### Additional Programs & Settings ####################
 
-# Freemind 
+# Freemind, the starting method is the same, download the package, but in this case we unzip it 
+if [ ! -e "freemind-bin-max-1.0.1.zip" ]; then
+	wget http://downloads.sourceforge.net/project/freemind/freemind/1.0.1/freemind-bin-max-1.0.1.zip
+fi
+if [ ! -d "Freemind" ]; then
+	unzip freemind-bin-max-1.0.1.zip
+fi
+if [ ! -e "$HOME/bin" ]; then
+	mkdir $HOME/bin
+fi
 
-# Git Settings
+if [ $ARCH = "x86_64" ];then
+	ln -s ~/Programs_64/Freemind/freemind.sh $HOME/bin/freemind.sh
+elif [ $ARCH = "i386" ]; then
+	ln -s ~/Programs_32/Freemind/freemind.sh $HOME/bin/freemind.sh
+else exit
+fi
+
+# Git Settings, change it yours
 git config --global user.name	"Hajnal Máté"
 git config --global user.email hajnalmt@gmail.com
 git config --global core.editor subl
