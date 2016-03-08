@@ -1,6 +1,7 @@
 # Installation script for Ubuntu, linux
 # System distribution must be dpkg based
-
+# The additional packages will be downloaded in a bin directory at your home, which is loaded when you boot your computer.
+# So a reboot is necessarry
 
 #################### Core Packages ###################
 # Installed packages on the system
@@ -10,7 +11,7 @@ WANTED_PACKS=(
 	codeblocks dos2unix filezilla firefox git giggle gimp gparted geany \
 	ktorrent libappindicator1 libindicator7 libxss1 lm-sensors lp-solve mc \
 	mypaint p7zip p7zip-full putty \
-	qtcreator vifm vim vlc wpagui wpasupplicant
+	qtcreator texlive vifm vim vlc wpagui wpasupplicant
 )
 
 # Install packages and autoremove needless ones
@@ -105,7 +106,8 @@ fi
 
 #################### Additional Programs & Settings ####################
 
-# Freemind, the starting method is the same, download the package, but in this case we unzip it 
+# Freemind
+# The starting method is the same, download the package, but in this case we unzip it 
 if [ ! -e "freemind-bin-max-1.0.1.zip" ]; then
 	wget http://downloads.sourceforge.net/project/freemind/freemind/1.0.1/freemind-bin-max-1.0.1.zip
 fi
@@ -116,14 +118,16 @@ if [ ! -e "$HOME/bin" ]; then
 	mkdir $HOME/bin
 fi
 
-if [ $ARCH = "x86_64" ];then
-	ln -s ~/Programs_64/Freemind/freemind.sh $HOME/bin/freemind.sh
-elif [ $ARCH = "i386" ]; then
-	ln -s ~/Programs_32/Freemind/freemind.sh $HOME/bin/freemind.sh
-else exit
+if [ ! -e $HOME/bin/freemind.sh ]; then
+	if [ $ARCH = "x86_64" ];then
+		ln -s ~/Programs_64/Freemind/freemind.sh $HOME/bin/freemind.sh
+	elif [ $ARCH = "i386" ]; then
+		ln -s ~/Programs_32/Freemind/freemind.sh $HOME/bin/freemind.sh
+	else exit
+	fi
 fi
 
-# Git Settings, change it yours
-git config --global user.name	"Hajnal Máté"
+# Git Settings, change it to yours
+git config --global user.name "Hajnal Máté"
 git config --global user.email hajnalmt@gmail.com
 git config --global core.editor subl
