@@ -11,7 +11,7 @@ WANTED_PACKS=(
 	codeblocks dos2unix filezilla firefox git giggle gimp gparted geany \
 	ktorrent libappindicator1 libindicator7 libxss1 lm-sensors lp-solve mc \
 	mypaint p7zip p7zip-full putty \
-	qtcreator texlive vifm vim vlc wpagui wpasupplicant
+	qtcreator synaptic texlive vifm vim vlc wpagui wpasupplicant
 )
 
 # Install packages and autoremove needless ones
@@ -23,7 +23,7 @@ do
 	read ANSWER
 done
 if [ $ANSWER == "Y" ]; then
-	sudo apt-get install ${WANTED_PACKS[@]}
+	sudo apt-get -y install ${WANTED_PACKS[@]}
 	sudo apt-get autoremove
 fi
 
