@@ -21,8 +21,40 @@
 \usepackage[utf8]{inputenc}
 \usepackage{t1enc}
 \usepackage[magyar]{babel}
+\usepackage{paralist}
 
 \begin{document}
 
+\begin{verse}
+Megy a juhász szamáron,\\
+Földig ér a lába;\\
+Nagy a legény, de nagyobb\\
+Boldogtalansága.
+\dots
+\end{verse}
+
+\begin{compactenum}
+\renewcommand{\labelenumii}{\arabic{enumii}.}
+\begin{enumerate}
+\item Emlősők
+	\begin{itemize}
+	\item Házi állatok
+		\begin{enumerate}
+		\item macska
+		\item kutya
+		\end{enumerate}
+	\item Vadon élő állatok
+		\begin{itemize}
+		\item[$\circ$] farkas
+		\item[$\circ$] oroszlán
+		\end{itemize}
+	\end{itemize}
+\item Hüllők
+	\begin{itemize}
+	\item farkas
+	\item oroszlán
+	\end{itemize}
+\end{enumerate}
+\end{compactenum}
 
 \end{document}
