@@ -378,7 +378,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1457906052873" FOLDED="true" ID="ID_1925636455" MODIFIED="1457908517036" POSITION="right" TEXT="3) LaTex alapok">
+<node CREATED="1457906052873" FOLDED="true" ID="ID_1925636455" MODIFIED="1457918617850" POSITION="right" TEXT="3) LaTex alapok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1457906069760" FOLDED="true" ID="ID_348226869" MODIFIED="1457906822459" TEXT="Minden LaTeX dokumentum k&#xf6;telez&#x151;en kell, hogy tartalmazza az els&#x151; sor&#xe1;ban a k&#xf6;vetkez&#x151; utas&#xed;t&#xe1;st:\documentclass[opci&#xf3;k]{dokumentumoszt&#xe1;ly neve}">
 <node CREATED="1457906508817" ID="ID_597971807" MODIFIED="1457906627636" TEXT="minden LaTeX parancs &#x201e;\&#x201d;-lel kezd&#x151;dik!"/>
@@ -401,9 +401,9 @@
 <node CREATED="1457906957793" ID="ID_1474636979" MODIFIED="1457906969560" TEXT="\begin{document}"/>
 <node CREATED="1457906971649" ID="ID_882466010" MODIFIED="1457906980415" TEXT="\end{document}"/>
 </node>
-<node CREATED="1457907007562" FOLDED="true" ID="ID_855407741" MODIFIED="1457907360748" TEXT="Dokumentumoszt&#xe1;lyok opci&#xf3;i">
-<node CREATED="1457907018649" FOLDED="true" ID="ID_1034234483" MODIFIED="1457907298018" TEXT="article">
-<node CREATED="1457907035905" FOLDED="true" ID="ID_762004161" MODIFIED="1457907159435" TEXT="&#xc1;ll&#xed;that&#xf3; opci&#xf3;k">
+<node CREATED="1457907007562" ID="ID_855407741" MODIFIED="1457912265352" TEXT="Dokumentumoszt&#xe1;lyok opci&#xf3;i">
+<node CREATED="1457907018649" FOLDED="true" ID="ID_1034234483" MODIFIED="1457918612665" TEXT="article">
+<node CREATED="1457907035905" FOLDED="true" ID="ID_762004161" MODIFIED="1457912275412" TEXT="&#xc1;ll&#xed;that&#xf3; opci&#xf3;k">
 <node CREATED="1457907045473" ID="ID_1596340820" MODIFIED="1457907050870" TEXT="Bet&#x171;m&#xe9;ret: 10pt, 11pt, 12pt"/>
 <node CREATED="1457907052385" ID="ID_29011025" MODIFIED="1457907063351" TEXT="Pap&#xed;rm&#xe9;ret: a4paper, a5paper, b5paper, letterpaper"/>
 <node CREATED="1457907065560" ID="ID_1419427165" MODIFIED="1457907071182" TEXT="Egy ill. k&#xe9;toldalas szed&#xe9;s: oneside, twoside"/>
@@ -443,7 +443,7 @@
 <node CREATED="1457907348264" ID="ID_1789645389" MODIFIED="1457907348854" TEXT="Alap be&#xe1;ll&#xed;t&#xe1;sok: 10pt, letterpaper, twoside, titlepage, openright, final."/>
 </node>
 </node>
-<node CREATED="1457907364881" FOLDED="true" ID="ID_1902669929" MODIFIED="1457907662676" TEXT="Magyar sz&#xf6;vegn&#xe9;l">
+<node CREATED="1457907364881" FOLDED="true" ID="ID_1902669929" MODIFIED="1457912262772" TEXT="Magyar sz&#xf6;vegn&#xe9;l">
 <node CREATED="1457907403281" FOLDED="true" ID="ID_547801405" MODIFIED="1457907639187" TEXT="haszn&#xe1;ljunk packaget a begin el&#x151;tt">
 <node CREATED="1457907410191" ID="ID_965482794" MODIFIED="1457907416879" TEXT="\usepackage[utf8]{inputenc}"/>
 <node CREATED="1457907441777" ID="ID_1192430397" MODIFIED="1457907442440" TEXT="Figyelem! Bizonyos sz&#xf6;vegszerkeszt&#x151;k nem UTF-8-ban mentik a f&#xe1;jlokat, hanem k&#xf6;z&#xe9;p-eur&#xf3;pai k&#xf3;dol&#xe1;ssal. Ha &#xed;gy lenne, akkor utf8 helyett latin2-t kell &#xed;rni."/>
@@ -775,6 +775,348 @@
 </node>
 <node CREATED="1457908586802" ID="ID_984663293" MODIFIED="1457908607594" POSITION="right" TEXT="5) K&#xf6;rnyezetek, Felsorol&#xe1;sok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1457918629486" ID="ID_1049886045" MODIFIED="1457920357468" TEXT="\begin{valami} &#xe9;s az \end{valami} k&#xf6;zti r&#xe9;szt nevezz&#xfc;k k&#xf6;rnyezetnek.">
+<node CREATED="1457920363613" ID="ID_529047845" MODIFIED="1457920379747" TEXT="a documentum is egy k&#xf6;rnyezet"/>
+</node>
+<node CREATED="1457920390221" ID="ID_376970087" MODIFIED="1457920398694" TEXT="A k&#xf6;rnyezetek egym&#xe1;sba &#xe1;gyazhat&#xf3;ak"/>
+<node CREATED="1457920400453" FOLDED="true" ID="ID_1645323062" MODIFIED="1457920786407" TEXT="versek &#xe9;s id&#xe9;zetek">
+<node CREATED="1457920417419" ID="ID_1490820257" MODIFIED="1457920463613" TEXT="quote, a quotation &#xe9;s a verse k&#xf6;rnyezettel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Ime az els&#337; vers:
+    </p>
+    <p>
+      \begin{verse}
+    </p>
+    <p>
+      Megy a juh&#225;sz szam&#225;ron,\\
+    </p>
+    <p>
+      F&#246;ldig &#233;r a l&#225;ba;\\
+    </p>
+    <p>
+      Nagy a leg&#233;ny, de nagyobb\\
+    </p>
+    <p>
+      Boldogtalans&#225;ga.
+    </p>
+    <p>
+      Gyepes hanton furuly&#225;lt,\\
+    </p>
+    <p>
+      Legel&#233;szett ny&#225;ja.\\
+    </p>
+    <p>
+      \dots
+    </p>
+    <p>
+      \end{verse}
+    </p>
+    <p>
+      Ez volt a vers&#252;nk!
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1457920438908" ID="ID_804370463" MODIFIED="1457920440459" TEXT="A quote k&#xf6;rnyezetben nem kezd&#x151;dnek beh&#xfa;z&#xe1;ssal a bekezd&#xe9;sek"/>
+<node CREATED="1457920445734" ID="ID_1228463896" MODIFIED="1457920446860" TEXT="A quotation k&#xf6;rnyezetben a bekezd&#xe9;sek beh&#xfa;z&#xe1;ssal kezd&#x151;dnek"/>
+<node CREATED="1457920455557" ID="ID_896178476" MODIFIED="1457920456942" TEXT="verse k&#xf6;rnyezetben minden sor eleje azonos helyen kezd&#x151;dik, a sorok v&#xe9;g&#xe9;t \\ karakterekkel jel&#xf6;lj&#xfc;k"/>
+</node>
+<node CREATED="1457920494205" FOLDED="true" ID="ID_520617725" MODIFIED="1457920789999" TEXT="LaTeX sz&#xf6;veg beilleszt&#xe9;se">
+<node CREATED="1457920502518" ID="ID_1647105718" MODIFIED="1457920513938" TEXT="Ha LaTeX k&#xf3;dot szeretn&#xe9;nk a sz&#xf6;vegbe beilleszteni, &#xfa;gy, hogy a ford&#xed;t&#xf3; hagyja figyelmen k&#xed;v&#xfc;l, akkor a verbatim k&#xf6;rnyezetet haszn&#xe1;lhatjuk"/>
+<node CREATED="1457920526582" ID="ID_1488657614" MODIFIED="1457920527996" TEXT="A \verb|sz&#xf6;veg\@%| utas&#xed;t&#xe1;ssal a sz&#xf6;veg\@% verbatim m&#xf3;dban jelenik meg, azaz minden karakter megjelenik">
+<node CREATED="1457920565678" ID="ID_1544783129" MODIFIED="1457920567003" TEXT="Jelen esetben a | jellel jel&#xf6;lt&#xfc;k a verbatim sz&#xe9;leit, de tetsz&#x151;leges m&#xe1;s karakter is haszn&#xe1;lhat&#xf3; (kiv&#xe9;ve a bet&#x171;ket, a sz&#xf3;k&#xf6;zt &#xe9;s a csillagot)"/>
+</node>
+<node CREATED="1457920589429" ID="ID_1971410901" MODIFIED="1457920601736" TEXT="Ha hosszabb &#x2013; t&#xf6;bb soros &#x2013; verbatimot szeretn&#xe9;nk, akkor c&#xe9;lszer&#x171; a \begin{verbatim} ...\end{verbatim} k&#xf6;rnyezetet haszn&#xe1;lni"/>
+<node CREATED="1457920605453" ID="ID_38502545" MODIFIED="1457920612314" TEXT="A fenti utas&#xed;t&#xe1;s &#xe9;s k&#xf6;rnyezet csillagos v&#xe1;ltozata megjelen&#xed;ti a sz&#xf3;k&#xf6;z&#xf6;ket is, pl. \verb*-Hell&#xf3; vil&#xe1;g!- hat&#xe1;s&#xe1;ra a Hell&#xf3; vil&#xe1;g! kimenetet l&#xe1;thatjuk"/>
+</node>
+<node CREATED="1457920637869" FOLDED="true" ID="ID_1388465556" MODIFIED="1457920791254" TEXT="K&#xf3;d sz&#xf6;vegbe illeszt&#xe9;se">
+<node CREATED="1457920653373" ID="ID_444635417" MODIFIED="1457920653868" TEXT="K&#xfc;l&#xf6;nb&#xf6;z&#x151; programnyelvek programk&#xf3;djainak megjelen- &#xed;t&#xe9;s&#xe9;re a listings csomagot haszn&#xe1;lhatjuk">
+<node CREATED="1457920661148" ID="ID_544376284" MODIFIED="1457920661612" TEXT="\usepackage{listings} a preambulumba"/>
+</node>
+<node CREATED="1457920670062" ID="ID_12819886" MODIFIED="1457920675837" TEXT="lstlisting k&#xf6;rnyezetet kell l&#xe9;trehozni, vagy a \lstinputlisting{ } argumentum&#xe1;ba"/>
+<node CREATED="1457920702309" ID="ID_1517202464" MODIFIED="1457920715220" TEXT="Figyelem! Ilyen nincs: egym&#xe1;sba nem &#xe1;gyazhat&#xf3;ak">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \lstinputlisting{\lstinputlisting{hello } }
+    </p>
+  </body>
+</html>
+</richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1457920716901" ID="ID_454262729" MODIFIED="1457920723552" TEXT="Ha utf8 k&#xf3;dol&#xe1;ssal dolgozunk akkor a listingsutf8 csomagot haszn&#xe1;ljuk"/>
+<node CREATED="1457920767765" ID="ID_639942629" MODIFIED="1457920775898" TEXT="Ha lust&#xe1;k vagyunk bem&#xe1;solhatjuk k&#xf6;zvetlen&#xfc;l f&#xe1;jlb&#xf3;l a programk&#xf3;dot">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \lstinputlisting{file1.m}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1457920778692" FOLDED="true" ID="ID_438096062" MODIFIED="1457920825696" TEXT="URL megad&#xe1;sa">
+<node CREATED="1457920793101" ID="ID_1582674123" MODIFIED="1457920799280" TEXT="url csomag: \url{c&#xed;m}"/>
+<node CREATED="1457920807869" ID="ID_648617075" MODIFIED="1457920814540" TEXT="ha azt akarjuk, hogy a link elektronikusan el&#xe9;rhet&#x151; legyen a PDF-b&#x151;l">
+<node CREATED="1457920820485" ID="ID_1846857813" MODIFIED="1457920821074" TEXT="hyperref csomag: \url{c&#xed;m}"/>
+</node>
+</node>
+<node CREATED="1457920827165" ID="ID_1601963673" MODIFIED="1457921040888" TEXT="Felsorol&#xe1;sok">
+<node CREATED="1457920832557" ID="ID_1974280536" MODIFIED="1457920842055" TEXT="H&#xe1;romf&#xe9;le felsorol&#xe1;si k&#xf6;rnyezet">
+<node CREATED="1457920848326" ID="ID_1161741668" MODIFIED="1457920849100" TEXT="sz&#xe1;mozott lista (enumerate)"/>
+<node CREATED="1457920855694" ID="ID_606556203" MODIFIED="1457920888559" TEXT="sz&#xe1;mozatlan lista (itemize)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{itemize}
+    </p>
+    <p>
+      \item A felsorol&#225;s els&#337; eleme
+    </p>
+    <p>
+      \item A felsorol&#225;s 2.eleme
+    </p>
+    <p>
+      \item A felsorol&#225;s 3.eleme
+    </p>
+    <p>
+      \end{itemize}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1457920866821" ID="ID_1726376239" MODIFIED="1457920878353" TEXT="le&#xed;r&#xf3; lista (description)"/>
+</node>
+<node CREATED="1457920890852" ID="ID_259811020" MODIFIED="1457920897207" TEXT="Minden listaelemet egy \item el&#x151;z meg, f&#xfc;ggetlen&#xfc;l a felsorol&#xe1;si k&#xf6;rnyezet t&#xed;pus&#xe1;t&#xf3;l"/>
+<node CREATED="1457920908749" ID="ID_648619342" MODIFIED="1457920955270" TEXT="A felsorol&#xe1;s k&#xf6;rnyezetek n&#xe9;gy m&#xe9;lys&#xe9;gig egym&#xe1;sba &#xe1;gyazhat&#xf3;ak">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Felsorol&#225;sok: \dots
+    </p>
+    <p>
+      \begin{itemize}
+    </p>
+    <p>
+      \item &#193;llatok
+    </p>
+    <p>
+      \begin{enumerate}
+    </p>
+    <p>
+      \item mad&#225;r ...
+    </p>
+    <p>
+      \item hal ...
+    </p>
+    <p>
+      \end{enumerate}
+    </p>
+    <p>
+      \item n&#246;v&#233;nyek
+    </p>
+    <p>
+      \begin{description}
+    </p>
+    <p>
+      \item egyszik&#369;
+    </p>
+    <p>
+      \item k&#233;tszik&#369;
+    </p>
+    <p>
+      \end{description}
+    </p>
+    <p>
+      \end{itemize}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1457921040889" ID="ID_579654772" MODIFIED="1457921054305" TEXT="Felsorol&#xe1;s jelek megv&#xe1;ltoztat&#xe1;sa">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{itemize}
+    </p>
+    <p>
+      \item Els&#337; elem
+    </p>
+    <p>
+      \item[$\circ$] M&#225;sodik, kiemelt elem
+    </p>
+    <p>
+      (vagy pl. \item[\dag], \item[--]) vagy a pifont
+    </p>
+    <p>
+      csomag egy&#233;b jeleivel is ak&#225;r...
+    </p>
+    <p>
+      \end{itemize}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1457921055276" ID="ID_478122244" MODIFIED="1457921067031" TEXT="Le&#xed;r&#xf3; lista eset&#xe9;n">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{description}
+    </p>
+    <p>
+      \item[a butas&#225;gok] list&#225;ba szedve sem v&#225;lnak
+    </p>
+    <p>
+      tudom&#225;nyoss&#225;,
+    </p>
+    <p>
+      \item[a j&#243; gondolatok] viszont szebben
+    </p>
+    <p>
+      mutatnak rendszerezve
+    </p>
+    <p>
+      \end{description}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1457921086981" ID="ID_1746651146" MODIFIED="1457921090235" TEXT="Le&#xed;r&#xf3; lista">
+<node CREATED="1457921091157" ID="ID_1464882174" MODIFIED="1457921097727" TEXT="Ha nem tetszik, hogy f&#xe9;lk&#xf6;v&#xe9;rrel szedi a le&#xed;r&#xe1;s &#x201e;t&#xe1;rgy&#xe1;t&#x201d;, m&#xf3;dos&#xed;that&#xf3;"/>
+<node CREATED="1457921113054" ID="ID_57389699" MODIFIED="1457921120337" TEXT="a preambulumban adjuk ki a k&#xf6;vetkez&#x151;t">
+<node CREATED="1457921121437" ID="ID_134581922" MODIFIED="1457921130896" TEXT="\renewcommand{\descriptionlabel}[1] {\hspace\labelsep\normalfont\itshape#1}">
+<icon BUILTIN="forward"/>
+<icon BUILTIN="forward"/>
+</node>
+</node>
+</node>
+<node CREATED="1457921149773" ID="ID_1201354093" MODIFIED="1457921262819" TEXT="Sz&#xe1;moz&#xe1;si st&#xed;lus v&#xe1;lt&#xe1;s">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \documentclass[a4paper]{book}
+    </p>
+    <p>
+      \usepackage{t1enc}
+    </p>
+    <p>
+      \usepackage[utf8]{inputenc}
+    </p>
+    <p>
+      \usepackage[magyar]{babel}
+    </p>
+    <p>
+      \usepackage{paralist}
+    </p>
+    <p>
+      \begin{document}
+    </p>
+    <p>
+      \begin{enumerate}[I-{a}]
+    </p>
+    <p>
+      \item listaba szedve sem valnak tudomanyossa,
+    </p>
+    <p>
+      \item viszont szebben mutatnak rendszerezve
+    </p>
+    <p>
+      \end{enumerate}
+    </p>
+    <p>
+      \end{document}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1457921199925" ID="ID_1963645112" MODIFIED="1457921214821" TEXT="Az enumerate sz&#xe1;moz&#xe1;sa alapesetben arab sz&#xe1;moz&#xe1;s, de ez megv&#xe1;ltoztathat&#xf3;: "/>
+<node CREATED="1457921199926" ID="ID_741536224" MODIFIED="1457921249389" TEXT="(kell a paralist csomag hozz&#xe1;!)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{enumerate}[st&#237;lus]
+    </p>
+    <p>
+      1 - arab sz&#225;m
+    </p>
+    <p>
+      i - kis r&#243;mai sz&#225;m
+    </p>
+    <p>
+      I - nagy r&#243;mai sz&#225;m
+    </p>
+    <p>
+      a - latin &#225;b&#233;c&#233; kisbet&#369;i
+    </p>
+    <p>
+      A - latin &#225;b&#233;c&#233; nagybet&#369;i
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1457921161077" ID="ID_719189578" MODIFIED="1457921295787" TEXT="Sz&#xe1;mozott lista extra t&#xe9;rk&#xf6;z n&#xe9;lk&#xfc;l">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{compactenum}
+    </p>
+    <p>
+      \item list&#225;ba szedve sem v&#225;lnak tudom&#225;nyoss&#225;,
+    </p>
+    <p>
+      \item viszont szebben mutatnak rendszerezve
+    </p>
+    <p>
+      \end{compactenum}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1457921275758" ID="ID_1975015813" MODIFIED="1457921277055" TEXT="Az enumerate sz&#xe1;moz&#xe1;sa alapesetben nagyobb t&#xe9;rk&#xf6;zt hagy a felsorol&#xe1;sok k&#xf6;z&#xf6;tt."/>
+<node CREATED="1457921285852" ID="ID_697948459" MODIFIED="1457921287005" TEXT="Ha ezt nem akarjuk, haszn&#xe1;ljuk a paralist csomag compactenum k&#xf6;rnyezet&#xe9;t"/>
+</node>
+</node>
 </node>
 </node>
 </map>
