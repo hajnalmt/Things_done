@@ -1,0 +1,34 @@
+% Készítette: Hajnal Máté
+% Az Elte Programtervező Informatikus szakához tartozó Programozás tantárgyhoz tartozó házi feladatom.
+% A feladatok közül a 11-es
+
+\documentclass[12pt,twoside,a4paper]{article}	%Article dokumentum
+\usepackage[utf8]{inputenc}						%UTF-8-as kódolás
+\usepackage{t1enc}								%Furcsa betűk
+\usepackage{fancyhdr}
+%texlive-lang-hungarian package should be installed!
+\usepackage[english,magyar]{babel}				%Magyar nyelv 
+\usepackage{mathptmx}							%Times New Roman font
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage[headheight=56pt]{geometry}
+
+\sloppy
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
+\fancyhead[C]{\textbf{0.beadandó feladat/11.feladat}}
+\fancyhead[R]{\today}
+\pagestyle{fancy}
+
+\newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{1mm} \newline}}}
+
+\begin{document}
+\pagenumbering{arabic}
+\fejezet{Feladat}
+\textit{A föld felszínének egy vonala mentén egyenlő távolságonként megmértük a terep tengerszint feletti magasságát és a mért értékeket egy tömbben tároljuk. Keressük meg a legmagasabb völgyet a mérési sorozatban!}
+\vspace{3mm} \\
+\fejezet{Specifikáció}
+\fejezet{Algoritmus}
+
+\end{document}
