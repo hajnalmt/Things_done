@@ -773,7 +773,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1457908586802" ID="ID_984663293" MODIFIED="1457908607594" POSITION="right" TEXT="5) K&#xf6;rnyezetek, Felsorol&#xe1;sok">
+<node CREATED="1457908586802" FOLDED="true" ID="ID_984663293" MODIFIED="1457921359177" POSITION="right" TEXT="5) K&#xf6;rnyezetek, Felsorol&#xe1;sok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1457918629486" ID="ID_1049886045" MODIFIED="1457920357468" TEXT="\begin{valami} &#xe9;s az \end{valami} k&#xf6;zti r&#xe9;szt nevezz&#xfc;k k&#xf6;rnyezetnek.">
 <node CREATED="1457920363613" ID="ID_529047845" MODIFIED="1457920379747" TEXT="a documentum is egy k&#xf6;rnyezet"/>
@@ -875,7 +875,7 @@
 <node CREATED="1457920820485" ID="ID_1846857813" MODIFIED="1457920821074" TEXT="hyperref csomag: \url{c&#xed;m}"/>
 </node>
 </node>
-<node CREATED="1457920827165" ID="ID_1601963673" MODIFIED="1457921040888" TEXT="Felsorol&#xe1;sok">
+<node CREATED="1457920827165" FOLDED="true" ID="ID_1601963673" MODIFIED="1457921351243" TEXT="Felsorol&#xe1;sok">
 <node CREATED="1457920832557" ID="ID_1974280536" MODIFIED="1457920842055" TEXT="H&#xe1;romf&#xe9;le felsorol&#xe1;si k&#xf6;rnyezet">
 <node CREATED="1457920848326" ID="ID_1161741668" MODIFIED="1457920849100" TEXT="sz&#xe1;mozott lista (enumerate)"/>
 <node CREATED="1457920855694" ID="ID_606556203" MODIFIED="1457920888559" TEXT="sz&#xe1;mozatlan lista (itemize)">
@@ -955,7 +955,7 @@
 </html>
 </richcontent>
 </node>
-<node CREATED="1457921040889" ID="ID_579654772" MODIFIED="1457921054305" TEXT="Felsorol&#xe1;s jelek megv&#xe1;ltoztat&#xe1;sa">
+<node CREATED="1457921040889" FOLDED="true" ID="ID_579654772" MODIFIED="1457921348575" TEXT="Felsorol&#xe1;s jelek megv&#xe1;ltoztat&#xe1;sa">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1011,7 +1011,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1457921086981" ID="ID_1746651146" MODIFIED="1457921090235" TEXT="Le&#xed;r&#xf3; lista">
+<node CREATED="1457921086981" FOLDED="true" ID="ID_1746651146" MODIFIED="1457921345247" TEXT="Le&#xed;r&#xf3; lista">
 <node CREATED="1457921091157" ID="ID_1464882174" MODIFIED="1457921097727" TEXT="Ha nem tetszik, hogy f&#xe9;lk&#xf6;v&#xe9;rrel szedi a le&#xed;r&#xe1;s &#x201e;t&#xe1;rgy&#xe1;t&#x201d;, m&#xf3;dos&#xed;that&#xf3;"/>
 <node CREATED="1457921113054" ID="ID_57389699" MODIFIED="1457921120337" TEXT="a preambulumban adjuk ki a k&#xf6;vetkez&#x151;t">
 <node CREATED="1457921121437" ID="ID_134581922" MODIFIED="1457921130896" TEXT="\renewcommand{\descriptionlabel}[1] {\hspace\labelsep\normalfont\itshape#1}">
@@ -1020,7 +1020,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1457921149773" ID="ID_1201354093" MODIFIED="1457921262819" TEXT="Sz&#xe1;moz&#xe1;si st&#xed;lus v&#xe1;lt&#xe1;s">
+<node CREATED="1457921149773" FOLDED="true" ID="ID_1201354093" MODIFIED="1457921344087" TEXT="Sz&#xe1;moz&#xe1;si st&#xed;lus v&#xe1;lt&#xe1;s">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1092,7 +1092,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1457921161077" ID="ID_719189578" MODIFIED="1457921295787" TEXT="Sz&#xe1;mozott lista extra t&#xe9;rk&#xf6;z n&#xe9;lk&#xfc;l">
+<node CREATED="1457921161077" FOLDED="true" ID="ID_719189578" MODIFIED="1457921343207" TEXT="Sz&#xe1;mozott lista extra t&#xe9;rk&#xf6;z n&#xe9;lk&#xfc;l">
 <richcontent TYPE="NOTE"><html>
   <head>
     
