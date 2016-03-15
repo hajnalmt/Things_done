@@ -12,8 +12,14 @@
 \usepackage{enumitem}							%For enumerations
 \usepackage{url}								%For URL-s
 \usepackage[headheight=56pt]{geometry}			
-\usepackage[fleqn]{amsmath}							%Mathematical expressions
+\usepackage[fleqn]{amsmath}						%Mathematical expressions
 \usepackage{amsfonts}							%Mathematical fonts
+%Packages for Table handling
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tikz}
 
 \sloppy
 \fancyhead{}
@@ -26,19 +32,40 @@
 
 \begin{document}
 \pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \fejezet{Feladat}
 \textit{A föld felszínének egy vonala mentén egyenlő távolságonként megmértük a terep tengerszint feletti magasságát és a mért értékeket egy tömbben tároljuk. Keressük meg a legmagasabb völgyet a mérési sorozatban!}
 \vspace{5mm} \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \fejezet{Specifikáció}
 Az értékeket egy tömbben tároljuk.
 \begin{flalign*}
-&m..n~\sim~2..n-1\\
-&\beta~\sim~t[i]<t[i-1],~t[i]<t[i+1]\\
-&f(i)~\sim~t[i]\\
 &A=(t:\mathbb{R}^n,~max:\mathbb{R},~ind:\mathbb{N},~l:\mathbb{L})\\
 &Ef=(t=t')\\
 &Uf=(Ef~\wedge~\max_{i=2,~t[i]<t[i-1],~t[i]<t[i+1]}^{i=n-1}=t[i])\\
 \end{flalign*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \fejezet{Algoritmus}
+A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
+%%%%% Megfeleltetés %%%%%
+\begin{flalign*}
+&m..n~\sim~2..n-1\\
+&\beta~\sim~t[i]<t[i-1],~t[i]<t[i+1]\\
+&f(i)~\sim~t[i]\\
+\end{flalign*}
+%%%%% Table %%%%%
+\begin{tabular}{|c r|}
+\hline
+	\multicolumn{2}{|c|}{$l:=hamis$}\\
+\hline
+	\multicolumn{2}{|c|}{$i=2..n-1$}\\
+	&\begin{tabular}{|m{7em}|m{5em}|m{5em}|m{8em}}
+		\hline
+		$t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
+		\multicolumn{2}{|c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
+		$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$
+	\end{tabular}\\
+\hline
+\end{tabular}
 
 \end{document}
