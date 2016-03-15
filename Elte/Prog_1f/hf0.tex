@@ -5,30 +5,37 @@
 \documentclass[12pt,twoside,a4paper]{article}	%Article dokumentum
 \usepackage[utf8]{inputenc}						%UTF-8-as kódolás
 \usepackage{t1enc}								%Furcsa betűk
-\usepackage{fancyhdr}
+\usepackage{fancyhdr}							%For footer and header
 %texlive-lang-hungarian package should be installed!
 \usepackage[english,magyar]{babel}				%Magyar nyelv 
 \usepackage{mathptmx}							%Times New Roman font
-\usepackage{enumitem}
-\usepackage{url}
-\usepackage[headheight=56pt]{geometry}
+\usepackage{enumitem}							%For enumerations
+\usepackage{url}								%For URL-s
+\usepackage[headheight=56pt]{geometry}			
+\usepackage{amsmath}							%Mathematical expressions
+\usepackage{amsfonts}							%Mathematical fonts
 
 \sloppy
 \fancyhead{}
-\fancyfoot{}
-\fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
 \fancyhead[C]{\textbf{0.beadandó feladat/11.feladat}}
 \fancyhead[R]{\today}
+\fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
 \pagestyle{fancy}
 
-\newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{1mm} \newline}}}
+\newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{5mm} \newline}}}
 
 \begin{document}
 \pagenumbering{arabic}
 \fejezet{Feladat}
 \textit{A föld felszínének egy vonala mentén egyenlő távolságonként megmértük a terep tengerszint feletti magasságát és a mért értékeket egy tömbben tároljuk. Keressük meg a legmagasabb völgyet a mérési sorozatban!}
-\vspace{3mm} \\
+\vspace{5mm} \\
 \fejezet{Specifikáció}
+Az értékeket egy tömbben tároljuk.
+\begin{align*}
+&A=(t:\mathbb{R}^n,~max:\mathbb{R},~ind:\mathbb{N},~l:\mathbb{L})\\
+&Ef=(t=t')\\
+&Uf=(Ef~\wedge~\max_{i=2,~t[i]<t[i-1],~t[i]<t[i+1]}^{i=n-1}=t[i])\\
+\end{align*}
 \fejezet{Algoritmus}
 
 \end{document}
