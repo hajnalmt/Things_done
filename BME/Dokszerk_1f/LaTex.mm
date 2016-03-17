@@ -1113,7 +1113,7 @@
 </node>
 </node>
 <node CREATED="1458224160379" ID="ID_713774277" MODIFIED="1458225263359" TEXT="t&#xe1;bl&#xe1;zat">
-<node CREATED="1458224031547" ID="ID_403326902" MODIFIED="1458224171521" TEXT="t&#xe1;tabular k&#xf6;rnyezettel ">
+<node CREATED="1458224031547" FOLDED="true" ID="ID_403326902" MODIFIED="1458226263029" TEXT="t&#xe1;tabular k&#xf6;rnyezettel ">
 <node CREATED="1458224345555" ID="ID_544934610" MODIFIED="1458224354064" TEXT="a k&#xf6;rnyezet argumentuma hat&#xe1;rozza meg:">
 <node CREATED="1458224355355" ID="ID_355641379" MODIFIED="1458224364860" TEXT="h&#xe1;ny oszlop"/>
 <node CREATED="1458224366219" ID="ID_1262118654" MODIFIED="1458224370012" TEXT="milyen igaz&#xed;t&#xe1;s"/>
@@ -1127,7 +1127,7 @@
 <node CREATED="1458224605842" ID="ID_192743115" MODIFIED="1458224627303" TEXT="{*{3}{|r|l|c|} } = {r|l|c|r|l|c|r|l|c|}"/>
 </node>
 </node>
-<node CREATED="1458225265219" ID="ID_350682045" MODIFIED="1458225284804" TEXT="Egy&#xe9;b">
+<node CREATED="1458225265219" FOLDED="true" ID="ID_350682045" MODIFIED="1458226258488" TEXT="Egy&#xe9;b">
 <node CREATED="1458224803596" ID="ID_1461921377" MODIFIED="1458224812625" TEXT="fix m&#xe9;ret&#x171; t&#xe1;bl&#xe1;zat ">
 <node CREATED="1458224813827" ID="ID_1823152341" MODIFIED="1458224823329" TEXT="array package- tabular k&#xf6;rnyezet">
 <node CREATED="1458224861075" ID="ID_1921233662" MODIFIED="1458224874103" TEXT="p{2cm}">
@@ -1241,6 +1241,78 @@
   <body>
     <p>
       egyetlen cell&#225;ban &#237;rhatjuk fel&#252;l az oszlopokra vonatkoz&#243; defin&#237;ci&#243;t
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1458226255795" FOLDED="true" ID="ID_125184539" MODIFIED="1458226695223" TEXT="Kiad&#xf3; min&#x151;s&#xe9;g&#x171; t&#xe1;bl&#xe1;zatok">
+<node CREATED="1458226275371" ID="ID_1624515893" MODIFIED="1458226427159" TEXT="Picit elt&#xe9;r&#x151; a tipogr&#xe1;fia a hagyom&#xe1;sokhoz k&#xe9;pest">
+<node CREATED="1458226291429" ID="ID_1943945768" MODIFIED="1458226298813" TEXT="t&#xe1;bl&#xe1;zat tetej&#xe9;re &#xe9;s alj&#xe1;ra vastagabb vonal kell, mint a k&#xf6;ztesek"/>
+<node CREATED="1458226314092" ID="ID_1508335652" MODIFIED="1458226315365" TEXT="A t&#xe1;bl&#xe1;zat k&#xe9;t sz&#xe9;l&#xe9;n ne legyenek extra t&#xe9;rk&#xf6;z&#xf6;k, melyek a form&#xe1;tumvez&#xe9;rl&#x151; k&#xe9;t sz&#xe9;l&#xe9;re &#xed;rt egy-egy @{} paranccsal megoldhat&#xf3;"/>
+<node CREATED="1458226428156" ID="ID_1970899238" MODIFIED="1458226428762" TEXT="A legfontosabb &#xe9;s legk&#xfc;l&#xf6;n&#xf6;sebb szab&#xe1;ly, hogy soha ne alkalmazzunk f&#xfc;gg&#x151;leges vonalat"/>
+</node>
+<node CREATED="1458226436099" ID="ID_1311786745" MODIFIED="1458226446592" TEXT="booktabs csomag"/>
+</node>
+<node CREATED="1458226698331" FOLDED="true" ID="ID_187084442" MODIFIED="1458227291326" TEXT="Form&#xe1;z&#xe1;s">
+<node CREATED="1458226706699" FOLDED="true" ID="ID_959985789" MODIFIED="1458226970607" TEXT="T&#xf6;mb&#xf6;k">
+<node CREATED="1458226710819" ID="ID_176405381" MODIFIED="1458226711672" TEXT=" \begin{tabular}[poz]{oszl}">
+<node CREATED="1458226724133" FOLDED="true" ID="ID_1075928201" MODIFIED="1458226966688" TEXT="poz param&#xe9;ter az illeszt&#xe9;s m&#xf3;dj&#xe1;t adja meg">
+<node CREATED="1458226740539" ID="ID_1068103310" MODIFIED="1458226775731" TEXT="t (top)">
+<node CREATED="1458226767835" ID="ID_900445773" MODIFIED="1458226770531" TEXT="a t&#xe1;bl&#xe1;zat els&#x151; sora ker&#xfc;l az alapvonalra"/>
+</node>
+<node CREATED="1458226753069" ID="ID_342501717" MODIFIED="1458226782266" TEXT="b (bottom)">
+<node CREATED="1458226797892" ID="ID_1181423161" MODIFIED="1458226805464" TEXT="az als&#xf3; sor ker&#xfc;l az alapvoanlra"/>
+</node>
+<node CREATED="1458226759987" ID="ID_1022531018" MODIFIED="1458226761269" TEXT="nincs">
+<node CREATED="1458226809763" ID="ID_1592541541" MODIFIED="1458226827490" TEXT="akkor a t&#xe1;blazat k&#xf6;zep&#xe9;t igaz&#xed;tjuk az alapvonalhoz"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1458226972427" FOLDED="true" ID="ID_654275710" MODIFIED="1458227289038" TEXT="&#xda;sztat&#xe1;s">
+<node CREATED="1458226978012" FOLDED="true" ID="ID_1200880257" MODIFIED="1458227287488" TEXT="table k&#xf6;rnyezet">
+<node CREATED="1458227015131" ID="ID_1418765863" MODIFIED="1458227030161" TEXT="Be kell &quot;burkolni&quot; vele a tabular k&#xf6;rnyezetet"/>
+<node CREATED="1458227037324" ID="ID_1888119116" MODIFIED="1458227052553" TEXT="Opcion&#xe1;lis param&#xe9;ter a t&#xe1;bl&#xe1;zat hely&#xe9;re az oldalon">
+<node CREATED="1458227053859" ID="ID_1399930346" MODIFIED="1458227066985" TEXT="t (top)-tetej&#xe9;re"/>
+<node CREATED="1458227068379" ID="ID_914772096" MODIFIED="1458227075425" TEXT="b(bottom)-alj&#xe1;ra"/>
+<node CREATED="1458227077301" ID="ID_1010082128" MODIFIED="1458227089857" TEXT="h(here)-pont ide"/>
+<node CREATED="1458227092452" ID="ID_941953458" MODIFIED="1458227105050" TEXT="p(page)-k&#xfc;l&#xf6;n lapra"/>
+</node>
+<node CREATED="1458227112327" ID="ID_1758113817" MODIFIED="1458227133155" TEXT="tetsz&#x151;legesen felsorolhat&#xf3;k, a param&#xe9;terek, priorit&#xe1;sul">
+<node CREATED="1458227146027" ID="ID_1022784203" MODIFIED="1458227146608" TEXT="Alap&#xe9;rtelmez&#xe9;s: [tbp]"/>
+</node>
+<node CREATED="1458227157588" ID="ID_852963439" MODIFIED="1458227172205" TEXT="Mindenk&#xe9;ppen adott helyre, akkor egy felki&#xe1;lt&#xf3;jellel lehet szigor&#xed;tani az utas&#xed;t&#xe1;st">
+<node CREATED="1458227175523" ID="ID_440763283" MODIFIED="1458227181458" TEXT="[!h] jelent&#xe9;se: mindenk&#xe9;ppen ide tedd"/>
+</node>
+<node CREATED="1458227191964" ID="ID_221086153" MODIFIED="1458227197082" TEXT=" \caption{sz&#xf6;veg} ">
+<node CREATED="1458227198203" ID="ID_182713264" MODIFIED="1458227206185" TEXT="felirat a t&#xe1;bl&#xe1;zathoz"/>
+</node>
+<node CREATED="1458227211339" ID="ID_1465874369" MODIFIED="1458227218283" TEXT="\label{cimke}">
+<node CREATED="1458227222460" ID="ID_73261241" MODIFIED="1458227227136" TEXT="hivatkoz&#xe1;s c&#xed;me"/>
+<node CREATED="1458227258699" ID="ID_94877431" MODIFIED="1458227259441" TEXT=" \caption poz&#xed;ci&#xf3;j&#xe1;t&#xf3;l f&#xfc;gg&#x151;en a t&#xe1;bl&#xe1;zat felett, vagy alatt jelenik meg a felirat"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1458227406731" ID="ID_787701775" MODIFIED="1458227631457" TEXT="Array csomag">
+<node CREATED="1458227411955" ID="ID_1239459744" MODIFIED="1458227447400" TEXT="sorkiz&#xe1;rts&#xe1;g miatt gyakran cs&#xfa;nya a kimenet adott oszlopsz&#xe9;less&#xe9;ggel"/>
+</node>
+<node CREATED="1458227605917" ID="ID_1922273610" MODIFIED="1458227638848" TEXT="Tabularx csomag">
+<node CREATED="1458227639763" ID="ID_711816194" MODIFIED="1458227650824" TEXT="adott sz&#xe9;less&#xe9;g&#x171; t&#xe1;bl&#xe1;zat beilleszt&#xe9;se"/>
+<node CREATED="1458227667740" ID="ID_494703673" MODIFIED="1458227668304" TEXT="\begin{tabularx}{sz&#xe9;l}[poz]{oszl} ">
+<node CREATED="1458227675052" ID="ID_1364278464" MODIFIED="1458227700837" TEXT="els&#x151; argumentuma a t&#xe1;bl&#xe1;zat sz&#xe9;less&#xe9;ge"/>
+<node CREATED="1458227706828" ID="ID_603043963" MODIFIED="1458227716089" TEXT="\linewidth - aktu&#xe1;lis vonalsz&#xe9;less&#xe9;g"/>
+<node CREATED="1458227738419" ID="ID_1698994558" MODIFIED="1458227759150" TEXT="a rugalmas oszlopot az X defin&#xed;ci&#xf3; jel&#xf6;li">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{tabularx}{\linewidth}{c|X} Akkora, amekkora kell &amp; ez meg a marad&#233;kot kapja meg mindenk&#233;ppen ak&#225;rmit is &#237;rok, legyen az ak&#225;r nagyon hossz&#250; sz&#246;veg \\ R&#246;videbb sz&#246;veg &amp; m&#225;sodik sor. \end{tabularx}
     </p>
   </body>
 </html>

@@ -5,6 +5,8 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
 
 \begin{document}
 
@@ -103,8 +105,7 @@ Adó (Ft) & 165\,000 & 194\,950\\
 \hrulefill \\
 
 \begin{table}[htb]
-\caption{Nagy bölcsességek} %így lehet
-címet adni
+\caption{Nagy bölcsességek} %így lehet címet adni
 \label{tab:fontos}
 \center
 \begin{tabular}{c|r@{,}l}
@@ -115,5 +116,19 @@ $\pi^\pi$ & 36&46216 \\
 $\pi^{\pi^\pi}$ & 80662&666
 \end{tabular}
 \end{table}
+
+\newcommand*{\tabsorvege}[1]{\let\tmp=\\#1\let\\=\tmp}
+\begin{tabular}{c|>{\tabsorvege{\raggedright}\mbox{}}p{
+25mm}} \hline
+1 & Az első sorban is látszik milyen hasznos kis
+segítség ez. \\ \hline
+2 & Hát még a második sorban, ahol szintén egy hosszú
+szöveget láthatunk. \\ \hline
+\end{tabular}
+
+\begin{tabularx}{\linewidth}{c|X} Akkora, amekkora kell
+& ez meg a maradékot kapja meg mindenképpen akármit is
+írok, legyen az akár nagyon hosszú szöveg \\ Rövidebb
+szöveg & második sor. \end{tabularx}
 
 \end{document}
