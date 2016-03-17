@@ -712,8 +712,7 @@
       \end{center}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -742,8 +741,7 @@
       \makeatother
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1457910491593" ID="ID_850386010" MODIFIED="1457910505215" TEXT="A sz&#xe9;ljegyzetek alap&#xe9;rtelmez&#xe9;sben a k&#xfc;ls&#x151; marg&#xf3;ra ker&#xfc;lnek: \marginpar{sz&#xe9;ljegyzet}">
 <node CREATED="1457910506419" ID="ID_445228791" MODIFIED="1457910516658" TEXT="ha a bels&#x151; marg&#xf3;ra szeretn&#xe9;nk elhelyezni, adjuk ki a k&#xf6;vetkez&#x151; parancsot: \reversemarginpar, visszat&#xe9;r&#xe9;s a k&#xfc;ls&#x151; marg&#xf3;ra: \normalmarginpar"/>
@@ -767,8 +765,7 @@
       \fancyfoot{}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -820,8 +817,7 @@
       Ez volt a vers&#252;nk!
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1457920438908" ID="ID_804370463" MODIFIED="1457920440459" TEXT="A quote k&#xf6;rnyezetben nem kezd&#x151;dnek beh&#xfa;z&#xe1;ssal a bekezd&#xe9;sek"/>
 <node CREATED="1457920445734" ID="ID_1228463896" MODIFIED="1457920446860" TEXT="A quotation k&#xf6;rnyezetben a bekezd&#xe9;sek beh&#xfa;z&#xe1;ssal kezd&#x151;dnek"/>
@@ -850,8 +846,7 @@
       \lstinputlisting{\lstinputlisting{hello } }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 <node CREATED="1457920716901" ID="ID_454262729" MODIFIED="1457920723552" TEXT="Ha utf8 k&#xf3;dol&#xe1;ssal dolgozunk akkor a listingsutf8 csomagot haszn&#xe1;ljuk"/>
@@ -865,8 +860,7 @@
       \lstinputlisting{file1.m}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1457920778692" FOLDED="true" ID="ID_438096062" MODIFIED="1457920825696" TEXT="URL megad&#xe1;sa">
@@ -900,8 +894,7 @@
       \end{itemize}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1457920866821" ID="ID_1726376239" MODIFIED="1457920878353" TEXT="le&#xed;r&#xf3; lista (description)"/>
 </node>
@@ -952,8 +945,7 @@
       \end{itemize}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1457921040889" FOLDED="true" ID="ID_579654772" MODIFIED="1457921348575" TEXT="Felsorol&#xe1;s jelek megv&#xe1;ltoztat&#xe1;sa">
 <richcontent TYPE="NOTE"><html>
@@ -980,8 +972,7 @@
       \end{itemize}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1457921055276" ID="ID_478122244" MODIFIED="1457921067031" TEXT="Le&#xed;r&#xf3; lista eset&#xe9;n">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -1007,8 +998,7 @@
       \end{description}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1457921086981" FOLDED="true" ID="ID_1746651146" MODIFIED="1457921345247" TEXT="Le&#xed;r&#xf3; lista">
@@ -1060,8 +1050,7 @@
       \end{document}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1457921199925" ID="ID_1963645112" MODIFIED="1457921214821" TEXT="Az enumerate sz&#xe1;moz&#xe1;sa alapesetben arab sz&#xe1;moz&#xe1;s, de ez megv&#xe1;ltoztathat&#xf3;: "/>
 <node CREATED="1457921199926" ID="ID_741536224" MODIFIED="1457921249389" TEXT="(kell a paralist csomag hozz&#xe1;!)">
 <richcontent TYPE="NOTE"><html>
@@ -1088,8 +1077,7 @@
       A - latin &#225;b&#233;c&#233; nagybet&#369;i
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1457921161077" FOLDED="true" ID="ID_719189578" MODIFIED="1457921343207" TEXT="Sz&#xe1;mozott lista extra t&#xe9;rk&#xf6;z n&#xe9;lk&#xfc;l">
@@ -1111,10 +1099,29 @@
       \end{compactenum}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1457921275758" ID="ID_1975015813" MODIFIED="1457921277055" TEXT="Az enumerate sz&#xe1;moz&#xe1;sa alapesetben nagyobb t&#xe9;rk&#xf6;zt hagy a felsorol&#xe1;sok k&#xf6;z&#xf6;tt."/>
 <node CREATED="1457921285852" ID="ID_697948459" MODIFIED="1457921287005" TEXT="Ha ezt nem akarjuk, haszn&#xe1;ljuk a paralist csomag compactenum k&#xf6;rnyezet&#xe9;t"/>
+</node>
+</node>
+</node>
+<node CREATED="1458223452601" ID="ID_1353321532" MODIFIED="1458223472867" POSITION="left" TEXT="6) Tabul&#xe1;l&#xe1;s &#xe9;s t&#xe1;bl&#xe1;zatok szerkeszt&#xe9;se">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458224126332" ID="ID_855817327" MODIFIED="1458224129330" TEXT="tabul&#xe1;l&#xe1;s">
+<node CREATED="1458223474596" ID="ID_662864407" MODIFIED="1458224150855" TEXT="tabbing k&#xf6;rnyezettel">
+<node CREATED="1458224096235" ID="ID_789015495" MODIFIED="1458224100639" TEXT="el&#xe9;g k&#xf6;r&#xfc;lm&#xe9;nyes"/>
+</node>
+</node>
+<node CREATED="1458224160379" ID="ID_713774277" MODIFIED="1458224164156" TEXT="t&#xe1;bl&#xe1;zat">
+<node CREATED="1458224031547" ID="ID_403326902" MODIFIED="1458224171521" TEXT="t&#xe1;tabular k&#xf6;rnyezettel ">
+<node CREATED="1458224345555" ID="ID_544934610" MODIFIED="1458224354064" TEXT="a k&#xf6;rnyezet argumentuma hat&#xe1;rozza meg:">
+<node CREATED="1458224355355" ID="ID_355641379" MODIFIED="1458224364860" TEXT="h&#xe1;ny oszlop"/>
+<node CREATED="1458224366219" ID="ID_1262118654" MODIFIED="1458224370012" TEXT="milyen igaz&#xed;t&#xe1;s"/>
+<node CREATED="1458224371189" ID="ID_695349429" MODIFIED="1458224377426" TEXT="van-e k&#xf6;zte r&#xe1;csvonal"/>
+</node>
+<node CREATED="1458224390395" ID="ID_1509093332" MODIFIED="1458224392603" TEXT="&#xda;j sort a \\ paranccsal lehet kezdeni"/>
+<node CREATED="1458224402394" ID="ID_636499266" MODIFIED="1458224406339" TEXT=" soron bel&#xfc;li elemeket a &amp; speci&#xe1;lis karakter v&#xe1;lasztja el"/>
+<node CREATED="1458224418059" ID="ID_1175069447" MODIFIED="1458224430904" TEXT="v&#xed;zszintes vonal \hline parancsal"/>
 </node>
 </node>
 </node>
