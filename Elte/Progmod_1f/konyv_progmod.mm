@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1458138922785" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
+<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1458223441973" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -58,8 +58,7 @@
       az &#252;res halmaz.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1458139106674" ID="ID_636143593" MODIFIED="1458139253784" TEXT="megad&#xe1;suk">
 <node CREATED="1458139254210" ID="ID_340911373" MODIFIED="1458139294938" TEXT="elemeik  felsorol&#xe1;s&#xe1;val">
 <richcontent TYPE="NOTE"><html>
@@ -71,8 +70,7 @@
       L ::= {igaz, hamis},
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458139261931" ID="ID_1990512079" MODIFIED="1458139303844" TEXT="egy tulajdons&#xe1;g megfolgalmaz&#xe1;s&#xe1;val">
 <richcontent TYPE="NOTE"><html>
@@ -84,8 +82,7 @@
       [a..b] ::= {x &#8712; Z | x &#8805; a &#233;s x &#8804; b}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1458139305707" ID="ID_553371678" MODIFIED="1458139373750" TEXT="halmazelm&#xe9;leti m&#x171;veletek">
@@ -104,8 +101,7 @@
       \ &#8722; k&#252;l&#246;nbs&#233;g
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458139376715" ID="ID_1853617450" MODIFIED="1458139423969" TEXT="rel&#xe1;ci&#xf3;k">
 <richcontent TYPE="NOTE"><html>
@@ -126,8 +122,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458139443883" ID="ID_1464248870" MODIFIED="1458139459064" TEXT="sz&#xe1;moss&#xe1;g -  |H|">
 <node CREATED="1458139460403" ID="ID_1041983469" MODIFIED="1458139470227" TEXT="V&#xe9;ges sz&#xe1;moss&#xe1;g - |H| &lt; &#x221e;."/>

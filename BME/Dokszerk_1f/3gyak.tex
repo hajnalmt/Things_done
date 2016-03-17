@@ -2,8 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{t1enc}
 \usepackage[magyar]{babel}
-
-\sloppy
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
 
 \begin{document}
 
@@ -16,8 +17,7 @@ Ez lett \=\\
 \end{tabbing}
 
 \begin{tabular}{|lrc|}
-Ez egy balra igazított oszlop & ez meg jobbra igazított oszlop
-\\
+Ez egy balra igazított oszlop & ez meg jobbra igazított oszlop \\
 akkor látszik & ha több elem
 \end{tabular}
 
@@ -38,6 +38,63 @@ Indul Bp.\ Keleti-pu.-ról & 8:00 & ... \\
 Indul Hatvanból & 8:55 & ... \\
 Érkezik Miskolc Tiszai-pu.-ra & 10:22 & ... \\
 \hline
+\end{tabular}
+
+
+\begin{tabular}{|m{2cm}|m{4cm}|m{1cm}|b{3cm}|}
+\hline
+Éljen a fix méretű tábla! & Éljen a fix méretű
+tábla!&
+Éljen a fix méretű tábla!& Éljen a fix méretű
+tábla! \\
+\hline
+\end{tabular}
+
+\begin{tabular}{ l| b{2cm}| m{2cm}| p{2cm}}
+\hline
+középre igazítva & tetejére igazítva &
+középre igazítva & cella aljára igazítva\\
+\hline
+\end{tabular}
+
+\begin{tabular}{|l|c|}
+\hline\multirow{2}*{Alma} & 1\\
+& 2\\\hline
+\multirow{3}{3cm}{3\,cm széles szöveg törve} &
+3\\\cline{2-2}
+& 4\\\cline{2-2}
+& 5\\\hline
+\end{tabular}
+
+\begin{tabular}{l||*8{r@{:}l|}}
+A vonat száma: & \multicolumn{2}{c|}{437} & ...
+\\
+\hline\hline
+Indul Bp.\ Keleti-pu.-ról & 8&00 & ... \\
+Érkezik Hatvanba & 8&52 & ... \\
+Indul Hatvanból & 8&55 & ... \\
+Érkezik Miskolc Tiszai-pu.-ra & 10&22 & ... \\
+\hline
+\end{tabular}
+
+\begin{tabular}{c|r@{,}l}
+Kifejezés & \multicolumn{2}{c}{Érték} \\
+\hline
+$\pi$ & 3&1415927 \\
+$\pi^\pi$ & 36&46216 \\
+$\pi^{\pi^\pi}$ & 80662&666
+\end{tabular}
+
+\begin{tabular}{@{}lrr@{}}
+\toprule
+&\multicolumn{2}{c}{Év}\\
+\cmidrule{2-3}
+& \multicolumn{1}{c}{2002} &
+\multicolumn{1}{c}{2003}\\
+\midrule
+Jövedelem (Ft)& 775\,000 & 1\,166\,500\\
+Adó (Ft) & 165\,000 & 194\,950\\
+\bottomrule
 \end{tabular}
 
 \end{document}

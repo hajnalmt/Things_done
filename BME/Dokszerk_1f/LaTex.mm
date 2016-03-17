@@ -1112,7 +1112,7 @@
 <node CREATED="1458224096235" ID="ID_789015495" MODIFIED="1458224100639" TEXT="el&#xe9;g k&#xf6;r&#xfc;lm&#xe9;nyes"/>
 </node>
 </node>
-<node CREATED="1458224160379" ID="ID_713774277" MODIFIED="1458224164156" TEXT="t&#xe1;bl&#xe1;zat">
+<node CREATED="1458224160379" ID="ID_713774277" MODIFIED="1458225263359" TEXT="t&#xe1;bl&#xe1;zat">
 <node CREATED="1458224031547" ID="ID_403326902" MODIFIED="1458224171521" TEXT="t&#xe1;tabular k&#xf6;rnyezettel ">
 <node CREATED="1458224345555" ID="ID_544934610" MODIFIED="1458224354064" TEXT="a k&#xf6;rnyezet argumentuma hat&#xe1;rozza meg:">
 <node CREATED="1458224355355" ID="ID_355641379" MODIFIED="1458224364860" TEXT="h&#xe1;ny oszlop"/>
@@ -1122,6 +1122,131 @@
 <node CREATED="1458224390395" ID="ID_1509093332" MODIFIED="1458224392603" TEXT="&#xda;j sort a \\ paranccsal lehet kezdeni"/>
 <node CREATED="1458224402394" ID="ID_636499266" MODIFIED="1458224406339" TEXT=" soron bel&#xfc;li elemeket a &amp; speci&#xe1;lis karakter v&#xe1;lasztja el"/>
 <node CREATED="1458224418059" ID="ID_1175069447" MODIFIED="1458224430904" TEXT="v&#xed;zszintes vonal \hline parancsal"/>
+<node CREATED="1458224561634" ID="ID_688778004" MODIFIED="1458224577822" TEXT="duplavonalakat | vagy \hlien dupl&#xe1;z&#xe1;s&#xe1;val"/>
+<node CREATED="1458224578965" ID="ID_1132772097" MODIFIED="1458224640804" TEXT="T&#xf6;bb azonos rend&#x171; oszlopn&#xe1;l a deklar&#xe1;ci&#xf3; r&#xf6;vid&#xed;thet&#x151; *{x}-el">
+<node CREATED="1458224605842" ID="ID_192743115" MODIFIED="1458224627303" TEXT="{*{3}{|r|l|c|} } = {r|l|c|r|l|c|r|l|c|}"/>
+</node>
+</node>
+<node CREATED="1458225265219" ID="ID_350682045" MODIFIED="1458225284804" TEXT="Egy&#xe9;b">
+<node CREATED="1458224803596" ID="ID_1461921377" MODIFIED="1458224812625" TEXT="fix m&#xe9;ret&#x171; t&#xe1;bl&#xe1;zat ">
+<node CREATED="1458224813827" ID="ID_1823152341" MODIFIED="1458224823329" TEXT="array package- tabular k&#xf6;rnyezet">
+<node CREATED="1458224861075" ID="ID_1921233662" MODIFIED="1458224874103" TEXT="p{2cm}">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2cm sz&#233;les cella, ahol a cella tetej&#233;re ker&#252;l a sz&#246;veg (sorkiz&#225;rtan)
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1458224875986" ID="ID_1271986132" MODIFIED="1458224891154" TEXT="m{2cm}">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2cm sz&#233;les cella, ahol a cella k&#246;zep&#233;re ker&#252;l a sz&#246;veg (sorkiz&#225;rtan)
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1458224891882" ID="ID_1118314255" MODIFIED="1458224897913" TEXT="b{2cm}">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      2cm sz&#233;les cella, ahol a cella alj&#225;ra ker&#252;l a sz&#246;veg (sorkiz&#225;rtan)
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1458225097643" ID="ID_1232674910" MODIFIED="1458225106444" TEXT="oszlopok k&#xf6;zti t&#xe1;vols&#xe1;g megv&#xe1;ltoztat&#xe1;sa">
+<node CREATED="1458225109243" ID="ID_893902719" MODIFIED="1458225124325" TEXT="\setlength{\tabcolsep}{20pt}">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      az alap 6pt
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1458225132099" ID="ID_1373660819" MODIFIED="1458225138850" TEXT="sorok k&#xf6;zti t&#xe1;vols&#xe1;g">
+<node CREATED="1458225139883" ID="ID_1029436805" MODIFIED="1458225145662" TEXT="\renewcommand{\arraystretch}{1.5}"/>
+</node>
+<node CREATED="1458225151531" ID="ID_1384421801" MODIFIED="1458225162971" TEXT="egy&#xe9;b k&#xf6;rnyezet">
+<node CREATED="1458225157379" ID="ID_1871698680" MODIFIED="1458225170272" TEXT=" p{}"/>
+</node>
+<node CREATED="1458225203139" ID="ID_820981820" MODIFIED="1458225218129" TEXT="adott oszlopok f&#xf6;l&#xe9; akarunk csak vonalat h&#xfa;zni">
+<node CREATED="1458225224923" ID="ID_398151341" MODIFIED="1458225244383" TEXT="\hline helyett a \cline{x-y} ">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      x &#233;s y a vonal k&#233;t v&#233;ge (oszlopban)
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1458225285786" ID="ID_1618028945" MODIFIED="1458225290297" TEXT="Sor a sorban">
+<node CREATED="1458225292232" ID="ID_1562059271" MODIFIED="1458225300803" TEXT="\usepackage{multirow}"/>
+</node>
+<node CREATED="1458225418187" ID="ID_330672423" MODIFIED="1458225442849" TEXT="@ param&#xe9;terrel a t&#xe1;bl&#xe1;zat oszlopai k&#xf6;z&#xf6;tti vonal &#xe1;t&#xed;rhat&#xf3;">
+<node CREATED="1458225454323" ID="ID_481910212" MODIFIED="1458225455432" TEXT="@{} ">
+<node CREATED="1458225456516" ID="ID_1730792759" MODIFIED="1458225462049" TEXT="null&#xe1;ra cs&#xf6;kkenti a t&#xe1;vols&#xe1;got"/>
+<node CREATED="1458225850667" ID="ID_1061446782" MODIFIED="1458225851537" TEXT="ism&#xe9;tl&#x151;d&#x151; mint&#xe1;kat k&#xf6;nnyed&#xe9;n beilleszthet&#xfc;nk az oszlopok el&#xe9; &#xe9;s ut&#xe1;n."/>
+</node>
+<node CREATED="1458225464379" ID="ID_1614295257" MODIFIED="1458225469601" TEXT="@{:} ">
+<node CREATED="1458225472307" ID="ID_626257866" MODIFIED="1458225480786" TEXT="Kett&#x151;rpontot tesz a k&#xe9;t oszlop elemei k&#xf6;z&#xe9;"/>
+</node>
+<node CREATED="1458225580698" ID="ID_1753386400" MODIFIED="1458225874405" TEXT="VIGY&#xc1;ZZUNK VELE, mertelt&#xfc;ntet mindent t&#xe9;nyleg">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      utols&#243; oszlop ut&#225;n, vagy az els&#337; oszlop el&#337;tt szerepel, megsz&#252;nteti a t&#225;vols&#225;got a t&#225;bl&#225;zat sz&#233;le &#233;s a sz&#246;veg k&#246;z&#246;tt &#61616; ezt manu&#225;lisan kell korrig&#225;lni.
+    </p>
+  </body>
+</html>
+</richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1458225871028" ID="ID_1412099058" MODIFIED="1458225892209" TEXT="tradicion&#xe1;lis nyomd&#xe1;szatban sz&#xe1;mok &#xed;r&#xe1;sakor az azonos helyi&#xe9;rt&#xe9;keknek egym&#xe1;s al&#xe1; kell ker&#xfc;lni&#xfc;k">
+<node CREATED="1458225893364" ID="ID_1497826957" MODIFIED="1458225898174" TEXT="r@{,}l"/>
+</node>
+</node>
+<node CREATED="1458225498467" ID="ID_739625164" MODIFIED="1458225500352" TEXT="\multicolumn{n}{oszldef}{sz&#xf6;veg}">
+<node CREATED="1458225554477" ID="ID_743457170" MODIFIED="1458225561316" TEXT="n cell&#xe1;t &#xf6;sszevonva oszldef m&#xf3;don &#xed;rjuk a sz&#xf6;veget"/>
+<node CREATED="1458225792171" ID="ID_290063636" MODIFIED="1458225833687" TEXT="\multicolumn{1}{oszldef}{sz&#xf6;veg}">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      egyetlen cell&#225;ban &#237;rhatjuk fel&#252;l az oszlopokra vonatkoz&#243; defin&#237;ci&#243;t
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 </node>
 </node>
