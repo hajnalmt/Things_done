@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1458223441973" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
+<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1458237251937" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
 <richcontent TYPE="NOTE"><html>
   <head>
     

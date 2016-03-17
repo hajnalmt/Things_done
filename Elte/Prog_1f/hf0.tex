@@ -54,18 +54,17 @@ A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
 &f(i)~\sim~t[i]\\
 \end{flalign*}
 %%%%% Table %%%%%
-\begin{tabular}{|c r|}
+\begin{tabular}{|m{1em}|m{7em}|m{7em}|m{3em}|m{8em}|}
 \hline
-	\multicolumn{2}{|c|}{$l:=hamis$}\\
+	\multicolumn{5}{|c|}{$l:=hamis$}\\
 \hline
-	\multicolumn{2}{|c|}{$i=2..n-1$}\\
-	&\begin{tabular}{|m{7em}|m{5em}|m{5em}|m{8em}}
-		\hline
-		$t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
-		\multicolumn{2}{|c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
-		$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$
-	\end{tabular}\\
+	\multicolumn{5}{|c|}{$i=2..n-1$}\\
+\cline{2-5}
+	& $t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
+	\multicolumn{2}{c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
+	$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$ \\
+\cline{2-5}
+	 \multirow{2}{*}{} & \multirow{2}{*}{SKIP} & \multicolumn{2}{c|}{$max < t[i]$} & $l,~max,~ind :=$  \\\cline{3-4} & & $max,~ind:=t[i],~i$ & SKIP & $igaz,~t[i],~i$ \\
 \hline
 \end{tabular}
-
 \end{document}
