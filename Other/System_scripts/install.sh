@@ -11,7 +11,8 @@ WANTED_PACKS=(
 	codeblocks dos2unix filezilla firefox git giggle gimp gparted geany \
 	ktorrent libappindicator1 libindicator7 libxss1 lm-sensors lp-solve mc \
 	mypaint p7zip p7zip-full putty qtcreator synaptic texlive \
-	texlive-full texlive-lang-hungarian vifm vim vlc wpagui wpasupplicant
+	texlive-full texlive-lang-hungarian ttf-mscorefonts-installer vifm vim \
+	vlc wpagui wpasupplicant
 )
 
 # Install packages and autoremove needless ones
