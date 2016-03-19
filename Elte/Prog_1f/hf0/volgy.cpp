@@ -14,8 +14,8 @@
 
 using namespace std;
 
-bool ReadFromFile(const string &fname, vector<int> &t)
-bool Maxvolgy(bool &l, int &max, int &ind , const vector<int> &t)
+bool ReadFromFile(const string &fname, vector<int> &t);
+bool Maxvolgy(bool &l, int &max, int &ind , const vector<int> &t);
 
 int main(int argc, char *argv[])
 {
@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
             // Kiértékelés és kiíratás
             if(!Maxvolgy(l, max, ind, t)) {
             cout << "Nincsen völgy a sorozatban." << endl;
+            }
             else {
             cout << "Legnagyobb völgy indexe:" << ind << " és értéke:" << max << endl;
             }
@@ -94,13 +95,13 @@ bool Maxvolgy(bool &l, int &max, int &ind , const vector<int> &t)
         if (t[i-1] > t[i] && t[i+1] > t[i] && l) {
             if (t[i] > max) {
                 max = t[i];
-                ind = i;
+                ind = i-1;
             }
         }
         else if (t[i-1] > t[i] && t[i+1] > t[i]) {
             l = true;
             max = t[i];
-            ind = i;
+            ind = i-1;
         }
     }
     return l;

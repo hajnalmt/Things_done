@@ -10,5 +10,6 @@
 *.depend
 *.layout
 *.cbp
-./Elte/Prog_1f/hf0/obj
-./Elte/Prog_1f/hf0/bin
+#Directories
+Elte/Prog_1f/hf0/obj/
+Elte/Prog_1f/hf0/bin/
