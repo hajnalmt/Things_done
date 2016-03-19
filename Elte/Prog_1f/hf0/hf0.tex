@@ -1,0 +1,93 @@
+% Készítette: Hajnal Máté
+% Az Elte Programtervező Informatikus szakához tartozó Programozás tantárgyhoz tartozó házi feladatom.
+% A feladatok közül a 11-es
+
+\documentclass[12pt,twoside,a4paper]{article}	%Article dokumentum
+\usepackage[utf8]{inputenc}						%UTF-8-as kódolás
+\usepackage{t1enc}								%Furcsa betűk
+\usepackage{fancyhdr}							%For footer and header
+%texlive-lang-hungarian package should be installed!
+\usepackage[english,magyar]{babel}				%Magyar nyelv 
+\usepackage{mathptmx}							%Times New Roman font
+\usepackage{enumitem}							%For enumerations
+\usepackage{url}								%For URL-s
+\usepackage[headheight=56pt]{geometry}			
+\usepackage[fleqn]{amsmath}						%Mathematical expressions
+\usepackage{amsfonts}							%Mathematical fonts
+%Packages for Table handling
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tikz}
+
+\sloppy
+\fancyhead{}
+\fancyhead[C]{\textbf{0.beadandó feladat/11.feladat}}
+\fancyhead[R]{\today}
+\fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
+\pagestyle{fancy}
+
+\newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{5mm}}}}
+
+\begin{document}
+\pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fejezet{Feladat}\\
+\textit{A föld felszínének egy vonala mentén egyenlő távolságonként megmértük a terep tengerszint feletti magasságát és a mért értékeket egy tömbben tároljuk. Keressük meg a legmagasabb völgyet a mérési sorozatban!}
+\vspace{5mm} \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fejezet{Specifikáció}\\
+Az értékeket egy tömbben tároljuk.
+\begin{flalign*}
+&A=(t:\mathbb{R}^n,~max:\mathbb{R},~ind:\mathbb{N},~l:\mathbb{L})\\
+&Ef=(t=t')\\
+&Uf=(Ef~\wedge~\max_{i=2,~t[i]<t[i-1],~t[i]<t[i+1]}^{i=n-1}=t[i])
+\end{flalign*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fejezet{Algoritmus}\\
+A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
+%%%%% Megfeleltetés %%%%%
+\begin{flalign*}
+&m..n~\sim~2..n-1\\
+&\beta~\sim~t[i]<t[i-1],~t[i]<t[i+1]\\
+&f(i)~\sim~t[i]
+\end{flalign*}
+%%%%% Table %%%%%
+\begin{tabular}{|m{1em}|m{7em}|m{7em}|m{3em}|m{8em}|}
+\hline
+	\multicolumn{5}{|c|}{$l:=hamis$}\\
+\hline
+	\multicolumn{5}{|c|}{$i=2..n-1$}\\
+\cline{2-5}
+	& $t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
+	\multicolumn{2}{c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
+	$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$ \\
+\cline{2-5}
+	 \multirow{2}{*}{} & \multirow{2}{*}{SKIP} & \multicolumn{2}{c|}{$max < t[i]$} & $l,~max,~ind :=$  \\\cline{3-4} & & $max,~ind:=t[i],~i$ & SKIP & $igaz,~t[i],~i$ \\
+\hline
+\end{tabular}\\
+\fejezet{Implementáció}\\
+\large{Adattípusok megvalósítása}\\
+A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek mérete \texttt{t.size()} alakban érhető el. Mivel a vektor C++-ban 0-tól indexelődik, így a tervbeli 2-től n-1-ig tartó ciklus az esetünkben \texttt{1-től t.size()-2-ig} fog tartani. A struktogramm kódja így:
+\texttt{
+	\begin{tabbing}
+		\hspace{2cm}\= l=false \+\\
+		for (int i=1; i < t.size()-1; ++i) \{\\
+		\hspace{1cm}\= if (t[i-1] > t[i] \&\& t[i+1] > t[i] \&\& l) \{ \+\\
+			\hspace{1cm}\=if (t[i] > max) \{ \+\\
+			\hspace{1cm}\=max = t[i]; \+\\
+			ind = i-1;\-\\
+			\}\-\\
+		\}\\
+		else if (t[i-1] > t[i] \&\& t[i+1] > t[i]) \{ \+\\
+			l = true;\\
+			max = t[i];\\
+			ind = i-1;\-\\
+		\} \-\\
+	\}
+	\end{tabbing}
+}
+\large{Bemenő adatok formája}\\
+\fejezet{Tesztelési terv}
+\end{document}
