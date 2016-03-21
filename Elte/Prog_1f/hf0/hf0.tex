@@ -2,7 +2,7 @@
 % Az Elte Programtervező Informatikus szakához tartozó Programozás tantárgyhoz tartozó házi feladatom.
 % A feladatok közül a 11-es
 
-\documentclass[12pt,twoside,a4paper]{article}	%Article dokumentum
+\documentclass[12pt,a4paper]{article}	%Article dokumentum
 \usepackage[utf8]{inputenc}						%UTF-8-as kódolás
 \usepackage{t1enc}								%Furcsa betűk
 \usepackage{fancyhdr}							%For footer and header
@@ -12,8 +12,10 @@
 \usepackage{enumitem}							%For enumerations
 \usepackage{url}								%For URL-s
 \usepackage[headheight=56pt]{geometry}			
+%Packages for mathematical expressions
 \usepackage[fleqn]{amsmath}						%Mathematical expressions
 \usepackage{amsfonts}							%Mathematical fonts
+\usepackage{bm}									%Bolding
 %Packages for Table handling
 \usepackage{array}
 \usepackage{tabu}
@@ -70,7 +72,7 @@ A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
 \vspace{5mm} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \fejezet{Implementáció}\\
-\large{Adattípusok megvalósítása} \vspace{2mm} \\
+{\large Adattípusok megvalósítása} \vspace{2mm} \\
 A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek mérete \texttt{t.size()} alakban érhető el. Mivel a vektor C++-ban 0-tól indexelődik, így a tervbeli 2-től n-1-ig tartó ciklus az esetünkben \texttt{1-től t.size()-2-ig} fog tartani. A struktogramm kódja így:
 \texttt{
 	\begin{tabbing}
@@ -90,7 +92,20 @@ A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek m�
 	\}
 	\end{tabbing}
 }
-\large{Bemenő adatok formája} \vspace{2mm} \\
+\noindent {\large Bemenő adatok formája} \vspace{2mm}\\
+A bemenő adatokat egy szöveges állományból kell a tömbbe bemásolni. Az állományban a megadott neveket szóközökkel, tabulátor jelekkel vagy sorvége jelekkel elválasztva kell beírni. Az állomány minden sorát sorvége jel zárja le. Például: \vspace{1mm}\\
+\texttt{
+12 6 8 11\\
+45 \hspace{1cm} 78\\
+44 324
+}\vspace{2mm}\\
+{\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
+A kódban több függvényt is használunk. Az \texttt{Maxvolgy()} tartalmazza a tervben leírt keresést, a \texttt{ReadFromFile()} tölti fel egy szöveges állományból a tömböt nevekkel, ezeket a függvényeket pedig a \texttt{main()} hívja, amelyik az eredmény kiírását is végzi.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tikzpicture}
+\pgfsetcornersarced{\pgfpoint{5mm}{5mm}}
+\pgfpathrectanglecorners{\pgfpointorigin}{\pgfpoint{3cm}{2cm}}
+\pgfusepath{stroke}
+\end{tikzpicture}
 \fejezet{Tesztelési terv}
 \end{document}
