@@ -95,44 +95,27 @@ A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek m�
 	\end{tabbing}
 }
 \noindent {\large Bemenő adatok formája} \vspace{2mm}\\
-A bemenő adatokat egy szöveges állományból kell a tömbbe bemásolni. Az állományban a megadott neveket szóközökkel, tabulátor jelekkel vagy sorvége jelekkel elválasztva kell beírni. Az állomány minden sorát sorvége jel zárja le. Például: \vspace{1mm}\\
+A bemenő adatokat egy szöveges állományból kell a tömbbe bemásolni. Az állományban a megadott neveket szóközökkel, tabulátor jelekkel vagy sorvége jelekkel elválasztva kell beírni. Az állomány minden sorát sorvége jel zárja le. Például:
 \texttt{
-12 6 8 11\\
-45 \hspace{1cm} 78\\
-44 324
-}\vspace{2mm}\\
-{\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
+	\begin{tabbing}
+	\hspace{2cm}\= 12 6 8 11\+\\
+	45 \hspace{1cm} 78\\
+	44 324\-
+	\end{tabbing}
+}\vspace{2mm}
+\noindent {\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
 A kódban több függvényt is használunk. Az \texttt{Maxvolgy()} tartalmazza a tervben leírt keresést, a \texttt{ReadFromFile()} tölti fel egy szöveges állományból a tömböt nevekkel, ezeket a függvényeket pedig a \texttt{main()} hívja, amelyik az eredmény kiírását is végzi.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\fejezet{Tesztelési terv}
-Nah 
+\begin{center}
 \begin{tikzpicture}
-[auto,
-decision/.style={diamond, draw=blue, thick, fill=blue!20,
-text width=4.5em,align=flush center,
-inner sep=1pt},
-block/.style ={rectangle, draw=blue, thick, fill=blue!20,
-text width=5em,align=center, rounded corners,
-minimum height=4em},
-line/.style ={draw, thick, -latex’,shorten >=2pt},
-cloud/.style ={draw=red, thick, ellipse,fill=red!20,
-minimum height=2em}]
-\matrix [column sep=5mm,row sep=7mm]
-{
-% row 1
-\node [cloud] (expert) {expert}; &
-\node [block] (init) {initialize model}; &
-\node [cloud] (system) {system}; \\
-% row 2
-& \node [block] (identify) {identify candidate model}; & \\
-% row 3
-\node [block] (update) {update model}; &
-\node [block] (evaluate) {evaluate candidate models}; & \\
-% row 4
-& \node [decision] (decide) {is best candidate}; & \\
-% row 5
-& \node [block] (stop) {stop}; & \\
-};
-\end{tikzpicture}
+	[level distance=20mm, sibling distance=60mm, align=center, block/.style ={rectangle, draw=blue, thick, fill=blue!20,text width=10em,align=center, rounded corners, minimum height=4em}];
+	\node [block] (main) {\bfseries{main()}}
+		[child anchor=north]
+		child {node [block] (readfromfile) {\bfseries{ReadFromFile()}}}
+		child {node [block] (maxvolgy) {\bfseries{Maxvolgy()}}};
+\end{tikzpicture}\vspace{2mm}\\
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fejezet{Tesztelési terv}\\
+{\large A feladat specifikációjára épülő (fekete doboz) tesztesetek} \vspace{2mm}\\
+{\large A megoldó programra épülő (fehér doboz) tesztesek} \vspace{2mm}
 \end{document}
