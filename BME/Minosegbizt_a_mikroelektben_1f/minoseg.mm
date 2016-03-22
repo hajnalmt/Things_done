@@ -12,7 +12,7 @@
 <node CREATED="1458643095442" ID="ID_1253899246" MODIFIED="1458643117611" TEXT="Min&#x151;s&#xe9;g (Quality)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1458643119608" ID="ID_1594439731" MODIFIED="1458643219465" TEXT="Egy term&#xe9;k, vagy szolg&#xe1;ltat&#xe1;s min&#x151;s&#xe9;ge az a tulajdons&#xe1;ga, hogy mennyire fele meg a felhaszn&#xe1;l&#xe1;s pillanat&#xe1;ban a vev&#x151;i ig&#xe9;nyeknek, vagy egy r&#xf6;gz&#xed;tett k&#xf6;vetelem&#xe9;nyrendszernek, &#xe9;s mennyire marad ilyen &#xe1;llapotban meghat&#xe1;roztt &#xe9;lettartam &#xe9;s ig&#xe9;nybev&#xe9;tel ut&#xe1;n."/>
-<node CREATED="1458643221408" ID="ID_294075089" MODIFIED="1458643221408" TEXT=""/>
+<node CREATED="1458643221408" ID="ID_294075089" MODIFIED="1458643270094" TEXT="MIN&#x150;S&#xc9;G = a kimondott &#xe9;s kimondatlan ig&#xe9;nyeknek val megfelel&#xe9;s"/>
 </node>
 </node>
 </node>
