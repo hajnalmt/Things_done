@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1458237251937" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
+<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1458615557410" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -19,9 +19,9 @@
 </html>
 </richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531014862" ID="ID_1305375914" MODIFIED="1457531061155" POSITION="right" TEXT="1. Alapfogalmak">
+<node CREATED="1457531014862" FOLDED="true" ID="ID_1305375914" MODIFIED="1458615569949" POSITION="right" TEXT="1. Alapfogalmak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531063935" ID="ID_1965263102" MODIFIED="1458139158584" TEXT="Halmazok">
+<node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1458615568291" TEXT="Halmazok">
 <richcontent TYPE="NOTE"><html>
   <head>
     
