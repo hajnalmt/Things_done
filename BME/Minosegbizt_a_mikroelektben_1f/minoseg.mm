@@ -87,7 +87,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458653129465" ID="ID_1794704965" MODIFIED="1458653181108" POSITION="right" TEXT="0 b) A TQC, TQM &#xe9;s ISO 9xxx keletkez&#xe9;se, alapelvei, egy&#xe9;b min&#x151;s&#xe9;gbiztos&#xed;t&#xe1;si rendszerek">
+<node CREATED="1458653129465" ID="ID_1794704965" MODIFIED="1458653953958" POSITION="right" TEXT="0 b) A TQC, TQM &#xe9;s ISO 9xxx keletkez&#xe9;se, alapelvei, egy&#xe9;b min&#x151;s&#xe9;gbiztos&#xed;t&#xe1;si rendszerek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1458653212905" ID="ID_1303873405" MODIFIED="1458653234672" TEXT="Az alapvet&#x151; rendszerek eredete, filoz&#xf3;fiai alapja">
 <node CREATED="1458653236553" ID="ID_185050302" MODIFIED="1458653240862" TEXT="TQC">
@@ -100,8 +100,117 @@
 <node CREATED="1458653242465" ID="ID_1878358707" MODIFIED="1458653245343" TEXT="TQM">
 <node CREATED="1458653315905" ID="ID_355389639" MODIFIED="1458653324294" TEXT="Rohamosan fejl&#x151;d&#x151; USA"/>
 <node CREATED="1458653334321" ID="ID_254215941" MODIFIED="1458653348950" TEXT="Vezet&#x151;i kezdem&#xe9;nyez&#xe9;s"/>
+<node CREATED="1458653420370" ID="ID_1981213974" MODIFIED="1458653451615" TEXT="Ir&#xe1;ny&#xed;t&#xe1;si filoz&#xf3;fia"/>
+<node CREATED="1458653430745" ID="ID_200682680" MODIFIED="1458653446862" TEXT="Alapvet&#x151; az &#xe1;lland&#xf3; fejleszt&#xe9;s">
+<node CREATED="1458653466025" ID="ID_1684107850" MODIFIED="1458653468942" TEXT="PDCA ciklus"/>
 </node>
-<node CREATED="1458653246505" ID="ID_1346488800" MODIFIED="1458653252183" TEXT="ISO 9xxxx"/>
+<node CREATED="1458653452769" ID="ID_332279544" MODIFIED="1458653477894" TEXT="jutalmaz-b&#xfc;ntet"/>
+<node CREATED="1458653485009" ID="ID_1094452220" MODIFIED="1458653503855" TEXT="Nincs el&#x151;&#xed;rt adminisztr&#xe1;ci&#xf3;"/>
+<node CREATED="1458653494731" ID="ID_165668960" MODIFIED="1458653498664" TEXT="Nincs Audit"/>
+</node>
+<node CREATED="1458653246505" ID="ID_1346488800" MODIFIED="1458653252183" TEXT="ISO 9xxxx">
+<node CREATED="1458653506161" ID="ID_478525392" MODIFIED="1458653513422" TEXT="Egys&#xe9;ges&#xfc;l&#x151; Eur&#xf3;pa"/>
+<node CREATED="1458653514585" ID="ID_1242102967" MODIFIED="1458653525943" TEXT="Vezet&#x151;i kezdem&#xe9;nyez&#xe9;s"/>
+<node CREATED="1458653526985" ID="ID_1198211581" MODIFIED="1458653534414" TEXT="Szabv&#xe1;ny"/>
+<node CREATED="1458653535737" ID="ID_56510045" MODIFIED="1458653544231" TEXT="Ellen&#x151;rz&#xf6;tt k&#xf6;vetelm&#xe9;nyek"/>
+<node CREATED="1458653546689" ID="ID_1498165884" MODIFIED="1458653554711" TEXT="Sok adminisztr&#xe1;ci&#xf3;"/>
+</node>
+</node>
+<node CREATED="1458653562321" ID="ID_1586025883" MODIFIED="1458653950676" TEXT="A TQM alapelemei">
+<node CREATED="1458653580390" ID="ID_915767500" MODIFIED="1458653589694" TEXT="Vev&#x151; k&#xf6;zpont&#xfa;s&#xe1;g"/>
+<node CREATED="1458653590657" ID="ID_476417155" MODIFIED="1458653597270" TEXT="Folyamatok folyamatos jav&#xed;t&#xe1;sa"/>
+<node CREATED="1458653598401" ID="ID_1707890371" MODIFIED="1458653606776" TEXT="Teljes elk&#xf6;telezetts&#xe9;g &#xe9;s felhatalmaz&#xe1;s"/>
+<node CREATED="1458653607825" ID="ID_379817081" MODIFIED="1458653613199" TEXT="Kieg&#xe9;sz&#xed;t&#x151; elemek">
+<node CREATED="1458653613905" ID="ID_1842923411" MODIFIED="1458653619366" TEXT="Kommunik&#xe1;ci&#xf3;"/>
+<node CREATED="1458653620465" ID="ID_1813120442" MODIFIED="1458653743993" TEXT="M&#xe9;r&#xe9;s, elemz&#xe9;s"/>
+<node CREATED="1458653623929" ID="ID_1421305811" MODIFIED="1458653627902" TEXT="TQM vezet&#xe9;s"/>
+<node CREATED="1458653628793" ID="ID_172521129" MODIFIED="1458653634510" TEXT="Elismer&#xe9;s"/>
+<node CREATED="1458653635832" ID="ID_288783805" MODIFIED="1458653638598" TEXT="K&#xe9;pz&#xe9;s"/>
+<node CREATED="1458653639481" ID="ID_1698152216" MODIFIED="1458653649447" TEXT="T&#xe1;mogat&#xf3; strukt&#xfa;r&#xe1;k"/>
+<node CREATED="1458653709953" ID="ID_410098423" MODIFIED="1458653716991" TEXT="&#xc9;rt&#xe9;kel&#xe9;s"/>
+<node CREATED="1458653719521" ID="ID_1130098973" MODIFIED="1458653723504" TEXT="Motiv&#xe1;ci&#xf3;"/>
+<node CREATED="1458653724585" ID="ID_582692271" MODIFIED="1458653733459" TEXT="Rugalmas szervezet"/>
+</node>
+<node CREATED="1458653676241" FOLDED="true" ID="ID_1708084910" MODIFIED="1458653937398" TEXT="C&#xe9;l: hossz&#xfa;t&#xe1;v&#xfa; sikerek a vev&#x151;i megel&#xe9;gedetts&#xe9;g &#xfa;tj&#xe1;n">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458653756985" ID="ID_889152975" MODIFIED="1458653765806" TEXT="Vev&#x151; megelgedetts&#xe9;g alapelemei">
+<node CREATED="1458653769185" ID="ID_1695240583" MODIFIED="1458653772223" TEXT="Min&#x151;s&#xe9;g "/>
+<node CREATED="1458653773433" ID="ID_1198837891" MODIFIED="1458653781854" TEXT="Mindig el&#xe9;rhet&#x151; mennyis&#xe9;g (nincs hi&#xe1;ny)"/>
+<node CREATED="1458653782841" ID="ID_534121566" MODIFIED="1458653793110" TEXT="Pontoss&#xe1;g, gyorsas&#xe1;g, udvariass&#xe1;g"/>
+<node CREATED="1458653794337" ID="ID_657054924" MODIFIED="1458653809632" TEXT="Rendekez&#xe9;sre &#xe1;ll&#xe1;s, kieg&#xe9;sz&#xed;t&#x151; inform&#xe1;ci&#xf3;k"/>
+<node CREATED="1458653810657" ID="ID_248815243" MODIFIED="1458653813417" TEXT="Rugalmass&#xe1;g"/>
+<node CREATED="1458653814169" ID="ID_1650636838" MODIFIED="1458653829326" TEXT="Reag&#xe1;l&#xe1;si (v&#xe1;laszad&#xe1;si) gyorsas&#xe1;g"/>
+<node CREATED="1458653830401" ID="ID_491372362" MODIFIED="1458653833734" TEXT="Tart&#xf3;ss&#xe1;g"/>
+<node CREATED="1458653834737" ID="ID_853360862" MODIFIED="1458653837534" TEXT="Megb&#xed;zhat&#xf3;s&#xe1;g"/>
+<node CREATED="1458653838233" ID="ID_1374711647" MODIFIED="1458653847141" TEXT="Tartoz&#xe9;kok, szervizelhet&#x151;s&#xe9;g"/>
+</node>
+<node CREATED="1458653853057" ID="ID_1539091954" MODIFIED="1458653864974" TEXT="&#xc1;lland&#xf3; fejleszt&#xe9;si, PDCA ciklus">
+<node CREATED="1458653865737" ID="ID_522315885" MODIFIED="1458653884831" TEXT="Tervezz (Plan)"/>
+<node CREATED="1458653873809" ID="ID_491153686" MODIFIED="1458653881522" TEXT="Csin&#xe1;ld (Do)"/>
+<node CREATED="1458653886280" ID="ID_533468890" MODIFIED="1458653897655" TEXT="Ellen&#x151;rizd (Check)"/>
+<node CREATED="1458653898873" ID="ID_1641108707" MODIFIED="1458653915414" TEXT="Cselekedj (Act)"/>
+<node CREATED="1458653918889" ID="ID_277725201" MODIFIED="1458653928634" TEXT="A n&#xe9;gy elem egym&#xe1;sb&#xf3;l k&#xf6;vetkez&#x151; alkalmaz&#xe9;sa"/>
+</node>
+</node>
+</node>
+<node CREATED="1458653954985" ID="ID_1242351005" MODIFIED="1458653964424" TEXT="Az ISO 9xxx szabv&#xe1;nycsal&#xe1;d">
+<node CREATED="1458653965417" ID="ID_777928206" MODIFIED="1458654040288" TEXT="T&#xf6;rt&#xe9;neti el&#x151;zm&#xe9;nye">
+<node CREATED="1458654041881" ID="ID_1481075788" MODIFIED="1458654048396" TEXT="BS5750 - 1979-ben jelent meg"/>
+<node CREATED="1458653990209" ID="ID_756027490" MODIFIED="1458653997739" TEXT="987 els&#x151; kiad&#xe1;s, 1994 &#xe9;s 2000 jelent&#x151;s v&#xe1;ltoz&#xe1;sok, 1992: 1994: 1995: 1996: 1998 klf. Kieg&#xe9;sz&#xed;t&#xe9;sek"/>
+<node CREATED="1458654014457" ID="ID_1938058751" MODIFIED="1458654016075" TEXT="A szervezeteknek a bevezetett int&#xe9;zked&#xe9;seket tan&#xfa;s&#xed;ttatni (audit&#xe1;ltatni) kell"/>
+</node>
+<node CREATED="1458654053321" ID="ID_200968898" MODIFIED="1458654065865" TEXT="K&#xf6;vetelm&#xe9;nyek legfontosabb ter&#xfc;letei">
+<node CREATED="1458654068273" ID="ID_1537206931" MODIFIED="1458654076318" TEXT="Vil&#xe1;gos &#xe9;rt&#xe9;krend r&#xf6;gz&#xed;t&#xe9;se"/>
+<node CREATED="1458654077481" ID="ID_1584781647" MODIFIED="1458654096287" TEXT="Olyan rendszer kialak&#xed;t&#xe1;sa, amely hibamegel&#x151;z&#xe9;sre, folyamatszab&#xe1;lyoz&#xe1;sra alkalmas"/>
+<node CREATED="1458654099033" ID="ID_126173178" MODIFIED="1458654111351" TEXT="A felel&#x151;ss&#xe9;gi k&#xf6;r&#xf6;k pontos r&#xf6;gz&#xed;t&#xe9;se"/>
+<node CREATED="1458654112705" ID="ID_919295546" MODIFIED="1458654127118" TEXT="A bels&#x151; szervezeti kapcsolatok pontos szab&#xe1;lyoz&#xe1;sa"/>
+<node CREATED="1458654128337" ID="ID_1926263547" MODIFIED="1458654136598" TEXT="A vev&#x151;i kapcsolatok szab&#xe1;lyoz&#xe1;sa"/>
+<node CREATED="1458654137753" ID="ID_1057507321" MODIFIED="1458654145634" TEXT="A sz&#xe1;ll&#xed;t&#xf3;i kapcsolatok szab&#xe1;lyoz&#xe1;sa"/>
+<node CREATED="1458654147689" ID="ID_1040769699" MODIFIED="1458654157782" TEXT="Sz&#xe1;mszer&#x171;s&#xed;tett term&#xe9;k- &#xe9;s gy&#xe1;rt&#xe1;s-biztons&#xe1;g"/>
+</node>
+<node CREATED="1458654215121" ID="ID_1571995899" MODIFIED="1458654223105" TEXT="Dokument&#xe1;ci&#xf3;s hierarchia">
+<node CREATED="1458654232345" ID="ID_1653783669" MODIFIED="1458654237791" TEXT="Vezet&#x151;i nyilatkozat."/>
+<node CREATED="1458654238729" ID="ID_884607847" MODIFIED="1458654290321" TEXT="Min&#x151;s&#xe9;gi c&#xe9;lok (min&#x151;s&#xe9;gpolitika)"/>
+<node CREATED="1458654244921" ID="ID_1237733842" MODIFIED="1458654314374" TEXT="Mini&#x151;s&#xe9;gbiztos&#xed;t&#xe1;si k&#xe9;zik&#xf6;nyv (k&#xf6;vetem&#xe9;nyek, felel&#x151;s&#xf6;k)">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1458654293697" ID="ID_1408627814" MODIFIED="1458654327050" TEXT="Elj&#xe1;r&#xe1;sok &#xe9;s term&#xe9;kek k&#xe9;zik&#xf6;nyve (m&#x171;veletek szab&#xe1;lyoz&#xe1;sa)"/>
+<node CREATED="1458654328129" ID="ID_1505746275" MODIFIED="1458654343670" TEXT="A rendszer m&#x171;k&#xf6;dtet&#xe9;si utas&#xed;t&#xe1;sai (munkautas&#xed;t&#xe1;sok)"/>
+<node CREATED="1458654345945" ID="ID_539308128" MODIFIED="1458654362175" TEXT="Bizonylatok, nyilv&#xe1;ntart&#xe1;sok, &#x171;rlapok gy&#x171;jtem&#xe9;nye"/>
+<node COLOR="#ff0000" CREATED="1458654372489" ID="ID_44837968" MODIFIED="1458654411624" TEXT="FEL&#xc9;P&#xcd;T&#xc9;S (h&#xe1;romsz&#xf6;g &#xe1;bra)">
+<node CREATED="1458654380505" ID="ID_1091227987" MODIFIED="1458654390710" TEXT="Min&#x151;s&#xe9;gbiztos&#xed;t&#xe1;si k&#xe9;zik&#xf6;ny"/>
+<node CREATED="1458654391929" ID="ID_605849699" MODIFIED="1458654421095" TEXT="Min&#x151;s&#xe9;gbiztos&#xed;t&#xe1;si elj&#xe1;r&#xe1;sok"/>
+<node CREATED="1458654422049" ID="ID_1333048681" MODIFIED="1458654426080" TEXT="Munkautas&#xed;t&#xe1;sok"/>
+<node CREATED="1458654426873" ID="ID_1602615261" MODIFIED="1458654440952" TEXT="&#x170;rlapok jegysz&#x151;k&#xf6;nyvek, dokumentumok"/>
+</node>
+</node>
+</node>
+<node CREATED="1458654462001" ID="ID_1886410259" MODIFIED="1458654476766" TEXT="V&#xe1;llalatir&#xe1;ny&#xed;t&#xe1;si rendszer gyakorlati m&#x171;k&#xf6;dtet&#xe9;se ">
+<node CREATED="1458654487153" ID="ID_1360968859" MODIFIED="1458654488153" TEXT="Hat&#xe9;kony v&#xe1;llalatir&#xe1;ny&#xed;t&#xe1;s (benne min&#x151;s&#xe9;gszab&#xe1;lyoz&#xe1;s) csak j&#xf3;l ki&#xe9;p&#xed;tett inform&#xe1;ci&#xf3;s rendszerrel lehets&#xe9;ges.">
+<node COLOR="#ff0000" CREATED="1458654493441" ID="ID_1644352498" MODIFIED="1458654534169" TEXT="ERP (Enterprise Resource Planning)">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458654514081" ID="ID_1909734776" MODIFIED="1458654528872" TEXT="A v&#xe1;llalat er&#x151;forr&#xe1;s tervez&#xe9;s&#xe9;t lehet&#x151;v&#xe9; tev&#x151; hardver- szoftver rendszer. Gyakori alrendszerei">
+<node CREATED="1458654541329" ID="ID_1165305100" MODIFIED="1458654543343" TEXT="P&#xe9;nz&#xfc;gy"/>
+<node CREATED="1458654544330" ID="ID_1552457747" MODIFIED="1458654546364" TEXT="Munka&#xfc;gy"/>
+<node CREATED="1458654548073" ID="ID_438624547" MODIFIED="1458654549688" TEXT="Beruh&#xe1;z&#xe1;s"/>
+<node CREATED="1458654550657" ID="ID_1548906336" MODIFIED="1458654556184" TEXT="Anyaggazd&#xe1;lkod&#xe1;s"/>
+<node CREATED="1458654557313" ID="ID_58382972" MODIFIED="1458654562007" TEXT="Logisztika"/>
+<node CREATED="1458654563233" ID="ID_937604466" MODIFIED="1458654566455" TEXT="Min&#x151;s&#xe9;g&#xfc;gy"/>
+<node CREATED="1458654567473" ID="ID_120631360" MODIFIED="1458654570832" TEXT="Karbantart&#xe1;s"/>
+</node>
+<node CREATED="1458654577385" ID="ID_1225637090" MODIFIED="1458654595769" TEXT="Els&#x151;sorban k&#xf6;z&#xe9;p &#xe9;s hosszabb t&#xe1;v&#xfa; tervez&#xe9;s"/>
+</node>
+<node COLOR="#ff0000" CREATED="1458654602313" ID="ID_1665122190" MODIFIED="1458654621649" TEXT="MES (Manufacturing Execution System)">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458654626330" ID="ID_814095514" MODIFIED="1458654637521" TEXT="A gy&#xe1;rt&#xe1;s napi, &#x201e;m&#x171;hely&#x201d; szint&#x171; t&#xe1;mogat&#xe1;s&#xe1;t v&#xe9;gz&#x151; rendszer. Bemen&#x151; inform&#xe1;ci&#xf3;it a termel&#xe9;sben telep&#xed;tett szenzorok &#xe9;s k&#xfc;l&#xf6;nb&#xf6;z&#x151; dolgoz&#xf3;i adatbevitelek szolg&#xe1;ltatj&#xe1;k">
+<node CREATED="1458654671298" ID="ID_1204687592" MODIFIED="1458654677112" TEXT="Be&#xe1;ll&#xed;t&#xe1;si param&#xe9;terek"/>
+<node CREATED="1458654678129" ID="ID_1725857797" MODIFIED="1458654708658" TEXT="Ellen&#x151;rz&#xe9;sek adatai"/>
+<node CREATED="1458654682353" ID="ID_65122671" MODIFIED="1458654695382" TEXT="Jav&#xed;t&#xf3;&#xe1;llom&#xe1;sok inform&#xe1;ci&#xf3;i"/>
+<node CREATED="1458654696369" ID="ID_193397386" MODIFIED="1458654701856" TEXT="Karbantart&#xe1;si inform&#xe1;ci&#xf3;k"/>
+</node>
+<node CREATED="1458654645153" ID="ID_11183691" MODIFIED="1458654667582" TEXT="A min&#x151;s&#xe9;g&#xfc;gyi folyamatok val&#xf3;s id&#x151;ben t&#xf6;rt&#xe9;n&#x151; figyelemmel k&#xed;s&#xe9;r&#xe9;s&#xe9;nek fontos eszk&#xf6;ze, adatait feladja az ERP szintre is"/>
+</node>
+</node>
 </node>
 </node>
 </node>
