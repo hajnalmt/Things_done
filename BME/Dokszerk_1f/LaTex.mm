@@ -1105,14 +1105,14 @@
 </node>
 </node>
 </node>
-<node CREATED="1458223452601" FOLDED="true" ID="ID_1353321532" MODIFIED="1458242705537" POSITION="left" TEXT="6) Tabul&#xe1;l&#xe1;s &#xe9;s t&#xe1;bl&#xe1;zatok szerkeszt&#xe9;se">
+<node CREATED="1458223452601" FOLDED="true" ID="ID_1353321532" MODIFIED="1458650786285" POSITION="left" TEXT="6) Tabul&#xe1;l&#xe1;s &#xe9;s t&#xe1;bl&#xe1;zatok szerkeszt&#xe9;se">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1458224126332" FOLDED="true" ID="ID_855817327" MODIFIED="1458237263992" TEXT="tabul&#xe1;l&#xe1;s">
 <node CREATED="1458223474596" ID="ID_662864407" MODIFIED="1458224150855" TEXT="tabbing k&#xf6;rnyezettel">
 <node CREATED="1458224096235" ID="ID_789015495" MODIFIED="1458224100639" TEXT="el&#xe9;g k&#xf6;r&#xfc;lm&#xe9;nyes"/>
 </node>
 </node>
-<node CREATED="1458224160379" FOLDED="true" ID="ID_713774277" MODIFIED="1458242704393" TEXT="t&#xe1;bl&#xe1;zat">
+<node CREATED="1458224160379" FOLDED="true" ID="ID_713774277" MODIFIED="1458650784588" TEXT="t&#xe1;bl&#xe1;zat">
 <node CREATED="1458224031547" FOLDED="true" ID="ID_403326902" MODIFIED="1458238275680" TEXT="tabular k&#xf6;rnyezettel ">
 <node CREATED="1458224345555" ID="ID_544934610" MODIFIED="1458224354064" TEXT="a k&#xf6;rnyezet argumentuma hat&#xe1;rozza meg:">
 <node CREATED="1458224355355" ID="ID_355641379" MODIFIED="1458224364860" TEXT="h&#xe1;ny oszlop"/>
@@ -1246,7 +1246,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458226255795" FOLDED="true" ID="ID_125184539" MODIFIED="1458238277610" TEXT="Kiad&#xf3; min&#x151;s&#xe9;g&#x171; t&#xe1;bl&#xe1;zatok">
+<node CREATED="1458226255795" FOLDED="true" ID="ID_125184539" MODIFIED="1458650783170" TEXT="Kiad&#xf3; min&#x151;s&#xe9;g&#x171; t&#xe1;bl&#xe1;zatok">
 <node CREATED="1458226275371" ID="ID_1624515893" MODIFIED="1458226427159" TEXT="Picit elt&#xe9;r&#x151; a tipogr&#xe1;fia a hagyom&#xe1;sokhoz k&#xe9;pest">
 <node CREATED="1458226291429" ID="ID_1943945768" MODIFIED="1458226298813" TEXT="t&#xe1;bl&#xe1;zat tetej&#xe9;re &#xe9;s alj&#xe1;ra vastagabb vonal kell, mint a k&#xf6;ztesek"/>
 <node CREATED="1458226314092" ID="ID_1508335652" MODIFIED="1458226315365" TEXT="A t&#xe1;bl&#xe1;zat k&#xe9;t sz&#xe9;l&#xe9;n ne legyenek extra t&#xe9;rk&#xf6;z&#xf6;k, melyek a form&#xe1;tumvez&#xe9;rl&#x151; k&#xe9;t sz&#xe9;l&#xe9;re &#xed;rt egy-egy @{} paranccsal megoldhat&#xf3;"/>
@@ -1254,8 +1254,8 @@
 </node>
 <node CREATED="1458226436099" ID="ID_1311786745" MODIFIED="1458226446592" TEXT="booktabs csomag"/>
 </node>
-<node CREATED="1458226698331" ID="ID_187084442" MODIFIED="1458238327531" TEXT="Form&#xe1;z&#xe1;s">
-<node CREATED="1458226706699" FOLDED="true" ID="ID_959985789" MODIFIED="1458238279329" TEXT="T&#xf6;mb&#xf6;k">
+<node CREATED="1458226698331" FOLDED="true" ID="ID_187084442" MODIFIED="1458650780260" TEXT="Form&#xe1;z&#xe1;s">
+<node CREATED="1458226706699" FOLDED="true" ID="ID_959985789" MODIFIED="1458649838228" TEXT="T&#xf6;mb&#xf6;k">
 <node CREATED="1458226710819" ID="ID_176405381" MODIFIED="1458226711672" TEXT=" \begin{tabular}[poz]{oszl}">
 <node CREATED="1458226724133" ID="ID_1075928201" MODIFIED="1458237573611" TEXT="poz param&#xe9;ter az illeszt&#xe9;s m&#xf3;dj&#xe1;t adja meg">
 <node CREATED="1458226740539" ID="ID_1068103310" MODIFIED="1458226775731" TEXT="t (top)">
@@ -1271,7 +1271,7 @@
 </node>
 </node>
 <node CREATED="1458226972427" ID="ID_654275710" MODIFIED="1458238328629" TEXT="&#xda;sztat&#xe1;s">
-<node CREATED="1458226978012" FOLDED="true" ID="ID_1200880257" MODIFIED="1458238344800" TEXT="table k&#xf6;rnyezet">
+<node CREATED="1458226978012" FOLDED="true" ID="ID_1200880257" MODIFIED="1458650776740" TEXT="table k&#xf6;rnyezet">
 <node CREATED="1458227015131" ID="ID_1418765863" MODIFIED="1458227030161" TEXT="Be kell &quot;burkolni&quot; vele a tabular k&#xf6;rnyezetet"/>
 <node CREATED="1458227037324" ID="ID_1888119116" MODIFIED="1458227052553" TEXT="Opcion&#xe1;lis param&#xe9;ter a t&#xe1;bl&#xe1;zat hely&#xe9;re az oldalon">
 <node CREATED="1458227053859" ID="ID_1399930346" MODIFIED="1458227066985" TEXT="t (top)-tetej&#xe9;re"/>
@@ -1295,10 +1295,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1458227406731" FOLDED="true" ID="ID_787701775" MODIFIED="1458238322415" TEXT="Array csomag">
+<node CREATED="1458227406731" FOLDED="true" ID="ID_787701775" MODIFIED="1458649836345" TEXT="Array csomag">
 <node CREATED="1458227411955" ID="ID_1239459744" MODIFIED="1458227447400" TEXT="sorkiz&#xe1;rts&#xe1;g miatt gyakran cs&#xfa;nya a kimenet adott oszlopsz&#xe9;less&#xe9;ggel"/>
 </node>
-<node CREATED="1458227605917" FOLDED="true" ID="ID_1922273610" MODIFIED="1458238326360" TEXT="Tabularx csomag">
+<node CREATED="1458227605917" FOLDED="true" ID="ID_1922273610" MODIFIED="1458650781441" TEXT="Tabularx csomag">
 <node CREATED="1458227639763" ID="ID_711816194" MODIFIED="1458227650824" TEXT="adott sz&#xe9;less&#xe9;g&#x171; t&#xe1;bl&#xe1;zat beilleszt&#xe9;se"/>
 <node CREATED="1458227667740" ID="ID_494703673" MODIFIED="1458237298456" TEXT="\begin{tabularx}{sz&#xe9;l}[poz]{oszl} ">
 <node CREATED="1458227675052" ID="ID_1364278464" MODIFIED="1458227700837" TEXT="els&#x151; argumentuma a t&#xe1;bl&#xe1;zat sz&#xe9;less&#xe9;ge"/>
