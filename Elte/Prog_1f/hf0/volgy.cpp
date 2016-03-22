@@ -95,13 +95,13 @@ bool Maxvolgy(bool &l, int &max, int &ind , const vector<int> &t)
         if (t[i-1] > t[i] && t[i+1] > t[i] && l) {
             if (t[i] > max) {
                 max = t[i];
-                ind = i-1;
+                ind = i+1;
             }
         }
         else if (t[i-1] > t[i] && t[i+1] > t[i]) {
             l = true;
             max = t[i];
-            ind = i-1;
+            ind = i+1;
         }
     }
     return l;
