@@ -2,29 +2,32 @@
 % Az Elte Programtervező Informatikus szakához tartozó Programozás tantárgyhoz tartozó házi feladatom.
 % A feladatok közül a 11-es
 
-\documentclass[12pt,a4paper]{article}	%Article dokumentum
+\documentclass[12pt,a4paper]{article}			%Article dokumentum
 \usepackage[utf8]{inputenc}						%UTF-8-as kódolás
 \usepackage{t1enc}								%Furcsa betűk
 \usepackage{fancyhdr}							%For footer and header
+
+%LANGUAGE-FONT
 %texlive-lang-hungarian package should be installed!
 \usepackage[english,magyar]{babel}				%Magyar nyelv 
 \usepackage{mathptmx}							%Times New Roman font
 \usepackage{enumitem}							%For enumerations
 \usepackage{url}								%For URL-s
-\usepackage[headheight=56pt]{geometry}			
-%Packages for mathematical expressions
+\usepackage[headheight=56pt]{geometry}			%For the heading gap
+
+%MATHEMATICAL EXPRESSIONS
 \usepackage[fleqn]{amsmath}						%Mathematical expressions
 \usepackage{amsfonts}							%Mathematical fonts
 \usepackage{bm}									%Bolding
-%Packages for Table handling
+
+%TABLES, TABULATING, DRAWING
 \usepackage{array}
 \usepackage{tabu}
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{tikz}
-\usepackage{pgf}
-\usepackage{color}
 
+%HEADER
 \sloppy
 \fancyhead{}
 \fancyhead[C]{\textbf{0.beadandó feladat/11.feladat}}
@@ -32,90 +35,106 @@
 \fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
 \pagestyle{fancy}
 
+%Fejezet stílus deklaráció
 \newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{5mm}}}}
 
+%DOCUMENT
 \begin{document}
-\pagenumbering{arabic}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fejezet{Feladat}\\
-\textit{A föld felszínének egy vonala mentén egyenlő távolságonként megmértük a terep tengerszint feletti magasságát és a mért értékeket egy tömbben tároljuk. Keressük meg a legmagasabb völgyet a mérési sorozatban!}
-\vspace{5mm} \\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fejezet{Specifikáció}\\
-Az értékeket egy tömbben tároljuk.
-\begin{flalign*}
-&A=(t:\mathbb{R}^n,~max:\mathbb{R},~ind:\mathbb{N},~l:\mathbb{L})\\
-&Ef=(t=t')\\
-&Uf=(Ef~\wedge~\max_{i=2,~t[i]<t[i-1],~t[i]<t[i+1]}^{i=n-1}=t[i])
-\end{flalign*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fejezet{Algoritmus}\\
-A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
-%%%%% Megfeleltetés %%%%%
-\begin{flalign*}
-&m..n~\sim~2..n-1\\
-&\beta~\sim~t[i]<t[i-1],~t[i]<t[i+1]\\
-&f(i)~\sim~t[i]
-\end{flalign*}
-%%%%% Table %%%%%
-\begin{tabular}{|m{1em}|m{7em}|m{7em}|m{3em}|m{8em}|}
-\hline
-	\multicolumn{5}{|c|}{$l:=hamis$}\\
-\hline
-	\multicolumn{5}{|c|}{$i=2..n-1$}\\
-\cline{2-5}
-	& $t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
-	\multicolumn{2}{c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
-	$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$ \\
-\cline{2-5}
-	 \multirow{2}{*}{} & \multirow{2}{*}{SKIP} & \multicolumn{2}{c|}{$max < t[i]$} & $l,~max,~ind :=$  \\\cline{3-4} & & $max,~ind:=t[i],~i$ & SKIP & $igaz,~t[i],~i$ \\
-\hline
-\end{tabular}\\
-\vspace{5mm} \\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fejezet{Implementáció}\\
-{\large Adattípusok megvalósítása} \vspace{2mm} \\
-A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek mérete \texttt{t.size()} alakban érhető el. Mivel a vektor C++-ban 0-tól indexelődik, így a tervbeli 2-től n-1-ig tartó ciklus az esetünkben \texttt{1-től t.size()-2-ig} fog tartani. A struktogramm kódja így:
-\texttt{
-	\begin{tabbing}
-		\hspace{2cm}\= l=false \+\\
-		for (int i=1; i < t.size()-1; ++i) \{\\
-		\hspace{1cm}\= if (t[i-1] > t[i] \&\& t[i+1] > t[i] \&\& l) \{ \+\\
-			\hspace{1cm}\=if (t[i] > max) \{ \+\\
-			\hspace{1cm}\=max = t[i]; \+\\
-			ind = i-1;\-\\
-			\}\-\\
-		\}\\
-		else if (t[i-1] > t[i] \&\& t[i+1] > t[i]) \{ \+\\
-			l = true;\\
-			max = t[i];\\
-			ind = i-1;\-\\
-		\} \-\\
-	\}
-	\end{tabbing}
-}
-\noindent {\large Bemenő adatok formája} \vspace{2mm}\\
-A bemenő adatokat egy szöveges állományból kell a tömbbe bemásolni. Az állományban a megadott neveket szóközökkel, tabulátor jelekkel vagy sorvége jelekkel elválasztva kell beírni. Az állomány minden sorát sorvége jel zárja le. Például:
-\texttt{
-	\begin{tabbing}
-	\hspace{2cm}\= 12 6 8 11\+\\
-	45 \hspace{1cm} 78\\
-	44 324\-
-	\end{tabbing}
-}\vspace{2mm}
-\noindent {\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
-A kódban több függvényt is használunk. Az \texttt{Maxvolgy()} tartalmazza a tervben leírt keresést, a \texttt{ReadFromFile()} tölti fel egy szöveges állományból a tömböt nevekkel, ezeket a függvényeket pedig a \texttt{main()} hívja, amelyik az eredmény kiírását is végzi.
-\begin{center}
-\begin{tikzpicture}
-	[level distance=20mm, sibling distance=60mm, align=center, block/.style ={rectangle, draw=blue, thick, fill=blue!20,text width=10em,align=center, rounded corners, minimum height=4em}];
-	\node [block] (main) {\bfseries{main()}}
-		[child anchor=north]
-		child {node [block] (readfromfile) {\bfseries{ReadFromFile()}}}
-		child {node [block] (maxvolgy) {\bfseries{Maxvolgy()}}};
-\end{tikzpicture}\vspace{2mm}\\
-\end{center}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fejezet{Tesztelési terv}\\
-{\large A feladat specifikációjára épülő (fekete doboz) tesztesetek} \vspace{2mm}\\
-{\large A megoldó programra épülő (fehér doboz) tesztesek} \vspace{2mm}
+	\pagenumbering{arabic}
+	
+	%% Feladat fejezet %%
+	\fejezet{Feladat}\\
+	\textit{A föld felszínének egy vonala mentén egyenlő távolságonként megmértük a terep tengerszint feletti magasságát és a mért értékeket egy tömbben tároljuk. Keressük meg a legmagasabb völgyet a mérési sorozatban!}
+	\vspace{5mm}
+
+	%% Specifikáció fejezet %%
+	\fejezet{Specifikáció}\\
+	Az értékeket egy tömbben tároljuk.
+		% A feladat definiálása, Adathalmaz, Előfeltétel, Utófeltétel %
+		\begin{flalign*}
+			&A=(t:\mathbb{R}^n,~max:\mathbb{R},~ind:\mathbb{N},~l:\mathbb{L})\\
+			&Ef=(t=t')\\
+			&Uf=(Ef~\wedge~\max_{i=2,~t[i]<t[i-1],~t[i]<t[i+1]}^{i=n-1}=t[i])
+		\end{flalign*}
+	
+	%% Algoritmus fejezet %%
+	\fejezet{Algoritmus}\\
+	A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
+		% Megfeleltetés%
+		\begin{flalign*}
+			&m..n~\sim~2..n-1\\
+			&\beta~\sim~t[i]<t[i-1],~t[i]<t[i+1]\\
+			&f(i)~\sim~t[i]
+		\end{flalign*}
+		% Table %
+		\begin{tabular}{|m{1em}|m{7em}|m{7em}|m{3em}|m{8em}|}
+			\hline
+				\multicolumn{5}{|c|}{$l:=hamis$}\\
+			\hline
+				\multicolumn{5}{|c|}{$i=2..n-1$}\\
+			\cline{2-5}
+				& $t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
+				\multicolumn{2}{c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
+				$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$ \\
+			\cline{2-5}
+				 \multirow{2}{*}{} & \multirow{2}{*}{SKIP} & \multicolumn{2}{c|}{$max < t[i]$} & $l,~max,~ind :=$  \\\cline{3-4} & & $max,~ind:=t[i],~i$ & SKIP & $igaz,~t[i],~i$ \\
+			\hline
+		\end{tabular}\\
+		\vspace{5mm} 
+	
+	%% Implementáció fejezet %%
+	\fejezet{Implementáció}\\
+		% Adattípusok %
+		{\large Adattípusok megvalósítása} \vspace{2mm} \\
+		A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek mérete \texttt{t.size()} alakban érhető el. Mivel a vektor C++-ban 0-tól indexelődik, így a tervbeli 2-től n-1-ig tartó ciklus az esetünkben \texttt{1-től t.size()-2-ig} fog tartani. A struktogramm kódja így:
+		% A struktogramm %
+		\texttt{
+			\begin{tabbing}
+				\hspace{2cm}\= l=false \+\\
+				for (int i=1; i < t.size()-1; ++i) \{\\
+				\hspace{1cm}\= if (t[i-1] > t[i] \&\& t[i+1] > t[i] \&\& l) \{ \+\\
+					\hspace{1cm}\=if (t[i] > max) \{ \+\\
+					\hspace{1cm}\=max = t[i]; \+\\
+					ind = i-1;\-\\
+					\}\-\\
+				\}\\
+				else if (t[i-1] > t[i] \&\& t[i+1] > t[i]) \{ \+\\
+					l = true;\\
+					max = t[i];\\
+					ind = i-1;\-\\
+				\} \-\\
+			\}
+			\end{tabbing}
+		}
+		% Bemenő adattípusok %
+		\noindent {\large Bemenő adatok formája} \vspace{2mm}\\
+		A bemenő adatokat egy szöveges állományból kell a tömbbe bemásolni. Az állományban a megadott neveket szóközökkel, tabulátor jelekkel vagy sorvége jelekkel elválasztva kell beírni. Az állomány minden sorát sorvége jel zárja le. Például:
+		% Bemenő adatokra példa %
+		\texttt{
+			\begin{tabbing}
+			\hspace{2cm}\= 12 6 8 11\+\\
+			45 \hspace{1cm} 78\\
+			44 324\-
+			\end{tabbing}
+		}\vspace{2mm}
+		% Függvények kapcsolódása %
+		\noindent {\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
+		A kódban több függvényt is használunk. Az \texttt{Maxvolgy()} tartalmazza a tervben leírt keresést, a \texttt{ReadFromFile()} tölti fel egy szöveges állományból a tömböt nevekkel, ezeket a függvényeket pedig a \texttt{main()} hívja, amelyik az eredmény kiírását is végzi.
+		% A függvény kapcsolódást szemléltető ábra %
+		\begin{center}
+		\begin{tikzpicture}
+			[level distance=20mm, sibling distance=60mm, align=center, block/.style ={rectangle, draw=blue, thick, fill=blue!20,text width=10em,align=center, rounded corners, minimum height=4em}];
+			\node [block] (main) {\bfseries{main()}}
+				[child anchor=north]
+				child {node [block] (readfromfile) {\bfseries{ReadFromFile()}}}
+				child {node [block] (maxvolgy) {\bfseries{Maxvolgy()}}};
+		\end{tikzpicture}\vspace{2mm}\\
+		\end{center}
+
+	%% Tesztelés fejezet %%
+	\fejezet{Tesztelési terv}\\
+		% Fekete doboz esetek %
+		{\large A feladat specifikációjára épülő (fekete doboz) tesztesetek} \vspace{2mm}\\
+		% Fehér doboz esetek %
+		{\large A megoldó programra épülő (fehér doboz) tesztesek} \vspace{2mm}
 \end{document}
