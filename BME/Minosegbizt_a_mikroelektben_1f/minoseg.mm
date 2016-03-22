@@ -212,6 +212,11 @@
 </node>
 </node>
 </node>
+<node CREATED="1458654741017" ID="ID_1468657742" MODIFIED="1458654750856" TEXT="Egy&#xe9;b rendszerek">
+<node CREATED="1458654751833" ID="ID_1248829041" MODIFIED="1458654757513" TEXT="QS 9000, aut&#xf3;ipari specialit&#xe1;sok"/>
+<node CREATED="1458654766594" ID="ID_1312658251" MODIFIED="1458654767222" TEXT="SHMS (Safety and Health Management System), munkabiztons&#xe1;gi rendszer"/>
+<node CREATED="1458654773161" ID="ID_1827328100" MODIFIED="1458654775007" TEXT="HACCP (Hazard Analysis Critical Control Points), kritikus pontok kock&#xe1;zatelemz&#xe9;se"/>
+</node>
 </node>
 </node>
 </map>
