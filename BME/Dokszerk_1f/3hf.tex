@@ -1,0 +1,235 @@
+% Készítette: Hajnal Máté
+% Az Elte Programtervező Informatikus szakához tartozó Programozás tantárgyhoz tartozó házi feladatom.
+% A feladatok közül a 11-es
+
+\documentclass[12pt,a4paper]{article}			%Article dokumentum
+\usepackage[utf8]{inputenc}						%UTF-8-as kódolás
+\usepackage{t1enc}								%Furcsa betűk
+\usepackage{fancyhdr}							%For footer and header
+
+%LANGUAGE-FONT
+%texlive-lang-hungarian package should be installed!
+\usepackage[english,magyar]{babel}				%Magyar nyelv 
+\usepackage{mathptmx}							%Times New Roman font
+\usepackage[shortlabels]{enumitem}							%For enumerations
+\usepackage{url}								%For URL-s
+\usepackage[headheight=56pt]{geometry}			%For the heading gap
+
+%MATHEMATICAL EXPRESSIONS
+\usepackage[fleqn]{amsmath}						%Mathematical expressions
+\usepackage{amsfonts}							%Mathematical fonts
+\usepackage{bm}									%Bolding
+
+%TABLES, TABULATING, DRAWING
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{booktabs}
+
+%HEADER
+\sloppy
+\fancyhead{}
+\fancyhead[C]{\textbf{0.beadandó feladat/11.feladat}}
+\fancyhead[R]{\today}
+\fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
+\pagestyle{fancy}
+
+%Fejezet stílus deklaráció
+\newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{5mm}}}}
+
+%DOCUMENT
+\begin{document}
+	\pagenumbering{arabic}
+	
+	%% Feladat fejezet %%
+	\fejezet{Feladat}\\
+	\textit{A föld felszínének egy vonala mentén egyenlő távolságonként megmértük a terep tengerszint feletti magasságát és a mért értékeket egy tömbben tároljuk. Keressük meg a legmagasabb völgyet a mérési sorozatban!}
+	\vspace{5mm}
+
+	%% Specifikáció fejezet %%
+	\fejezet{Specifikáció}\\
+	Az értékeket egy tömbben tároljuk.
+		% A feladat definiálása, Adathalmaz, Előfeltétel, Utófeltétel %
+		\begin{flalign*}
+			&A=(t:\mathbb{R}^n,~max:\mathbb{R},~ind:\mathbb{N},~l:\mathbb{L})\\
+			&Ef=(t=t')\\
+			&Uf=(Ef~\wedge~\max_{i=2,~t[i]<t[i-1],~t[i]<t[i+1]}^{i=n-1}=t[i])
+		\end{flalign*}
+	
+	%% Algoritmus fejezet %%
+	\fejezet{Algoritmus}\\
+	A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
+		% Megfeleltetés%
+		\begin{flalign*}
+			&m..n~\sim~2..n-1\\
+			&\beta~\sim~t[i]<t[i-1],~t[i]<t[i+1]\\
+			&f(i)~\sim~t[i]
+		\end{flalign*}
+		% Table %
+		\begin{tabular}{|m{1em}|m{7em}|m{7em}|m{3em}|m{8em}|}
+			\hline
+				\multicolumn{5}{|c|}{$l:=hamis$}\\
+			\hline
+				\multicolumn{5}{|c|}{$i=2..n-1$}\\
+			\cline{2-5}
+				& $t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
+				\multicolumn{2}{c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
+				$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$ \\
+			\cline{2-5}
+				 \multirow{2}{*}{} & \multirow{2}{*}{SKIP} & \multicolumn{2}{c|}{$max < t[i]$} & $l,~max,~ind :=$  \\\cline{3-4} & & $max,~ind:=t[i],~i$ & SKIP & $igaz,~t[i],~i$ \\
+			\hline
+		\end{tabular}\\
+		\vspace{5mm} 
+	
+	%% Implementáció fejezet %%
+	\fejezet{Implementáció}\\
+		% Adattípusok %
+		{\large Adattípusok megvalósítása} \vspace{2mm} \\
+		A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek mérete \texttt{t.size()} alakban érhető el. Mivel a vektor C++-ban 0-tól indexelődik, így a tervbeli 2-től n-1-ig tartó ciklus az esetünkben \texttt{1-től t.size()-2-ig} fog tartani. A struktogramm kódja így:
+		% A struktogramm %
+		\texttt{
+			\begin{tabbing}
+				\hspace{2cm}\= l=false \+\\
+				for (int i=1; i < t.size()-1; ++i) \{\\
+				\hspace{1cm}\= if (t[i-1] > t[i] \&\& t[i+1] > t[i] \&\& l) \{ \+\\
+					\hspace{1cm}\=if (t[i] > max) \{ \+\\
+					\hspace{1cm}\=max = t[i]; \+\\
+					ind = i+1;\-\\
+					\}\-\\
+				\}\\
+				else if (t[i-1] > t[i] \&\& t[i+1] > t[i]) \{ \+\\
+					l = true;\\
+					max = t[i];\\
+					ind = i+1;\-\\
+				\} \-\\
+			\}
+			\end{tabbing}
+		}
+		% Bemenő adattípusok %
+		\noindent {\large Bemenő adatok formája} \vspace{2mm}\\
+		A bemenő adatokat egy szöveges állományból kell a tömbbe bemásolni. Az állományban a megadott neveket szóközökkel, tabulátor jelekkel vagy sorvége jelekkel elválasztva kell beírni. Az állomány minden sorát sorvége jel zárja le. Például:
+		% Bemenő adatokra példa %
+		\texttt{
+			\begin{tabbing}
+			\hspace{2cm}\= 12 6 8 11\+\\
+			45 \hspace{1cm} 78\\
+			44 324\-
+			\end{tabbing}
+		}\vspace{2mm}
+		% Függvények kapcsolódása %
+		\noindent {\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
+		A kódban több függvényt is használunk. Az \texttt{Maxvolgy()} tartalmazza a tervben leírt keresést, a \texttt{ReadFromFile()} tölti fel egy szöveges állományból a tömböt nevekkel, ezeket a függvényeket pedig a \texttt{main()} hívja, amelyik az eredmény kiírását is végzi.
+		% A függvény kapcsolódást szemléltető ábra %
+		\begin{center}
+		\begin{tikzpicture}
+			[level distance=20mm, sibling distance=60mm, align=center, block/.style ={rectangle, draw=blue, thick, fill=blue!20,text width=10em,align=center, rounded corners, minimum height=4em}];
+			\node [block] (main) {\textbf{main()}}
+				[child anchor=north]
+				child {node [block] (readfromfile) {\textbf{ReadFromFile()}}}
+				child {node [block] (maxvolgy) {\textbf{Maxvolgy()}}};
+		\end{tikzpicture}\vspace{2mm}\\
+		\end{center}
+
+	%% Tesztelés fejezet %%
+	\fejezet{Tesztelési terv}\\
+		% Fekete doboz esetek %
+		\renewcommand{\labelenumi}{\Alph{enumi}.}
+		\renewcommand{\labelenumii}{\arabic{enumii}.}
+		{\large A feladat specifikációjára épülő (fekete doboz) tesztesetek} \vspace{2mm}\\
+		Érvényes tesztesetek (most érvénytelen bemenet nem lehet):
+		\begin{enumerate}		
+			\item \textbf{Maximum keresés} tesztesetei:\\
+			\textbf{intervallum hossza} szerint
+			\begin{enumerate}
+				\item \textit{nulla} hosszú: 
+				\begin{itemize}[label={}]
+					\item Egyetlen érték sincs (üres vagy csak elválasztójelekből álló fájl)\\
+					(t1.txt: [] - válasz hamis)\\
+					(t2.txt: [    ] - válasz hamis)
+				\end{itemize}
+				\item \textit{egy} hosszú
+				\begin{itemize}[label={}]
+					\item Egyetlen érték van ami pozitív\\
+					(t3.txt: [4] - válasz hamis)
+					\item Egyetlen érték van ami 0\\
+					(t4.txt: [0] - válasz hamis)
+					\item Egyetlen érték van ami negatív\\
+					(t5.txt: [-6] - válasz hamis)
+				\end{itemize}
+				\item \textit{kettő} hosszú
+				\begin{itemize}[label={}]
+					\item Két egész érték\\
+					(t6.txt: [-5 6] - válasz hamis)
+				\end{itemize}
+				\item \textit{három} hosszú
+				\begin{itemize}[label={}]
+					\item Nincs völgy a sorozatban\\
+					(t7.txt: [1 2 3] - válasz hamis)
+					\item Van völgy a sorozatban\\
+					(t8.txt: [3 2 3] válasz: igaz, 2. index, 2 értékkel)
+				\end{itemize}
+			\end{enumerate}
+			\textbf{völgyek száma} szerint
+				\begin{enumerate}
+					\item Nincs elég elem a tömbben, hogy völgy legyen\\
+					(t6.txt: [-5 6] - válasz hamis)
+					\item Van elég elem a tömbben, hogy lehessen völgy de még sincsen\\
+					(t7.txt: [1 2 3] - válasz hamis)
+					\item Egy völgy van a sorozatban az a maximum\\
+					(t8.txt: [3 2 3] válasz: igaz, 2. index, 2 értékkel)
+					\item Több völgy van a sorozatban, az első a maximum\\
+					(t9.txt: [15 6 5 12 4] válasz: igaz, 3. index, 5 értékkel)
+					\item Több völgy van a sorozatban, nem az első a maximum\\
+					(t10.txt: [15 6 45 12 42] válasz: igaz, 4. index, 12 értékkel)
+				\end{enumerate}
+			\item \textbf{Különleges} esetek
+				\begin{enumerate}
+					\item Negatív számok (nincs különbség beolvasásban)
+					\item Betűket tartalmazó input beolvasása (A karakterek ASCII kódja kerül beolvasásra számként)
+					\item Nem érvényes teszteset, ha a signed integer érték maximumánál $2^{31}-1=2147483657$-nél nagyobb vagy a minimumánál $-2^{31}=-21474836578$-nál kisebb értéket tartalmaz a teszt.
+				\end{enumerate} 
+		\end{enumerate}
+
+		% Fehér doboz esetek %
+		\renewcommand{\labelenumi}{\arabic{enumi}.}
+		\noindent{\large A megoldó programra épülő (fehér doboz) tesztesek} \vspace{2mm}
+		\setlist[enumerate,1]{leftmargin=2cm}
+		\begin{enumerate}[1, itemsep=0ex]
+			\item Hibás vagy nem létező állománynév megadása.
+			\item Állomány nevének megadása parancssorból
+			\item Ismételt futtatás kipróbálása
+			\item Olyan állomány olvasása, ahol egy sorban több érték is található egyetlen illetvetöbb szóközzel és/vagy tabulátor jellel elválasztva (t12.txt).
+			\item Olyan állomány olvasása, ahol minden érték külön sorban van. (t11.txt).
+			\item Főprogram ciklusának ellenőrzése: olyan bemenő adatokkal, amelyekre a ciklus egyszer sem fut le (Pl: t1.txt), pontosan egyszer fut le (Pl: t7.txt), többször lefut és igaz logikai értékkel lép ki (Pl: t9.txt), vagy hamis logikai értékkel lép ki (Pl: t13.txt).
+		\end{enumerate}
+		% Érdekes gondolatok %
+		{\large Érdekes gondolatok} \vspace{2mm}
+		\setlist[enumerate,1]{leftmargin=2cm}
+		\begin{enumerate}[1, itemsep=0ex]
+			\item Tizedes tört bemenetek.
+			\begin{table}[htb]
+				\center
+				\begin{tabular}{r@{,}l}
+					\multicolumn{2}{c}{Érték} \\
+					\hline
+					3&1415927 \\
+					36&46216 \\
+					80662&666
+				\end{tabular}
+			\end{table}
+			\item A memória használat és a futási idő nagy bementeknél is alacsony (> 1s, > 20 kB)\\
+			\begin{tabular}{@{}lrr@{}}
+				\toprule
+				&\multicolumn{2}{c}{Bemenetek száma}\\
+				\cmidrule{2-3}
+				& \multicolumn{1}{c}{200} &
+				\multicolumn{1}{c}{300}\\
+				\midrule
+				Futási idő (ms) & 124\,340 & 166\,500\\
+				Memória használat (kByte) & 11\,250 & 19\,950\\
+				\bottomrule
+			\end{tabular}
+		\end{enumerate}
+\end{document}
