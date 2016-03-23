@@ -87,9 +87,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1458653129465" ID="ID_1794704965" MODIFIED="1458653953958" POSITION="right" TEXT="0 b) A TQC, TQM &#xe9;s ISO 9xxx keletkez&#xe9;se, alapelvei, egy&#xe9;b min&#x151;s&#xe9;gbiztos&#xed;t&#xe1;si rendszerek">
+<node CREATED="1458653129465" FOLDED="true" ID="ID_1794704965" MODIFIED="1458655048260" POSITION="right" TEXT="0 b) A TQC, TQM &#xe9;s ISO 9xxx keletkez&#xe9;se, alapelvei, egy&#xe9;b min&#x151;s&#xe9;gbiztos&#xed;t&#xe1;si rendszerek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1458653212905" ID="ID_1303873405" MODIFIED="1458653234672" TEXT="Az alapvet&#x151; rendszerek eredete, filoz&#xf3;fiai alapja">
+<node CREATED="1458653212905" FOLDED="true" ID="ID_1303873405" MODIFIED="1458655039589" TEXT="Az alapvet&#x151; rendszerek eredete, filoz&#xf3;fiai alapja">
 <node CREATED="1458653236553" ID="ID_185050302" MODIFIED="1458653240862" TEXT="TQC">
 <node CREATED="1458653254569" ID="ID_1504482462" MODIFIED="1458653270103" TEXT="A vil&#xe1;gh&#xe1;bor&#xfa; ut&#xe1;ni Jap&#xe1;n"/>
 <node CREATED="1458653271801" ID="ID_1980367347" MODIFIED="1458653282182" TEXT="Maxim&#xe1;lis lojalit&#xe1;s a c&#xe9;gekhez"/>
@@ -116,7 +116,7 @@
 <node CREATED="1458653546689" ID="ID_1498165884" MODIFIED="1458653554711" TEXT="Sok adminisztr&#xe1;ci&#xf3;"/>
 </node>
 </node>
-<node CREATED="1458653562321" ID="ID_1586025883" MODIFIED="1458653950676" TEXT="A TQM alapelemei">
+<node CREATED="1458653562321" FOLDED="true" ID="ID_1586025883" MODIFIED="1458655041201" TEXT="A TQM alapelemei">
 <node CREATED="1458653580390" ID="ID_915767500" MODIFIED="1458653589694" TEXT="Vev&#x151; k&#xf6;zpont&#xfa;s&#xe1;g"/>
 <node CREATED="1458653590657" ID="ID_476417155" MODIFIED="1458653597270" TEXT="Folyamatok folyamatos jav&#xed;t&#xe1;sa"/>
 <node CREATED="1458653598401" ID="ID_1707890371" MODIFIED="1458653606776" TEXT="Teljes elk&#xf6;telezetts&#xe9;g &#xe9;s felhatalmaz&#xe1;s"/>
@@ -131,7 +131,7 @@
 <node CREATED="1458653719521" ID="ID_1130098973" MODIFIED="1458653723504" TEXT="Motiv&#xe1;ci&#xf3;"/>
 <node CREATED="1458653724585" ID="ID_582692271" MODIFIED="1458653733459" TEXT="Rugalmas szervezet"/>
 </node>
-<node CREATED="1458653676241" FOLDED="true" ID="ID_1708084910" MODIFIED="1458653937398" TEXT="C&#xe9;l: hossz&#xfa;t&#xe1;v&#xfa; sikerek a vev&#x151;i megel&#xe9;gedetts&#xe9;g &#xfa;tj&#xe1;n">
+<node CREATED="1458653676241" ID="ID_1708084910" MODIFIED="1458654833535" TEXT="C&#xe9;l: hossz&#xfa;t&#xe1;v&#xfa; sikerek a vev&#x151;i megel&#xe9;gedetts&#xe9;g &#xfa;tj&#xe1;n">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1458653756985" ID="ID_889152975" MODIFIED="1458653765806" TEXT="Vev&#x151; megelgedetts&#xe9;g alapelemei">
 <node CREATED="1458653769185" ID="ID_1695240583" MODIFIED="1458653772223" TEXT="Min&#x151;s&#xe9;g "/>
@@ -153,7 +153,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458653954985" ID="ID_1242351005" MODIFIED="1458653964424" TEXT="Az ISO 9xxx szabv&#xe1;nycsal&#xe1;d">
+<node CREATED="1458653954985" FOLDED="true" ID="ID_1242351005" MODIFIED="1458655042823" TEXT="Az ISO 9xxx szabv&#xe1;nycsal&#xe1;d">
 <node CREATED="1458653965417" ID="ID_777928206" MODIFIED="1458654040288" TEXT="T&#xf6;rt&#xe9;neti el&#x151;zm&#xe9;nye">
 <node CREATED="1458654041881" ID="ID_1481075788" MODIFIED="1458654048396" TEXT="BS5750 - 1979-ben jelent meg"/>
 <node CREATED="1458653990209" ID="ID_756027490" MODIFIED="1458653997739" TEXT="987 els&#x151; kiad&#xe1;s, 1994 &#xe9;s 2000 jelent&#x151;s v&#xe1;ltoz&#xe1;sok, 1992: 1994: 1995: 1996: 1998 klf. Kieg&#xe9;sz&#xed;t&#xe9;sek"/>
@@ -185,7 +185,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458654462001" ID="ID_1886410259" MODIFIED="1458654476766" TEXT="V&#xe1;llalatir&#xe1;ny&#xed;t&#xe1;si rendszer gyakorlati m&#x171;k&#xf6;dtet&#xe9;se ">
+<node CREATED="1458654462001" FOLDED="true" ID="ID_1886410259" MODIFIED="1458655045157" TEXT="V&#xe1;llalatir&#xe1;ny&#xed;t&#xe1;si rendszer gyakorlati m&#x171;k&#xf6;dtet&#xe9;se ">
 <node CREATED="1458654487153" ID="ID_1360968859" MODIFIED="1458654488153" TEXT="Hat&#xe9;kony v&#xe1;llalatir&#xe1;ny&#xed;t&#xe1;s (benne min&#x151;s&#xe9;gszab&#xe1;lyoz&#xe1;s) csak j&#xf3;l ki&#xe9;p&#xed;tett inform&#xe1;ci&#xf3;s rendszerrel lehets&#xe9;ges.">
 <node COLOR="#ff0000" CREATED="1458654493441" ID="ID_1644352498" MODIFIED="1458654534169" TEXT="ERP (Enterprise Resource Planning)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
@@ -212,11 +212,14 @@
 </node>
 </node>
 </node>
-<node CREATED="1458654741017" ID="ID_1468657742" MODIFIED="1458654750856" TEXT="Egy&#xe9;b rendszerek">
+<node CREATED="1458654741017" FOLDED="true" ID="ID_1468657742" MODIFIED="1458655046355" TEXT="Egy&#xe9;b rendszerek">
 <node CREATED="1458654751833" ID="ID_1248829041" MODIFIED="1458654757513" TEXT="QS 9000, aut&#xf3;ipari specialit&#xe1;sok"/>
 <node CREATED="1458654766594" ID="ID_1312658251" MODIFIED="1458654767222" TEXT="SHMS (Safety and Health Management System), munkabiztons&#xe1;gi rendszer"/>
 <node CREATED="1458654773161" ID="ID_1827328100" MODIFIED="1458654775007" TEXT="HACCP (Hazard Analysis Critical Control Points), kritikus pontok kock&#xe1;zatelemz&#xe9;se"/>
 </node>
+</node>
+<node CREATED="1458655053674" ID="ID_1076963340" MODIFIED="1458655101868" POSITION="left" TEXT="1) A statiszika alapjai">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
 </map>

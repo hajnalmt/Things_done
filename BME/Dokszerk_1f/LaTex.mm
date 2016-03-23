@@ -1319,5 +1319,91 @@
 </node>
 </node>
 </node>
+<node CREATED="1458732549815" ID="ID_1052090580" MODIFIED="1458732576693" POSITION="right" TEXT="7) K&#xe9;pek, &#xe1;br&#xe1;k beillleszt&#xe9;se, dobozok">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458732581518" ID="ID_1982760856" MODIFIED="1458732590995" TEXT="K&#xe9;pek beilleszt&#xe9;se ">
+<node CREATED="1458732591988" ID="ID_1735679269" MODIFIED="1458732627863" TEXT="&#xc1;br&#xe1;k beilleszt&#xe9;s&#xe9;hez sz&#xfc;ks&#xe9;g van a graphics csomagra"/>
+<node CREATED="1458732629660" ID="ID_1217318738" MODIFIED="1458732682570" TEXT="A k&#xe9;peket c&#xe9;lszer&#x171; elhelyezni a forr&#xe1;s&#xe1;llom&#xe1;nyt tartalmaz&#xf3; k&#xf6;nyvt&#xe1;rba, mert akkor el&#xe9;g a nev&#xfc;kre hivatkozni"/>
+<node CREATED="1458732659943" ID="ID_951117075" MODIFIED="1458732704109" TEXT="De ha pl. egy &#x201e;grafikonok&#x201d; nev&#x171; alk&#xf6;nyvt&#xe1;rba helyezz&#xfc;k a k&#xe9;peket, akkor a preambulumba &#xed;rjuk be a k&#xf6;vetkez&#x151;t:">
+<node CREATED="1458732706313" ID="ID_1307505084" MODIFIED="1458732739787" TEXT="\graphicspath{{./grafikonok/}}"/>
+</node>
+<node CREATED="1458732743703" ID="ID_36387561" MODIFIED="1458732750561" TEXT="&#xc1;ra beilleszt&#xe9;se:">
+<node CREATED="1458732752521" ID="ID_942809043" MODIFIED="1458732765631" TEXT="\includegraphics{abra}"/>
+</node>
+<node CREATED="1458732780691" ID="ID_703988280" MODIFIED="1458732787837" TEXT="Beilleszthet&#x151; &#xed;gy:">
+<node CREATED="1458732788536" ID="ID_443907651" MODIFIED="1458732808701" TEXT="jpg, png, pdf, eps"/>
+</node>
+<node CREATED="1458732812689" ID="ID_1462810425" MODIFIED="1458732849021" TEXT="EPS beilleszt&#xe9;se eset&#xe9;n csmag is kell">
+<node CREATED="1458732819705" ID="ID_1189771469" MODIFIED="1458732834396" TEXT="\usepackage{epstopdf}"/>
+</node>
+<node CREATED="1458732855816" ID="ID_234160132" MODIFIED="1458733064222" TEXT="Manipul&#xe1;l&#xe1;ssal \includegraphics{abra} param&#xe9;terek&#xe9;nt">
+<node CREATED="1458732862563" ID="ID_1656469438" MODIFIED="1458732894187" TEXT="trim">
+<node CREATED="1458732894796" ID="ID_1913686632" MODIFIED="1458732912084" TEXT="k&#xe9;pen meghat&#xe1;roz egy keretet (de lev&#xe1;g&#xe1;s nem t&#xf6;rt&#xe9;nik)"/>
+</node>
+<node CREATED="1458732915136" ID="ID_176855182" MODIFIED="1458732918041" TEXT="clip">
+<node CREATED="1458732919713" ID="ID_1082337183" MODIFIED="1458732926561" TEXT="ez m&#xe1;r le is v&#xe1;gja"/>
+</node>
+<node CREATED="1458732928069" ID="ID_570193264" MODIFIED="1458732930861" TEXT="scale">
+<node CREATED="1458732932431" ID="ID_579663501" MODIFIED="1458732939140" TEXT="nagy&#xed;t&#xe1;s/kicsiny&#xed;t&#xe9;s"/>
+</node>
+<node CREATED="1458732940607" ID="ID_1150256027" MODIFIED="1458732946136" TEXT="angle">
+<node CREATED="1458732947975" ID="ID_901089397" MODIFIED="1458732955076" TEXT="forgat&#xe1;s sz&#xfc;ge fokban"/>
+</node>
+<node CREATED="1458732956632" ID="ID_58088268" MODIFIED="1458732960620" TEXT="origin">
+<node CREATED="1458732961317" ID="ID_963035632" MODIFIED="1458732969467" TEXT="forgat&#xe1;s k&#xf6;z&#xe9;ppontja"/>
+</node>
+<node CREATED="1458732971735" ID="ID_1367090729" MODIFIED="1458732974548" TEXT="width">
+<node CREATED="1458732975055" ID="ID_1802161838" MODIFIED="1458732980720" TEXT="a k&#xe9;p k&#xed;v&#xe1;nt sz&#xe9;less&#xe9;ge"/>
+</node>
+<node CREATED="1458732983100" ID="ID_335645110" MODIFIED="1458732986585" TEXT="height">
+<node CREATED="1458732987128" ID="ID_1425590306" MODIFIED="1458732995835" TEXT="a k&#xe9;p k&#xed;v&#xe1;nt magass&#xe1;ga"/>
+</node>
+<node CREATED="1458732997551" ID="ID_1801940579" MODIFIED="1458733002047" TEXT="page">
+<node CREATED="1458733002616" ID="ID_1131773749" MODIFIED="1458733017514" TEXT="t&#xf6;bb oldalas PDF eset&#xe9;n hova melyik oldara helyezze a k&#xe9;pet"/>
+<node CREATED="1458733022950" ID="ID_211231059" MODIFIED="1458733027007" TEXT="ezt nem fogjuk haszn&#xe1;lni"/>
+</node>
+<node CREATED="1458733030029" ID="ID_1227191912" MODIFIED="1458733034545" TEXT="P&#xe9;lda:">
+<node CREATED="1458733035738" ID="ID_1829762463" MODIFIED="1458733042840" TEXT="\includegraphics[trim=10mm 10mm 10mm 10mm,clip, scale=0.5] {abra}"/>
+<node CREATED="1458733044399" ID="ID_215993305" MODIFIED="1458733050909" TEXT="\includegraphics[width=3cm,angle=90]{abra}"/>
+</node>
+</node>
+</node>
+<node CREATED="1458732771134" ID="ID_124259604" MODIFIED="1458733074825" TEXT="&#xc1;br&#xe1;k &#xfa;sztat&#xe1;sa">
+<node CREATED="1458733075730" ID="ID_1075913091" MODIFIED="1458733087551" TEXT="figure k&#xf6;rnyezet szolg&#xe1;l"/>
+<node CREATED="1458733089350" ID="ID_120725928" MODIFIED="1458733114532" TEXT="ez pont ugyanat, mint a tabulas, table egym&#xe1;sba &#xe1;gyaz&#xe1;sa, ez&#xe9;rt mindenk&#xe9;pp haszn&#xe1;ljuk"/>
+<node CREATED="1458733115650" ID="ID_814679144" MODIFIED="1458733130025" TEXT="Ugyan&#xfa;gy l&#xe9;tezik opcion&#xe1;lis param&#xe9;tere">
+<node CREATED="1458733130613" ID="ID_285034387" MODIFIED="1458733140415" TEXT="[tbph!]"/>
+</node>
+<node CREATED="1458733146355" ID="ID_735349117" MODIFIED="1458733177405" TEXT="Haszn&#xe1;lata egszer&#x171;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{figure}
+    </p>
+    <p>
+      \centering % tegye k&#246;z&#233;pre az &#225;br&#225;t!
+    </p>
+    <p>
+      \includegraphics{&#225;bra neve}
+    </p>
+    <p>
+      \caption{Ide az &#225;bra c&#237;me}
+    </p>
+    <p>
+      \label{cimke}
+    </p>
+    <p>
+      \end{figure}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1458733182213" ID="ID_752114919" MODIFIED="1458733194024" TEXT="&#xc1;bra manipul&#xe1;l&#xe1;sa figure k&#xf6;rnyezetben"/>
+</node>
+</node>
 </node>
 </map>
