@@ -6,6 +6,8 @@
 \usepackage{graphics}
 \usepackage{epstopdf}
 \usepackage{sidecap}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \begin{document}
 \includegraphics[scale=0.2]{totoro.png}
@@ -33,5 +35,25 @@ kitűnően alkalmazkodik ahhoz, hogy Afrika más, különböző éghajlatú
 területein is megélhessen, azonban élőhelyének közelében mindenképpen
 ivóvízforrás kell hogy legyen.}
 \end{SCfigure}
+
+\begin{figure*}
+\centering
+\begin{subfigure}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{elefant.jpg}
+\caption{Afrikai elefánt}
+\end{subfigure}\\
+\begin{subfigure}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{totoro.png}
+\caption{Totoroi elefánt}g
+\end{subfigure}\\
+\begin{subfigure}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{dumbo.jpg}
+\caption{Walt-Disney elefánt}
+\end{subfigure}
+\caption{A világ elefántjai}
+\end{figure*}
 
 \end{document}

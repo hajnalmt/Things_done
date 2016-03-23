@@ -1592,6 +1592,127 @@
 </html>
 </richcontent>
 </node>
+<node CREATED="1458734651393" ID="ID_186646717" MODIFIED="1458734963802" TEXT="N&#xe9;h&#xe9;ny leghets&#xe9;ges opci&#xf3;">
+<node CREATED="1458734986738" ID="ID_1451708924" MODIFIED="1458735000613" TEXT="leftcaption, rightcaption">
+<node CREATED="1458735001301" ID="ID_97427455" MODIFIED="1458735009239" TEXT="bal vagy jobb oldalon jelenjen meg"/>
+</node>
+<node CREATED="1458735011355" ID="ID_1882861329" MODIFIED="1458735017604" TEXT="raggedright">
+<node CREATED="1458735018589" ID="ID_1376953407" MODIFIED="1458735036222" TEXT="Kev&#xe9;s magyar&#xe1;z&#xf3; sz&#xf6;veg, szebben n&#xe9;z ki balra z&#xe1;rva"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1458735047454" ID="ID_47017775" MODIFIED="1458735059013" TEXT="&#xc1;br&#xe1;k sz&#xf6;vegbe &#xe1;gyaz&#xe1;sa">
+<node CREATED="1458735060869" ID="ID_444307531" MODIFIED="1458735068861" TEXT="wrapfig package"/>
+<node CREATED="1458735074449" ID="ID_717695090" MODIFIED="1458735100012" TEXT="A k&#xf6;rnyezet">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{wrapfigure}{r}{0.5\textwidth}
+    </p>
+    <p>
+      \vspace{-20pt} %t&#233;rk&#246;z&#246;k be&#225;ll&#237;t&#225;sa
+    </p>
+    <p>
+      \begin{center}
+    </p>
+    <p>
+      \includegraphics[width=0.48\textwidth]
+    </p>
+    <p>
+      {elefant.jpg}
+    </p>
+    <p>
+      \end{center}
+    </p>
+    <p>
+      \vspace{-20pt}
+    </p>
+    <p>
+      \caption{Az afrikai elef&#225;nt}
+    </p>
+    <p>
+      \vspace{-10pt}
+    </p>
+    <p>
+      \end{wrapfigure}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1458735111247" ID="ID_248249771" MODIFIED="1458735124901" TEXT="T&#xf6;bb &#xe1;bra megjelen&#xed;t&#xe9;se egym&#xe1;s mellett">
+<node CREATED="1458735124902" ID="ID_1858409067" MODIFIED="1458735187076" TEXT="subfigure k&#xf6;rnyezet">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{figure*}
+    </p>
+    <p>
+      \centering
+    </p>
+    <p>
+      \begin{subfigure}[t]{0.3\textwidth}
+    </p>
+    <p>
+      \centering
+    </p>
+    <p>
+      \includegraphics[width=\textwidth]{elefant.jpg}
+    </p>
+    <p>
+      \caption{Afrikai elef&#225;nt}
+    </p>
+    <p>
+      \end{subfigure}\\
+    </p>
+    <p>
+      \begin{subfigure}[t]{0.3\textwidth}
+    </p>
+    <p>
+      \centering
+    </p>
+    <p>
+      \includegraphics[width=\textwidth]{azsiai.jpg}
+    </p>
+    <p>
+      \caption{&#193;zsai elef&#225;nt}
+    </p>
+    <p>
+      \end{subfigure}\\
+    </p>
+    <p>
+      \begin{subfigure}[t]{0.3\textwidth}
+    </p>
+    <p>
+      \centering
+    </p>
+    <p>
+      \includegraphics[width=\textwidth]{dumbo.jpg}
+    </p>
+    <p>
+      \caption{Walt-Disney elef&#225;nt}
+    </p>
+    <p>
+      \end{subfigure}
+    </p>
+    <p>
+      \caption{A vil&#225;g elef&#225;ntjai}
+    </p>
+    <p>
+      \end{figure*}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1458735140228" ID="ID_500688221" MODIFIED="1458735149189" TEXT="caption, subcaption csomagok is kellenek m&#xe9;g hozz&#xe1;"/>
+</node>
 </node>
 </node>
 </node>
