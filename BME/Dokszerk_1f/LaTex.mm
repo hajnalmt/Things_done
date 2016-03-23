@@ -1402,7 +1402,197 @@
 </html>
 </richcontent>
 </node>
-<node CREATED="1458733182213" ID="ID_752114919" MODIFIED="1458733194024" TEXT="&#xc1;bra manipul&#xe1;l&#xe1;sa figure k&#xf6;rnyezetben"/>
+<node CREATED="1458733182213" ID="ID_752114919" MODIFIED="1458733194024" TEXT="&#xc1;bra manipul&#xe1;l&#xe1;sa figure k&#xf6;rnyezetben">
+<node CREATED="1458733899500" ID="ID_1018389258" MODIFIED="1458733981863" TEXT="Az &#xe1;br&#xe1;k manipl&#xe1;l&#xe1;sa itt is lehets&#xe9;ges">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \usepackage{graphics}
+    </p>
+    <p>
+      ...
+    </p>
+    <p>
+      \begin{figure}[bp]
+    </p>
+    <p>
+      \center
+    </p>
+    <p>
+      \resizebox{80mm}{!}{
+    </p>
+    <p>
+      \rotatebox{-90}{
+    </p>
+    <p>
+      \includegraphics{maki.eps}}}
+    </p>
+    <p>
+      \caption{A \LaTeX\ &#243;r&#225;k mestere}
+    </p>
+    <p>
+      \label{fig:maki}
+    </p>
+    <p>
+      \end{figure}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1458734224356" ID="ID_1456749161" MODIFIED="1458734236297" TEXT="&#xc1;bra t&#xfc;rk&#xf6;z&#xe9;se:">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{figure}[h!]
+    </p>
+    <p>
+      \centering
+    </p>
+    <p>
+      \reflectbox{%
+    </p>
+    <p>
+      \includegraphics[width=0.5\textwidth]{ide jon a
+    </p>
+    <p>
+      kep}}
+    </p>
+    <p>
+      \caption{A kep cimet itt adjuk meg}
+    </p>
+    <p>
+      \end{figure}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1458734237127" ID="ID_1657399148" MODIFIED="1458734238654" TEXT="&#xc1;bra mell&#xe9; magyar&#xe1;z&#xf3; sz&#xf6;veg:">
+<node CREATED="1458734239614" ID="ID_182814819" MODIFIED="1458734245233" TEXT="sidecap csomag"/>
+<node CREATED="1458734254112" ID="ID_1778141654" MODIFIED="1458734254926" TEXT="\usepackage{sidecap} &#xe9;s az \begin{SCfigure}"/>
+</node>
+<node CREATED="1458734294165" ID="ID_148354526" MODIFIED="1458734375340" TEXT="Ha nem tetszik a Babel magyar &#xe1;ltal felk&#xed;n&#xe1;lt &#xe1;bra kifejez&#xe9;s">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \usepackage[magyar]{babel}
+    </p>
+    <p>
+      \addto\captionsmagyar{%
+    </p>
+    <p>
+      \def\figurename{K&#233;pek}}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1458734394685" ID="ID_1875118711" MODIFIED="1458734408367" TEXT="Caption m&#xf3;dos&#xed;t&#xe1;s">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \usepackage{caption}
+    </p>
+    <p>
+      \captionsetup[figure]{labelformat=default,
+    </p>
+    <p>
+      labelsep=space}
+    </p>
+    <p>
+      labelsep = none (nincs)
+    </p>
+    <p>
+      labelsep = colon ( : )
+    </p>
+    <p>
+      labelsep = period (.)
+    </p>
+    <p>
+      labelsep = space (&#252;res karakter)
+    </p>
+    <p>
+      labelsep = quad (nagyobb space)
+    </p>
+    <p>
+      labelsep = newline (&#250;j sor)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1458734412960" ID="ID_942129445" MODIFIED="1458734642954" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \documentclass[letter,12pt]{article}
+    </p>
+    <p>
+      \usepackage[utf8]{inputenc}
+    </p>
+    <p>
+      \usepackage[magyar,english]{babel}
+    </p>
+    <p>
+      \usepackage[pdftex]{graphicx}
+    </p>
+    <p>
+      \usepackage{sidecap}
+    </p>
+    <p>
+      \begin{document}
+    </p>
+    <p>
+      \begin{SCfigure}
+    </p>
+    <p>
+      \centering
+    </p>
+    <p>
+      \includegraphics[width=0.55\textwidth]{elefant.jpg}
+    </p>
+    <p>
+      \caption{Az afrikai elef&#225;nt (Loxodonta africana) a F&#246;ld&#246;n ma &#233;l&#337; leger&#337;sebb &#233;s
+    </p>
+    <p>
+      legnagyobb sz&#225;razf&#246;ldi eml&#337;s&#225;llat. Eredend&#337;en szavann&#225;kon &#233;l, &#225;m
+    </p>
+    <p>
+      kit&#369;n&#337;en alkalmazkodik ahhoz, hogy Afrika m&#225;s, k&#252;l&#246;nb&#246;z&#337; &#233;ghajlat&#250;
+    </p>
+    <p>
+      ter&#252;letein is meg&#233;lhessen, azonban &#233;l&#337;hely&#233;nek k&#246;zel&#233;ben mindenk&#233;ppen
+    </p>
+    <p>
+      iv&#243;v&#237;zforr&#225;s kell hogy legyen.}
+    </p>
+    <p>
+      \end{SCfigure}
+    </p>
+    <p>
+      \end{document}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 </node>
 </node>
