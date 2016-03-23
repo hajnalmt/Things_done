@@ -1399,8 +1399,7 @@
       \end{figure}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458733182213" ID="ID_752114919" MODIFIED="1458733194024" TEXT="&#xc1;bra manipul&#xe1;l&#xe1;sa figure k&#xf6;rnyezetben">
 <node CREATED="1458733899500" ID="ID_1018389258" MODIFIED="1458733981863" TEXT="Az &#xe1;br&#xe1;k manipl&#xe1;l&#xe1;sa itt is lehets&#xe9;ges">
@@ -1440,8 +1439,7 @@
       \end{figure}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458734224356" ID="ID_1456749161" MODIFIED="1458734236297" TEXT="&#xc1;bra t&#xfc;rk&#xf6;z&#xe9;se:">
 <richcontent TYPE="NOTE"><html>
@@ -1471,8 +1469,7 @@
       \end{figure}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458734237127" ID="ID_1657399148" MODIFIED="1458734238654" TEXT="&#xc1;bra mell&#xe9; magyar&#xe1;z&#xf3; sz&#xf6;veg:">
 <node CREATED="1458734239614" ID="ID_182814819" MODIFIED="1458734245233" TEXT="sidecap csomag"/>
@@ -1494,8 +1491,7 @@
       \def\figurename{K&#233;pek}}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458734394685" ID="ID_1875118711" MODIFIED="1458734408367" TEXT="Caption m&#xf3;dos&#xed;t&#xe1;s">
 <richcontent TYPE="NOTE"><html>
@@ -1531,8 +1527,7 @@
       labelsep = newline (&#250;j sor)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458734412960" ID="ID_942129445" MODIFIED="1458734642954" TEXT="P&#xe9;lda">
 <richcontent TYPE="NOTE"><html>
@@ -1589,8 +1584,7 @@
       \end{document}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458734651393" ID="ID_186646717" MODIFIED="1458734963802" TEXT="N&#xe9;h&#xe9;ny leghets&#xe9;ges opci&#xf3;">
 <node CREATED="1458734986738" ID="ID_1451708924" MODIFIED="1458735000613" TEXT="leftcaption, rightcaption">
@@ -1641,8 +1635,7 @@
       \end{wrapfigure}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458735111247" ID="ID_248249771" MODIFIED="1458735124901" TEXT="T&#xf6;bb &#xe1;bra megjelen&#xed;t&#xe9;se egym&#xe1;s mellett">
 <node CREATED="1458735124902" ID="ID_1858409067" MODIFIED="1458735187076" TEXT="subfigure k&#xf6;rnyezet">
@@ -1709,9 +1702,274 @@
       \end{figure*}
     </p>
   </body>
+</html></richcontent>
+<node CREATED="1458735140228" ID="ID_500688221" MODIFIED="1458735149189" TEXT="caption, subcaption csomagok is kellenek m&#xe9;g hozz&#xe1;"/>
+</node>
+</node>
+</node>
+<node CREATED="1458735307512" ID="ID_335186290" MODIFIED="1458735314154" TEXT="LaTeX dobozok">
+<node CREATED="1458735315769" ID="ID_1149552454" MODIFIED="1458735323791" TEXT="A doboz a dokumentum olyan r&#xe9;sze, melyet a TeX egyetlen egys&#xe9;gk&#xe9;nt kezel, tartalma nem t&#xf6;rhet&#x151; el a sor v&#xe9;g&#xe9;n vagy a lap alj&#xe1;n.">
+<node CREATED="1458735328962" ID="ID_700504637" MODIFIED="1458735338869" TEXT="Pl &#xfa;sz&#xf3; objektumok"/>
+</node>
+<node CREATED="1458735341116" ID="ID_1096971434" MODIFIED="1458735345098" TEXT="N&#xe9;gy f&#xe9;le doboz van">
+<node CREATED="1458735346876" ID="ID_1395988882" MODIFIED="1458735352128" TEXT="LR doboz">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458735383924" ID="ID_1702612417" MODIFIED="1458735385305" TEXT="(balr&#xf3;l jobbra t&#xf6;ltj&#xfc;k fel tartalommal, tipikusan csak egy sor"/>
+</node>
+<node CREATED="1458735353430" ID="ID_1241835192" MODIFIED="1458735361647" TEXT="Bekezd&#xe9;sdoboz">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458735387046" ID="ID_126559632" MODIFIED="1458735393541" TEXT="valamilyen sz&#xe9;less&#xe9;ggel b&#xed;r&#xf3;, ak&#xe1;r t&#xf6;bb sort is tartalmaz&#xf3; doboz"/>
+</node>
+<node CREATED="1458735362819" ID="ID_1903635040" MODIFIED="1458735367699" TEXT="Vonaldoboz">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458735404154" ID="ID_564408530" MODIFIED="1458735405376" TEXT="gy&#xe1;mf&#xe1;z&#xe1;sra haszn&#xe1;ljuk"/>
+</node>
+<node CREATED="1458735369215" ID="ID_1223300139" MODIFIED="1458735374676" TEXT="T&#xe1;rol&#xf3;doboz">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1458735413178" ID="ID_1310097737" MODIFIED="1458735415217" TEXT="sz&#xf6;vegr&#xe9;szek t&#xe1;rol&#xe1;s&#xe1;ra szolg&#xe1;l"/>
+</node>
+</node>
+<node CREATED="1458735423717" ID="ID_749201875" MODIFIED="1458735429948" TEXT="LR dobozok">
+<node CREATED="1458735430764" ID="ID_1590373075" MODIFIED="1458735441313" TEXT="\mbox{sz&#xf6;veg}">
+<node CREATED="1458735442329" ID="ID_1032812322" MODIFIED="1458735449753" TEXT="kor&#xe1;bban is volt az elv&#xe1;laszt&#xe1;s megakad&#xe1;lyoz&#xe1;s&#xe1;ra"/>
+</node>
+<node CREATED="1458735669853" ID="ID_1274212194" MODIFIED="1458735768968" TEXT="\fbox{sz&#xf6;veg}">
+<node CREATED="1458735680433" ID="ID_754933192" MODIFIED="1458735691957" TEXT="itt m&#xe1;r keret is megjelenik a sz&#xf6;veg k&#xf6;r&#xfc;l."/>
+<node CREATED="1458735711324" ID="ID_1862237405" MODIFIED="1458735712442" TEXT="A keret vonalvastags&#xe1;g&#xe1;t az \fboxrule t&#xe1;rolja, m&#xed;g a keret t&#xe1;vols&#xe1;g&#xe1;t a sz&#xf6;vegt&#x151;l a \fboxsep."/>
+<node CREATED="1458735738604" ID="ID_1480229612" MODIFIED="1458735767658" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \mbox{sima doboz keret n&#233;lk&#252;l}
+    </p>
+    <p>
+      \fbox{sima keretezett doboz}
+    </p>
+    <p>
+      {\setlength{\fboxrule}{3pt} \fbox{vastag keretes doboz}}
+    </p>
+    <p>
+      {\setlength{\fboxsep}{0pt} \fbox{t&#233;rk&#246;zmentes keretes doboz}}
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1458735705870" ID="ID_414593353" MODIFIED="1458735783186" TEXT="T&#xf6;bb lehet&#x151;s&#xe9;g a">
+<node CREATED="1458735791983" ID="ID_1043580742" MODIFIED="1458735794053" TEXT="\makebox[sz&#xe9;l][poz]{sz&#xf6;veg}"/>
+<node CREATED="1458735802178" ID="ID_20679687" MODIFIED="1458735806097" TEXT="\framebox[sz&#xe9;l][poz] {sz&#xf6;veg}">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1458735815365" ID="ID_1183328297" MODIFIED="1458735816195" TEXT="A poz param&#xe9;ter &#xe9;rt&#xe9;kei: l &#x2013; balra z&#xe1;rt, r &#x2013; jobbra z&#xe1;rt, s &#x2013; interword space"/>
+<node CREATED="1458735830403" ID="ID_702800448" MODIFIED="1458735840870" TEXT="A doboz sz&#xe9;less&#xe9;g megadhat&#xf3; tetsz&#x151;leges hossz&#xfa;s&#xe1;g m&#xe9;rt&#xe9;kben, vagy">
+<node CREATED="1458735842660" ID="ID_1228126713" MODIFIED="1458735846846" TEXT="\width"/>
+<node CREATED="1458735847924" ID="ID_202484000" MODIFIED="1458735856111" TEXT="\height"/>
+<node CREATED="1458735857287" ID="ID_1740018827" MODIFIED="1458735861019" TEXT="\depth"/>
+<node CREATED="1458735863008" ID="ID_298433946" MODIFIED="1458735868173" TEXT="\totalheight"/>
+</node>
+</node>
+<node CREATED="1458735876158" ID="ID_804680818" MODIFIED="1458735884902" TEXT="Sz&#xf6;veg emel&#xe9;se">
+<node CREATED="1458735890675" ID="ID_1340468859" MODIFIED="1458735925344" TEXT="\raisebox">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \raisebox{emel}[mag][m&#233;ly]{sz&#246;veg}
+    </p>
+    <p>
+      Ez egy sor.\\
+    </p>
+    <p>
+      Ez \raisebox{2ex}{egy} sor.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1458735929232" ID="ID_711902291" MODIFIED="1458735933657" TEXT="&#xc1;rny&#xe9;kolt keret">
+<node CREATED="1458735937863" ID="ID_1454150973" MODIFIED="1458735949211" TEXT="shadow csomaggal"/>
+<node CREATED="1458735953326" ID="ID_899139740" MODIFIED="1458736059996" TEXT="\shabox {sz&#xf6;veg} st&#xed;lusparam&#xe9;terekkel">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      {\setlength{\sboxrule}{3pt} \shabox{vastag keretes
+    </p>
+    <p>
+      doboz}}
+    </p>
+    <p>
+      {\setlength{\sboxsep}{0pt} \shabox{t&#233;rk&#246;zmentes
+    </p>
+    <p>
+      keretes doboz}}
+    </p>
+    <p>
+      {\setlength{\sdim }{10pt} \shabox{Nagy &#225;rny&#233;kos
+    </p>
+    <p>
+      doboz}}
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1458735966647" ID="ID_160715200" MODIFIED="1458735975399" TEXT="\sboxrule">
+<node CREATED="1458735976201" ID="ID_1530052261" MODIFIED="1458735980436" TEXT="vonalvastags&#xe1;g"/>
+</node>
+<node CREATED="1458735991266" ID="ID_1437564851" MODIFIED="1458736001898" TEXT="\sboxsep">
+<node CREATED="1458736002458" ID="ID_1852821974" MODIFIED="1458736004800" TEXT="t&#xe9;rk&#xf6;z"/>
+</node>
+<node CREATED="1458736006141" ID="ID_265502060" MODIFIED="1458736010464" TEXT="\sdim">
+<node CREATED="1458736011274" ID="ID_867779620" MODIFIED="1458736029983" TEXT="&#xe1;rny&#xe9;kvastags&#xe1;g"/>
+</node>
+</node>
+</node>
+<node CREATED="1458736062551" ID="ID_965464626" MODIFIED="1458736081347" TEXT="Tov&#xe1;bbi LR dobozok a \fancybox csomagban">
+<node CREATED="1458736085586" ID="ID_1622258354" MODIFIED="1458736097680" TEXT="Lekerek&#xed;tett sark&#xfa; dobozok:">
+<node CREATED="1458736098168" ID="ID_146240773" MODIFIED="1458736107376" TEXT="\ovalbox{sz&#xf6;veg}"/>
+<node CREATED="1458736117911" ID="ID_1563616316" MODIFIED="1458736119173" TEXT="\Ovalbox{sz&#xf6;veg}"/>
+<node CREATED="1458736124441" ID="ID_1330883866" MODIFIED="1458736135374" TEXT="A sug&#xe1;r v&#xe1;lt&#xe1;sa \cornersize{r}"/>
+</node>
+<node CREATED="1458736138824" ID="ID_693515338" MODIFIED="1458736144261" TEXT="Duplakeretes doboz">
+<node CREATED="1458736145574" ID="ID_1606208103" MODIFIED="1458736153714" TEXT="\doublebox{sz&#xf6;veg}"/>
+</node>
+</node>
+</node>
+<node CREATED="1458736177231" ID="ID_1216273676" MODIFIED="1458736184915" TEXT="Bekezd&#xe9;s dobozok">
+<node CREATED="1458736185916" ID="ID_1842974363" MODIFIED="1458736194018" TEXT="T&#xf6;bb bekezd&#xe9;snyi sz&#xf6;veget egy dobozba helyezhet&#xfc;nk vele,"/>
+<node CREATED="1458736195417" ID="ID_977977657" MODIFIED="1458736202249" TEXT="\parbox[poz][mag][szpoz]{sz&#xe9;less&#xe9;g}{sz&#xf6;veg}">
+<node CREATED="1458736206516" ID="ID_532387388" MODIFIED="1458736212333" TEXT="[poz]">
+<node CREATED="1458736213430" ID="ID_1795018735" MODIFIED="1458736230253" TEXT="t (top) vagy b (bottom)"/>
+<node CREATED="1458736231387" ID="ID_1154690420" MODIFIED="1458736232393" TEXT="k&#xfc;l&#xf6;nben k&#xf6;z&#xe9;pre igaz&#xed;tja a dobozt a sz&#xf6;veg vonal&#xe1;ban"/>
+</node>
+<node CREATED="1458736234917" ID="ID_1135269437" MODIFIED="1458736243341" TEXT="[mag]">
+<node CREATED="1458736254424" ID="ID_658961574" MODIFIED="1458736259225" TEXT="A sz&#xf6;veg magass&#xe1;ga"/>
+</node>
+<node CREATED="1458736244707" ID="ID_897582474" MODIFIED="1458736252760" TEXT="[szpoz]">
+<node CREATED="1458736261134" ID="ID_1420819926" MODIFIED="1458736280092" TEXT="A sz&#xf6;veg poz&#xed;ci&#xf3;ja a dobozban (t,b,c, vagy s)"/>
+</node>
+<node CREATED="1458736283434" ID="ID_1909564007" MODIFIED="1458736302840" TEXT="Term&#xe9;szetesen ha keretet is akarunk l&#xe1;tni, akkor pl. az fbox keretbe helyezhetj&#xfc;k!"/>
+</node>
+</node>
+<node CREATED="1458736306721" ID="ID_385036540" MODIFIED="1458736313500" TEXT="Dobozok egym&#xe1;sba &#xe1;gyaz&#xe1;sa">
+<node CREATED="1458736316619" ID="ID_1253637574" MODIFIED="1458736470288" TEXT="N&#xe9;vjegyk&#xe1;rtya P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \usepackage{pifont}
+    </p>
+    <p>
+      \usepackage{shadow}
+    </p>
+    <p>
+      \dots
+    </p>
+    <p>
+      \fbox{\parbox[t][50mm]{90mm}{\vfill \raggedleft
+    </p>
+    <p>
+      \hrulefill \shabox{\scriptsize Kov&#225;cs Alajos} \
+    </p>
+    <p>
+      \
+    </p>
+    <p>
+      \tiny nyugd&#237;jas f&#337;t&#246;rzs&#337;rmester \\[6pt]
+    </p>
+    <p>
+      \ding{38} +36-1-234-5678 \\
+    </p>
+    <p>
+      \ding{41} alajos@kovacs.hu \vfill}}
+    </p>
+  </body>
 </html>
 </richcontent>
-<node CREATED="1458735140228" ID="ID_500688221" MODIFIED="1458735149189" TEXT="caption, subcaption csomagok is kellenek m&#xe9;g hozz&#xe1;"/>
+</node>
+</node>
+<node CREATED="1458736521489" ID="ID_1319702040" MODIFIED="1458736525972" TEXT="Vonaldoboz">
+<node CREATED="1458736527637" ID="ID_838098684" MODIFIED="1458736536347" TEXT="\rule[emel&#xe9;s]{sz&#xe9;l}{mag}">
+<node CREATED="1458736536778" ID="ID_1826572794" MODIFIED="1458736548015" TEXT="sz&#xe9;l sz&#xe9;less&#xe9;g&#x171; &#xe9;s mag magass&#xe1;g&#xfa; kit&#xf6;lt&#xf6;tt t&#xe9;glalapot rajzolhatunk."/>
+</node>
+<node CREATED="1458736551638" ID="ID_633301639" MODIFIED="1458736568253" TEXT="Note: A t&#xe9;glalap lehet nulla vastags&#xe1;g&#xfa; is, amit gy&#xe1;mf&#xe1;nak nevez&#xfc;nk"/>
+<node CREATED="1458736580869" ID="ID_664822375" MODIFIED="1458736582404" TEXT="L&#xe9;teznek be&#xe9;p&#xed;tett gy&#xe1;mf&#xe1;k, melyek a sorvastags&#xe1;g m&#xe9;ret&#xe9;t t&#xe1;rolj&#xe1;k">
+<node CREATED="1458736601087" ID="ID_209592107" MODIFIED="1458736605584" TEXT="\strut"/>
+<node CREATED="1458736606655" ID="ID_1587278809" MODIFIED="1458736612239" TEXT="\mathstrut"/>
+</node>
+<node CREATED="1458736617403" ID="ID_383003802" MODIFIED="1458736636929" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \fbox{\rule{0pt}{1cm}ez a doboz legal&#225;bb 1\,cm magas}
+    </p>
+    <p>
+      \fbox{ez} \fbox{egy} \fbox{egyenetlen} \fbox{dobozsor}
+    </p>
+    <p>
+      \fbox{\strut ez} \fbox{\strut m&#225;r} \fbox{\strut egyenletes}
+    </p>
+    <p>
+      \fbox{\strut dobozsor} ... $(\sqrt{g} + \sqrt{h})$ cs&#250;nya, de
+    </p>
+    <p>
+      $\left(\sqrt{\mathstrut g} + \sqrt{\mathstrut h}\right)$
+    </p>
+    <p>
+      sz&#233;p.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1458736653703" ID="ID_931328596" MODIFIED="1458736657318" TEXT="T&#xe1;rol&#xf3;doboz">
+<node CREATED="1458736675834" ID="ID_1637297673" MODIFIED="1458736684084" TEXT="A dobozok alkalmasak sz&#xf6;vegr&#xe9;szletek t&#xe1;rol&#xe1;s&#xe1;ra."/>
+<node CREATED="1458736685515" ID="ID_1727220229" MODIFIED="1458736701749" TEXT="&#xda;j t&#xe1;rol&#xf3;doboz l&#xe9;trehoz&#xe1;sa: \newsavebox{\prncs}. Ezzel l&#xe9;trehoztunk egy \prncs nev&#x171; dobozt."/>
+<node CREATED="1458736713471" ID="ID_1347490752" MODIFIED="1458736763450" TEXT="Akkor most t&#xf6;lts&#xfc;k fel a k&#xf6;vetkez&#x151; paranccsal:">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \savebox{\prncs}[sz&#233;l][poz]{keretesdobozt
+    </p>
+    <p>
+      tegy&#252;nk bele?\fbox{sz&#246;veg} vagy keret n&#233;lk&#252;lit:
+    </p>
+    <p>
+      \fbox{sz&#246;veg}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1458736763436" ID="ID_60652657" MODIFIED="1458736775298" TEXT="A doboz tartalm&#xe1;nak ki&#xed;rat&#xe1;sa, ahol sz&#xfc;ks&#xe9;g van r&#xe1;:">
+<node CREATED="1458736776495" ID="ID_1742253748" MODIFIED="1458736788356" TEXT="\usebox{\prncs}"/>
+</node>
+<node COLOR="#ff0000" CREATED="1458736907666" ID="ID_646937807" MODIFIED="1458736920422" TEXT="Vigy&#xe1;zat, a \usebox-ot &#xfa;j bekezd&#xe9;sben haszn&#xe1;ljuk, k&#xfc;l&#xf6;nben r&#xe1;helyezi a dobozt a foly&#xf3;sz&#xf6;vegre!">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1458736938781" ID="ID_1133560769" MODIFIED="1458736943292" TEXT="M&#xfa;veletek dobozokkal">
+<node CREATED="1458736945283" ID="ID_131814829" MODIFIED="1458736972366" TEXT="graphicx csomag"/>
+<node CREATED="1458736974044" ID="ID_1371973083" MODIFIED="1458736978751" TEXT="Dobozok forgat&#xe1;sa">
+<node CREATED="1458736984022" ID="ID_46568886" MODIFIED="1458736985117" TEXT="rotatebox[origin=forgat&#xe1;scentrum]{sz&#xf6;g}{sz&#xf6;veg}"/>
+</node>
+<node CREATED="1458736989327" ID="ID_1845192919" MODIFIED="1458736992815" TEXT="Dobozok ny&#xfa;jt&#xe1;sa">
+<node CREATED="1458736998484" ID="ID_749368479" MODIFIED="1458737000202" TEXT="scalebox{x}[y]{sz&#xf6;veg}"/>
 </node>
 </node>
 </node>

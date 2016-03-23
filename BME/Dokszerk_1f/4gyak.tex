@@ -8,6 +8,8 @@
 \usepackage{sidecap}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{pifont}
+\usepackage{shadow}
 
 \begin{document}
 \includegraphics[scale=0.2]{totoro.png}
@@ -46,7 +48,7 @@ ivóvízforrás kell hogy legyen.}
 \begin{subfigure}[t]{0.3\textwidth}
 \centering
 \includegraphics[width=\textwidth]{totoro.png}
-\caption{Totoroi elefánt}g
+\caption{Totoroi elefánt}
 \end{subfigure}\\
 \begin{subfigure}[t]{0.3\textwidth}
 \centering
@@ -55,5 +57,33 @@ ivóvízforrás kell hogy legyen.}
 \end{subfigure}
 \caption{A világ elefántjai}
 \end{figure*}
+
+\mbox{sima doboz keret nélkül}
+\fbox{sima keretezett doboz}
+{\setlength{\fboxrule}{3pt} \fbox{vastag keretes doboz}}
+{\setlength{\fboxsep}{0pt} \fbox{térközmentes keretes doboz}}
+
+Ez \raisebox{2ex}{egy} sor.
+
+{\setlength{\sboxrule}{3pt} \shabox{vastag keretes
+doboz}}
+{\setlength{\sboxsep}{0pt} \shabox{térközmentes
+keretes doboz}}
+{\setlength{\sdim }{10pt} \shabox{Nagy árnyékos
+doboz}}
+
+\dots
+\fbox{\parbox[t][50mm]{90mm}{\vfill \raggedleft
+\hrulefill \shabox{\scriptsize Kovács Alajos} \
+\
+\tiny nyugdíjas főtörzsőrmester \\[6pt]
+\ding{38} +36-1-234-5678 \\
+\ding{41} alajos@kovacs.hu \vfill}}
+\fbox{\rule{0pt}{1cm}ez a doboz legalább 1\,cm magas}
+\fbox{ez} \fbox{egy} \fbox{egyenetlen} \fbox{dobozsor}
+\fbox{\strut ez} \fbox{\strut már} \fbox{\strut egyenletes}
+\fbox{\strut dobozsor} ... $(\sqrt{g} + \sqrt{h})$ csúnya, de
+$\left(\sqrt{\mathstrut g} + \sqrt{\mathstrut h}\right)$
+szép.
 
 \end{document}
