@@ -1319,9 +1319,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1458732549815" ID="ID_1052090580" MODIFIED="1458732576693" POSITION="right" TEXT="7) K&#xe9;pek, &#xe1;br&#xe1;k beillleszt&#xe9;se, dobozok">
+<node CREATED="1458732549815" FOLDED="true" ID="ID_1052090580" MODIFIED="1458997828768" POSITION="right" TEXT="7) K&#xe9;pek, &#xe1;br&#xe1;k beillleszt&#xe9;se, dobozok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1458732581518" ID="ID_1982760856" MODIFIED="1458732590995" TEXT="K&#xe9;pek beilleszt&#xe9;se ">
+<node CREATED="1458732581518" FOLDED="true" ID="ID_1982760856" MODIFIED="1458997773687" TEXT="K&#xe9;pek beilleszt&#xe9;se ">
 <node CREATED="1458732591988" ID="ID_1735679269" MODIFIED="1458732627863" TEXT="&#xc1;br&#xe1;k beilleszt&#xe9;s&#xe9;hez sz&#xfc;ks&#xe9;g van a graphics csomagra"/>
 <node CREATED="1458732629660" ID="ID_1217318738" MODIFIED="1458732682570" TEXT="A k&#xe9;peket c&#xe9;lszer&#x171; elhelyezni a forr&#xe1;s&#xe1;llom&#xe1;nyt tartalmaz&#xf3; k&#xf6;nyvt&#xe1;rba, mert akkor el&#xe9;g a nev&#xfc;kre hivatkozni"/>
 <node CREATED="1458732659943" ID="ID_951117075" MODIFIED="1458732704109" TEXT="De ha pl. egy &#x201e;grafikonok&#x201d; nev&#x171; alk&#xf6;nyvt&#xe1;rba helyezz&#xfc;k a k&#xe9;peket, akkor a preambulumba &#xed;rjuk be a k&#xf6;vetkez&#x151;t:">
@@ -1336,7 +1336,7 @@
 <node CREATED="1458732812689" ID="ID_1462810425" MODIFIED="1458732849021" TEXT="EPS beilleszt&#xe9;se eset&#xe9;n csmag is kell">
 <node CREATED="1458732819705" ID="ID_1189771469" MODIFIED="1458732834396" TEXT="\usepackage{epstopdf}"/>
 </node>
-<node CREATED="1458732855816" ID="ID_234160132" MODIFIED="1458733064222" TEXT="Manipul&#xe1;l&#xe1;ssal \includegraphics{abra} param&#xe9;terek&#xe9;nt">
+<node CREATED="1458732855816" FOLDED="true" ID="ID_234160132" MODIFIED="1458997771756" TEXT="Manipul&#xe1;l&#xe1;ssal \includegraphics{abra} param&#xe9;terek&#xe9;nt">
 <node CREATED="1458732862563" ID="ID_1656469438" MODIFIED="1458732894187" TEXT="trim">
 <node CREATED="1458732894796" ID="ID_1913686632" MODIFIED="1458732912084" TEXT="k&#xe9;pen meghat&#xe1;roz egy keretet (de lev&#xe1;g&#xe1;s nem t&#xf6;rt&#xe9;nik)"/>
 </node>
@@ -1368,7 +1368,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458732771134" ID="ID_124259604" MODIFIED="1458733074825" TEXT="&#xc1;br&#xe1;k &#xfa;sztat&#xe1;sa">
+<node CREATED="1458732771134" FOLDED="true" ID="ID_124259604" MODIFIED="1458997791486" TEXT="&#xc1;br&#xe1;k &#xfa;sztat&#xe1;sa">
 <node CREATED="1458733075730" ID="ID_1075913091" MODIFIED="1458733087551" TEXT="figure k&#xf6;rnyezet szolg&#xe1;l"/>
 <node CREATED="1458733089350" ID="ID_120725928" MODIFIED="1458733114532" TEXT="ez pont ugyanat, mint a tabulas, table egym&#xe1;sba &#xe1;gyaz&#xe1;sa, ez&#xe9;rt mindenk&#xe9;pp haszn&#xe1;ljuk"/>
 <node CREATED="1458733115650" ID="ID_814679144" MODIFIED="1458733130025" TEXT="Ugyan&#xfa;gy l&#xe9;tezik opcion&#xe1;lis param&#xe9;tere">
@@ -1401,7 +1401,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1458733182213" ID="ID_752114919" MODIFIED="1458733194024" TEXT="&#xc1;bra manipul&#xe1;l&#xe1;sa figure k&#xf6;rnyezetben">
+<node CREATED="1458733182213" FOLDED="true" ID="ID_752114919" MODIFIED="1458997783168" TEXT="&#xc1;bra manipul&#xe1;l&#xe1;sa figure k&#xf6;rnyezetben">
 <node CREATED="1458733899500" ID="ID_1018389258" MODIFIED="1458733981863" TEXT="Az &#xe1;br&#xe1;k manipl&#xe1;l&#xe1;sa itt is lehets&#xe9;ges">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -1596,7 +1596,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458735047454" ID="ID_47017775" MODIFIED="1458735059013" TEXT="&#xc1;br&#xe1;k sz&#xf6;vegbe &#xe1;gyaz&#xe1;sa">
+<node CREATED="1458735047454" FOLDED="true" ID="ID_47017775" MODIFIED="1458997789673" TEXT="&#xc1;br&#xe1;k sz&#xf6;vegbe &#xe1;gyaz&#xe1;sa">
 <node CREATED="1458735060869" ID="ID_444307531" MODIFIED="1458735068861" TEXT="wrapfig package"/>
 <node CREATED="1458735074449" ID="ID_717695090" MODIFIED="1458735100012" TEXT="A k&#xf6;rnyezet">
 <richcontent TYPE="NOTE"><html>
@@ -1707,11 +1707,11 @@
 </node>
 </node>
 </node>
-<node CREATED="1458735307512" ID="ID_335186290" MODIFIED="1458735314154" TEXT="LaTeX dobozok">
+<node CREATED="1458735307512" FOLDED="true" ID="ID_335186290" MODIFIED="1458997826017" TEXT="LaTeX dobozok">
 <node CREATED="1458735315769" ID="ID_1149552454" MODIFIED="1458735323791" TEXT="A doboz a dokumentum olyan r&#xe9;sze, melyet a TeX egyetlen egys&#xe9;gk&#xe9;nt kezel, tartalma nem t&#xf6;rhet&#x151; el a sor v&#xe9;g&#xe9;n vagy a lap alj&#xe1;n.">
 <node CREATED="1458735328962" ID="ID_700504637" MODIFIED="1458735338869" TEXT="Pl &#xfa;sz&#xf3; objektumok"/>
 </node>
-<node CREATED="1458735341116" ID="ID_1096971434" MODIFIED="1458735345098" TEXT="N&#xe9;gy f&#xe9;le doboz van">
+<node CREATED="1458735341116" FOLDED="true" ID="ID_1096971434" MODIFIED="1458997794775" TEXT="N&#xe9;gy f&#xe9;le doboz van">
 <node CREATED="1458735346876" ID="ID_1395988882" MODIFIED="1458735352128" TEXT="LR doboz">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1458735383924" ID="ID_1702612417" MODIFIED="1458735385305" TEXT="(balr&#xf3;l jobbra t&#xf6;ltj&#xfc;k fel tartalommal, tipikusan csak egy sor"/>
@@ -1729,11 +1729,11 @@
 <node CREATED="1458735413178" ID="ID_1310097737" MODIFIED="1458735415217" TEXT="sz&#xf6;vegr&#xe9;szek t&#xe1;rol&#xe1;s&#xe1;ra szolg&#xe1;l"/>
 </node>
 </node>
-<node CREATED="1458735423717" ID="ID_749201875" MODIFIED="1458735429948" TEXT="LR dobozok">
+<node CREATED="1458735423717" FOLDED="true" ID="ID_749201875" MODIFIED="1458997807143" TEXT="LR dobozok">
 <node CREATED="1458735430764" ID="ID_1590373075" MODIFIED="1458735441313" TEXT="\mbox{sz&#xf6;veg}">
 <node CREATED="1458735442329" ID="ID_1032812322" MODIFIED="1458735449753" TEXT="kor&#xe1;bban is volt az elv&#xe1;laszt&#xe1;s megakad&#xe1;lyoz&#xe1;s&#xe1;ra"/>
 </node>
-<node CREATED="1458735669853" ID="ID_1274212194" MODIFIED="1458735768968" TEXT="\fbox{sz&#xf6;veg}">
+<node CREATED="1458735669853" FOLDED="true" ID="ID_1274212194" MODIFIED="1458997797398" TEXT="\fbox{sz&#xf6;veg}">
 <node CREATED="1458735680433" ID="ID_754933192" MODIFIED="1458735691957" TEXT="itt m&#xe1;r keret is megjelenik a sz&#xf6;veg k&#xf6;r&#xfc;l."/>
 <node CREATED="1458735711324" ID="ID_1862237405" MODIFIED="1458735712442" TEXT="A keret vonalvastags&#xe1;g&#xe1;t az \fboxrule t&#xe1;rolja, m&#xed;g a keret t&#xe1;vols&#xe1;g&#xe1;t a sz&#xf6;vegt&#x151;l a \fboxsep."/>
 <node CREATED="1458735738604" ID="ID_1480229612" MODIFIED="1458735767658" TEXT="P&#xe9;lda">
@@ -1758,7 +1758,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1458735705870" ID="ID_414593353" MODIFIED="1458735783186" TEXT="T&#xf6;bb lehet&#x151;s&#xe9;g a">
+<node CREATED="1458735705870" FOLDED="true" ID="ID_414593353" MODIFIED="1458997799510" TEXT="T&#xf6;bb lehet&#x151;s&#xe9;g a">
 <node CREATED="1458735791983" ID="ID_1043580742" MODIFIED="1458735794053" TEXT="\makebox[sz&#xe9;l][poz]{sz&#xf6;veg}"/>
 <node CREATED="1458735802178" ID="ID_20679687" MODIFIED="1458735806097" TEXT="\framebox[sz&#xe9;l][poz] {sz&#xf6;veg}">
 <font NAME="SansSerif" SIZE="12"/>
@@ -1791,7 +1791,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1458735929232" ID="ID_711902291" MODIFIED="1458735933657" TEXT="&#xc1;rny&#xe9;kolt keret">
+<node CREATED="1458735929232" FOLDED="true" ID="ID_711902291" MODIFIED="1458997802254" TEXT="&#xc1;rny&#xe9;kolt keret">
 <node CREATED="1458735937863" ID="ID_1454150973" MODIFIED="1458735949211" TEXT="shadow csomaggal"/>
 <node CREATED="1458735953326" ID="ID_899139740" MODIFIED="1458736059996" TEXT="\shabox {sz&#xf6;veg} st&#xed;lusparam&#xe9;terekkel">
 <richcontent TYPE="NOTE"><html>
@@ -1830,7 +1830,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458736062551" ID="ID_965464626" MODIFIED="1458736081347" TEXT="Tov&#xe1;bbi LR dobozok a \fancybox csomagban">
+<node CREATED="1458736062551" FOLDED="true" ID="ID_965464626" MODIFIED="1458997804670" TEXT="Tov&#xe1;bbi LR dobozok a \fancybox csomagban">
 <node CREATED="1458736085586" ID="ID_1622258354" MODIFIED="1458736097680" TEXT="Lekerek&#xed;tett sark&#xfa; dobozok:">
 <node CREATED="1458736098168" ID="ID_146240773" MODIFIED="1458736107376" TEXT="\ovalbox{sz&#xf6;veg}"/>
 <node CREATED="1458736117911" ID="ID_1563616316" MODIFIED="1458736119173" TEXT="\Ovalbox{sz&#xf6;veg}"/>
@@ -1841,9 +1841,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1458736177231" ID="ID_1216273676" MODIFIED="1458736184915" TEXT="Bekezd&#xe9;s dobozok">
+<node CREATED="1458736177231" FOLDED="true" ID="ID_1216273676" MODIFIED="1458997814414" TEXT="Bekezd&#xe9;s dobozok">
 <node CREATED="1458736185916" ID="ID_1842974363" MODIFIED="1458736194018" TEXT="T&#xf6;bb bekezd&#xe9;snyi sz&#xf6;veget egy dobozba helyezhet&#xfc;nk vele,"/>
-<node CREATED="1458736195417" ID="ID_977977657" MODIFIED="1458736202249" TEXT="\parbox[poz][mag][szpoz]{sz&#xe9;less&#xe9;g}{sz&#xf6;veg}">
+<node CREATED="1458736195417" FOLDED="true" ID="ID_977977657" MODIFIED="1458997811438" TEXT="\parbox[poz][mag][szpoz]{sz&#xe9;less&#xe9;g}{sz&#xf6;veg}">
 <node CREATED="1458736206516" ID="ID_532387388" MODIFIED="1458736212333" TEXT="[poz]">
 <node CREATED="1458736213430" ID="ID_1795018735" MODIFIED="1458736230253" TEXT="t (top) vagy b (bottom)"/>
 <node CREATED="1458736231387" ID="ID_1154690420" MODIFIED="1458736232393" TEXT="k&#xfc;l&#xf6;nben k&#xf6;z&#xe9;pre igaz&#xed;tja a dobozt a sz&#xf6;veg vonal&#xe1;ban"/>
@@ -1858,7 +1858,7 @@
 </node>
 </node>
 <node CREATED="1458736306721" ID="ID_385036540" MODIFIED="1458736313500" TEXT="Dobozok egym&#xe1;sba &#xe1;gyaz&#xe1;sa">
-<node CREATED="1458736316619" ID="ID_1253637574" MODIFIED="1458736470288" TEXT="N&#xe9;vjegyk&#xe1;rtya P&#xe9;lda">
+<node CREATED="1458736316619" ID="ID_1253637574" MODIFIED="1458997168083" TEXT="N&#xe9;vjegyk&#xe1;rtya P&#xe9;lda">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1892,11 +1892,10 @@
       \ding{41} alajos@kovacs.hu \vfill}}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1458736521489" ID="ID_1319702040" MODIFIED="1458736525972" TEXT="Vonaldoboz">
+<node CREATED="1458736521489" FOLDED="true" ID="ID_1319702040" MODIFIED="1458997817934" TEXT="Vonaldoboz">
 <node CREATED="1458736527637" ID="ID_838098684" MODIFIED="1458736536347" TEXT="\rule[emel&#xe9;s]{sz&#xe9;l}{mag}">
 <node CREATED="1458736536778" ID="ID_1826572794" MODIFIED="1458736548015" TEXT="sz&#xe9;l sz&#xe9;less&#xe9;g&#x171; &#xe9;s mag magass&#xe1;g&#xfa; kit&#xf6;lt&#xf6;tt t&#xe9;glalapot rajzolhatunk."/>
 </node>
@@ -1930,11 +1929,10 @@
       sz&#233;p.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1458736653703" ID="ID_931328596" MODIFIED="1458736657318" TEXT="T&#xe1;rol&#xf3;doboz">
+<node CREATED="1458736653703" FOLDED="true" ID="ID_931328596" MODIFIED="1458997819518" TEXT="T&#xe1;rol&#xf3;doboz">
 <node CREATED="1458736675834" ID="ID_1637297673" MODIFIED="1458736684084" TEXT="A dobozok alkalmasak sz&#xf6;vegr&#xe9;szletek t&#xe1;rol&#xe1;s&#xe1;ra."/>
 <node CREATED="1458736685515" ID="ID_1727220229" MODIFIED="1458736701749" TEXT="&#xda;j t&#xe1;rol&#xf3;doboz l&#xe9;trehoz&#xe1;sa: \newsavebox{\prncs}. Ezzel l&#xe9;trehoztunk egy \prncs nev&#x171; dobozt."/>
 <node CREATED="1458736713471" ID="ID_1347490752" MODIFIED="1458736763450" TEXT="Akkor most t&#xf6;lts&#xfc;k fel a k&#xf6;vetkez&#x151; paranccsal:">
@@ -1953,8 +1951,7 @@
       \fbox{sz&#246;veg}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458736763436" ID="ID_60652657" MODIFIED="1458736775298" TEXT="A doboz tartalm&#xe1;nak ki&#xed;rat&#xe1;sa, ahol sz&#xfc;ks&#xe9;g van r&#xe1;:">
 <node CREATED="1458736776495" ID="ID_1742253748" MODIFIED="1458736788356" TEXT="\usebox{\prncs}"/>
@@ -1963,13 +1960,36 @@
 <font NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
-<node CREATED="1458736938781" ID="ID_1133560769" MODIFIED="1458736943292" TEXT="M&#xfa;veletek dobozokkal">
+<node CREATED="1458736938781" FOLDED="true" ID="ID_1133560769" MODIFIED="1458997820846" TEXT="M&#xfa;veletek dobozokkal">
 <node CREATED="1458736945283" ID="ID_131814829" MODIFIED="1458736972366" TEXT="graphicx csomag"/>
 <node CREATED="1458736974044" ID="ID_1371973083" MODIFIED="1458736978751" TEXT="Dobozok forgat&#xe1;sa">
-<node CREATED="1458736984022" ID="ID_46568886" MODIFIED="1458736985117" TEXT="rotatebox[origin=forgat&#xe1;scentrum]{sz&#xf6;g}{sz&#xf6;veg}"/>
+<node CREATED="1458736984022" ID="ID_46568886" MODIFIED="1458736985117" TEXT="rotatebox[origin=forgat&#xe1;scentrum]{sz&#xf6;g}{sz&#xf6;veg}">
+<node CREATED="1458997352834" ID="ID_95890818" MODIFIED="1458997394102" TEXT="P&#xe9;lda: \rotatebox[origin=B]{90}{sz&#xf6;veg}"/>
+</node>
 </node>
 <node CREATED="1458736989327" ID="ID_1845192919" MODIFIED="1458736992815" TEXT="Dobozok ny&#xfa;jt&#xe1;sa">
-<node CREATED="1458736998484" ID="ID_749368479" MODIFIED="1458737000202" TEXT="scalebox{x}[y]{sz&#xf6;veg}"/>
+<node CREATED="1458736998484" ID="ID_749368479" MODIFIED="1458737000202" TEXT="scalebox{x}[y]{sz&#xf6;veg}">
+<node CREATED="1458997403237" ID="ID_209910372" MODIFIED="1458997443050" TEXT="P&#xe9;lda: \scalebox{2}[1]{sz&#xf6;veg}"/>
+</node>
+</node>
+<node CREATED="1458997447932" ID="ID_1088063835" MODIFIED="1458997450939" TEXT="T&#xfc;kr&#xf6;z&#xe9;s">
+<node CREATED="1458997451860" ID="ID_1988636231" MODIFIED="1458997462155" TEXT="\scalebox{-1}[1]{sz&#xf6;veg}"/>
+<node CREATED="1458997469678" ID="ID_1311920182" MODIFIED="1458997470514" TEXT="\scalebox{-1}[-1]{sz&#xf6;veg}"/>
+<node CREATED="1458997477606" ID="ID_695351089" MODIFIED="1458997479082" TEXT="\reflectbox{sz&#xf6;veg}"/>
+</node>
+</node>
+<node CREATED="1458997491788" FOLDED="true" ID="ID_1672304809" MODIFIED="1458997824581" TEXT="&#xc9;rdekess&#xe9;gek">
+<node CREATED="1458997504509" ID="ID_1574753052" MODIFIED="1458997515994" TEXT="L&#xe1;thatatlan doboz">
+<node CREATED="1458997517188" ID="ID_1478218584" MODIFIED="1458997523896" TEXT="\phantom{...}"/>
+</node>
+<node CREATED="1458997531092" FOLDED="true" ID="ID_132206985" MODIFIED="1458997822934" TEXT="Dobozok sz&#xed;nez&#xe9;se">
+<node CREATED="1458997542508" ID="ID_312612421" MODIFIED="1458997552770" TEXT="xcolor csomag"/>
+<node CREATED="1458997553980" ID="ID_588732403" MODIFIED="1458997606684" TEXT="\colorbox{red}{sz&#xf6;veg}"/>
+<node CREATED="1458997561340" ID="ID_1087301845" MODIFIED="1458997595514" TEXT="\fcolorbox{red}{yellow}{sz&#xf6;veg}"/>
+<node CREATED="1458997574916" ID="ID_16024812" MODIFIED="1458997650187" TEXT="\fcolorbox{declared-color-frame}{declared-color-background}{text}"/>
+<node CREATED="1458997663140" ID="ID_1605682483" MODIFIED="1458997667859" TEXT="P&#xe9;lda:">
+<node CREATED="1458997669948" ID="ID_205877398" MODIFIED="1458997715979" TEXT="\fcolorbox[RGB]{0,64,128}{192,192,192}{sz&#xf6;veg}"/>
+</node>
 </node>
 </node>
 </node>
