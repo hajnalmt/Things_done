@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1458615581084" ID="ID_411259303" MODIFIED="1459156492030" TEXT="Fels&#x151;bb Matematika - Halad&#xf3; Line&#xe1;ris Algebra">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1459200760757" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
+<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1459201126375" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459156608018" FOLDED="true" ID="ID_718278855" MODIFIED="1459160549313" TEXT="Vektor">
 <node CREATED="1459156706914" ID="ID_1518623961" MODIFIED="1459156719434" TEXT="A 2 &#xe9;s 3 dimenzi&#xf3;s t&#xe9;r vektorai">
@@ -288,6 +288,32 @@
 </node>
 </node>
 </node>
+</node>
+</node>
+</node>
+<node CREATED="1459201130997" ID="ID_1648692028" MODIFIED="1459201143047" POSITION="left" TEXT="2) M&#xe1;trixok algebr&#xe1;ja">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1459201171918" ID="ID_1282324897" MODIFIED="1459201181596" TEXT="M&#xe1;trixm&#x171;veletek">
+<node CREATED="1459201182686" ID="ID_1247163125" MODIFIED="1459201207707" TEXT="Elemenk&#xe9;nti m&#xe1;trixm&#x171;veletek">
+<node CREATED="1459201212669" ID="ID_73334508" MODIFIED="1459201241051" TEXT="m&#xe1;trixok &#xf6;sszege">
+<node CREATED="1459201242086" ID="ID_1035834666" MODIFIED="1459201304005" TEXT="A+B=[a_ij] + [b_ij]=[a_ij+b_ij]"/>
+</node>
+<node CREATED="1459201308758" ID="ID_667704294" MODIFIED="1459201313419" TEXT="Z&#xe9;rusm&#xe1;trix"/>
+<node CREATED="1459201315238" ID="ID_656869718" MODIFIED="1459201325875" TEXT="M&#xe1;trix skal&#xe1;rszorosa">
+<node CREATED="1459201326853" ID="ID_1250087288" MODIFIED="1459201355642" TEXT="cA=c*[a_ij]=[ca_ij]"/>
+</node>
+<node CREATED="1459201359581" ID="ID_992607048" MODIFIED="1459201367557" TEXT="M&#xe1;trixok line&#xe1;ris kombin&#xe1;ci&#xf3;ja"/>
+</node>
+<node CREATED="1459201413702" ID="ID_536651906" MODIFIED="1459201418150" TEXT="M&#xe1;trixszorz&#xe1;s"/>
+<node CREATED="1459201440454" ID="ID_804763135" MODIFIED="1459201456629" TEXT="Blokkm&#xe1;trixok">
+<node COLOR="#338800" CREATED="1459201486431" ID="ID_157752091" MODIFIED="1459201537070" TEXT="Blokkm&#xe1;trixok skal&#xe1;rral val&#xf3; szorz&#xe1;sa &#xe9;s k&#xe9;t azonos m&#xf3;don particion&#xe1;lt blokkm&#xe1;trix &#xf6;sszead&#xe1;sa blokkonk&#xe9;nt is elv&#xe9;gezhet&#x151;"/>
+<node COLOR="#338800" CREATED="1459201538589" ID="ID_692234429" MODIFIED="1459201637107" TEXT="Ha A, B k&#xe9;t blokkm&#xe1;trix, &#xe9;s minden k-ra az A blokk oszlopainak sz&#xe1;ma megegyezik B sorainak sz&#xe1;m&#xe1;val, akkor C=AB szorzat kisz&#xe1;m&#xed;that&#xf3; a szorz&#xe1;si szab&#xe1;ly blokkokra val&#xf3; alkalmaz&#xe1;s&#xe1;val"/>
+</node>
+<node CREATED="1459201864383" ID="ID_1003375333" MODIFIED="1459201872485" TEXT="M&#xe1;trixszorz&#xe1;s alkalmaz&#xe1;sai">
+<node COLOR="#338800" CREATED="1459201873558" ID="ID_1484423753" MODIFIED="1459201974318" TEXT="Skal&#xe1;ris szorzat"/>
+<node COLOR="#338800" CREATED="1459201887774" ID="ID_1859806028" MODIFIED="1459201973998" TEXT="Diadikus szorzat"/>
+<node COLOR="#338800" CREATED="1459201908486" ID="ID_935279420" MODIFIED="1459201973103" TEXT="Line&#xe1;ris egyenletrendszer m&#xe1;trixszorzatos alakja: Ax=b, szimult&#xe1;n egyenletrendszerek: AX=B"/>
+<node COLOR="#338800" CREATED="1459201989295" ID="ID_1676067303" MODIFIED="1459202012878" TEXT="Line&#xe1;ris helyettes&#xed;t&#xe9;s m&#xe1;trixszorzatos alakja b=Ax"/>
 </node>
 </node>
 </node>
