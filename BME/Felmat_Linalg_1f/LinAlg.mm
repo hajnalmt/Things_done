@@ -293,7 +293,7 @@
 </node>
 <node CREATED="1459201130997" ID="ID_1648692028" MODIFIED="1459201143047" POSITION="left" TEXT="2) M&#xe1;trixok algebr&#xe1;ja">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459201171918" ID="ID_1282324897" MODIFIED="1459201181596" TEXT="M&#xe1;trixm&#x171;veletek">
+<node CREATED="1459201171918" FOLDED="true" ID="ID_1282324897" MODIFIED="1459207769365" TEXT="M&#xe1;trixm&#x171;veletek">
 <node CREATED="1459201182686" ID="ID_1247163125" MODIFIED="1459201207707" TEXT="Elemenk&#xe9;nti m&#xe1;trixm&#x171;veletek">
 <node CREATED="1459201212669" ID="ID_73334508" MODIFIED="1459201241051" TEXT="m&#xe1;trixok &#xf6;sszege">
 <node CREATED="1459201242086" ID="ID_1035834666" MODIFIED="1459201304005" TEXT="A+B=[a_ij] + [b_ij]=[a_ij+b_ij]"/>
@@ -314,7 +314,64 @@
 <node COLOR="#338800" CREATED="1459201887774" ID="ID_1859806028" MODIFIED="1459201973998" TEXT="Diadikus szorzat"/>
 <node COLOR="#338800" CREATED="1459201908486" ID="ID_935279420" MODIFIED="1459201973103" TEXT="Line&#xe1;ris egyenletrendszer m&#xe1;trixszorzatos alakja: Ax=b, szimult&#xe1;n egyenletrendszerek: AX=B"/>
 <node COLOR="#338800" CREATED="1459201989295" ID="ID_1676067303" MODIFIED="1459202012878" TEXT="Line&#xe1;ris helyettes&#xed;t&#xe9;s m&#xe1;trixszorzatos alakja b=Ax"/>
+<node COLOR="#ff0000" CREATED="1459205501524" ID="ID_474799995" MODIFIED="1459205665094" TEXT="M&#xe1;trixszorz&#xe1;s &#xe9;s line&#xe1;ris kombin&#xe1;ci&#xf3;: A m*n-es m&#xe1;trix, x n-dimenzi&#xf3;s, y m-dimenzi&#xf3;s vektor. Ekkor az Ax szorzat az A oszlopvektorainak line&#xe1;ris kombin&#xe1;ci&#xf3;j&#xe1;t, m&#xed;g az y^T A szorzat az A sorvektorainak line&#xe1;ris kombin&#xe1;ci&#xf3;j&#xe1;t adja."/>
+<node CREATED="1459205782405" ID="ID_736543289" MODIFIED="1459205798475" TEXT="B&#xe1;ziscsere">
+<node COLOR="#006699" CREATED="1459205799468" ID="ID_1350929748" MODIFIED="1459205934299" TEXT="Legyen B &#xe9;s C az F^n k&#xe9;t b&#xe1;zisa. A B b&#xe1;zisr&#xf3;l a C-re val&#xf3; &#xe1;tt&#xe9;r&#xe9;s m&#xe1;trixa A_{C&lt;-B}"/>
+<node COLOR="#ff0000" CREATED="1459205839168" ID="ID_920070284" MODIFIED="1459205898285" TEXT="Koordin&#xe1;t&#xe1;k v&#xe1;ltoz&#xe1;sa b&#xe1;ziscser&#xe9;n&#xe9;l [v]_C=A_{C&lt;-B}[v]_B"/>
 </node>
+<node CREATED="1459205955794" ID="ID_818050317" MODIFIED="1459205961426" TEXT="B&#xe1;zisfelbont&#xe1;s">
+<node CREATED="1459205962189" ID="ID_1635693707" MODIFIED="1459205978907" TEXT="A_m*n m&#xe1;trix">
+<node COLOR="#338800" CREATED="1459205982334" ID="ID_1361445926" MODIFIED="1459206024682" TEXT="reduk&#xe1;lt l&#xe9;pcs&#x151;s alakj&#xe1;nak nemz&#xe9;rus soraib&#xf3;l &#xe1;ll&#xf3; r*n-es r&#xe9;szm&#xe1;trix&#xe1;t R(r=r(A))"/>
+<node COLOR="#338800" CREATED="1459206027574" ID="ID_1319933866" MODIFIED="1459206112805" TEXT="R f&#x151;oszlopainak megfelel&#x151; A-beli oszlopok alkotta m*r-es r&#xe9;szm&#xe1;trixot B."/>
+<node CREATED="1459206128662" ID="ID_1301848309" MODIFIED="1459206164284" TEXT="Ekkor R m&#xe1;trix j-edik oszlopa megegyezik az A m&#xe1;trix j-edik oszlop&#xe1;nak a B oszlopai alkotta b&#xe1;zisban fel&#xed;rt koordin&#xe1;t&#xe1;s alakj&#xe1;val."/>
+</node>
+</node>
+</node>
+<node CREATED="1459207336271" ID="ID_1693193219" MODIFIED="1459207342228" TEXT="Elemi m&#xe1;trixok">
+<node COLOR="#006699" CREATED="1459207343174" ID="ID_1691403862" MODIFIED="1459207392894" TEXT="Az I_n egys&#xe9;gm&#xe1;trixon v&#xe9;grehajtott egyetlen elemi sorm&#xfa;velettel kapott m&#xe1;trixot elemi m&#xe1;trixnak nevezz&#xfc;k"/>
+<node COLOR="#ff0000" CREATED="1459207394666" ID="ID_1024786156" MODIFIED="1459207486743" TEXT="Legyen E az az elemi m&#xe1;trix, melyet I_m-b&#x151;l egy elemi sorm&#x171;velettel kapunk. Ha ugyanezt a sorm&#x171;veletet egy tetsz&#x151;leges m*n-es A m&#xe1;trixra alkalmazzuk, akkor eredm&#xe9;ny&#xfc;l EA m&#xe1;trixot kapjuk"/>
+</node>
+<node CREATED="1459207513735" ID="ID_1423604801" MODIFIED="1459207521850" TEXT="Vektorokra particion&#xe1;lt m&#xe1;trixok">
+<node CREATED="1459207523315" ID="ID_1994890589" MODIFIED="1459207562289" TEXT="Sorvektor*oszlopvektor"/>
+<node CREATED="1459207564313" ID="ID_1799898440" MODIFIED="1459207569563" TEXT="M&#xe1;trix*oszlopvektor"/>
+<node CREATED="1459207571172" ID="ID_436390476" MODIFIED="1459207579204" TEXT="Sirvektor*m&#xe1;trix"/>
+<node CREATED="1459207588773" ID="ID_785204630" MODIFIED="1459207595844" TEXT="Oszlopvektor*sorvektor">
+<node CREATED="1459207606147" ID="ID_844057135" MODIFIED="1459207629501" TEXT="E felbont&#xe1;sban az AB m&#xe1;trixot di&#xe1;dok &#xf6;sszeg&#xe9;re bontottuk."/>
+</node>
+<node CREATED="1459207634179" ID="ID_540639486" MODIFIED="1459207658314" TEXT="Szorzat oszlopai &#xe9;s sorai">
+<node COLOR="#ff0000" CREATED="1459207659520" ID="ID_1601262223" MODIFIED="1459207749257" TEXT="Az AB m&#xe1;trix minden oszlopa az A oszlopainak line&#xe1;ris kombin&#xe1;ci&#xf3;ja, &#xe9;s minden sora a B sorainak line&#xe1;ris kombin&#xe1;ci&#xf3;ja.">
+<icon BUILTIN="down"/>
+</node>
+<node CREATED="1459207711175" ID="ID_1575688202" MODIFIED="1459207744987" TEXT="r(AB)&lt;=min(r(A),r(B))"/>
+</node>
+</node>
+</node>
+<node CREATED="1459207771248" ID="ID_528909311" MODIFIED="1459207780193" TEXT="M&#x171;veleti alaptulajdons&#xe1;gok">
+<node CREATED="1459207781235" ID="ID_1552612703" MODIFIED="1459207787671" TEXT="Alapm&#x171;veletek">
+<node CREATED="1459207819001" ID="ID_572264537" MODIFIED="1459207822339" TEXT="Szorz&#xe1;s">
+<node CREATED="1459207822954" ID="ID_156728519" MODIFIED="1459207929274" TEXT="A m&#xe1;trixszorz&#xe1;s nem kommutat&#xed;v, azaz AB!=BA  b&#xe1;rmely k&#xe9;t &#xf6;sszeszorozhat&#xf3; m&#xe1;trixra">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node CREATED="1459207853387" ID="ID_800592801" MODIFIED="1459207927410" TEXT="Ha AB=AC, akkor az A!=O felt&#xe9;tel kev&#xe9;s ahhoz, hogy B=C k&#xf6;vetkeztet&#xe9;sre jussunk">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node CREATED="1459207889862" ID="ID_295640724" MODIFIED="1459207925449" TEXT="Az AB=O egyenl&#x151;s&#xe9;gb&#x151;l nem k&#xf6;vetkezik, hogy A vagy B a nullm&#xe1;trix">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node COLOR="#338800" CREATED="1459207933257" ID="ID_1868176483" MODIFIED="1459207945924" TEXT="A(BC)=(AB)C">
+<node CREATED="1459208026171" ID="ID_499074690" MODIFIED="1459208037040" TEXT="csoportos&#xed;that&#xf3;s&#xe1;g, asszociativit&#xe1;s"/>
+</node>
+<node COLOR="#338800" CREATED="1459207947133" ID="ID_1927018578" MODIFIED="1459207972058" TEXT="A(B+C)=AB+AC">
+<node CREATED="1459207977145" ID="ID_534958463" MODIFIED="1459207984026" TEXT="diszributivit&#xe1;s"/>
+</node>
+<node COLOR="#338800" CREATED="1459207991958" ID="ID_896566438" MODIFIED="1459208014835" TEXT="(A+B)C=AC+BC">
+<node CREATED="1459207988559" ID="ID_1204535151" MODIFIED="1459207989269" TEXT="diszributivit&#xe1;s "/>
+</node>
+</node>
+</node>
+<node CREATED="1459207788915" ID="ID_1922621340" MODIFIED="1459207792947" TEXT="Inverz"/>
+<node CREATED="1459207794024" ID="ID_1461270718" MODIFIED="1459207804941" TEXT="M&#x171;veletek speic&#xe1;lis m&#xe1;trixokkal"/>
+<node CREATED="1459207806044" ID="ID_779180861" MODIFIED="1459207811889" TEXT="LU-felbont&#xe1;s"/>
 </node>
 </node>
 </node>
