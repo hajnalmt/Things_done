@@ -177,7 +177,46 @@
 </node>
 </node>
 </node>
-<node CREATED="1459156681475" ID="ID_1852190255" MODIFIED="1459156690497" TEXT="Vektort&#xe9;r (light)"/>
+<node CREATED="1459156681475" ID="ID_1852190255" MODIFIED="1459156690497" TEXT="Vektort&#xe9;r (light)">
+<node CREATED="1459169655322" ID="ID_1306076412" MODIFIED="1459169684905" TEXT="Egyel&#x151;re vektoron R^n elmeit &#xe9;rtj&#xfc;k">
+<node COLOR="#006699" CREATED="1459169688032" ID="ID_1662184070" MODIFIED="1459169839391" TEXT="Vektort&#xe9;r, alt&#xe9;r">
+<node COLOR="#006699" CREATED="1459169700603" ID="ID_754779357" MODIFIED="1459169837404" TEXT="Vektort&#xe9;ren vektorok olyan nem &#xfc;res V halmaz&#xe9;t &#xe9;rtj&#xfc;k, mely z&#xe1;rt a vektor&#xf6;sszead&#xe1;s &#xe9;s skal&#xe1;rral szorz&#xe1;s m&#x171;velet&#xe9;re"/>
+<node COLOR="#006699" CREATED="1459169788536" ID="ID_1612705912" MODIFIED="1459169835816" TEXT="Ha U &#xe9;s V k&#xe9;t vektort&#xe9;r &#xe9;s U r&#xe9;szhalmaza V-nek, akkor azt mondjuk, hogy az U vektort&#xe9;r a V vektort&#xe9;r altere."/>
+<node CREATED="1459169859198" ID="ID_1722437902" MODIFIED="1459169897981" TEXT="Az A vektorhalmaz pontosan akkor vektort&#xe9;r, ha az A-beli vektorokb&#xf3;l k&#xe9;pzett line&#xe1;ris kombin&#xe1;ci&#xf3;k is mind A-ban vannak."/>
+<node CREATED="1459169926472" ID="ID_762019156" MODIFIED="1459169943912" TEXT="Minden pozit&#xed;v n eg&#xe9;sz eset&#xe9;n F^n vektort&#xe9;r F f&#xf6;l&#xf6;tt"/>
+<node CREATED="1459169946725" ID="ID_1777084603" MODIFIED="1459169981185" TEXT="R^2-ben egy orig&#xf3;n &#xe1;tmen&#x151; egyenes vektorai (az egyenes pontjaiba mutat&#xf3; helyvektorok) alteret alkotnak"/>
+<node CREATED="1459169993600" ID="ID_10362491" MODIFIED="1459170099759" TEXT="R^3-ben b&#xe1;rmely orig&#xf3;n &#xe1;tmen&#x151; s&#xed;k vagy egyenes vektorai (az egyenes pontjaiba mutat helyvektorok) alteret alkotnak"/>
+<node CREATED="1459170104165" ID="ID_1435176823" MODIFIED="1459170153714" TEXT="Az R^3 im&#xe9;nt felsorolt alterei &quot;olyanok&quot;, mint az R &#xe9;s az R^2"/>
+</node>
+</node>
+<node CREATED="1459170197651" ID="ID_288938090" MODIFIED="1459170211874" TEXT="Alterek tulajdons&#xe1;gai">
+<node CREATED="1459170212970" ID="ID_1787141533" MODIFIED="1459170221646" TEXT="Minden alt&#xe9;rnek eleme a nullvektor">
+<node CREATED="1459170233545" ID="ID_1565777170" MODIFIED="1459170249102" TEXT="B&#xe1;rmely alt&#xe9;rbeli vektor nullaszorosa is benne van)"/>
+</node>
+<node CREATED="1459170224792" ID="ID_666146000" MODIFIED="1459170286790" TEXT="Minden alt&#xe9;rbeli x vektorral egy&#xfc;tt annak ellentettje (-1-szerese), a -x vektor is eleme az elt&#xe9;rnek"/>
+<node CREATED="1459170291450" ID="ID_1170230584" MODIFIED="1459170304852" TEXT="Minden vektort&#xe9;r maga is alt&#xe9;r (saj&#xe1;t maga altere)"/>
+<node CREATED="1459170306459" ID="ID_1000550169" MODIFIED="1459170322855" TEXT="Z={0} a z&#xe9;rust&#xe9;r alt&#xe9;r">
+<node CREATED="1459170324198" ID="ID_466642746" MODIFIED="1459170349666" TEXT="NEM nullt&#xe9;r!">
+<font NAME="SansSerif" SIZE="12"/>
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+<node CREATED="1459170354125" ID="ID_1883385243" MODIFIED="1459170363234" TEXT="Alt&#xe9;r altere alt&#xe9;r"/>
+<node CREATED="1459170364407" ID="ID_1460477042" MODIFIED="1459170375013" TEXT="Alterek metszete alt&#xe9;r"/>
+<node CREATED="1459170380705" ID="ID_1834134131" MODIFIED="1459170396219" TEXT="K&#xe9;t alt&#xe9;r egyes&#xed;t&#xe9;se csak akkor alt&#xe9;r, ha egyik altere a m&#xe1;siknak."/>
+<node COLOR="#006699" CREATED="1459170435399" ID="ID_1150314947" MODIFIED="1459170453071" TEXT="&#xc1;ll&#xed;t&#xe1;s (Megold&#xe1;sok altere)">
+<node COLOR="#006699" CREATED="1459170455166" ID="ID_78197289" MODIFIED="1459170499709" TEXT="Egy n-ismeretlenes homog&#xe9;n line&#xe1;ris egyenletrendszer megold&#xe1;shalmaza alteret alkot R^n-ben"/>
+</node>
+<node COLOR="#006699" CREATED="1459170501192" ID="ID_507667443" MODIFIED="1459170506739" TEXT="Nullt&#xe9;r">
+<node COLOR="#006699" CREATED="1459170508250" ID="ID_834362905" MODIFIED="1459170594851" TEXT="Az A egy&#xfc;tthat&#xf3;m&#xe1;trix&#xfa; homog&#xe9;n line&#xe1;ris egyenletrendszer megold&#xe1;sainak alter&#xe9;t az A m&#xe1;trix nullter&#xe9;nek nevez&#xfc;k &#xe9;s N(A)-val jel&#xf6;lj&#xfc;k"/>
+</node>
+<node COLOR="#006699" CREATED="1459170596334" ID="ID_736271320" MODIFIED="1459170704613" TEXT="Kifesz&#xed;tett alt&#xe9;r">
+<node COLOR="#006699" CREATED="1459170606356" ID="ID_1255865296" MODIFIED="1459170685002" TEXT="A V vektort&#xe9;r line&#xe1;ris kombin&#xe1;ci&#xf3;inak halmaz&#xe1;t a v_x vektorai &#xe1;ltal kifesz&#xed;tett alt&#xe1;rnek nevezz&#xfc;k &#xe9;s span(v_1,v_2,...,v_k)-val jel&#xf6;lj&#xfc;k"/>
+</node>
+<node COLOR="#006699" CREATED="1459170712673" ID="ID_670540776" MODIFIED="1459170727668" TEXT="A kifesz&#xed;tett alt&#xe9;r alt&#xe9;r"/>
+</node>
+<node CREATED="1459170744008" ID="ID_1837729918" MODIFIED="1459170752505" TEXT="Egyenletrendszer megold&#xe1;sai"/>
+</node>
 </node>
 </node>
 </map>
