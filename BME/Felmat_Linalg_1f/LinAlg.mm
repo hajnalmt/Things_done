@@ -217,7 +217,16 @@
 </node>
 <node CREATED="1459170744008" ID="ID_1837729918" MODIFIED="1459170752505" TEXT="Egyenletrendszer megold&#xe1;sai">
 <node COLOR="#ff0000" CREATED="1459170820295" ID="ID_1760761780" MODIFIED="1459170898565" TEXT="Inhomog&#xe9;n [A|b] m&#xe1;trix&#xfa; line&#xe1;ris egyenletrendsze &#xe1;ltal&#xe1;nos megold&#xe1;sa felbonthat&#xf3; egy inhomog&#xe9;n partikul&#xe1;ris megold&#xe1;s &#xe9;s egy homog&#xe9;n &#xe1;ltal&#xe1;nos megold&#xe1;s &#xf6;sszeg&#xe9;re"/>
-<node COLOR="#006699" CREATED="1459170903181" ID="ID_133117778" MODIFIED="1459170948307" TEXT="Az inhomog&#xe9;n line&#xe1;ris egyenletrendsze megold&#xe1;sainak halmaz egy alt&#xe9;r eltoltja, melyet geometirai nyelven affin alt&#xe9;rnek nevez&#xfc;nk"/>
+<node COLOR="#006699" CREATED="1459170903181" ID="ID_133117778" MODIFIED="1459191491341" TEXT="Az inhomog&#xe9;n line&#xe1;ris egyenletrendszer megold&#xe1;sainak halmaza egy alt&#xe9;r eltoltja, melyet geometirai nyelven affin alt&#xe9;rnek nevez&#xfc;nk"/>
+<node CREATED="1459191528935" ID="ID_1314262460" MODIFIED="1459191581535" TEXT="Az inhomog&#xe9;n egyenletrendszer &#xf6;sszes megold&#xe1;sa a homog&#xe9;n &#xf6;sszes megold&#xe1;sainak - azaz N(A)-nak - az inhomog&#xe9;n valamelyik megold&#xe1;s&#xe1;val val&#xf3; eltoltja. Mindegy melyik megold&#xe1;st v&#xe1;lasztjuk!"/>
+<node CREATED="1459191605371" ID="ID_1201505850" MODIFIED="1459191611852" TEXT="Sort&#xe9;r, Oszlopt&#xe9;r">
+<node CREATED="1459191613037" ID="ID_1041636272" MODIFIED="1459191648326" TEXT="egy m&#xe1;trix oszlopvektorai &#xe1;ltal kifesz&#xed;tett alteret oszlopt&#xe9;rnek, a sorvektorai &#xe1;ltal kifesz&#xed;tett alteret sort&#xe9;rnek nevezz&#xfc;k"/>
+<node CREATED="1459191652379" ID="ID_417065045" MODIFIED="1459191679324" TEXT="Az m*n-es val&#xf3;s A m&#xe1;trix sortere R^n altere, oszloptere R^m altere."/>
+<node CREATED="1459191681201" ID="ID_1313640477" MODIFIED="1459191697676" TEXT="Az A sorter&#xe9;t S(A), oszlopter&#xe9;t O(A) jel&#xf6;li"/>
+</node>
+<node CREATED="1459191711095" ID="ID_1042288936" MODIFIED="1459191734579" TEXT="K&#xf6;vetkezm&#xe9;ny (Inhomog&#xe9;n line&#xe1;ris egyenletrendszer megoldhat&#xf3;s&#xe1;ga)">
+<node CREATED="1459191736500" ID="ID_207360285" MODIFIED="1459191817140" TEXT="Az [A\b] m&#xe1;trix&#xfa; egyenletrendszer pontosan akokr oldhat&#xf3; meg, ha b el&#x151;&#xe1;ll az A oszlopainak line&#xe1;ris kombin&#xe1;ci&#xf3;jak&#xe9;nt, azaz b benne van az A oszlopter&#xe9;ben. A line&#xe1;ris kombin&#xe1;ci&#xf3; egy&#xfc;tthat&#x151;i megyegyeznek a megold&#xe1;svektor koordin&#xe1;t&#xe1;ival."/>
+</node>
 </node>
 </node>
 </node>
