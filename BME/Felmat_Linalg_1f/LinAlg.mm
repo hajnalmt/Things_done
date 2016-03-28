@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1458615581084" ID="ID_411259303" MODIFIED="1459156492030" TEXT="Fels&#x151;bb Matematika - Halad&#xf3; Line&#xe1;ris Algebra">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459156487977" ID="ID_1554243761" MODIFIED="1459156601566" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
+<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1459200760757" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459156608018" FOLDED="true" ID="ID_718278855" MODIFIED="1459160549313" TEXT="Vektor">
 <node CREATED="1459156706914" ID="ID_1518623961" MODIFIED="1459156719434" TEXT="A 2 &#xe9;s 3 dimenzi&#xf3;s t&#xe9;r vektorai">
@@ -177,8 +177,8 @@
 </node>
 </node>
 </node>
-<node CREATED="1459156681475" ID="ID_1852190255" MODIFIED="1459156690497" TEXT="Vektort&#xe9;r (light)">
-<node CREATED="1459169655322" ID="ID_1306076412" MODIFIED="1459169684905" TEXT="Egyel&#x151;re vektoron R^n elmeit &#xe9;rtj&#xfc;k">
+<node CREATED="1459156681475" FOLDED="true" ID="ID_1852190255" MODIFIED="1459200758607" TEXT="Vektort&#xe9;r (light)">
+<node CREATED="1459169655322" FOLDED="true" ID="ID_1306076412" MODIFIED="1459200735544" TEXT="Egyel&#x151;re vektoron R^n elmeit &#xe9;rtj&#xfc;k">
 <node COLOR="#006699" CREATED="1459169688032" ID="ID_1662184070" MODIFIED="1459169839391" TEXT="Vektort&#xe9;r, alt&#xe9;r">
 <node COLOR="#006699" CREATED="1459169700603" ID="ID_754779357" MODIFIED="1459169837404" TEXT="Vektort&#xe9;ren vektorok olyan nem &#xfc;res V halmaz&#xe9;t &#xe9;rtj&#xfc;k, mely z&#xe1;rt a vektor&#xf6;sszead&#xe1;s &#xe9;s skal&#xe1;rral szorz&#xe1;s m&#x171;velet&#xe9;re"/>
 <node COLOR="#006699" CREATED="1459169788536" ID="ID_1612705912" MODIFIED="1459169835816" TEXT="Ha U &#xe9;s V k&#xe9;t vektort&#xe9;r &#xe9;s U r&#xe9;szhalmaza V-nek, akkor azt mondjuk, hogy az U vektort&#xe9;r a V vektort&#xe9;r altere."/>
@@ -189,7 +189,7 @@
 <node CREATED="1459170104165" ID="ID_1435176823" MODIFIED="1459170153714" TEXT="Az R^3 im&#xe9;nt felsorolt alterei &quot;olyanok&quot;, mint az R &#xe9;s az R^2"/>
 </node>
 </node>
-<node CREATED="1459170197651" ID="ID_288938090" MODIFIED="1459170211874" TEXT="Alterek tulajdons&#xe1;gai">
+<node CREATED="1459170197651" FOLDED="true" ID="ID_288938090" MODIFIED="1459200737992" TEXT="Alterek tulajdons&#xe1;gai">
 <node CREATED="1459170212970" ID="ID_1787141533" MODIFIED="1459170221646" TEXT="Minden alt&#xe9;rnek eleme a nullvektor">
 <node CREATED="1459170233545" ID="ID_1565777170" MODIFIED="1459170249102" TEXT="B&#xe1;rmely alt&#xe9;rbeli vektor nullaszorosa is benne van)"/>
 </node>
@@ -215,7 +215,7 @@
 </node>
 <node COLOR="#006699" CREATED="1459170712673" ID="ID_670540776" MODIFIED="1459170727668" TEXT="A kifesz&#xed;tett alt&#xe9;r alt&#xe9;r"/>
 </node>
-<node CREATED="1459170744008" ID="ID_1837729918" MODIFIED="1459170752505" TEXT="Egyenletrendszer megold&#xe1;sai">
+<node CREATED="1459170744008" FOLDED="true" ID="ID_1837729918" MODIFIED="1459200755146" TEXT="Egyenletrendszer megold&#xe1;sai">
 <node COLOR="#ff0000" CREATED="1459170820295" ID="ID_1760761780" MODIFIED="1459170898565" TEXT="Inhomog&#xe9;n [A|b] m&#xe1;trix&#xfa; line&#xe1;ris egyenletrendsze &#xe1;ltal&#xe1;nos megold&#xe1;sa felbonthat&#xf3; egy inhomog&#xe9;n partikul&#xe1;ris megold&#xe1;s &#xe9;s egy homog&#xe9;n &#xe1;ltal&#xe1;nos megold&#xe1;s &#xf6;sszeg&#xe9;re"/>
 <node COLOR="#006699" CREATED="1459170903181" ID="ID_133117778" MODIFIED="1459191491341" TEXT="Az inhomog&#xe9;n line&#xe1;ris egyenletrendszer megold&#xe1;sainak halmaza egy alt&#xe9;r eltoltja, melyet geometirai nyelven affin alt&#xe9;rnek nevez&#xfc;nk"/>
 <node CREATED="1459191528935" ID="ID_1314262460" MODIFIED="1459191581535" TEXT="Az inhomog&#xe9;n egyenletrendszer &#xf6;sszes megold&#xe1;sa a homog&#xe9;n &#xf6;sszes megold&#xe1;sainak - azaz N(A)-nak - az inhomog&#xe9;n valamelyik megold&#xe1;s&#xe1;val val&#xf3; eltoltja. Mindegy melyik megold&#xe1;st v&#xe1;lasztjuk!"/>
@@ -226,6 +226,67 @@
 </node>
 <node CREATED="1459191711095" ID="ID_1042288936" MODIFIED="1459191734579" TEXT="K&#xf6;vetkezm&#xe9;ny (Inhomog&#xe9;n line&#xe1;ris egyenletrendszer megoldhat&#xf3;s&#xe1;ga)">
 <node CREATED="1459191736500" ID="ID_207360285" MODIFIED="1459191817140" TEXT="Az [A\b] m&#xe1;trix&#xfa; egyenletrendszer pontosan akokr oldhat&#xf3; meg, ha b el&#x151;&#xe1;ll az A oszlopainak line&#xe1;ris kombin&#xe1;ci&#xf3;jak&#xe9;nt, azaz b benne van az A oszlopter&#xe9;ben. A line&#xe1;ris kombin&#xe1;ci&#xf3; egy&#xfc;tthat&#x151;i megyegyeznek a megold&#xe1;svektor koordin&#xe1;t&#xe1;ival."/>
+</node>
+<node CREATED="1459197938483" ID="ID_671565075" MODIFIED="1459197981690" TEXT="Line&#xe1;ris f&#xfc;ggetlens&#xe9;g eld&#xf6;nt&#xe9;se">
+<node CREATED="1459197957815" ID="ID_882335250" MODIFIED="1459198063665" TEXT="Tekints&#xfc;k az A = [a_1 a_2...a_n] m&#xe1;trixot az al&#xe1;bbi &#xe1;ll&#xed;t&#xe1;sok ekvivalensek:">
+<node CREATED="1459198065412" ID="ID_1924770128" MODIFIED="1459198098098" TEXT="az a_1 a_2, ... , a_k vektorok line&#xe1;risan f&#xfc;ggetlenek"/>
+<node CREATED="1459198100088" ID="ID_458605383" MODIFIED="1459198147094" TEXT="az A egy&#xfc;tthat&#xf3;m&#xe1;trix&#xfa; homog&#xe9;n line&#xe1;ris egyenletrendszernek a trivi&#xe1;lison k&#xed;v&#xfc;l nincs m&#xe1;s megold&#xe1;sa"/>
+<node CREATED="1459198161538" ID="ID_44034551" MODIFIED="1459198200452" TEXT="az A l&#xe9;pcs&#x151;s alakj&#xe1;nak minden oszlop&#xe1;ban van f&#x151;elem, azaz r(A) = k."/>
+</node>
+</node>
+<node CREATED="1459198235298" ID="ID_1481428503" MODIFIED="1459198240404" TEXT="B&#xe1;zis">
+<node COLOR="#006699" CREATED="1459198241166" ID="ID_1540937511" MODIFIED="1459198300394" TEXT="a V vektort&#xe9;r b&#xe1;zis&#xe1;n olyan vektorrenszert &#xe9;rt&#xfc;nk, mely ">
+<node COLOR="#006699" CREATED="1459198263763" ID="ID_1862009174" MODIFIED="1459198301329" TEXT="line&#xe1;risan f&#xfc;ggetlen"/>
+<node COLOR="#006699" CREATED="1459198276648" ID="ID_475241745" MODIFIED="1459198300805" TEXT="gener&#xe1;torrendszer (mely kifesz&#xed;ti V-t)"/>
+</node>
+<node COLOR="#006699" CREATED="1459198309619" ID="ID_92210505" MODIFIED="1459198358203" TEXT="e_1, e_2 ... e_n vektorokb&#xf3;l &#xe1;ll&#xf3; halmazt F^n standard b&#xe1;zis&#xe1;nak nevezz&#xfc;k"/>
+<node COLOR="#338800" CREATED="1459198360745" ID="ID_1228803787" MODIFIED="1459198368740" TEXT="A z&#xe9;rust&#xe9;rnek nincs b&#xe1;zisa"/>
+</node>
+<node CREATED="1459198674937" FOLDED="true" ID="ID_1429051475" MODIFIED="1459200751634" TEXT="Dimenzi&#xf3;, rang">
+<node COLOR="#338800" CREATED="1459198687546" ID="ID_996855968" MODIFIED="1459198896878" TEXT="B&#xe1;zis ekvivalens defin&#xed;ci&#xf3;i">
+<node COLOR="#338800" CREATED="1459198729003" ID="ID_1664709901" MODIFIED="1459198895140" TEXT="Legyen U vektort&#xe9;r, &#xe9;s legyen B={v_1,v_2,...,v_k} r&#xe9;szhalmaza U vektorok egy halmaza. A k&#xf6;vetkez&#x151; &#xe1;ll&#xed;t&#xe1;sok ekvivalensek">
+<node COLOR="#338800" CREATED="1459198795035" ID="ID_899699882" MODIFIED="1459198893825" TEXT="B line&#xe1;risan f&#xfc;ggetlen vektorokb&#xf3;l &#xe1;ll &#xe9;s kifesz&#xed;ti az U alteret"/>
+<node COLOR="#338800" CREATED="1459198820228" ID="ID_900506455" MODIFIED="1459198894141" TEXT="B minim&#xe1;ls m&#xe9;ret&#x171; halmaz, mely kifesz&#xed;ti U-t"/>
+<node COLOR="#338800" CREATED="1459198843826" ID="ID_1262893147" MODIFIED="1459198894432" TEXT="B maxim&#xe1;lis m&#xe9;ret&#x171;, f&#xfc;ggetlen vektorokb&#xf3;l &#xe1;ll&#xf3; halmaz U-ban"/>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1459198898566" ID="ID_401454632" MODIFIED="1459198909485" TEXT="B&#xe1;zis-t&#xe9;tel">
+<node COLOR="#ff0000" CREATED="1459198913296" ID="ID_1535228886" MODIFIED="1459198946662" TEXT="Ha a V vektort&#xe9;rnek van n-elem&#x171; b&#xe1;zisa, akkor minden b&#xe1;zisa n-elem&#x171;"/>
+</node>
+<node COLOR="#006699" CREATED="1459198959914" ID="ID_1026474337" MODIFIED="1459198967205" TEXT="Dimenzi&#xf3;">
+<node COLOR="#006699" CREATED="1459198968488" ID="ID_856620305" MODIFIED="1459199012926" TEXT="A V vektort&#xe9;r n-dimenzi&#xf3;s, ha van n-elem&#x171; b&#xe1;zisa (v&#xe9;ges dimenzi&#xf3;s vektort&#xe9;r)"/>
+</node>
+<node COLOR="#338800" CREATED="1459199030642" ID="ID_1693333484" MODIFIED="1459199040175" TEXT="Dimenzi&#xf3; = rang">
+<node COLOR="#338800" CREATED="1459199064041" ID="ID_1366347721" MODIFIED="1459199094645" TEXT="Egy m&#xe1;trix rangja, sorter&#xe9;nek dimenzi&#xf3;ja &#xe9;s oszlopter&#xe9;nek dimenzi&#xf3;ja megegyezik">
+<node COLOR="#338800" CREATED="1459199097837" ID="ID_422822727" MODIFIED="1459199223161" TEXT="r(A)=r(A^T)">
+<icon BUILTIN="forward"/>
+</node>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1459199135759" ID="ID_1438928904" MODIFIED="1459199142058" TEXT="Dimenzi&#xf3;t&#xe9;tel">
+<node COLOR="#ff0000" CREATED="1459199143112" ID="ID_1507846569" MODIFIED="1459199190285" TEXT="B&#xe1;rmely A eleme F^(m*n) m&#xe1;trix eset&#xe9;n a sort&#xe9;r dimenzi&#xf3;j&#xe1;nak &#xe9;s a nullt&#xe9;r dimenzi&#xf3;j&#xe1;nak &#xf6;sszege n. K&#xe9;plettel:">
+<node COLOR="#ff0000" CREATED="1459199191572" ID="ID_87466956" MODIFIED="1459199215129" TEXT="dim(S(A))+dim(N(A))=n"/>
+</node>
+</node>
+<node CREATED="1459199278615" FOLDED="true" ID="ID_201564556" MODIFIED="1459200749329" TEXT="Lin&#xe1;ris algebra alapt&#xe9;tele val&#xf3;s m&#xe1;trixokra">
+<node COLOR="#006699" CREATED="1459199300992" ID="ID_1926448918" MODIFIED="1459199328248" TEXT="Mer&#x151;leges alt&#xe9;r &#xe9;s mer&#x151;leges kieg&#xe9;sz&#xed;t&#x151; alt&#xe9;r">
+<node COLOR="#006699" CREATED="1459199355960" ID="ID_1129824890" MODIFIED="1459199479872" TEXT="egy vektort&#xe9;r k&#xe9;t altere mer&#x151;leges, ha b&#xe1;rhogy v&#xe1;lasztva egy vektort az egyik alt&#xe9;rb&#x151;l, &#xe9;s egy m&#xe1;sikat a m&#xe1;sik alt&#xe9;rb&#x151;l, azok mer&#x151;legesek egym&#xe1;sra. Egy W alt&#xe9;rre mer&#x151;leges vektorok alter&#xe9;t a W mer&#x151;leges kieg&#xe9;sz&#xed;t&#x151; alter&#xe9;nek nevezz&#xfc;k &#xe9;s W_|_-pel jel&#xf6;lj&#xfc;k"/>
+</node>
+<node COLOR="#ff0000" CREATED="1459199487055" ID="ID_1151556992" MODIFIED="1459199525350" TEXT="A line&#xe1;ris algebra alapt&#xe9;tele">
+<node COLOR="#ff0000" CREATED="1459199498421" ID="ID_312043702" MODIFIED="1459199525834" TEXT="Minden val&#xf3;s m&#xe1;trix sortere &#xe9;s nulltere mer&#x151;leges kieg&#xe9;sz&#xed;t&#x151; alterei egym&#xe1;snak">
+<node COLOR="#ff0000" CREATED="1459199532315" ID="ID_287974596" MODIFIED="1459199569154" TEXT="S(A)_|_=N(A), N(A)_|_=S(A)"/>
+<node COLOR="#ff0000" CREATED="1459199571767" ID="ID_654122192" MODIFIED="1459199593718" TEXT="O(A)_|_=N(A^T)"/>
+<node COLOR="#ff0000" CREATED="1459199595355" ID="ID_433286800" MODIFIED="1459199652980" TEXT="Minden x vektor egy&#xe9;rtelm&#x171;en el&#x151;&#xe1;ll egy sort&#xe9;rre &#xe9;s egy nullt&#xe9;rbe &#xe9;s egy nullt&#xe9;rbe es&#x151; vektor &#xf6;sszegek&#xe9;nt"/>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1459199688860" ID="ID_1136333470" MODIFIED="1459199745548" TEXT="Line&#xe1;ris egyenletrendszer megold&#xe1;sai">
+<node COLOR="#ff0000" CREATED="1459199703802" ID="ID_1040862170" MODIFIED="1459199745947" TEXT="Minden val&#xf3;s egy&#xfc;tthat&#xf3;s megoldhat&#xf3; (konzisztens) line&#xe1;ris egyenletrendszerre igazak a k&#xf6;vetkez&#x151; &#xe1;ll&#xed;t&#xe1;sok">
+<node COLOR="#ff0000" CREATED="1459199750067" ID="ID_1358712494" MODIFIED="1459199765983" TEXT="egyetlen megold&#xe1;sa esik az egy&#xfc;tthat&#xf3;m&#xe1;trix sorter&#xe9;be"/>
+<node COLOR="#ff0000" CREATED="1459199767916" ID="ID_1857344608" MODIFIED="1459199797890" TEXT="a sort&#xe9;rbe es&#x151; megold&#xe1;s az &#xf6;sszes megold&#xe1;s k&#xf6;z&#xfc;l a legkisebb abszol&#xfa;t &#xe9;rt&#xe9;k&#x171;"/>
+<node COLOR="#ff0000" CREATED="1459199799463" ID="ID_1395889055" MODIFIED="1459199835612" TEXT="az &#xf6;sszes megold&#xe1;s el&#x151;&#xe1;ll &#xfa;gy, hogy a sort&#xe9;rbe es&#x151; megold&#xe1;shoz hozz&#xe1;adjuk a homog&#xe9;n r&#xe9;sz &#xf6;sszes megold&#xe1;s&#xe1;t"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 </node>
