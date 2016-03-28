@@ -215,7 +215,10 @@
 </node>
 <node COLOR="#006699" CREATED="1459170712673" ID="ID_670540776" MODIFIED="1459170727668" TEXT="A kifesz&#xed;tett alt&#xe9;r alt&#xe9;r"/>
 </node>
-<node CREATED="1459170744008" ID="ID_1837729918" MODIFIED="1459170752505" TEXT="Egyenletrendszer megold&#xe1;sai"/>
+<node CREATED="1459170744008" ID="ID_1837729918" MODIFIED="1459170752505" TEXT="Egyenletrendszer megold&#xe1;sai">
+<node COLOR="#ff0000" CREATED="1459170820295" ID="ID_1760761780" MODIFIED="1459170898565" TEXT="Inhomog&#xe9;n [A|b] m&#xe1;trix&#xfa; line&#xe1;ris egyenletrendsze &#xe1;ltal&#xe1;nos megold&#xe1;sa felbonthat&#xf3; egy inhomog&#xe9;n partikul&#xe1;ris megold&#xe1;s &#xe9;s egy homog&#xe9;n &#xe1;ltal&#xe1;nos megold&#xe1;s &#xf6;sszeg&#xe9;re"/>
+<node COLOR="#006699" CREATED="1459170903181" ID="ID_133117778" MODIFIED="1459170948307" TEXT="Az inhomog&#xe9;n line&#xe1;ris egyenletrendsze megold&#xe1;sainak halmaz egy alt&#xe9;r eltoltja, melyet geometirai nyelven affin alt&#xe9;rnek nevez&#xfc;nk"/>
+</node>
 </node>
 </node>
 </node>
