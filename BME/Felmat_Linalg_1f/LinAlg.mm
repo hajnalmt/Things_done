@@ -86,11 +86,94 @@
 <node COLOR="#338800" CREATED="1459161384853" ID="ID_320466780" MODIFIED="1459161418144" TEXT="A val&#xf3;s egy&#xfc;tthat&#x151;s polinomok egys&#xe9;gelemes kommutat&#xed;v gy&#x171;r&#x171;t alkotnak"/>
 </node>
 </node>
-<node CREATED="1459156664571" ID="ID_1625471072" MODIFIED="1459156676862" TEXT="Line&#xe1;ris egyenletrendszerek">
+<node CREATED="1459156664571" FOLDED="true" ID="ID_1625471072" MODIFIED="1459169559773" TEXT="Line&#xe1;ris egyenletrendszerek">
 <node CREATED="1459161464171" ID="ID_717310207" MODIFIED="1459161472880" TEXT="Sor &#xe9;s oszlopmodell"/>
 <node CREATED="1459161474159" ID="ID_676868886" MODIFIED="1459161511782" TEXT="Alakzatok egyenletei: egyenes, s&#xed;k, hipers&#xed;k">
 <node COLOR="#006699" CREATED="1459161524582" ID="ID_864242405" MODIFIED="1459161548546" TEXT="Alakzat implicit egyenletrendszere (def)">
-<node CREATED="1459161843465" ID="ID_287161936" MODIFIED="1459161843465" TEXT=""/>
+<node COLOR="#006699" CREATED="1459167666851" ID="ID_1393435977" MODIFIED="1459167705054" TEXT="A t&#xe9;rnek az alakzathoz tartoz&#xf3; pontjai egyszerre minden enlet&#xe9;t kiel&#xe9;g&#xed;tik, de m&#xe1;s pontok nem"/>
+</node>
+<node COLOR="#006699" CREATED="1459167599062" ID="ID_936060028" MODIFIED="1459167626695" TEXT="Vektoregyenlet">
+<node COLOR="#006699" CREATED="1459167606921" ID="ID_1888978134" MODIFIED="1459167628553" TEXT="Nem a pontok koordin&#xe1;t&#xe1;i, hanem a pontokba mutat&#xf3; vektorok szerepelnek"/>
+</node>
+<node COLOR="#006699" CREATED="1459167631068" ID="ID_194603961" MODIFIED="1459167639406" TEXT="Explicit egyenletrendszer">
+<node COLOR="#006699" CREATED="1459167708970" ID="ID_792310707" MODIFIED="1459167853584" TEXT="Az egyenlet bal oldal&#xe1;n a pontok koordin&#xe1;t&#xe1;it megad&#xf3; v&#xe1;ltoz&#xf3;"/>
+<node COLOR="#006699" CREATED="1459167822165" ID="ID_1575879040" MODIFIED="1459167932264" TEXT="jobb oldal&#xe1;n az adott param&#xe9;terek f&#xfc;ggv&#xe9;nyei"/>
+</node>
+</node>
+<node CREATED="1459167967150" ID="ID_722278570" MODIFIED="1459167977549" TEXT="Line&#xe1;ris egyenletrendszer &#xe9;s megold&#xe1;sai">
+<node COLOR="#006699" CREATED="1459167986515" ID="ID_374216294" MODIFIED="1459168029783" TEXT="&#xc1;ltal&#xe1;nos alakja">
+<node CREATED="1459168036756" ID="ID_1836168154" MODIFIED="1459168060198" TEXT="ismeretlenek, egy&#xfc;tthat&#xf3;k, konstans tag"/>
+<node CREATED="1459168062365" ID="ID_1422304323" MODIFIED="1459168089626" TEXT="ha mindegyik egyenlet konstans tagja 0, akkor az  egyenletrendszer homog&#xe9;n"/>
+<node CREATED="1459168091441" ID="ID_903556709" MODIFIED="1459168102771" TEXT="ha csak egyik is nem 0 akkor inhomog&#xe9;n"/>
+</node>
+<node COLOR="#006699" CREATED="1459168108914" ID="ID_1635222215" MODIFIED="1459168126661" TEXT="Megold&#xe1;a">
+<node CREATED="1459168132634" ID="ID_659922181" MODIFIED="1459168142035" TEXT="Rendezett sz&#xe1;m n-es"/>
+<node CREATED="1459168143549" ID="ID_331683121" MODIFIED="1459168148236" TEXT="Megold&#xe1;svektor"/>
+<node CREATED="1459168153720" ID="ID_1281812664" MODIFIED="1459168161811" TEXT="Megold&#xe1;shalmaz">
+<node CREATED="1459168162496" ID="ID_1626393970" MODIFIED="1459168170682" TEXT="az &#xf6;sszes megold&#xe1;s halmaza"/>
+</node>
+<node CREATED="1459168175117" ID="ID_782325451" MODIFIED="1459168190805" TEXT="Konzisztens-Inkonzisztens">
+<node CREATED="1459168191909" ID="ID_669039765" MODIFIED="1459168196961" TEXT="Megoldhat&#xf3;-megoldhatatlan"/>
+</node>
+<node CREATED="1459168198981" ID="ID_1719926091" MODIFIED="1459168221607" TEXT="T&#xfa;lhat&#xe1;rozott">
+<node CREATED="1459168222215" ID="ID_383521978" MODIFIED="1459168232655" TEXT="t&#xf6;bb egyenlet mind ismeretlen"/>
+</node>
+<node CREATED="1459168234691" ID="ID_1383903625" MODIFIED="1459168246958" TEXT="Alulhat&#xe1;rozott">
+<node CREATED="1459168248165" ID="ID_1432228100" MODIFIED="1459168251313" TEXT="kevesebb"/>
+</node>
+</node>
+<node CREATED="1459168263120" ID="ID_1725578794" MODIFIED="1459168287363" TEXT="Ekvivalens lin. egy.rendszerek">
+<node COLOR="#006699" CREATED="1459168289450" ID="ID_1136955166" MODIFIED="1459168339373" TEXT="Azonos ismeretlenekkel fel&#xed;rt k&#xe9;t egyenletrendszert ekvivalensnek nevez&#xfc;nk, ha megold&#xe1;sainak halmaza azonos"/>
+<node COLOR="#ff0000" CREATED="1459168341650" ID="ID_772212407" MODIFIED="1459168364718" TEXT="Egyenletrendszert ekvivalens egyenletrendszerve visznek &#xe1;t">
+<node COLOR="#ff0000" CREATED="1459168366261" ID="ID_254793821" MODIFIED="1459168378395" TEXT="k&#xe9;t egyenlet felcser&#xe9;l&#xe9;se"/>
+<node COLOR="#ff0000" CREATED="1459168380958" ID="ID_1618054875" MODIFIED="1459168396296" TEXT="egy egyenlet nem nulla sz&#xe1;mmal val&#xf3; szorz&#xe1;sa"/>
+<node COLOR="#ff0000" CREATED="1459168398483" ID="ID_50129430" MODIFIED="1459168414169" TEXT="egy egyenlet konstansszoros&#xe1;nak egy m&#xe1;sikhoz ad&#xe1;sa"/>
+<node COLOR="#ff0000" CREATED="1459168416413" ID="ID_865780458" MODIFIED="1459168442951" TEXT="egy 0=0 alak&#xfa; egyenlet elhagy&#xe1;sa (cs&#xfc;llenti az egyenletek sz&#xe1;m&#xe1;t!)"/>
+</node>
+</node>
+<node CREATED="1459168511768" ID="ID_520790566" MODIFIED="1459168521043" TEXT="Megold&#xe1;s kik&#xfc;sz&#xf6;b&#xf6;l&#xe9;ssel">
+<node CREATED="1459168522403" ID="ID_883917685" MODIFIED="1459168528460" TEXT="Elemi sorm&#x171;veletek">
+<node CREATED="1459168530396" ID="ID_67322340" MODIFIED="1459168539752" TEXT="Sorcsere">
+<node CREATED="1459168568999" ID="ID_293305119" MODIFIED="1459168573266" TEXT="k&#xe9;t sor cser&#xe9;je"/>
+</node>
+<node CREATED="1459168541981" ID="ID_543544023" MODIFIED="1459168547753" TEXT="Beszorz&#xe1;s">
+<node CREATED="1459168580410" ID="ID_1584733773" MODIFIED="1459168588344" TEXT="egy sor beszorz&#xe1;sa egy nemnulla sz&#xe1;mmal"/>
+</node>
+<node CREATED="1459168549071" ID="ID_1024469835" MODIFIED="1459168553068" TEXT="Hozz&#xe1;ad&#xe1;s">
+<node CREATED="1459168599216" ID="ID_516148749" MODIFIED="1459168618679" TEXT="egy sorhoz egy m&#xe1;sik sor konstansszoros&#xe1;nak hozz&#xe1;ad&#xe1;sa"/>
+</node>
+</node>
+<node CREATED="1459168628596" ID="ID_1114194237" MODIFIED="1459168635415" TEXT="Hasonl&#xf3;an az oszlopokra"/>
+<node COLOR="#006699" CREATED="1459168653003" ID="ID_163915202" MODIFIED="1459169382233" TEXT="L&#xe9;pcs&#x151;s alak">
+<node COLOR="#006699" CREATED="1459168659504" ID="ID_1096512014" MODIFIED="1459168843195" TEXT="Egy m&#xe1;trix (sor) l&#xe9;pcs&#x151;s alak&#x171;, ha kiel&#xe9;g&#xed;ti a k&#xf6;vetkez&#x151; k&#xe9;t felt&#xe9;telt">
+<node COLOR="#006699" CREATED="1459168696435" ID="ID_1561203193" MODIFIED="1459168841632" TEXT="a csupa 0-b&#xf3;l &#xe1;ll&#xf3; sorok (ha egy&#xe1;ltal&#xe1;n vannak) a m&#xe1;trix utols&#xf3; sorai"/>
+<node COLOR="#006699" CREATED="1459168734657" ID="ID_1177263039" MODIFIED="1459168840757" TEXT="b&#xe1;rmely k&#xe9;t egym&#xe1;s ut&#xe1;n k&#xf6;vetkez&#x151; nem-0 sorban az als&#x151; sor eleje (legal&#xe1;bb eggyel) t&#xf6;b 0 van, mint a f&#xf6;l&#xf6;tte l&#xe9;v&#x151; sor elej&#xe9;n"/>
+</node>
+<node COLOR="#006699" CREATED="1459168947653" ID="ID_166799409" MODIFIED="1459168988579" TEXT="A nemnulla sorok els&#x151; z&#xe9;rust&#xf3;l k&#xfc;l&#xf6;nb&#xf6;z&#x151; elem&#xe9;t f&#x151;elemnek, vez&#xe9;relemnek vagy pivotelemnek h&#xed;vjuk"/>
+<node COLOR="#006699" CREATED="1459168994966" ID="ID_160523232" MODIFIED="1459169013974" TEXT="Egy f&#x151;elem oszlop&#xe1;nak f&#x151;oszlop vagy b&#xe1;zisoszlop a neve"/>
+</node>
+<node CREATED="1459169028741" ID="ID_1067213486" MODIFIED="1459169035184" TEXT="Gauss-m&#xf3;dszer">
+<node COLOR="#006699" CREATED="1459169036129" ID="ID_852694326" MODIFIED="1459169073303" TEXT="A Gauss-m&#xf3;dszer, -kik&#xfc;sz&#xf6;b&#xf6;l&#xe9;s vagy -elimin&#xe1;ci&#xf3;">
+<node COLOR="#006699" CREATED="1459169083050" ID="ID_179266312" MODIFIED="1459169131709" TEXT="line&#xe1;ris egyenletrendszer megold&#xe1;sa l&#xe9;pcs&#x151;s alakra hoz&#xe1;ssal (oszloponk&#xe9;nt haladva)"/>
+</node>
+<node COLOR="#ff0000" CREATED="1459169146322" ID="ID_866090771" MODIFIED="1459169170485" TEXT="B&#xe1;rmely test feletti m&#xe1;trix elemi sorm&#x171;veletekkel l&#xe9;pcs&#x151;s alakra hozhat&#xf3;"/>
+<node CREATED="1459169182714" ID="ID_960632961" MODIFIED="1459169189515" TEXT="L&#xe9;p&#xe9;sek:">
+<node CREATED="1459169190515" ID="ID_1018929935" MODIFIED="1459169197355" TEXT="nulloszlop letakar&#xe1;sa"/>
+<node CREATED="1459169198728" ID="ID_1857231092" MODIFIED="1459169203409" TEXT="sorcsere"/>
+<node CREATED="1459169211747" ID="ID_594588165" MODIFIED="1459169232956" TEXT="kivon&#xe1;s, minden elem nulla lesz az adott oszlopban"/>
+<node CREATED="1459169234498" ID="ID_1009152333" MODIFIED="1459169266604" TEXT="takarjuk le az els&#x151; oszlopot &#xe9;s az els&#x151; sort, &#xe9;s ha nincs t&#xf6;bb sor v&#xe9;ge, ha van akkor els&#x151; pont"/>
+</node>
+</node>
+<node COLOR="#006699" CREATED="1459169300899" ID="ID_1335377460" MODIFIED="1459169381552" TEXT="Reduk&#xe1;lt l&#xe9;pcs&#x151;s alak">
+<node COLOR="#006699" CREATED="1459169315642" ID="ID_15163754" MODIFIED="1459169386151" TEXT="ha l&#xe9;pcs&#x151;s alak&#xfa;"/>
+<node COLOR="#006699" CREATED="1459169323931" ID="ID_1119680455" MODIFIED="1459169385771" TEXT="minden f&#x151;elem egyenl&#x151; 1-el"/>
+<node COLOR="#006699" CREATED="1459169334962" ID="ID_510228222" MODIFIED="1459169385439" TEXT="a f&#x151;elemek oszlopaiban a f&#x151;elemeken k&#xed;v&#xfc;l minden elem 0"/>
+<node CREATED="1459169418501" ID="ID_1964967276" MODIFIED="1459169459412" TEXT="Algoritmus: oszloponk&#xe9;nt haladva el&#x151;sz&#xf6;r a vez&#xe9;relemek alatt, majd csak ut&#xe1;na az utols&#xf3; oszlopt&#xf3;l kezdve f&#xf6;l&#xf6;tt&#xfc;k elimin&#xe1;lunk!"/>
+<node COLOR="#ff0000" CREATED="1459169472851" ID="ID_1125788843" MODIFIED="1459169512222" TEXT="Egy reduk&#xe1;lt l&#xe9;pcs&#x151;s alak egy&#xe9;rtelm&#x171;">
+<node COLOR="#ff0000" CREATED="1459169484825" ID="ID_331739306" MODIFIED="1459169510356" TEXT="egy test elemeib&#x151;l k&#xe9;pzett minden m&#xe1;trix reduk&#xe1;lt l&#xe9;pcs&#x151;s alakra hozhat&#x151;, ez az alak egy&#xe9;rtelm&#x171;"/>
+</node>
+</node>
+<node CREATED="1459169521735" ID="ID_741038022" MODIFIED="1459169538149" TEXT="Gauss-Jordan-m&#xf3;dszer"/>
 </node>
 </node>
 </node>
