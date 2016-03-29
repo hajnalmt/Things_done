@@ -533,7 +533,28 @@
 </node>
 <node CREATED="1459211847549" ID="ID_330448104" MODIFIED="1459211858685" TEXT="A determin&#xe1;ns mint elemeinek f&#xfc;ggv&#xe9;nye">
 <node CREATED="1459213520379" ID="ID_1262181419" MODIFIED="1459213529345" TEXT="Additivit&#xe1;s haszn&#xe1;lata"/>
-<node CREATED="1459213542235" ID="ID_482459875" MODIFIED="1459213559346" TEXT="Determin&#xe1;ns, mint k&#xed;gy&#xf3;k &#xf6;szege"/>
+<node CREATED="1459213542235" ID="ID_482459875" MODIFIED="1459213559346" TEXT="Determin&#xe1;ns, mint k&#xed;gy&#xf3;k &#xf6;szege">
+<node COLOR="#ff0000" CREATED="1459213647852" ID="ID_1900363556" MODIFIED="1459213793401" TEXT="Minden n-ed rend&#x171; determin&#xe1;ns f&#xf6;lbomlik az &#xf6;sszes bel&#x151;le kiv&#xe1;laszthat k&#xed;gy&#xf3; determin&#xe1;ns&#xe1;nak &#xf6;sszeg&#xe9;re. ">
+<node CREATED="1459213732395" ID="ID_1638954050" MODIFIED="1459213798667" TEXT="Sarrus szab&#xe1;ly">
+<icon BUILTIN="down"/>
+</node>
+<node CREATED="1459213745747" ID="ID_1466764182" MODIFIED="1459213768285" TEXT="A determin&#xe1;nsf&#xfc;ggv&#xe9;ny l&#xe9;tezik, &#xe9;s egy&#xe9;rtelm&#x171;"/>
+</node>
+<node CREATED="1459213805128" ID="ID_920820403" MODIFIED="1459213811796" TEXT="K&#xf6;vetkezm&#xe9;nyek">
+<node COLOR="#338800" CREATED="1459213813421" ID="ID_1365684347" MODIFIED="1459213881139" TEXT="A determin&#xe1;ns kisz&#xe1;mol&#xe1;s&#xe1;hoz el&#xe9;g csak az &#xf6;sszead&#xe1;s &#xe9;s szorz&#xe1;s m&#x171;veleze, az oszt&#xe1;sra, melyet az elemi m&#x171;veletek sor&#xe1;n haszn&#xe1;lhatunk, nincs sz&#xfc;ks&#xe9;g (Gy&#x171;r&#x171; test helyett)"/>
+<node COLOR="#338800" CREATED="1459213883178" ID="ID_1680818539" MODIFIED="1459213930713" TEXT="Eg&#xe9;sz sz&#xe1;mokb&#xf3;l &#xe1;ll&#xf3; determin&#xe1;ns &#xe9;rt&#xe9;ke eg&#xe9;sz sz&#xe1;m."/>
+<node COLOR="#338800" CREATED="1459213933946" ID="ID_926610769" MODIFIED="1459214010959" TEXT="Mivel a determin&#xe1;ns kifejt&#xe9;s&#xe9;ben csak az &#xf6;sszead&#xe1;s &#xe9;s a szorz&#xe1;s m&#x171;velete szerepel, a determin&#xe1;ns folytonos, s&#x151;t differenci&#xe1;lhat&#xf3; f&#xfc;ggv&#xe9;nye elemeinek"/>
+</node>
+</node>
+<node CREATED="1459214040762" ID="ID_1641488520" MODIFIED="1459214043846" TEXT="Kifejt&#xe9;s">
+<node COLOR="#006699" CREATED="1459214044847" ID="ID_1251902730" MODIFIED="1459214143935" TEXT="Az n-edrend&#x171; |A| determin&#xe1;ns i-edik sor&#xe1;nak &#xe9;s j-edik oszlop&#xe1;nak elhagy&#xe1;s&#xe1;val kapott n-1-edrend&#x171; determin&#xe1;ns -1^(i+j)-szeres&#xe9;t az |A| determin&#xe1;ns a_ij elem&#xe9;hez tartoz&#xf3; el&#x151;jeles aldetermin&#xe1;ns&#xe1;nak nevezz&#xfc;k"/>
+<node COLOR="#338800" CREATED="1459214147594" ID="ID_1034285435" MODIFIED="1459214275159" TEXT="Ha az n-edrend&#x171; |A| determin&#xe1;ns a_ij elem&#xe9;nek sor&#xe1;ban vagy oszlop&#xe1;ban minden tiv&#xe9;bbi elem 0, A_ij az a_ij elemhz tartoz&#xf3; el&#x151;jeles aldetermin&#xe1;ns akkor |A|=a_ij*A_ij"/>
+<node COLOR="#ff0000" CREATED="1459214281674" ID="ID_1250458890" MODIFIED="1459214344938" TEXT="Az n-edrend&#x171; |A| determin&#xe1;ns &#xe9;rt&#xe9;ke i-edik sora szerint kifejtve &#xe9;s j-edik oszlopa szerint kifejtve"/>
+</node>
+<node CREATED="1459214400655" ID="ID_87872432" MODIFIED="1459214411590" TEXT="Vandermonde-determin&#xe1;ns"/>
+<node CREATED="1459214413396" ID="ID_636433420" MODIFIED="1459214417693" TEXT="Cramer szab&#xe1;ly"/>
+<node CREATED="1459214429710" ID="ID_1039294972" MODIFIED="1459214436380" TEXT="Inverz m&#xe1;trix elemei"/>
+<node CREATED="1459214437706" ID="ID_1490066500" MODIFIED="1459214450879" TEXT="Blokkm&#xe1;trixok determin&#xe1;nsa"/>
 </node>
 </node>
 </node>
