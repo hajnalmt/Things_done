@@ -475,5 +475,66 @@
 </node>
 </node>
 </node>
+<node CREATED="1459211800271" ID="ID_1422721427" MODIFIED="1459211809832" POSITION="right" TEXT="3) Determin&#xe1;nsok">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1459211817180" FOLDED="true" ID="ID_991847846" MODIFIED="1459213512331" TEXT="Motiv&#xe1;ci&#xf3;">
+<node CREATED="1459211931662" ID="ID_258819346" MODIFIED="1459211941079" TEXT=" Paralelogramma el&#x151;jeles ter&#xfc;lete">
+<node COLOR="#338800" CREATED="1459211969161" ID="ID_1009445574" MODIFIED="1459212361503" TEXT="f(cu, v)= cf(u,v) &#xe9;s f(u, cv)=cf(u,v)"/>
+<node COLOR="#338800" CREATED="1459212031909" ID="ID_1306654612" MODIFIED="1459212361882" TEXT="f(u,v)=-f(v,u)"/>
+<node COLOR="#338800" CREATED="1459212050746" ID="ID_577305738" MODIFIED="1459212362227" TEXT="f(u,v)=f(u+cv,v)=f(u,v+cu)"/>
+</node>
+</node>
+<node CREATED="1459211825146" FOLDED="true" ID="ID_890162903" MODIFIED="1459213507166" TEXT="A determin&#xe1;ns mint sorvektorainak f&#xfc;ggv&#xe9;nye">
+<node COLOR="#006699" CREATED="1459212121376" ID="ID_473912772" MODIFIED="1459212372422" TEXT="A determin&#xe1;ns az a n&#xe9;gyzetes m&#xe1;trixokon &#xe9;rtelmezett &#xe9;s det-tel jel&#xf6;lt skal&#xe1;r &#xe9;rt&#xe9;k&#x171; f&#xfc;ggv&#xe9;ny. amely">
+<node COLOR="#006699" CREATED="1459212164996" ID="ID_1590053415" MODIFIED="1459213409811" TEXT="D1 &#xe9;rt&#xe9;ke c-szeres&#xe9;re v&#xe1;ltozik, ha egy sor&#xe1;t c-vel szorozzuk"/>
+<node COLOR="#006699" CREATED="1459212237247" ID="ID_1448775369" MODIFIED="1459213416655" TEXT="D2 &#xe9;rt&#xe9;ke -1-szeres&#xe9;re v&#xe1;ltozik, ha k&#xe9;t k&#xfc;l&#xf6;nb&#xf6;z&#x151; sor&#xe1;t f&#xf6;lcser&#xe9;lj&#xfc;k"/>
+<node COLOR="#006699" CREATED="1459212265524" ID="ID_1624854964" MODIFIED="1459213423509" TEXT="D3 &#xe9;rt&#xe9;ke nem v&#xe1;ltozik a hozz&#xe1;ad&#xe1;s elemei sorm&#x171;velete k&#xf6;zben"/>
+<node COLOR="#006699" CREATED="1459212288396" ID="ID_687769279" MODIFIED="1459213431999" TEXT="D4 az egys&#xe9;m&#xe1;trixhoz 1-et rendel"/>
+<node CREATED="1459212312643" ID="ID_1002102438" MODIFIED="1459212321345" TEXT="a m&#xe1;sodik elhagyhat&#xf3;"/>
+<node CREATED="1459212323301" ID="ID_96050304" MODIFIED="1459212339457" TEXT="sorvektorok f&#xfc;ggv&#xe9;nyek&#xe9;nt is defini&#xe1;lhat&#xf3;"/>
+</node>
+<node COLOR="#338800" CREATED="1459212379903" ID="ID_1458313101" MODIFIED="1459212418366" TEXT="Ha egy m&#xe1;trixnak van egy z&#xe9;russora, akkor determin&#xe1;nsa 0"/>
+<node COLOR="#338800" CREATED="1459212422818" ID="ID_167130821" MODIFIED="1459212443293" TEXT="Ha egy m&#xe1;trixnak van k&#xe9;t azonos sora, akkor determin&#xe1;nsa 0"/>
+<node COLOR="#ff0000" CREATED="1459212446124" ID="ID_1429920562" MODIFIED="1459212537293" TEXT="Ekvivalens &#xe1;ll&#xed;t&#xe1;sok">
+<node COLOR="#ff0000" CREATED="1459212456798" ID="ID_74183918" MODIFIED="1459212533678" TEXT="det(A)=0"/>
+<node COLOR="#ff0000" CREATED="1459212472917" ID="ID_1673877318" MODIFIED="1459212534074" TEXT="A sorvektorai line&#xe1;risan &#xf6;sszef&#xfc;gg&#x151;k"/>
+<node COLOR="#ff0000" CREATED="1459212491424" ID="ID_886563657" MODIFIED="1459212534485" TEXT="A szingul&#xe1;ris"/>
+<node COLOR="#ff0000" CREATED="1459212497377" ID="ID_1870314122" MODIFIED="1459212535523" TEXT="a homog&#xe9;n line&#xe1;ris Ax=0 egyenletrendszernek van nemtrivi&#xe1;lis megold&#xe1;sa"/>
+</node>
+<node COLOR="#ff0000" CREATED="1459212548530" ID="ID_864289987" MODIFIED="1459212641294" TEXT="Ekvivalens &#xe1;ll&#xed;t&#xe1;sok">
+<node COLOR="#ff0000" CREATED="1459212566132" ID="ID_377585288" MODIFIED="1459212640611" TEXT="det(A)!=0"/>
+<node COLOR="#ff0000" CREATED="1459212583414" ID="ID_1079978100" MODIFIED="1459212640089" TEXT="az Ax=b egyenletrendszer tetsz&#x151;ege b-re egy&#xe9;rtelm&#x171;en megoldhat&#xf3;"/>
+<node COLOR="#ff0000" CREATED="1459212612512" ID="ID_1574197980" MODIFIED="1459212639476" TEXT="Ax=b egyenletrendszernek csak trivi&#xe1;lis megold&#xe1;sa van"/>
+</node>
+<node CREATED="1459212654627" ID="ID_627914564" MODIFIED="1459212699080" TEXT="A v&#xe9;letlen val&#xf3;s m&#xe1;trixok determin&#xe1;nsa 1 val&#xf3;sz&#xed;n&#x171;s&#xe9;ggel nem 0, ha a m&#xe1;trix elemeit valamely folytonos val&#xf3;sz&#xed;n&#x171;s&#xe9;gelpszl&#xe1;s szerint v&#xe1;lasztjuk"/>
+<node CREATED="1459212708953" ID="ID_1669390584" MODIFIED="1459212732401" TEXT="&#xc9;rt&#xe9;ke">
+<node COLOR="#ff0000" CREATED="1459212733584" ID="ID_753251154" MODIFIED="1459212794880" TEXT="Az als&#xf3; vagy fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;trix, s &#xed;gy a diagon&#xe1;lis m&#xe1;trix determin&#xe1;nsa megegyezik a f&#x151;&#xe1;tl&#xf3;beli elemek szorzat&#xe1;val"/>
+<node CREATED="1459212799937" ID="ID_167328169" MODIFIED="1459212849607" TEXT="Elemi sorm&#x171;veletekkel hozzuk a determin&#xe1;nst olyan alakra, melynek vagy van egy z&#xe9;russora, vagy h&#xe1;romsz&#xf6;galak&#xfa;"/>
+<node CREATED="1459212883467" ID="ID_423608981" MODIFIED="1459212893258" TEXT="Elemi m&#xe1;trixok determin&#xe1;nsa">
+<node COLOR="#338800" CREATED="1459212893776" ID="ID_1854151073" MODIFIED="1459213045958" TEXT="a hozz&#xe1;ad&#xe1;s sorm&#x171;velet&#xe9;vel kapott elemi m&#xe1;trix determin&#xe1;nsa 1"/>
+<node COLOR="#338800" CREATED="1459212919218" ID="ID_912254017" MODIFIED="1459213046506" TEXT="a sorcser&#xe9;vel kapott&#xe9; -1"/>
+</node>
+<node CREATED="1459212994349" ID="ID_331346563" MODIFIED="1459213003611" TEXT="Permut&#xe1;l&#xf3; m&#xe1;trix determin&#xe1;nsa">
+<node COLOR="#006699" CREATED="1459213004684" ID="ID_894150201" MODIFIED="1459213051996" TEXT="Egy permut&#xe1;l&#xf3; m&#xe1;trix k&#xe9;t sora inverzi&#xf3;ban &#xe1;ll, ga az el&#x151;bb &#xe1;ll&#xf3; sorbeli 1-es h&#xe1;tr&#xe9;bb van, mint a m&#xe1;sik sorbeli"/>
+<node COLOR="#ff0000" CREATED="1459213080639" ID="ID_1703292114" MODIFIED="1459213125238" TEXT="A permut&#xe1;l&#xf3; m&#xe1;trix aszerint +1 vagy -1, hogy inverzi&#xf3;ban &#xe1;ll&#xf3; sorp&#xe1;rjainak sz&#xe1;ma p&#xe1;ros vagy p&#xe1;ratlan"/>
+</node>
+<node CREATED="1459213170589" ID="ID_254530792" MODIFIED="1459213185867" TEXT="M&#xe1;trixm&#x171;velete &#xe9;s determin&#xe1;ns">
+<node COLOR="#338800" CREATED="1459213187365" ID="ID_371848815" MODIFIED="1459213240143" TEXT="A_(n*n) m&#xe1;trixra &#xe9;s tetsz&#x151;leges c skal&#xe1;rra det(cA)=c^n det(A)"/>
+<node COLOR="#ff0000" CREATED="1459213246552" ID="ID_736601806" MODIFIED="1459213264880" TEXT="det(AB)=det(A)det(B)"/>
+<node COLOR="#338800" CREATED="1459213267324" ID="ID_368286931" MODIFIED="1459213290476" TEXT="det(A)=det(A^T)"/>
+<node CREATED="1459213293578" ID="ID_1585174462" MODIFIED="1459213308673" TEXT="Determin&#xe1;ns k&#xf6;nnyen sz&#xe1;molhat&#xf3; PLU-b&#xf3;l"/>
+</node>
+</node>
+<node CREATED="1459213335466" ID="ID_604469563" MODIFIED="1459213347693" TEXT="Determin&#xe1;ns multiline&#xe1;ris f&#xfc;ggv&#xe9;ny">
+<node COLOR="#ff0000" CREATED="1459213349268" ID="ID_1484047664" MODIFIED="1459213386566" TEXT="Additivit&#xe1;s az i-edik sorban"/>
+<node COLOR="#338800" CREATED="1459213361278" ID="ID_1043796044" MODIFIED="1459213388909" TEXT="homogenit&#xe1;s az i-edik sorban a defin&#xed;ci&#xf3; szerint (D1)"/>
+<node CREATED="1459213446326" ID="ID_233332184" MODIFIED="1459213492306" TEXT="Ha determin&#xe1;nst, mint sorvektorainak n-v&#xe1;ltoz&#xf3;s f&#xfc;ggv&#xe9;ny&#xe9;t tekintj&#xfc;k, akkor det f&#xfc;ggv&#xe9;ny minden v&#xe1;ltoz&#xf3;j&#xe1;ban addit&#xed;v &#xe9;s homog&#xe9;n (multiline&#xe1;ris)"/>
+</node>
+</node>
+<node CREATED="1459211847549" ID="ID_330448104" MODIFIED="1459211858685" TEXT="A determin&#xe1;ns mint elemeinek f&#xfc;ggv&#xe9;nye">
+<node CREATED="1459213520379" ID="ID_1262181419" MODIFIED="1459213529345" TEXT="Additivit&#xe1;s haszn&#xe1;lata"/>
+<node CREATED="1459213542235" ID="ID_482459875" MODIFIED="1459213559346" TEXT="Determin&#xe1;ns, mint k&#xed;gy&#xf3;k &#xf6;szege"/>
+</node>
+</node>
 </node>
 </map>
