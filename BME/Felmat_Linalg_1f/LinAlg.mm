@@ -347,7 +347,7 @@
 </node>
 </node>
 <node CREATED="1459207771248" ID="ID_528909311" MODIFIED="1459207780193" TEXT="M&#x171;veleti alaptulajdons&#xe1;gok">
-<node CREATED="1459207781235" ID="ID_1552612703" MODIFIED="1459207787671" TEXT="Alapm&#x171;veletek">
+<node CREATED="1459207781235" FOLDED="true" ID="ID_1552612703" MODIFIED="1459210392048" TEXT="Alapm&#x171;veletek">
 <node CREATED="1459207819001" ID="ID_572264537" MODIFIED="1459207822339" TEXT="Szorz&#xe1;s">
 <node CREATED="1459207822954" ID="ID_156728519" MODIFIED="1459207929274" TEXT="A m&#xe1;trixszorz&#xe1;s nem kommutat&#xed;v, azaz AB!=BA  b&#xe1;rmely k&#xe9;t &#xf6;sszeszorozhat&#xf3; m&#xe1;trixra">
 <icon BUILTIN="messagebox_warning"/>
@@ -390,7 +390,7 @@
 <node COLOR="#338800" CREATED="1459208412014" ID="ID_1521600902" MODIFIED="1459208435382" TEXT="(AB)^T=B^T*A^T"/>
 </node>
 </node>
-<node CREATED="1459207788915" ID="ID_1922621340" MODIFIED="1459208666064" TEXT="Inverz">
+<node CREATED="1459207788915" FOLDED="true" ID="ID_1922621340" MODIFIED="1459210388527" TEXT="Inverz">
 <node CREATED="1459208467416" ID="ID_342680814" MODIFIED="1459208471067" TEXT="Oszt&#xe1;s">
 <node COLOR="#006699" CREATED="1459208472458" ID="ID_534989558" MODIFIED="1459208615470" TEXT="Balr&#xf3;l &#xe9;s jobbr&#xf3;l val&#xf3; oszt&#xe1;s (az egyik jele \, a m&#xe1;sik&#xe9; /"/>
 </node>
@@ -410,7 +410,35 @@
 <node COLOR="#ff0000" CREATED="1459209435469" ID="ID_574111228" MODIFIED="1459209527696" TEXT="A^k invert&#xe1;lhat&#xf3; &#xe9;s inverze (A^k)^(-1)=(A^(-1))^k, defin&#xed;ci&#xf3; szerint ezt &#xe9;rtj&#xfc;k A^(-k)-n"/>
 <node COLOR="#ff0000" CREATED="1459209530127" ID="ID_716997035" MODIFIED="1459209578027" TEXT="A^T invert&#xe1;lhat&#xf3; &#xe9;s (A^T)^(-1)=(A^(-1))^T"/>
 </node>
-<node CREATED="1459209588929" ID="ID_1523116817" MODIFIED="1459209599192" TEXT="Inverz &#xe9;s az egyenletrendszerek"/>
+<node CREATED="1459209588929" ID="ID_1523116817" MODIFIED="1459209599192" TEXT="Inverz &#xe9;s az egyenletrendszerek">
+<node CREATED="1459209723540" ID="ID_1494281809" MODIFIED="1459209744471" TEXT="A n*n-es m&#xe1;trix. ekvivalensek:"/>
+<node COLOR="#ff0000" CREATED="1459209746005" ID="ID_1943035677" MODIFIED="1459209912588" TEXT="A invert&#xe1;lhat&#xf3;"/>
+<node COLOR="#ff0000" CREATED="1459209753946" ID="ID_984761845" MODIFIED="1459209911705" TEXT="az AX=B m&#xe1;trixegyenlet b&#xe1;rmely n*t-es B m&#xe1;trixra egy&#xe9;rtelm&#x171;en megoldhat&#xf3;"/>
+<node COLOR="#ff0000" CREATED="1459209783432" ID="ID_1071392855" MODIFIED="1459209911316" TEXT="Ax=b egyenletrendszer b&#xe1;rmely n dimenzi&#xf3;s b vektorra egy&#xe9;rtelm&#x171;en megoldhat&#xf3;"/>
+<node COLOR="#ff0000" CREATED="1459209808976" ID="ID_11811248" MODIFIED="1459209910839" TEXT="a homog&#xe9;n line&#xe1;ris Ax=0 egyenletrendszernek a trivi&#xe1;lis x=0 az egyetlen megold&#xe1;sa"/>
+<node COLOR="#ff0000" CREATED="1459209850137" ID="ID_1773177044" MODIFIED="1459209910388" TEXT="A reduk&#xe1;lt l&#xe9;pcs&#xf6;s alakja I"/>
+<node COLOR="#ff0000" CREATED="1459209886374" ID="ID_757552825" MODIFIED="1459209908667" TEXT="A el&#x151;&#xe1;ll elemi m&#xe1;trixok szorzatak&#xe9;nt"/>
+</node>
+<node CREATED="1459209936691" ID="ID_1682777274" MODIFIED="1459209944093" TEXT="Invert&#xe1;lhat&#xf3;s&#xe1;g">
+<node COLOR="#ff0000" CREATED="1459209944886" ID="ID_61916232" MODIFIED="1459210030704" TEXT="A invert&#xe1;lhat&#xf3;"/>
+<node COLOR="#ff0000" CREATED="1459209953044" ID="ID_1832986568" MODIFIED="1459210029356" TEXT="A oszlopvektorai line&#xe1;risan f&#xfc;ggetlenek"/>
+<node COLOR="#ff0000" CREATED="1459209970205" ID="ID_96089676" MODIFIED="1459210028961" TEXT="A oszlopvektorai b&#xe1;zist alkotnak R^n-ben"/>
+<node COLOR="#ff0000" CREATED="1459209991646" ID="ID_1917979515" MODIFIED="1459210028544" TEXT="A sorvektorai line&#xe1;risan f&#xfc;ggetlenek"/>
+<node COLOR="#ff0000" CREATED="1459210004287" ID="ID_1263209179" MODIFIED="1459210027867" TEXT="A sorvektorai b&#xe1;zist alkotnak R^n-ben"/>
+<node COLOR="#ff0000" CREATED="1459210018445" ID="ID_1088843298" MODIFIED="1459210026823" TEXT="r(A)=n"/>
+</node>
+<node CREATED="1459210046267" ID="ID_1661579463" MODIFIED="1459210051569" TEXT="Szingularit&#xe1;s">
+<node COLOR="#ff0000" CREATED="1459210068997" ID="ID_1280211750" MODIFIED="1459210213463" TEXT="A szingul&#xe1;ris (azaz nem invert&#xe1;lhat&#xf3;)"/>
+<node COLOR="#ff0000" CREATED="1459210080193" ID="ID_257634796" MODIFIED="1459210213108" TEXT="A oszlopvektorai line&#xe1;risan &#xf6;sszef&#xfc;gg&#x151;k"/>
+<node COLOR="#ff0000" CREATED="1459210095427" ID="ID_1741544398" MODIFIED="1459210212736" TEXT="az A oszlopvektorai &#xe1;ltal kifesz&#xed;tet alt&#xe9;r dimenzi&#xf3;ja kisebb n-n&#xe9;l"/>
+<node COLOR="#ff0000" CREATED="1459210117389" ID="ID_1831564289" MODIFIED="1459210211625" TEXT="az A sorvektorai line&#xe1;risan &#xf6;sszef&#xfc;gg&#x151;k"/>
+<node COLOR="#ff0000" CREATED="1459210139941" ID="ID_1494290891" MODIFIED="1459210211301" TEXT="az A sorvektorai &#xe1;ltal kifesz&#xed;tett alt&#xe9;r dimenzi&#xf3;ja kisebb n-n&#xe9;l"/>
+<node COLOR="#ff0000" CREATED="1459210175698" ID="ID_512641112" MODIFIED="1459210210790" TEXT="A b&#xe1;rmely l&#xe9;pcs&#x151;s alakj&#xe1;nak (&#xed;gy reduk&#xe1;lt l&#xe9;pcs&#x151;s alakj&#xe1;nak is) van z&#xe9;rus sora"/>
+<node COLOR="#ff0000" CREATED="1459210203196" ID="ID_391409935" MODIFIED="1459210210421" TEXT="r(A)&lt;n"/>
+</node>
+<node CREATED="1459210053862" ID="ID_133486961" MODIFIED="1459210059165" TEXT="B&#xe1;ziscsere">
+<node COLOR="#ff0000" CREATED="1459210223940" ID="ID_1509097084" MODIFIED="1459210342939" TEXT="B &#xe9;s C az R^n k&#xe9;t b&#xe1;zisa. Ekkor X^(-1)_{C&lt;-B}=Y_{B&lt;-C} azaz X_{C&lt;-B}Y_{B&lt;-C}=I_n}"/>
+</node>
 </node>
 <node CREATED="1459207794024" ID="ID_1461270718" MODIFIED="1459207804941" TEXT="M&#x171;veletek speic&#xe1;lis m&#xe1;trixokkal"/>
 <node CREATED="1459207806044" ID="ID_779180861" MODIFIED="1459207811889" TEXT="LU-felbont&#xe1;s"/>
