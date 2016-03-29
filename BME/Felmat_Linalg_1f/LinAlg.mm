@@ -367,9 +367,51 @@
 <node COLOR="#338800" CREATED="1459207991958" ID="ID_896566438" MODIFIED="1459208014835" TEXT="(A+B)C=AC+BC">
 <node CREATED="1459207988559" ID="ID_1204535151" MODIFIED="1459207989269" TEXT="diszributivit&#xe1;s "/>
 </node>
+<node COLOR="#338800" CREATED="1459208127477" ID="ID_1570405662" MODIFIED="1459208147699" TEXT="(cA)B=c(AB)=A(cB)"/>
+<node COLOR="#338800" CREATED="1459208149041" ID="ID_1659124522" MODIFIED="1459208163867" TEXT="AO=O">
+<node CREATED="1459208166342" ID="ID_1395051960" MODIFIED="1459208188797" TEXT="szorz&#xe1;s nullm&#xe1;trixszal"/>
+</node>
+<node COLOR="#338800" CREATED="1459208190514" ID="ID_1875665516" MODIFIED="1459208199590" TEXT="IA=AI=A">
+<node CREATED="1459208202258" ID="ID_1002705361" MODIFIED="1459208210968" TEXT="szorz&#xe1;s egys&#xe9;gm&#xe1;trixszal"/>
 </node>
 </node>
-<node CREATED="1459207788915" ID="ID_1922621340" MODIFIED="1459207792947" TEXT="Inverz"/>
+<node CREATED="1459208216418" ID="ID_1755868429" MODIFIED="1459208220583" TEXT="Hatv&#xe1;nyoz&#xe1;s">
+<node COLOR="#338800" CREATED="1459208222721" ID="ID_80074534" MODIFIED="1459208329428" TEXT="A^k A^m=A^(k+m)"/>
+<node COLOR="#338800" CREATED="1459208252514" ID="ID_1883698759" MODIFIED="1459208329721" TEXT="(A^k)^m=A^(k*m)"/>
+<node COLOR="#338800" CREATED="1459208277037" ID="ID_1985283943" MODIFIED="1459208329960" TEXT="A^k*A^0=A^(k+0)=A^k">
+<icon BUILTIN="down"/>
+</node>
+<node COLOR="#338800" CREATED="1459208311879" ID="ID_1281325152" MODIFIED="1459208330292" TEXT="A^0=I_n"/>
+</node>
+<node CREATED="1459208338143" ID="ID_543168670" MODIFIED="1459208343457" TEXT="Transzpon&#xe1;l&#xe1;s">
+<node COLOR="#338800" CREATED="1459208344443" ID="ID_196686057" MODIFIED="1459208436418" TEXT="(A^T)^T=A"/>
+<node COLOR="#338800" CREATED="1459208361123" ID="ID_635062980" MODIFIED="1459208436013" TEXT="(A+C)^T=A^T+C^T"/>
+<node COLOR="#338800" CREATED="1459208381554" ID="ID_291448222" MODIFIED="1459208435753" TEXT="(cA)^T=cA^T"/>
+<node COLOR="#338800" CREATED="1459208412014" ID="ID_1521600902" MODIFIED="1459208435382" TEXT="(AB)^T=B^T*A^T"/>
+</node>
+</node>
+<node CREATED="1459207788915" ID="ID_1922621340" MODIFIED="1459208666064" TEXT="Inverz">
+<node CREATED="1459208467416" ID="ID_342680814" MODIFIED="1459208471067" TEXT="Oszt&#xe1;s">
+<node COLOR="#006699" CREATED="1459208472458" ID="ID_534989558" MODIFIED="1459208615470" TEXT="Balr&#xf3;l &#xe9;s jobbr&#xf3;l val&#xf3; oszt&#xe1;s (az egyik jele \, a m&#xe1;sik&#xe9; /"/>
+</node>
+<node COLOR="#006699" CREATED="1459208550966" ID="ID_1514454730" MODIFIED="1459208610979" TEXT="A eleme F^(n*n). A invert&#xe1;lhat&#xf3;, ha l&#xe9;tezik olyan B m&#xe1;trix, melyre AB=BA=I_n"/>
+<node COLOR="#006699" CREATED="1459208622190" ID="ID_1614206184" MODIFIED="1459208661914" TEXT="A B m&#xe1;trixot A inverz&#xe9;nek nevezz&#xfc;k &#xe9;s A^(-1)-nel jel&#xf6;lj&#xfc;k."/>
+<node COLOR="#006699" CREATED="1459208667027" ID="ID_44776708" MODIFIED="1459208691429" TEXT="A nem invert&#xe1;lhat&#xf3; m&#xe1;trixot szingul&#xe1;risnak nevezz&#xfc;k."/>
+<node COLOR="#006699" CREATED="1459208694380" ID="ID_1292933384" MODIFIED="1459208731612" TEXT="Egy n&#xe9;gyzetes m&#xe1;trixot nilpotensnek nevezz&#xfc;k, ha van olyan k pozit&#xed;v egy&#xe9;sz. hogy A^k=O"/>
+<node COLOR="#338800" CREATED="1459208760509" ID="ID_651509284" MODIFIED="1459208771777" TEXT="I-A inverze nilpotens A eset&#xe9;n"/>
+<node COLOR="#338800" CREATED="1459208772847" ID="ID_1997658790" MODIFIED="1459208844459" TEXT="Minden elemi m&#xe1;trix invert&#xe1;lhat&#xf3;, nevezetesen egy sorm&#x171;velet elemi m&#xe1;trix&#xe1;nak inverze megegyezik a sorm&#x171;velet inverz&#xe9;nek elemi m&#xe1;trix&#xe1;val."/>
+<node COLOR="#ff0000" CREATED="1459209029553" ID="ID_832526720" MODIFIED="1459209093538" TEXT="A n&#xe9;gyzetes A m&#xe1;trix pontosan akkor invert&#xe1;lhat&#xf3;, ha l&#xe9;tezik olyan B m&#xe1;trix, hogy az AB=I &#xe9;s BA=I felt&#xe9;telek egyike teljes&#xfc;l. Ha ilyen B m&#xe1;trix l&#xe9;tezik, az egy&#xe9;rtelm&#x171;"/>
+<node COLOR="#338800" CREATED="1459208892422" ID="ID_1698900526" MODIFIED="1459209026521" TEXT="A n&#xe9;gyzetes A m&#xe1;trix invert&#xe1;lhat&#xf3;, ha az [A|I] m&#xe1;trix elemi sorm&#x171;veletekkel [I|B] alakra hozhat&#xf3;, ekkor A inverze B. Ha A reduk&#xe1;lt l&#xe9;pcs&#x151;s alakja nem az I m&#xe1;trix, akkor A nem invert&#xe1;lhat&#xf3;"/>
+<node CREATED="1459209187344" ID="ID_523202183" MODIFIED="1459209195543" TEXT="Tulajdons&#xe1;gai">
+<node COLOR="#ff0000" CREATED="1459209196676" ID="ID_1802293707" MODIFIED="1459209526305" TEXT="A &#xe9;s B n*n-es invert&#xe1;lhat&#xf3; m&#xe1;tixok, c!=0 skal&#xe1;r, k pozit&#xed;v eg&#xe9;sz"/>
+<node COLOR="#ff0000" CREATED="1459209241179" ID="ID_404499636" MODIFIED="1459209525924" TEXT="A^(-1) invert&#xe1;lhat&#xf3; &#xe9;s inverze (A^(-1)^(-1))=A"/>
+<node COLOR="#ff0000" CREATED="1459209292205" ID="ID_774048769" MODIFIED="1459209526993" TEXT="cA invert&#xe1;lhat&#xf3; &#xe9;s inverze 1/c * A^(-1)"/>
+<node COLOR="#ff0000" CREATED="1459209395919" ID="ID_295270242" MODIFIED="1459209527341" TEXT="AB invert&#xe1;lhat&#xf3; &#xe9;s inverze B^(-1)*A^(-1)"/>
+<node COLOR="#ff0000" CREATED="1459209435469" ID="ID_574111228" MODIFIED="1459209527696" TEXT="A^k invert&#xe1;lhat&#xf3; &#xe9;s inverze (A^k)^(-1)=(A^(-1))^k, defin&#xed;ci&#xf3; szerint ezt &#xe9;rtj&#xfc;k A^(-k)-n"/>
+<node COLOR="#ff0000" CREATED="1459209530127" ID="ID_716997035" MODIFIED="1459209578027" TEXT="A^T invert&#xe1;lhat&#xf3; &#xe9;s (A^T)^(-1)=(A^(-1))^T"/>
+</node>
+<node CREATED="1459209588929" ID="ID_1523116817" MODIFIED="1459209599192" TEXT="Inverz &#xe9;s az egyenletrendszerek"/>
+</node>
 <node CREATED="1459207794024" ID="ID_1461270718" MODIFIED="1459207804941" TEXT="M&#x171;veletek speic&#xe1;lis m&#xe1;trixokkal"/>
 <node CREATED="1459207806044" ID="ID_779180861" MODIFIED="1459207811889" TEXT="LU-felbont&#xe1;s"/>
 </node>
