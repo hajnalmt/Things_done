@@ -572,9 +572,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215085071" ID="ID_158843376" MODIFIED="1459215129252" POSITION="left" TEXT="4) Line&#xe1;ris lek&#xe9;pez&#xe9;s">
+<node CREATED="1459215085071" FOLDED="true" ID="ID_158843376" MODIFIED="1459220682424" POSITION="left" TEXT="4) Line&#xe1;ris lek&#xe9;pez&#xe9;s">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459215935008" FOLDED="true" ID="ID_892286750" MODIFIED="1459218223603" TEXT="M&#xe1;trixlek&#xe9;pez&#xe9;s, line&#xe1;ris lek&#xe9;pez&#xe9;s">
+<node CREATED="1459215935008" FOLDED="true" ID="ID_892286750" MODIFIED="1459220681159" TEXT="M&#xe1;trixlek&#xe9;pez&#xe9;s, line&#xe1;ris lek&#xe9;pez&#xe9;s">
 <node CREATED="1459217467123" ID="ID_746422661" MODIFIED="1459217482898" TEXT="Fogalma"/>
 <node CREATED="1459217485913" ID="ID_1161043136" MODIFIED="1459217506920" TEXT="k&#xe9;pt&#xe9;r, magt&#xe9;r - oszlopt&#xe9;r, nullt&#xe9;r"/>
 <node CREATED="1459217516523" ID="ID_1145014383" MODIFIED="1459217520483" TEXT="M&#x171;veletek"/>
@@ -601,7 +601,7 @@
 <node CREATED="1459218191134" ID="ID_1631725036" MODIFIED="1459218194539" TEXT="tulajdons&#xe1;gok"/>
 </node>
 </node>
-<node CREATED="1459215951677" ID="ID_555219046" MODIFIED="1459215967199" TEXT="Alkalmaz&#xe1;s: differenci&#xe1;lhat&#xf3;s&#xe1;g">
+<node CREATED="1459215951677" FOLDED="true" ID="ID_555219046" MODIFIED="1459220679471" TEXT="Alkalmaz&#xe1;s: differenci&#xe1;lhat&#xf3;s&#xe1;g">
 <node CREATED="1459218225839" ID="ID_1951758783" MODIFIED="1459218230654" TEXT="Differenci&#xe1;lhat&#xf3;s&#xe1;g"/>
 <node CREATED="1459218272259" ID="ID_1622825938" MODIFIED="1459218277342" TEXT="Deriv&#xe1;ltlek&#xe9;pez&#xe9;s"/>
 <node CREATED="1459218326756" ID="ID_1861540908" MODIFIED="1459218330990" TEXT="Jacobi m&#xe1;trix">
@@ -609,7 +609,7 @@
 </node>
 <node CREATED="1459218379368" ID="ID_1090741748" MODIFIED="1459218382874" TEXT="l&#xe1;ncszab&#xe1;ly"/>
 </node>
-<node CREATED="1459215971988" ID="ID_965367797" MODIFIED="1459215992658" TEXT="2- &#xe9;s 3-dimenzi&#xf3;s geometriai transzform&#xe1;ci&#xf3;k m&#xe1;trixa">
+<node CREATED="1459215971988" FOLDED="true" ID="ID_965367797" MODIFIED="1459220678431" TEXT="2- &#xe9;s 3-dimenzi&#xf3;s geometriai transzform&#xe1;ci&#xf3;k m&#xe1;trixa">
 <node CREATED="1459218472362" ID="ID_1477717140" MODIFIED="1459218476091" TEXT="Forgat&#xe1;s">
 <node CREATED="1459218477008" ID="ID_1782408467" MODIFIED="1459218480713" TEXT="2D-ben"/>
 <node CREATED="1459218487883" ID="ID_1869829862" MODIFIED="1459218494829" TEXT="tengelyk&#xf6;r&#xfc;l 3D-ben"/>
@@ -621,12 +621,31 @@
 <node CREATED="1459218521183" ID="ID_991401409" MODIFIED="1459218536391" TEXT="Egys&#xe9;gvektor egyenese k&#xf6;r&#xfc;l alpha sz&#xf6;ggel forgat&#xe1;s"/>
 <node CREATED="1459218627855" ID="ID_1924105796" MODIFIED="1459218631960" TEXT="sz&#xe1;mol&#xe1;s vel&#xfc;k"/>
 </node>
-</node>
-<node CREATED="1459215997269" ID="ID_1110107617" MODIFIED="1459216015115" TEXT="Mer&#x151;leges vet&#xed;t&#xe9;s &#xe9;s a legjobb k&#xf6;zel&#xed;t&#xe9;s">
 <node CREATED="1459218652645" ID="ID_1638870721" MODIFIED="1459218670381" TEXT="Egyenesre val&#xf3; mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trixa"/>
 <node CREATED="1459218695667" ID="ID_1085385745" MODIFIED="1459218704143" TEXT="S&#xed;kra val&#xf3; mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trixa"/>
+<node CREATED="1459218774659" ID="ID_1028565411" MODIFIED="1459218799224" TEXT="s&#xed;kbeli t&#xfc;kr&#xf6;z&#xe9;s az alpha/2 egyenesre"/>
+<node CREATED="1459218803724" ID="ID_366660338" MODIFIED="1459218812047" TEXT="s&#xed;kra val&#xf3; t&#xfc;kr&#xf6;z&#xe9;s m&#xe1;trixa"/>
+<node CREATED="1459218861221" ID="ID_704763249" MODIFIED="1459218869228" TEXT="eltol&#xe1;s"/>
 </node>
-<node CREATED="1459216016727" ID="ID_1680684532" MODIFIED="1459216023955" TEXT="Pszeudoinverz"/>
+<node CREATED="1459215997269" FOLDED="true" ID="ID_1110107617" MODIFIED="1459220676958" TEXT="Mer&#x151;leges vet&#xed;t&#xe9;s &#xe9;s a legjobb k&#xf6;zel&#xed;t&#xe9;s">
+<node CREATED="1459218912533" ID="ID_1376184085" MODIFIED="1459218931410" TEXT="Alterek direkt &#xf6;sszege"/>
+<node CREATED="1459218932729" ID="ID_1449354893" MODIFIED="1459218948401" TEXT="komplementer alt&#xe9;r-kieg&#xe9;sz&#xed;t&#x151; alt&#xe9;r"/>
+<node CREATED="1459219007783" ID="ID_1594761356" MODIFIED="1459219020772" TEXT="A mer&#x151;leges vet&#xed;t&#xe9;s R^n altere"/>
+<node CREATED="1459219487879" ID="ID_1367125699" MODIFIED="1459219508445" TEXT="Mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trix pontosan akkor ha P=P^T=P^2"/>
+<node CREATED="1459219580691" ID="ID_928204867" MODIFIED="1459219591306" TEXT="alt&#xe9;r&#x151;l val&#xf3; t&#xe1;vols&#xe1;g"/>
+<node CREATED="1459219593460" ID="ID_719329242" MODIFIED="1459219620330" TEXT="legjobb k&#xf6;zel&#xed;t&#xe9;s a mer&#x151;leges vet&#xfc;let"/>
+<node CREATED="1459219813025" ID="ID_821834129" MODIFIED="1459219819756" TEXT="Egyenletrendszer optim&#xe1;lis megold&#xe1;sa"/>
+<node CREATED="1459219908466" ID="ID_559570698" MODIFIED="1459219910507" TEXT="Vet&#xed;t&#xe9;s">
+<node CREATED="1459220041274" ID="ID_970760046" MODIFIED="1459220044207" TEXT="Tulajdons&#xe1;gai"/>
+</node>
+</node>
+<node CREATED="1459216016727" FOLDED="true" ID="ID_1680684532" MODIFIED="1459220675207" TEXT="Pszeudoinverz">
+<node CREATED="1459220138736" ID="ID_315271239" MODIFIED="1459220155866" TEXT="sort&#xe9;r &#xe9;s oszlopt&#xe9;r k&#xf6;z&#xf6;tt van k&#xf6;lcs&#xf6;n&#xf6;sen egy&#xe9;rtelm&#x171; megfeleltet&#xe9;s"/>
+<node CREATED="1459220172982" ID="ID_1597584356" MODIFIED="1459220184740" TEXT="moore-penrose-f&#xe9;le pszeudoinverz">
+<node CREATED="1459220190736" ID="ID_1290968201" MODIFIED="1459220194271" TEXT="A^+"/>
+</node>
+<node CREATED="1459220377997" ID="ID_1672792386" MODIFIED="1459220391136" TEXT="pontosan akkor ha a n&#xe9;gy felt&#xe9;tel fenn&#xe1;ll"/>
+</node>
 </node>
 <node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1459215109832" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
