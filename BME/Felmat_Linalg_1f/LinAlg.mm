@@ -475,7 +475,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459211800271" ID="ID_1422721427" MODIFIED="1459211809832" POSITION="right" TEXT="3) Determin&#xe1;nsok">
+<node CREATED="1459211800271" FOLDED="true" ID="ID_1422721427" MODIFIED="1459215879679" POSITION="right" TEXT="3) Determin&#xe1;nsok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459211817180" FOLDED="true" ID="ID_991847846" MODIFIED="1459213512331" TEXT="Motiv&#xe1;ci&#xf3;">
 <node CREATED="1459211931662" ID="ID_258819346" MODIFIED="1459211941079" TEXT=" Paralelogramma el&#x151;jeles ter&#xfc;lete">
@@ -531,7 +531,7 @@
 <node CREATED="1459213446326" ID="ID_233332184" MODIFIED="1459213492306" TEXT="Ha determin&#xe1;nst, mint sorvektorainak n-v&#xe1;ltoz&#xf3;s f&#xfc;ggv&#xe9;ny&#xe9;t tekintj&#xfc;k, akkor det f&#xfc;ggv&#xe9;ny minden v&#xe1;ltoz&#xf3;j&#xe1;ban addit&#xed;v &#xe9;s homog&#xe9;n (multiline&#xe1;ris)"/>
 </node>
 </node>
-<node CREATED="1459211847549" ID="ID_330448104" MODIFIED="1459211858685" TEXT="A determin&#xe1;ns mint elemeinek f&#xfc;ggv&#xe9;nye">
+<node CREATED="1459211847549" FOLDED="true" ID="ID_330448104" MODIFIED="1459215875641" TEXT="A determin&#xe1;ns mint elemeinek f&#xfc;ggv&#xe9;nye">
 <node CREATED="1459213520379" ID="ID_1262181419" MODIFIED="1459213529345" TEXT="Additivit&#xe1;s haszn&#xe1;lata"/>
 <node CREATED="1459213542235" ID="ID_482459875" MODIFIED="1459213559346" TEXT="Determin&#xe1;ns, mint k&#xed;gy&#xf3;k &#xf6;szege">
 <node COLOR="#ff0000" CREATED="1459213647852" ID="ID_1900363556" MODIFIED="1459213793401" TEXT="Minden n-ed rend&#x171; determin&#xe1;ns f&#xf6;lbomlik az &#xf6;sszes bel&#x151;le kiv&#xe1;laszthat k&#xed;gy&#xf3; determin&#xe1;ns&#xe1;nak &#xf6;sszeg&#xe9;re. ">
@@ -551,11 +551,35 @@
 <node COLOR="#338800" CREATED="1459214147594" ID="ID_1034285435" MODIFIED="1459214275159" TEXT="Ha az n-edrend&#x171; |A| determin&#xe1;ns a_ij elem&#xe9;nek sor&#xe1;ban vagy oszlop&#xe1;ban minden tiv&#xe9;bbi elem 0, A_ij az a_ij elemhz tartoz&#xf3; el&#x151;jeles aldetermin&#xe1;ns akkor |A|=a_ij*A_ij"/>
 <node COLOR="#ff0000" CREATED="1459214281674" ID="ID_1250458890" MODIFIED="1459214344938" TEXT="Az n-edrend&#x171; |A| determin&#xe1;ns &#xe9;rt&#xe9;ke i-edik sora szerint kifejtve &#xe9;s j-edik oszlopa szerint kifejtve"/>
 </node>
-<node CREATED="1459214400655" ID="ID_87872432" MODIFIED="1459214411590" TEXT="Vandermonde-determin&#xe1;ns"/>
-<node CREATED="1459214413396" ID="ID_636433420" MODIFIED="1459214417693" TEXT="Cramer szab&#xe1;ly"/>
-<node CREATED="1459214429710" ID="ID_1039294972" MODIFIED="1459214436380" TEXT="Inverz m&#xe1;trix elemei"/>
-<node CREATED="1459214437706" ID="ID_1490066500" MODIFIED="1459214450879" TEXT="Blokkm&#xe1;trixok determin&#xe1;nsa"/>
+<node COLOR="#006699" CREATED="1459214400655" ID="ID_87872432" MODIFIED="1459214546224" TEXT="Vandermonde-determin&#xe1;ns">
+<node COLOR="#006699" CREATED="1459214579043" ID="ID_289270986" MODIFIED="1459215386787" TEXT="x_1,x_2...x_n sz&#xe1;mokhoz tartoz&#xf3; vandermonde-determin&#xe1;ns"/>
+<node COLOR="#ff0000" CREATED="1459215325022" ID="ID_1774226035" MODIFIED="1459215385317" TEXT="V_n{x_1,x_2,...,x_n}= Produktum i&lt;j {x_j-x_i}"/>
+<node CREATED="1459214587284" ID="ID_423208341" MODIFIED="1459214674039" TEXT="A k&#xfc;l&#xf6;nb&#xf6;z&#x151; x_1...x_n &#xe9;s a tetsz&#x151;leges y_1...y_n sz&#xe1;mokhoz egyetlen olyan legf&#xf6;ljebb n-1-edfok&#xfa; f polinom l&#xe9;tezik, melyre f(x_i)=y_i"/>
 </node>
+<node COLOR="#006699" CREATED="1459214413396" ID="ID_636433420" MODIFIED="1459214743943" TEXT="Cramer szab&#xe1;ly">
+<node COLOR="#006699" CREATED="1459214579043" ID="ID_1884702402" MODIFIED="1459215478489" TEXT="A_i,b = [a_*1 ... a_*,i-1; b; a_*i+1 .. a*n]"/>
+<node COLOR="#ff0000" CREATED="1459215480125" ID="ID_291121597" MODIFIED="1459215546198" TEXT="Az Ax=b egyenletrendszer pontosan akkor oldhat&#xf3; meg egy&#xe9;rtelm&#x171;en ha det(A) !=0 &#xe9;s ekkor x_i=det(A_i,)/det A"/>
+</node>
+<node CREATED="1459214429710" ID="ID_1039294972" MODIFIED="1459214436380" TEXT="Inverz m&#xe1;trix elemei">
+<node COLOR="#ff0000" CREATED="1459215573397" ID="ID_1874868857" MODIFIED="1459215584245" TEXT="T&#xe9;tel"/>
+<node CREATED="1459215585481" ID="ID_77158277" MODIFIED="1459215596892" TEXT="K&#xf6;vetkezm&#xe9;nyek"/>
+<node CREATED="1459215598806" ID="ID_783776968" MODIFIED="1459215650400" TEXT="Az inverz m&#xe1;trix minden eleme folytonos f&#xfc;ggv&#xe9;nye a m&#xe1;trix minden elem&#xe9;nek minden olyan helyen, ahol a determin&#xe1;ns nem 0, azaz minden olyan helyen ahol a determin&#xe1;ns nem 0, azaz minden olyan helyen, ahol az inverz l&#xe9;tezik"/>
+<node CREATED="1459215651893" ID="ID_1717605584" MODIFIED="1459215718518" TEXT="Egy n-ismeretlenes n egyenletb&#x151;l &#xe1;ll&#xf3; egyenletrendszer megold&#xe1;svektor&#xe1;nak minden koordin&#xe1;t&#xe1;ja folytonos f&#xfc;ggv&#xe9;nye az egyenletrendszer egy&#xfc;tthat&#xf3;inak &#xe9;s a jobb oldal&#xe1;n &#xe1;ll&#xf3; vektor koordin&#xe1;t&#xe1;inak, hisz a megold&#xe1;s az inverzzel val&#xf3; szorz&#xe1;ssal megkaphat&#xf3;"/>
+<node CREATED="1459215730281" ID="ID_1072340358" MODIFIED="1459215754933" TEXT="Eg&#xe9;szelem&#x171; m&#xe1;trix inverze pontosan akkor eg&#xe9;sz&#xe9;rtelm&#x171;. ha determin&#xe1;nsa 1 vagy -1 "/>
+</node>
+<node CREATED="1459214437706" ID="ID_1490066500" MODIFIED="1459215770380" TEXT="Blokkm&#xe1;trixok determin&#xe1;nsa">
+<node COLOR="#ff0000" CREATED="1459215772269" ID="ID_391140469" MODIFIED="1459215785622" TEXT="T&#xe9;telek"/>
+</node>
+</node>
+</node>
+<node CREATED="1459215085071" ID="ID_158843376" MODIFIED="1459215129252" POSITION="left" TEXT="4) Line&#xe1;ris lek&#xe9;pez&#xe9;s">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1459215109832" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1459215136069" ID="ID_124795280" MODIFIED="1459215154670" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
 </map>
