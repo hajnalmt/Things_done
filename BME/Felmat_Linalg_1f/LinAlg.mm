@@ -291,7 +291,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459201130997" ID="ID_1648692028" MODIFIED="1459201143047" POSITION="left" TEXT="2) M&#xe1;trixok algebr&#xe1;ja">
+<node CREATED="1459201130997" FOLDED="true" ID="ID_1648692028" MODIFIED="1459211671992" POSITION="left" TEXT="2) M&#xe1;trixok algebr&#xe1;ja">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459201171918" FOLDED="true" ID="ID_1282324897" MODIFIED="1459207769365" TEXT="M&#xe1;trixm&#x171;veletek">
 <node CREATED="1459201182686" ID="ID_1247163125" MODIFIED="1459201207707" TEXT="Elemenk&#xe9;nti m&#xe1;trixm&#x171;veletek">
@@ -346,7 +346,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459207771248" ID="ID_528909311" MODIFIED="1459207780193" TEXT="M&#x171;veleti alaptulajdons&#xe1;gok">
+<node CREATED="1459207771248" FOLDED="true" ID="ID_528909311" MODIFIED="1459211670698" TEXT="M&#x171;veleti alaptulajdons&#xe1;gok">
 <node CREATED="1459207781235" FOLDED="true" ID="ID_1552612703" MODIFIED="1459210392048" TEXT="Alapm&#x171;veletek">
 <node CREATED="1459207819001" ID="ID_572264537" MODIFIED="1459207822339" TEXT="Szorz&#xe1;s">
 <node CREATED="1459207822954" ID="ID_156728519" MODIFIED="1459207929274" TEXT="A m&#xe1;trixszorz&#xe1;s nem kommutat&#xed;v, azaz AB!=BA  b&#xe1;rmely k&#xe9;t &#xf6;sszeszorozhat&#xf3; m&#xe1;trixra">
@@ -440,8 +440,39 @@
 <node COLOR="#ff0000" CREATED="1459210223940" ID="ID_1509097084" MODIFIED="1459210342939" TEXT="B &#xe9;s C az R^n k&#xe9;t b&#xe1;zisa. Ekkor X^(-1)_{C&lt;-B}=Y_{B&lt;-C} azaz X_{C&lt;-B}Y_{B&lt;-C}=I_n}"/>
 </node>
 </node>
-<node CREATED="1459207794024" ID="ID_1461270718" MODIFIED="1459207804941" TEXT="M&#x171;veletek speic&#xe1;lis m&#xe1;trixokkal"/>
-<node CREATED="1459207806044" ID="ID_779180861" MODIFIED="1459207811889" TEXT="LU-felbont&#xe1;s"/>
+<node CREATED="1459207794024" FOLDED="true" ID="ID_1461270718" MODIFIED="1459211660673" TEXT="M&#x171;veletek speic&#xe1;lis m&#xe1;trixokkal">
+<node CREATED="1459210426765" ID="ID_464588520" MODIFIED="1459210459903" TEXT="Speci&#xe1;lis m&#xe1;trixok">
+<node COLOR="#006699" CREATED="1459210702900" ID="ID_440776533" MODIFIED="1459210901431" TEXT="A diagon&#xe1;lis m&#xe1;trixok sorainak permut&#xe1;ci&#xf3;j&#xe1;val kapott m&#xe1;trixot k&#xed;gy&#xf3;nak (m&#xe1;s n&#xe9;ven transzverz&#xe1;lisnak) nevezz&#xfc;k, speci&#xe1;lisan az egys&#xe9;gm&#xe1;trixb&#xf3;l ugyan&#xed;gy kapott m&#xe1;trixot permut&#xe1;l&#xf3; m&#xe1;trixnak (m&#xe1;s n&#xe9;ven permut&#xe1;ci&#xf3;m&#xe1;trixnak) h&#xed;vjuk"/>
+<node COLOR="#338800" CREATED="1459210796286" ID="ID_80337226" MODIFIED="1459210904755" TEXT="B&#xe9;rmely k&#xe9;t azonos m&#xe9;ret&#x171; permut&#xe1;l&#xf3; m&#xe1;trix szorzata &#xe9;s egy permut&#xe1;l&#xf3; m&#xe1;trix b&#xe1;rmely eg&#xe9;sz kitev&#x151;s hatv&#xe1;nya permut&#xe1;l&#xf3; m&#xe1;trix"/>
+<node COLOR="#338800" CREATED="1459210862098" ID="ID_1846105063" MODIFIED="1459210907705" TEXT="Permut&#xe1;l&#xf3; m&#xe1;trix inverze megyegyezik a transzpon&#xe1;ltj&#xe1;val"/>
+<node COLOR="#338800" CREATED="1459210460608" ID="ID_1145367317" MODIFIED="1459210537965" TEXT="Fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;txok &#xf6;sszege, szorzata &#xe9;s invert&#xe1;lhat&#xf3; fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;trix inverze fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;trix."/>
+<node COLOR="#338800" CREATED="1459210540531" ID="ID_878986813" MODIFIED="1459210549496" TEXT=" Anal&#xf3;g t&#xe9;tel igaz az als&#xf3; h&#xe1;romsz&#xf6;gm&#xe1;trixokra is."/>
+<node COLOR="#338800" CREATED="1459210552392" ID="ID_1582699970" MODIFIED="1459210578313" TEXT="Egy h&#xe1;romsz&#xf6;gm&#xe1;trix pontoan akkor invert&#xe1;lhat&#xf3;, ha f&#x151;&#xe1;tl&#xf3;beli elemeinek egyike sem z&#xe9;rus."/>
+<node COLOR="#338800" CREATED="1459210580743" ID="ID_1086693669" MODIFIED="1459210607260" TEXT="Szimmetrikus m&#xe1;trixok &#xf6;sszege, skal&#xe1;rszorosa, inverze ferd&#xe9;n szimmetrikus."/>
+<node COLOR="#338800" CREATED="1459210627191" ID="ID_530702717" MODIFIED="1459210693625" TEXT="Minden n&#xe9;gyzetes m&#xe1;trix el&#x151;&#xe1;ll egy szimmetrikus &#xe9;s egy ferd&#xe9;n szimmetrikus m&#xe1;trix &#xf6;sszegek&#xe9;nt."/>
+<node COLOR="#338800" CREATED="1459210918770" ID="ID_1498821917" MODIFIED="1459210947778" TEXT="Az A^TA &#xe9;s AA^T m&#xe1;trixok tetsz&#x151;leges A m&#xe1;trix eset&#xe9;n szimmetrikusak"/>
+</node>
+<node CREATED="1459210958230" ID="ID_1789457313" MODIFIED="1459210986531" TEXT="Gyorsszorz&#xe1;s-Strassen-formul&#xe1;k">
+<node COLOR="#338800" CREATED="1459210989822" ID="ID_1491559288" MODIFIED="1459211031604" TEXT="Legyen A,B &#xe9;s C is 2*2-es. A C=AB szorz&#xe1;s elv&#xe9;gezhet&#x151; formul&#xe1;kkal"/>
+<node CREATED="1459211105127" ID="ID_1572377248" MODIFIED="1459211154938" TEXT="A standard m&#xe1;trixszorz&#xe1;s m&#x171;veletig&#xe9;nye 2*n^3-n^2">
+<node CREATED="1459211157404" ID="ID_1222460656" MODIFIED="1459211180976" TEXT="n^3 szorz&#xe1;s, n^3-n^2 &#xf6;sszead&#xe1;s"/>
+<node CREATED="1459211190951" ID="ID_1932013696" MODIFIED="1459211237753" TEXT="Blokkm&#xe1;trixokra rekurz&#xed;van c*n^(log_2(7))&lt;=c*n^(2.81)"/>
+</node>
+<node CREATED="1459211183338" ID="ID_658591894" MODIFIED="1459211274167" TEXT="c*n^2.376 Coppersmith &#xe9;s Winograd 1990"/>
+<node CREATED="1459211276055" ID="ID_1493087546" MODIFIED="1459211292328" TEXT="Lebeg&#x151;pontos sz&#xe1;mokra numerikusan instabil"/>
+</node>
+</node>
+<node CREATED="1459207806044" FOLDED="true" ID="ID_779180861" MODIFIED="1459211663816" TEXT="LU-felbont&#xe1;s">
+<node CREATED="1459211303909" ID="ID_1451540218" MODIFIED="1459211341423" TEXT="A=LU LU felbont&#xe1;s, ha L als&#xf3; egys&#xe9;g h&#xe1;romsz&#xf6;gm&#xe1;trix, U fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;trix."/>
+<node CREATED="1459211343454" ID="ID_29998426" MODIFIED="1459211347240" TEXT="nincs mindig"/>
+<node CREATED="1459211348430" ID="ID_1513790618" MODIFIED="1459211365626" TEXT="invert&#xe1;lhat&#xf3; m&#xe1;trixra egy&#xe9;rtelm&#x171;, k&#xfc;l&#xf6;nben nem felt&#xe9;tlen&#xfc;l"/>
+<node CREATED="1459211367186" ID="ID_1037180247" MODIFIED="1459211399398" TEXT="M&#xe1;trixinvert&#xe1;l&#xe1;s LU felbont&#xe1;ssal"/>
+<node CREATED="1459211564138" ID="ID_1900437864" MODIFIED="1459211576842" TEXT="PLU felbont&#xe1;s">
+<node CREATED="1459211577924" ID="ID_1026643674" MODIFIED="1459211604655" TEXT="PA=LU azaz A=P^T LU, P permut&#xe1;l&#xf3;"/>
+<node CREATED="1459211606059" ID="ID_211622827" MODIFIED="1459211618427" TEXT="nem csak n&#xe9;gyzet alak&#xfa;akra &#xe9;rtelmezhet&#x151;"/>
+<node CREATED="1459211619625" ID="ID_1187358131" MODIFIED="1459211635011" TEXT="Egyenletrendszer megold&#xe1;sa PLU-val"/>
+</node>
+</node>
 </node>
 </node>
 </node>
