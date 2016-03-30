@@ -1996,10 +1996,13 @@
 </node>
 <node CREATED="1459334884540" ID="ID_1653961827" MODIFIED="1459334924897" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1459336596835" ID="ID_1972121208" MODIFIED="1459336605426" TEXT="Tartalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <node CREATED="1459334926014" ID="ID_1205381229" MODIFIED="1459335104318" TEXT="A LaTeX egyik nagy el&#x151;nye, k&#xe9;ts&#xe9;gtelen&#xfc;l!"/>
 <node CREATED="1459335107337" ID="ID_1558639071" MODIFIED="1459335128561" TEXT="Eml&#xe9;ksz&#xfc;nk m&#xe9;g a szakaszok, alszakaszok l&#xe9;trehoz&#xe1;s&#xe1;ra?">
 <node CREATED="1459335129762" ID="ID_1629313537" MODIFIED="1459335159422" TEXT="/chapter{} report book &#xe9;s oszt&#xe1;lyn&#xe1;l"/>
 <node CREATED="1459335161717" ID="ID_1620495516" MODIFIED="1459335176982" TEXT="\section &#xe9;s \subsection{} &#xe9;s t&#xe1;rsai"/>
+</node>
+<node CREATED="1459336622746" ID="ID_805807577" MODIFIED="1459336639478" TEXT="\tableofcontents paranccsal hozhat&#xf3; l&#xe9;tre"/>
 </node>
 </node>
 </node>
