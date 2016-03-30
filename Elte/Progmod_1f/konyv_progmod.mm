@@ -324,7 +324,118 @@
 </node>
 </node>
 </node>
-<node CREATED="1459341220768" ID="ID_375610773" MODIFIED="1459341223053" TEXT="M&#x171;veletek"/>
+<node CREATED="1459341220768" FOLDED="true" ID="ID_375610773" MODIFIED="1459342932689" TEXT="M&#x171;veletek">
+<node CREATED="1459341447711" ID="ID_880296425" MODIFIED="1459341484650" TEXT="Kompoz&#xed;ci&#xf3;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      P &#8838; A, Q &#8838; B &#215; C, R &#8838; A &#215; C
+    </p>
+    <p>
+      R = {(a, c) &#8712; A &#215; C | &#8707;b &#8712; B : (a, b) &#8712; P &#233;s (b, c) &#8712; Q},
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1459341521247" ID="ID_1743943953" MODIFIED="1459341530276" TEXT="jel&#xf6;l&#xe9;se Q &#x25e6; P"/>
+</node>
+<node CREATED="1459341497161" ID="ID_1350000558" MODIFIED="1459341604663" TEXT="Szigor&#xfa; kompoz&#xed;ci&#xf3;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      S &#8838; A &#215; C
+    </p>
+    <p>
+      S = {(a, c) &#8712; A &#215; C | &#8707;b &#8712; B : (a, b) &#8712; P &#233;s (b, c) &#8712; Q &#233;s P (a) &#8838; D Q }
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1459341533099" ID="ID_1747472282" MODIFIED="1459341562182" TEXT="jel&#xf6;l&#xe9;se Q o(ponttal a belsej&#xe9;ben) P"/>
+</node>
+<node CREATED="1459341613635" ID="ID_1809838788" MODIFIED="1459341673720" TEXT="Ha R &#x2286; A &#xd7; A homog&#xe9;n rel&#xe1;ci&#xf3;">
+<node CREATED="1459341631660" ID="ID_862341818" MODIFIED="1459341640405" TEXT="(&#xf6;nmag&#xe1;val kompon&#xe1;lhat&#xf3;)"/>
+<node CREATED="1459341676600" ID="ID_1266459553" MODIFIED="1459341730811" TEXT="R hatv&#xe1;nyai">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R^0 ::= {(a, a) | a &#8712; A}
+    </p>
+    <p>
+      &#233;s n &#8712; N-n&#233;l
+    </p>
+    <p>
+      R^n ::= R &#9702; R n&#8722;1
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1459341737102" ID="ID_613703422" MODIFIED="1459341741530" TEXT="identit&#xe1;s rel&#xe1;ci&#xf3;">
+<node CREATED="1459341752031" ID="ID_25359818" MODIFIED="1459341761866" TEXT="id_A = {(a, a) | a &#x2208; A}"/>
+</node>
+<node CREATED="1459341786897" ID="ID_424584740" MODIFIED="1459341798774" TEXT="Homog&#xe9;n rel&#xe1;ci&#xf3; lez&#xe1;rtja">
+<node CREATED="1459341799772" ID="ID_420113161" MODIFIED="1459341904697" TEXT="R fel&#xfc;lvon&#xe1;s &#x2286; A &#xd7; A">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      D_R(fel&#252;lvon&#225;s) ::= {a &#8712; A | &#8707;&#945; &#8712; A &#8734; : &#945; 1 = a &#233;s &#8704;i &#8712; N : &#945; i+1 &#8712; R(&#945; i )} &#233;s
+    </p>
+    <p>
+      &#8704;a &#8712; D_R(fel&#252;lvon&#225;s) : R(fel&#252;lvon&#225;s)(a) ::= {b &#8712; A | &#8707;k &#8712; N 0 : b &#8712; R k (a) &#233;s b &#8712;
+    </p>
+    <p>
+      / D R }
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459341908501" ID="ID_1362739750" MODIFIED="1459341948348" TEXT="Olyan pontokon van &#xe9;rtelmezve amelyekb&#x151;l kiindulva a rel&#xe1;ci&#xf3;t nem lehet v&#xe9;gtelen sokszor egym&#xe1;s ut&#xe1;n alkalmazni"/>
+<node CREATED="1459341958486" ID="ID_1725130489" MODIFIED="1459342091277" TEXT="Olyan pontokat rendel, amelyeket &#xfa;gy kapunk, hogy a rel&#xe1;ci&#xf3; v&#xe9;ges sokszori alkalmaz&#xe1;s&#xe1;val kiker&#xfc;l&#xfc;nk az eredeti rel&#xe1;ci&#xf3; &#xe9;rtelmez&#xe9;si tartom&#xe1;ny&#xe1;b&#xf3;l"/>
+<node CREATED="1459342093059" ID="ID_1571253984" MODIFIED="1459342125515" TEXT="Teh&#xe1;t D_R &#x2229; R_R = &#x2205; mindig teljes&#xfc;l"/>
+<node CREATED="1459342381000" ID="ID_1113126958" MODIFIED="1459342466201" TEXT="&#xe9;s &#x2200;a nem &#x2208;  D_R -ra a &#x2208; D_R(fel&#xfc;lvon&#xe1;s) &#xe9;s R(fel&#xfc;lvon&#xe1;s)(a) = {a}">
+<node CREATED="1459342504378" ID="ID_154061311" MODIFIED="1459342515521" TEXT="Ez nem ua. mint a tranzit&#xed;v lez&#xe1;rt">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+</node>
+<node CREATED="1459342530565" ID="ID_65818129" MODIFIED="1459342544315" TEXT="Korl&#xe1;tos lez&#xe1;rt">
+<node CREATED="1459342549904" ID="ID_1710519886" MODIFIED="1459342642878" TEXT="R k&#xe9;t-fel&#xfc;lvon&#xe1;s &#x2286; A &#xd7; A ">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      D_R(k&#233;t-fel&#252;lvon&#225;s) ::= {a &#8712; A | &#8707;k a &#8712; N 0 : R k a (a) = &#8709;} &#233;s
+    </p>
+    <p>
+      &#8704;a &#8712; D_R(k&#233;t-fel&#252;lvon&#225;s) : R(k&#233;t-fel&#252;lvon&#225;s)(a) ::= R(fel&#252;lvon&#225;s)(a)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459342710784" ID="ID_371011797" MODIFIED="1459342806138" TEXT="A korl&#xe1;tos lez&#xe1;rt, csak akkor k&#xfc;l&#xf6;nb&#xf6;zik a let&#xe1;rtt&#xf3;l, hogyha a rel&#xe1;ci&#xf3;t nem lehet egy pontb&#xf3;l kiindulva v&#xe9;gtelen sokszor kiindulva alkalmazni, de a v&#xe9;ges sokszori alkalmaz&#xe1;sok hossz&#xe1;ra nem tudunk korl&#xe1;tot mondani">
+<node CREATED="1459342814948" ID="ID_1953617449" MODIFIED="1459342840435" TEXT="Teh&#xe1;t v&#xe9;gtelen sok v&#xe9;ges alkalmaz&#xe1;s-sorozatot tudunk a pontb&#xf3;l ind&#xed;tani"/>
+</node>
+</node>
+</node>
+<node CREATED="1459342936964" ID="ID_821975961" MODIFIED="1459342945241" TEXT="Logikai rel&#xe1;ci&#xf3;k"/>
 </node>
 <node CREATED="1457531102895" ID="ID_1702385452" MODIFIED="1457531119089" POSITION="right" TEXT="3. Specifik&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
