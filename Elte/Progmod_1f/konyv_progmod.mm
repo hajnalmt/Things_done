@@ -16,12 +16,11 @@
       A k&#246;nyvet &#237;rta: F&#243;thi &#193;kos
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531014862" FOLDED="true" ID="ID_1305375914" MODIFIED="1458615569949" POSITION="right" TEXT="1. Alapfogalmak">
+<node CREATED="1457531014862" ID="ID_1305375914" MODIFIED="1459335477262" POSITION="right" TEXT="1. Alapfogalmak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1458615568291" TEXT="Halmazok">
+<node CREATED="1457531063935" ID="ID_1965263102" MODIFIED="1459335478025" TEXT="Halmazok">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -130,14 +129,40 @@
 <node CREATED="1458139481338" ID="ID_284261828" MODIFIED="1458139515041" TEXT="r&#xe9;szhalmazaiknak halmaza (hatv&#xe1;nyhalmaz) - &#x2118;(H) "/>
 <node CREATED="1458139499707" ID="ID_1353014323" MODIFIED="1458139550270" TEXT="v&#xe9;ges r&#xe9;szhalmazainak halmaza - F(H)"/>
 </node>
+<node CREATED="1459335523781" ID="ID_1160143481" MODIFIED="1459335533926" TEXT="Sorozatok">
+<node CREATED="1459335539544" ID="ID_1522442326" MODIFIED="1459335572607" TEXT="alpha ...-al a v&#xe9;g&#xe9;n=A-beli v&#xe9;ges vagy v&#xe9;gtelen sorozat"/>
+<node CREATED="1459335575298" ID="ID_664599994" MODIFIED="1459335609478" TEXT="alpha utols&#xf3; elemmel=A -beli v&#xe9;ges sorozat">
+<node CREATED="1459335610724" ID="ID_125158985" MODIFIED="1459335632822" TEXT="abszol&#xfa;t&#xe9;rt&#xe9;k alpha a sz&#xe1;moss&#xe1;ga"/>
 </node>
-<node CREATED="1457531071847" ID="ID_409542244" MODIFIED="1457531091539" POSITION="right" TEXT="2. A programoz&#xe1;s alapfogalmai">
-<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1459335644300" ID="ID_1942546048" MODIFIED="1459335672289" TEXT="A^* a v&#xe9;ges sorozazok halmaza. "/>
+<node CREATED="1459335673535" ID="ID_296679479" MODIFIED="1459335686712" TEXT="A^infinity a v&#xe9;gtelen sorozatok halmaza"/>
+<node CREATED="1459335687989" ID="ID_1158086460" MODIFIED="1459335703298" TEXT="A^** a v&#xe9;ges &#xe9;s v&#xe9;gtelen sorozatok halmaza"/>
+<node CREATED="1459335757514" ID="ID_1588894048" MODIFIED="1459335766180" TEXT="D_alpha az &#xe9;rtelmez&#xe9;si tartom&#xe1;ny">
+<node CREATED="1459335771754" ID="ID_1242255054" MODIFIED="1459335780246" TEXT="1..absz(alpha) v&#xe9;gesn&#xe9;l"/>
+<node CREATED="1459335781372" ID="ID_170014117" MODIFIED="1459335784408" TEXT="N v&#xe9;gtelenn&#xe9;l"/>
+</node>
+<node CREATED="1459335790523" ID="ID_301913607" MODIFIED="1459335884500" TEXT="konkaten&#xe1;ci&#xf3;- egym&#xe1;s ut&#xe1;n &#xed;r&#xe1;s - kon(alpha i... alpha  n)">
+<node CREATED="1459335812283" ID="ID_751241917" MODIFIED="1459335830477" TEXT="Csak v&#xe9;ges sorozatokat v&#xe9;ges +v&#xe9;gtelennel">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+<node CREATED="1459335938660" ID="ID_1911639566" MODIFIED="1459336019803" TEXT="Reduk&#xe1;lt=red(alpha)">
+<node CREATED="1459335950091" ID="ID_1081240578" MODIFIED="1459336003095" TEXT="Az eredeti sorozat minden azonos elemekb&#x151;l &#xe1;ll&#xf3; v&#xe9;ges r&#xe9;szsorozat&#xe1;t a r&#xe9;szsorozat egyetlen elem&#xe9;vel helyettes&#xed;t&#xfc;k"/>
+</node>
+<node CREATED="1459336023416" ID="ID_1509830620" MODIFIED="1459336138932" TEXT="tau f&#xfc;ggv&#xe9;ny">
+<node CREATED="1459336048059" ID="ID_1285861115" MODIFIED="1459336161701" TEXT="Egy v&#xe9;ges sorozathoz hozz&#xe1;rendeli annak utols&#xf3; elem&#xe9;t">
+<node CREATED="1459336162423" ID="ID_1313043805" MODIFIED="1459336182564" TEXT="tau(alpha):=alpha_abs(alpha)"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1457531102895" ID="ID_1702385452" MODIFIED="1457531119089" POSITION="right" TEXT="3. Specifik&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
-<node CREATED="1457531122294" ID="ID_1888957416" MODIFIED="1457531134727" POSITION="right" TEXT="4. Kiterjeszt&#xe9;sek">
+<node CREATED="1457531071847" ID="ID_409542244" MODIFIED="1457531091539" POSITION="left" TEXT="2. A programoz&#xe1;s alapfogalmai">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1457531122294" ID="ID_1888957416" MODIFIED="1457531134727" POSITION="left" TEXT="4. Kiterjeszt&#xe9;sek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
