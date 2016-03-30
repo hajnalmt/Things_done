@@ -435,7 +435,62 @@
 </node>
 </node>
 </node>
-<node CREATED="1459342936964" ID="ID_821975961" MODIFIED="1459342945241" TEXT="Logikai rel&#xe1;ci&#xf3;k"/>
+<node CREATED="1459342936964" ID="ID_821975961" MODIFIED="1459343158134" TEXT="Logikai rel&#xe1;ci&#xf3;k">
+<node CREATED="1459343003034" ID="ID_168719900" MODIFIED="1459343015680" TEXT="R &#x2286; A &#xd7; L">
+<node CREATED="1459343016560" ID="ID_889833285" MODIFIED="1459343021314" TEXT="Ahol A tetsz&#x151;leges halmaz"/>
+</node>
+<node CREATED="1459343034280" ID="ID_668024618" MODIFIED="1459343103732" TEXT="R igazs&#xe1;ghalmaza">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R igazs&#225;ghalmaz&#160;::= R &#8722;1 ({igaz}),
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459343110274" ID="ID_1425899555" MODIFIED="1459343160489" TEXT="R gyenge igazs&#xe1;ghalmaza">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R gyengeigazs&#225;ghalmaz::= R (&#8722;1) ({igaz}).
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459343163830" ID="ID_673807963" MODIFIED="1459343177295" TEXT="F&#xfc;ggv&#xe9;nyek eset&#xe9;ben megyegyezik"/>
+<node CREATED="1459343210122" ID="ID_193906166" MODIFIED="1459343237204" TEXT="H r&#xe9;szhalmaz A-n&#xe1;l karakterisztikus f&#xfc;ggv&#xe9;ny">
+<node CREATED="1459343241377" ID="ID_564958115" MODIFIED="1459343243480" TEXT="P(H)"/>
+</node>
+<node CREATED="1459343264172" ID="ID_193145880" MODIFIED="1459343274560" TEXT="Azonosan igaz, hamis f&#xfc;ggv&#xe9;nyek"/>
+<node CREATED="1459343287567" ID="ID_442592890" MODIFIED="1459343338926" TEXT="Felt&#xe9;teles rel&#xe1;ci&#xf3; ">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R &#8838; A &#215; A &#233;s &#960; : A &#8594; L
+    </p>
+    <p>
+      R|&#960; = R|&#960;igazs&#225;ghalmaz &#8746; {(a, a) &#8712; A &#215; A | a &#8712; &#960; \ D R }
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1459343339836" ID="ID_1901878817" MODIFIED="1459343356204" TEXT="A rel&#xe1;ci&#xf3; lesz&#x171;k&#xed;t&#xe9;se &#xe9;s kiterjeszt&#xe9;se a felt&#xe9;tel igazs&#xe1;ghalmaz&#xe1;ra">
+<node CREATED="1459343371245" ID="ID_1656216920" MODIFIED="1459343390121" TEXT="D_R|&#x3c0; = &#x3c0; igazs&#xe1;galmaz"/>
+</node>
+<node CREATED="1459343400379" ID="ID_1912871348" MODIFIED="1459343427295" TEXT="lez&#xe1;rtja a felt&#xe9;telre vonatkoz&#xf3; lez&#xe1;rt illetve korl&#xe1;tos lez&#xe1;rt"/>
+</node>
+</node>
 </node>
 <node CREATED="1457531102895" ID="ID_1702385452" MODIFIED="1457531119089" POSITION="right" TEXT="3. Specifik&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
