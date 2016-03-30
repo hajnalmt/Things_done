@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1458615557410" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
+<node CREATED="1457530905013" ID="ID_1385523408" MODIFIED="1459341195582" TEXT="Bevezet&#xe9;s a programoz&#xe1;shoz">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -16,11 +16,12 @@
       A k&#246;nyvet &#237;rta: F&#243;thi &#193;kos
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1457531014862" ID="ID_1305375914" MODIFIED="1459335477262" POSITION="right" TEXT="1. Alapfogalmak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531063935" ID="ID_1965263102" MODIFIED="1459335478025" TEXT="Halmazok">
+<node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1459341195608" TEXT="Halmazok">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -57,7 +58,8 @@
       az &#252;res halmaz.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node CREATED="1458139106674" ID="ID_636143593" MODIFIED="1458139253784" TEXT="megad&#xe1;suk">
 <node CREATED="1458139254210" ID="ID_340911373" MODIFIED="1458139294938" TEXT="elemeik  felsorol&#xe1;s&#xe1;val">
 <richcontent TYPE="NOTE"><html>
@@ -129,7 +131,7 @@
 <node CREATED="1458139481338" ID="ID_284261828" MODIFIED="1458139515041" TEXT="r&#xe9;szhalmazaiknak halmaza (hatv&#xe1;nyhalmaz) - &#x2118;(H) "/>
 <node CREATED="1458139499707" ID="ID_1353014323" MODIFIED="1458139550270" TEXT="v&#xe9;ges r&#xe9;szhalmazainak halmaza - F(H)"/>
 </node>
-<node CREATED="1459335523781" ID="ID_1160143481" MODIFIED="1459335533926" TEXT="Sorozatok">
+<node CREATED="1459335523781" FOLDED="true" ID="ID_1160143481" MODIFIED="1459336334015" TEXT="Sorozatok">
 <node CREATED="1459335539544" ID="ID_1522442326" MODIFIED="1459335572607" TEXT="alpha ...-al a v&#xe9;g&#xe9;n=A-beli v&#xe9;ges vagy v&#xe9;gtelen sorozat"/>
 <node CREATED="1459335575298" ID="ID_664599994" MODIFIED="1459335609478" TEXT="alpha utols&#xf3; elemmel=A -beli v&#xe9;ges sorozat">
 <node CREATED="1459335610724" ID="ID_125158985" MODIFIED="1459335632822" TEXT="abszol&#xfa;t&#xe9;rt&#xe9;k alpha a sz&#xe1;moss&#xe1;ga"/>
@@ -155,6 +157,174 @@
 </node>
 </node>
 </node>
+<node CREATED="1459336328036" FOLDED="true" ID="ID_1701911780" MODIFIED="1459341226384" TEXT="Rel&#xe1;ci&#xf3;k">
+<node CREATED="1459336341794" ID="ID_1992704245" MODIFIED="1459336426763" TEXT="AxB direktszorzat">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A &#215; B ::= {(a, b) | a &#8712; A &#233;s b &#8712; B}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459336459494" ID="ID_719380978" MODIFIED="1459336567918" TEXT="Bin&#xe1;ris rel&#xe1;ci&#xf3;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R &#8838; A &#215; B
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459340251319" ID="ID_965241051" MODIFIED="1459340300309" TEXT="Rel&#xe1;ci&#xf3; &#xe9;rtelmez&#xe9;si tartom&#xe1;nya">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      D_R::= {a &#8712; A | &#8707;b &#8712; B : (a, b) &#8712; R}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459340272122" ID="ID_1353177317" MODIFIED="1459340330014" TEXT="Rel&#xe1;ci&#xf3; &#xe9;rt&#xe9;kk&#xe9;szlete">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R_R ::= {b &#8712; B | &#8707;a &#8712; A : (a, b) &#8712; R},
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459340330959" ID="ID_1161871416" MODIFIED="1459340359502" TEXT="Rel&#xe1;ci&#xf3; &#xe9;rt&#xe9;ke a helyen">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R(a) ::= {b &#8712; B | (a, b) &#8712; R},
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459340363287" ID="ID_284926235" MODIFIED="1459340435592" TEXT="H r&#xe9;szhalmaza A halmaz, R szerinti k&#xe9;pe a halmazt alkot&#xf3; elemek k&#xe9;peinek uni&#xf3;ja">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R(H) ::= U R(h).
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459340436657" ID="ID_1840879810" MODIFIED="1459340531760" TEXT="H k&#xe9;pe azokb&#xf3;l az elemekb&#x151;l &#xe1;ll, amelyek legal&#xe1;bb egy H-beli elemhez hozz&#xe1; vannak rendelve">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R(H) = {b &#8712; B | &#8707;a &#8712; H : (a, b) &#8712; R}.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1459340549705" ID="ID_1149799317" MODIFIED="1459340589417" TEXT="Egy rel&#xe1;ci&#xf3; determinisztikus">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#8704;a &#8712; A : |R(a)| &#8804; 1.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1459340598495" ID="ID_155326154" MODIFIED="1459340614055" TEXT="m&#xe1;sk&#xe9;ppen parci&#xe1;lis f&#xfc;ggv&#xe9;ny">
+<node CREATED="1459340686167" ID="ID_473273951" MODIFIED="1459340695769" TEXT="Jel&#xf6;l&#xe9;s f &#x2208; A &#x2192; B"/>
+</node>
+<node CREATED="1459340615485" ID="ID_339567128" MODIFIED="1459340643154" TEXT="ha |R(a)| =1 f&#xfc;ggv&#xe9;ny">
+<node CREATED="1459340663545" ID="ID_1265324153" MODIFIED="1459340677993" TEXT="Jel&#xf6;l&#xe9;s f : A &#x2192; B"/>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1459340709175" ID="ID_1733600505" MODIFIED="1459340760782" TEXT="rel&#xe1;ci&#xf3; inverze ">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R^(&#8722;1) ::= {(b, a) &#8712; B &#215; A | (a, b) &#8712; R}.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1459340770253" ID="ID_1681544726" MODIFIED="1459340804053" TEXT="Halmaz eset&#xe9;n inverz k&#xe9;p R^(-1)(H)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R^(&#8722;1) (H) = {a &#8712; A | R(a) &#8745; H = &#8709;}.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1459340755333" ID="ID_406625924" MODIFIED="1459340846990" TEXT="H halmaz R rel&#xe1;ci&#xf3; szerinti &#x151;sk&#xe9;pe">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R^&#8722;1(H) ::= {a &#8712; D R | R(a) &#8838; H}.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1459340877259" ID="ID_933867625" MODIFIED="1459340885627" TEXT="&#xe1;ltal&#xe1;ban nem egyezik meg az inverzzel de r&#xe9;sze"/>
+</node>
+<node CREATED="1459340846979" ID="ID_1172416464" MODIFIED="1459341190759" TEXT="P r&#xe9;szhalmaz Q eset&#xe9;n P-t Q lesz&#x171;k&#xed;t&#xe9;s&#xe9;nek nevezz&#xfc;k">
+<node CREATED="1459341153335" ID="ID_130847912" MODIFIED="1459341206749" TEXT="R megszor&#xed;t&#xe1;sa H-ra">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      R| H ::= R &#8745; (H &#215; B)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1459341220768" ID="ID_375610773" MODIFIED="1459341223053" TEXT="M&#x171;veletek"/>
 </node>
 <node CREATED="1457531102895" ID="ID_1702385452" MODIFIED="1457531119089" POSITION="right" TEXT="3. Specifik&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
