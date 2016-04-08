@@ -153,7 +153,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459928000223" ID="ID_450386942" MODIFIED="1459928011921" POSITION="left" TEXT="3. D&#xf6;nt&#xe9;selm&#xe9;let alapjai">
+<node CREATED="1459928000223" FOLDED="true" ID="ID_450386942" MODIFIED="1459931694940" POSITION="left" TEXT="3. D&#xf6;nt&#xe9;selm&#xe9;let alapjai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459928030294" ID="ID_1416123869" MODIFIED="1459928046149" TEXT="Bin&#xe1;ris/K&#xe9;thipot&#xe9;zises d&#xf6;nt&#xe9;s">
 <node CREATED="1459928097550" ID="ID_548447087" MODIFIED="1459928113035" TEXT="Ugyanarr&#xf3;l a jelens&#xe9;gr&#x151;l elt&#xe9;r&#x151; &#xe9;rt&#xe9;k&#x171; megfigyel&#xe9;seket kapunk"/>
