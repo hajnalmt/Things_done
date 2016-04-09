@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1457897031530" ID="ID_1295492209" MODIFIED="1457910634519" TEXT="LaTeX">
+<node CREATED="1457897031530" ID="ID_1295492209" MODIFIED="1460229193414" TEXT="LaTeX">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -10,7 +10,8 @@
       A BME szabadonv&#225;lasztott dokumentumszerkeszt&#233;s nevezet&#369; t&#225;rgy&#225;hoz k&#233;sz&#252;lt mindmap.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node CREATED="1457897196830" FOLDED="true" ID="ID_1169635182" MODIFIED="1457904461855" POSITION="right" TEXT="1) Hogyan n&#xe9;z ki egy ig&#xe9;nyes domkumentum?">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -1994,7 +1995,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459334884540" ID="ID_1653961827" MODIFIED="1459334924897" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1459334884540" FOLDED="true" ID="ID_1653961827" MODIFIED="1460229211926" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459336596835" ID="ID_1972121208" MODIFIED="1459336605426" TEXT="Tartalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <node CREATED="1459334926014" ID="ID_1205381229" MODIFIED="1459335104318" TEXT="A LaTeX egyik nagy el&#x151;nye, k&#xe9;ts&#xe9;gtelen&#xfc;l!"/>

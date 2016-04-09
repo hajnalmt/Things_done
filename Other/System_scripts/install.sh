@@ -120,7 +120,10 @@ if [ ! -e "freemind-bin-max-1.0.1.zip" ]; then
 	wget http://downloads.sourceforge.net/project/freemind/freemind/1.0.1/freemind-bin-max-1.0.1.zip
 fi
 if [ ! -d "Freemind" ]; then
-	unzip freemind-bin-max-1.0.1.zip
+	mkdir Freemind
+else
+	cd ./Freemind
+	unzip ../freemind-bin-max-1.0.1.zip
 fi
 if [ ! -e "$HOME/bin" ]; then
 	mkdir $HOME/bin
