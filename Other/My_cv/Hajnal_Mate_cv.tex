@@ -1,45 +1,43 @@
 %----------------------------------------------------------------------------------------
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
+
 \documentclass[11pt,a4paper,sans]{moderncv} 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\usepackage{lipsum}
 \usepackage[utf8]{inputenc}
 \usepackage{t1enc}
 \usepackage[magyar]{babel}
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\include{logos}
 
 %----------------------------------------------------------------------------------------
 %   NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
+
 \firstname{Hajnal}
 \lastname{Máté}
 % All information in this block is optional, comment out any lines you don't need
-\address{}{Hungary, Budapest}
 \mobile{+3670 946 1305}
 \email{hajnalmt@gmail.com}
-\homepage{https://github.com/hajnalmt}
-% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{22/05/1993}
-\photo[70pt][0.4pt]{cv-image.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\extrainfo{\githublogo \httplink{https://github.com/hajnalmt}\\ \linkedinlogo \httplink{https://www.linkedin.com/in/hajnalmt}\\ 1993/05/22}
+\photo[80pt][0pt]{cv-image.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 \quote{}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 \makecvtitle % Print the CV title
-
 %----------------------------------------------------------------------------------------
 %   EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
+\vspace{-1.5cm}
 \section{Tanulmányok}
-\cventry{2011--2015}{BME Villamosmérnöki és Informatikai Kar}{}{villamosmérnöki szak \newline Minden félévben tanulmányi kiemelt, 2013 második félévétől pedig közösségi kiemelt is 2012 második félévében a BSC villamosmérnökök között a legmagasabb ösztöndíj átlagot elért hallgató \newline 2013-tól az Automatizálási és Alkalmazott Informatikai Tanszéken a Beágyazott és Irányító rendszerek szakirány \newline Önálló laboratórium téma: DSP irányítású feszültségcsökkentő DCDC átalakító tervezése \newline Szakdolgozat-TDK téma: GraintAutLine – poligonok (márványszemcsék képének) konvex síkidomokra bontás}{}{}{}{}
-\cventry{2014--}{ELTE Informatikai Kar}{}{programtervező informatikus szak \newline Szoftverfejlesztő Informatikus szakirány}{}{}{}{}
+\cventry{2016-}{BME Villamosmérnöki és Informatikai Kar}{}{MSC villamosmérnöki szak \newline Számítógép-alapú rendszerek főspecializáció \newline Alkalmazott elektronika mellékspecializáció \newline Önálló labor 1: Gantt diagramm alkalmazás HTML5-el}{}{}{}{}
+\cventry{2011--2015}{BME Villamosmérnöki és Informatikai Kar}{}{BSC villamosmérnöki szak \newline Minden félévben tanulmányi kiemelt, 2013 második félévétől pedig közösségi kiemelt is 2012 második félévében a BSC villamosmérnökök között a legmagasabb ösztöndíj átlagot elért hallgató \newline 2013-tól az Automatizálási és Alkalmazott Informatikai Tanszéken a Beágyazott és Irányító rendszerek szakirány \newline Önálló laboratórium téma: DSP irányítású feszültségcsökkentő DCDC átalakító tervezése \newline Szakdolgozat téma: GraintAutLine – poligonok (márványszemcsék képének) konvex síkidomokra bontás}{}{}{}{}
+\cventry{2014--}{ELTE Informatikai Kar}{}{BSC rogramtervező informatikus szak \newline Szoftverfejlesztő Informatikus szakirány}{}{}{}{}
 \cventry{2005--2011}{Kecskeméti Református Gimnázium.}{}{\newline Érettségi Jeles eredménnyel, matek-fizika-informatika fakultáción \newline Országos Református Iskolák közötti matematika verseny 1. hely (2011) \newline Középiskolás Matematikai Lapok B pontverseny 12. osztályosok 4. hely (2011) \newline Szakács Jenő megyei fizikaverseny 2. hely (2011)}{}{}{}{}
 
 %----------------------------------------------------------------------------------------
@@ -48,11 +46,12 @@
 
 \section{Munka tapasztalatok}
 
-\cvitem{2011 nyara}{\textbf{Weasler Kft.} nyári munka, CNC esztergagépek alapszintű kezelése}{}{}
-\cvitem{2014--2015}{\textbf{Mad World} rendező \newline Egyetemi szintű szórakozóhely, ahol heti rendszerességgel 500-600 fős rendezvényeket bonyolítunk le}
-\cvitem{2015 január-június}{\textbf{Conet Kft.} gyakornok \newline Szakmai gyakorlat: Stm32f105-ös mikrokontrollerre firmware írása}
 \cvitem{2015~szept.- 2016~március}{\textbf{Robert BOSCH Kft.} gyakornok \newline Linux build rendszer feltérképezése és dokumentálása}
+\cvitem{2015 január-június}{\textbf{Conet Kft.} gyakornok \newline Szakmai gyakorlat: Stm32f105-ös mikrokontrollerre firmware írása}
+\cvitem{2014--2015}{\textbf{Mad World} rendező \newline Egyetemi szintű szórakozóhely, ahol heti rendszerességgel 500-600 fős rendezvényeket bonyolítunk le}
+\cvitem{2011 nyara}{\textbf{Weasler Kft.} nyári munka, CNC esztergagépek alapszintű kezelése}{}{}
 \newpage
+
 %----------------------------------------------------------------------------------------
 %   AWARDS SECTION
 %----------------------------------------------------------------------------------------
@@ -62,7 +61,7 @@
 \cvitem{}{Programozási ismeretek (C, C++, Assembly, Verilog)}
 \cvitem{}{Linux operációs rendszer, Bash script, Powershell scriptírási alapismeretek}
 \cvitem{}{Funkcionális nyelvi alapismeretek (Haskell, Erlang)}
-\cvitem{}{Webfejlesztési alapismeretek (HTML, CSS, PHP, SQL)}
+\cvitem{}{Webfejlesztési alapismeretek (HTML, CSS, PHP, SQL, JAVASCRIPT)}
 \cvitem{}{Microsoft Office programok magasszintű használata}
 \cvitem{}{Matlab, Maple, Eclipse, Visual Studio, CodeBlocks, Qt alkalmazások ismerete}
 \cvitem{}{Elektronikai műszerek használatában való jártasság}
@@ -75,27 +74,31 @@
 \cvitem{}{Angol nyelv: Középfokú komplex nyelvvizsga bizonyítvány}
 \cvitem{}{Német nyelv: Középfokú komplex nyelvvizsga bizonyítvány}
 \cvitem{}{A és B kategóriás jogosítvány}
+
+
+%----------------------------------------------------------------------------------------
+%   PERSONAL COMPETENCIES
+%----------------------------------------------------------------------------------------
+
+\section{Személyes kompetenciák}
+\cvitem{}{Az elmúlt öt évben a folyamatos rendezvényszervezés és az egyetemi terhelés megtanított az időm hasznos és pontos beosztására a monotonitás- és stressztűrésre, valamint a feladataim megbízható és precíz végrehajtására. Rendkívül jó csapatjátékosnak tartom magam, és átalagon felülinek mondható a nyitottságom és a jó problémamegoldó készségem.}
+\cvitem{}{Szabadidőm a családommal és a barátaimmal szeretem tölteni. Ezen kívül, szoktam sportolni (10 évig karatéztam, 1 danos mester vagyok, síelek, snowboardozok, rollerezek), sokat olvasok és utazok. Egyik kedvenc hobbim az animációs filmek nézese.}
+
 \textit{Közéleti tevékenységek \vspace{2pt} \newline}
 \small{
-	\cvitem{2012-2015}{Pizzásch: Öntevékeny Kör a Schönherz Zoltán Kollégiumban. Minden szerdán este megsütünk több mint 120 pizzát a kollégistáknak.}
-	\cvitem{2012-2015}{ClubCeption: Öntevékeny Kör a Schönherz Zoltán Kollégiumban, a kollégiumon belüli szórakozóhely üzemeltetése, gazdasági feladatok ellátása.}
-	\cvitem{2012-}{SSSL (Szent Schönherz Senior Lovagrend): Öntevékeny Kör a Schönherz Zoltán Kollégiumban, a gólyákkal való foglalkozás és a programjaik (Gólyatábor, Gólyahét, Gólyabál) megszervezése a fő profilunk.
+	\cvitem{2015} {Schönherz Qpa rendező, gazdaságis. Ez a BME-VIK 2015-ös, ~2500 fős Kari napjainak megrendezését jelenti.}
+	\cvitem{2014} {Schönherz Qpa győztes, a Big Fluffy Bears csapat csapatkapitánya}
+	\cvitem{2013-2015}{Dezső buli rendező: Öntevékeny Kör a Schönherz Kör a Schönherz Zoltán Kollégiumban, mely során egy disznótort rendezünk ~250 fő részvételével a kollégiumba.}
+		\cvitem{2012-}{SSSL (Szent Schönherz Senior Lovagrend): Öntevékeny Kör a Schönherz Zoltán Kollégiumban, a gólyákkal való foglalkozás és a programjaik (Gólyatábor, Gólyahét, Gólyabál) megszervezése a fő profilunk.
 		\begin{itemize}	
-			\item{2012-2016 Képző}
+			\item{2012-2016 képző}
 			\item{Képzés csoportvezető}
 			\item{Gólyahét FőHR-es}
 			\item{Gólyabál szárnysegéd}
 		\end{itemize}\vspace{-15pt}}
-	\cvitem{2013-2015}{Dezső buli rendező: Öntevékeny Kör a Schönherz Kör a Schönherz Zoltán Kollégiumban, mely során egy disznótort rendezünk ~250 fő részvételével a kollégiumba.}
-	\cvitem{2014} {Schönherz Qpa győztes, a Big Fluffy Bears csapat csapatkapitánya}
-	\cvitem{2015} {Schönherz Qpa rendező, gazdaságis. Ez a BME-VIK 2015-ös, ~2500 fős Kari napjainak megrendezését jelenti.}
+	\cvitem{2012-2015}{Pizzásch: Öntevékeny Kör a Schönherz Zoltán Kollégiumban. Minden szerdán este megsütünk több mint 120 pizzát a kollégistáknak.}
+	\cvitem{2012-2015}{ClubCeption: Öntevékeny Kör a Schönherz Zoltán Kollégiumban, a kollégiumon belüli szórakozóhely üzemeltetése, gazdasági feladatok ellátása.}
 }
-%----------------------------------------------------------------------------------------
-%   PERSONAL COMPETENCIES
-%----------------------------------------------------------------------------------------
-\section{Személyes kompetenciák}
-\cvitem{}{Az elmúlt három évben a folyamatos rendezvényszervezés és az egyetemi terhelés megtanított az időm hasznos és pontos beosztására a monotonitásra és stressztűrésre, valamint a feladataim megbízható és precíz végrehajtására. Alapjáraton a feladatok konstruktív kezelése, a csapatmunka, a szociális érzékenység és a jó problémamegoldó készség jellemez.}
-\cvitem{}{Szabadidőm a családommal és a barátaimmal szeretem tölteni. Ezen kívül, szoktam sportolni (10 évig karatéztam, 1 danos mester vagyok, síelek, snowboardozok, rollerezek), sokat olvasok és utazok. Egyik kedvenc hobbim az animációs filmek nézese.}
 
 %----------------------------------------------------------------------------------------
 
