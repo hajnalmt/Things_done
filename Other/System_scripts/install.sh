@@ -3,6 +3,11 @@
 # The additional packages will be downloaded in a bin directory at your home, which is loaded when you boot your computer.
 # So a reboot is necessarry
 
+# Function just to print green info messages
+function info {
+        tput setaf 2; echo $@
+}
+
 #################### Core Packages ###################
 # Installed packages on the system
 INSTALLED_PACKS=$(dpkg -l | grep ^ii | sed 's_  _\t_g' | cut -f 2)
@@ -70,7 +75,7 @@ if [ $ARCH == "x86_64" ]; then
         fi
 
 
-elif [ $ARCH = "i386" ]; then 
+elif [ $ARCH == "i386" ]; then 
 	if [ ! -d Programs_32 ]; then
                 mkdir Programs_32
         fi
@@ -133,3 +138,10 @@ git config --global user.name "Hajnal Máté"
 git config --global user.email hajnalmt@gmail.com
 git config --global core.editor subl
 git config --global push.default simple
+
+# Set system core editor to sublime
+IS_EDITOR_SETTED=$(grep 'EDITOR="/usr/bin/subl" ; export EDITOR' ~/.bashrc)
+if [[ "$IS_EDITOR_SETTED" == "" ]]; then
+	echo -e '\nEDITOR="/usr/bin/subl" ; export EDITOR' >> ~/.bashrc 
+fi
+
