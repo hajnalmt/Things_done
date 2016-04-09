@@ -5,7 +5,7 @@
 
 # Function just to print green info messages
 function info {
-        tput setaf 2; echo $@
+        tput setaf 2; echo $@; tput setaf 7
 }
 
 #################### Core Packages ###################
@@ -32,6 +32,7 @@ if [ $ANSWER == "Y" ]; then
 	sudo apt-get -y install ${WANTED_PACKS[@]}
 	sudo apt-get autoremove
 fi
+info "Core packages installed"
 
 #################### Additional Packages ###################
 # Additional Packages, which should be downloaded from the web
@@ -110,6 +111,7 @@ elif [ $ARCH == "i386" ]; then
 else exit
 fi
 
+info "All additional packages installed"
 #################### Additional Programs & Settings ####################
 
 # Freemind
@@ -132,16 +134,18 @@ if [ ! -e $HOME/bin/freemind.sh ]; then
 	else exit
 	fi
 fi
+info "Freemind installed and added o PATH"
 
 # Git Settings, change it to yours
 git config --global user.name "Hajnal Máté"
 git config --global user.email hajnalmt@gmail.com
 git config --global core.editor subl
 git config --global push.default simple
+info "Git is configured"
 
 # Set system core editor to sublime
 IS_EDITOR_SETTED=$(grep 'EDITOR="/usr/bin/subl" ; export EDITOR' ~/.bashrc)
 if [[ "$IS_EDITOR_SETTED" == "" ]]; then
 	echo -e '\nEDITOR="/usr/bin/subl" ; export EDITOR' >> ~/.bashrc 
 fi
-
+info "Base Editor Setted to sublime"
