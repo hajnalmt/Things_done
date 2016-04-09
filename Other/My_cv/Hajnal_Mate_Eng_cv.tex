@@ -1,143 +1,106 @@
-              
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.11 (19/6/14)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %----------------------------------------------------------------------------------------
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-
+\documentclass[11pt,a4paper,sans]{moderncv} 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \usepackage[utf8]{inputenc}
 \usepackage{t1enc}
-\usepackage[english]{babel}
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
+\usepackage[magyar]{babel}
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\include{logos}
 
 %----------------------------------------------------------------------------------------
 %   NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Sahbi } % Your first name
-\familyname{ Meherzi} % Your last name
-
+\firstname{Máté}
+\lastname{Hajnal}
 % All information in this block is optional, comment out any lines you don't need
-\title{Curriculum Vitae}
-\address{}{Tunis, Tunisie }
-\mobile{+216 21 643 725}
-\email{meherzi.sahbi@gmail.com}
-% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{20/11/1991}
-\photo[70pt][0.4pt]{SAHBI} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\address{}{Hungary, Budapest}
+\mobile{0036 70 946 1305}
+\email{hajnalmt@gmail.com}
+\extrainfo{\githublogo \httplink{https://github.com/hajnalmt}\\ \linkedinlogo \httplink{https://www.linkedin.com/in/hajnalmt}\\ 1993/05/22}
+\photo[80pt][0pt]{cv-image.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 \quote{}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 \makecvtitle % Print the CV title
-
 %----------------------------------------------------------------------------------------
 %   EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
-\section{Formation et Dipl\^omes}
-
-\cventry{2012--2015}{\'El\`eve ing\`enieur}{\`a \'Ecole Nationale des Sciences de l'Informatique (ENSI)}{Tunisie}{sp\'ecialit\'e: Ing\'enierie des Syst\`emes Intelligent et de D\'ecision }{}  % Arguments not required can be left empty
-\cventry{2010--2012}{Classes pr\'paratoires Math-Physique}{l'Institut Pr\'paratoire aux \'Etudes d'Ing\'enieurs de Tunis (IPEIT)}{Tunisie}{}{Concours National aux Entr\'ees aux \'Ecoles d'Ing\'enieurs (section: MP)}
-\cventry{2006--2010}{\'Etudes secondaires}{Lyc\'ee Farabi}{Tunisie}{}{Baccalaur\'eat en Math\'ematiques, mention TR\'ES BIEN, session principale.}
-
+\vspace{-1.7cm}
+\section{Education}
+\cventry{2016-}{Budapest University of Technology and Economics (BME)}{}{MSC Faculty of Electrical Engineering \newline Specialized for Computer-based systems and applied informatics \newline Project laboratory 1: Gantt diagramm application with HTML5}{}{}{}{}
+\cventry{2011--2015}{Budapest University of Technology and Economics (BME)}{}{BSC Faculty of Electrical Engineering \newline Prominent school report in every semester, and from 2013 prominent communal report also. In the second term of 2012, I reached the highest GPA between the Electrical Engineering - BSC  students \newline From 2013 Study at the Department of Automation and Applied Informatics \newline Project Laboratory: Construction of a DSP controlled voltage reducing DCDC transmitter \newline Thesis theme: GraintAutLine – Minimum Near-Convex Decomposition on polygons (escpecially on picture of marbles)}{}{}{}{}
+\cventry{2014--}{Eötvös Loránd Science University (ELTE)}{}{BSC Faculty of Informatics, Software Information Technology}{}{}{}{}
+\cventry{2005--2011}{Reformed Secondary Grammar School and College at Kecskemét}{}{\newline Graduation with outstanding marks on mathematic, physics and informatics \newline Mathematic competition between Reformed Schools, 1st place (2011) \newline Mathematical and Physical Journal for Secondary Schools, in Problems sign ’B’ for 12th grade students, 4th place (2011) \newline Jenő Szakács regional physics competition, 2nd place (2011)}{}{}{}{}
 
 %----------------------------------------------------------------------------------------
 %   WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Experiences et Projets}
-\cventry{F\'evrier--juin 2015}{Stage de fin d'\'etudes }{\textsc{TALAN TUNISIE}}{}{}{Conception et d\'eveloppement d'un r\'eseau social d'entreprise pour TALAN (LAMP,Symfony 2.3 ,Jquery,Git).}
+\section{Working experiences}
 
-\cventry{Juillet--Aout 2014}{Stage ing\'enieur }{\textsc{TALAN TUNISIE}}{}{}{Conception et d\'eveloppement d'une application web de chiffrage des projets de
-TALAN (Symfony2 ,Jquery,Git,Bootstrap3)}
-
-\cvitem{Février--Mai 2014}{Projet de Conception et de D\'eveloppement : \newline Conception et d\'eveloppement d\textquoteright une application web pour la gestion d\textquoteright un bureau d\textquoteright instruction pour le minist\`ere de la justice tunisien(Symfony2 ,Html5,Css,Mysql,Jquery,Bootstrap3) .}
-
-\cvitem{Juillet--Septembre 2013}{Projet d\textquoteright \'et\'e : \newline Logiciel pour acc\'eder \`a une machine(Linux ou Windows) \`a distance et en prendre le contr\^ole total(JAVA) .}
-
-
-\cvitem{2012--2013}{Mini projets :
-\begin{itemize}
-\item Cr\'eation d\textquoteright un site web dynamique qui g\`ere les cours des \'etudiants de l\textquoteright \'ecole.(php,mysql)
-\item Cr\'eation d\textquoteright un jeu 2D : Tank (C, SDL,Pthread).
-\item Cr\'eation d\textquoteright un mini compilateur lexical pour la syntaxe du C.
-\end{itemize}
-}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-
+\cvitem{2015~sept.-2016~march.}{\textbf{Robert BOSCH Ltd.} trainee \newline Linux build system mapping and documentation}
+\cvitem{2015 january-june}{\textbf{Conet Ltd.} trainee \newline Professional practice: Writing a firmware to a Stm32f105 microcontroller}
+\cvitem{2014--2015}{\textbf{Mad World} organiser\newline Universty-wide pleasure-ground, where we oragnized party events  for 500-600 people weekly}
+\cvitem{2011 summer}{\textbf{Weasler Ltd.} summer work, basic handling of CNC turners}{}{}
+\newpage
 
 %----------------------------------------------------------------------------------------
 %   AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Comp\'etences Technique}
+\section{Knowledge in Informatics}
 
-\cvitem{D\'eveloppement}{ Symfony2, Php 5 ,JavaScript, C, C++, SDL, Java, Assembleur 8086 et MIPS, PL/SQL, Bash,
-Maple, HTML5, CSS3,UML.}
-\cvitem{Connaissances basiques}{Matlab, Prolog, RMI, Lisp.}
-\cvitem{syst\`eme de gestion de contenu}{Drupal 7}
-\cvitem{Syst\`emes d\textquoteright exploitation}{Linux, Windows.}
-
-
-%----------------------------------------------------------------------------------------
-%   LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Comp\'etences linguistiques}
-
-\cvitemwithcomment{Arabe}{langue maternelle}{}
-\cvitemwithcomment{Fran\c cais}{Excellent}{}
-\cvitemwithcomment{Anglais}{Excellent: Certificat PRElIMINARY ENGLISH TEST(ESOL University of Cambridge)}{}
-\cvitemwithcomment{Allemand}{Moyen : Certificats A1 et A2 avec d'excellents r\'esultats}{ }
-%---------------------------
+\cvitem{}{Programming experiences (C, C++, Assembly, Verilog)}
+\cvitem{}{Linux operation system, Bash script, Powershell script basics}
+\cvitem{}{Functional language knowledge (Haskell, Erlang)}
+\cvitem{}{Web developing basic skills (HTML, CSS, PHP, SQL, JAVASCRIPT)}
+\cvitem{}{Usage on Microsoft Office programs on a high level}
+\cvitem{}{Familiar with Matlab, Maple, Eclipse, Visual Studio, CodeBlocks, and Qt applications}
+\cvitem{}{Familiarity in the usage of electronical measuring instruments}
 
 %----------------------------------------------------------------------------------------
 %   INTERESTS SECTION
 %------------------------------------------------------------------------------
 
+\section{Additional experiences}
+\cvitem{}{English language: Medium-level Complex Language Exam Certificate}
+\cvitem{}{German language: Medium-level Complex Language Exam Certificate}
+\cvitem{}{Driving licence in category A and B }
+
+
 %----------------------------------------------------------------------------------------
-%   COVER LETTER
+%   PERSONAL COMPETENCIES
 %----------------------------------------------------------------------------------------
 
-% To remove the cover letter, comment out this entire block
-
-
+\section{Personal competencies}
+\cvitem{}{In the past few years, the permanent organization of the college’s cumminity life and the universitiy’s demands putted a big strain on me.  This strain thought me how to handle my time perfectly and also how to endure enormous stress if needed. I consider myself an open-minded person with good problem-solving skills.}
+\cvitem{}{In my spare time, I am mostly with my family or my friends. Furthermore, I like doing sports (10 years of karate, 1 dan master, skiing, snowboarding, scootering) reading and traveling. One of my favourite hobby is to watch animated movies}
+\vspace{2pt}
+\textit{Cumminity work \vspace{2pt} \newline}
+\small{
+	\cvitem{2015} {Schönherz Qpa organiser, financial manager. This is the annual one week long festival of BME-VIK’s Department, for circa ~2500 people or more people.}
+	\cvitem{2014} {Schönherz Qpa Winner: The captain of the Big Fluffy Bears team}
+	\cvitem{2012-}{SSSL (Szent Schönherz Senior Lovagrend): Unprompted Fellowship in the Schönherz Zoltán College. Helping the freshmen and organizing their programs are our main activities.
+		\begin{itemize}	
+			\item{2012-2016 Trainer}
+			\item{Training leader}
+			\item{Freshman Week, HR manager}
+			\item{Gala of the Freshmen, Wingman}
+		\end{itemize}\vspace{-15pt}}
+	\cvitem{2012-2015}{Pizzásch: Unprompted Fellowship in the Schönherz Zoltán College. We cook more than 120 pizza on each Wednesday for the college students.}
+	\cvitem{2012-2015}{ClubCeption: Unprompted Fellowship in the Schönherz Zoltán College. Pleasure-ground in the College, where we handle operational and financial tasks.}
+	\cvitem{2013-2015}{Dezső party organiser: Unprompted Fellowship in the Schönherz Zoltán College. Organising a Party with a nice dish for ~250 people in the college.}
+}
 
 %----------------------------------------------------------------------------------------
 
 \end{document}
-              
