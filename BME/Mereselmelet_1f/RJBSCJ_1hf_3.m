@@ -4,7 +4,7 @@ clc
 clear all
 r=0.85;
 q=0.14;
-M=210;
+M=420;
 P=17;
 db=0:1:M-1;
 db=db/M;
@@ -30,16 +30,16 @@ for i=2:M/2
     s = s+sin(i*2*pi*db+phase(i-1));
 end
  
-% 21000 mintából álló eseménytér létrehozása
+% 42000 mintából álló eseménytér létrehozása
 for i=1:99
     szinusz = [szinusz s]; 
 end
 y = lsim (system, szinusz);
  
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
+W = zeros(P,42000);
 
-for i=P:21000-1
+for i=P:42000-1
     % a megadott formula szerint 2 gerjesztő minta,
     % valamint 4 kimeneti minta kiválasztása
     X=[szinusz(i-1:i), y(i-3:i)'];
@@ -64,8 +64,8 @@ system = tf ([(1-(r-q)), 0, 0, 0], [1, 0, 0, 0, (r-q)], 1);
 y = lsim (system, szinusz);
  
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
-for i=P:21000-1
+W = zeros(P,42000);
+for i=P:42000-1
     % a megadott formula szerint 2 gerjesztő minta,
     % valamint 4 kimeneti minta kiválasztása
     X=[szinusz(i-1:i), y(i-3:i)']; 

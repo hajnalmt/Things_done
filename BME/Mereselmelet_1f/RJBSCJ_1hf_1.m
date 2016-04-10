@@ -4,7 +4,7 @@ clc
 clear all
 r=0.85;
 q=0.14;
-M=210;
+M=420; % M-el a minták számát jelöljük, ami a harmonkius szám kétszerese
 P=17;
 
 %%% 1. feladat %%%
@@ -36,11 +36,12 @@ p_u=unwrap(angle(U));
 % szűrt minták
 % átviteli függvény együtthatói
 system = tf ([(1-r), 0, 0, 0], [1, 0, 0, 0, r], 1);
-%fprintf('Az átviteli függvény együtthatói', P);
+fprintf('Az átviteli függvény együtthatói');
 filt_ser = impulse(system,(1:P))
 
 % válaszjel generálása
 % abszolut értéke és fázisa
+lsim (system, s)
 y=lsim (system, s);
 Y=fft(y);
 A_y=abs(Y);
@@ -64,9 +65,9 @@ R = R/M;
 p = X * y; 
 p = p/M;
 
-%fprintf('dimW=%d (P). W együtthatói', P);
+fprintf('dimW=%d (P). W együtthatói', P);
 % lineáris kombinátor súlytényezői, inv(R)*P
-W = inv(R)*p;
+W = inv(R)*p
 
 % 1.5
 % az átviteli függvény együthatói
@@ -114,3 +115,6 @@ hold off
 subplot(2,1,2)
 stem(wrapToPi(wrapToPi(angle(fft(y)/M))-wrapToPi(angle(fft(ykalap)/M))))
 ylim([-pi pi])
+
+figure(4)
+lsim (system, s)

@@ -4,7 +4,7 @@ clc
 clear all
 r=0.85;
 q=0.14;
-M=210;
+M=420;
 P=17;
 
 %%% 1. feladat %%%
@@ -117,37 +117,13 @@ subplot(2,1,2)
 stem(wrapToPi(wrapToPi(angle(fft(y)/M))-wrapToPi(angle(fft(ykalap)/M))))
 ylim([-pi pi])
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clc
-clear all
-r=0.85;
-q=0.14;
-M=210;
-P=17;
-db=0:1:M-1;
-db=db/M;
-s=sin(2*pi*db);
-phase = 2*pi*rand(M/2-1,1);
-alpha=0.05
-% felharmonikusok generálása, majd hozzáadása az alapharmonikushoz
-for i=2:M/2
-    s = s+sin(i*2*pi*db+phase(i-1))
-end
-s = s + alpha*s.^5;
-system = tf ([(1-r), 0, 0, 0], [1, 0, 0, 0, r], 1);
-top = [0 s(1:end-1)];
-left = zeros(P,1);
-X = toeplitz(left,top);
-R = X*X';
-R = R/M;
- 
 %%% 2.feladat %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clc
 clear all
 r=0.85;
 q=0.14;
-M=210;
+M=420;
 P=17;
 db=0:1:M-1;
 db=db/M;
@@ -170,7 +146,7 @@ R = R/M;
 % lambda az R mátrix sajátértékeinek maximuma
 % bátorsági tényező definiálása
 lambda = max(eig(R));
-LMS_alpha = X*X'/(3000* lambda);
+LMS_alpha = X*X'/(8000* lambda);
 szinusz = s;
 
 alpha=0.05
@@ -187,9 +163,9 @@ end
 y = lsim (system, szinusz);
 
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
+W = zeros(P,42000);
 
-for i=P:21000/2
+for i=P:42000/2
     X=szinusz(i-P+1:i); % P darab minta kivétele
     e=y(i)-X*W(:,i);
     W(:,i+1)=W(:,i)+LMS_alpha*X'*e/(X*X'); % LMS algoritmus számolása
@@ -199,17 +175,17 @@ end
 system = tf ([(1-(r-q)), 0, 0, 0], [1, 0, 0, 0, (r-q)], 1);
 y = lsim (system, szinusz);
 
-for i=21000/2+1:21000
+for i=42000/2+1:42000
     X=szinusz(i-P+1:i); % P darab minta kivétele
     e=y(i)-X*W(:,i);
     W(:,i+1)=W(:,i)+LMS_alpha*X'*e/(X*X'); % LMS algoritmus számolása
 end
 
 fprintf('Együtthatók, eredeti');
-W(:,21000/2)
+W(:,42000/2)
 
 fprintf('Együtthatók, csökkentett r-rel');
-W(:,21000)
+W(:,42000)
     
 figure(4)
 % eredmények csökkenő sorrendbe rendezése
@@ -227,7 +203,7 @@ clc
 clear all
 r=0.85;
 q=0.14;
-M=210;
+M=420;
 P=17;
 db=0:1:M-1;
 db=db/M;
@@ -266,9 +242,9 @@ end
 y = lsim (system, szinusz);
  
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
+W = zeros(P,42000);
 
-for i=P:21000-1
+for i=P:42000-1
     % a megadott formula szerint 2 gerjesztő minta,
     % valamint 4 kimeneti minta kiválasztása
     X=[szinusz(i-1:i), y(i-3:i)'];
@@ -293,8 +269,8 @@ system = tf ([(1-(r-q)), 0, 0, 0], [1, 0, 0, 0, (r-q)], 1);
 y = lsim (system, szinusz);
  
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
-for i=P:21000-1
+W = zeros(P,42000);
+for i=P:42000-1
     % a megadott formula szerint 2 gerjesztő minta,
     % valamint 4 kimeneti minta kiválasztása
     X=[szinusz(i-1:i), y(i-3:i)']; 

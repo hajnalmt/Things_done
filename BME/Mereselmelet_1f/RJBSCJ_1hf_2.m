@@ -4,7 +4,7 @@ clc
 clear all
 r=0.85;
 q=0.14;
-M=210;
+M=420;
 P=17;
 db=0:1:M-1;
 db=db/M;
@@ -32,16 +32,16 @@ for i=2:M/2
     s = s+sin(i*2*pi*db+phase(i-1));
 end
  
-% 21000 mintából álló eseménytér létrehozása
+% 42000 mintából álló eseménytér létrehozása
 for i=1:99
     szinusz = [szinusz s]; 
 end
 y = lsim (system, szinusz);
  
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
+W = zeros(P,42000);
  
-for i=P:21000/2
+for i=P:42000/2
     X=szinusz(i-P+1:i); % P darab minta kivétele
     e=y(i)-X*W(:,i);
     W(:,i+1)=W(:,i)+2*LMS_mu*X'*e; % LMS algoritmus számolása
@@ -51,17 +51,17 @@ end
 system = tf ([(1-(r-q)), 0, 0, 0], [1, 0, 0, 0, (r-q)], 1);
 y = lsim (system, szinusz);
  
-for i=21000/2+1:21000
+for i=42000/2+1:42000
     X=szinusz(i-P+1:i); % P darab minta kivétele
     e=y(i)-X*W(:,i);
     W(:,i+1)=W(:,i)+2*LMS_mu*X'*e; % LMS algoritmus számolása
 end
  
 fprintf('Együtthatók, eredeti');
-W(:,21000/2)
+W(:,42000/2)
  
 fprintf('Együtthatók, csökkentett r-rel');
-W(:,21000)
+W(:,42000)
     
 figure(4)
 % eredmények csökkenő sorrendbe rendezése
@@ -79,7 +79,7 @@ clc
 clear all
 r=0.85;
 q=0.14;
-M=210;
+M=420;
 P=17;
 db=0:1:M-1;
 db=db/M;
@@ -99,23 +99,23 @@ R = R/M;
 % lambda az R mátrix sajátértékeinek maximuma
 % bátorsági tényező definiálása
 lambda = max(eig(R));
-LMS_alpha = X*X'/(3000* lambda);
+LMS_alpha = X*X'/(8000* lambda);
 szinusz = s;
 
 for i=2:M/2
     s = s+sin(i*2*pi*db+phase(i-1));
 end
 
-% 21000 mintából álló eseménytér létrehozása
+% 42000 mintából álló eseménytér létrehozása
 for i=1:99
     szinusz = [szinusz s]; 
 end
 y = lsim (system, szinusz);
 
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
+W = zeros(P,42000);
 
-for i=P:21000/2
+for i=P:42000/2
     X=szinusz(i-P+1:i); % P darab minta kivétele
     e=y(i)-X*W(:,i);
     W(:,i+1)=W(:,i)+LMS_alpha*X'*e/(X*X'); % LMS algoritmus számolása
@@ -125,17 +125,17 @@ end
 system = tf ([(1-(r-q)), 0, 0, 0], [1, 0, 0, 0, (r-q)], 1);
 y = lsim (system, szinusz);
 
-for i=21000/2+1:21000
+for i=42000/2+1:42000
     X=szinusz(i-P+1:i); % P darab minta kivétele
     e=y(i)-X*W(:,i);
     W(:,i+1)=W(:,i)+LMS_alpha*X'*e/(X*X'); % LMS algoritmus számolása
 end
 
 fprintf('Együtthatók, eredeti');
-W(:,21000/2)
+W(:,42000/2)
 
 fprintf('Együtthatók, csökkentett r-rel');
-W(:,21000)
+W(:,42000)
     
 figure(5)
 % eredmények csökkenő sorrendbe rendezése
@@ -164,16 +164,16 @@ for i=2:M/2
     s = s+sin(i*2*pi*db+phase(i-1));
 end
 
-% 21000 mintából álló eseménytér létrehozása
+% 42000 mintából álló eseménytér létrehozása
 for i=1:99
     szinusz = [szinusz s]; 
 end
 y = lsim (system, szinusz);
  
 % kezdeti mátrix nullázása
-W = zeros(P,21000);
+W = zeros(P,42000);
  
-for i=P:21000/2
+for i=P:42000/2
     X=szinusz(i-P+1:i); % P darab minta kivéele
     num = (R*X'*X*R);
     den = ((lambda/v)+X*R*X');
@@ -186,7 +186,7 @@ end
 system = tf ([(1-(r-q)), 0, 0, 0], [1, 0, 0, 0, (r-q)], 1);
 y = lsim (system, szinusz);
  
-for i=21000/2+1:21000
+for i=42000/2+1:42000
     X=szinusz(i-P+1:i); % P darab minta kivétele
     num = (R*X'*X*R);
     den = ((lambda/v)+X*R*X');
@@ -196,10 +196,10 @@ for i=21000/2+1:21000
 end
  
 fprintf('Együtthatók, eredeti');
-W(:,21000/2)
+W(:,42000/2)
  
 fprintf('Együtthatók, csökkentett r-rel');
-W(:,21000)
+W(:,42000)
     
 figure(6)
 % eredmények csökkenő sorrendbe rendezése
