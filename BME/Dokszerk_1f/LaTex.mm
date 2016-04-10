@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1457897031530" ID="ID_1295492209" MODIFIED="1460229193414" TEXT="LaTeX">
+<node CREATED="1457897031530" ID="ID_1295492209" MODIFIED="1460244100162" TEXT="LaTeX">
 <richcontent TYPE="NOTE"><html>
   <head>
     
