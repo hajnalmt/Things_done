@@ -24,7 +24,6 @@ R = R/M;
 % 6 együtthatót keresünk
 P = 6;
 lambda = max(eig(R));
-LMS_mu = 1/(1000*lambda);
 szinusz = s;
 
 for i=2:M/2
@@ -43,9 +42,10 @@ W = zeros(P,21000);
 for i=P:21000-1
     % a megadott formula szerint 2 gerjesztő minta,
     % valamint 4 kimeneti minta kiválasztása
-    X=[szinusz(i-1:i), y(i-3:i)'];                                   
+    X=[szinusz(i-1:i), y(i-3:i)'];
+    LMS_alpha = X*X'/(1000* lambda);
     e=y(i+1)-X*W(:,i);
-    W(:,i+1)=W(:,i)+2*LMS_mu*X'*e; % LMS algoritmus számolása
+    W(:,i+1)=W(:,i)+LMS_alpha*X'*e/(X*X'); % LMS algoritmus számolása
 end
 
 fprintf('Együtthatói:');
@@ -68,9 +68,10 @@ W = zeros(P,21000);
 for i=P:21000-1
     % a megadott formula szerint 2 gerjesztő minta,
     % valamint 4 kimeneti minta kiválasztása
-    X=[szinusz(i-1:i), y(i-3:i)'];                                   
+    X=[szinusz(i-1:i), y(i-3:i)']; 
+    LMS_alpha = X*X'/(1000* lambda);
     e=y(i+1)-X*W(:,i);
-    W(:,i+1)=W(:,i)+2*LMS_mu*X'*e; % LMS algoritmus számolása
+    W(:,i+1)=W(:,i)+LMS_alpha*X'*e/(X*X'); % LMS algoritmus számolása
 end
 
 fprintf('Együtthatói:');
@@ -83,5 +84,3 @@ for i=1:6
 end
 legend('W0','W1','W2','W3','W4','W5',-1)
 plot(W')
-
- 
