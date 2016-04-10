@@ -1,3 +1,5 @@
+## Pictures ##
+*.jpg
 *.png
 
 ### LaTex ###
@@ -14,3 +16,7 @@
 #Directories
 Elte/Prog_1f/hf0/obj/
 Elte/Prog_1f/hf0/bin/
+
+## Not Latex document types ##
+*.odt
+*.doc
