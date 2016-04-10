@@ -114,5 +114,3 @@ hold off
 subplot(2,1,2)
 stem(wrapToPi(wrapToPi(angle(fft(y)/M))-wrapToPi(angle(fft(ykalap)/M))))
 ylim([-pi pi])
-
-%%% 2. feladat %%%
