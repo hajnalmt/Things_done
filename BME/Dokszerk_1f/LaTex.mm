@@ -1995,7 +1995,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459334884540" ID="ID_1653961827" MODIFIED="1460363531824" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1459334884540" FOLDED="true" ID="ID_1653961827" MODIFIED="1460367539814" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459336596835" FOLDED="true" ID="ID_1972121208" MODIFIED="1460365581187" TEXT="Tartalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <node CREATED="1459334926014" ID="ID_1205381229" MODIFIED="1459335104318" TEXT="A LaTeX egyik nagy el&#x151;nye, k&#xe9;ts&#xe9;gtelen&#xfc;l!"/>
@@ -2372,7 +2372,7 @@
 <node CREATED="1460365571907" ID="ID_1020164243" MODIFIED="1460365572643" TEXT="A kimeneten az irodalom c&#xed;mk&#xe9;je mellett vessz&#x151;vel jelenik meg a sz&#xf6;gletes z&#xe1;r&#xf3;jelen bel&#xfc;l [1, 160&#x2013;165. oldal]."/>
 </node>
 </node>
-<node COLOR="#ff0000" CREATED="1460365602314" ID="ID_795781132" MODIFIED="1460366862578" TEXT="Hivatkoz&#xe1;s k&#xe9;sz&#xed;t&#xe9;se">
+<node COLOR="#ff0000" CREATED="1460365602314" FOLDED="true" ID="ID_795781132" MODIFIED="1460367537933" TEXT="Hivatkoz&#xe1;s k&#xe9;sz&#xed;t&#xe9;se">
 <node CREATED="1460366849171" ID="ID_1237021651" MODIFIED="1460366874608" TEXT="Nagyon fontos a LaTeX egyik alapk&#xf6;ve"/>
 <node CREATED="1460366892498" ID="ID_799877191" MODIFIED="1460366930871" TEXT="Minden sz&#xe1;mozott elemre lehet hivatkozni: irodalomram, fejezere &#xe1;br&#xe1;ra, t&#xe1;bl&#xe1;zatra, oldalra, l&#xe1;bjegyzetre, egyenletre stb."/>
 <node CREATED="1460366932772" ID="ID_1449250175" MODIFIED="1460366960737" TEXT="Irodalomjegyz&#xe9;kre val&#xf3; hivatkoz&#xe1;s koz&#xe1;r&#xf3;lag a m&#xe1;r tanult \cite{} paranccsal lehets&#xe9;ges"/>
@@ -2478,6 +2478,34 @@
 </node>
 </node>
 </node>
+</node>
+<node CREATED="1460367545771" ID="ID_1593964725" MODIFIED="1460367572621" POSITION="right" TEXT="9) Matematikai k&#xe9;pletek, matematikai m&#xf3;d, t&#xe9;telek, seg&#xe9;dt&#xe9;telek, bizony&#xed;t&#xe1;sok stb.">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1460367713728" ID="ID_1556991690" MODIFIED="1460367718912" TEXT="Matematikai m&#xf3;d">
+<node CREATED="1460367746314" ID="ID_627319748" MODIFIED="1460367769149" TEXT="A LaTeX legnagyobb el&#x151;nye m&#xe1;s sz&#xf6;vegszerkeszt&#x151;kh&#xf6;z k&#xe9;pest a sz&#xe9;p matematikai k&#xe9;pletek!"/>
+<node CREATED="1460367775874" ID="ID_413308787" MODIFIED="1460367788240" TEXT="Matematikai k&#xf6;rnyezetre h&#xe1;rom lehet&#x151;s&#xe9;g ad&#xf3;dik">
+<node CREATED="1460367789515" ID="ID_1974517874" MODIFIED="1460367813767" TEXT="$ide$-sz&#xf6;vegbe &#xe1;gyazott matek m&#xf3;d doll&#xe1;rjelek seg&#xed;ts&#xe9;g&#xe9;vel"/>
+<node CREATED="1460367814770" ID="ID_836944968" MODIFIED="1460367824864" TEXT="\[ \] - sz&#xe1;mozatlan k&#xe9;pletek &#xed;r&#xe1;sa"/>
+<node CREATED="1460367825843" ID="ID_1093666370" MODIFIED="1460367848420" TEXT="equation k&#xf6;rnyezet - szomozozz k&#xe9;pletek &#xed;r&#xe1;sa">
+<node CREATED="1460367849995" ID="ID_231092275" MODIFIED="1460367867340" TEXT="(A k&#xf6;rnyezet &quot;c&#xed;mk&#xe9;zhet&#x151;&quot; &#xed;gy a sz&#xf6;vegben lehet hivatkozni az egyenletre)"/>
+</node>
+</node>
+<node CREATED="1460367871155" ID="ID_1206871639" MODIFIED="1460367915743" TEXT="Fontos, hogy ha a sz&#xf6;vegben a matematikai v&#xe1;ltoz&#xf3;kat &#xed;runk akkor azok legyenek $...$-ben, mert &#xed;gy k&#xf6;nnyebb meg&#xe9;rteni a sz&#xf6;veget">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Ha $a$ kisebb, mint $b$, akkor ...
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460367920301" ID="ID_791204962" MODIFIED="1460367925634" TEXT="P&#xe9;ld&#xe1;k"/>
+</node>
+<node CREATED="1460367720034" ID="ID_1905163154" MODIFIED="1460367726864" TEXT="Sz&#xf6;veg bevitele az egyenletbe"/>
 </node>
 </node>
 </map>
