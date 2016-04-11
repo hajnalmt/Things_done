@@ -1997,7 +1997,7 @@
 </node>
 <node CREATED="1459334884540" ID="ID_1653961827" MODIFIED="1460363531824" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459336596835" ID="ID_1972121208" MODIFIED="1459336605426" TEXT="Tartalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1459336596835" FOLDED="true" ID="ID_1972121208" MODIFIED="1460365581187" TEXT="Tartalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <node CREATED="1459334926014" ID="ID_1205381229" MODIFIED="1459335104318" TEXT="A LaTeX egyik nagy el&#x151;nye, k&#xe9;ts&#xe9;gtelen&#xfc;l!"/>
 <node CREATED="1459335107337" ID="ID_1558639071" MODIFIED="1459335128561" TEXT="Eml&#xe9;ksz&#xfc;nk m&#xe9;g a szakaszok, alszakaszok l&#xe9;trehoz&#xe1;s&#xe1;ra?">
 <node CREATED="1459335129762" ID="ID_1629313537" MODIFIED="1459335159422" TEXT="/chapter{} report book &#xe9;s oszt&#xe1;lyn&#xe1;l"/>
@@ -2009,7 +2009,7 @@
 <node CREATED="1460363710130" ID="ID_177410067" MODIFIED="1460363732331" TEXT=".setcounter {tocdepth} {4}"/>
 </node>
 </node>
-<node CREATED="1460363738089" ID="ID_1859642327" MODIFIED="1460364226831" TEXT="Tartalomjegyz&#xe9;k szerkeszt&#xe9;se">
+<node CREATED="1460363738089" FOLDED="true" ID="ID_1859642327" MODIFIED="1460365583388" TEXT="Tartalomjegyz&#xe9;k szerkeszt&#xe9;se">
 <node CREATED="1460363746178" ID="ID_552712427" MODIFIED="1460363774520" TEXT="Ha &#xed;gy hozunk l&#xe9;tre fejezetet: \section* Bevezet&#xe9;s akkor nem lesz sorsz&#xe1;mozva &#xe9;s nem ker&#xfc;l be a tartalomjegyz&#xe9;kbe sem."/>
 <node CREATED="1460363775725" ID="ID_1453814607" MODIFIED="1460363809426" TEXT="Ha m&#xe9;g beker&#xfc;lj&#xf6;k az oldalsz&#xe1;mmal egy&#xfc;tt, a \section*{Bevezet&#xe9;s} parancs ut&#xe1;n g&#xe9;pelj&#xfc;k be a k&#xf6;vetkez&#x151;t:">
 <node CREATED="1460363810090" ID="ID_138414627" MODIFIED="1460363830973" TEXT="\addcontentsline{toc}{section}{Bevezet&#xe9;s}"/>
@@ -2071,7 +2071,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1460364229330" ID="ID_1369707342" MODIFIED="1460364238931" TEXT="T&#xe1;bl&#xe1;zat &#xe9;s &#xe1;brajegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1460364229330" FOLDED="true" ID="ID_1369707342" MODIFIED="1460365595796" TEXT="T&#xe1;bl&#xe1;zat &#xe9;s &#xe1;brajegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <node CREATED="1460364240641" ID="ID_1461314152" MODIFIED="1460364266500" TEXT="Term&#xe9;szetesen nem csak tartalom, hanem t&#xe1;bl&#xe1;zat- &#xe9;s &#xe1;brajegyz&#xe9;kre is sz&#xfc;ks&#xe9;g&#xfc;nk lehet a m&#x171; meg&#xed;r&#xe1;sakor.">
 <node CREATED="1460364268483" ID="ID_1988352952" MODIFIED="1460364279152" TEXT="\listoftables">
 <node CREATED="1460364279842" ID="ID_1040966536" MODIFIED="1460364299368" TEXT="T&#xe1;bl&#xe1;zat sz&#xe1;ma, neve &#xe9;s oldalsz&#xe1;ma kir&#xfc;l fel a list&#xe1;ra"/>
@@ -2081,6 +2081,298 @@
 </node>
 </node>
 </node>
+<node CREATED="1460364475978" FOLDED="true" ID="ID_125027552" MODIFIED="1460365587260" TEXT="F&#xfc;ggel&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1460364482513" ID="ID_436968521" MODIFIED="1460364508321" TEXT="Ha f&#xfc;ggel&#xe9;keket szeretn&#xe9;nk &#xed;rjuk be az \appendix parancsot"/>
+<node CREATED="1460364509200" ID="ID_1790106545" MODIFIED="1460364548510" TEXT="Ezt k&#xf6;vet&#x151;en a fejezetek (chapterek) A, B,C sz&#xe1;moz&#xe1;st kapnak"/>
+<node CREATED="1460364550913" ID="ID_748505611" MODIFIED="1460364569518" TEXT="Sajnos a f&#xfc;ggel&#xe9;k nem ker&#xfc;l be automatikusan a tartalomjegyz&#xe9;kbe, de megoldhat&#xf3;">
+<node CREATED="1460364571666" ID="ID_651193551" MODIFIED="1460364601285" TEXT="Article oszt&#xe1;lyn&#xe1;l">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \appendix
+    </p>
+    <p>
+      \section*{F&#252;ggel&#233;k}
+    </p>
+    <p>
+      \addcontentsline{toc}{section}{F&#252;ggel&#233;k}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460364580042" ID="ID_1248826237" MODIFIED="1460364604890" TEXT="Book &#xe9;s report oszt&#xe1;ly&#xe1;n&#xe1;l">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \appendix
+    </p>
+    <p>
+      \addcontentsline{toc}{chapter}{Appendix}
+    </p>
+    <p>
+      \addtocontents{toc}{\protect\contentsline{chapter}{Append
+    </p>
+    <p>
+      ix:}{}}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460364630153" ID="ID_970042012" MODIFIED="1460364644721" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \documentclass[a4paper,10pt]{report}
+    </p>
+    <p>
+      \usepackage[utf8]{inputenc}
+    </p>
+    <p>
+      \usepackage[magyar,english]{babel}
+    </p>
+    <p>
+      \begin{document}
+    </p>
+    <p>
+      \tableofcontents
+    </p>
+    <p>
+      \chapter{Els&#337; fejezet}
+    </p>
+    <p>
+      \section{Els&#337; szakasz}
+    </p>
+    <p>
+      \subsection{els&#337; alszakasz}
+    </p>
+    <p>
+      \section{m&#225;sodik szakasz}
+    </p>
+    <p>
+      \appendix
+    </p>
+    <p>
+      \addcontentsline{toc}{chapter}{Appendix}
+    </p>
+    <p>
+      \addtocontents{toc}{\protect\contentsline{chapter}
+    </p>
+    <p>
+      {Appendix:}{}}
+    </p>
+    <p>
+      \chapter{Els&#337; f&#252;ggel&#233;k}
+    </p>
+    <p>
+      \chapter{M&#225;sodik}
+    </p>
+    <p>
+      \end{document}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1460364650249" FOLDED="true" ID="ID_457370511" MODIFIED="1460365597420" TEXT="T&#xe1;rgymutat&#xf3; k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1460364661705" ID="ID_91468586" MODIFIED="1460364664394" TEXT="Nagyobb m&#x171; eset&#xe9;n, pl. k&#xf6;nyv, c&#xe9;lszer&#x171; t&#xe1;rgymutat&#xf3;t k&#xe9;sz&#xed;teni a dokumentum v&#xe9;g&#xe9;re, ahol a fontosabb fogalmak abc sorrendben vannak felsorolva."/>
+<node CREATED="1460364673226" ID="ID_268604124" MODIFIED="1460364680416" TEXT="&#xcd;rjuk be a preambulumba, hogy:">
+<node CREATED="1460364681426" ID="ID_174232571" MODIFIED="1460364687778" TEXT="\usepackage{imakeidx} \makeindex"/>
+</node>
+<node CREATED="1460364693385" ID="ID_601353426" MODIFIED="1460364712216" TEXT=" A t&#xe1;rgymutat&#xf3;t az \index{t&#xe1;rgysz&#xf3;} paranccsal b&#x151;v&#xed;thetj&#xfc;k."/>
+<node CREATED="1460364712898" ID="ID_813311613" MODIFIED="1460364732463" TEXT="Ahov&#xe1; el szeretn&#xe9;nk helyezni a t&#xe1;rgymutat&#xf3;t, &#xed;rjuk be a \printindex parancsot"/>
+<node CREATED="1460364735699" ID="ID_537981244" MODIFIED="1460364776912" TEXT="Ha szeretn&#xe9;nk lecser&#xe9;lni a &quot;T&#xe1;rgymutat&#xf3;&quot; sz&#xf3;t &quot;Sz&#xf3;jegyz&#xe9;k&quot;-re, a printindex el&#xe9; &#xed;rjuk be a k&#xf6;vetkez&#x151;t:">
+<node CREATED="1460364777921" ID="ID_1575958522" MODIFIED="1460364796761" TEXT="\renewcommand{\indexname}{Sz&#xf3;jegyz&#xe9;k}"/>
+</node>
+</node>
+<node CREATED="1460364807369" FOLDED="true" ID="ID_1309421249" MODIFIED="1460365599293" TEXT="Irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1460364824970" ID="ID_729184035" MODIFIED="1460364831178" TEXT="&#xc1;ltal&#xe1;ban a dokumentum v&#xe9;g&#xe9;n"/>
+<node CREATED="1460364836613" ID="ID_311836104" MODIFIED="1460364867631" TEXT="LaTeXben a thebibliography k&#xf6;rnyezettel lehet k&#xe9;sz&#xed;teni irodalomjegyz&#xe9;ket,"/>
+<node CREATED="1460364869098" ID="ID_1524245494" MODIFIED="1460364935130" TEXT="Az egyes felsorolt m&#x171;veket a \bibitem parancs ut&#xe1;n &#xed;rjuk">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{thebibliography}{peldacimke}
+    </p>
+    <p>
+      vagy {99}
+    </p>
+    <p>
+      \bibitem[szam]{cimke} elemleiras
+    </p>
+    <p>
+      ...
+    </p>
+    <p>
+      \end{thebibliography}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460364935874" ID="ID_1582690519" MODIFIED="1460364948439" TEXT="szam: Opcion&#xe1;lis: milyen sz&#xe1;mmal jelenjen meg az adott hivatkoz&#xe1;s (ha elhagyjuk automatikus lesz)"/>
+<node CREATED="1460364955354" ID="ID_1008548805" MODIFIED="1460364967196" TEXT="cimke: A m&#x171;ben ezzel a c&#xed;mk&#xe9;vel hivatkozunk erre a m&#x171;re"/>
+<node CREATED="1460364974937" ID="ID_1577744496" MODIFIED="1460364990551" TEXT="elemle&#xed;r&#xe1;s: A m&#x171; neve"/>
+</node>
+<node CREATED="1460365003845" ID="ID_1494927532" MODIFIED="1460365033566" TEXT="A thebibliography k&#xf6;rnyezetnek van egy argumentuma amely seg&#xed;ti a LaTeX-et az irodalomjegyz&#xe9;k t&#xf6;rdel&#xe9;s&#xe9;ben:">
+<node CREATED="1460365034418" ID="ID_1836416263" MODIFIED="1460365049349" TEXT="ha t&#xed;zn&#xe9;l kevesebb m&#x171;vet sorolunk fel, akkor egy 9-est"/>
+<node CREATED="1460365050418" ID="ID_1099158870" MODIFIED="1460365234231" TEXT="Ha sz&#xe1;z&#xe1;n&#xe1;l kevesebbet de t&#xed;zn&#xe9;l t&#xf6;bbet, akkor 99-et stb. kell ide &#xed;rni."/>
+<node CREATED="1460365236946" ID="ID_1151106435" MODIFIED="1460365247735" TEXT="Az irodalomjegyz&#xe9;k automatikusan gener&#xe1;l&#xf3;dik."/>
+<node CREATED="1460365249081" ID="ID_909144923" MODIFIED="1460365273409" TEXT="Alapbe&#xe1;ll&#xed;t&#xe1;sk&#xe9;nt a sorsz&#xe1;mok n&#xf6;vekv&#x151; arab sz&#xe1;mok sz&#xf6;gletes z&#xe1;r&#xf3;jelek k&#xf6;z&#xf6;tt."/>
+<node CREATED="1460365274106" ID="ID_1497673581" MODIFIED="1460365337014" TEXT="A \bibitem[J&#xf3;pofa]{c&#xed;mke} hat&#xe1;s&#xe1;ra azonban a tartalomjegyz&#xe9;k vonatkoz&#xfc; elem&#xe9;nek J&#xf3;pofa lesz a &quot;sz&#xe1;ma&quot;, &#xe9;s ha hivatkozunk ra a sz&#xf6;vegben, akkor is a [J&#xf3;pof] jelenik meg."/>
+<node CREATED="1460365337698" ID="ID_1488654576" MODIFIED="1460365351934" TEXT="N&#xe9;v m&#xf3;dos&#xed;t&#xe1;s, ha sz&#xfc;ks&#xe9;ges, de a Babel magyar tudja">
+<node CREATED="1460365362378" ID="ID_1002365776" MODIFIED="1460365365239" TEXT="\renewcommand{\bibname}{Felhaszn&#xe1;lt irodalom}"/>
+</node>
+</node>
+<node CREATED="1460365383778" ID="ID_468697116" MODIFIED="1460365389727" TEXT="Az IEEE hivatkoz&#xe1;s form&#xe1;tuma">
+<node CREATED="1460365395681" ID="ID_1296483477" MODIFIED="1460365396716" TEXT="A szab&#xe1;lyosan szedett irodalmi hivatkoz&#xe1;sok alakja a k&#xf6;vetkez&#x151;:">
+<node CREATED="1460365419042" ID="ID_303327614" MODIFIED="1460365420489" TEXT="K&#xf6;nyv: szerz&#x151;, c&#xed;m d&#x151;lt bet&#x171;kkel, kiad&#xf3; neve, kiad&#xf3; v&#xe1;rosa, kiad&#xe1;s &#xe9;ve."/>
+<node CREATED="1460365431553" ID="ID_890342535" MODIFIED="1460365432246" TEXT="&#xda;js&#xe1;gcikk: szerz&#x151;, &#x201e;c&#xed;m id&#xe9;z&#x151;jelek k&#xf6;z&#xf6;tt&#x201d;, &#xfa;js&#xe1;g neve d&#x151;lt bet&#x171;kkel, &#xe9;vfolyam, sz&#xe1;m, oldalak, kiad&#xe1;s &#xe9;ve."/>
+<node CREATED="1460365438962" ID="ID_1379951587" MODIFIED="1460365439451" TEXT="Konferencia cikk: szerz&#x151;, &#x201e;c&#xed;m id&#xe9;z&#x151;jelek k&#xf6;z&#xf6;tt&#x201d;, konferencia neve d&#x151;lt bet&#x171;kkel, konferencia kiadv&#xe1;nyban oldalak, konferencia v&#xe1;rosa, &#xe9;ve."/>
+<node CREATED="1460365448089" ID="ID_100810606" MODIFIED="1460365451321" TEXT="Diplomadolgozat/disszert&#xe1;ci&#xf3;: szerz&#x151;, c&#xed;m d&#x151;lt bet&#x171;kkel, oktat&#xe1;si int&#xe9;zm&#xe9;ny, v&#xe1;ros, v&#xe9;gz&#xe9;s &#xe9;ve."/>
+<node CREATED="1460365461322" ID="ID_1093540127" MODIFIED="1460365462829" TEXT="Elektronikus forr&#xe1;s: teljes URL (&#xe1;tviteli protokoll megjel&#xf6;l&#xe9;s&#xe9;vel), megtekint&#xe9;s id&#x151;pontja percre pontosan"/>
+</node>
+</node>
+<node CREATED="1460365485250" ID="ID_779831330" MODIFIED="1460365501474" TEXT="P&#xe9;lda 1.">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ...itt pedig hivatkozok a k&#246;nyvre~\cite{konyv}.
+    </p>
+    <p>
+      ...
+    </p>
+    <p>
+      \begin{thebibliography}{9}
+    </p>
+    <p>
+      \bibitem{konyv}
+    </p>
+    <p>
+      Vir&#225;gv&#246;lgyi P&#233;ter,
+    </p>
+    <p>
+      {\it A tipogr&#225;fia mesters&#233;ge},
+    </p>
+    <p>
+      Osiris, Budapest, 2001.
+    </p>
+    <p>
+      \bibitem{cikk}
+    </p>
+    <p>
+      Claude E.\ Shannon,
+    </p>
+    <p>
+      ,,A Mathematical Theory of Communication'',
+    </p>
+    <p>
+      {\it Bell System Technical Journal}, vol.~27, no.~10,
+    </p>
+    <p>
+      pp.~379--423 &#233;s pp.~623--656, 1948.
+    </p>
+    <p>
+      \bibitem{url}
+    </p>
+    <p>
+      {\tt
+    </p>
+    <p>
+      http://www.karinthy.hu/\~{}NIKITA/szedes/Bevezet.htm},
+    </p>
+    <p>
+      2002.~janu&#225;r~9., 19:14
+    </p>
+    <p>
+      \end{thebibliography}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460365504306" ID="ID_1056685193" MODIFIED="1460365520450" TEXT="P&#xe9;lda 2.">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ...z&#225;r&#243;jelen bel&#252; l~\cite[160--165.\ oldal]{konyv}.
+    </p>
+    <p>
+      ...l&#225;sd \cite{Bujd} &#233;s \cite[134. oldal]{Feri}.
+    </p>
+    <p>
+      ...l&#225;sd \cite{Bujd,Feri}.
+    </p>
+    <p>
+      ...l&#225;sd \cite[f&#252;ggel&#233;k]{Bujd,Feri}.
+    </p>
+    <p>
+      ...
+    </p>
+    <p>
+      \begin{thebibliography}{9}
+    </p>
+    <p>
+      \bibitem{konyv}
+    </p>
+    <p>
+      Vir&#225;gv&#246;lgyi P&#233;ter, {\it A tipogr&#225;fia mesters&#233;ge}, Osiris, Budapest,
+    </p>
+    <p>
+      2001.
+    </p>
+    <p>
+      \bibitem[Bujdos&#243;1997]{Bujd}
+    </p>
+    <p>
+      Bujdos&#243; Gy&#246;ngyi, Fazekas Attila, {\it \TeX\ kezd&#337;l&#233;p&#233;sek}, Tertia
+    </p>
+    <p>
+      Kiad&#243;, Budapest, 1997.
+    </p>
+    <p>
+      \bibitem[Wettl2004]{Feri}
+    </p>
+    <p>
+      Wettl Ferenc, Mayer Gyula, Szab&#243; P&#233;ter, {\it \LaTeX\ k&#233;zik&#246;nyv},
+    </p>
+    <p>
+      Panem K&#246;nyvkiad&#243;, Budapest, 2004.
+    </p>
+    <p>
+      ...
+    </p>
+    <p>
+      \end{thebibliography}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460365558418" ID="ID_1057879359" MODIFIED="1460365560782" TEXT="A \cite utas&#xed;t&#xe1;snak l&#xe9;tezik opcion&#xe1;lis param&#xe9;tere is, amellyel p&#xe9;ld&#xe1;ul az oldalsz&#xe1;mot (vagy egy&#xe9;b kieg&#xe9;sz&#xed;t&#x151; inform&#xe1;ci&#xf3;t) adhatjuk meg. "/>
+<node CREATED="1460365571907" ID="ID_1020164243" MODIFIED="1460365572643" TEXT="A kimeneten az irodalom c&#xed;mk&#xe9;je mellett vessz&#x151;vel jelenik meg a sz&#xf6;gletes z&#xe1;r&#xf3;jelen bel&#xfc;l [1, 160&#x2013;165. oldal]."/>
+</node>
+</node>
+<node CREATED="1460365602314" ID="ID_795781132" MODIFIED="1460365614233" TEXT="Hivatkoz&#xe1;s k&#xe9;sz&#xed;t&#xe9;se"/>
 </node>
 </node>
 </map>
