@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1457897031530" ID="ID_1295492209" MODIFIED="1460244100162" TEXT="LaTeX">
+<node CREATED="1457897031530" ID="ID_1295492209" MODIFIED="1460362684642" TEXT="LaTeX">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1320,7 +1320,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458732549815" FOLDED="true" ID="ID_1052090580" MODIFIED="1459008706244" POSITION="right" TEXT="7) K&#xe9;pek, &#xe1;br&#xe1;k beillleszt&#xe9;se, dobozok">
+<node CREATED="1458732549815" FOLDED="true" ID="ID_1052090580" MODIFIED="1460363519779" POSITION="right" TEXT="7) K&#xe9;pek, &#xe1;br&#xe1;k beillleszt&#xe9;se, dobozok">
 <font BOLD="true" NAME="SansSerif" SIZE="11"/>
 <node CREATED="1458732581518" FOLDED="true" ID="ID_1982760856" MODIFIED="1459007084256" TEXT="K&#xe9;pek beilleszt&#xe9;se ">
 <node CREATED="1458732591988" ID="ID_1735679269" MODIFIED="1458732627863" TEXT="&#xc1;br&#xe1;k beilleszt&#xe9;s&#xe9;hez sz&#xfc;ks&#xe9;g van a graphics csomagra"/>
@@ -1708,7 +1708,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1458735307512" FOLDED="true" ID="ID_335186290" MODIFIED="1459008706243" TEXT="LaTeX dobozok">
+<node CREATED="1458735307512" FOLDED="true" ID="ID_335186290" MODIFIED="1460363518525" TEXT="LaTeX dobozok">
 <node CREATED="1458735315769" FOLDED="true" ID="ID_1149552454" MODIFIED="1459008706237" TEXT="A doboz a dokumentum olyan r&#xe9;sze, melyet a TeX egyetlen egys&#xe9;gk&#xe9;nt kezel, tartalma nem t&#xf6;rhet&#x151; el a sor v&#xe9;g&#xe9;n vagy a lap alj&#xe1;n.">
 <node CREATED="1458735328962" ID="ID_700504637" MODIFIED="1458735338869" TEXT="Pl &#xfa;sz&#xf3; objektumok"/>
 </node>
@@ -1979,7 +1979,7 @@
 <node CREATED="1458997477606" ID="ID_695351089" MODIFIED="1458997479082" TEXT="\reflectbox{sz&#xf6;veg}"/>
 </node>
 </node>
-<node CREATED="1458997491788" FOLDED="true" ID="ID_1672304809" MODIFIED="1459007084295" TEXT="&#xc9;rdekess&#xe9;gek">
+<node CREATED="1458997491788" FOLDED="true" ID="ID_1672304809" MODIFIED="1460363517461" TEXT="&#xc9;rdekess&#xe9;gek">
 <node CREATED="1458997504509" FOLDED="true" ID="ID_1574753052" MODIFIED="1459007084292" TEXT="L&#xe1;thatatlan doboz">
 <node CREATED="1458997517188" ID="ID_1478218584" MODIFIED="1458997523896" TEXT="\phantom{...}"/>
 </node>
@@ -1995,7 +1995,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459334884540" FOLDED="true" ID="ID_1653961827" MODIFIED="1460229211926" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1459334884540" ID="ID_1653961827" MODIFIED="1460363531824" POSITION="left" TEXT="8) Hivatkoz&#xe1;sok, Tartalomjegyz&#xe9;k, &#xe1;bra-, t&#xe1;bl&#xe1;zat &#xe9;s, irodalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459336596835" ID="ID_1972121208" MODIFIED="1459336605426" TEXT="Tartalomjegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
 <node CREATED="1459334926014" ID="ID_1205381229" MODIFIED="1459335104318" TEXT="A LaTeX egyik nagy el&#x151;nye, k&#xe9;ts&#xe9;gtelen&#xfc;l!"/>
@@ -2004,6 +2004,82 @@
 <node CREATED="1459335161717" ID="ID_1620495516" MODIFIED="1459335176982" TEXT="\section &#xe9;s \subsection{} &#xe9;s t&#xe1;rsai"/>
 </node>
 <node CREATED="1459336622746" ID="ID_805807577" MODIFIED="1459336639478" TEXT="\tableofcontents paranccsal hozhat&#xf3; l&#xe9;tre"/>
+<node CREATED="1460363602499" ID="ID_331886689" MODIFIED="1460363662316" TEXT="A tartalomjegyz&#xe9;k m&#xe9;lys&#xe9;g&#xe9;t (fejezet, alfejezet stb..) a tocdepth sz&#xe1;ml&#xe1;l&#xf3; be&#xe1;ll&#xed;tott &#xe9;rt&#xe9;ke hat&#xe1;rozza meg."/>
+<node CREATED="1460363664460" ID="ID_385611617" MODIFIED="1460363708916" TEXT="Ha olyan tartalomjegyz&#xe9;kre van sz&#xfc;ks&#xe9;g&#xfc;nk, ami r&#xe9;szletesebb (pl.4. m&#xe9;lys&#xe9;g&#x171; \paragraph r&#xe9;szt is szeretn&#xe9;nk felt&#xfc;ntetni), akkor ">
+<node CREATED="1460363710130" ID="ID_177410067" MODIFIED="1460363732331" TEXT=".setcounter {tocdepth} {4}"/>
+</node>
+</node>
+<node CREATED="1460363738089" ID="ID_1859642327" MODIFIED="1460364226831" TEXT="Tartalomjegyz&#xe9;k szerkeszt&#xe9;se">
+<node CREATED="1460363746178" ID="ID_552712427" MODIFIED="1460363774520" TEXT="Ha &#xed;gy hozunk l&#xe9;tre fejezetet: \section* Bevezet&#xe9;s akkor nem lesz sorsz&#xe1;mozva &#xe9;s nem ker&#xfc;l be a tartalomjegyz&#xe9;kbe sem."/>
+<node CREATED="1460363775725" ID="ID_1453814607" MODIFIED="1460363809426" TEXT="Ha m&#xe9;g beker&#xfc;lj&#xf6;k az oldalsz&#xe1;mmal egy&#xfc;tt, a \section*{Bevezet&#xe9;s} parancs ut&#xe1;n g&#xe9;pelj&#xfc;k be a k&#xf6;vetkez&#x151;t:">
+<node CREATED="1460363810090" ID="ID_138414627" MODIFIED="1460363830973" TEXT="\addcontentsline{toc}{section}{Bevezet&#xe9;s}"/>
+</node>
+<node CREATED="1460364033961" ID="ID_632836340" MODIFIED="1460364049719" TEXT=" Ha a jegyz&#xe9;k c&#xed;me nem tetszik, &#xed;rjuk a preambulumba, hogy:">
+<node CREATED="1460364057361" ID="ID_1618279034" MODIFIED="1460364058877" TEXT="\addto\captionsmagyar{\renewcommand{\contentsname}{T artalom}}"/>
+<node COLOR="#ff0000" CREATED="1460364060121" ID="ID_625819304" MODIFIED="1460364071806" TEXT="Babelt haszn&#xe1;ljuk!"/>
+</node>
+<node CREATED="1460364080099" ID="ID_584465102" MODIFIED="1460364140943" TEXT="k&#xf6;nyvek &#xe9;s fontosabb m&#x171;vek eset&#xe9;n a tartalomjegyz&#xe9;k oldalsz&#xe1;moz&#xe1;sa r&#xf3;mai sz&#xe1;mmal t&#xf6;rt&#xe9;nik &#xe9;s a m&#x171; &#xe9;rdemi r&#xe9;sz&#xe9;nek sz&#xe1;moz&#xe1;sa arab sz&#xe1;moz&#xe1;ssal.">
+<node CREATED="1460364142217" ID="ID_1345467512" MODIFIED="1460364213785" TEXT="K&#xf6;nyv eset&#xe9;n egyszer&#x171;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \frontmatter
+    </p>
+    <p>
+      \tableofcontents
+    </p>
+    <p>
+      \mainmatter
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460364166825" ID="ID_1581103738" MODIFIED="1460364203377" TEXT="Reportn&#xe1;l fapados">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \setcounter{page}{1}
+    </p>
+    <p>
+      \pagenumbering{roman}
+    </p>
+    <p>
+      \tableofcontents
+    </p>
+    <p>
+      \newpage
+    </p>
+    <p>
+      \setcounter{page}{1}
+    </p>
+    <p>
+      \pagenumbering{arabic}
+    </p>
+    <p>
+      \chapter{Bevezet&#233;s}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1460364229330" ID="ID_1369707342" MODIFIED="1460364238931" TEXT="T&#xe1;bl&#xe1;zat &#xe9;s &#xe1;brajegyz&#xe9;k k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1460364240641" ID="ID_1461314152" MODIFIED="1460364266500" TEXT="Term&#xe9;szetesen nem csak tartalom, hanem t&#xe1;bl&#xe1;zat- &#xe9;s &#xe1;brajegyz&#xe9;kre is sz&#xfc;ks&#xe9;g&#xfc;nk lehet a m&#x171; meg&#xed;r&#xe1;sakor.">
+<node CREATED="1460364268483" ID="ID_1988352952" MODIFIED="1460364279152" TEXT="\listoftables">
+<node CREATED="1460364279842" ID="ID_1040966536" MODIFIED="1460364299368" TEXT="T&#xe1;bl&#xe1;zat sz&#xe1;ma, neve &#xe9;s oldalsz&#xe1;ma kir&#xfc;l fel a list&#xe1;ra"/>
+</node>
+<node CREATED="1460364302132" ID="ID_1599848114" MODIFIED="1460364308335" TEXT="\listoffigures">
+<node CREATED="1460364309249" ID="ID_535988200" MODIFIED="1460364317431" TEXT="ugyancsak &#xe1;brajegyz&#xe9;k"/>
+</node>
+</node>
 </node>
 </node>
 </node>
