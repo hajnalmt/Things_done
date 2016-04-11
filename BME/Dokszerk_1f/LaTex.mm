@@ -2372,7 +2372,112 @@
 <node CREATED="1460365571907" ID="ID_1020164243" MODIFIED="1460365572643" TEXT="A kimeneten az irodalom c&#xed;mk&#xe9;je mellett vessz&#x151;vel jelenik meg a sz&#xf6;gletes z&#xe1;r&#xf3;jelen bel&#xfc;l [1, 160&#x2013;165. oldal]."/>
 </node>
 </node>
-<node CREATED="1460365602314" ID="ID_795781132" MODIFIED="1460365614233" TEXT="Hivatkoz&#xe1;s k&#xe9;sz&#xed;t&#xe9;se"/>
+<node COLOR="#ff0000" CREATED="1460365602314" ID="ID_795781132" MODIFIED="1460366862578" TEXT="Hivatkoz&#xe1;s k&#xe9;sz&#xed;t&#xe9;se">
+<node CREATED="1460366849171" ID="ID_1237021651" MODIFIED="1460366874608" TEXT="Nagyon fontos a LaTeX egyik alapk&#xf6;ve"/>
+<node CREATED="1460366892498" ID="ID_799877191" MODIFIED="1460366930871" TEXT="Minden sz&#xe1;mozott elemre lehet hivatkozni: irodalomram, fejezere &#xe1;br&#xe1;ra, t&#xe1;bl&#xe1;zatra, oldalra, l&#xe1;bjegyzetre, egyenletre stb."/>
+<node CREATED="1460366932772" ID="ID_1449250175" MODIFIED="1460366960737" TEXT="Irodalomjegyz&#xe9;kre val&#xf3; hivatkoz&#xe1;s koz&#xe1;r&#xf3;lag a m&#xe1;r tanult \cite{} paranccsal lehets&#xe9;ges"/>
+<node CREATED="1460367049940" ID="ID_296207750" MODIFIED="1460367071400" TEXT="A hivatkoz&#xe1;s sz&#xe1;moz&#xe1;sa automatikus!"/>
+<node CREATED="1460367082347" ID="ID_1844006235" MODIFIED="1460367123984" TEXT="M&#xf3;dja egyszer&#x171;: a hivatkozni k&#xed;v&#xe1;nt objektumot megc&#xed;mk&#xe9;zz&#xfc;k a \label{c&#xed;mke} utas&#xed;t&#xe1;ssal, majd a hivatkoz&#xe1;s hely&#xe9;n a \ref{c&#xed;mke} utas&#xed;t&#xe1;ssal h&#xed;vjuk el&#x151; a sz&#xe1;mot."/>
+<node CREATED="1460367131138" ID="ID_1789881092" MODIFIED="1460367144051" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \section{B&#233;lab&#225;csi}
+    </p>
+    <p>
+      \label{sec:bela}
+    </p>
+    <p>
+      Itt kezdem a fejezetet\dots
+    </p>
+    <p>
+      ...
+    </p>
+    <p>
+      K&#233;s&#337;bb (vagy ak&#225;r hamarabb is) elkezdek hivatkozni
+    </p>
+    <p>
+      a~\ref{sec:bela}.~fejezetre.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460367235719" ID="ID_234983905" MODIFIED="1460367301776" TEXT="Hivatkoz&#xe1;s az oldalra: az oldalra a \pageref{c&#xed;mke} ker&#xfc;l, majd m&#xe1;shol a sz&#xf6;vegben">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      B&#337;vebben a~\pageref{sec:bela}.~oldalon...
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460367260562" ID="ID_125577569" MODIFIED="1460367283639" TEXT="Hivatkoz&#xe1;s &#xe1;b&#xe1;r&#xe1;ra">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{figure}
+    </p>
+    <p>
+      \centering % tegye k&#246;z&#233;pre az &#225;br&#225;t!
+    </p>
+    <p>
+      \includegraphics{&#225;bra neve}
+    </p>
+    <p>
+      \caption{Ide az &#225;bra c&#237;me}
+    </p>
+    <p>
+      \label{fig:c&#237;mke}
+    </p>
+    <p>
+      \end{figure}
+    </p>
+    <p>
+      Az eredm&#233;ny a~\ref{fig:c&#237;mke}.~&#225;br&#225;n l&#225;that&#243;.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460367343866" ID="ID_153682013" MODIFIED="1460367354192" TEXT="Hat&#xe1;rozott n&#xe9;vel&#x151; a hivatkoz&#xe1;s el&#x151;tt">
+<node CREATED="1460367361771" ID="ID_650364391" MODIFIED="1460367362633" TEXT="Az \az{valami} &#xe9;s \Az{valami} utas&#xed;t&#xe1;sokkal a valami el&#xe9; hat&#xe1;rozott n&#xe9;vel&#x151;t tehet&#xfc;nk, a k&#xfc;l&#xf6;nbs&#xe9;g: az els&#x151; kisbet&#x171;vel &#xed;rja a n&#xe9;vel&#x151;t, a m&#xe1;sodik nagybet&#x171;vel kezdi (mondat elej&#xe9;n j&#xf3;)."/>
+<node CREATED="1460367371723" ID="ID_1247352692" MODIFIED="1460367371969" TEXT="Az \aref{} &#xe9;s \Aref{} utas&#xed;t&#xe1;sokkal n&#xe9;vel&#x151;vel hivatkozhatunk objektumokra (teh&#xe1;t gyakorlatilag \aref{cimke} = \az{\ref{cimke}})."/>
+<node CREATED="1460367380938" ID="ID_1264329623" MODIFIED="1460367381315" TEXT="Az \acite{}, \Acite{}, \apageref{} &#xe9;s \Apageref{} utas&#xed;t&#xe1;sok hasonl&#xf3;an az el&#x151;z&#x151;ek kieg&#xe9;sz&#xed;t&#xe9;sei."/>
+<node CREATED="1460367407031" ID="ID_1189077565" MODIFIED="1460367424928" TEXT="Kor&#xe1;bbi p&#xe9;ld&#xe1;k helyesen">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      K&#233;s&#337;bb (vagy ak&#225;r hamarabb is) elkezdek hivatkozni
+    </p>
+    <p>
+      \aref{sec:bela}.~fejezetre.
+    </p>
+    <p>
+      B&#337;vebben a B&#233;lab&#225;csi fejezetben,
+    </p>
+    <p>
+      \apageref{sec:bela}.~oldalon...
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
