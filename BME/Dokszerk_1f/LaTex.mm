@@ -2503,9 +2503,181 @@
 </html>
 </richcontent>
 </node>
-<node CREATED="1460367920301" ID="ID_791204962" MODIFIED="1460367925634" TEXT="P&#xe9;ld&#xe1;k"/>
+<node CREATED="1460367920301" ID="ID_791204962" MODIFIED="1460368786322" TEXT="P&#xe9;ld&#xe1;k">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \[
+    </p>
+    <p>
+      a^2+b^2=c^2
+    </p>
+    <p>
+      \]
+    </p>
+    <p>
+      \begin{equation}
+    </p>
+    <p>
+      a^2+b^2=c^2
+    </p>
+    <p>
+      \end{equation}
+    </p>
+    <p>
+      Ha $a^2+b^2=c^2$ akkor ez a Pitagorasz t&#233;tel.
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
-<node CREATED="1460367720034" ID="ID_1905163154" MODIFIED="1460367726864" TEXT="Sz&#xf6;veg bevitele az egyenletbe"/>
+<node CREATED="1460368789099" ID="ID_640937240" MODIFIED="1460368789416" TEXT="Vigy&#xe1;zzunk, a ^ karakter csak az ut&#xe1;na k&#xf6;vetkez&#x151; els&#x151; elemet emeli fels&#x151; indexbe: a^24, helyett ilyenkor &#xfa;n. blokkos&#xed;t&#xe1;sra van sz&#xfc;ks&#xe9;g: a^{24}"/>
+<node CREATED="1460368794234" ID="ID_1150157510" MODIFIED="1460368800261" TEXT="Ugyanez az _ oper&#xe1;torra is"/>
+<node CREATED="1460368801467" ID="ID_142024331" MODIFIED="1460368817526" TEXT="Als&#xf3; &#xe9;s fels&#x151; indexben is lehet hatv&#xe1;ny"/>
+<node CREATED="1460368819947" ID="ID_1188550220" MODIFIED="1460368833874" TEXT="Matematikai m&#xf3;dban a sz&#xf3;k&#xf6;z&#xf6;k sz&#xe1;ma nem sz&#xe1;m&#xed;t,"/>
+<node COLOR="#ff0000" CREATED="1460368835507" ID="ID_767338868" MODIFIED="1460368842628" TEXT="De &#xfc;res sort nem szabad hagyni,"/>
+<node CREATED="1460368843955" ID="ID_636256082" MODIFIED="1460368854040" TEXT="nincs &#xfa;j bekezd&#xe9;s matematikai m&#xf3;dban (\\)"/>
+<node CREATED="1460368854794" ID="ID_1363530911" MODIFIED="1460368915636" TEXT="a magyarban tizedes vessz&#x151;, m&#xed;g az angolban tizedes pont van, de ha matek m&#xf3;dban vessz&#x151;t &#xed;runk azt felsorol&#xe1;sk&#xe9;nt &#xe9;rtelmezi &#xe9;s cs&#xfa;ny nagy t&#xe9;rk&#xf6;zt hagy a tizedes jegyek &#xe9;s az eg&#xe9;sz sz&#xe1;m k&#xf6;z&#xf6;tt.">
+<node CREATED="1460368921499" ID="ID_1559561066" MODIFIED="1460368946738" TEXT="Ennek ellens&#xfa;lyoz&#xe1;sa az &#xfa;n. negat&#xed;v t&#xe9;rk&#xf6;zzel (\!) t&#xf6;rt&#xe9;nik"/>
+<node CREATED="1460368949044" ID="ID_1621907638" MODIFIED="1460368967579" TEXT="$3,14$ helyett teh&#xe1;t $3,\!14$"/>
+</node>
+<node CREATED="1460368976187" ID="ID_1727911502" MODIFIED="1460369000832" TEXT="+,-,/ jelek haszn&#xe1;lhat&#xf3;ak matematikai m&#xf3;dban,"/>
+<node CREATED="1460369002003" ID="ID_1070994197" MODIFIED="1460369029995" TEXT="A szorz&#xe1;st a m&#xe9;rn&#xf6;ki gyakorlatban nem * (az a konvol&#xfa;ci&#xf3;), helyette \cdot vagy \times"/>
+<node CREATED="1460369030963" ID="ID_1805955396" MODIFIED="1460369076968" TEXT="Az =, &lt;,&gt; karakterek ugyan&#xfa;gy megvannak matematikai m&#xf3;dban is, &#xe1;m ha kisebb-, nagyobb egyenl&#x151;, nem egyenl&#x151;-re van sz&#xfc;ks&#xe9;g: \le, \ge, \ne"/>
+</node>
+<node CREATED="1460367720034" ID="ID_1905163154" MODIFIED="1460367726864" TEXT="Sz&#xf6;veg bevitele az egyenletbe">
+<node CREATED="1460369086171" ID="ID_469996841" MODIFIED="1460369116767" TEXT="ha az egyenletben magyar&#xe1;z&#xf3; sz&#xf6;veget kell betenn&#xfc;nk vissza kell t&#xe9;rni a norm&#xe1;l m&#xf3;dba (ne legyenek d&#x151;lt bet&#x171;k)"/>
+<node CREATED="1460369118578" ID="ID_546711314" MODIFIED="1460369158312" TEXT="Sz&#xf6;veg bevitele a \textnormal{sz&#xf6;veg}, vagy a \textrm{sz&#xf6;veg} paranccsal lehets&#xe9;ges">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \[
+    </p>
+    <p>
+      x \geq 0, \textrm{ ha $x$ nem negat&#237;v}
+    </p>
+    <p>
+      \]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460369167565" ID="ID_1303433245" MODIFIED="1460369176377" TEXT="K&#xe9;pletek bekeretez&#xe9;se &#xe9;s hivatkoz&#xe1;s a k&#xe9;pletre">
+<node CREATED="1460369190067" ID="ID_906808349" MODIFIED="1460369190467" TEXT="K&#xe9;pletek bekeretez&#xe9;s&#xe9;re a \boxed{ } parancsra van sz&#xfc;ks&#xe9;g&#xfc;nk (\usepackage{amsmath} kell hozz&#xe1;)"/>
+<node CREATED="1460369193707" ID="ID_1198392725" MODIFIED="1460369209343" TEXT="Hivatkoz&#xe1;s k&#xe9;pletre">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{equation}
+    </p>
+    <p>
+      \label{eq:emeletes}
+    </p>
+    <p>
+      A+b=c
+    </p>
+    <p>
+      \end{equation}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460369219016" ID="ID_745538684" MODIFIED="1460369219016" TEXT="\aref{eq:emeletes}.~k&#xe9;pletben l&#xe1;that&#xf3; \dots"/>
+<node CREATED="1460369226451" ID="ID_1565925684" MODIFIED="1460369227192" TEXT="\aref({eq:emeletes}) k&#xe9;plet seg&#xed;ts&#xe9;g&#xe9;vel \dots"/>
+</node>
+</node>
+<node CREATED="1460369884955" ID="ID_687281138" MODIFIED="1460369890226" TEXT="Sz&#xe1;moz&#xe1;s megv&#xe1;ltoztat&#xe1;sa">
+<node CREATED="1460369897418" ID="ID_1421905545" MODIFIED="1460369921331" TEXT="Ha az equation k&#xf6;rnyezet &#xe1;ltal alkalmazott sz&#xe1;moz&#xe1;st szeretn&#xe9;nk megv&#xe1;ltoztatni, pl. a chapter, szakasz, alszakasz sz&#xe1;m&#xe1;t is bele szeretn&#xe9;nk venni:">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \numberwithin{equation}{subsection} % legyen
+    </p>
+    <p>
+      benne szakasz &#233;s alszakasz is
+    </p>
+    <p>
+      \begin{document}
+    </p>
+    <p>
+      \section{Els&#337; szakaszom}
+    </p>
+    <p>
+      \subsection{Itt meg az alszakasz}
+    </p>
+    <p>
+      \begin{equation}
+    </p>
+    <p>
+      x \geq 0, \textrm{ ha $x$ nem negat&#237;v
+    </p>
+    <p>
+      \end{equation}
+    </p>
+    <p>
+      \end{document}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460369922090" ID="ID_678305079" MODIFIED="1460369922549" TEXT="Ha nem kellenek a pontok &#xe9;s el&#xe9;g a subsection sz&#xe1;ma &#xe9;s az egyenlet sorsz&#xe1;ma:">
+<node CREATED="1460369936712" ID="ID_722994002" MODIFIED="1460369937033" TEXT="\numberwithin{equation}{subsection}"/>
+<node CREATED="1460369942252" ID="ID_1441001118" MODIFIED="1460369942560" TEXT="\renewcommand{\theequation}{\thesection\arabic{equation}}"/>
+</node>
+<node CREATED="1460369930388" ID="ID_1563117330" MODIFIED="1460369930680" TEXT="R&#xf3;mai sz&#xe1;mokkal pl.:">
+<node CREATED="1460369947733" ID="ID_1290046543" MODIFIED="1460369947997" TEXT="\renewcommand{\theequation}{\thesection\roman{equation}}"/>
+<node CREATED="1460369954571" ID="ID_281643355" MODIFIED="1460369955736" TEXT="\renewcommand{\theequation}{\roman{equation}}"/>
+</node>
+</node>
+<node CREATED="1460369963115" ID="ID_674967515" MODIFIED="1460369970080" TEXT="Egy&#xe9;b m&#x171;veletek &#xe9;s rel&#xe1;ci&#xf3;k">
+<node CREATED="1460369973283" ID="ID_402967967" MODIFIED="1460370027337" TEXT="Oper&#xe1;torok">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{equation}
+    </p>
+    <p>
+      \sum_{i=0}^\infty B_i \approx \int_0^\infty B \mathrm{d}x
+    </p>
+    <p>
+      \end{equation}
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1460369979243" ID="ID_1501310086" MODIFIED="1460369984320" TEXT="Deriv&#xe1;l&#xe1;s, integr&#xe1;l&#xe1;s"/>
+<node CREATED="1460369985347" ID="ID_1610757052" MODIFIED="1460370001570" TEXT="G&#xf6;r&#xf6;g bet&#x171;k">
+<node CREATED="1460370007443" ID="ID_892161271" MODIFIED="1460370011894" TEXT="Be&#xe9;p&#xed;tett parancsokkal"/>
+</node>
+<node CREATED="1460370034483" ID="ID_640322737" MODIFIED="1460370054947" TEXT="Matematikai &#xe9;kezetek">
+<node CREATED="1460370065420" ID="ID_1357055118" MODIFIED="1460370072028" TEXT="Egy&#xe9;b bet&#x171;st&#xed;lusok"/>
+</node>
+<node CREATED="1460370080440" ID="ID_1498400010" MODIFIED="1460370092441" TEXT="Z&#xe1;r&#xf3;jelek &#xe9;s nyilak">
+<node CREATED="1460370100035" ID="ID_1361170525" MODIFIED="1460370108225" TEXT="Z&#xe1;r&#xf3;jelek m&#xe9;ret igaz&#xed;t&#xe1;sa">
+<node CREATED="1460370109194" ID="ID_290897285" MODIFIED="1460370122012" TEXT="Ha sok egym&#xe1;sba &#xe1;gyazott z&#xe1;r&#xf3;jelet haszn&#xe1;lunk, j&#xf3; lenne megk&#xfc;l&#xf6;nb&#xf6;ztetni &#x151;ket ak&#xe1;r m&#xe9;retben is, hogy olvashat&#xf3;bb maradjon a sz&#xf6;veg&#xfc;nk:"/>
+<node CREATED="1460370133126" ID="ID_1717703597" MODIFIED="1460370146397" TEXT="\left ( \right ) &#x2013; z&#xe1;r&#xf3;jeleket haszn&#xe1;ljunk, vagy ak&#xe1;r sz&#xf6;gletes \left [ \right ], netal&#xe1;nt&#xe1;n \left \{ \right \}"/>
+<node CREATED="1460370147555" ID="ID_995105218" MODIFIED="1460370155622" TEXT="M&#xe9;ret &#xe1;ll&#xed;t&#xe1;s: \big(, \Big(, \bigg(, \Bigg("/>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
