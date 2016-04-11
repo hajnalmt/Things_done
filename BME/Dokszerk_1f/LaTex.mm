@@ -2479,9 +2479,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1460367545771" ID="ID_1593964725" MODIFIED="1460367572621" POSITION="right" TEXT="9) Matematikai k&#xe9;pletek, matematikai m&#xf3;d, t&#xe9;telek, seg&#xe9;dt&#xe9;telek, bizony&#xed;t&#xe1;sok stb.">
+<node CREATED="1460367545771" FOLDED="true" ID="ID_1593964725" MODIFIED="1460371085479" POSITION="right" TEXT="9) Matematikai k&#xe9;pletek, matematikai m&#xf3;d, t&#xe9;telek, seg&#xe9;dt&#xe9;telek, bizony&#xed;t&#xe1;sok stb.">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1460367713728" ID="ID_1556991690" MODIFIED="1460367718912" TEXT="Matematikai m&#xf3;d">
+<node CREATED="1460367713728" FOLDED="true" ID="ID_1556991690" MODIFIED="1460370569135" TEXT="Matematikai m&#xf3;d">
 <node CREATED="1460367746314" ID="ID_627319748" MODIFIED="1460367769149" TEXT="A LaTeX legnagyobb el&#x151;nye m&#xe1;s sz&#xf6;vegszerkeszt&#x151;kh&#xf6;z k&#xe9;pest a sz&#xe9;p matematikai k&#xe9;pletek!"/>
 <node CREATED="1460367775874" ID="ID_413308787" MODIFIED="1460367788240" TEXT="Matematikai k&#xf6;rnyezetre h&#xe1;rom lehet&#x151;s&#xe9;g ad&#xf3;dik">
 <node CREATED="1460367789515" ID="ID_1974517874" MODIFIED="1460367813767" TEXT="$ide$-sz&#xf6;vegbe &#xe1;gyazott matek m&#xf3;d doll&#xe1;rjelek seg&#xed;ts&#xe9;g&#xe9;vel"/>
@@ -2548,7 +2548,7 @@
 <node CREATED="1460369002003" ID="ID_1070994197" MODIFIED="1460369029995" TEXT="A szorz&#xe1;st a m&#xe9;rn&#xf6;ki gyakorlatban nem * (az a konvol&#xfa;ci&#xf3;), helyette \cdot vagy \times"/>
 <node CREATED="1460369030963" ID="ID_1805955396" MODIFIED="1460369076968" TEXT="Az =, &lt;,&gt; karakterek ugyan&#xfa;gy megvannak matematikai m&#xf3;dban is, &#xe1;m ha kisebb-, nagyobb egyenl&#x151;, nem egyenl&#x151;-re van sz&#xfc;ks&#xe9;g: \le, \ge, \ne"/>
 </node>
-<node CREATED="1460367720034" ID="ID_1905163154" MODIFIED="1460367726864" TEXT="Sz&#xf6;veg bevitele az egyenletbe">
+<node CREATED="1460367720034" FOLDED="true" ID="ID_1905163154" MODIFIED="1460370567749" TEXT="Sz&#xf6;veg bevitele az egyenletbe">
 <node CREATED="1460369086171" ID="ID_469996841" MODIFIED="1460369116767" TEXT="ha az egyenletben magyar&#xe1;z&#xf3; sz&#xf6;veget kell betenn&#xfc;nk vissza kell t&#xe9;rni a norm&#xe1;l m&#xf3;dba (ne legyenek d&#x151;lt bet&#x171;k)"/>
 <node CREATED="1460369118578" ID="ID_546711314" MODIFIED="1460369158312" TEXT="Sz&#xf6;veg bevitele a \textnormal{sz&#xf6;veg}, vagy a \textrm{sz&#xf6;veg} paranccsal lehets&#xe9;ges">
 <richcontent TYPE="NOTE"><html>
@@ -2570,7 +2570,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1460369167565" ID="ID_1303433245" MODIFIED="1460369176377" TEXT="K&#xe9;pletek bekeretez&#xe9;se &#xe9;s hivatkoz&#xe1;s a k&#xe9;pletre">
+<node CREATED="1460369167565" FOLDED="true" ID="ID_1303433245" MODIFIED="1460370566805" TEXT="K&#xe9;pletek bekeretez&#xe9;se &#xe9;s hivatkoz&#xe1;s a k&#xe9;pletre">
 <node CREATED="1460369190067" ID="ID_906808349" MODIFIED="1460369190467" TEXT="K&#xe9;pletek bekeretez&#xe9;s&#xe9;re a \boxed{ } parancsra van sz&#xfc;ks&#xe9;g&#xfc;nk (\usepackage{amsmath} kell hozz&#xe1;)"/>
 <node CREATED="1460369193707" ID="ID_1198392725" MODIFIED="1460369209343" TEXT="Hivatkoz&#xe1;s k&#xe9;pletre">
 <richcontent TYPE="NOTE"><html>
@@ -2597,7 +2597,7 @@
 <node CREATED="1460369226451" ID="ID_1565925684" MODIFIED="1460369227192" TEXT="\aref({eq:emeletes}) k&#xe9;plet seg&#xed;ts&#xe9;g&#xe9;vel \dots"/>
 </node>
 </node>
-<node CREATED="1460369884955" ID="ID_687281138" MODIFIED="1460369890226" TEXT="Sz&#xe1;moz&#xe1;s megv&#xe1;ltoztat&#xe1;sa">
+<node CREATED="1460369884955" FOLDED="true" ID="ID_687281138" MODIFIED="1460370571453" TEXT="Sz&#xe1;moz&#xe1;s megv&#xe1;ltoztat&#xe1;sa">
 <node CREATED="1460369897418" ID="ID_1421905545" MODIFIED="1460369921331" TEXT="Ha az equation k&#xf6;rnyezet &#xe1;ltal alkalmazott sz&#xe1;moz&#xe1;st szeretn&#xe9;nk megv&#xe1;ltoztatni, pl. a chapter, szakasz, alszakasz sz&#xe1;m&#xe1;t is bele szeretn&#xe9;nk venni:">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -2644,8 +2644,8 @@
 <node CREATED="1460369954571" ID="ID_281643355" MODIFIED="1460369955736" TEXT="\renewcommand{\theequation}{\roman{equation}}"/>
 </node>
 </node>
-<node CREATED="1460369963115" ID="ID_674967515" MODIFIED="1460369970080" TEXT="Egy&#xe9;b m&#x171;veletek &#xe9;s rel&#xe1;ci&#xf3;k">
-<node CREATED="1460369973283" ID="ID_402967967" MODIFIED="1460370027337" TEXT="Oper&#xe1;torok">
+<node CREATED="1460369963115" FOLDED="true" ID="ID_674967515" MODIFIED="1460370573567" TEXT="Egy&#xe9;b m&#x171;veletek &#xe9;s rel&#xe1;ci&#xf3;k">
+<node CREATED="1460369973283" ID="ID_402967967" MODIFIED="1460370457399" TEXT="Oper&#xe1;torok">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -2661,7 +2661,8 @@
       \end{equation}
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node CREATED="1460369979243" ID="ID_1501310086" MODIFIED="1460369984320" TEXT="Deriv&#xe1;l&#xe1;s, integr&#xe1;l&#xe1;s"/>
 <node CREATED="1460369985347" ID="ID_1610757052" MODIFIED="1460370001570" TEXT="G&#xf6;r&#xf6;g bet&#x171;k">
@@ -2675,6 +2676,435 @@
 <node CREATED="1460370109194" ID="ID_290897285" MODIFIED="1460370122012" TEXT="Ha sok egym&#xe1;sba &#xe1;gyazott z&#xe1;r&#xf3;jelet haszn&#xe1;lunk, j&#xf3; lenne megk&#xfc;l&#xf6;nb&#xf6;ztetni &#x151;ket ak&#xe1;r m&#xe9;retben is, hogy olvashat&#xf3;bb maradjon a sz&#xf6;veg&#xfc;nk:"/>
 <node CREATED="1460370133126" ID="ID_1717703597" MODIFIED="1460370146397" TEXT="\left ( \right ) &#x2013; z&#xe1;r&#xf3;jeleket haszn&#xe1;ljunk, vagy ak&#xe1;r sz&#xf6;gletes \left [ \right ], netal&#xe1;nt&#xe1;n \left \{ \right \}"/>
 <node CREATED="1460370147555" ID="ID_995105218" MODIFIED="1460370155622" TEXT="M&#xe9;ret &#xe1;ll&#xed;t&#xe1;s: \big(, \Big(, \bigg(, \Bigg("/>
+</node>
+</node>
+<node CREATED="1460370253691" ID="ID_1630839053" MODIFIED="1460370258167" TEXT="T&#xf6;rt &#xe9;s oszt&#xe1;s m&#x171;velete">
+<node CREATED="1460370264651" ID="ID_1182666943" MODIFIED="1460370264881" TEXT="\frac{ide j&#xf6;n a sz&#xe1;ml&#xe1;l&#xf3;}{ide meg a nevez&#x151;}, h&#xe1;t nem egyszer&#x171;?"/>
+<node CREATED="1460370272379" ID="ID_1625775070" MODIFIED="1460370273729" TEXT="Term&#xe9;szetesen emeletes t&#xf6;rtet is lehet csin&#xe1;lni: \frac{\frac{\pi}{\2}}{\frac{1}{2}}"/>
+<node CREATED="1460370283099" ID="ID_823244990" MODIFIED="1460370283600" TEXT="Kombinatorikai kifejez&#xe9;sekben hasznos lehet az &#x201e;n alatt a k&#x201d;, amit {n \choose k} utas&#xed;t&#xe1;ssal jelen&#xed;t&#xfc;nk meg."/>
+</node>
+<node CREATED="1460370292363" ID="ID_1029248319" MODIFIED="1460370297016" TEXT="Gy&#xf6;kjel">
+<node CREATED="1460370302597" ID="ID_736893654" MODIFIED="1460370302850" TEXT="\sqrt{valami} parancs seg&#xed;ts&#xe9;g&#xe9;vel."/>
+<node CREATED="1460370309755" ID="ID_179189053" MODIFIED="1460370310050" TEXT="Ak&#xe1;r t&#xf6;bb t&#xf6;rt is egym&#xe1;sba helyezhet&#x151;:"/>
+<node CREATED="1460370315230" ID="ID_1747516959" MODIFIED="1460370315722" TEXT="\begin{equation} \label{eq:emeletes} \lim_{n \to \infty} \left( \sqrt { \frac 1 { \frac 1 n + \sqrt { \frac 1 { \frac 1 n + \sqrt { \dots }}}}} \right) = ? \end{equation}"/>
+<node CREATED="1460370321903" ID="ID_1759784043" MODIFIED="1460370322217" TEXT="Ha a gy&#xf6;kjel kitev&#x151;j&#xe9;t meg akarjuk v&#xe1;ltoztatni, akkor: \sqrt[3]{2}"/>
+</node>
+<node CREATED="1460370329675" ID="ID_1115797221" MODIFIED="1460370338160" TEXT="Norma &#xe9;s abszol&#xfa;t &#xe9;rt&#xe9;k jelek">
+<node CREATED="1460370339788" ID="ID_600365578" MODIFIED="1460370345208" TEXT="Figyelem a norma jele \|, m&#xed;g az abszol&#xfa;t&#xe9;rt&#xe9;k&#xe9; |."/>
+<node CREATED="1460370350427" ID="ID_920814632" MODIFIED="1460370351385" TEXT="Ez&#xe9;rt ne keverj&#xfc;k &#x151;ket!"/>
+<node CREATED="1460370357524" ID="ID_1429147675" MODIFIED="1460370358719" TEXT="Ha k&#xe9;t vektor (s&#xed;k) p&#xe1;rhuzamoss&#xe1;g&#xe1;t akarjuk jel&#xf6;lni, akkor a \parallel parancsra van sz&#xfc;ks&#xe9;g: e \parallel f."/>
+</node>
+<node CREATED="1460370365466" ID="ID_1648004110" MODIFIED="1460370369057" TEXT="Al&#xe1; &#xe9;s f&#xf6;l&#xe9; &#xed;r&#xe1;s">
+<node CREATED="1460370380947" ID="ID_110063820" MODIFIED="1460370386169" TEXT="\overset{}"/>
+<node CREATED="1460370387107" ID="ID_905772986" MODIFIED="1460370391435" TEXT="\underset{}"/>
+<node CREATED="1460370394684" ID="ID_1581748186" MODIFIED="1460370472736" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      $HCl\overset{\left[\frac{2}{3}\right]} {\underset{\mathrm{B}}{\rightarrow}}H^+_2+Cl^-$
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460370464355" ID="ID_1186329654" MODIFIED="1460370492586" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460370409923" ID="ID_164244072" MODIFIED="1460370412098" TEXT="Kommentek">
+<node CREATED="1460370413436" ID="ID_1547643468" MODIFIED="1460370417921" TEXT="mathtools csomag"/>
+<node CREATED="1460370419987" ID="ID_99122515" MODIFIED="1460370427140" TEXT="\overbrace{} &#xe9;s \underbrace{}, \underbracket{}, \overbracket{}"/>
+<node CREATED="1460370435675" ID="ID_809995093" MODIFIED="1460370440327" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \underbrace{x}_\text{val&#243;s r&#233;sz} +
+    </p>
+    <p>
+      \underbrace{iy}_\text{k&#233;pzetes r&#233;sz}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460370505467" ID="ID_182474071" MODIFIED="1460370513104" TEXT="P&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \[
+    </p>
+    <p>
+      c^2 = \overbrace{
+    </p>
+    <p>
+      \underbrace{a^2}_\text{Sz&#246;ggel szemk&#246;zti befog&#243;} +
+    </p>
+    <p>
+      \underbrace{b^2}_\text{Sz&#246;g melletti befog&#243;}
+    </p>
+    <p>
+      }^\text{Geometria alapt&#233;tele}
+    </p>
+    <p>
+      \]
+    </p>
+    <p>
+      \[
+    </p>
+    <p>
+      c^2 = \underbracket{
+    </p>
+    <p>
+      \underbrace{a^2}_\text{Sz&#246;ggel szemk&#246;zti befog&#243;} +
+    </p>
+    <p>
+      \underbrace{b^2}_\text{Sz&#246;g melletti befog&#243;}
+    </p>
+    <p>
+      }_\
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460370519372" ID="ID_1185390949" MODIFIED="1460370522246" TEXT="M&#xe1;trixok">
+<node CREATED="1460370529651" ID="ID_531055225" MODIFIED="1460370530017" TEXT="\usepackage{amsmath} csomagot ne felejts&#xfc;k el!"/>
+<node CREATED="1460370535397" ID="ID_1269618419" MODIFIED="1460370542069" TEXT="Nem teljes m&#xe1;trixok"/>
+</node>
+<node CREATED="1460370548627" ID="ID_1494931327" MODIFIED="1460370552983" TEXT="Be&#xe9;p&#xed;tett f&#xfc;ggv&#xe9;nyek"/>
+</node>
+<node CREATED="1460370576307" FOLDED="true" ID="ID_406612915" MODIFIED="1460371083390" TEXT="K&#xe9;pletek t&#xf6;rdel&#xe9;se">
+<node CREATED="1460370589635" ID="ID_1699595568" MODIFIED="1460370591225" TEXT="Ha a k&#xe9;plet&#xfc;nk nem f&#xe9;r ki egy sorba el, kell t&#xf6;rni (ezt a LaTeX sajnos nem v&#xe9;gzi el helyett&#xfc;nk), de mint azt megtanultuk, matematikai m&#xf3;dban nincs \\ &#xfa;j sor &#xf04c;"/>
+<node CREATED="1460370603046" ID="ID_1551049808" MODIFIED="1460370605040" TEXT="Megold&#xe1;sok">
+<node CREATED="1460370606844" ID="ID_497535150" MODIFIED="1460370615187" TEXT="multiline">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{multline}\label{c&#237;mke}
+    </p>
+    <p>
+      1+8+27+64=\\
+    </p>
+    <p>
+      =1+3+5+7+{}\\
+    </p>
+    <p>
+      +9+11+13+{}\\
+    </p>
+    <p>
+      +15+17+19
+    </p>
+    <p>
+      \end{multline}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460370616381" ID="ID_1755879043" MODIFIED="1460370736835" TEXT="eqnarray">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{eqnarray*}
+    </p>
+    <p>
+      A&amp;=&amp;B,\\
+    </p>
+    <p>
+      C&amp;=&amp;D,\\
+    </p>
+    <p>
+      E&amp;=&amp;F
+    </p>
+    <p>
+      \end{eqnarray*}
+    </p>
+    <p>
+      \begin{align*}
+    </p>
+    <p>
+      A&amp;=B,\\
+    </p>
+    <p>
+      C&amp;=D,\\
+    </p>
+    <p>
+      E&amp;=F
+    </p>
+    <p>
+      \end{align*}
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460370633955" ID="ID_1960955612" MODIFIED="1460370634928" TEXT="Hasznos lehet az \lefteqn{}"/>
+</node>
+<node CREATED="1460370643915" ID="ID_810405364" MODIFIED="1460370654529" TEXT="amsmath csomagban m&#xe9;g sz&#xe1;mtalan megold&#xe1;s">
+<node CREATED="1460370657660" ID="ID_1886541930" MODIFIED="1460370714658" TEXT="P&#xe9;lda 1.">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{equation}\label
+    </p>
+    <p>
+      {cimke}
+    </p>
+    <p>
+      \begin{split}
+    </p>
+    <p>
+      100 &amp;=1+8+27+64=\\
+    </p>
+    <p>
+      &amp;=1+3+5+7+9+{}\\
+    </p>
+    <p>
+      &amp;\quad+11+13+15+17+19
+    </p>
+    <p>
+      \end{split}\tag*{A-1}
+    </p>
+    <p>
+      \end{equation}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460370663533" ID="ID_1065890210" MODIFIED="1460370681689" TEXT="P&#xe9;lda 2.">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \[
+    </p>
+    <p>
+      \begin{split}
+    </p>
+    <p>
+      \cos^2\alpha &amp;=1-
+    </p>
+    <p>
+      \sin^2\alpha=\\
+    </p>
+    <p>
+      &amp;=1+3+5+7+9+{}\\
+    </p>
+    <p>
+      &amp;\quad+11+13+15+17+1
+    </p>
+    <p>
+      9
+    </p>
+    <p>
+      \end{split}
+    </p>
+    <p>
+      \]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1460370737660" ID="ID_1297823101" MODIFIED="1460370754649" TEXT="&#xda;j oldal: \displaybreak\\- csak align eset&#xe9;n"/>
+<node CREATED="1460370755620" ID="ID_741293540" MODIFIED="1460370784205" TEXT="T&#xf6;bb egyenlet eset&#xe9;n l&#xe9;trehozhatunk subsz&#xe1;moz&#xe1;st">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{subequations}
+    </p>
+    <p>
+      Itt jonnek a felsorolt egyenletek:
+    </p>
+    <p>
+      \begin{align}
+    </p>
+    <p>
+      x^2 + y^2 &amp;= 1\\
+    </p>
+    <p>
+      y &amp;= \sqrt{1 - x^2}.
+    </p>
+    <p>
+      \end{align}
+    </p>
+    <p>
+      \end{subequations}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460370785124" ID="ID_433454702" MODIFIED="1460370785480" TEXT="Ha nem akarunk sz&#xe1;moz&#xe1;st valamelyik sorban: akkor &#xed;rjuk a sor v&#xe9;g&#xe9;re a \nonumber parancsot"/>
+<node CREATED="1460370795493" ID="ID_315705720" MODIFIED="1460370800766" TEXT="N&#xe9;ha el&#x151;fordul, hogy felt&#xe9;telekhez k&#xf6;t&#xf6;tt az egyenlet&#xfc;nk, akkor a cases k&#xf6;rnyezetet alkalmazhatjuk:">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \[
+    </p>
+    <p>
+      u(x) =
+    </p>
+    <p>
+      \begin{cases}
+    </p>
+    <p>
+      \sqrt{x}&amp; \text{Ha } x \geq 0 \\
+    </p>
+    <p>
+      1 &amp; \text{Ha } x = 0 \\
+    </p>
+    <p>
+      0 &amp; \text{egy&#233;bk&#233;nt}.
+    </p>
+    <p>
+      \end{cases}
+    </p>
+    <p>
+      \]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460370807668" FOLDED="true" ID="ID_538511035" MODIFIED="1460371081703" TEXT="T&#xe9;telek, seg&#xe9;dt&#xe9;telek, bizony&#xed;t&#xe1;sok">
+<node CREATED="1460370823525" FOLDED="true" ID="ID_664036379" MODIFIED="1460371079741" TEXT="Preambulumban helyezz&#xfc;k el valamelyiket:">
+<node CREATED="1460370840724" ID="ID_351932015" MODIFIED="1460370841032" TEXT="\newtheorem{t&#xe9;teln&#xe9;v}{t&#xe9;telc&#xed;m}"/>
+<node CREATED="1460370850027" ID="ID_640762150" MODIFIED="1460370899834" TEXT="\newtheorem{t&#xe9;teln&#xe9;v}{t&#xe9;telc&#xed;m}[sz&#xe1;ml&#xe1;l&#xf3;&#x151;s]"/>
+<node CREATED="1460370853779" ID="ID_1490220983" MODIFIED="1460370859038" TEXT="\newtheorem{t&#xe9;teln&#xe9;v}[egy&#xfc;ttn&#xe9;v]{t&#xe9;telc&#xed;m}"/>
+<node CREATED="1460370866931" ID="ID_773541471" MODIFIED="1460370875601" TEXT="t&#xe9;teln&#xe9;v: L&#xe9;trej&#xf6;n egy t&#xe9;teln&#xe9;v k&#xf6;rnyezet &#xe9;s egy t&#xe9;teln&#xe9;v sz&#xe1;ml&#xe1;l&#xf3;, mely minden &#xfa;jabb ilyen k&#xf6;rnyezet megnyit&#xe1;sakor n&#xf6;vekszik eggyel."/>
+<node CREATED="1460370890811" ID="ID_569738744" MODIFIED="1460370892809" TEXT="t&#xe9;telc&#xed;m: Ez lesz a t&#xe9;telszer&#x171; bekezd&#xe9;s t&#xed;pus c&#xed;me (pl. defin&#xed;ci&#xf3;, megjegyz&#xe9;s stb.). Ezen c&#xed;m mellett megjelenik a t&#xe9;teln&#xe9;v sz&#xe1;ml&#xe1;l&#xf3; aktu&#xe1;lis &#xe9;rt&#xe9;ke is."/>
+<node CREATED="1460370916012" ID="ID_940806676" MODIFIED="1460370924533" TEXT="sz&#xe1;ml&#xe1;l&#xf3;&#x151;s: Egy m&#xe1;r kor&#xe1;bban defini&#xe1;lt sz&#xe1;ml&#xe1;l&#xf3;, &#xe1;ltal&#xe1;ban valamelyik szint sz&#xe1;ml&#xe1;l&#xf3;ja (fejezet, szakasz stb.). Ennek v&#xe1;ltoz&#xe1;sakor a t&#xe9;teln&#xe9;v nev&#x171; sz&#xe1;ml&#xe1;l&#xf3; 0-ra &#xe1;ll&#xed;t&#xf3;dik. A sz&#xe1;ml&#xe1;l&#xf3;&#x151;s &#xe9;s a t&#xe9;teln&#xe9;v sz&#xe1;ml&#xe1;l&#xf3; egy&#xfc;tt jelenik meg (pl. 2.1. t&#xe9;tel)."/>
+<node CREATED="1460370936899" ID="ID_1979746586" MODIFIED="1460370937465" TEXT="egy&#xfc;ttn&#xe9;v: Egy m&#xe1;sik t&#xe9;telszer&#x171; k&#xf6;rnyezet neve. A t&#xe9;teln&#xe9;v &#xe9;s egy&#xfc;ttn&#xe9;v k&#xf6;rnyezetek sz&#xe1;ml&#xe1;l&#xf3;i egy&#xfc;tt fognak n&#xf6;vekedni."/>
+</node>
+<node CREATED="1460370947052" ID="ID_1377023247" MODIFIED="1460370952475" TEXT="A dokumentum k&#xf6;rnyezetben ha l&#xe9;tre szeretn&#xe9;nk hozni egy t&#xe9;telt p&#xe9;ld&#xe1;ul:">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \newtheorem{tetel}{t&#233;tel}
+    </p>
+    <p>
+      \begin{document}
+    </p>
+    <p>
+      ...
+    </p>
+    <p>
+      \begin{tetel}
+    </p>
+    <p>
+      A t&#233;tel sz&#246;vege.
+    </p>
+    <p>
+      \end{tetel}
+    </p>
+    <p>
+      \begin{tetel}[Cauchy]\label{cauchy}
+    </p>
+    <p>
+      A k&#246;vetkez&#337; t&#233;tel sz&#246;vege.
+    </p>
+    <p>
+      \end{tetel}
+    </p>
+    <p>
+      \aref{cauchy}.~t&#233;telb&#337;l k&#246;vetkez&#337;en\dots
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460370959172" FOLDED="true" ID="ID_1988245338" MODIFIED="1460371078806" TEXT="A matematikai k&#xe9;pleteket, olykor bizony&#xed;tani is kell">
+<node CREATED="1460370991634" ID="ID_426347745" MODIFIED="1460371017866" TEXT="amsthm csomagban defini&#xe1;lva van egy k&#xf6;tnyezet bizony&#xed;t&#xe1;sokra: proof k&#xf6;rnyezet">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \begin{proof}
+    </p>
+    <p>
+      A bizony&#237;t&#225;s sz&#246;vege.
+    </p>
+    <p>
+      \end{proof}
+    </p>
+    <p>
+      \begin{tetel}\label{xy}
+    </p>
+    <p>
+      A t&#233;tel sz&#246;vege.
+    </p>
+    <p>
+      \end{tetel}
+    </p>
+    <p>
+      \begin{proof}[\Aref{xy}.~t&#233;tel bizony&#237;t&#225;sa]
+    </p>
+    <p>
+      A bizony&#237;t&#225;s sz&#246;vege.
+    </p>
+    <p>
+      \end{proof}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460371024339" ID="ID_772331449" MODIFIED="1460371029705" TEXT="Proof k&#xf6;rnyezet m&#xf3;dos&#xed;t&#xe1;sa">
+<node CREATED="1460371037828" ID="ID_1745873696" MODIFIED="1460371038315" TEXT="Ha &#xe1;t akarjuk nevezni, pl. Bizony&#xed;t&#xe1;sra:">
+<node CREATED="1460371044491" ID="ID_1778234253" MODIFIED="1460371044751" TEXT="\renewcommand{\proofname}{Bizony&#xed;t&#xe1;s}"/>
+</node>
+<node CREATED="1460371052579" ID="ID_335180551" MODIFIED="1460371052880" TEXT="Q.E.D. jel &#xe1;tdefini&#xe1;l&#xe1;sa:">
+<node CREATED="1460371063387" ID="ID_64219190" MODIFIED="1460371068991" TEXT="\renewcommand{\qedsymbol}{\rule{1ex}{1ex}}"/>
+</node>
+<node CREATED="1460371055419" ID="ID_1336747873" MODIFIED="1460371062385" TEXT="Q.E.D. jel megsz&#xfc;ntet&#xe9;se:">
+<node CREATED="1460371072164" ID="ID_477108435" MODIFIED="1460371072356" TEXT="\renewcommand{\qedsymbol}{}"/>
+</node>
 </node>
 </node>
 </node>
