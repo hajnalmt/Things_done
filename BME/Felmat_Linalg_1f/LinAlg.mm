@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1458615581084" ID="ID_411259303" MODIFIED="1459156492030" TEXT="Fels&#x151;bb Matematika - Halad&#xf3; Line&#xe1;ris Algebra">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1459201126375" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
+<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1460410487538" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459156608018" FOLDED="true" ID="ID_718278855" MODIFIED="1459160549313" TEXT="Vektor">
 <node CREATED="1459156706914" ID="ID_1518623961" MODIFIED="1459156719434" TEXT="A 2 &#xe9;s 3 dimenzi&#xf3;s t&#xe9;r vektorai">
@@ -177,19 +177,21 @@
 </node>
 </node>
 </node>
-<node CREATED="1459156681475" FOLDED="true" ID="ID_1852190255" MODIFIED="1459200758607" TEXT="Vektort&#xe9;r (light)">
-<node CREATED="1459169655322" FOLDED="true" ID="ID_1306076412" MODIFIED="1459200735544" TEXT="Egyel&#x151;re vektoron R^n elmeit &#xe9;rtj&#xfc;k">
+<node CREATED="1459156681475" FOLDED="true" ID="ID_1852190255" MODIFIED="1460410485939" TEXT="Vektort&#xe9;r (light)">
+<node CREATED="1459169655322" FOLDED="true" ID="ID_1306076412" MODIFIED="1460410481649" TEXT="Egyel&#x151;re vektoron R^n elmeit &#xe9;rtj&#xfc;k">
 <node COLOR="#006699" CREATED="1459169688032" ID="ID_1662184070" MODIFIED="1459169839391" TEXT="Vektort&#xe9;r, alt&#xe9;r">
 <node COLOR="#006699" CREATED="1459169700603" ID="ID_754779357" MODIFIED="1459169837404" TEXT="Vektort&#xe9;ren vektorok olyan nem &#xfc;res V halmaz&#xe9;t &#xe9;rtj&#xfc;k, mely z&#xe1;rt a vektor&#xf6;sszead&#xe1;s &#xe9;s skal&#xe1;rral szorz&#xe1;s m&#x171;velet&#xe9;re"/>
 <node COLOR="#006699" CREATED="1459169788536" ID="ID_1612705912" MODIFIED="1459169835816" TEXT="Ha U &#xe9;s V k&#xe9;t vektort&#xe9;r &#xe9;s U r&#xe9;szhalmaza V-nek, akkor azt mondjuk, hogy az U vektort&#xe9;r a V vektort&#xe9;r altere."/>
-<node CREATED="1459169859198" ID="ID_1722437902" MODIFIED="1459169897981" TEXT="Az A vektorhalmaz pontosan akkor vektort&#xe9;r, ha az A-beli vektorokb&#xf3;l k&#xe9;pzett line&#xe1;ris kombin&#xe1;ci&#xf3;k is mind A-ban vannak."/>
+<node CREATED="1459169859198" ID="ID_1722437902" MODIFIED="1460410119562" TEXT="Az A vektorhalmaz pontosan akkor vektort&#xe9;r, ha az A-beli vektorokb&#xf3;l k&#xe9;pzett line&#xe1;ris kombin&#xe1;ci&#xf3;k is mind A-ban vannak.">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
 <node CREATED="1459169926472" ID="ID_762019156" MODIFIED="1459169943912" TEXT="Minden pozit&#xed;v n eg&#xe9;sz eset&#xe9;n F^n vektort&#xe9;r F f&#xf6;l&#xf6;tt"/>
 <node CREATED="1459169946725" ID="ID_1777084603" MODIFIED="1459169981185" TEXT="R^2-ben egy orig&#xf3;n &#xe1;tmen&#x151; egyenes vektorai (az egyenes pontjaiba mutat&#xf3; helyvektorok) alteret alkotnak"/>
 <node CREATED="1459169993600" ID="ID_10362491" MODIFIED="1459170099759" TEXT="R^3-ben b&#xe1;rmely orig&#xf3;n &#xe1;tmen&#x151; s&#xed;k vagy egyenes vektorai (az egyenes pontjaiba mutat helyvektorok) alteret alkotnak"/>
 <node CREATED="1459170104165" ID="ID_1435176823" MODIFIED="1459170153714" TEXT="Az R^3 im&#xe9;nt felsorolt alterei &quot;olyanok&quot;, mint az R &#xe9;s az R^2"/>
 </node>
 </node>
-<node CREATED="1459170197651" FOLDED="true" ID="ID_288938090" MODIFIED="1459200737992" TEXT="Alterek tulajdons&#xe1;gai">
+<node CREATED="1459170197651" FOLDED="true" ID="ID_288938090" MODIFIED="1460410480386" TEXT="Alterek tulajdons&#xe1;gai">
 <node CREATED="1459170212970" ID="ID_1787141533" MODIFIED="1459170221646" TEXT="Minden alt&#xe9;rnek eleme a nullvektor">
 <node CREATED="1459170233545" ID="ID_1565777170" MODIFIED="1459170249102" TEXT="B&#xe1;rmely alt&#xe9;rbeli vektor nullaszorosa is benne van)"/>
 </node>
@@ -215,7 +217,7 @@
 </node>
 <node COLOR="#006699" CREATED="1459170712673" ID="ID_670540776" MODIFIED="1459170727668" TEXT="A kifesz&#xed;tett alt&#xe9;r alt&#xe9;r"/>
 </node>
-<node CREATED="1459170744008" FOLDED="true" ID="ID_1837729918" MODIFIED="1459200755146" TEXT="Egyenletrendszer megold&#xe1;sai">
+<node CREATED="1459170744008" FOLDED="true" ID="ID_1837729918" MODIFIED="1460410483938" TEXT="Egyenletrendszer megold&#xe1;sai">
 <node COLOR="#ff0000" CREATED="1459170820295" ID="ID_1760761780" MODIFIED="1459170898565" TEXT="Inhomog&#xe9;n [A|b] m&#xe1;trix&#xfa; line&#xe1;ris egyenletrendsze &#xe1;ltal&#xe1;nos megold&#xe1;sa felbonthat&#xf3; egy inhomog&#xe9;n partikul&#xe1;ris megold&#xe1;s &#xe9;s egy homog&#xe9;n &#xe1;ltal&#xe1;nos megold&#xe1;s &#xf6;sszeg&#xe9;re"/>
 <node COLOR="#006699" CREATED="1459170903181" ID="ID_133117778" MODIFIED="1459191491341" TEXT="Az inhomog&#xe9;n line&#xe1;ris egyenletrendszer megold&#xe1;sainak halmaza egy alt&#xe9;r eltoltja, melyet geometirai nyelven affin alt&#xe9;rnek nevez&#xfc;nk"/>
 <node CREATED="1459191528935" ID="ID_1314262460" MODIFIED="1459191581535" TEXT="Az inhomog&#xe9;n egyenletrendszer &#xf6;sszes megold&#xe1;sa a homog&#xe9;n &#xf6;sszes megold&#xe1;sainak - azaz N(A)-nak - az inhomog&#xe9;n valamelyik megold&#xe1;s&#xe1;val val&#xf3; eltoltja. Mindegy melyik megold&#xe1;st v&#xe1;lasztjuk!"/>
@@ -291,7 +293,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459201130997" FOLDED="true" ID="ID_1648692028" MODIFIED="1459211671992" POSITION="left" TEXT="2) M&#xe1;trixok algebr&#xe1;ja">
+<node CREATED="1459201130997" FOLDED="true" ID="ID_1648692028" MODIFIED="1460410504296" POSITION="left" TEXT="2) M&#xe1;trixok algebr&#xe1;ja">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459201171918" FOLDED="true" ID="ID_1282324897" MODIFIED="1459207769365" TEXT="M&#xe1;trixm&#x171;veletek">
 <node CREATED="1459201182686" ID="ID_1247163125" MODIFIED="1459201207707" TEXT="Elemenk&#xe9;nti m&#xe1;trixm&#x171;veletek">
@@ -346,7 +348,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459207771248" FOLDED="true" ID="ID_528909311" MODIFIED="1459211670698" TEXT="M&#x171;veleti alaptulajdons&#xe1;gok">
+<node CREATED="1459207771248" FOLDED="true" ID="ID_528909311" MODIFIED="1460410502993" TEXT="M&#x171;veleti alaptulajdons&#xe1;gok">
 <node CREATED="1459207781235" FOLDED="true" ID="ID_1552612703" MODIFIED="1459210392048" TEXT="Alapm&#x171;veletek">
 <node CREATED="1459207819001" ID="ID_572264537" MODIFIED="1459207822339" TEXT="Szorz&#xe1;s">
 <node CREATED="1459207822954" ID="ID_156728519" MODIFIED="1459207929274" TEXT="A m&#xe1;trixszorz&#xe1;s nem kommutat&#xed;v, azaz AB!=BA  b&#xe1;rmely k&#xe9;t &#xf6;sszeszorozhat&#xf3; m&#xe1;trixra">
@@ -462,7 +464,7 @@
 <node CREATED="1459211276055" ID="ID_1493087546" MODIFIED="1459211292328" TEXT="Lebeg&#x151;pontos sz&#xe1;mokra numerikusan instabil"/>
 </node>
 </node>
-<node CREATED="1459207806044" FOLDED="true" ID="ID_779180861" MODIFIED="1459211663816" TEXT="LU-felbont&#xe1;s">
+<node CREATED="1459207806044" FOLDED="true" ID="ID_779180861" MODIFIED="1460410501945" TEXT="LU-felbont&#xe1;s">
 <node CREATED="1459211303909" ID="ID_1451540218" MODIFIED="1459211341423" TEXT="A=LU LU felbont&#xe1;s, ha L als&#xf3; egys&#xe9;g h&#xe1;romsz&#xf6;gm&#xe1;trix, U fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;trix."/>
 <node CREATED="1459211343454" ID="ID_29998426" MODIFIED="1459211347240" TEXT="nincs mindig"/>
 <node CREATED="1459211348430" ID="ID_1513790618" MODIFIED="1459211365626" TEXT="invert&#xe1;lhat&#xf3; m&#xe1;trixra egy&#xe9;rtelm&#x171;, k&#xfc;l&#xf6;nben nem felt&#xe9;tlen&#xfc;l"/>
@@ -475,7 +477,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459211800271" FOLDED="true" ID="ID_1422721427" MODIFIED="1459215879679" POSITION="right" TEXT="3) Determin&#xe1;nsok">
+<node CREATED="1459211800271" FOLDED="true" ID="ID_1422721427" MODIFIED="1460410599554" POSITION="right" TEXT="3) Determin&#xe1;nsok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459211817180" FOLDED="true" ID="ID_991847846" MODIFIED="1459213512331" TEXT="Motiv&#xe1;ci&#xf3;">
 <node CREATED="1459211931662" ID="ID_258819346" MODIFIED="1459211941079" TEXT=" Paralelogramma el&#x151;jeles ter&#xfc;lete">
@@ -531,7 +533,7 @@
 <node CREATED="1459213446326" ID="ID_233332184" MODIFIED="1459213492306" TEXT="Ha determin&#xe1;nst, mint sorvektorainak n-v&#xe1;ltoz&#xf3;s f&#xfc;ggv&#xe9;ny&#xe9;t tekintj&#xfc;k, akkor det f&#xfc;ggv&#xe9;ny minden v&#xe1;ltoz&#xf3;j&#xe1;ban addit&#xed;v &#xe9;s homog&#xe9;n (multiline&#xe1;ris)"/>
 </node>
 </node>
-<node CREATED="1459211847549" FOLDED="true" ID="ID_330448104" MODIFIED="1459215875641" TEXT="A determin&#xe1;ns mint elemeinek f&#xfc;ggv&#xe9;nye">
+<node CREATED="1459211847549" FOLDED="true" ID="ID_330448104" MODIFIED="1460410596578" TEXT="A determin&#xe1;ns mint elemeinek f&#xfc;ggv&#xe9;nye">
 <node CREATED="1459213520379" ID="ID_1262181419" MODIFIED="1459213529345" TEXT="Additivit&#xe1;s haszn&#xe1;lata"/>
 <node CREATED="1459213542235" ID="ID_482459875" MODIFIED="1459213559346" TEXT="Determin&#xe1;ns, mint k&#xed;gy&#xf3;k &#xf6;szege">
 <node COLOR="#ff0000" CREATED="1459213647852" ID="ID_1900363556" MODIFIED="1459213793401" TEXT="Minden n-ed rend&#x171; determin&#xe1;ns f&#xf6;lbomlik az &#xf6;sszes bel&#x151;le kiv&#xe1;laszthat k&#xed;gy&#xf3; determin&#xe1;ns&#xe1;nak &#xf6;sszeg&#xe9;re. ">
@@ -572,27 +574,33 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215085071" FOLDED="true" ID="ID_158843376" MODIFIED="1459220682424" POSITION="left" TEXT="4) Line&#xe1;ris lek&#xe9;pez&#xe9;s">
+<node CREATED="1459215085071" ID="ID_158843376" MODIFIED="1460410602654" POSITION="left" TEXT="4) Line&#xe1;ris lek&#xe9;pez&#xe9;s">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459215935008" FOLDED="true" ID="ID_892286750" MODIFIED="1459220681159" TEXT="M&#xe1;trixlek&#xe9;pez&#xe9;s, line&#xe1;ris lek&#xe9;pez&#xe9;s">
-<node CREATED="1459217467123" ID="ID_746422661" MODIFIED="1459217482898" TEXT="Fogalma"/>
-<node CREATED="1459217485913" ID="ID_1161043136" MODIFIED="1459217506920" TEXT="k&#xe9;pt&#xe9;r, magt&#xe9;r - oszlopt&#xe9;r, nullt&#xe9;r"/>
+<node CREATED="1459215935008" ID="ID_892286750" MODIFIED="1460411115589" TEXT="M&#xe1;trixlek&#xe9;pez&#xe9;s, line&#xe1;ris lek&#xe9;pez&#xe9;s">
+<node COLOR="#ff0000" CREATED="1459217467123" ID="ID_746422661" MODIFIED="1460411125302" TEXT="Fogalma"/>
+<node COLOR="#ff0000" CREATED="1459217485913" ID="ID_1161043136" MODIFIED="1460411127630" TEXT="k&#xe9;pt&#xe9;r, magt&#xe9;r - oszlopt&#xe9;r, nullt&#xe9;r"/>
 <node CREATED="1459217516523" ID="ID_1145014383" MODIFIED="1459217520483" TEXT="M&#x171;veletek"/>
 <node CREATED="1459217583823" ID="ID_1045063726" MODIFIED="1459217586924" TEXT="Tulajdons&#xe1;gai">
-<node CREATED="1459217597470" ID="ID_1428857355" MODIFIED="1459217604951" TEXT="lin kombot meg&#x151;rzi"/>
-<node CREATED="1459217610978" ID="ID_1974662975" MODIFIED="1459217619039" TEXT="homog&#xe9;n (skal&#xe1;rral szoz&#xe1;s)"/>
-<node CREATED="1459217626064" ID="ID_1972432026" MODIFIED="1459217629985" TEXT="addit&#xed;v"/>
-<node CREATED="1459217644503" ID="ID_1475528221" MODIFIED="1459217651893" TEXT="alt&#xe9;r k&#xe9;pe alt&#xe9;r"/>
-<node CREATED="1459217653660" ID="ID_209487451" MODIFIED="1459217662333" TEXT="affin alt&#xe9;r k&#xe9;pe affin alt&#xe9;r"/>
+<node COLOR="#338800" CREATED="1459217597470" ID="ID_1428857355" MODIFIED="1460411157981" TEXT="lin kombot meg&#x151;rzi">
+<font NAME="SansSerif" SIZE="12"/>
 </node>
-<node CREATED="1459217691946" ID="ID_121745039" MODIFIED="1459217696276" TEXT="Lin lek&#xe9;pez&#xe9;s">
-<node CREATED="1459217697851" ID="ID_1462907587" MODIFIED="1459217734583" TEXT="V-&gt;W lek&#xe9;pez&#xe9;s line&#xe1;ris ha homog&#xe9;n &#xe9;s addit&#xed;v"/>
-<node CREATED="1459217736876" ID="ID_1591396859" MODIFIED="1459217768744" TEXT="V-&gt;W lek&#xe9;pez&#xe9;s line&#xe1;ris transzform&#xe1;ci&#xf3; ha V=W"/>
+<node COLOR="#338800" CREATED="1459217610978" ID="ID_1974662975" MODIFIED="1460411160430" TEXT="homog&#xe9;n (skal&#xe1;rral szoz&#xe1;s)"/>
+<node COLOR="#338800" CREATED="1459217626064" ID="ID_1972432026" MODIFIED="1460411160909" TEXT="addit&#xed;v"/>
+<node COLOR="#338800" CREATED="1459217644503" ID="ID_1475528221" MODIFIED="1460411161326" TEXT="alt&#xe9;r k&#xe9;pe alt&#xe9;r"/>
+<node COLOR="#338800" CREATED="1459217653660" ID="ID_209487451" MODIFIED="1460411164565" TEXT="affin alt&#xe9;r k&#xe9;pe affin alt&#xe9;r"/>
+</node>
+<node CREATED="1459217691946" ID="ID_121745039" MODIFIED="1460411135875" TEXT="Lin lek&#xe9;pez&#xe9;s">
+<node COLOR="#ff0000" CREATED="1459217697851" ID="ID_1462907587" MODIFIED="1460411232222" TEXT="V-&gt;W lek&#xe9;pez&#xe9;s line&#xe1;ris ha homog&#xe9;n &#xe9;s addit&#xed;v">
+<node CREATED="1460411238335" ID="ID_438105529" MODIFIED="1460411241426" TEXT="deriv&#xe1;l&#xe1;s"/>
+<node CREATED="1460411243005" ID="ID_950694026" MODIFIED="1460411247268" TEXT="integr&#xe1;l&#xe1;s"/>
+<node CREATED="1460411250166" ID="ID_1503063307" MODIFIED="1460411265067" TEXT="S&#xed;kbeli forgat&#xe1;s, t&#xfc;kr&#xf6;z&#xe9;s, vet&#xed;t&#xe9;s"/>
+</node>
+<node COLOR="#338800" CREATED="1459217736876" ID="ID_1591396859" MODIFIED="1460411172149" TEXT="V-&gt;W lek&#xe9;pez&#xe9;s line&#xe1;ris transzform&#xe1;ci&#xf3; ha V=W"/>
 </node>
 <node CREATED="1459217786340" ID="ID_345535053" MODIFIED="1459217791628" TEXT="Ekvivalens &#xe1;ll&#xed;t&#xe1;sok">
-<node CREATED="1459217799370" ID="ID_934549223" MODIFIED="1459217801691" TEXT="line&#xe1;ris"/>
-<node CREATED="1459217803232" ID="ID_112740990" MODIFIED="1459217830841" TEXT="A(cx+y)=cA(x)+A(y)"/>
-<node CREATED="1459217832496" ID="ID_70015907" MODIFIED="1459217924999" TEXT="A(c_1x_1+...+c_kx_k)=c_1Ax_1+...+c_kAx_k"/>
+<node COLOR="#338800" CREATED="1459217799370" ID="ID_934549223" MODIFIED="1460411174637" TEXT="line&#xe1;ris"/>
+<node COLOR="#338800" CREATED="1459217803232" ID="ID_112740990" MODIFIED="1460411175244" TEXT="A(cx+y)=cA(x)+A(y)"/>
+<node COLOR="#338800" CREATED="1459217832496" ID="ID_70015907" MODIFIED="1460411175597" TEXT="A(c_1x_1+...+c_kx_k)=c_1Ax_1+...+c_kAx_k"/>
 </node>
 <node CREATED="1459217985245" ID="ID_570316491" MODIFIED="1459218014134" TEXT="Line&#xe1;ris f&#xfc;ggv&#xe9;ny ha l&#xe9;tezik A m&#xe1;trix"/>
 <node CREATED="1459218111532" ID="ID_1789124089" MODIFIED="1459218122406" TEXT="A m&#xe1;trixtraf&#xf3;k k&#xfc;l&#xf6;nb&#xf6;z&#x151; b&#xe1;zisokban"/>
@@ -601,7 +609,7 @@
 <node CREATED="1459218191134" ID="ID_1631725036" MODIFIED="1459218194539" TEXT="tulajdons&#xe1;gok"/>
 </node>
 </node>
-<node CREATED="1459215951677" FOLDED="true" ID="ID_555219046" MODIFIED="1459220679471" TEXT="Alkalmaz&#xe1;s: differenci&#xe1;lhat&#xf3;s&#xe1;g">
+<node CREATED="1459215951677" FOLDED="true" ID="ID_555219046" MODIFIED="1460410661025" TEXT="Alkalmaz&#xe1;s: differenci&#xe1;lhat&#xf3;s&#xe1;g">
 <node CREATED="1459218225839" ID="ID_1951758783" MODIFIED="1459218230654" TEXT="Differenci&#xe1;lhat&#xf3;s&#xe1;g"/>
 <node CREATED="1459218272259" ID="ID_1622825938" MODIFIED="1459218277342" TEXT="Deriv&#xe1;ltlek&#xe9;pez&#xe9;s"/>
 <node CREATED="1459218326756" ID="ID_1861540908" MODIFIED="1459218330990" TEXT="Jacobi m&#xe1;trix">
@@ -609,7 +617,7 @@
 </node>
 <node CREATED="1459218379368" ID="ID_1090741748" MODIFIED="1459218382874" TEXT="l&#xe1;ncszab&#xe1;ly"/>
 </node>
-<node CREATED="1459215971988" FOLDED="true" ID="ID_965367797" MODIFIED="1459220678431" TEXT="2- &#xe9;s 3-dimenzi&#xf3;s geometriai transzform&#xe1;ci&#xf3;k m&#xe1;trixa">
+<node CREATED="1459215971988" ID="ID_965367797" MODIFIED="1460410667681" TEXT="2- &#xe9;s 3-dimenzi&#xf3;s geometriai transzform&#xe1;ci&#xf3;k m&#xe1;trixa">
 <node CREATED="1459218472362" ID="ID_1477717140" MODIFIED="1459218476091" TEXT="Forgat&#xe1;s">
 <node CREATED="1459218477008" ID="ID_1782408467" MODIFIED="1459218480713" TEXT="2D-ben"/>
 <node CREATED="1459218487883" ID="ID_1869829862" MODIFIED="1459218494829" TEXT="tengelyk&#xf6;r&#xfc;l 3D-ben"/>
