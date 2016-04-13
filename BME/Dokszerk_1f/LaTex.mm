@@ -10,8 +10,7 @@
       A BME szabadonv&#225;lasztott dokumentumszerkeszt&#233;s nevezet&#369; t&#225;rgy&#225;hoz k&#233;sz&#252;lt mindmap.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1457897196830" FOLDED="true" ID="ID_1169635182" MODIFIED="1457904461855" POSITION="right" TEXT="1) Hogyan n&#xe9;z ki egy ig&#xe9;nyes domkumentum?">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -379,7 +378,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1457908525658" FOLDED="true" ID="ID_1300249721" MODIFIED="1457910650599" POSITION="left" TEXT="4) Dokumentumok kin&#xe9;zete &#xe9;s strukt&#xfa;r&#xe1;l&#xe1;sa">
+<node CREATED="1457908525658" FOLDED="true" ID="ID_1300249721" MODIFIED="1460544261095" POSITION="left" TEXT="4) Dokumentumok kin&#xe9;zete &#xe9;s strukt&#xfa;r&#xe1;l&#xe1;sa">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1457908627920" FOLDED="true" ID="ID_485712971" MODIFIED="1457908776899" TEXT="C&#xed;m, szert&#x151; &#xe9;s d&#xe1;tum">
 <node CREATED="1457908660488" ID="ID_1404798237" MODIFIED="1457908708667" TEXT="A \title{...}, \author{...}, \date{...} utas&#xed;t&#xe1;sokkal megadhatjuk a dokumentum c&#xed;m&#xe9;t, a szerz&#x151;t &#xe9;s a d&#xe1;tumot. Ha a \date{} utas&#xed;t&#xe1;s argumentum&#xe1;t &#xfc;resen hagyjuk nem tesz d&#xe1;tumot!"/>
@@ -2035,8 +2034,7 @@
       \mainmatter
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460364166825" ID="ID_1581103738" MODIFIED="1460364203377" TEXT="Reportn&#xe1;l fapados">
 <richcontent TYPE="NOTE"><html>
@@ -2066,8 +2064,7 @@
       \chapter{Bevezet&#233;s}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2101,8 +2098,7 @@
       \addcontentsline{toc}{section}{F&#252;ggel&#233;k}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460364580042" ID="ID_1248826237" MODIFIED="1460364604890" TEXT="Book &#xe9;s report oszt&#xe1;ly&#xe1;n&#xe1;l">
 <richcontent TYPE="NOTE"><html>
@@ -2123,8 +2119,7 @@
       ix:}{}}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460364630153" ID="ID_970042012" MODIFIED="1460364644721" TEXT="P&#xe9;lda">
 <richcontent TYPE="NOTE"><html>
@@ -2181,8 +2176,7 @@
       \end{document}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2222,8 +2216,7 @@
       \end{thebibliography}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460364935874" ID="ID_1582690519" MODIFIED="1460364948439" TEXT="szam: Opcion&#xe1;lis: milyen sz&#xe1;mmal jelenjen meg az adott hivatkoz&#xe1;s (ha elhagyjuk automatikus lesz)"/>
 <node CREATED="1460364955354" ID="ID_1008548805" MODIFIED="1460364967196" TEXT="cimke: A m&#x171;ben ezzel a c&#xed;mk&#xe9;vel hivatkozunk erre a m&#x171;re"/>
 <node CREATED="1460364974937" ID="ID_1577744496" MODIFIED="1460364990551" TEXT="elemle&#xed;r&#xe1;s: A m&#x171; neve"/>
@@ -2305,8 +2298,7 @@
       \end{thebibliography}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460365504306" ID="ID_1056685193" MODIFIED="1460365520450" TEXT="P&#xe9;lda 2.">
 <richcontent TYPE="NOTE"><html>
@@ -2366,8 +2358,7 @@
       \end{thebibliography}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460365558418" ID="ID_1057879359" MODIFIED="1460365560782" TEXT="A \cite utas&#xed;t&#xe1;snak l&#xe9;tezik opcion&#xe1;lis param&#xe9;tere is, amellyel p&#xe9;ld&#xe1;ul az oldalsz&#xe1;mot (vagy egy&#xe9;b kieg&#xe9;sz&#xed;t&#x151; inform&#xe1;ci&#xf3;t) adhatjuk meg. "/>
 <node CREATED="1460365571907" ID="ID_1020164243" MODIFIED="1460365572643" TEXT="A kimeneten az irodalom c&#xed;mk&#xe9;je mellett vessz&#x151;vel jelenik meg a sz&#xf6;gletes z&#xe1;r&#xf3;jelen bel&#xfc;l [1, 160&#x2013;165. oldal]."/>
 </node>
@@ -2403,8 +2394,7 @@
       a~\ref{sec:bela}.~fejezetre.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460367235719" ID="ID_234983905" MODIFIED="1460367301776" TEXT="Hivatkoz&#xe1;s az oldalra: az oldalra a \pageref{c&#xed;mke} ker&#xfc;l, majd m&#xe1;shol a sz&#xf6;vegben">
 <richcontent TYPE="NOTE"><html>
@@ -2416,8 +2406,7 @@
       B&#337;vebben a~\pageref{sec:bela}.~oldalon...
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460367260562" ID="ID_125577569" MODIFIED="1460367283639" TEXT="Hivatkoz&#xe1;s &#xe1;b&#xe1;r&#xe1;ra">
 <richcontent TYPE="NOTE"><html>
@@ -2447,8 +2436,7 @@
       Az eredm&#233;ny a~\ref{fig:c&#237;mke}.~&#225;br&#225;n l&#225;that&#243;.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460367343866" ID="ID_153682013" MODIFIED="1460367354192" TEXT="Hat&#xe1;rozott n&#xe9;vel&#x151; a hivatkoz&#xe1;s el&#x151;tt">
 <node CREATED="1460367361771" ID="ID_650364391" MODIFIED="1460367362633" TEXT="Az \az{valami} &#xe9;s \Az{valami} utas&#xed;t&#xe1;sokkal a valami el&#xe9; hat&#xe1;rozott n&#xe9;vel&#x151;t tehet&#xfc;nk, a k&#xfc;l&#xf6;nbs&#xe9;g: az els&#x151; kisbet&#x171;vel &#xed;rja a n&#xe9;vel&#x151;t, a m&#xe1;sodik nagybet&#x171;vel kezdi (mondat elej&#xe9;n j&#xf3;)."/>
@@ -2473,8 +2461,7 @@
       \apageref{sec:bela}.~oldalon...
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2500,8 +2487,7 @@
       Ha $a$ kisebb, mint $b$, akkor ...
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460367920301" ID="ID_791204962" MODIFIED="1460368786322" TEXT="P&#xe9;ld&#xe1;k">
 <richcontent TYPE="NOTE"><html>
@@ -2531,8 +2517,7 @@
       Ha $a^2+b^2=c^2$ akkor ez a Pitagorasz t&#233;tel.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460368789099" ID="ID_640937240" MODIFIED="1460368789416" TEXT="Vigy&#xe1;zzunk, a ^ karakter csak az ut&#xe1;na k&#xf6;vetkez&#x151; els&#x151; elemet emeli fels&#x151; indexbe: a^24, helyett ilyenkor &#xfa;n. blokkos&#xed;t&#xe1;sra van sz&#xfc;ks&#xe9;g: a^{24}"/>
 <node CREATED="1460368794234" ID="ID_1150157510" MODIFIED="1460368800261" TEXT="Ugyanez az _ oper&#xe1;torra is"/>
@@ -2566,8 +2551,7 @@
       \]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460369167565" FOLDED="true" ID="ID_1303433245" MODIFIED="1460370566805" TEXT="K&#xe9;pletek bekeretez&#xe9;se &#xe9;s hivatkoz&#xe1;s a k&#xe9;pletre">
@@ -2591,8 +2575,7 @@
       \end{equation}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460369219016" ID="ID_745538684" MODIFIED="1460369219016" TEXT="\aref{eq:emeletes}.~k&#xe9;pletben l&#xe1;that&#xf3; \dots"/>
 <node CREATED="1460369226451" ID="ID_1565925684" MODIFIED="1460369227192" TEXT="\aref({eq:emeletes}) k&#xe9;plet seg&#xed;ts&#xe9;g&#xe9;vel \dots"/>
 </node>
@@ -2632,8 +2615,7 @@
       \end{document}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460369922090" ID="ID_678305079" MODIFIED="1460369922549" TEXT="Ha nem kellenek a pontok &#xe9;s el&#xe9;g a subsection sz&#xe1;ma &#xe9;s az egyenlet sorsz&#xe1;ma:">
 <node CREATED="1460369936712" ID="ID_722994002" MODIFIED="1460369937033" TEXT="\numberwithin{equation}{subsection}"/>
@@ -2661,8 +2643,7 @@
       \end{equation}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460369979243" ID="ID_1501310086" MODIFIED="1460369984320" TEXT="Deriv&#xe1;l&#xe1;s, integr&#xe1;l&#xe1;s"/>
 <node CREATED="1460369985347" ID="ID_1610757052" MODIFIED="1460370001570" TEXT="G&#xf6;r&#xf6;g bet&#x171;k">
@@ -2707,8 +2688,7 @@
       $HCl\overset{\left[\frac{2}{3}\right]} {\underset{\mathrm{B}}{\rightarrow}}H^+_2+Cl^-$
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460370464355" ID="ID_1186329654" MODIFIED="1460370492586" TEXT="P&#xe9;lda">
 <richcontent TYPE="NOTE"><html>
@@ -2720,8 +2700,7 @@
       \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460370409923" ID="ID_164244072" MODIFIED="1460370412098" TEXT="Kommentek">
@@ -2740,8 +2719,7 @@
       \underbrace{iy}_\text{k&#233;pzetes r&#233;sz}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460370505467" ID="ID_182474071" MODIFIED="1460370513104" TEXT="P&#xe9;lda">
 <richcontent TYPE="NOTE"><html>
@@ -2783,8 +2761,7 @@
       }_\
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460370519372" ID="ID_1185390949" MODIFIED="1460370522246" TEXT="M&#xe1;trixok">
@@ -2821,8 +2798,7 @@
       \end{multline}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460370616381" ID="ID_1755879043" MODIFIED="1460370736835" TEXT="eqnarray">
 <richcontent TYPE="NOTE"><html>
@@ -2861,8 +2837,7 @@
       \end{align*}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460370633955" ID="ID_1960955612" MODIFIED="1460370634928" TEXT="Hasznos lehet az \lefteqn{}"/>
 </node>
 <node CREATED="1460370643915" ID="ID_810405364" MODIFIED="1460370654529" TEXT="amsmath csomagban m&#xe9;g sz&#xe1;mtalan megold&#xe1;s">
@@ -2897,8 +2872,7 @@
       \end{equation}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460370663533" ID="ID_1065890210" MODIFIED="1460370681689" TEXT="P&#xe9;lda 2.">
 <richcontent TYPE="NOTE"><html>
@@ -2934,8 +2908,7 @@
       \]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2968,8 +2941,7 @@
       \end{subequations}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460370785124" ID="ID_433454702" MODIFIED="1460370785480" TEXT="Ha nem akarunk sz&#xe1;moz&#xe1;st valamelyik sorban: akkor &#xed;rjuk a sor v&#xe9;g&#xe9;re a \nonumber parancsot"/>
 <node CREATED="1460370795493" ID="ID_315705720" MODIFIED="1460370800766" TEXT="N&#xe9;ha el&#x151;fordul, hogy felt&#xe9;telekhez k&#xf6;t&#xf6;tt az egyenlet&#xfc;nk, akkor a cases k&#xf6;rnyezetet alkalmazhatjuk:">
@@ -3003,8 +2975,7 @@
       \]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460370807668" FOLDED="true" ID="ID_538511035" MODIFIED="1460371081703" TEXT="T&#xe9;telek, seg&#xe9;dt&#xe9;telek, bizony&#xed;t&#xe1;sok">
@@ -3054,8 +3025,7 @@
       \aref{cauchy}.~t&#233;telb&#337;l k&#246;vetkez&#337;en\dots
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460370959172" FOLDED="true" ID="ID_1988245338" MODIFIED="1460371078806" TEXT="A matematikai k&#xe9;pleteket, olykor bizony&#xed;tani is kell">
 <node CREATED="1460370991634" ID="ID_426347745" MODIFIED="1460371017866" TEXT="amsthm csomagban defini&#xe1;lva van egy k&#xf6;tnyezet bizony&#xed;t&#xe1;sokra: proof k&#xf6;rnyezet">
@@ -3092,8 +3062,7 @@
       \end{proof}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460371024339" ID="ID_772331449" MODIFIED="1460371029705" TEXT="Proof k&#xf6;rnyezet m&#xf3;dos&#xed;t&#xe1;sa">
 <node CREATED="1460371037828" ID="ID_1745873696" MODIFIED="1460371038315" TEXT="Ha &#xe1;t akarjuk nevezni, pl. Bizony&#xed;t&#xe1;sra:">

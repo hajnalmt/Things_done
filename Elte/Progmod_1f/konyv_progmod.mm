@@ -16,10 +16,9 @@
       A k&#246;nyvet &#237;rta: F&#243;thi &#193;kos
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531014862" FOLDED="true" ID="ID_1305375914" MODIFIED="1459344842977" POSITION="right" TEXT="1. Alapfogalmak">
+<node CREATED="1457531014862" FOLDED="true" ID="ID_1305375914" MODIFIED="1460579778873" POSITION="right" TEXT="1. Alapfogalmak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1459341195608" TEXT="Halmazok">
 <richcontent TYPE="NOTE"><html>
@@ -58,8 +57,7 @@
       az &#252;res halmaz.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1458139106674" ID="ID_636143593" MODIFIED="1458139253784" TEXT="megad&#xe1;suk">
 <node CREATED="1458139254210" ID="ID_340911373" MODIFIED="1458139294938" TEXT="elemeik  felsorol&#xe1;s&#xe1;val">
 <richcontent TYPE="NOTE"><html>
@@ -157,7 +155,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459336328036" FOLDED="true" ID="ID_1701911780" MODIFIED="1459344835664" TEXT="Rel&#xe1;ci&#xf3;k">
+<node CREATED="1459336328036" FOLDED="true" ID="ID_1701911780" MODIFIED="1460555691818" TEXT="Rel&#xe1;ci&#xf3;k">
 <node CREATED="1459336341794" ID="ID_1992704245" MODIFIED="1459336426763" TEXT="AxB direktszorzat">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -168,8 +166,7 @@
       A &#215; B ::= {(a, b) | a &#8712; A &#233;s b &#8712; B}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459336459494" ID="ID_719380978" MODIFIED="1459336567918" TEXT="Bin&#xe1;ris rel&#xe1;ci&#xf3;">
 <richcontent TYPE="NOTE"><html>
@@ -181,8 +178,7 @@
       R &#8838; A &#215; B
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459340251319" ID="ID_965241051" MODIFIED="1459340300309" TEXT="Rel&#xe1;ci&#xf3; &#xe9;rtelmez&#xe9;si tartom&#xe1;nya">
 <richcontent TYPE="NOTE"><html>
@@ -194,8 +190,7 @@
       D_R::= {a &#8712; A | &#8707;b &#8712; B : (a, b) &#8712; R}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459340272122" ID="ID_1353177317" MODIFIED="1459340330014" TEXT="Rel&#xe1;ci&#xf3; &#xe9;rt&#xe9;kk&#xe9;szlete">
 <richcontent TYPE="NOTE"><html>
@@ -207,8 +202,7 @@
       R_R ::= {b &#8712; B | &#8707;a &#8712; A : (a, b) &#8712; R},
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459340330959" ID="ID_1161871416" MODIFIED="1459340359502" TEXT="Rel&#xe1;ci&#xf3; &#xe9;rt&#xe9;ke a helyen">
 <richcontent TYPE="NOTE"><html>
@@ -220,8 +214,7 @@
       R(a) ::= {b &#8712; B | (a, b) &#8712; R},
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459340363287" ID="ID_284926235" MODIFIED="1459340435592" TEXT="H r&#xe9;szhalmaza A halmaz, R szerinti k&#xe9;pe a halmazt alkot&#xf3; elemek k&#xe9;peinek uni&#xf3;ja">
 <richcontent TYPE="NOTE"><html>
@@ -233,8 +226,7 @@
       R(H) ::= U R(h).
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459340436657" ID="ID_1840879810" MODIFIED="1459340531760" TEXT="H k&#xe9;pe azokb&#xf3;l az elemekb&#x151;l &#xe1;ll, amelyek legal&#xe1;bb egy H-beli elemhez hozz&#xe1; vannak rendelve">
 <richcontent TYPE="NOTE"><html>
@@ -246,8 +238,7 @@
       R(H) = {b &#8712; B | &#8707;a &#8712; H : (a, b) &#8712; R}.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459340549705" ID="ID_1149799317" MODIFIED="1459340589417" TEXT="Egy rel&#xe1;ci&#xf3; determinisztikus">
 <richcontent TYPE="NOTE"><html>
@@ -259,8 +250,7 @@
       &#8704;a &#8712; A : |R(a)| &#8804; 1.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1459340598495" ID="ID_155326154" MODIFIED="1459340614055" TEXT="m&#xe1;sk&#xe9;ppen parci&#xe1;lis f&#xfc;ggv&#xe9;ny">
 <node CREATED="1459340686167" ID="ID_473273951" MODIFIED="1459340695769" TEXT="Jel&#xf6;l&#xe9;s f &#x2208; A &#x2192; B"/>
 </node>
@@ -278,8 +268,7 @@
       R^(&#8722;1) ::= {(b, a) &#8712; B &#215; A | (a, b) &#8712; R}.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1459340770253" ID="ID_1681544726" MODIFIED="1459340804053" TEXT="Halmaz eset&#xe9;n inverz k&#xe9;p R^(-1)(H)">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -290,8 +279,7 @@
       R^(&#8722;1) (H) = {a &#8712; A | R(a) &#8745; H = &#8709;}.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node COLOR="#ff0000" CREATED="1459340755333" ID="ID_406625924" MODIFIED="1459340846990" TEXT="H halmaz R rel&#xe1;ci&#xf3; szerinti &#x151;sk&#xe9;pe">
@@ -304,8 +292,7 @@
       R^&#8722;1(H) ::= {a &#8712; D R | R(a) &#8838; H}.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1459340877259" ID="ID_933867625" MODIFIED="1459340885627" TEXT="&#xe1;ltal&#xe1;ban nem egyezik meg az inverzzel de r&#xe9;sze"/>
 </node>
 <node CREATED="1459340846979" ID="ID_1172416464" MODIFIED="1459341190759" TEXT="P r&#xe9;szhalmaz Q eset&#xe9;n P-t Q lesz&#x171;k&#xed;t&#xe9;s&#xe9;nek nevezz&#xfc;k">
@@ -319,8 +306,7 @@
       R| H ::= R &#8745; (H &#215; B)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -338,8 +324,7 @@
       R = {(a, c) &#8712; A &#215; C | &#8707;b &#8712; B : (a, b) &#8712; P &#233;s (b, c) &#8712; Q},
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1459341521247" ID="ID_1743943953" MODIFIED="1459341530276" TEXT="jel&#xf6;l&#xe9;se Q &#x25e6; P"/>
 </node>
 <node CREATED="1459341497161" ID="ID_1350000558" MODIFIED="1459341604663" TEXT="Szigor&#xfa; kompoz&#xed;ci&#xf3;">
@@ -355,8 +340,7 @@
       S = {(a, c) &#8712; A &#215; C | &#8707;b &#8712; B : (a, b) &#8712; P &#233;s (b, c) &#8712; Q &#233;s P (a) &#8838; D Q }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1459341533099" ID="ID_1747472282" MODIFIED="1459341562182" TEXT="jel&#xf6;l&#xe9;se Q o(ponttal a belsej&#xe9;ben) P"/>
 </node>
 <node CREATED="1459341613635" ID="ID_1809838788" MODIFIED="1459341673720" TEXT="Ha R &#x2286; A &#xd7; A homog&#xe9;n rel&#xe1;ci&#xf3;">
@@ -377,8 +361,7 @@
       R^n ::= R &#9702; R n&#8722;1
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1459341737102" ID="ID_613703422" MODIFIED="1459341741530" TEXT="identit&#xe1;s rel&#xe1;ci&#xf3;">
@@ -401,8 +384,7 @@
       / D R }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459341908501" ID="ID_1362739750" MODIFIED="1459341948348" TEXT="Olyan pontokon van &#xe9;rtelmezve amelyekb&#x151;l kiindulva a rel&#xe1;ci&#xf3;t nem lehet v&#xe9;gtelen sokszor egym&#xe1;s ut&#xe1;n alkalmazni"/>
 <node CREATED="1459341958486" ID="ID_1725130489" MODIFIED="1459342091277" TEXT="Olyan pontokat rendel, amelyeket &#xfa;gy kapunk, hogy a rel&#xe1;ci&#xf3; v&#xe9;ges sokszori alkalmaz&#xe1;s&#xe1;val kiker&#xfc;l&#xfc;nk az eredeti rel&#xe1;ci&#xf3; &#xe9;rtelmez&#xe9;si tartom&#xe1;ny&#xe1;b&#xf3;l"/>
@@ -427,15 +409,14 @@
       &#8704;a &#8712; D_R(k&#233;t-fel&#252;lvon&#225;s) : R(k&#233;t-fel&#252;lvon&#225;s)(a) ::= R(fel&#252;lvon&#225;s)(a)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459342710784" ID="ID_371011797" MODIFIED="1459342806138" TEXT="A korl&#xe1;tos lez&#xe1;rt, csak akkor k&#xfc;l&#xf6;nb&#xf6;zik a let&#xe1;rtt&#xf3;l, hogyha a rel&#xe1;ci&#xf3;t nem lehet egy pontb&#xf3;l kiindulva v&#xe9;gtelen sokszor kiindulva alkalmazni, de a v&#xe9;ges sokszori alkalmaz&#xe1;sok hossz&#xe1;ra nem tudunk korl&#xe1;tot mondani">
 <node CREATED="1459342814948" ID="ID_1953617449" MODIFIED="1459342840435" TEXT="Teh&#xe1;t v&#xe9;gtelen sok v&#xe9;ges alkalmaz&#xe1;s-sorozatot tudunk a pontb&#xf3;l ind&#xed;tani"/>
 </node>
 </node>
 </node>
-<node CREATED="1459342936964" FOLDED="true" ID="ID_821975961" MODIFIED="1459343464105" TEXT="Logikai rel&#xe1;ci&#xf3;k">
+<node CREATED="1459342936964" FOLDED="true" ID="ID_821975961" MODIFIED="1460555646192" TEXT="Logikai rel&#xe1;ci&#xf3;k">
 <node CREATED="1459343003034" ID="ID_168719900" MODIFIED="1459343015680" TEXT="R &#x2286; A &#xd7; L">
 <node CREATED="1459343016560" ID="ID_889833285" MODIFIED="1459343021314" TEXT="Ahol A tetsz&#x151;leges halmaz"/>
 </node>
@@ -449,8 +430,7 @@
       R igazs&#225;ghalmaz&#160;::= R &#8722;1 ({igaz}),
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459343110274" ID="ID_1425899555" MODIFIED="1459343160489" TEXT="R gyenge igazs&#xe1;ghalmaza">
 <richcontent TYPE="NOTE"><html>
@@ -462,8 +442,7 @@
       R gyengeigazs&#225;ghalmaz::= R (&#8722;1) ({igaz}).
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1459343163830" ID="ID_673807963" MODIFIED="1459343177295" TEXT="F&#xfc;ggv&#xe9;nyek eset&#xe9;ben megyegyezik"/>
 <node CREATED="1459343210122" ID="ID_193906166" MODIFIED="1459343237204" TEXT="H r&#xe9;szhalmaz A-n&#xe1;l karakterisztikus f&#xfc;ggv&#xe9;ny">
@@ -483,25 +462,68 @@
       R|&#960; = R|&#960;igazs&#225;ghalmaz &#8746; {(a, a) &#8712; A &#215; A | a &#8712; &#960; \ D R }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1459343339836" ID="ID_1901878817" MODIFIED="1459343356204" TEXT="A rel&#xe1;ci&#xf3; lesz&#x171;k&#xed;t&#xe9;se &#xe9;s kiterjeszt&#xe9;se a felt&#xe9;tel igazs&#xe1;ghalmaz&#xe1;ra">
 <node CREATED="1459343371245" ID="ID_1656216920" MODIFIED="1459343390121" TEXT="D_R|&#x3c0; = &#x3c0; igazs&#xe1;galmaz"/>
 </node>
 <node CREATED="1459343400379" ID="ID_1912871348" MODIFIED="1459343427295" TEXT="lez&#xe1;rtja a felt&#xe9;telre vonatkoz&#xf3; lez&#xe1;rt illetve korl&#xe1;tos lez&#xe1;rt"/>
 </node>
 </node>
-<node CREATED="1459343465671" ID="ID_23729917" MODIFIED="1459343470260" TEXT="Direkt szorzat"/>
-<node CREATED="1459343471953" ID="ID_504483678" MODIFIED="1459343477467" TEXT="F&#xfc;ggv&#xe9;nyterek"/>
+<node CREATED="1459343465671" FOLDED="true" ID="ID_23729917" MODIFIED="1460579776976" TEXT="Direkt szorzat">
+<node CREATED="1460579331053" ID="ID_738005615" MODIFIED="1460579336891" TEXT="rendezett n-esek"/>
+<node CREATED="1460579370061" ID="ID_1578591451" MODIFIED="1460579381242" TEXT="Kieg&#xe9;sz&#xed;t&#x151; altere A-nak"/>
+<node CREATED="1460579383257" ID="ID_396004440" MODIFIED="1460579391383" TEXT="Projekci&#xf3;"/>
+<node CREATED="1460579514159" ID="ID_1485968146" MODIFIED="1460579522765" TEXT="Ekvivalens"/>
+<node CREATED="1460579572791" ID="ID_1762538061" MODIFIED="1460579576059" TEXT="Bijekci&#xf3;">
+<node CREATED="1460579584766" ID="ID_728293860" MODIFIED="1460579595709" TEXT="K&#xf6;lcs&#xf6;nesen egy&#xe9;rtelm&#x171; megfeleltet&#xe9;s"/>
+</node>
+</node>
+<node CREATED="1459343471953" FOLDED="true" ID="ID_504483678" MODIFIED="1460579776129" TEXT="F&#xfc;ggv&#xe9;nyterek">
+<node CREATED="1460579616518" ID="ID_1830715870" MODIFIED="1460579625142" TEXT="f&#xfc;ggv&#xe9;nyek &#xe9;s egy m&#x171;velet"/>
+<node CREATED="1460579653606" ID="ID_794617055" MODIFIED="1460579658715" TEXT="Parci&#xe1;lis f&#xfc;ggv&#xe9;nyek"/>
+<node CREATED="1460579678823" FOLDED="true" ID="ID_1208183200" MODIFIED="1460579774922" TEXT="Logikai f&#xfc;ggv&#xe9;nyek">
+<node CREATED="1460579697254" ID="ID_1382182174" MODIFIED="1460579703697" TEXT="Szok&#xe1;sos logikai m&#x171;veletek"/>
+<node CREATED="1460579730950" ID="ID_171411570" MODIFIED="1460579734540" TEXT="implik&#xe1;ci&#xf3;"/>
+</node>
+</node>
 </node>
 <node CREATED="1457531102895" ID="ID_1702385452" MODIFIED="1457531119089" POSITION="right" TEXT="3. Specifik&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 <node CREATED="1457531071847" ID="ID_409542244" MODIFIED="1457531091539" POSITION="left" TEXT="2. A programoz&#xe1;s alapfogalmai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459344213020" ID="ID_858321385" MODIFIED="1459344220421" TEXT="&#xc1;llapott&#xe9;r"/>
-<node CREATED="1459344388425" ID="ID_353544968" MODIFIED="1459344394211" TEXT="A feladat"/>
-<node CREATED="1459344621902" ID="ID_1432092049" MODIFIED="1459344639160" TEXT="A program"/>
+<node CREATED="1459344213020" FOLDED="true" ID="ID_858321385" MODIFIED="1460581709952" TEXT="&#xc1;llapott&#xe9;r">
+<node CREATED="1460555809251" ID="ID_710115402" MODIFIED="1460555819715" TEXT="A t&#xed;pus&#xe9;rt&#xe9;khalmazok direkt szorzata"/>
+<node CREATED="1460555850406" ID="ID_1735699739" MODIFIED="1460555884146" TEXT="A t&#xed;pus&#xe9;rtk&#xe9;halmazok bizonyos k&#xf6;z&#xf6;s tulajdons&#xe1;ggal rendelkez&#x151; elemekb&#x151;l &#xe1;llnak"/>
+<node CREATED="1460555900537" ID="ID_1122334192" MODIFIED="1460555921407" TEXT="Az &#xe1;llapott&#xe9;r komponensei k&#xf6;z&#xf6;tt egy halmaz t&#xf6;bbsz&#xf6;r is szerepelhet"/>
+<node CREATED="1460555957792" ID="ID_1525813440" MODIFIED="1460555967212" TEXT="Az &#xe1;llapott&#xe9;rnek csak v&#xe9;ges sok komponense van"/>
+</node>
+<node CREATED="1459344388425" FOLDED="true" ID="ID_353544968" MODIFIED="1460581710935" TEXT="A feladat">
+<node CREATED="1460555991045" ID="ID_909260253" MODIFIED="1460556015435" TEXT="A feladat egy F &#x2286; A &#xd7; A rel&#xe1;ci&#xf3;"/>
+<node CREATED="1460556024431" ID="ID_331107282" MODIFIED="1460556033187" TEXT="Egy lek&#xe9;pez&#xe9;s az &#xe1;llapott&#xe9;ren">
+<node CREATED="1460556062387" ID="ID_544439563" MODIFIED="1460556071756" TEXT="Minden pontra megmondjuk, hova akarunk eljutni"/>
+</node>
+<node CREATED="1460556126738" ID="ID_756052462" MODIFIED="1460556139585" TEXT="input-output modell"/>
+<node CREATED="1460580491918" ID="ID_218161645" MODIFIED="1460580643803" TEXT="Mivel rel&#xe1;ci&#xf3;, &#xed;gy nem determinisztikus felt&#xe9;tlen"/>
+</node>
+<node CREATED="1459344621902" FOLDED="true" ID="ID_1432092049" MODIFIED="1460581707074" TEXT="A program">
+<node CREATED="1460580710558" ID="ID_1823767210" MODIFIED="1460580790820" TEXT="A sz&#xe1;m&#xed;t&#xf3;g&#xe9;pen fut&#xf3;kra, algoritmusokra gondolunk"/>
+<node CREATED="1460580792902" ID="ID_1626553960" MODIFIED="1460580808407" TEXT="A mem&#xf3;ria tartalma folyamatosan v&#xe1;ltozik"/>
+<node CREATED="1460580848856" ID="ID_924586693" MODIFIED="1460580868462" TEXT="Id&#x151;ben dinamikus folyamat">
+<node CREATED="1460581028534" ID="ID_577666161" MODIFIED="1460581041627" TEXT="Statikus modellel egy dinamikus folyamat le&#xed;r&#xe1;sa"/>
+</node>
+<node COLOR="#ff0000" CREATED="1460581089390" ID="ID_575332450" MODIFIED="1460581094799" TEXT="defin&#xed;ci&#xf3;">
+<node CREATED="1460581106078" ID="ID_1769182288" MODIFIED="1460581126292" TEXT="Az &#xe1;llapott&#xe9;r minden pontj&#xe1;hoz hozz&#xe1;rendel legal&#xe1;bb egy sorozatot">
+<node CREATED="1460581331334" ID="ID_906573031" MODIFIED="1460581341572" TEXT="A rosszul m&#x171;k&#xf6;d&#xe9;s is valami"/>
+</node>
+<node CREATED="1460581358582" ID="ID_726930925" MODIFIED="1460581434541" TEXT="A program &#xe9;rt&#xe9;kk&#xe9;szlete olyan sorozatokb&#xf3;l &#xe1;ll, amelyekben nem szerepel egym&#xe1;s ut&#xe1;n ugyanaz az elem, ha pedig igen akkor az ism&#xe9;tl&#x151;dik v&#xe9;gtelen sokszor"/>
+<node CREATED="1460581482319" ID="ID_1281551117" MODIFIED="1460581501459" TEXT="Ha az &#xe1;llapott&#xe9;r egy pontj&#xe1;hoz v&#xe9;gtelen sorozatot rendel a program akkor a fut&#xe1;sa nem &#xe1;ll meg"/>
+<node CREATED="1460581509486" ID="ID_375043707" MODIFIED="1460581564588" TEXT="A m&#x171;k&#xf6;d&#xe9;s a teljes t&#xf6;rt&#xe9;netet le&#xed;rja, a kiindul&#xf3; &#xe1;llapot az els&#x151; &#xe1;llapot">
+<node CREATED="1460581565446" ID="ID_1056019130" MODIFIED="1460581575650" TEXT="egy hossz&#xfa; sorozat"/>
+</node>
+<node CREATED="1460581622454" ID="ID_736481091" MODIFIED="1460581674205" TEXT="A program is rel&#xe1;ci&#xf3;k&#xe9;nt van defini&#xe1;lva, teh&#xe1;t a m&#x171;k&#xf6;d&#xe9;s nemdetermisztikus"/>
+</node>
+</node>
 <node CREATED="1459344967183" ID="ID_1781191249" MODIFIED="1459344972337" TEXT="A programf&#xfc;ffv&#xe9;ny"/>
 <node CREATED="1459345196603" ID="ID_664477531" MODIFIED="1459345198457" TEXT="Megold&#xe1;s">
 <node CREATED="1459345384839" ID="ID_712801597" MODIFIED="1459345387598" TEXT="Szigor&#xed;t&#xe1;s"/>
