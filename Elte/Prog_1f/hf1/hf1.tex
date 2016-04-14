@@ -196,26 +196,27 @@
 					\item Van megoldás, a második fordul elő 2-szer\\
 					(t8.txt: [1dsfas ASAD2 ASAD2] válasz: igaz, 2. index, ASAD2 értékkel)
 				\end{itemize}
+				\item \textit{több} hosszú
+				\begin{itemize}[label={}]
+					\item Nincs megoldás\\)
+					(t9.txt: [KAGGSD24D1 FAFASKJE2  KAGGSD24D1 ASFLKFAAS MNBUP7AS] - válasz hamis)
+					\item Egy elem fordul elő 2-szer\\
+					(t10.txt: [KAGGSD24D1 FAFASKJE2  KAGGSD24D1 ASFLKFAAS MNBUP7AS] - válasz igaz, 1. index, KAGGSD24D1 értékkel)
+					\item Több elem fordul elő 2-szer\\
+					(t11.txt: [KAGGSD24D1 FAFASKJE2 FAFASKJE2 ASFLKFAAS MNBUP7AS] - válasz igaz, 2. index, FAFASKJE2 értékkel)
+					\item Több elem fordul elő többször\\
+					(t12.txt: [KAGGSD24D1 FAFASKJE2 FAFASKJE2 KAGGSD24D1 ASFLKFAAS MNBUP7AS] - válasz igaz, 2. index, FAFASKJE2 értékkel)
+				\end{itemize}
 			\end{enumerate}
-			\textbf{völgyek száma} szerint
+			\item \textbf{Pesszimista keresés} tesztesetei
 				\begin{enumerate}
-					\item Nincs elég elem a tömbben, hogy völgy legyen\\
-					(t6.txt: [-5 6] - válasz hamis)
-					\item Van elég elem a tömbben, hogy lehessen völgy de még sincsen\\
-					(t7.txt: [1 2 3] - válasz hamis)
-					\item Egy völgy van a sorozatban az a maximum\\
-					(t8.txt: [3 2 3] válasz: igaz, 2. index, 2 értékkel)
-					\item Több völgy van a sorozatban, az első a maximum\\
-					(t9.txt: [15 6 5 12 4] válasz: igaz, 3. index, 5 értékkel)
-					\item Több völgy van a sorozatban, nem az első a maximum\\
-					(t10.txt: [15 6 45 12 42] válasz: igaz, 4. index, 12 értékkel)
+					\item Több  elem van de nincs megoldás\\
+					(t5.txt: [1dsfas ASAD2 xyy3asd] - válasz hamis)
+					\item Több elem van, van megoldás\\
+					(t10.txt: [KAGGSD24D1 FAFASKJE2  KAGGSD24D1 ASFLKFAAS MNBUP7AS] - válasz igaz, 1. index, KAGGSD24D1 értékkel)
+					\item Több elem van, nem az első a megoldás\\
+					(t12.txt: [KAGGSD24D1 FAFASKJE2 FAFASKJE2 KAGGSD24D1 ASFLKFAAS MNBUP7AS] - válasz igaz, 2. index, FAFASKJE2 értékkel)
 				\end{enumerate}
-			\item \textbf{Különleges} esetek
-				\begin{enumerate}
-					\item Negatív számok (nincs különbség beolvasásban)
-					\item Betűket tartalmazó input beolvasása (A karakterek ASCII kódja kerül beolvasásra számként)
-					\item Nem érvényes teszteset, ha a signed integer érték maximumánál $2^{31}-1=2147483657$-nél nagyobb vagy a minimumánál $-2^{31}=-21474836578$-nál kisebb értéket tartalmaz a teszt.
-				\end{enumerate} 
 		\end{enumerate}
 
 		% Fehér doboz esetek %
@@ -226,8 +227,8 @@
 			\item Hibás vagy nem létező állománynév megadása.
 			\item Állomány nevének megadása parancssorból
 			\item Ismételt futtatás kipróbálása
-			\item Olyan állomány olvasása, ahol egy sorban több érték is található egyetlen illetvetöbb szóközzel és/vagy tabulátor jellel elválasztva (t12.txt).
+			\item Olyan állomány olvasása, ahol egy sorban több érték is található egyetlen illetve több szóközzel és/vagy tabulátor jellel elválasztva (t12.txt).
 			\item Olyan állomány olvasása, ahol minden érték külön sorban van. (t11.txt).
-			\item Főprogram ciklusának ellenőrzése: olyan bemenő adatokkal, amelyekre a ciklus egyszer sem fut le (Pl: t1.txt), pontosan egyszer fut le (Pl: t7.txt), többször lefut és igaz logikai értékkel lép ki (Pl: t9.txt), vagy hamis logikai értékkel lép ki (Pl: t13.txt).
+			\item Főprogram ciklusának ellenőrzése: olyan bemenő adatokkal, amelyekre a ciklus egyszer sem fut le (Pl: t1.txt), pontosan egyszer fut le (Pl: t7.txt), többször lefut és igaz logikai értékkel lép ki (Pl: t10.txt), vagy hamis logikai értékkel lép ki (Pl: t9.txt).
 		\end{enumerate}
 \end{document}
