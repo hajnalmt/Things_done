@@ -56,7 +56,8 @@
 		\begin{flalign*}
 			&A=(t:String^n,~min:\mathbb{N},~ind:\mathbb{N},~l:\mathbb{L})\\
 			&Ef=(t=t')\\
-			&Uf=(Ef~\wedge~min, ind, l = \min _{i=1,~Vanmasodik() = igaz}^{i=n-1}(Vanmasodik()))
+			&Uf=(Ef~\wedge~min, ind, l = \min _{i=1,~Vanmasodik() = igaz}^{i=n-1}(Vanmasodik()))\\
+			& ahol~Vanmasodik() = search_{k=i+1}^{n} t[i]=t[k]
 		\end{flalign*}
 	
 	%% Algoritmus fejezet %%
@@ -198,7 +199,7 @@
 				\end{itemize}
 				\item \textit{több} hosszú
 				\begin{itemize}[label={}]
-					\item Nincs megoldás\\)
+					\item Nincs megoldás\\
 					(t9.txt: [KAGGSD24D1 FAFASKJE2  KAGGSD24D1 ASFLKFAAS MNBUP7AS] - válasz hamis)
 					\item Egy elem fordul elő 2-szer\\
 					(t10.txt: [KAGGSD24D1 FAFASKJE2  KAGGSD24D1 ASFLKFAAS MNBUP7AS] - válasz igaz, 1. index, KAGGSD24D1 értékkel)
