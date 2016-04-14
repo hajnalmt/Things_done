@@ -51,17 +51,17 @@
 
 	%% Specifikáció fejezet %%
 	\fejezet{Specifikáció}\\
-	Az értékeket egy tömbben tároljuk.
+	Az értékeket egy tömbben tároljuk. 
 		% A feladat definiálása, Adathalmaz, Előfeltétel, Utófeltétel %
 		\begin{flalign*}
 			&A=(t:String^n,~min:\mathbb{N},~ind:\mathbb{N},~l:\mathbb{L})\\
 			&Ef=(t=t')\\
-			&Uf=(Ef~\wedge~min, ind, l = \min _{i=1, Vanmasodik() = igaz}^{i=n-1}(Vanmasodik()))
+			&Uf=(Ef~\wedge~min, ind, l = \min _{i=1,~Vanmasodik() = igaz}^{i=n-1}(Vanmasodik()))
 		\end{flalign*}
 	
 	%% Algoritmus fejezet %%
 	\fejezet{Algoritmus}\\
-	A feladatot a feltételes maximumkeresés tételére vezetjük vissza, csak esetünkben minimumkereséssel. \\
+	A feladatot a feltételes maximumkeresés tételére vezetjük vissza, csak esetünkben minimumkereséssel. Továbbá a második elem megkeresése egy pesszimista lineáris kereséssel $Vanmasodik()$ oldható meg. Érdekes megfigyelés, hogy a lineáris keresés eredményét kapja meg feltételként és bemenetként is a feltételes maximum keresés. A struktogrammok az alábbiak: \vspace{5mm}\\
 		% Megfeleltetés%
 		\noindent\hfill
 		\begin{stukibox}[6cm]
@@ -71,7 +71,7 @@
 		\hfill
 		\begin{stukibox}[4cm]
 			\stm*{\bfseries{pessz. lin. ker.}}
-			\stm*[4]{j:m..n $\sim$ i+1..n \\ $ \beta(i) \sim$ t[i] = t[j] }
+			\stm*[4]{k:m..n $\sim$ i+1..n \\ $ \beta(i) \sim$ t[i] = t[k] }
 		\end{stukibox}
 		\hfill{}
 
@@ -110,40 +110,43 @@
 	\fejezet{Implementáció}\\
 		% Adattípusok %
 		{\large Adattípusok megvalósítása} \vspace{2mm} \\
-		A kódoláskor a t tömböt \texttt{vector<int>}-ként deklaráltam, amelynek mérete \texttt{t.size()} alakban érhető el. Mivel a vektor C++-ban 0-tól indexelődik, így a tervbeli 2-től n-1-ig tartó ciklus az esetünkben \texttt{1-től t.size()-2-ig} fog tartani. A struktogramm kódja így:
-		% A struktogramm %
+		A kódoláskor a t tömböt \texttt{vector<string>}-ként deklaráltam, amelynek mérete \texttt{t.size()} alakban érhető el. Mivel a vektor C++-ban 0-tól indexelődik, így a feltételes maximumkeresésben lévő 1-től n-1-ig tartó ciklus az esetünkben \texttt{0-tól t.size()-2-ig} fog tartani, a lineáris keresésben lévő i+1-től n-ig tartó pedig \texttt{i+1-től t.size()-1-ig}. \vspace{2mm} \\
+		{\large Programváz} \vspace{2mm} \newline
+		A Program három fő függvényre épül. \\
+		A $ReadFromFile()$ függvény képes beolvasni, tetszőleges whitespace karakterrel ellátott stringeket. Bár a feladat útlevelekre volt specifikálva, nem tudjuk az útlevelek pontos formátumát, függhet az adott országtól is akár, viszont igaz rá, hogy belefér a string típusba.\\
+		A $MasodikUtl()$ függvény a minimumkeresést valósítja meg. Egy min változóban tárolja el a másodikindexeket, és mindig a legkisebbel írja felül. Kimenetei változó még egy bool l változó mely abban az esetben lesz hamis, ha nincs útlevél, ami kétszer előfordulna, ezen kívűl az ind változó fogja a leghamarabb kétszer előforduló elem első előfordulásának indexét tartalmazni. Implementációja: \\
+		MasodikUtl:
+		% Stuki megvalósítása:
 		\texttt{
 			\begin{tabbing}
-				\hspace{2cm}\= l=false \+\\
-				for (int i=1; i < t.size()-1; ++i) \{\\
-				\hspace{1cm}\= if (t[i-1] > t[i] \&\& t[i+1] > t[i] \&\& l) \{ \+\\
-					\hspace{1cm}\=if (t[i] > max) \{ \+\\
-					\hspace{1cm}\=max = t[i]; \+\\
-					ind = i+1;\-\\
-					\}\-\\
-				\}\\
-				else if (t[i-1] > t[i] \&\& t[i+1] > t[i]) \{ \+\\
-					l = true;\\
-					max = t[i];\\
-					ind = i+1;\-\\
-				\} \-\\
-			\}
+				\hspace{2cm}\= ind = t.size(); \+\\
+				unsigned int min = t.size(); \\
+				for (unsigned int i = 0; i < t.size()-2; ++i) \{\\
+				\hspace{1cm}\=unsigned int ind2 = i; \+\\
+				bool l2 = false; \\
+					if (Pesszker(l2, ind2, t)) \{ \\
+						\hspace{1cm}\= l =true \+\\
+							if (ind2 < min) \{ \\
+							\hspace{1cm}\=ind2 = min; \+\\
+								ind = i;\-\\
+							\}\}\}\-\-\-\\
 			\end{tabbing}
 		}
-		% Bemenő adattípusok %
-		\noindent {\large Bemenő adatok formája} \vspace{2mm}\\
-		A bemenő adatokat egy szöveges állományból kell a tömbbe bemásolni. Az állományban a megadott neveket szóközökkel, tabulátor jelekkel vagy sorvége jelekkel elválasztva kell beírni. Az állomány minden sorát sorvége jel zárja le. Például:
-		% Bemenő adatokra példa %
+		A $Pesszker()$ függvény a struktogrammban lévő $Vanmasodik()$ függvény implementációja. Egy l2 változóban adja vissza, hogy az adott indexen lévő tömbelem előfordul-e még egyszer, az ind2 változóban pedig ha előfordul akkor azt, hogy melyik indexen. Implementációja: \\
+		Pesszker:
+		% Stuki megvalósítása:
 		\texttt{
 			\begin{tabbing}
-			\hspace{2cm}\= 12 6 8 11\+\\
-			45 \hspace{1cm} 78\\
-			44 324\-
+				\hspace{2cm}\= for (unsigned int i = ind2+1; i < t.size()-1 \&\& !l2; ++i) \{ \+\\
+					\hspace{1cm}\=if (t[ind2] == t[i]) \{ \+\\
+						\hspace{1cm}\=l2 = true;bool l2 = false; \+\\
+							ind2 = i; \-\\
+						\}\-\\
+					\} \-\\
 			\end{tabbing}
-		}\vspace{2mm}
-		% Függvények kapcsolódása %
-		\noindent {\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
-		A kódban több függvényt is használunk. Az \texttt{Maxvolgy()} tartalmazza a tervben leírt keresést, a \texttt{ReadFromFile()} tölti fel egy szöveges állományból a tömböt nevekkel, ezeket a függvényeket pedig a \texttt{main()} hívja, amelyik az eredmény kiírását is végzi.
+		}
+
+		{\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
 		% A függvény kapcsolódást szemléltető ábra %
 		\begin{center}
 		\begin{tikzpicture}
@@ -151,10 +154,11 @@
 			\node [block] (main) {\textbf{main()}}
 				[child anchor=north]
 				child {node [block] (readfromfile) {\textbf{ReadFromFile()}}}
-				child {node [block] (maxvolgy) {\textbf{Maxvolgy()}}};
+				child {node [block] (masodikutl) {\textbf{MasodikUtl()}}}
+				child {node [block] (pesszker) {\textbf{Pesszker()}}};
 		\end{tikzpicture}\vspace{2mm}\\
 		\end{center}
-
+	
 	%% Tesztelés fejezet %%
 	\fejezet{Tesztelési terv}\\
 		% Fekete doboz esetek %
