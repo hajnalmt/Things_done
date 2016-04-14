@@ -26,6 +26,7 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{tikz}
+\usepackage{stuki}
 
 %HEADER
 \sloppy
@@ -53,34 +54,56 @@
 	Az értékeket egy tömbben tároljuk.
 		% A feladat definiálása, Adathalmaz, Előfeltétel, Utófeltétel %
 		\begin{flalign*}
-			&A=(t:\mathbb{R}^n,~max:\mathbb{R},~ind:\mathbb{N},~l:\mathbb{L})\\
+			&A=(t:String^n,~min:\mathbb{N},~ind:\mathbb{N},~l:\mathbb{L})\\
 			&Ef=(t=t')\\
-			&Uf=(Ef~\wedge~\max_{i=2,~t[i]<t[i-1],~t[i]<t[i+1]}^{i=n-1}=t[i])
+			&Uf=(Ef~\wedge~min, ind, l = \min _{i=1, Vanmasodik() = igaz}^{i=n-1}(Vanmasodik()))
 		\end{flalign*}
 	
 	%% Algoritmus fejezet %%
 	\fejezet{Algoritmus}\\
-	A feladatot a feltételes maximumkeresés tételére vezetjük vissza.
+	A feladatot a feltételes maximumkeresés tételére vezetjük vissza, csak esetünkben minimumkereséssel. \\
 		% Megfeleltetés%
-		\begin{flalign*}
-			&m..n~\sim~2..n-1\\
-			&\beta~\sim~t[i]<t[i-1],~t[i]<t[i+1]\\
-			&f(i)~\sim~t[i]
-		\end{flalign*}
-		% Table %
-		\begin{tabular}{|m{1em}|m{7em}|m{7em}|m{3em}|m{8em}|}
-			\hline
-				\multicolumn{5}{|c|}{$l:=hamis$}\\
-			\hline
-				\multicolumn{5}{|c|}{$i=2..n-1$}\\
-			\cline{2-5}
-				& $t[i]>t[i-1]~\vee \newline t[i]>t[i+1]$ &
-				\multicolumn{2}{c|}{$l~\wedge~t[i]<t[i-1]~\wedge~t[i]<t[i+1]$} &
-				$\neg l~\wedge~t[i]<t[i-1] \newline \wedge~t[i]<t[i+1]$ \\
-			\cline{2-5}
-				 \multirow{2}{*}{} & \multirow{2}{*}{SKIP} & \multicolumn{2}{c|}{$max < t[i]$} & $l,~max,~ind :=$  \\\cline{3-4} & & $max,~ind:=t[i],~i$ & SKIP & $igaz,~t[i],~i$ \\
-			\hline
-		\end{tabular}\\
+		\noindent\hfill
+		\begin{stukibox}[6cm]
+			\stm*{\bfseries{felt. max. ker.}}
+			\stm*[4]{i:m..n $\sim$ 1..n-1 \\ $\beta(i) \sim$ Vanmasodik()=igaz \\ f(i) $\sim$ Vanmasodik()}
+		\end{stukibox}
+		\hfill
+		\begin{stukibox}[4cm]
+			\stm*{\bfseries{pessz. lin. ker.}}
+			\stm*[4]{j:m..n $\sim$ i+1..n \\ $ \beta(i) \sim$ t[i] = t[j] }
+		\end{stukibox}
+		\hfill{}
+
+		\noindent\hfill
+		\begin{stuki}[\textwidth]
+			\stm*{l, min, ind:=hamis, n, 0}
+			\begin{WHILE}{4}{\stm{i=0..n-1}}
+				\stm{j,l_2=Vanmasodik()}
+				\begin{CASE}[1]{2}{6}
+				\WHEN[1] {\stm[1]{\lnot l_2 }}
+					\stm*[1]{SKIP}
+				\WHEN[3] {\stm[1]{l_2 \land l}}
+					\begin{IF}{1}{\stm{min>j}}
+						\stm{min,ind=j,i}
+					\ELSE
+						\stm*{SKIP}
+					\end{IF}
+				\WHEN[2] {\stm[1]{l_2 \land \lnot l}}
+					\stm[1]{l, min, ind = igaz, j, i}
+				\end{CASE}
+			\end{WHILE}
+		\end{stuki}
+		\begin{stuki*}{Vanmasodik} 
+			\stm{l_2, j:= hamis, i}
+			\begin{WHILE}{2}{\stm{k=i+1..n}}
+				\begin{IF}{1}{\stm{t[i]=t[k] \land \lnot l_2}}
+					\stm{l_{2}, j := igaz, k}
+				\ELSE
+					\stm{SKIP}
+				\end{IF}
+			\end{WHILE}
+		\end{stuki*}
 		\vspace{5mm} 
 	
 	%% Implementáció fejezet %%
