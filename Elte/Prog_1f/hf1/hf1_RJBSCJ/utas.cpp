@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
             cout << "Nincs olyan utas, aki kétszer fordult meg a határon." << endl;
         }
         else {
-            cout << "A leghamarabb legalább kétszer megfordult utas útlevélszáma:" << t[ind]  << " (indexe:" << ind << ")" << endl;
+            cout << "A leghamarabb legalább kétszer megfordult utas útlevélszáma:" << t[ind]  << " (indexe:" << ind+1 << ")" << endl;
         }
 
             cout << endl << "Futtassam újra? (I/N) "; cin  >> ch;

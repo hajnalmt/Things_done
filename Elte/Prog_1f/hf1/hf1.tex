@@ -145,9 +145,8 @@
 					\} \-\\
 			\end{tabbing}
 		}
-
-		{\large A függvények kapcsolódási szerkezete} \vspace{2mm}\\
-		% A függvény kapcsolódást szemléltető ábra %
+		{\large A függvények kapcsolódási szerkezete} \\
+		% A függvény-kapcsolódást szemléltető ábra %
 		\begin{center}
 		\begin{tikzpicture}
 			[level distance=20mm, sibling distance=60mm, align=center, block/.style ={rectangle, draw=blue, thick, fill=blue!20,text width=10em,align=center, rounded corners, minimum height=4em}];
@@ -180,22 +179,22 @@
 				\begin{itemize}[label={}]
 					\item Egyetlen érték van ami pozitív\\
 					(t3.txt: [4] - válasz hamis)
-					\item Egyetlen érték van ami 0\\
-					(t4.txt: [0] - válasz hamis)
-					\item Egyetlen érték van ami negatív\\
-					(t5.txt: [-6] - válasz hamis)
 				\end{itemize}
 				\item \textit{kettő} hosszú
 				\begin{itemize}[label={}]
 					\item Két egész érték\\
-					(t6.txt: [-5 6] - válasz hamis)
+					(t4.txt: [asdfasd221 adsfaf] - válasz hamis)
 				\end{itemize}
 				\item \textit{három} hosszú
 				\begin{itemize}[label={}]
-					\item Nincs völgy a sorozatban\\
-					(t7.txt: [1 2 3] - válasz hamis)
-					\item Van völgy a sorozatban\\
-					(t8.txt: [3 2 3] válasz: igaz, 2. index, 2 értékkel)
+					\item Nincs megoldás\\
+					(t5.txt: [1dsfas ASAD2 xyy3asd] - válasz hamis)
+					\item Van megoldás, első fordul elő 2-szer egymás után\\
+					(t6.txt: [1dsfas 1dsfas ASAD2] válasz: igaz, 1. index, 1dsfas értékkel)
+					\item Van megoldás, első fordul elő 2-szer, nem egymás után\\
+					(t7.txt: [1dsfas ASAD2 1dsfas] válasz: igaz, 1. index, 1dsfas értékkel)
+					\item Van megoldás, a második fordul elő 2-szer\\
+					(t8.txt: [1dsfas ASAD2 ASAD2] válasz: igaz, 2. index, ASAD2 értékkel)
 				\end{itemize}
 			\end{enumerate}
 			\textbf{völgyek száma} szerint
