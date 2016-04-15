@@ -56,8 +56,8 @@
 		\begin{flalign*}
 			&A=(t:String^n,~min:\mathbb{N},~ind:\mathbb{N},~l:\mathbb{L})\\
 			&Ef=(t=t')\\
-			&Uf=(Ef~\wedge~min, ind, l = \min _{i=1,~Vanmasodik() = igaz}^{i=n-1}(Vanmasodik()))\\
-			& ahol~Vanmasodik() = search_{k=i+1}^{n} t[i]=t[k]
+			&Uf=(Ef~\wedge~min, ind, l = \min _{i=1,~Vanmasodik() = igaz}^{i=n-1}(Vanmasodik(i,t)))\\
+			& ahol~Vanmasodik(i,t) = search_{k=i+1}^{n} t[i]=t[k]
 		\end{flalign*}
 	
 	%% Algoritmus fejezet %%
@@ -80,7 +80,7 @@
 		\begin{stuki}[\textwidth]
 			\stm*{l, min, ind:=hamis, n, 0}
 			\begin{WHILE}{4}{\stm{i=0..n-1}}
-				\stm{j,l_2=Vanmasodik()}
+				\stm{j,l_2=Vanmasodik(i,t)}
 				\begin{CASE}[1]{2}{6}
 				\WHEN[1] {\stm[1]{\lnot l_2 }}
 					\stm*[1]{SKIP}
@@ -95,7 +95,7 @@
 				\end{CASE}
 			\end{WHILE}
 		\end{stuki}
-		\begin{stuki*}{Vanmasodik} 
+		\begin{stuki*}{Vanmasodik(i,t)} 
 			\stm{l_2, j:= hamis, i}
 			\begin{WHILE}{2}{\stm{k=i+1..n}}
 				\begin{IF}{1}{\stm{t[i]=t[k] \land \lnot l_2}}
@@ -133,7 +133,7 @@
 							\}\}\}\-\-\-\\
 			\end{tabbing}
 		}
-		A $Pesszker()$ függvény a struktogrammban lévő $Vanmasodik()$ függvény implementációja. Egy l2 változóban adja vissza, hogy az adott indexen lévő tömbelem előfordul-e még egyszer, az ind2 változóban pedig ha előfordul akkor azt, hogy melyik indexen. Implementációja: \\
+		A $Pesszker()$ függvény a struktogrammban lévő $Vanmasodik(i,t)$ függvény implementációja. Egy l2 változóban adja vissza, hogy az adott indexen lévő tömbelem előfordul-e még egyszer, az ind2 változóban pedig ha előfordul akkor azt, hogy melyik indexen. Implementációja: \\
 		Pesszker:
 		% Stuki megvalósítása:
 		\texttt{
