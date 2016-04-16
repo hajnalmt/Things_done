@@ -4071,13 +4071,13 @@
 </node>
 </node>
 </node>
-<node CREATED="1460806357394" ID="ID_1645974212" MODIFIED="1460806441096" TEXT="&#x170;rlap &#xe9;s &#x170;rlapelemek">
-<node CREATED="1460807826881" ID="ID_378122339" MODIFIED="1460808354378" TEXT="Tipikus &#x171;rlapm&#x171;veletek">
+<node CREATED="1460806357394" FOLDED="true" ID="ID_1645974212" MODIFIED="1460809361922" TEXT="&#x170;rlap &#xe9;s &#x170;rlapelemek">
+<node CREATED="1460807826881" FOLDED="true" ID="ID_378122339" MODIFIED="1460809360268" TEXT="Tipikus &#x171;rlapm&#x171;veletek">
 <node CREATED="1460807836691" ID="ID_473310785" MODIFIED="1460807860462" TEXT="Interakci&#xf3; egyik legfontosabb eszk&#xf6;ze az &#x171;rlap"/>
 <node CREATED="1460807937892" ID="ID_812785219" MODIFIED="1460807946121" TEXT="Adatok beolvas&#xe1;sa, megad&#xe1;sa"/>
 <node CREATED="1460807947535" ID="ID_887534755" MODIFIED="1460807966247" TEXT="Adatok ellen&#x151;rz&#xe9;se"/>
 </node>
-<node CREATED="1460807968831" ID="ID_947167950" MODIFIED="1460808293254" TEXT="&#x170;rlap tulajdons&#xe1;gai, met&#xf3;dusai, esem&#xe9;nyei">
+<node CREATED="1460807968831" FOLDED="true" ID="ID_947167950" MODIFIED="1460809359200" TEXT="&#x170;rlap tulajdons&#xe1;gai, met&#xf3;dusai, esem&#xe9;nyei">
 <node CREATED="1460808233472" ID="ID_226529718" MODIFIED="1460808239823" TEXT="&lt;form&gt; elem"/>
 <node CREATED="1460808240806" ID="ID_1669655766" MODIFIED="1460808248938" TEXT="Tulajdons&#xe1;gai (anal&#xf3;g m&#xf3;dszer)">
 <node CREATED="1460808249715" ID="ID_1149769311" MODIFIED="1460808251656" TEXT="action"/>
@@ -4095,7 +4095,7 @@
 <node CREATED="1460808315138" ID="ID_1515079497" MODIFIED="1460808317071" TEXT="reset()"/>
 </node>
 </node>
-<node CREATED="1460808376300" ID="ID_1676004503" MODIFIED="1460808383500" TEXT="Input elem">
+<node CREATED="1460808376300" FOLDED="true" ID="ID_1676004503" MODIFIED="1460808792190" TEXT="Input elem">
 <node CREATED="1460808384876" ID="ID_982463009" MODIFIED="1460808405754" TEXT="&lt;input&gt;"/>
 <node CREATED="1460808449459" ID="ID_199012308" MODIFIED="1460808464392" TEXT="type attrib&#xfa;tuma-&gt;jellege"/>
 <node CREATED="1460808467019" ID="ID_165269042" MODIFIED="1460808488965" TEXT="K&#xf6;z&#xf6;s tulajdons&#xe1;gai">
@@ -4119,7 +4119,8 @@
 <node CREATED="1460808605154" ID="ID_1752626875" MODIFIED="1460808608821" TEXT="blur"/>
 </node>
 </node>
-<node CREATED="1460808613464" ID="ID_15339409" MODIFIED="1460808620539" TEXT="Sz&#xf6;veges beviteli mez&#x151;k">
+<node CREATED="1460808781372" FOLDED="true" ID="ID_1237505499" MODIFIED="1460809354008" TEXT="Egy&#xe9;b">
+<node CREATED="1460808613464" ID="ID_15339409" MODIFIED="1460808787491" TEXT="Sz&#xf6;veges beviteli mez&#x151;k">
 <node CREATED="1460808621780" ID="ID_1286565327" MODIFIED="1460808624100" TEXT="type">
 <node CREATED="1460808626344" ID="ID_103066352" MODIFIED="1460808628170" TEXT="text"/>
 <node CREATED="1460808629169" ID="ID_249998098" MODIFIED="1460808631154" TEXT="password"/>
@@ -4129,6 +4130,616 @@
 <node CREATED="1460808647423" ID="ID_1172097905" MODIFIED="1460808649348" TEXT="readOnly"/>
 <node CREATED="1460808650293" ID="ID_749455045" MODIFIED="1460808651894" TEXT="size"/>
 <node CREATED="1460808652782" ID="ID_60531757" MODIFIED="1460808656372" TEXT="maxLength"/>
+</node>
+</node>
+<node CREATED="1460808729045" ID="ID_1325905191" MODIFIED="1460808784512" TEXT="Checkbox">
+<node CREATED="1460808733253" ID="ID_1572894444" MODIFIED="1460808744079" TEXT="&lt;input type=&quot;checkbox&quot;"/>
+<node CREATED="1460808745110" ID="ID_157384837" MODIFIED="1460808748905" TEXT="jel&#xf6;l&#x151;mez&#x151;"/>
+<node CREATED="1460808749993" ID="ID_1765320979" MODIFIED="1460808759031" TEXT="Legfontosabb tulajdons&#xe1;g: checked">
+<node CREATED="1460808760824" ID="ID_1514416856" MODIFIED="1460808766336" TEXT="&#xed;rhat&#xf3;, olvashat&#xf3; logikai &#xe9;rt&#xe9;k"/>
+<node CREATED="1460808768063" ID="ID_1190030075" MODIFIED="1460808771569" TEXT="defaultChecked"/>
+</node>
+</node>
+<node CREATED="1460808793910" ID="ID_321925623" MODIFIED="1460808899690" TEXT="R&#xe1;di&#xf3; gombok">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &lt;form id=&quot;form1&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;alma&quot; value=&quot;piros&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;alma&quot; value=&quot;s&#225;rga&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;alma&quot; value=&quot;z&#246;ld&quot; checked&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;alma&quot; value=&quot;barna&quot;&gt;
+    </p>
+    <p>
+      &lt;/form&gt;
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460808801390" ID="ID_1246193405" MODIFIED="1460808815534" TEXT="&lt;input type=&quot;radio&quot;&gt;"/>
+<node CREATED="1460808817663" ID="ID_1607807636" MODIFIED="1460808827763" TEXT="name attrib&#xfa;tum fogja &#xf6;ssze &#x151;ket">
+<node CREATED="1460808944652" ID="ID_1948619239" MODIFIED="1460808955531" TEXT="name attrib&#xfa;tum alapj&#xe1;n">
+<node CREATED="1460808907462" ID="ID_1629893442" MODIFIED="1460808957012" TEXT="document.getElementyByName(nev)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function radioErteke(nev) {
+    </p>
+    <p>
+      &#160;&#160;var radiok = document.getElementsByName(nev);
+    </p>
+    <p>
+      &#160;&#160;var ertek;
+    </p>
+    <p>
+      &#160;&#160;var i = 0;
+    </p>
+    <p>
+      &#160;&#160;while (i &lt; radiok.length &amp;&amp; !radiok[i].checked) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;i = i + 1;
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;if (i &lt; radiok.length) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;ertek = radiok[i].value;
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;return ertek;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1460808964744" ID="ID_297362518" MODIFIED="1460808967242" TEXT="name alapj&#xe1;n">
+<node CREATED="1460808907462" ID="ID_520457740" MODIFIED="1460808996580" TEXT="document.getElementyByName(nev)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function radioErteke(nev) {
+    </p>
+    <p>
+      &#160;&#160;var radiok = document.getElementsByName(nev);
+    </p>
+    <p>
+      &#160;&#160;for (var i = 0; i &lt; radiok.length; i++) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;if (radiok[i].checked) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;return radiok[i].value;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;return undefined;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //Haszn&#225;lata
+    </p>
+    <p>
+      radioErteke('alma');&#160;&#160;//&quot;z&#246;ld&quot;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460809004577" ID="ID_868920028" MODIFIED="1460809038709" TEXT="document.getElementsByTagName(nev)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function radioErteke(nev, urlapAzon) {
+    </p>
+    <p>
+      &#160;&#160;var tarto = urlapAzon?document.getElementById(urlapAzon):document;
+    </p>
+    <p>
+      &#160;&#160;var inputok = tarto.getElementsByTagName('input');
+    </p>
+    <p>
+      &#160;&#160;var ertek;
+    </p>
+    <p>
+      &#160;&#160;var van = false;
+    </p>
+    <p>
+      &#160;&#160;var i = 0;
+    </p>
+    <p>
+      &#160;&#160;while (!van &amp;&amp; i &lt; inputok.length) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;van = inputok[i].name == nev &amp;&amp; inputok[i].checked;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;ertek = inputok[i].value;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;i = i + 1;
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;return ertek;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460809019327" ID="ID_209147421" MODIFIED="1460809019885" TEXT="elem.getElementsByTagName(nev)"/>
+</node>
+</node>
+<node CREATED="1460808828674" ID="ID_1688273440" MODIFIED="1460808841247" TEXT="Legfontosabb tulajdons&#xe1;ga: checked">
+<node CREATED="1460808842319" ID="ID_100808955" MODIFIED="1460808851685" TEXT="&#xed;rhat&#xf3;, olvashat&#xf3; logikai &#xe9;rt&#xe9;k"/>
+<node CREATED="1460808853234" ID="ID_1675458688" MODIFIED="1460808856556" TEXT="defaultChecked"/>
+</node>
+<node CREATED="1460808859264" ID="ID_453984057" MODIFIED="1460808870017" TEXT="Melyik van kiv&#xe1;lasztva?">
+<node CREATED="1460808870880" ID="ID_1296489515" MODIFIED="1460808875098" TEXT="id alapj&#xe1;n neh&#xe9;zkes"/>
+<node CREATED="1460808876105" ID="ID_1718111045" MODIFIED="1460808883377" TEXT="-&gt;name alapj&#xe1;n kell"/>
+</node>
+</node>
+<node CREATED="1460809044113" ID="ID_537905999" MODIFIED="1460809182905" TEXT="Leg&#xf6;rd&#xfc;l&#x151; mez&#x151;">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      select id=&quot;select1&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek1&quot;&gt;sz&#246;veg1&lt;/option&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek2&quot;&gt;sz&#246;veg2&lt;/option&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek3&quot; selected&gt;sz&#246;veg3&lt;/option&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek4&quot;&gt;sz&#246;veg4&lt;/option&gt;
+    </p>
+    <p>
+      &lt;/select&gt;
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460809052675" ID="ID_367667723" MODIFIED="1460809059503" TEXT="&lt;select&gt; elem"/>
+<node CREATED="1460809061062" ID="ID_961713460" MODIFIED="1460809064004" TEXT="Tulajdons&#xe1;gai">
+<node CREATED="1460809064659" ID="ID_1546699658" MODIFIED="1460809066469" TEXT="multiple"/>
+<node CREATED="1460809067748" ID="ID_482860998" MODIFIED="1460809069944" TEXT="size"/>
+<node CREATED="1460809071003" ID="ID_1154357653" MODIFIED="1460809072677" TEXT="value"/>
+<node CREATED="1460809074809" ID="ID_1307041594" MODIFIED="1460809079457" TEXT="selectedIndex"/>
+<node CREATED="1460809081918" ID="ID_1157200705" MODIFIED="1460809085399" TEXT="options-t&#xf6;mb">
+<node CREATED="1460809087335" ID="ID_923895809" MODIFIED="1460809090556" TEXT="options.length"/>
+</node>
+</node>
+<node CREATED="1460809093581" ID="ID_1316446154" MODIFIED="1460809097940" TEXT="options[i]">
+<node CREATED="1460809099142" ID="ID_679721479" MODIFIED="1460809107511" TEXT="options[i].value"/>
+<node CREATED="1460809110177" ID="ID_1621937157" MODIFIED="1460809116615" TEXT="options[i].text"/>
+<node CREATED="1460809118834" ID="ID_1926137452" MODIFIED="1460809124551" TEXT="options[i].selected"/>
+</node>
+<node CREATED="1460809127155" ID="ID_503359092" MODIFIED="1460809130079" TEXT="Met&#xf3;dusok">
+<node CREATED="1460809132352" ID="ID_1279253501" MODIFIED="1460809144579" TEXT="add(elem[, elemEl&#xe9;])"/>
+<node CREATED="1460809146105" ID="ID_1282798010" MODIFIED="1460809151030" TEXT="remove(index)"/>
+</node>
+<node CREATED="1460809183658" ID="ID_1319186673" MODIFIED="1460809223732" TEXT="Kiv&#xe1;lasztott opci&#xf3; indexe, &#xe9;rt&#xe9;ke, sz&#xf6;vege">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var select = document.getElementById('select1');
+    </p>
+    <p>
+      select.value;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//&quot;ertek3&quot;
+    </p>
+    <p>
+      select.selectedIndex;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//2
+    </p>
+    <p>
+      select.options[select.selectedIndex].value; //&quot;ertek3&quot;
+    </p>
+    <p>
+      select.options[select.selectedIndex].text;&#160;&#160;//&quot;sz&#246;veg3&quot;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460809224763" ID="ID_1594635470" MODIFIED="1460809247499" TEXT="kiv&#xe1;laszott opci&#xf3; adatai">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function kivalasztottOpcio(select) {
+    </p>
+    <p>
+      &#160;&#160;if (select &amp;&amp; select.selectedIndex &gt; -1) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;return {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;value: select.value,
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;text:&#160;&#160;select.options[select.selectedIndex].text,
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;index: select.selectedIndex
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;};
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;return {};
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //Haszn&#225;lata
+    </p>
+    <p>
+      var select = document.getElementById('select1');
+    </p>
+    <p>
+      kivalasztottOpcio(select);
+    </p>
+    <p>
+      //Object {value: &quot;ertek3&quot;, text: &quot;sz&#246;veg3&quot;, index: 2}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460809248450" ID="ID_415328118" MODIFIED="1460809263527" TEXT="&#xda;j opci&#xf3; hozz&#xe1;ad&#xe1;sa">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      //&#218;j elem hozz&#225;ad&#225;sa DOM m&#369;veletekkel
+    </p>
+    <p>
+      function ujOpcio(select, szoveg, ertek) {
+    </p>
+    <p>
+      &#160;&#160;var ujop = document.createElement('option');
+    </p>
+    <p>
+      &#160;&#160;ujop.value = ertek;
+    </p>
+    <p>
+      &#160;&#160;ujop.text = szoveg;
+    </p>
+    <p>
+      &#160;&#160;select.add(ujop, null);
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      //vagy
+    </p>
+    <p>
+      //&#218;j elem hozz&#225;ad&#225;sa innerHTML seg&#237;ts&#233;g&#233;vel
+    </p>
+    <p>
+      function ujOpcio(select, szoveg, ertek) {
+    </p>
+    <p>
+      &#160;&#160;var ujop = '&lt;option value=&quot;' + ertek + '&quot;&gt;' + szoveg + '&lt;/option&gt;';
+    </p>
+    <p>
+      &#160;&#160;select.innerHTML += ujop;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      //Haszn&#225;lata
+    </p>
+    <p>
+      var select = document.getElementById('select1');
+    </p>
+    <p>
+      ujOpcio(select, '&#250;j sz&#246;veg', 'ujErtek');
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460809269168" ID="ID_1092763892" MODIFIED="1460809289030" TEXT="Opci&#xf3; t&#xf6;rl&#xe9;se">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function torolOpcio(select, i) {
+    </p>
+    <p>
+      &#160;&#160;select.remove(i);
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //Haszn&#225;lata
+    </p>
+    <p>
+      var select = document.getElementById('select1');
+    </p>
+    <p>
+      torolOpcio(select, 3);
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460809290594" ID="ID_1094645435" MODIFIED="1460809315367" TEXT="T&#xf6;bbsz&#xf6;r&#xf6;s v&#xe1;laszt&#xe1;s eset&#xe9;n">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &lt;select id=&quot;select1&quot; multiple size=&quot;4&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek1&quot; selected&gt;sz&#246;veg1&lt;/option&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek2&quot;&gt;sz&#246;veg2&lt;/option&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek3&quot; selected&gt;sz&#246;veg3&lt;/option&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;option value=&quot;ertek4&quot;&gt;sz&#246;veg4&lt;/option&gt;
+    </p>
+    <p>
+      &lt;/select&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      function kivalasztottOpciok(select) {
+    </p>
+    <p>
+      &#160;&#160;var ertekek = [];
+    </p>
+    <p>
+      &#160;&#160;for (var i = 0; i &lt; select.options.length; i++) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;if (select.options[i].selected) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;ertekek.push(select.options[i].value);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;return ertekek;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //Haszn&#225;lata
+    </p>
+    <p>
+      var select = document.getElementById('select1');
+    </p>
+    <p>
+      kivalasztottOpciok(select);&#160;&#160;&#160;&#160;//[&quot;ertek1&quot;, &quot;ertek3&quot;]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460809316940" ID="ID_149630755" MODIFIED="1460809323564" TEXT="T&#xf6;bbsoros sz&#xf6;veges beviteli mez&#x151;">
+<node CREATED="1460809324609" ID="ID_1349927194" MODIFIED="1460809332214" TEXT="&lt;textarea&gt;&lt;/textarea&gt;"/>
+<node CREATED="1460809335455" ID="ID_1457930262" MODIFIED="1460809339379" TEXT="Tulajdons&#xe1;gok">
+<node CREATED="1460809340235" ID="ID_826996229" MODIFIED="1460809341083" TEXT="value"/>
+<node CREATED="1460809342434" ID="ID_297926455" MODIFIED="1460809345329" TEXT="defaultValue"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1460809363920" ID="ID_1830759026" MODIFIED="1460809365439" TEXT="K&#xe9;pek">
+<node CREATED="1460809374276" ID="ID_872873766" MODIFIED="1460809375592" TEXT="&lt;img src=&quot;kep.png&quot; alt=&quot;sz&#xf6;veg&quot; &gt;"/>
+<node CREATED="1460809378601" ID="ID_708132387" MODIFIED="1460809384903" TEXT="Legfontosabb tulajdons&#xe1;ga: src">
+<node CREATED="1460809388192" ID="ID_1126925149" MODIFIED="1460809393349" TEXT="Dinamikusan lecser&#xe9;lni a k&#xe9;pet"/>
+</node>
+<node CREATED="1460809395534" ID="ID_1856291463" MODIFIED="1460809409944" TEXT="Minden egy&#xe9;b &#xe1;ltal&#xe1;ban st&#xed;lusmanipul&#xe1;ci&#xf3;"/>
+<node CREATED="1460809412286" ID="ID_1393107414" MODIFIED="1460809420826" TEXT="Tipikus k&#xe9;pm&#x171;veletek">
+<node CREATED="1460809491753" ID="ID_239369848" MODIFIED="1460809497476" TEXT="K&#xe9;p lecser&#xe9;l&#xe9;se">
+<node CREATED="1460809514316" ID="ID_1804071193" MODIFIED="1460809540584" TEXT="src attrib&#xfa;tum&#xe1;nak megv&#xe1;ltoztat&#xe1;sa">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &lt;img src=&quot;alma.png&quot; alt=&quot;Alma&quot; id=&quot;kep1&quot;&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      var kep = document.getElementById('kep1');
+    </p>
+    <p>
+      kep.src = 'korte.png';
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460809542069" ID="ID_1721806634" MODIFIED="1460809571425" TEXT="H&#xe1;tr&#xe1;nya:">
+<node CREATED="1460809572346" ID="ID_60983336" MODIFIED="1460809573128" TEXT="a k&#xe9;p let&#xf6;lt&#xe9;se szerverr&#x151;l ekkor kezd&#x151;dik el"/>
+<node CREATED="1460809574287" ID="ID_1478220477" MODIFIED="1460809577398" TEXT="lass&#xfa; lehet"/>
+<node CREATED="1460809578436" ID="ID_890396004" MODIFIED="1460809586743" TEXT="felhaszn&#xe1;l&#xf3;i &#xe9;lm&#xe9;ny cs&#xf6;kken"/>
+</node>
+</node>
+<node CREATED="1460809499156" ID="ID_359330486" MODIFIED="1460809509063" TEXT="K&#xe9;p el&#x151;t&#xf6;lt&#xe9;se">
+<node CREATED="1460809593549" ID="ID_1587549649" MODIFIED="1460809635767" TEXT="Egy mem&#xf3;riabeli k&#xe9;p objektumba el&#x151;re bet&#xf6;ltj&#xfc;k a k&#xe9;pet, &#xed;gy cserekor az azonnal rendelkez&#xe9;sre &#xe1;ll"/>
+<node CREATED="1460809637632" ID="ID_288697764" MODIFIED="1460809650250" TEXT="Sok k&#xe9;pet nem &#xe9;rdemes el&#x151;re bet&#xf6;lteni."/>
+<node CREATED="1460809651479" ID="ID_1603803548" MODIFIED="1460809668200" TEXT="Ink&#xe1;bb folyamatosan t&#xf6;lts&#xfc;k be &#x151;ket">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var mem_kep = document.createElement('img');
+    </p>
+    <p>
+      mem_kep.src = 'korte.png';
+    </p>
+    <p>
+      //...
+    </p>
+    <p>
+      //ha szukseges a csere:
+    </p>
+    <p>
+      var kep = document.getElementById('kep1');
+    </p>
+    <p>
+      kep.src = mem_kep.src;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1460809675582" ID="ID_72447988" MODIFIED="1460809680689" TEXT="T&#xe1;bl&#xe1;zatok">
+<node CREATED="1460809684897" ID="ID_835556256" MODIFIED="1460809690697" TEXT="Sorok &#xe9;s cell&#xe1;k kezel&#xe9;se">
+<node CREATED="1460809694160" ID="ID_1184964620" MODIFIED="1460809696414" TEXT="T&#xe1;bl&#xe1;zat">
+<node CREATED="1460809703854" ID="ID_18985426" MODIFIED="1460809705318" TEXT="rows"/>
+<node CREATED="1460809706382" ID="ID_286304190" MODIFIED="1460809714213" TEXT="insertRow(index)"/>
+<node CREATED="1460809716257" ID="ID_1966201302" MODIFIED="1460809726471" TEXT="deleteRow(index)"/>
+</node>
+<node CREATED="1460809697501" ID="ID_1339706067" MODIFIED="1460809698231" TEXT="Sor">
+<node CREATED="1460809729251" ID="ID_1821085769" MODIFIED="1460809732889" TEXT="rowIndex"/>
+<node CREATED="1460809735764" ID="ID_1224917827" MODIFIED="1460809751444" TEXT="sectionRowIndex"/>
+<node CREATED="1460809791806" ID="ID_757698498" MODIFIED="1460809793582" TEXT="cells"/>
+<node CREATED="1460809794956" ID="ID_1626599779" MODIFIED="1460809804169" TEXT="insertCell(index)"/>
+<node CREATED="1460809805640" ID="ID_1725189403" MODIFIED="1460809810103" TEXT="deleteCell(index)"/>
+</node>
+<node CREATED="1460809699390" ID="ID_182243787" MODIFIED="1460809830899" TEXT="Cella">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function xyKoord(td) {
+    </p>
+    <p>
+      &#160;&#160;var x =&#160;&#160;td.cellIndex;
+    </p>
+    <p>
+      &#160;&#160;var tr = td.parentNode;
+    </p>
+    <p>
+      &#160;&#160;var y =&#160;&#160;tr.sectionRowIndex;
+    </p>
+    <p>
+      &#160;&#160;return {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;x: x,
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;y: y
+    </p>
+    <p>
+      &#160;&#160;};
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460809814768" ID="ID_1027909004" MODIFIED="1460809817350" TEXT="cellIndex"/>
 </node>
 </node>
 </node>
