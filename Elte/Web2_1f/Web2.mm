@@ -2053,7 +2053,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1460733348341" ID="ID_205315262" MODIFIED="1460733436918" TEXT="3) Esem&#xe9;nyek, nyelvi elemek, be&#xe9;p&#xed;tett objektumok">
+<node CREATED="1460733348341" FOLDED="true" ID="ID_205315262" MODIFIED="1460796411143" TEXT="3) Esem&#xe9;nyek, nyelvi elemek, be&#xe9;p&#xed;tett objektumok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460733423127" FOLDED="true" ID="ID_1210108716" MODIFIED="1460740486618" TEXT="Ism&#xe9;tl&#xe9;s">
 <node CREATED="1460733459133" ID="ID_1342618970" MODIFIED="1460733472198" TEXT="Gyeng&#xe9;n t&#xed;pusos"/>
@@ -2116,17 +2116,18 @@
 <node CREATED="1460740529210" ID="ID_1790854808" MODIFIED="1460740536737" TEXT="API-k"/>
 </node>
 </node>
-<node CREATED="1460740587234" ID="ID_381029019" MODIFIED="1460740592927" TEXT="Esem&#xe9;nykezel&#xe9;s">
+<node CREATED="1460740587234" FOLDED="true" ID="ID_381029019" MODIFIED="1460794423770" TEXT="Esem&#xe9;nykezel&#xe9;s">
 <node CREATED="1460740601047" ID="ID_634401882" MODIFIED="1460740602318" TEXT="Eddig">
 <node CREATED="1460740603325" ID="ID_1190359777" MODIFIED="1460740615418" TEXT="Mik azok az esem&#xe9;nyek?"/>
 <node CREATED="1460740617085" ID="ID_1786453989" MODIFIED="1460740625719" TEXT="Esem&#xe9;nyek t&#xed;pusai"/>
 <node CREATED="1460740626950" ID="ID_1597551484" MODIFIED="1460740633823" TEXT="Esem&#xe9;nykezel&#x151;k"/>
-<node CREATED="1460740635253" ID="ID_155930254" MODIFIED="1460740667945" TEXT="Esem&#xe9;nykezel&#x151;k hozz&#xe1;rendel&#xe9;se , regisztr&#xe1;l&#xe1;sa">
+</node>
+<node CREATED="1460740635253" FOLDED="true" ID="ID_155930254" MODIFIED="1460794396527" TEXT="Esem&#xe9;nykezel&#x151;k hozz&#xe1;rendel&#xe9;se , regisztr&#xe1;l&#xe1;sa">
 <node CREATED="1460740684786" ID="ID_209489515" MODIFIED="1460740684786" TEXT="inline (HTML attrib&#xfa;tumk&#xe9;nt: &lt;elem onclick=&quot;fv()&quot;&gt;)"/>
 <node CREATED="1460740698353" ID="ID_78095642" MODIFIED="1460740699720" TEXT="tradicion&#xe1;lis (JS tulajdons&#xe1;gk&#xe9;nt: elem.onclick = fv;)"/>
 <node CREATED="1460740708611" ID="ID_593121412" MODIFIED="1460740709524" TEXT="szabv&#xe1;nyos (elem.addEventListener(t&#xed;pus, fv, ir&#xe1;ny);)"/>
 <node CREATED="1460740711241" ID="ID_1374795341" MODIFIED="1460740726133" TEXT="Microsoft (elem.attachEvent(t&#xed;pus, fv);)"/>
-<node CREATED="1460740743198" ID="ID_1644900099" MODIFIED="1460740853396" TEXT="P&#xe9;lda">
+<node CREATED="1460740743198" FOLDED="true" ID="ID_1644900099" MODIFIED="1460794393811" TEXT="P&#xe9;lda">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -2441,8 +2442,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460741268220" ID="ID_60663595" MODIFIED="1460741319656" TEXT="Honnan tudom, hogy a SHIFT billenty&#x171; le volt-e nyomva kattint&#xe1;s k&#xf6;zben?"/>
 <node CREATED="1460741328892" ID="ID_828567213" MODIFIED="1460741329868" TEXT="&#xc1;ltal&#xe1;ban: honnan tudom">
 <node CREATED="1460741340995" ID="ID_1423698888" MODIFIED="1460741341803" TEXT="milyen billenty&#x171;t nyomtak le?"/>
@@ -2579,8 +2579,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460793686016" ID="ID_998201517" MODIFIED="1460793688798" TEXT="szabv&#xe1;nyos"/>
 <node CREATED="1460793689829" ID="ID_976410527" MODIFIED="1460793703424" TEXT="b&#xe1;rhol szerepelhet az esem&#xe9;nykezel&#x151; f&#xfc;ggv&#xe9;nyen bel&#xfc;l"/>
 </node>
@@ -2639,8 +2638,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460793705252" ID="ID_1075102590" MODIFIED="1460793708409" TEXT="nem szabv&#xe1;nyos"/>
 <node CREATED="1460793709543" ID="ID_175051897" MODIFIED="1460793714489" TEXT="mindenhol m&#x171;k&#xf6;dik"/>
 <node CREATED="1460793715536" ID="ID_1348796293" MODIFIED="1460793721739" TEXT="az utols&#xf3; sorba kell tenni"/>
@@ -2648,7 +2646,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1460793808124" ID="ID_1973395623" MODIFIED="1460794102790" TEXT="5. megold&#xe1;s">
+<node CREATED="1460793808124" FOLDED="true" ID="ID_1973395623" MODIFIED="1460794384059" TEXT="5. megold&#xe1;s">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -2772,8 +2770,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460793815197" ID="ID_603767079" MODIFIED="1460793822782" TEXT="Az esem&#xe9;nykezel&#x151; f&#xfc;ggv&#xe9;ny OK"/>
 <node CREATED="1460793823842" ID="ID_562096197" MODIFIED="1460793836616" TEXT="Az esem&#xe9;nykezel&#x151; f&#xfc;ggv&#xe9;ny hozz&#xe1;rendel&#xe9;se egyes&#xe9;vel t&#xf6;rt&#xe9;nik">
 <node CREATED="1460793842163" ID="ID_792120840" MODIFIED="1460793848809" TEXT="feleslegesen ism&#xe9;tl&#x151;dik"/>
@@ -2829,8 +2826,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460794186159" ID="ID_1499382096" MODIFIED="1460794220501" TEXT="function delegate">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -2886,8 +2882,7 @@
       &#160;&#160;}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460794226581" ID="ID_1081105997" MODIFIED="1460794235065" TEXT="Tulajdons&#xe1;gok">
@@ -2902,6 +2897,828 @@
 </node>
 </node>
 </node>
+</node>
+<node CREATED="1460794430971" FOLDED="true" ID="ID_583915693" MODIFIED="1460794909947" TEXT="B&#xf6;ng&#xe9;sz&#x151; f&#xfc;ggetlens&#xe9;g">
+<node CREATED="1460794441346" ID="ID_1367930630" MODIFIED="1460794448565" TEXT="&#xd6;r&#xf6;k&#xf6;lt k&#xf3;d meg&#xe9;rt&#xe9;s&#xe9;hez"/>
+<node CREATED="1460794450316" FOLDED="true" ID="ID_3795663" MODIFIED="1460794907763" TEXT="Esem&#xe9;nykezel&#x151;k regiszt&#xe1;ci&#xf3;ja">
+<node CREATED="1460794493231" ID="ID_1346716239" MODIFIED="1460794537702" TEXT="Tulajdons&#xe1;g ellen&#x151;rz&#xe9;s (feature detection)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function init() {
+    </p>
+    <p>
+      &#160;&#160;kezelotRegisztral($('#lista'), 'click', mutat);
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      function kezelotRegisztral(elem, tipus, kezelo) {
+    </p>
+    <p>
+      &#160;&#160;//Szabv&#225;nyos m&#243;dszer
+    </p>
+    <p>
+      &#160;&#160;if (elem.addEventListener) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;elem.addEventListener(tipus, kezelo, false);
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;//Microsoft m&#243;dszer
+    </p>
+    <p>
+      &#160;&#160;else if (elem.attachEvent) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;elem.attachEvent('on' + tipus, kezelo);
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;//Tradicion&#225;lis m&#243;dszer
+    </p>
+    <p>
+      &#160;&#160;else {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;elem['on' + tipus] = kezelo;
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460794544786" FOLDED="true" ID="ID_532024137" MODIFIED="1460794908746" TEXT="Esem&#xe9;nyobjektum megszerz&#xe9;se">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function kezelotRegisztral(elem, tipus, kezelo) {
+    </p>
+    <p>
+      &#160;&#160;//Szabv&#225;nyos m&#243;dszer
+    </p>
+    <p>
+      &#160;&#160;if (elem.addEventListener) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;elem.addEventListener(tipus, kezelo, false);
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;//Microsoft m&#243;dszer
+    </p>
+    <p>
+      &#160;&#160;else if (elem.attachEvent) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;elem.attachEvent('on' + tipus, function () {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;kezelo(window.event);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;//vagy
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;return kezelo.call(elem, window.event);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;});
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;//Tradicion&#225;lis m&#243;dszer
+    </p>
+    <p>
+      &#160;&#160;else {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;elem['on' + tipus] = kezelo;
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460794551984" ID="ID_1508332890" MODIFIED="1460794559750" TEXT="Szabv&#xe1;nyos (W3C)">
+<node CREATED="1460794560599" ID="ID_1158966807" MODIFIED="1460794589124" TEXT="Az esem&#xe9;nykezel&#x151; f&#xfc;ggv&#xe9;ny param&#xe9;terek&#xe9;nt &#xe9;rkezik automatikusan">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function fv(e) {
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460794591528" ID="ID_1630011234" MODIFIED="1460794600452" TEXT="Internet Explorer (r&#xe9;gebbi)">
+<node CREATED="1460794602611" ID="ID_629257969" MODIFIED="1460794637581" TEXT="Az esem&#xe9;nykezel&#x151; f&#xfc;ggv&#xe9;nyen bel&#xfc;l glob&#xe1;lis window.event objektum">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function fv() {
+    </p>
+    <p>
+      &#160;&#160;e = window.event;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460794643662" ID="ID_869832606" MODIFIED="1460794682456" TEXT="Egys&#xe9;ges megold&#xe1;s">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function fv(e) {
+    </p>
+    <p>
+      &#160;&#160;if (!e) e = window.event;
+    </p>
+    <p>
+      &#160;&#160;//... e felhaszn&#225;l&#225;sa
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460794659946" ID="ID_1808294122" MODIFIED="1460794662310" TEXT="Ha nem j&#xf6;n param&#xe9;terk&#xe9;nt, akkor a glob&#xe1;lis &#xe9;rt&#xe9;ket kell venni."/>
+<node CREATED="1460794667563" ID="ID_1661202771" MODIFIED="1460794669134" TEXT="Minden esem&#xe9;nykezel&#x151;nek &#xed;gy kell kezd&#x151;dnie"/>
+</node>
+</node>
+<node CREATED="1460794722359" FOLDED="true" ID="ID_1511043375" MODIFIED="1460794903748" TEXT="Esem&#xe9;nyobjektum tulajdons&#xe1;gai">
+<node CREATED="1460794730296" ID="ID_468775575" MODIFIED="1460794733898" TEXT="Szabv&#xe1;nyos">
+<node CREATED="1460794734987" ID="ID_1926529577" MODIFIED="1460794737073" TEXT="type"/>
+<node CREATED="1460794738327" ID="ID_1174155928" MODIFIED="1460794741901" TEXT="target"/>
+<node CREATED="1460794743180" ID="ID_1035658870" MODIFIED="1460794749075" TEXT="button (&#xe9;rt&#xe9;kek)"/>
+<node CREATED="1460794750449" ID="ID_73309125" MODIFIED="1460794754851" TEXT="keycode"/>
+</node>
+<node CREATED="1460794757775" ID="ID_162132572" MODIFIED="1460794758523" TEXT="IE">
+<node CREATED="1460794760019" ID="ID_759267036" MODIFIED="1460794762481" TEXT="type"/>
+<node CREATED="1460794763413" ID="ID_733916765" MODIFIED="1460794765652" TEXT="scrElement"/>
+<node CREATED="1460794766680" ID="ID_1282340224" MODIFIED="1460794775052" TEXT="button (&#xe9;rt&#xe9;kek)"/>
+<node CREATED="1460794776619" ID="ID_234313407" MODIFIED="1460794779469" TEXT="which"/>
+</node>
+<node CREATED="1460794791813" ID="ID_975850919" MODIFIED="1460794851141" TEXT="Egys&#xe9;ges megold&#xe1;s">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function fv(e) {
+    </p>
+    <p>
+      &#160;&#160;var kod;
+    </p>
+    <p>
+      &#160;&#160;if (!e) var e = window.event;
+    </p>
+    <p>
+      &#160;&#160;if (e.keyCode) kod = e.keyCode;
+    </p>
+    <p>
+      &#160;&#160;else if (e.which) kod = e.which;
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460794798782" ID="ID_104604334" MODIFIED="1460794801320" TEXT="karakter k&#xf3;dja"/>
+<node CREATED="1460794802978" ID="ID_616684403" MODIFIED="1460794822091" TEXT="Megn&#xe9;zi, melyik tulajdons&#xe1;g tartalmaz &#xe9;rtelmes &#xe9;rt&#xe9;ket-feature detection"/>
+</node>
+<node CREATED="1460794853358" ID="ID_367635885" MODIFIED="1460794888743" TEXT="Egys&#xe9;ges megold&#xe1;s">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function fv(e) {
+    </p>
+    <p>
+      &#160;&#160;var obj;
+    </p>
+    <p>
+      &#160;&#160;if (!e) var e = window.event;
+    </p>
+    <p>
+      &#160;&#160;if (e.target) obj = e.target;
+    </p>
+    <p>
+      &#160;&#160;else if (e.srcElement) obj = e.srcElement;
+    </p>
+    <p>
+      &#160;&#160;if (obj.nodeType == 3) { // Safari bug
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;obj = obj.parentNode;
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460794858827" ID="ID_1142208164" MODIFIED="1460794864632" TEXT="esem&#xe9;nyt kiv&#xe1;lt&#xf3; objektum"/>
+<node CREATED="1460794865926" ID="ID_1526586399" MODIFIED="1460794869757" TEXT="feature detection"/>
+<node CREATED="1460794870795" ID="ID_1266083541" MODIFIED="1460794877835" TEXT="Safari b&#xf6;ng&#xe9;sz&#x151;hiba kezel&#xe9;se"/>
+</node>
+</node>
+</node>
+<node CREATED="1460794912604" FOLDED="true" ID="ID_147606192" MODIFIED="1460796311529" TEXT="Nyelvi elemek">
+<node CREATED="1460794918645" FOLDED="true" ID="ID_1834974736" MODIFIED="1460796309077" TEXT="Glob&#xe1;lis f&#xfc;ggv&#xe9;nyek">
+<node CREATED="1460794923911" ID="ID_889979269" MODIFIED="1460794929625" TEXT="Sz&#xe1;mokkal kapcsolatos">
+<node CREATED="1460794930120" ID="ID_1957668882" MODIFIED="1460794938675" TEXT="isNaN(s)"/>
+<node CREATED="1460794939937" ID="ID_495751065" MODIFIED="1460794946724" TEXT="isFinite(s)">
+<node CREATED="1460794949262" ID="ID_516882451" MODIFIED="1460794953217" TEXT="v&#xe9;ges-e a sz&#xe1;m"/>
+</node>
+<node CREATED="1460794954915" ID="ID_905120252" MODIFIED="1460794964607" TEXT="parseInt(s, sz&#xe1;mrendszer)"/>
+<node CREATED="1460794966014" ID="ID_1801337339" MODIFIED="1460794977869" TEXT="parseFloat(s)"/>
+</node>
+<node CREATED="1460795197022" FOLDED="true" ID="ID_1023829267" MODIFIED="1460796307104" TEXT="Egy&#xe9;b">
+<node CREATED="1460794981806" FOLDED="true" ID="ID_405256926" MODIFIED="1460795815980" TEXT="K&#xf3;dol&#xe1;ssal kapcsolatos">
+<node CREATED="1460794992011" ID="ID_1362876215" MODIFIED="1460794996231" TEXT="decodeURI"/>
+<node CREATED="1460794997844" ID="ID_825992994" MODIFIED="1460795002468" TEXT="decodeURIComponent"/>
+<node CREATED="1460795003954" ID="ID_552251352" MODIFIED="1460795008410" TEXT="encodeURI"/>
+<node CREATED="1460795009600" ID="ID_1971696787" MODIFIED="1460795016776" TEXT="encodeURIComponent"/>
+</node>
+<node CREATED="1460795025276" FOLDED="true" ID="ID_198647100" MODIFIED="1460795813662" TEXT="NAN">
+<node CREATED="1460795031003" ID="ID_1449172704" MODIFIED="1460795033788" TEXT="not a number"/>
+<node CREATED="1460795034994" ID="ID_1391210768" MODIFIED="1460795050329" TEXT="speci&#xe1;lis &#xe9;rt&#xe9;k, ha egy m&#xe1;velet nem &#xe9;rtelmezhet&#x151;&#x151; a sz&#xe1;mok halmaz&#xe1;n"/>
+<node CREATED="1460795051844" ID="ID_1070076087" MODIFIED="1460795080762" TEXT="vizsg&#xe1;lata isNaN(&#xe9;rt&#xe9;k)">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var a = 'alma' / 2;
+    </p>
+    <p>
+      isNaN(a);&#160;&#160;//true
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1460795081941" FOLDED="true" ID="ID_254689791" MODIFIED="1460795812801" TEXT="INFINITY">
+<node CREATED="1460795087089" ID="ID_1000402985" MODIFIED="1460795133610" TEXT="V&#xe9;gtelen jel&#xf6;l&#xe9;s&#xe9;re szolg&#xe1;l">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var a = 10/0;
+    </p>
+    <p>
+      isFinite(a);&#160;&#160;//false
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1460795095476" ID="ID_581185540" MODIFIED="1460795103731" TEXT="+Infinity, -Infinity"/>
+<node CREATED="1460795105697" ID="ID_1866924047" MODIFIED="1460795119279" TEXT="vizsg&#xe1;lata: isFinite()"/>
+</node>
+</node>
+<node CREATED="1460795142771" FOLDED="true" ID="ID_709487314" MODIFIED="1460795811478" TEXT="Sz&#xf6;vegb&#x151;l sz&#xe1;m">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      console.log( parseInt('123') );&#160;&#160;&#160;&#160;&#160;//123
+    </p>
+    <p>
+      console.log( parseInt('123', 10) ); //123
+    </p>
+    <p>
+      console.log( parseInt('0101', 2) ); //5
+    </p>
+    <p>
+      console.log( parseInt('alma', 10) ); //NaN
+    </p>
+    <p>
+      console.log( parseInt('5alma', 10) ); //5
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      console.log( parseFloat('4.54') ); //4.54
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460795148366" ID="ID_38869225" MODIFIED="1460795156546" TEXT="parseInt(sz&#xf6;veg, sz&#xe1;mrendszer)"/>
+<node CREATED="1460795158832" ID="ID_249557310" MODIFIED="1460795167990" TEXT="parseFloat(sz&#xf6;veg)"/>
+</node>
+<node CREATED="1460795221736" FOLDED="true" ID="ID_1632594935" MODIFIED="1460795809184" TEXT="Sz&#xf6;vegk&#xf3;dol&#xe1;s">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var kod = encodeURIComponent('&#225;rv&#237;zt&#369;r&#337;t&#252;k&#246;rf&#250;r&#243;g&#233;p');
+    </p>
+    <p>
+      //&quot;%C3%A1rv%C3%ADzt%C5%B1r%C5%91t%C3%BCk%C3%B6rf%C3%BAr%C3%B3g%C3%A9p&quot;
+    </p>
+    <p>
+      var dekod = decodeURIComponent(kod);
+    </p>
+    <p>
+      //&quot;&#225;rv&#237;zt&#251;r&#245;t&#252;k&#246;rf&#250;r&#243;g&#233;p&#8222;
+    </p>
+    <p>
+      var url = encodeURI('http://server.hu/&#250;tvonal sz&#243;k&#246;z&#246;kkel');
+    </p>
+    <p>
+      //&quot;http://server.hu/%C3%BAtvonal%20sz%C3%B3k%C3%B6z%C3%B6kkel&quot;
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460795229987" ID="ID_1838457989" MODIFIED="1460795235048" TEXT="Speci&#xe1;lis karakterek">
+<node CREATED="1460795235418" ID="ID_1202846515" MODIFIED="1460795237331" TEXT="t&#xe1;rol&#xe1;sa"/>
+<node CREATED="1460795238290" ID="ID_803977476" MODIFIED="1460795241829" TEXT="k&#xfc;ld&#xe9;se"/>
+</node>
+<node CREATED="1460795244498" ID="ID_1173355216" MODIFIED="1460795340360" TEXT="Teljes URL k&#xf3;dol&#xe1;sa">
+<node CREATED="1460795254113" ID="ID_1875067157" MODIFIED="1460795271401" TEXT="encodeURI(), ecodeURI()"/>
+</node>
+<node CREATED="1460795274142" ID="ID_662287706" MODIFIED="1460795279716" TEXT="URL-beli &#xe9;rt&#xe9;k k&#xf3;dol&#xe1;sa">
+<node CREATED="1460795286167" ID="ID_1880220133" MODIFIED="1460795346839" TEXT="encodeURIComponent(), decodeURIComponent() "/>
+</node>
+<node CREATED="1460795297484" ID="ID_674972248" MODIFIED="1460795338116" TEXT="R&#xe9;gi m&#xf3;dszer (ne haszn&#xe1;ljuk)">
+<node CREATED="1460795309600" ID="ID_616995260" MODIFIED="1460795318177" TEXT="escape(), unescape()"/>
+</node>
+</node>
+<node CREATED="1460795371935" FOLDED="true" ID="ID_1903697811" MODIFIED="1460795810332" TEXT="D&#xe1;tum f&#xfc;ggv&#xe9;nyek">
+<node CREATED="1460795397134" ID="ID_709985457" MODIFIED="1460795400860" TEXT="Date objektum"/>
+<node CREATED="1460795402799" ID="ID_609813373" MODIFIED="1460795409153" TEXT="Aktu&#xe1;lis id&#x151;pont">
+<node CREATED="1460795411074" ID="ID_734804079" MODIFIED="1460795414103" TEXT="Date.now()"/>
+</node>
+<node CREATED="1460795415967" ID="ID_850798216" MODIFIED="1460795423108" TEXT="Megadott id&#x151;pont">
+<node CREATED="1460795466852" ID="ID_25845670" MODIFIED="1460795468790" TEXT="new Date(year, month, day [, hour, minute, second, millisecond]);"/>
+</node>
+<node CREATED="1460795473829" ID="ID_1236036462" MODIFIED="1460795480242" TEXT="M&#x171;veletcsoportok">
+<node CREATED="1460795481491" ID="ID_1894018132" MODIFIED="1460795484770" TEXT="getterek">
+<node CREATED="1460795486209" ID="ID_874454736" MODIFIED="1460795520652" TEXT="getMonth(), getDay()"/>
+</node>
+<node CREATED="1460795489997" ID="ID_1479685247" MODIFIED="1460795491697" TEXT="setterek">
+<node CREATED="1460795522384" ID="ID_1954721943" MODIFIED="1460795532819" TEXT="setMonth(), setDay()"/>
+</node>
+<node CREATED="1460795493286" ID="ID_1166533466" MODIFIED="1460795504704" TEXT="toString met&#xf3;dusok">
+<node CREATED="1460795534662" ID="ID_1361951723" MODIFIED="1460795561553" TEXT="toLocalString(), toGMTString()"/>
+</node>
+</node>
+<node CREATED="1460795572902" ID="ID_1625748312" MODIFIED="1460795599038" TEXT="p&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var most = Date.now();
+    </p>
+    <p>
+      console.log(most.toLocaleString());
+    </p>
+    <p>
+      console.log(most.getFullYear());
+    </p>
+    <p>
+      most.setFullYear(2011);
+    </p>
+    <p>
+      console.log(most.toLocaleString());
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      var maskor = new Date(2011, 2, 28);
+    </p>
+    <p>
+      console.log(maskor.toLocaleString());
+    </p>
+    <p>
+      //&quot;2011. m&#225;rcius 28. 0:00:00&quot;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      console.log(maskor - most); //ms-okban
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460795601583" FOLDED="true" ID="ID_1690554631" MODIFIED="1460795814659" TEXT="String m&#x171;veletek">
+<node CREATED="1460795608009" ID="ID_982411533" MODIFIED="1460795613021" TEXT="egy karakter k&#xf3;dja">
+<node CREATED="1460795625509" ID="ID_506699608" MODIFIED="1460795631708" TEXT="charAt(i), charCodeAt(i) "/>
+</node>
+<node CREATED="1460795614787" ID="ID_626334345" MODIFIED="1460795646515" TEXT="keres&#xe9;s el&#x151;lr&#x151;l, h&#xe1;tulr&#x151;l, indexet ad vissza">
+<node CREATED="1460795655714" ID="ID_1402182398" MODIFIED="1460795668721" TEXT="indexOf(mit, honnan), lastIndexOf(mit, honnan) "/>
+</node>
+<node CREATED="1460795671778" ID="ID_1997934262" MODIFIED="1460795685783" TEXT="&#xd6;sszehasonl&#xed;t&#xe1;s, -1,0,1">
+<node CREATED="1460795686489" ID="ID_1377796068" MODIFIED="1460795694486" TEXT="localeComare(mivel)"/>
+</node>
+<node CREATED="1460795698148" ID="ID_1351263228" MODIFIED="1460795707753" TEXT="keres&#xe9;s, csere, regul&#xe1;ris kifejez&#xe9;sekkel is">
+<node CREATED="1460795708618" ID="ID_492546175" MODIFIED="1460795728910" TEXT="search(regexp), replace(mit, mivel), match(regexp)"/>
+</node>
+<node CREATED="1460795732411" ID="ID_403792481" MODIFIED="1460795740990" TEXT="r&#xe9;szsz&#xf6;veg">
+<node CREATED="1460795742359" ID="ID_1236497594" MODIFIED="1460795756531" TEXT="substr(honnan, hossz), substring(mett&#x151;l, meddig), slice(mett&#x151;l, meddig) "/>
+</node>
+<node CREATED="1460795759119" ID="ID_1906765197" MODIFIED="1460795767864" TEXT="sz&#xf6;veg felbont&#xe1;sa -&gt; t&#xf6;mb">
+<node CREATED="1460795771912" ID="ID_1444361733" MODIFIED="1460795780498" TEXT="split(szeper&#xe1;tor)"/>
+</node>
+<node CREATED="1460795786150" ID="ID_531158704" MODIFIED="1460795802460" TEXT="p&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      console.log('piros alma'.charAt(2)); //&quot;r&quot;
+    </p>
+    <p>
+      console.log('piros alma'.charCodeAt(2)); //114
+    </p>
+    <p>
+      console.log('piros alma'.indexOf('alma')); //6
+    </p>
+    <p>
+      console.log('piros alma'.localeCompare('piros k&#246;rte')); //-1
+    </p>
+    <p>
+      console.log('piros alma'.replace('piros', 's&#225;rga')); //&quot;s&#225;rga alma&quot;
+    </p>
+    <p>
+      console.log('piros alma'.substr(2, 3)); //&quot;ros&quot;
+    </p>
+    <p>
+      console.log('piros alma'.split(' ')); //[&quot;piros&quot;,&quot;alma&quot;]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460795818195" FOLDED="true" ID="ID_1370663025" MODIFIED="1460795920929" TEXT="Math objektum">
+<node CREATED="1460795824536" ID="ID_1247479983" MODIFIED="1460795832849" TEXT="Matematikai m&#x171;veletek">
+<node CREATED="1460795860346" ID="ID_1478307686" MODIFIED="1460795867444" TEXT="sin(rad), asin(sz), cos(rad), acos(sz), tan(rad), atan(sz)"/>
+<node CREATED="1460795870990" ID="ID_129168096" MODIFIED="1460795871675" TEXT="pow(alap, kit), exp(n), log(n), stb."/>
+<node CREATED="1460795876786" ID="ID_1787757686" MODIFIED="1460795879986" TEXT="random()"/>
+<node CREATED="1460795881065" ID="ID_1582175193" MODIFIED="1460795887149" TEXT="round(n), floor(n)"/>
+</node>
+<node CREATED="1460795835774" ID="ID_1543705754" MODIFIED="1460795841347" TEXT="Konstansok">
+<node CREATED="1460795845107" ID="ID_692264220" MODIFIED="1460795845903" TEXT="PI"/>
+<node CREATED="1460795847013" ID="ID_656386262" MODIFIED="1460795847582" TEXT="E"/>
+<node CREATED="1460795848624" ID="ID_188442985" MODIFIED="1460795851437" TEXT="SQRT2"/>
+<node CREATED="1460795852572" ID="ID_996769851" MODIFIED="1460795856842" TEXT="LN2 stb..."/>
+</node>
+<node CREATED="1460795891420" ID="ID_1515406840" MODIFIED="1460795901534" TEXT="p&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      console.log(Math.PI);&#160;&#160;//3.141592653589793
+    </p>
+    <p>
+      console.log(Math.sin(90));&#160;&#160;//0.8939966636005579
+    </p>
+    <p>
+      console.log(Math.sin(90 * Math.PI / 180));&#160;&#160;//1
+    </p>
+    <p>
+      console.log(Math.random());&#160;&#160;//pl. 0.47057095554085615
+    </p>
+    <p>
+      console.log(Math.random());&#160;&#160;//pl. 0.5286946792885748
+    </p>
+    <p>
+      console.log(Math.round(1.6));&#160;&#160;//2
+    </p>
+    <p>
+      console.log(Math.floor(1.6));&#160;&#160;//1
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460795923159" FOLDED="true" ID="ID_472932321" MODIFIED="1460796055796" TEXT="T&#xf6;mb m&#x171;veletek">
+<node CREATED="1460795931001" ID="ID_924705098" MODIFIED="1460795937998" TEXT="pop(), push(e), shift(e), unshift()">
+<node CREATED="1460795940127" ID="ID_349296928" MODIFIED="1460795949280" TEXT="v&#xe9;g&#xe9;r&#x151;l, v&#xe9;g&#xe9;re, elej&#xe9;re,elej&#xe9;r&#x151;l"/>
+</node>
+<node CREATED="1460795950979" ID="ID_912808058" MODIFIED="1460795952888" TEXT="reverse()">
+<node CREATED="1460795953605" ID="ID_1892489368" MODIFIED="1460795957986" TEXT="megford&#xed;t"/>
+</node>
+<node CREATED="1460795959889" ID="ID_302109666" MODIFIED="1460795967988" TEXT="splice(honnan, hova)">
+<node CREATED="1460795969652" ID="ID_894510660" MODIFIED="1460795970778" TEXT="kiv&#xe1;g"/>
+</node>
+<node CREATED="1460795976867" ID="ID_420640482" MODIFIED="1460795982264" TEXT="join(szepr&#xe1;tor)">
+<node CREATED="1460795983497" ID="ID_264807236" MODIFIED="1460795991919" TEXT="sz&#xf6;vegg&#xe9; f&#x171;z"/>
+</node>
+<node CREATED="1460795996790" ID="ID_1561237044" MODIFIED="1460796035834" TEXT="p&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var t = [1, 2, 3, 4, 5];
+    </p>
+    <p>
+      t.push(6);
+    </p>
+    <p>
+      console.log(t);&#160;&#160;//[1, 2, 3, 4, 5, 6]
+    </p>
+    <p>
+      console.log(t.pop());&#160;&#160;//6
+    </p>
+    <p>
+      console.log(t);&#160;&#160;//[1, 2, 3, 4, 5]
+    </p>
+    <p>
+      t.unshift(0);
+    </p>
+    <p>
+      console.log(t);&#160;&#160;//[0, 1, 2, 3, 4, 5]
+    </p>
+    <p>
+      console.log(t.shift());&#160;&#160;//0
+    </p>
+    <p>
+      console.log(t);&#160;&#160;//[1, 2, 3, 4, 5]
+    </p>
+    <p>
+      t.reverse();
+    </p>
+    <p>
+      console.log(t);&#160;&#160;//[5, 4, 3, 2, 1]
+    </p>
+    <p>
+      t.splice(2, 1);
+    </p>
+    <p>
+      console.log(t);&#160;&#160;//[5, 4, 2, 1]
+    </p>
+    <p>
+      console.log(t.join('###'));&#160;&#160;//&quot;5###4###2###1&quot;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460796067964" FOLDED="true" ID="ID_709084118" MODIFIED="1460796303177" TEXT="N&#xe9;vtelen f&#xfc;ggv&#xe9;ny">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function onClick(e) {
+    </p>
+    <p>
+      &#160;&#160;//...
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      elem.addEventListener('click', onClick, false);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //HELYETTE
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      elem.addEventListener('click', function (e) {
+    </p>
+    <p>
+      &#160;&#160;//...
+    </p>
+    <p>
+      }, false);
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460796073135" ID="ID_1447120024" MODIFIED="1460796110784" TEXT="F&#xfc;ggv&#xe9;ny liter&#xe1;l">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function (par1, par2) {
+    </p>
+    <p>
+      &#160;&#160;//...
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1460796146116" ID="ID_1908833048" MODIFIED="1460796171432" TEXT="p&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      //Param&#233;teres esem&#233;nykezel&#337;k
+    </p>
+    <p>
+      $('gomb1').addEventListener('click', function (e) {
+    </p>
+    <p>
+      &#160;&#160;leptet(e, -1);
+    </p>
+    <p>
+      }, false);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //F&#252;ggv&#233;ny l&#233;trehoz&#225;sa
+    </p>
+    <p>
+      var fv = function (a, b) {
+    </p>
+    <p>
+      &#160;&#160;return a + b;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      console.log( fv(18, 24) );
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1460796173066" FOLDED="true" ID="ID_1813747741" MODIFIED="1460796304027" TEXT="Ecmascript 5 t&#xf6;mbf&#xfc;ggv&#xe9;nyek">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var tomb = [1, 2, 3, 4, 5];
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // Kiv&#225;logat&#225;s
+    </p>
+    <p>
+      function kivalogatas(x) {
+    </p>
+    <p>
+      &#160;&#160;var out = [];
+    </p>
+    <p>
+      &#160;&#160;for (var i = 0; i &lt; x.length; i++) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;if (x[i] % 2 === 0) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;out.push(x[i]);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;return out;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      var parosak = kivalogatas(tomb);
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // HELYETTE:
+    </p>
+    <p>
+      var parosak = tomb.filter(function (e) {
+    </p>
+    <p>
+      &#160;&#160;return e % 2 === 0;
+    </p>
+    <p>
+      });
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460796224922" FOLDED="true" ID="ID_1053675816" MODIFIED="1460796300231" TEXT="Programoz&#xe1;si t&#xe9;telek megvas&#xed;t&#xe1;sa">
+<node CREATED="1460796237400" ID="ID_503421064" MODIFIED="1460796243954" TEXT="forEach: &#xe1;ltal&#xe1;nos ciklus"/>
+<node CREATED="1460796245391" ID="ID_296275127" MODIFIED="1460796249018" TEXT="some: eldnt&#xe9;s"/>
+<node CREATED="1460796250376" ID="ID_1589059292" MODIFIED="1460796260133" TEXT="every: optimista eld&#xf6;nt&#xe9;s"/>
+<node CREATED="1460796261388" ID="ID_391174682" MODIFIED="1460796274609" TEXT="map: m&#xe1;sol&#xe1;s"/>
+<node CREATED="1460796275895" ID="ID_866354746" MODIFIED="1460796282996" TEXT="filter: kiv&#xe1;logat&#xe1;s"/>
+<node CREATED="1460796284145" ID="ID_1010402210" MODIFIED="1460796294586" TEXT="reduce: &#xf6;sszegz&#xe9;s (sorozatsz&#xe1;m&#xed;t&#xe1;s)"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1460796313365" FOLDED="true" ID="ID_1971339044" MODIFIED="1460796409249" TEXT="&#xd6;sszefoglal&#xe1;s">
+<node CREATED="1460796320883" ID="ID_829636741" MODIFIED="1460796404351" TEXT="Esem&#xe9;nykezel&#xe9;s">
+<node CREATED="1460796332400" ID="ID_1425220054" MODIFIED="1460796341185" TEXT="Esem&#xe9;nyt jelz&#x151; objektum"/>
+<node CREATED="1460796342735" ID="ID_300053320" MODIFIED="1460796349153" TEXT="Esem&#xe9;nyobjektum"/>
+<node CREATED="1460796350319" ID="ID_67682027" MODIFIED="1460796354023" TEXT="Bubor&#xe9;kol&#xe1;s"/>
+<node CREATED="1460796355181" ID="ID_454277376" MODIFIED="1460796367125" TEXT="Esem&#xe9;nyt eredetileg jelz&#x151; objektum"/>
+</node>
+<node CREATED="1460796368747" ID="ID_203661158" MODIFIED="1460796371840" TEXT="Nyelvi elemek">
+<node CREATED="1460796374164" ID="ID_766459528" MODIFIED="1460796378292" TEXT="Glob&#xe1;lis f&#xfc;ggv&#xe9;nyek"/>
+<node CREATED="1460796379403" ID="ID_1433149164" MODIFIED="1460796387545" TEXT="JS be&#xe9;p&#xed;tett objektumai"/>
+<node CREATED="1460796388759" ID="ID_751862324" MODIFIED="1460796393534" TEXT="N&#xe9;vtelen f&#xfc;ggv&#xe9;nyek"/>
 </node>
 </node>
 </node>
