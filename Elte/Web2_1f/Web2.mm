@@ -2962,8 +2962,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460794544786" FOLDED="true" ID="ID_532024137" MODIFIED="1460794908746" TEXT="Esem&#xe9;nyobjektum megszerz&#xe9;se">
@@ -3027,8 +3026,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460794551984" ID="ID_1508332890" MODIFIED="1460794559750" TEXT="Szabv&#xe1;nyos (W3C)">
 <node CREATED="1460794560599" ID="ID_1158966807" MODIFIED="1460794589124" TEXT="Az esem&#xe9;nykezel&#x151; f&#xfc;ggv&#xe9;ny param&#xe9;terek&#xe9;nt &#xe9;rkezik automatikusan">
 <richcontent TYPE="NOTE"><html>
@@ -3046,8 +3044,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460794591528" ID="ID_1630011234" MODIFIED="1460794600452" TEXT="Internet Explorer (r&#xe9;gebbi)">
@@ -3067,8 +3064,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460794643662" ID="ID_869832606" MODIFIED="1460794682456" TEXT="Egys&#xe9;ges megold&#xe1;s">
@@ -3090,8 +3086,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460794659946" ID="ID_1808294122" MODIFIED="1460794662310" TEXT="Ha nem j&#xf6;n param&#xe9;terk&#xe9;nt, akkor a glob&#xe1;lis &#xe9;rt&#xe9;ket kell venni."/>
 <node CREATED="1460794667563" ID="ID_1661202771" MODIFIED="1460794669134" TEXT="Minden esem&#xe9;nykezel&#x151;nek &#xed;gy kell kezd&#x151;dnie"/>
 </node>
@@ -3134,8 +3129,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460794798782" ID="ID_104604334" MODIFIED="1460794801320" TEXT="karakter k&#xf3;dja"/>
 <node CREATED="1460794802978" ID="ID_616684403" MODIFIED="1460794822091" TEXT="Megn&#xe9;zi, melyik tulajdons&#xe1;g tartalmaz &#xe9;rtelmes &#xe9;rt&#xe9;ket-feature detection"/>
 </node>
@@ -3173,8 +3167,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460794858827" ID="ID_1142208164" MODIFIED="1460794864632" TEXT="esem&#xe9;nyt kiv&#xe1;lt&#xf3; objektum"/>
 <node CREATED="1460794865926" ID="ID_1526586399" MODIFIED="1460794869757" TEXT="feature detection"/>
 <node CREATED="1460794870795" ID="ID_1266083541" MODIFIED="1460794877835" TEXT="Safari b&#xf6;ng&#xe9;sz&#x151;hiba kezel&#xe9;se"/>
@@ -3264,8 +3257,7 @@
       console.log( parseFloat('4.54') ); //4.54
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460795148366" ID="ID_38869225" MODIFIED="1460795156546" TEXT="parseInt(sz&#xf6;veg, sz&#xe1;mrendszer)"/>
 <node CREATED="1460795158832" ID="ID_249557310" MODIFIED="1460795167990" TEXT="parseFloat(sz&#xf6;veg)"/>
 </node>
@@ -3294,8 +3286,7 @@
       //&quot;http://server.hu/%C3%BAtvonal%20sz%C3%B3k%C3%B6z%C3%B6kkel&quot;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460795229987" ID="ID_1838457989" MODIFIED="1460795235048" TEXT="Speci&#xe1;lis karakterek">
 <node CREATED="1460795235418" ID="ID_1202846515" MODIFIED="1460795237331" TEXT="t&#xe1;rol&#xe1;sa"/>
 <node CREATED="1460795238290" ID="ID_803977476" MODIFIED="1460795241829" TEXT="k&#xfc;ld&#xe9;se"/>
@@ -3369,8 +3360,7 @@
       console.log(maskor - most); //ms-okban
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460795601583" FOLDED="true" ID="ID_1690554631" MODIFIED="1460795814659" TEXT="String m&#x171;veletek">
@@ -3420,8 +3410,7 @@
       console.log('piros alma'.split(' ')); //[&quot;piros&quot;,&quot;alma&quot;]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460795818195" FOLDED="true" ID="ID_1370663025" MODIFIED="1460795920929" TEXT="Math objektum">
@@ -3465,8 +3454,7 @@
       console.log(Math.floor(1.6));&#160;&#160;//1
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460795923159" FOLDED="true" ID="ID_472932321" MODIFIED="1460796055796" TEXT="T&#xf6;mb m&#x171;veletek">
@@ -3531,8 +3519,7 @@
       console.log(t.join('###'));&#160;&#160;//&quot;5###4###2###1&quot;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460796067964" FOLDED="true" ID="ID_709084118" MODIFIED="1460796303177" TEXT="N&#xe9;vtelen f&#xfc;ggv&#xe9;ny">
@@ -3572,8 +3559,7 @@
       }, false);
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460796073135" ID="ID_1447120024" MODIFIED="1460796110784" TEXT="F&#xfc;ggv&#xe9;ny liter&#xe1;l">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -3629,8 +3615,7 @@
       console.log( fv(18, 24) );
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460796173066" FOLDED="true" ID="ID_1813747741" MODIFIED="1460796304027" TEXT="Ecmascript 5 t&#xf6;mbf&#xfc;ggv&#xe9;nyek">
@@ -3694,8 +3679,7 @@
       });
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460796224922" FOLDED="true" ID="ID_1053675816" MODIFIED="1460796300231" TEXT="Programoz&#xe1;si t&#xe9;telek megvas&#xed;t&#xe1;sa">
 <node CREATED="1460796237400" ID="ID_503421064" MODIFIED="1460796243954" TEXT="forEach: &#xe1;ltal&#xe1;nos ciklus"/>
 <node CREATED="1460796245391" ID="ID_296275127" MODIFIED="1460796249018" TEXT="some: eldnt&#xe9;s"/>
@@ -3719,6 +3703,433 @@
 <node CREATED="1460796374164" ID="ID_766459528" MODIFIED="1460796378292" TEXT="Glob&#xe1;lis f&#xfc;ggv&#xe9;nyek"/>
 <node CREATED="1460796379403" ID="ID_1433149164" MODIFIED="1460796387545" TEXT="JS be&#xe9;p&#xed;tett objektumai"/>
 <node CREATED="1460796388759" ID="ID_751862324" MODIFIED="1460796393534" TEXT="N&#xe9;vtelen f&#xfc;ggv&#xe9;nyek"/>
+</node>
+</node>
+</node>
+<node CREATED="1460803130457" ID="ID_835911196" MODIFIED="1460803166010" TEXT="4) &#x170;rlapok, k&#xe9;pek, t&#xe1;bl&#xe1;zatok, b&#xf6;ng&#xe9;sz&#x151;">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1460803719953" FOLDED="true" ID="ID_1385827468" MODIFIED="1460807738075" TEXT="Ism&#xe9;tl&#xe9;s">
+<node CREATED="1460805189553" FOLDED="true" ID="ID_1124587109" MODIFIED="1460805580876" TEXT="JS Programoz&#xe1;s">
+<node CREATED="1460803756195" ID="ID_1144107687" MODIFIED="1460805213998" TEXT="Adatszerkezetek">
+<node CREATED="1460803762690" ID="ID_226197109" MODIFIED="1460803765655" TEXT="Elemi t&#xed;pusok"/>
+<node CREATED="1460803769002" ID="ID_1356597886" MODIFIED="1460803792307" TEXT="&#xd6;sszetett t&#xed;pusok (t&#xf6;mb, objektum-&gt;JSON)"/>
+</node>
+<node CREATED="1460803750323" ID="ID_1980365888" MODIFIED="1460805220464" TEXT="F&#xfc;ggv&#xe9;nyek"/>
+<node CREATED="1460803743246" ID="ID_888472121" MODIFIED="1460805222578" TEXT="Oper&#xe1;torok"/>
+<node CREATED="1460803735238" ID="ID_773615354" MODIFIED="1460805224723" TEXT="Vez&#xe9;rl&#xe9;si szerkezetek"/>
+<node CREATED="1460803728242" ID="ID_1229608597" MODIFIED="1460805227303" TEXT="JS-C++"/>
+</node>
+<node CREATED="1460805237008" FOLDED="true" ID="ID_1618550374" MODIFIED="1460805579759" TEXT="HTML &#xe9;s JS webprogramoz&#xe1;s">
+<node CREATED="1460805259976" ID="ID_1320287676" MODIFIED="1460805262733" TEXT="elemek el&#xe9;r&#xe9;se">
+<node CREATED="1460805265619" ID="ID_1280374855" MODIFIED="1460805279125" TEXT="document.getElementById"/>
+<node CREATED="1460805280722" ID="ID_1397996997" MODIFIED="1460805283609" TEXT="$()"/>
+</node>
+<node CREATED="1460805285477" ID="ID_1126947821" MODIFIED="1460805290275" TEXT="Elemek tulajdons&#xe1;gai"/>
+<node CREATED="1460805291598" ID="ID_805415164" MODIFIED="1460805296712" TEXT="Esem&#xe9;nykezel&#xe9;s">
+<node CREATED="1460805297377" ID="ID_366516372" MODIFIED="1460805330760" TEXT="addEventListener"/>
+</node>
+<node CREATED="1460805332548" ID="ID_374932620" MODIFIED="1460805339743" TEXT="HTML &#xe9;s JS sz&#xe9;tv&#xe1;laszt&#xe1;sa"/>
+</node>
+<node CREATED="1460805344026" FOLDED="true" ID="ID_300902737" MODIFIED="1460805578122" TEXT="Esem&#xe9;nyek, Nyelvi elemek">
+<node CREATED="1460805374523" ID="ID_761277388" MODIFIED="1460805382460" TEXT="Esem&#xe9;nykezel&#xe9;s r&#xe9;szletei">
+<node CREATED="1460805395708" ID="ID_38307593" MODIFIED="1460805402553" TEXT="Esem&#xe9;nyt jelz&#x151; objektum">
+<node CREATED="1460805403471" ID="ID_1291024754" MODIFIED="1460805404890" TEXT="this"/>
+</node>
+<node CREATED="1460805406845" ID="ID_287674468" MODIFIED="1460805409854" TEXT="Esem&#xe9;nyobjektum">
+<node CREATED="1460805410742" ID="ID_461126686" MODIFIED="1460805424962" TEXT="megszerz&#xe9;se"/>
+<node CREATED="1460805426536" ID="ID_1232492285" MODIFIED="1460805429727" TEXT="tulajdons&#xe1;gai"/>
+</node>
+<node CREATED="1460805431761" ID="ID_1987895636" MODIFIED="1460805443000" TEXT="Alap&#xe9;rtelmezett m&#x171;velet megakad&#xe1;lyoz&#xe1;sa"/>
+<node CREATED="1460805444741" ID="ID_1234818569" MODIFIED="1460805451324" TEXT="Esem&#xe9;nyek bubor&#xe9;kol&#xe1;sa"/>
+<node CREATED="1460805453649" ID="ID_1978797206" MODIFIED="1460805461083" TEXT="Esem&#xe9;nyt eredetileg jelz&#x151; objektum"/>
+<node CREATED="1460805462871" ID="ID_1092871704" MODIFIED="1460805470736" TEXT="Bubor&#xe9;kol&#xe1;s meg&#xe1;ll&#xed;t&#xe1;sa"/>
+</node>
+<node CREATED="1460805476809" ID="ID_875705583" MODIFIED="1460805497647" TEXT="Glob&#xe1;lis f&#xfc;ggv&#xe9;nyek &#xe9;s &#xe9;rt&#xe9;kek">
+<node CREATED="1460805498212" ID="ID_103249122" MODIFIED="1460805520689" TEXT="Nan, isNaN, Infinity, isFinite()"/>
+<node CREATED="1460805521975" ID="ID_979547857" MODIFIED="1460805533254" TEXT="parseInt(), parseFloat()"/>
+<node CREATED="1460805534323" ID="ID_1270047537" MODIFIED="1460805544577" TEXT="encodeURI(), decodeURI()"/>
+</node>
+<node CREATED="1460805549649" ID="ID_1706349773" MODIFIED="1460805554131" TEXT="Be&#xe9;p&#xed;tett objektumok">
+<node CREATED="1460805555025" ID="ID_381864743" MODIFIED="1460805556598" TEXT="Math"/>
+<node CREATED="1460805557864" ID="ID_141037374" MODIFIED="1460805558781" TEXT="Date"/>
+<node CREATED="1460805560174" ID="ID_1548115489" MODIFIED="1460805563753" TEXT="String"/>
+<node CREATED="1460805565566" ID="ID_68350391" MODIFIED="1460805567803" TEXT="Array"/>
+</node>
+</node>
+<node CREATED="1460805583406" FOLDED="true" ID="ID_1318390725" MODIFIED="1460806413443" TEXT="DOM-ok">
+<node CREATED="1460805588143" ID="ID_432325299" MODIFIED="1460805591540" TEXT="DOM Core">
+<node CREATED="1460805592364" ID="ID_72208824" MODIFIED="1460805595875" TEXT="csom&#xf3;pontok f&#xe1;ja"/>
+<node CREATED="1460805597196" ID="ID_1785110434" MODIFIED="1460805602137" TEXT="&#xe1;br&#xe1;zol&#xe1;s"/>
+<node CREATED="1460805603439" ID="ID_1079725305" MODIFIED="1460805605509" TEXT="m&#x171;velet"/>
+</node>
+<node CREATED="1460805609246" ID="ID_1762349239" MODIFIED="1460805612847" TEXT="HTML DOM">
+<node CREATED="1460805613489" ID="ID_966466505" MODIFIED="1460805616846" TEXT="HTML elemek f&#xe1;ja"/>
+<node CREATED="1460805618414" ID="ID_1025448191" MODIFIED="1460805638054" TEXT="speci&#xe1;lis elemek-&gt;t&#xf6;bbltefunkcionalit&#xe1;s"/>
+</node>
+<node CREATED="1460805641664" ID="ID_1388716711" MODIFIED="1460805645719" TEXT="Speci&#xe1;lis elemek">
+<node CREATED="1460805646599" ID="ID_1504199478" MODIFIED="1460805650268" TEXT="&#x170;rlapok"/>
+<node CREATED="1460805651260" ID="ID_503772190" MODIFIED="1460805652546" TEXT="K&#xe9;pek"/>
+<node CREATED="1460805653624" ID="ID_40745719" MODIFIED="1460805656117" TEXT="T&#xe1;bl&#xe1;zatok"/>
+</node>
+<node CREATED="1460805665492" FOLDED="true" ID="ID_1150595671" MODIFIED="1460806386141" TEXT="DOM">
+<node CREATED="1460805692994" ID="ID_1527118015" MODIFIED="1460805693526" TEXT=" Document Object Model"/>
+<node CREATED="1460805695399" ID="ID_275731212" MODIFIED="1460805711098" TEXT="HTML &#xe9;s XML dokumentumok programoz&#xe1;si fel&#xfc;lete"/>
+<node CREATED="1460805712329" ID="ID_513521444" MODIFIED="1460805721641" TEXT="Objektumstrukt&#xfa;ra, faszerkezet"/>
+<node CREATED="1460805728337" ID="ID_420801847" MODIFIED="1460805737863" TEXT="DOM csom&#xf3;pontok">
+<node CREATED="1460805738632" ID="ID_617516768" MODIFIED="1460805741533" TEXT="dokumentum"/>
+<node CREATED="1460805742731" ID="ID_1840095381" MODIFIED="1460805743676" TEXT="elem"/>
+<node CREATED="1460805744811" ID="ID_1178166113" MODIFIED="1460805754068" TEXT="attrib&#xfa;tum"/>
+<node CREATED="1460805755870" ID="ID_323899521" MODIFIED="1460805760203" TEXT="sz&#xf6;veges csom&#xf3;pont"/>
+</node>
+<node CREATED="1460805764668" ID="ID_1372619440" MODIFIED="1460805797834" TEXT="p&#xe9;lda">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &lt;!doctype html&gt;
+    </p>
+    <p>
+      &lt;html lang=&quot;en&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;head&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;title&gt;&lt;/title&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;/head&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;body&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;p id=&quot;par1&quot;&gt;Bekezd&#233;s.&lt;/p&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;p class=&quot;aktiv&quot;&gt;M&#233;g egy bekezd&#233;s.&lt;/p&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;ul&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&lt;li&gt;els&#337;&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&lt;li class=&quot;aktiv&quot;&gt;m&#225;sodik&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;/ul&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;form name=&quot;form1&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;r1&quot; value=&quot;elso&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;r1&quot; value=&quot;masodik&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;/form&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;/body&gt;
+    </p>
+    <p>
+      &lt;/html&gt;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1460805805002" FOLDED="true" ID="ID_248135314" MODIFIED="1460806411837" TEXT="M&#x171;veletcsoportok">
+<node CREATED="1460805810320" FOLDED="true" ID="ID_1391053225" MODIFIED="1460806348542" TEXT="Elemek kiv&#xe1;laszt&#xe1;sa">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &lt;body&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;p id=&quot;par1&quot;&gt;Bekezd&#233;s.&lt;/p&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;p class=&quot;aktiv&quot;&gt;M&#233;g egy bekezd&#233;s.&lt;/p&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;ul&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;li&gt;els&#337;&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;li class=&quot;aktiv&quot;&gt;m&#225;sodik&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;/ul&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;form name=&quot;form1&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;r1&quot; value=&quot;elso&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;input type=&quot;radio&quot; name=&quot;r1&quot; value=&quot;masodik&quot;&gt;
+    </p>
+    <p>
+      &#160;&#160;&lt;/form&gt;
+    </p>
+    <p>
+      &lt;/body&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      console.log(document.getElementById('par1'));
+    </p>
+    <p>
+      console.log(document.getElementsByName('r1'));
+    </p>
+    <p>
+      console.log(document.getElementsByTagName('p'));
+    </p>
+    <p>
+      console.log(document.getElementsByClassName('aktiv'));
+    </p>
+    <p>
+      console.log(document.querySelector('ul &gt; li'));
+    </p>
+    <p>
+      console.log(document.querySelectorAll('ul &gt; li'));
+    </p>
+    <p>
+      var body = document.body;
+    </p>
+    <p>
+      console.log(body.getElementsByTagName('p'));
+    </p>
+    <p>
+      console.log(body.getElementsByClassName('aktiv'));
+    </p>
+    <p>
+      console.log(body.querySelector('ul &gt; li'));
+    </p>
+    <p>
+      console.log(body.querySelectorAll('ul &gt; li'));
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1460805860884" ID="ID_158889766" MODIFIED="1460805868307" TEXT="document">
+<node CREATED="1460805868843" ID="ID_1711362829" MODIFIED="1460805877951" TEXT="getElementById(id)"/>
+<node CREATED="1460805879277" ID="ID_687730685" MODIFIED="1460805892399" TEXT="getElementsByName(n&#xe9;v)"/>
+</node>
+<node CREATED="1460805895458" ID="ID_252635194" MODIFIED="1460805903580" TEXT="document/elem">
+<node CREATED="1460805904576" ID="ID_64904112" MODIFIED="1460805918100" TEXT="getElementsByTagName(elemn&#xe9;v)"/>
+<node CREATED="1460805921037" ID="ID_1665364577" MODIFIED="1460805942208" TEXT="getElementsByClassName(st&#xed;lusoszt&#xe1;lyok)"/>
+<node CREATED="1460805944239" ID="ID_305115013" MODIFIED="1460805955837" TEXT="querySelector(css_szelektor)"/>
+<node CREATED="1460805957170" ID="ID_1637678591" MODIFIED="1460805971567" TEXT="querySelectorAll(css_szelektor)"/>
+</node>
+</node>
+<node CREATED="1460805815733" FOLDED="true" ID="ID_1414214839" MODIFIED="1460806339552" TEXT="Szerkezet bej&#xe1;r&#xe1;sa">
+<node CREATED="1460806004212" ID="ID_518761365" MODIFIED="1460806010456" TEXT="Bej&#xe1;r&#xe1;s (elem.tulajdons&#xe1;g)">
+<node CREATED="1460806012267" ID="ID_1257617628" MODIFIED="1460806014870" TEXT="gyerekek">
+<node CREATED="1460806030054" ID="ID_1706115609" MODIFIED="1460806041542" TEXT="childNodes, firstChils, lastChild"/>
+</node>
+<node CREATED="1460806015825" ID="ID_360664629" MODIFIED="1460806022537" TEXT="sz&#xfc;l&#x151;">
+<node CREATED="1460806043753" ID="ID_1689267568" MODIFIED="1460806047022" TEXT="parentNode"/>
+</node>
+<node CREATED="1460806023660" ID="ID_1657274501" MODIFIED="1460806027052" TEXT="testv&#xe9;rek">
+<node CREATED="1460806052966" ID="ID_8904989" MODIFIED="1460806075787" TEXT="nextSibling, previousSibling"/>
+<node CREATED="1460806080685" ID="ID_1870045840" MODIFIED="1460806097645" TEXT="nextElementSibling, previousElementSibling"/>
+</node>
+</node>
+<node CREATED="1460806103692" ID="ID_1993296576" MODIFIED="1460806112618" TEXT="Elemek: nodeType === 1"/>
+<node CREATED="1460806121754" ID="ID_1246570914" MODIFIED="1460806140369" TEXT="Sz&#xf6;veges csom&#xf3;pontok nodeType === 3"/>
+</node>
+<node CREATED="1460805821050" FOLDED="true" ID="ID_266750843" MODIFIED="1460806342920" TEXT="Szerkezet m&#xf3;dos&#xed;t&#xe1;sa">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var p = document.createElement('p');
+    </p>
+    <p>
+      p.innerHTML = '&#218;j bekezd&#233;s';
+    </p>
+    <p>
+      p.setAttribute('class', 'aktiv');
+    </p>
+    <p>
+      document.body.appendChild(p);
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1460805828971" ID="ID_941888542" MODIFIED="1460806218179" TEXT="attrib&#xfa;tumok (elem)">
+<node CREATED="1460806149826" ID="ID_575763351" MODIFIED="1460806158395" TEXT="getAttribute(n&#xe9;v)"/>
+<node CREATED="1460806159605" ID="ID_1053767453" MODIFIED="1460806172590" TEXT="setAttribute(n&#xe9;v, &#xe9;rt&#xe9;k)"/>
+<node CREATED="1460806178891" ID="ID_1986150250" MODIFIED="1460806184243" TEXT="hasAttribute(n&#xe9;v)"/>
+<node CREATED="1460806185833" ID="ID_1855122389" MODIFIED="1460806192011" TEXT="removeAttribute(n&#xe9;v)"/>
+</node>
+<node CREATED="1460805834631" ID="ID_643143291" MODIFIED="1460805845038" TEXT="&#xfa;j elem/attrib&#xfa;tum l&#xe9;trehoz&#xe1;sa">
+<node CREATED="1460806249303" ID="ID_1113358946" MODIFIED="1460806259894" TEXT="document.CreateElement(elem)"/>
+<node CREATED="1460806263472" ID="ID_25681272" MODIFIED="1460806273263" TEXT="(elem.innerHTML)"/>
+</node>
+<node CREATED="1460805847074" ID="ID_34467028" MODIFIED="1460805849233" TEXT="m&#xf3;dos&#xed;t&#xe1;s"/>
+<node CREATED="1460805850400" ID="ID_633505750" MODIFIED="1460806212730" TEXT="t&#xf6;rl&#xe9;s, besz&#xfa;r&#xe1;s (elem)">
+<node CREATED="1460806221889" ID="ID_1421628776" MODIFIED="1460806229043" TEXT="removeChild(elem)"/>
+<node CREATED="1460806232224" ID="ID_1806006678" MODIFIED="1460806236936" TEXT="appendChild(elem)"/>
+<node CREATED="1460806237910" ID="ID_441853584" MODIFIED="1460806244463" TEXT="replaceChild(elem, elem)"/>
+</node>
+<node CREATED="1460806298162" ID="ID_654084227" MODIFIED="1460806339605" TEXT="p&#xe9;lda: H&#xe1;nyadik elem">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &lt;ul&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;li&gt;els&#337;&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;li&gt;m&#225;sodik&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;li&gt;harmadik&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;li&gt;negyedik&lt;/li&gt;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&lt;li&gt;&#246;t&#246;dik&lt;/li&gt;
+    </p>
+    <p>
+      &lt;/ul&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      function pozicio( el ) {
+    </p>
+    <p>
+      &#160;&#160;&#160;var pos = 0;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;// kiv&#225;laszt&#225;s &#233;s sz&#225;mol&#225;s az elemt&#337;l visszafel&#233;
+    </p>
+    <p>
+      &#160;&#160;&#160;while ( null != el ) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;// el&#337;z&#337; testv&#233;rre l&#233;p&#233;s
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;el = el.previousElementSibling;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;pos++;
+    </p>
+    <p>
+      &#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;return pos;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      pozicio(document.querySelector('ul &gt; li:nth-cild(2)')); // 2
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1460806357394" ID="ID_1645974212" MODIFIED="1460806441096" TEXT="&#x170;rlap &#xe9;s &#x170;rlapelemek">
+<node CREATED="1460807826881" ID="ID_378122339" MODIFIED="1460808354378" TEXT="Tipikus &#x171;rlapm&#x171;veletek">
+<node CREATED="1460807836691" ID="ID_473310785" MODIFIED="1460807860462" TEXT="Interakci&#xf3; egyik legfontosabb eszk&#xf6;ze az &#x171;rlap"/>
+<node CREATED="1460807937892" ID="ID_812785219" MODIFIED="1460807946121" TEXT="Adatok beolvas&#xe1;sa, megad&#xe1;sa"/>
+<node CREATED="1460807947535" ID="ID_887534755" MODIFIED="1460807966247" TEXT="Adatok ellen&#x151;rz&#xe9;se"/>
+</node>
+<node CREATED="1460807968831" ID="ID_947167950" MODIFIED="1460808293254" TEXT="&#x170;rlap tulajdons&#xe1;gai, met&#xf3;dusai, esem&#xe9;nyei">
+<node CREATED="1460808233472" ID="ID_226529718" MODIFIED="1460808239823" TEXT="&lt;form&gt; elem"/>
+<node CREATED="1460808240806" ID="ID_1669655766" MODIFIED="1460808248938" TEXT="Tulajdons&#xe1;gai (anal&#xf3;g m&#xf3;dszer)">
+<node CREATED="1460808249715" ID="ID_1149769311" MODIFIED="1460808251656" TEXT="action"/>
+<node CREATED="1460808253851" ID="ID_513281805" MODIFIED="1460808257931" TEXT="method"/>
+<node CREATED="1460808258970" ID="ID_1394973643" MODIFIED="1460808262269" TEXT="enctype"/>
+<node CREATED="1460808263563" ID="ID_338451924" MODIFIED="1460808264717" TEXT="name"/>
+<node CREATED="1460808265636" ID="ID_162934145" MODIFIED="1460808269576" TEXT="target"/>
+</node>
+<node CREATED="1460808274330" ID="ID_1825052095" MODIFIED="1460808278672" TEXT="Esem&#xe9;nyek">
+<node CREATED="1460808296975" ID="ID_380725298" MODIFIED="1460808303533" TEXT="submit (meg&#xe1;ll&#xed;that&#xf3;)"/>
+<node CREATED="1460808304492" ID="ID_88084344" MODIFIED="1460808305946" TEXT="reset"/>
+</node>
+<node CREATED="1460808279711" ID="ID_1425520569" MODIFIED="1460808283368" TEXT="Met&#xf3;dusok">
+<node CREATED="1460808311940" ID="ID_1943002946" MODIFIED="1460808314170" TEXT="submit()"/>
+<node CREATED="1460808315138" ID="ID_1515079497" MODIFIED="1460808317071" TEXT="reset()"/>
+</node>
+</node>
+<node CREATED="1460808376300" ID="ID_1676004503" MODIFIED="1460808383500" TEXT="Input elem">
+<node CREATED="1460808384876" ID="ID_982463009" MODIFIED="1460808405754" TEXT="&lt;input&gt;"/>
+<node CREATED="1460808449459" ID="ID_199012308" MODIFIED="1460808464392" TEXT="type attrib&#xfa;tuma-&gt;jellege"/>
+<node CREATED="1460808467019" ID="ID_165269042" MODIFIED="1460808488965" TEXT="K&#xf6;z&#xf6;s tulajdons&#xe1;gai">
+<node CREATED="1460808491237" ID="ID_806328590" MODIFIED="1460808492873" TEXT="name"/>
+<node CREATED="1460808494334" ID="ID_432535326" MODIFIED="1460808495963" TEXT="form"/>
+<node CREATED="1460808496992" ID="ID_1551448994" MODIFIED="1460808497823" TEXT="value"/>
+<node CREATED="1460808498773" ID="ID_1328367241" MODIFIED="1460808502153" TEXT="defaultvalue"/>
+<node CREATED="1460808503870" ID="ID_528395408" MODIFIED="1460808508882" TEXT="disabled"/>
+<node CREATED="1460808509796" ID="ID_1193488858" MODIFIED="1460808512544" TEXT="tabIndex"/>
+</node>
+<node CREATED="1460808520236" ID="ID_769070330" MODIFIED="1460808525168" TEXT="K&#xf6;z&#xf6;s met&#xf3;dusok">
+<node CREATED="1460808530198" ID="ID_1405389922" MODIFIED="1460808535139" TEXT="focus()"/>
+<node CREATED="1460808536043" ID="ID_1106446473" MODIFIED="1460808541878" TEXT="blur()"/>
+<node CREATED="1460808544483" ID="ID_1150599950" MODIFIED="1460808546557" TEXT="select()"/>
+<node CREATED="1460808549140" ID="ID_116064727" MODIFIED="1460808553516" TEXT="click()"/>
+</node>
+<node CREATED="1460808578681" ID="ID_1584388464" MODIFIED="1460808595347" TEXT="Esem&#xe9;nyek">
+<node CREATED="1460808595892" ID="ID_583959695" MODIFIED="1460808598260" TEXT="click"/>
+<node CREATED="1460808599274" ID="ID_885519230" MODIFIED="1460808600618" TEXT="change"/>
+<node CREATED="1460808601951" ID="ID_1476223854" MODIFIED="1460808603842" TEXT="focus"/>
+<node CREATED="1460808605154" ID="ID_1752626875" MODIFIED="1460808608821" TEXT="blur"/>
+</node>
+</node>
+<node CREATED="1460808613464" ID="ID_15339409" MODIFIED="1460808620539" TEXT="Sz&#xf6;veges beviteli mez&#x151;k">
+<node CREATED="1460808621780" ID="ID_1286565327" MODIFIED="1460808624100" TEXT="type">
+<node CREATED="1460808626344" ID="ID_103066352" MODIFIED="1460808628170" TEXT="text"/>
+<node CREATED="1460808629169" ID="ID_249998098" MODIFIED="1460808631154" TEXT="password"/>
+</node>
+<node CREATED="1460808632990" ID="ID_213970064" MODIFIED="1460808637634" TEXT="tulajdons&#xe1;gok">
+<node CREATED="1460808639455" ID="ID_721536507" MODIFIED="1460808645753" TEXT="value"/>
+<node CREATED="1460808647423" ID="ID_1172097905" MODIFIED="1460808649348" TEXT="readOnly"/>
+<node CREATED="1460808650293" ID="ID_749455045" MODIFIED="1460808651894" TEXT="size"/>
+<node CREATED="1460808652782" ID="ID_60531757" MODIFIED="1460808656372" TEXT="maxLength"/>
+</node>
 </node>
 </node>
 </node>
