@@ -4619,13 +4619,13 @@
 </node>
 </node>
 </node>
-<node CREATED="1460809363920" ID="ID_1830759026" MODIFIED="1460809365439" TEXT="K&#xe9;pek">
+<node CREATED="1460809363920" FOLDED="true" ID="ID_1830759026" MODIFIED="1460809844509" TEXT="K&#xe9;pek">
 <node CREATED="1460809374276" ID="ID_872873766" MODIFIED="1460809375592" TEXT="&lt;img src=&quot;kep.png&quot; alt=&quot;sz&#xf6;veg&quot; &gt;"/>
 <node CREATED="1460809378601" ID="ID_708132387" MODIFIED="1460809384903" TEXT="Legfontosabb tulajdons&#xe1;ga: src">
 <node CREATED="1460809388192" ID="ID_1126925149" MODIFIED="1460809393349" TEXT="Dinamikusan lecser&#xe9;lni a k&#xe9;pet"/>
 </node>
 <node CREATED="1460809395534" ID="ID_1856291463" MODIFIED="1460809409944" TEXT="Minden egy&#xe9;b &#xe1;ltal&#xe1;ban st&#xed;lusmanipul&#xe1;ci&#xf3;"/>
-<node CREATED="1460809412286" ID="ID_1393107414" MODIFIED="1460809420826" TEXT="Tipikus k&#xe9;pm&#x171;veletek">
+<node CREATED="1460809412286" FOLDED="true" ID="ID_1393107414" MODIFIED="1460809843234" TEXT="Tipikus k&#xe9;pm&#x171;veletek">
 <node CREATED="1460809491753" ID="ID_239369848" MODIFIED="1460809497476" TEXT="K&#xe9;p lecser&#xe9;l&#xe9;se">
 <node CREATED="1460809514316" ID="ID_1804071193" MODIFIED="1460809540584" TEXT="src attrib&#xfa;tum&#xe1;nak megv&#xe1;ltoztat&#xe1;sa">
 <richcontent TYPE="NOTE"><html>
@@ -4689,8 +4689,8 @@
 </node>
 </node>
 </node>
-<node CREATED="1460809675582" ID="ID_72447988" MODIFIED="1460809680689" TEXT="T&#xe1;bl&#xe1;zatok">
-<node CREATED="1460809684897" ID="ID_835556256" MODIFIED="1460809690697" TEXT="Sorok &#xe9;s cell&#xe1;k kezel&#xe9;se">
+<node CREATED="1460809675582" FOLDED="true" ID="ID_72447988" MODIFIED="1460809845783" TEXT="T&#xe1;bl&#xe1;zatok">
+<node CREATED="1460809684897" FOLDED="true" ID="ID_835556256" MODIFIED="1460809840666" TEXT="Sorok &#xe9;s cell&#xe1;k kezel&#xe9;se">
 <node CREATED="1460809694160" ID="ID_1184964620" MODIFIED="1460809696414" TEXT="T&#xe1;bl&#xe1;zat">
 <node CREATED="1460809703854" ID="ID_18985426" MODIFIED="1460809705318" TEXT="rows"/>
 <node CREATED="1460809706382" ID="ID_286304190" MODIFIED="1460809714213" TEXT="insertRow(index)"/>
@@ -4740,6 +4740,225 @@
 </html>
 </richcontent>
 <node CREATED="1460809814768" ID="ID_1027909004" MODIFIED="1460809817350" TEXT="cellIndex"/>
+</node>
+</node>
+</node>
+<node CREATED="1460809848306" ID="ID_967494534" MODIFIED="1460809858207" TEXT="Browser Object Model">
+<node CREATED="1460809858816" ID="ID_1860999554" MODIFIED="1460809890519" TEXT="BOM: b&#xf6;ng&#xe9;sz&#x151;ablaknak megfelel&#x151; objektumhierarchia"/>
+<node CREATED="1460809918825" ID="ID_1810827429" MODIFIED="1460809923709" TEXT="m&#xe9;rt&#xe9;kek &#xe9;s poz&#xed;ci&#xf3;">
+<node CREATED="1460809925324" ID="ID_943795054" MODIFIED="1460809927145" TEXT="window">
+<node CREATED="1460809929146" ID="ID_1116982972" MODIFIED="1460809938240" TEXT="innerHeight, innerWidth">
+<node CREATED="1460809939658" ID="ID_327066874" MODIFIED="1460809950731" TEXT="a tartalmi r&#xe9;sz magass&#xe1;ga &#xe9;s sz&#xe9;less&#xe9;ge"/>
+</node>
+<node CREATED="1460809952823" ID="ID_383643710" MODIFIED="1460809964797" TEXT="outerHeight, outerWidth">
+<node CREATED="1460809966396" ID="ID_758957981" MODIFIED="1460809976271" TEXT="a b&#xf6;ng&#xe9;sz&#x151;ablak magass&#xe1;ga &#xe9;s sz&#xe9;less&#xe9;ge"/>
+</node>
+<node CREATED="1460809980759" ID="ID_1668093733" MODIFIED="1460809988139" TEXT="screenX, screenY">
+<node CREATED="1460809989691" ID="ID_1070721384" MODIFIED="1460810011105" TEXT="az ablaknak a f&#x151;k&#xe9;perny&#x151;t&#x151;l bal fels&#x151; sark&#xe1;t&#xf3;l val&#xf3; t&#xe1;vols&#xe1;ga"/>
+</node>
+<node CREATED="1460810013654" ID="ID_1077352925" MODIFIED="1460810020655" TEXT="scrollX, scroolY">
+<node CREATED="1460810021928" ID="ID_746311983" MODIFIED="1460810034117" TEXT="h&#xe1;ny pixelnyire van g&#xf6;rd&#xed;tve a dokumentum"/>
+</node>
+<node CREATED="1460810036920" ID="ID_904257820" MODIFIED="1460810046087" TEXT="scrollMayY,scrollMaxY">
+<node CREATED="1460810046736" ID="ID_293912062" MODIFIED="1460810062447" TEXT="legfeljebb h&#xe1;ny pixelnyit lehet g&#xf6;rd&#xed;teni a dokumentumot"/>
+</node>
+</node>
+<node CREATED="1460810069027" ID="ID_1689305548" MODIFIED="1460810088521" TEXT="window.screen (az ablakhoz kapcsol&#xf3;d&#xf3; k&#xe9;perny&#x151;)">
+<node CREATED="1460810089784" ID="ID_218093548" MODIFIED="1460810095278" TEXT="width, heigth">
+<node CREATED="1460810096015" ID="ID_1236949521" MODIFIED="1460810106090" TEXT="a k&#xe9;perny&#x151; sz&#xe9;less&#xe9;ge &#xe9;s magass&#xe1;ga"/>
+</node>
+<node CREATED="1460810108554" ID="ID_492648066" MODIFIED="1460810119300" TEXT="availWidth, availHeight">
+<node CREATED="1460810119989" ID="ID_1078476745" MODIFIED="1460810133554" TEXT="a k&#xe9;perny&#x151; rendelkez&#xe9;sre &#xe1;ll&#xf3; sz&#xe9;less&#xe9;ge &#xe9;s magass&#xe1;ga"/>
+</node>
+<node CREATED="1460810135917" ID="ID_926438726" MODIFIED="1460810151162" TEXT="top, left, availTop, availLeft, colorDepth, pixelDepth"/>
+</node>
+<node CREATED="1460810159595" ID="ID_943760204" MODIFIED="1460810164212" TEXT="window met&#xf3;dusok">
+<node CREATED="1460810165109" ID="ID_1001473938" MODIFIED="1460810186056" TEXT="resizeTo(sz&#xe9;l, mag), resizeBy(dsz&#xe9;l, dmag)">
+<node CREATED="1460810197064" ID="ID_1557379711" MODIFIED="1460810202893" TEXT="ablak &#xe1;tm&#xe9;retez&#xe9;se megk&#xf6;t&#xe9;ssel"/>
+</node>
+<node CREATED="1460810205563" ID="ID_1264028025" MODIFIED="1460810224373" TEXT="moveTo(x, y), moveBy(dx, dy)">
+<node CREATED="1460810225583" ID="ID_526193088" MODIFIED="1460810237816" TEXT="ablak &#xe1;thelyez&#xe9;se (megk&#xf6;t&#xe9;sekkel)"/>
+</node>
+<node CREATED="1460810240323" ID="ID_1285579898" MODIFIED="1460810275361" TEXT="scrollTo(x, y), scrollBy(dx, dy), scrollByLines(l),scrollByPages(p)">
+<node CREATED="1460810277042" ID="ID_639456017" MODIFIED="1460810293804" TEXT="a dokumentum g&#xf6;rget&#xe9;se adott poz&#xed;ci&#xf3;ra vagy valamennyivel"/>
+</node>
+<node CREATED="1460810302949" ID="ID_898854149" MODIFIED="1460810311158" TEXT="P&#xe9;lda pong alkalmaz&#xe1;s">
+<node CREATED="1460810316201" ID="ID_650794825" MODIFIED="1460810316592" TEXT="http://stewd.io/pong/"/>
+</node>
+</node>
+<node CREATED="1460810419081" ID="ID_601379300" MODIFIED="1460810431502" TEXT="window.open">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var w = window.open(url, n&#233;v, tulajdons&#225;gok);
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460810432242" ID="ID_402603691" MODIFIED="1460810435866" TEXT="Param&#xe9;terek">
+<node CREATED="1460810440049" ID="ID_757646725" MODIFIED="1460810451610" TEXT="url:bet&#xf6;ltend&#x151; oldal URL-je">
+<node CREATED="1460810453450" ID="ID_1802415016" MODIFIED="1460810467574" TEXT="ha &#xfc;res -&gt;&#xfc;res ablak"/>
+</node>
+<node CREATED="1460810470827" ID="ID_1732253187" MODIFIED="1460810476879" TEXT="n&#xe9;v: az &#xfa;j ablak neve">
+<node CREATED="1460810477399" ID="ID_1678290836" MODIFIED="1460810486985" TEXT="ha l&#xe9;tezik-&gt;ebbe t&#xf6;lt&#x151;dik bele az url"/>
+<node CREATED="1460810488950" ID="ID_1128834124" MODIFIED="1460810500109" TEXT="_blank-&gt;&#xfa;j ablak ny&#xed;lik"/>
+</node>
+<node CREATED="1460810501963" ID="ID_1343024329" MODIFIED="1460810506284" TEXT="tulajdons&#xe1;gok:">
+<node CREATED="1460810506918" ID="ID_968249651" MODIFIED="1460810511502" TEXT="ablaknyit&#xe1;si param&#xe9;terek"/>
+</node>
+</node>
+<node CREATED="1460810521025" ID="ID_1660972945" MODIFIED="1460810530665" TEXT="&#xfa;j ablak">
+<font NAME="SansSerif" SIZE="12"/>
+<node CREATED="1460810506918" ID="ID_86586829" MODIFIED="1460810631430" TEXT="ablaknyit&#xe1;si param&#xe9;terek">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var w = window.open(
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;'http://www.elte.hu',
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;'ELTEablak',
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;'width=800,height=600,scrollbars=yes'
+    </p>
+    <p>
+      );
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460810532986" ID="ID_1699003028" MODIFIED="1460810548262" TEXT="referencia">
+<node CREATED="1460810549677" ID="ID_1016068989" MODIFIED="1460810550101" TEXT="https://developer.mozilla.org/en-US/docs/Web/API/Window/open"/>
+</node>
+<node CREATED="1460810561216" ID="ID_1877320262" MODIFIED="1460810581065" TEXT="&quot;width=800,height=600,scrollbars=yes&quot;"/>
+<node CREATED="1460810583318" ID="ID_1058814289" MODIFIED="1460810603769" TEXT="ha &#xfc;res-&gt;&#xfa;j f&#xfc;l vagy alap&#xe9;rtelmezett &#xe9;rt&#xe9;kek"/>
+<node CREATED="1460810606016" ID="ID_1639907825" MODIFIED="1460810622083" TEXT="ha nem &#xfc;red-&gt;akkor a nem megadot tulajdons&#xe1;gok automatikusan kikapcsoltak lesznek"/>
+<node CREATED="1460810639963" ID="ID_586854335" MODIFIED="1460810660014" TEXT="top, left, width, height, menubar, toolbar, location, status,scrollbars"/>
+</node>
+<node CREATED="1460810674966" ID="ID_959738791" MODIFIED="1460810702230" TEXT="a window.open() &#xe1;ltal visszaadott objektum az &#xfa;j ablak window objektuma">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var w = window.open(url, n&#233;v, tulajdons&#225;gok);
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1460810714612" ID="ID_604269988" MODIFIED="1460810720883" TEXT="a w  mindent tud amit a window">
+<node CREATED="1460810732791" ID="ID_94781676" MODIFIED="1460810748299" TEXT="w.document, w.document.writeln()"/>
+<node CREATED="1460810749441" ID="ID_1856206628" MODIFIED="1460810759258" TEXT="w.resizeTo(sz&#xe9;l, mag)"/>
+</node>
+<node CREATED="1460810768133" ID="ID_623717673" MODIFIED="1460810780158" TEXT="sz&#xfc;l&#x151;ablak el&#xe9;r&#xe9;se a gyerekablakb&#xf3;l">
+<node CREATED="1460810782742" ID="ID_449240201" MODIFIED="1460810786203" TEXT="w.opener"/>
+</node>
+<node CREATED="1460810787959" ID="ID_224004766" MODIFIED="1460810798950" TEXT="Gyerekablak el&#xe9;r&#xe9;se a sz&#xfc;l&#x151;ablakb&#xf3;l">
+<node CREATED="1460810799575" ID="ID_136792708" MODIFIED="1460810813393" TEXT="megnyit&#xe1;sakor visszaadott v&#xe1;ltoz&#xf3; t&#xe1;rol&#xe1;sa (w)"/>
+<node CREATED="1460810815318" ID="ID_65407549" MODIFIED="1460810847585" TEXT="hivatkoz&#xe1;s &#xfa;jb&#xf3;li megszerz&#xe9;se">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      var w = window.open('', l&#233;tez&#337;_n&#233;v);
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1460810856106" ID="ID_860705774" MODIFIED="1460810864940" TEXT="Oldal URL-je">
+<node CREATED="1460810881050" ID="ID_1479433229" MODIFIED="1460810887075" TEXT="window.location"/>
+<node CREATED="1460810894333" ID="ID_998097586" MODIFIED="1460810939655" TEXT="A bet&#xf6;lt&#xf6;tt oldal URL-j&#xe9;vel kapcsolatos inform&#xe1;ci&#xf3;k">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      // http://webprogramozas.inf.elte.hu:8080/webfejl2.html?alma=piros#valami
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      var l = window.location;
+    </p>
+    <p>
+      l.hash;&#160;&#160;&#160;&#160;&#160;&#160;//&quot;#valami&#8222;
+    </p>
+    <p>
+      l.host;&#160;&#160;&#160;&#160;&#160;&#160;//&quot;webprogramozas.inf.elte.hu:8080&#8222;
+    </p>
+    <p>
+      l.hostname;&#160;&#160;//&quot;webprogramozas.inf.elte.hu&#8222;
+    </p>
+    <p>
+      l.href;&#160;&#160;&#160;&#160;&#160;&#160;//az eg&#233;sz URL
+    </p>
+    <p>
+      l.origin;&#160;&#160;&#160;&#160;//&quot;http://webprogramozas.inf.elte.hu:8080&quot;
+    </p>
+    <p>
+      l.pathname;&#160;&#160;//&quot;/webfejl2.html&#8222;
+    </p>
+    <p>
+      l.port;&#160;&#160;&#160;&#160;&#160;&#160;//&quot;8080&#8222;
+    </p>
+    <p>
+      l.protocol;&#160;&#160;//&quot;http:&#8222;
+    </p>
+    <p>
+      l.search;&#160;&#160;&#160;&#160;//&quot;?alma=piros&quot;
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460810909172" ID="ID_477745989" MODIFIED="1460810924391" TEXT="hash, host, hostname, href, oigin, pathname, port, protocol, search"/>
+</node>
+<node CREATED="1460810954729" ID="ID_1476012227" MODIFIED="1460811000900" TEXT="window.location sz&#xf6;veget kapva &#xe9;rt&#xe9;k&#xfc;l megpr&#xf3;b&#xe1;lja a sz&#xf6;vegk&#xe9;nt megadott oldalt bet&#xf6;lteni ">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      window.location = &quot;http://www.elte.hu&quot;;
+    </p>
+    <p>
+      window.location.href = &quot;http://www.elte.hu&quot;;
+    </p>
+    <p>
+      window.location.assign(&quot;http://www.elte.hu&quot;);
+    </p>
+    <p>
+      window.location.replace(&quot;http://www.elte.hu&quot;);
+    </p>
+    <p>
+      window.location.reload();
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1460810956775" ID="ID_1033084720" MODIFIED="1460810962357" TEXT="assign(url)"/>
+<node CREATED="1460810963508" ID="ID_349304018" MODIFIED="1460810968991" TEXT="replace(url)"/>
+<node CREATED="1460810970261" ID="ID_1859897010" MODIFIED="1460810974656" TEXT="reload()"/>
+</node>
 </node>
 </node>
 </node>
