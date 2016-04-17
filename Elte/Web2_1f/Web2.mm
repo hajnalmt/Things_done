@@ -4165,8 +4165,7 @@
       &lt;/form&gt;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460808801390" ID="ID_1246193405" MODIFIED="1460808815534" TEXT="&lt;input type=&quot;radio&quot;&gt;"/>
 <node CREATED="1460808817663" ID="ID_1607807636" MODIFIED="1460808827763" TEXT="name attrib&#xfa;tum fogja &#xf6;ssze &#x151;ket">
 <node CREATED="1460808944652" ID="ID_1948619239" MODIFIED="1460808955531" TEXT="name attrib&#xfa;tum alapj&#xe1;n">
@@ -4260,8 +4259,7 @@
       radioErteke('alma');&#160;&#160;//&quot;z&#246;ld&quot;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460809004577" ID="ID_868920028" MODIFIED="1460809038709" TEXT="document.getElementsByTagName(nev)">
 <richcontent TYPE="NOTE"><html>
@@ -4309,8 +4307,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460809019327" ID="ID_209147421" MODIFIED="1460809019885" TEXT="elem.getElementsByTagName(nev)"/>
 </node>
@@ -4349,8 +4346,7 @@
       &lt;/select&gt;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460809052675" ID="ID_367667723" MODIFIED="1460809059503" TEXT="&lt;select&gt; elem"/>
 <node CREATED="1460809061062" ID="ID_961713460" MODIFIED="1460809064004" TEXT="Tulajdons&#xe1;gai">
 <node CREATED="1460809064659" ID="ID_1546699658" MODIFIED="1460809066469" TEXT="multiple"/>
@@ -4392,8 +4388,7 @@
       select.options[select.selectedIndex].text;&#160;&#160;//&quot;sz&#246;veg3&quot;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460809224763" ID="ID_1594635470" MODIFIED="1460809247499" TEXT="kiv&#xe1;laszott opci&#xf3; adatai">
 <richcontent TYPE="NOTE"><html>
@@ -4447,8 +4442,7 @@
       //Object {value: &quot;ertek3&quot;, text: &quot;sz&#246;veg3&quot;, index: 2}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460809248450" ID="ID_415328118" MODIFIED="1460809263527" TEXT="&#xda;j opci&#xf3; hozz&#xe1;ad&#xe1;sa">
 <richcontent TYPE="NOTE"><html>
@@ -4505,8 +4499,7 @@
       ujOpcio(select, '&#250;j sz&#246;veg', 'ujErtek');
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460809269168" ID="ID_1092763892" MODIFIED="1460809289030" TEXT="Opci&#xf3; t&#xf6;rl&#xe9;se">
 <richcontent TYPE="NOTE"><html>
@@ -4536,8 +4529,7 @@
       torolOpcio(select, 3);
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460809290594" ID="ID_1094645435" MODIFIED="1460809315367" TEXT="T&#xf6;bbsz&#xf6;r&#xf6;s v&#xe1;laszt&#xe1;s eset&#xe9;n">
 <richcontent TYPE="NOTE"><html>
@@ -4606,8 +4598,7 @@
       kivalasztottOpciok(select);&#160;&#160;&#160;&#160;//[&quot;ertek1&quot;, &quot;ertek3&quot;]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1460809316940" ID="ID_149630755" MODIFIED="1460809323564" TEXT="T&#xf6;bbsoros sz&#xf6;veges beviteli mez&#x151;">
@@ -4646,8 +4637,7 @@
       kep.src = 'korte.png';
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460809542069" ID="ID_1721806634" MODIFIED="1460809571425" TEXT="H&#xe1;tr&#xe1;nya:">
 <node CREATED="1460809572346" ID="ID_60983336" MODIFIED="1460809573128" TEXT="a k&#xe9;p let&#xf6;lt&#xe9;se szerverr&#x151;l ekkor kezd&#x151;dik el"/>
@@ -4683,8 +4673,7 @@
       kep.src = mem_kep.src;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -4737,8 +4726,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460809814768" ID="ID_1027909004" MODIFIED="1460809817350" TEXT="cellIndex"/>
 </node>
 </node>
@@ -4796,8 +4784,7 @@
       var w = window.open(url, n&#233;v, tulajdons&#225;gok);
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460810432242" ID="ID_402603691" MODIFIED="1460810435866" TEXT="Param&#xe9;terek">
 <node CREATED="1460810440049" ID="ID_757646725" MODIFIED="1460810451610" TEXT="url:bet&#xf6;ltend&#x151; oldal URL-je">
 <node CREATED="1460810453450" ID="ID_1802415016" MODIFIED="1460810467574" TEXT="ha &#xfc;res -&gt;&#xfc;res ablak"/>
@@ -4834,8 +4821,7 @@
       );
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460810532986" ID="ID_1699003028" MODIFIED="1460810548262" TEXT="referencia">
 <node CREATED="1460810549677" ID="ID_1016068989" MODIFIED="1460810550101" TEXT="https://developer.mozilla.org/en-US/docs/Web/API/Window/open"/>
 </node>
@@ -4854,8 +4840,7 @@
       var w = window.open(url, n&#233;v, tulajdons&#225;gok);
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1460810714612" ID="ID_604269988" MODIFIED="1460810720883" TEXT="a w  mindent tud amit a window">
 <node CREATED="1460810732791" ID="ID_94781676" MODIFIED="1460810748299" TEXT="w.document, w.document.writeln()"/>
@@ -4876,8 +4861,7 @@
       var w = window.open('', l&#233;tez&#337;_n&#233;v);
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -4927,11 +4911,10 @@
       l.search;&#160;&#160;&#160;&#160;//&quot;?alma=piros&quot;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1460810909172" ID="ID_477745989" MODIFIED="1460810924391" TEXT="hash, host, hostname, href, oigin, pathname, port, protocol, search"/>
 </node>
-<node CREATED="1460810954729" ID="ID_1476012227" MODIFIED="1460811000900" TEXT="window.location sz&#xf6;veget kapva &#xe9;rt&#xe9;k&#xfc;l megpr&#xf3;b&#xe1;lja a sz&#xf6;vegk&#xe9;nt megadott oldalt bet&#xf6;lteni ">
+<node CREATED="1460810954729" ID="ID_1476012227" MODIFIED="1460926978750" TEXT="window.location sz&#xf6;veget kapva &#xe9;rt&#xe9;k&#xfc;l megpr&#xf3;b&#xe1;lja a sz&#xf6;vegk&#xe9;nt megadott oldalt bet&#xf6;lteni ">
 <richcontent TYPE="NOTE"><html>
   <head>
     
