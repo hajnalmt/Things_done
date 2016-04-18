@@ -761,6 +761,81 @@
 </node>
 <node CREATED="1459215136069" ID="ID_124795280" MODIFIED="1459215154670" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1460994022487" FOLDED="true" ID="ID_1773392264" MODIFIED="1461015205493" TEXT="Saj&#xe1;t&#xe9;rt&#xe9;k, saj&#xe1;tvektor, saj&#xe1;talt&#xe9;r">
+<node COLOR="#ff0000" CREATED="1460994114319" ID="ID_1120203668" MODIFIED="1460994255279" TEXT="lamda sz&#xe1;m az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke, ha l&#xe9;tezik olyan nemnulla x vektor, melyre Ax=lambda*x"/>
+<node COLOR="#ff0000" CREATED="1460994185046" ID="ID_326126823" MODIFIED="1460994254606" TEXT="Az ilyen x vektorokat az A m&#xe1;trix lambda saj&#xe1;t&#xe9;r&#xe9;khez tartoz&#xf3; saj&#xe1;tvektorainak, a (lambda, x) p&#xe1;rokat pedig az A saj&#xe1;tp&#xe1;rjainak nevezz&#xfc;k"/>
+<node COLOR="#338800" CREATED="1460994256662" ID="ID_716907691" MODIFIED="1460994292222" TEXT="A saj&#xe1;tvektorok a nullvektorral egy&#xfc;tt alteret alkotnak mely megegyezik N(A-lambda*I)-vel"/>
+<node COLOR="#ff0000" CREATED="1460994297652" ID="ID_1145725563" MODIFIED="1460994303399" TEXT="ez a saj&#xe1;talt&#xe9;r"/>
+<node COLOR="#ff0000" CREATED="1460994351419" ID="ID_1354167261" MODIFIED="1460994368538" TEXT="karakterisztikus egynlet: det(A-lambda*I)"/>
+<node COLOR="#338800" CREATED="1460994381521" ID="ID_1719769922" MODIFIED="1461013333455" TEXT="lambda i saj&#xe1;t&#xe9;rt&#xe9;kekn&#xe9;l detA=Productum lambda(i)"/>
+<node COLOR="#338800" CREATED="1460994381521" ID="ID_1413468462" MODIFIED="1461013333142" TEXT="lambda i saj&#xe1;t&#xe9;rt&#xe9;kekn&#xe9;l traceA=sum lambda(i)"/>
+<node COLOR="#ff0000" CREATED="1461013315688" ID="ID_1201384034" MODIFIED="1461013386150" TEXT="algebrai multiplicit&#xe1;s">
+<node CREATED="1461013351406" ID="ID_1607205007" MODIFIED="1461013367196" TEXT="k, ha lambda a karakterisztikus egyenlet k-szoros gy&#xf6;ke"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461013335718" ID="ID_1664555989" MODIFIED="1461013385903" TEXT="geometriai multiplicit&#xe1;s">
+<node CREATED="1461013370015" ID="ID_1550266010" MODIFIED="1461013383709" TEXT="d, ha a saj&#xe1;talt&#xe9;r dimenzi&#xf3;ja d"/>
+</node>
+<node COLOR="#006699" CREATED="1461013387686" ID="ID_319504524" MODIFIED="1461013399047" TEXT="1&lt;=d&lt;=k"/>
+<node CREATED="1461013444735" ID="ID_444584304" MODIFIED="1461013448796" TEXT="M&#xe1;trixok">
+<node COLOR="#006699" CREATED="1461013455726" ID="ID_1064247621" MODIFIED="1461013471510" TEXT="M&#xe1;trix pontosan akkor invert&#xe1;lhat&#xf3;, ha 0 nem a saj&#xe1;t&#xe9;rt&#xe9;ke"/>
+<node COLOR="#006699" CREATED="1461013476352" ID="ID_1029449167" MODIFIED="1461013533166" TEXT="Amennyiben &#xe9;rtelmezve vannak akkor ha lambda A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke, akkor lambd&#xe4;^n az A^n m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke"/>
+<node COLOR="#006699" CREATED="1461013545054" ID="ID_469322476" MODIFIED="1461013556236" TEXT="hatv&#xe1;ny hat&#xe1;sa a saj&#xe1;tp&#xe1;rokra"/>
+<node COLOR="#338800" CREATED="1461013566958" ID="ID_1246824314" MODIFIED="1461013574628" TEXT="&#xc1;ll&#xed;t&#xe1;sok">
+<node CREATED="1461013576070" ID="ID_598596063" MODIFIED="1461013587603" TEXT="ha A szimmetrikus akkor minden saj&#xe1;t&#xe9;rt&#xe9;ke val&#xf3;s"/>
+<node CREATED="1461013588927" ID="ID_886076278" MODIFIED="1461013611588" TEXT="ha A ferd&#xe9;n szimmetrikus, akkor miden saj&#xe1;t&#xe9;rt&#xe9;ke imagin&#xe1;rius"/>
+<node CREATED="1461013614766" ID="ID_1471539136" MODIFIED="1461013643457" TEXT="ha A ortogon&#xe1;lis, akkor minden saj&#xe1;t&#xe9;r&#xe9;k&#xe9;nek 1 az abszol&#xfa;t &#xe9;rt&#xe9;ke"/>
+<node CREATED="1461013645582" ID="ID_159535760" MODIFIED="1461013683829" TEXT="A pontosan akkor nilpotens, ha minden saj&#xe1;t&#xe9;rt&#xe9;ke 0, azaz karakterisztikus plinomja lambda^n alak&#xfa;"/>
+</node>
+<node CREATED="1461013910030" ID="ID_953869773" MODIFIED="1461013922176" TEXT="Speci&#xe1;lis komplex m&#xe1;trixok saj&#xe1;t&#xe9;rt&#xe9;kei">
+<node CREATED="1461013929182" ID="ID_320268500" MODIFIED="1461013944828" TEXT="&#xf6;nadjung&#xe1;lt, akkor minden saj&#xe1;t&#xe9;rt&#xe9;ke val&#xf3;s"/>
+<node CREATED="1461013946350" ID="ID_76288311" MODIFIED="1461013958516" TEXT="ferd&#xe9;n &#xf6;nadjung&#xe1;lt, akkor minden saj&#xe1;t&#xe9;rt&#xe9;ke imagin&#xe1;rius"/>
+<node CREATED="1461013959702" ID="ID_1006404058" MODIFIED="1461013987980" TEXT="unit&#xe9;r akkor minden saj&#xe1;t&#xe9;rt&#xe9;k&#xe9;nek 1 az abszol&#xfa;t &#xe9;rt&#xe9;ke"/>
+</node>
+</node>
+<node CREATED="1461014003694" ID="ID_1616919794" MODIFIED="1461014011308" TEXT="Hasonl&#xf3;s&#xe1;g">
+<node COLOR="#ff0000" CREATED="1461014012438" ID="ID_743466071" MODIFIED="1461014114597" TEXT="Azt mondjuk, hogy a lambda sz&#xe1;m az L line&#xe1;ris transzform&#xe1;ci&#xf3; saj&#xe1;t&#xe9;rt&#xe9;ke, ha l&#xe9;tezik olyan nemnulla x vektor, melyre Lx=lambda x"/>
+<node COLOR="#ff0000" CREATED="1461014052550" ID="ID_1037774517" MODIFIED="1461014114374" TEXT="Az ilyen x vektorokat az L line&#xe1;ris transzform&#xe1;ci&#xf3; lambda saj&#xe1;t&#xe9;rt&#xe9;khez tartoz&#xf3; saj&#xe1;tvektorainak nevezz&#xfc;k"/>
+<node COLOR="#006699" CREATED="1461014117934" ID="ID_1445265989" MODIFIED="1461014155358" TEXT="Ha A ~B, akkor A &#xe9;s B karakterisztikus polinomja azonos, &#xed;gy saj&#xe1;t&#xe9;rt&#xe9;kei, azok algebrai, s&#x151;t geometriai multiplicit&#xe1;sai is megegyeznek"/>
+<node CREATED="1461014167198" ID="ID_1145459118" MODIFIED="1461014183748" TEXT="Defini&#xe1;lhat&#xf3; a line&#xe1;ris transzform&#xe1;ci&#xf3;k karakterisztikus polinomja"/>
+</node>
+<node CREATED="1461014190582" ID="ID_592688546" MODIFIED="1461014194388" TEXT="Diagoniz&#xe1;lhat&#xf3;s&#xe1;g">
+<node COLOR="#ff0000" CREATED="1461014207983" ID="ID_1210446402" MODIFIED="1461014233878" TEXT="A diagoniz&#xe1;lhat&#xf3; , ha hasonl&#xf3; egy diagon&#xe1;lis m&#xe1;trixhoz"/>
+<node COLOR="#006699" CREATED="1461014240694" ID="ID_1870688384" MODIFIED="1461014286926" TEXT="A diagoniz&#xe1;lhat&#xf3; &lt;-&gt; A-nak van n line&#xe1;risan f&#xfc;ggetlen saj&#xe1;tvektora"/>
+<node COLOR="#ff0000" CREATED="1461014260550" ID="ID_1371895788" MODIFIED="1461014286078" TEXT="Saj&#xe1;tfelbont&#xe1;s: A=C*diag*C^-1"/>
+</node>
+<node CREATED="1461014294918" ID="ID_249693796" MODIFIED="1461014363527" TEXT="Bal saj&#xe1;tvektorok &#xe9;s a saj&#xe1;tfelbont&#xe1;s diadikus alakja">
+<node CREATED="1461014328030" ID="ID_609232062" MODIFIED="1461014351494" TEXT="Bal saj&#xe1;tvektor y^T*A= lambda*y^T"/>
+<node CREATED="1461014364751" ID="ID_1388055172" MODIFIED="1461014367739" TEXT="Diadikus alak"/>
+</node>
+<node CREATED="1461014390350" ID="ID_162563305" MODIFIED="1461014408132" TEXT="Diagoniz&#xe1;lhat&#xf3; m&#xe1;trix polinomja, Cayley-Hamilton-t&#xe9;tel">
+<node COLOR="#006699" CREATED="1461014525879" ID="ID_335439546" MODIFIED="1461014571207" TEXT="Legyen A=C*diag*C^-1, ahol diag(lambda_i), &#xe9;s p(x) tetsz&#x151;leges polinom"/>
+<node COLOR="#006699" CREATED="1461014573350" ID="ID_681582031" MODIFIED="1461014694758" TEXT="Cayley-Hamilton-t&#xe9;tel: Ha A egy tetsz&#x151;leges n&#xe9;gyzetes m&#xe1;trix, melynek karakterisztikus polinomja p_A akkor p_A(A)=O"/>
+</node>
+<node CREATED="1461014702174" ID="ID_1617406640" MODIFIED="1461014712844" TEXT="K&#xfc;l&#xf6;nb&#xf6;z&#x151; saj&#xe1;t&#xe9;rt&#xe9;kek saj&#xe1;talterei">
+<node COLOR="#006699" CREATED="1461014714358" ID="ID_184541061" MODIFIED="1461014748870" TEXT="Ha lambda_i k&#xfc;l&#xf6;nb&#xf6;z&#x151; saj&#xe1;t&#xe9;rt&#xe9;kek, akkor a hozz&#xe1;juk tartoz&#xf3; x_i saj&#xe1;tvektorok line&#xe1;risan f&#xfc;ggetlenek"/>
+<node CREATED="1461014761038" ID="ID_1646024531" MODIFIED="1461014781027" TEXT="Ha az n-edrend&#x171; A m&#xe1;trixnak n darab k&#xfc;l&#xf6;n&#xf6;z&#x151; saj&#xe1;t&#xe9;rt&#xe9;ke van, akkor diagoniz&#xe1;lhat&#xf3;"/>
+</node>
+<node CREATED="1461014789230" ID="ID_511858683" MODIFIED="1461014802708" TEXT="Saj&#xe1;t&#xe9;rt&#xe9;kek multiplicit&#xe1;sa &#xe9;s a diagoniz&#xe1;lhat&#xf3;s&#xe1;g">
+<node COLOR="#006699" CREATED="1461014814558" ID="ID_719791525" MODIFIED="1461014868854" TEXT="Egy n-edrend&#x171; val&#xf3;s vagy komplex n&#xe9;gyzetes m&#xe1;trix pontosan akkor diagoniz&#xe1;lhat&#xf3;, ha a saj&#xe1;t&#xe9;rt&#xe9;keihez tartoz&#xf3; geometriai multiplicit&#xe1;sok &#xf6;sszege n"/>
+<node CREATED="1461014875126" ID="ID_183622336" MODIFIED="1461014879581" TEXT="p&#xe9;ld&#xe1;k">
+<node CREATED="1461014880974" ID="ID_1869183259" MODIFIED="1461014895975" TEXT="vet&#xed;t&#xe9;s egyenesre, s&#xed;kra, alt&#xe9;rre, hipers&#xed;kra"/>
+<node CREATED="1461014897214" ID="ID_1346258684" MODIFIED="1461014909100" TEXT="t&#xfc;kr&#xf6;z&#xe9;s egyenesre, s&#xed;kra, hipers&#xed;kra"/>
+<node CREATED="1461014911118" ID="ID_37876030" MODIFIED="1461014929107" TEXT="forgat&#xe1;s egy egyenes k&#xf6;r&#xfc;l a t&#xe9;rben (nem diagoniz&#xe1;lhat&#xf3;)"/>
+</node>
+</node>
+<node CREATED="1461014963086" ID="ID_632007199" MODIFIED="1461014992916" TEXT="Diagon&#xe1;lis m&#xe1;trixok spektr&#xe1;lfelbont&#xe1;sa">
+<node COLOR="#006699" CREATED="1461014993518" ID="ID_899433240" MODIFIED="1461015024678" TEXT=" A{lambd_i} spektrum&#xfa; A m&#xe1;trix pontosan akkor diagoniz&#xe1;lhat&#xf3;, ha fel&#xed;rhat&#xf3; A = sum lambda_i*P_i alakban">
+<node CREATED="1461015027742" ID="ID_155411190" MODIFIED="1461015043828" TEXT="sum P_i=I"/>
+<node CREATED="1461015048190" ID="ID_879613394" MODIFIED="1461015069691" TEXT="P_i*P_j=O ha i!=j"/>
+<node CREATED="1461015071398" ID="ID_58769424" MODIFIED="1461015112891" TEXT="P_i az N(A-lambda_i*I) saj&#xe1;talt&#xe9;rre val&#xf3; O(A-lambda_i*I) alt&#xe9;r menti vet&#xed;t&#xe9;s"/>
+</node>
+</node>
+</node>
+<node CREATED="1460994038105" ID="ID_223729740" MODIFIED="1460994043907" TEXT="A saj&#xe1;t&#xe9;rt&#xe9;k kisz&#xe1;m&#xed;t&#xe1;sa">
+<node CREATED="1461015210830" ID="ID_1516109798" MODIFIED="1461015217099" TEXT="Gersgorin-k&#xf6;r&#xf6;k"/>
+</node>
+<node CREATED="1460994047470" ID="ID_1738244361" MODIFIED="1460994060404" TEXT="Ortogon&#xe1;lis &#xe9;s unit&#xe9;r diagoniz&#xe1;l&#xe1;s"/>
+<node CREATED="1460994062503" ID="ID_789389527" MODIFIED="1460994066555" TEXT="Kvadratikus form&#xe1;k"/>
 </node>
 </node>
 </map>
