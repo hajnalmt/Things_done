@@ -668,9 +668,9 @@
 <node COLOR="#006699" CREATED="1460988553926" ID="ID_544424322" MODIFIED="1460988571646" TEXT="A pszeudoinverz &#xe9;s a min. absz&#xe9;rt&#xe9;k&#x171; optim&#xe1;lis megold&#xe1;s"/>
 </node>
 </node>
-<node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1460988731881" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1459215100013" FOLDED="true" ID="ID_577983907" MODIFIED="1460993421049" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1460988709078" ID="ID_535438581" MODIFIED="1460988712957" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
+<node CREATED="1460988709078" FOLDED="true" ID="ID_535438581" MODIFIED="1460993418624" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
 <node COLOR="#ff0000" CREATED="1460989681965" ID="ID_415398161" MODIFIED="1460989794721" TEXT="OR-ortogon&#xe1;lis rendszer">
 <node CREATED="1460989697793" ID="ID_1642925638" MODIFIED="1460989722713" TEXT="Lehet k&#xf6;zt&#xfc;k z&#xe9;ruvektor"/>
 </node>
@@ -683,7 +683,7 @@
 <node CREATED="1460989887096" ID="ID_1176165067" MODIFIED="1460989928150" TEXT="v kalap A &#xe1;ltal kifesz&#xed;tett elt&#xe9;rben v vet&#xfc;lete"/>
 </node>
 </node>
-<node CREATED="1460988714190" ID="ID_695015043" MODIFIED="1460991224925" TEXT="Ortogon&#xe1;lis m&#xe1;trix">
+<node CREATED="1460988714190" FOLDED="true" ID="ID_695015043" MODIFIED="1460993416866" TEXT="Ortogon&#xe1;lis m&#xe1;trix">
 <node COLOR="#ff0000" CREATED="1460990001910" ID="ID_121028315" MODIFIED="1460990227225" TEXT="n&#xe9;gyzetes m&#xe1;trix ortogon&#xe1;lis, ha sorvektorai vagy oszlopvektorai ONR-t alkotnak"/>
 <node CREATED="1460990035967" ID="ID_598216937" MODIFIED="1460990050724" TEXT="nem n&#xe9;gyzetes  &gt; szemiortogon&#xe1;lis"/>
 <node CREATED="1460990059751" ID="ID_983195066" MODIFIED="1460990077135" TEXT="forgat&#xe1;s, t&#xfc;kr&#xf6;z&#xe9;s &#xe9;s minden permut&#xe1;ci&#xf3;m&#xe1;trix ortogon&#xe1;lis"/>
@@ -710,13 +710,13 @@
 <node COLOR="#006699" CREATED="1460991151438" ID="ID_957432657" MODIFIED="1460991217575" TEXT="a &#xe9;s b azonos hossz&#xfa;s&#xe1;g&#xfa;ak, akkor az (a-b)_|_ hipers&#xed;kra val&#xf3; H-t&#xfc;kr&#xf6;z&#xe9;s a-t &#xe9;s b-t f&#xf6;lcser&#xe9;li"/>
 </node>
 </node>
-<node CREATED="1460991240166" ID="ID_518837658" MODIFIED="1460991252721" TEXT="Ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1460991240166" FOLDED="true" ID="ID_518837658" MODIFIED="1460993414104" TEXT="Ortogonaliz&#xe1;ci&#xf3;">
 <node COLOR="#006699" CREATED="1460991275852" ID="ID_1809500630" MODIFIED="1460991295950" TEXT="Gram-Schmid-ortogonaliz&#xe1;ci&#xf3;">
 <node CREATED="1460991308857" ID="ID_1018504523" MODIFIED="1460991331269" TEXT="L&#xe9;tezik f&#xfc;ggetlen vektorrendszerhez ortogon&#xe1;lils vektorrendszer"/>
 <node CREATED="1460991346606" ID="ID_1457631938" MODIFIED="1460991363342" TEXT="ezt ortonorm&#xe1;lni is lehet teh&#xe1;t ONR is l&#xe9;tezik"/>
 </node>
 </node>
-<node CREATED="1460988724342" ID="ID_731440512" MODIFIED="1460988729355" TEXT="QR-felbont&#xe1;s">
+<node CREATED="1460988724342" FOLDED="true" ID="ID_731440512" MODIFIED="1460993412985" TEXT="QR-felbont&#xe1;s">
 <node COLOR="#ff0000" CREATED="1460991444560" ID="ID_1772156742" MODIFIED="1460991505882" TEXT="Minden teljes oszloprang&#xfa; A m&#xe1;trixhoz l&#xe9;tezik A=QR, hogy Q szemiortogon&#xe1;lis, R pedig n&#xe9;gyzete fels&#x151;h&#xe1;romsz&#xf6;g m&#xe1;trix"/>
 <node COLOR="#006699" CREATED="1460991525844" ID="ID_409992054" MODIFIED="1460991541166" TEXT="l&#xe9;tezik &#xe9;s egy&#xe9;rtelm&#x171; a QR felbont&#xe1;s"/>
 <node CREATED="1460992035214" ID="ID_84803263" MODIFIED="1460992047412" TEXT="Gram-Schmidt elj&#xe1;r&#xe1;b&#xf3;l megkaphat&#xf3;"/>
@@ -726,11 +726,37 @@
 <node CREATED="1460992176712" ID="ID_693237455" MODIFIED="1460992235228" TEXT="Az Ax=b egyyenletrendszer egyetlen optim&#xe1;lis megold&#xe1;sa x_kalap= R^(-1)*Q^T*b"/>
 </node>
 </node>
-<node CREATED="1460988733807" ID="ID_1197934020" MODIFIED="1460988741891" TEXT="Komplex skal&#xe1;r szorz&#xe1;s"/>
-<node CREATED="1460988744246" ID="ID_937977471" MODIFIED="1460988755107" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
-<node CREATED="1460988755502" ID="ID_1314459037" MODIFIED="1460988759995" TEXT="Fourier m&#xe1;trixok"/>
-<node CREATED="1460988761943" ID="ID_810666270" MODIFIED="1460988770404" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;ci&#xf3;"/>
-<node CREATED="1460988771510" ID="ID_1889165163" MODIFIED="1460988779523" TEXT="Gyors Fourier transzform&#xe1;ci&#xf3;"/>
+<node CREATED="1460988733807" FOLDED="true" ID="ID_1197934020" MODIFIED="1460993410865" TEXT="Komplex skal&#xe1;r szorz&#xe1;s">
+<node CREATED="1460992401126" ID="ID_1585709606" MODIFIED="1460992433398" TEXT="Komplex m&#xe1;trix adjung&#xe1;ltja">
+<node CREATED="1460992442791" ID="ID_1801518944" MODIFIED="1460992466622" TEXT="Elemenk&#xe9;nti konjug&#xe1;ltj&#xe1;nak transzpon&#xe1;ltj&#xe1;a"/>
+<node CREATED="1460992502478" ID="ID_872879287" MODIFIED="1460992516805" TEXT="A^H vagy A*"/>
+</node>
+<node CREATED="1460992487239" ID="ID_1909464221" MODIFIED="1460992496724" TEXT="z*w=z^H*w"/>
+<node COLOR="#006699" CREATED="1460992529086" ID="ID_1597657177" MODIFIED="1460992537791" TEXT="Tulajdons&#xe1;gok "/>
+<node COLOR="#ff0000" CREATED="1460992548351" ID="ID_686440277" MODIFIED="1460992583943" TEXT="A skal&#xe1;ris szorz&#xe1;s seg&#xed;ts&#xe9;g&#xe9;vel defini&#xe1;lhat&#xf3; a koplex vektorok t&#xe1;vols&#xe1;ga &#xe9;s sz&#xf6;ge &#xed;gy mer&#x151;leges&#xe9;ge is "/>
+<node COLOR="#ff0000" CREATED="1460992649103" ID="ID_1354888504" MODIFIED="1460992665953" TEXT="&#xd6;nadjung&#xe1;lt A^H=A"/>
+<node COLOR="#ff0000" CREATED="1460992679297" ID="ID_148598087" MODIFIED="1460992725471" TEXT="Unit&#xe9;r m&#xe1;trixok">
+<node CREATED="1460992685542" ID="ID_771825528" MODIFIED="1460992693230" TEXT="U^H*U=I"/>
+<node CREATED="1460992701366" ID="ID_1571026222" MODIFIED="1460992705190" TEXT="Ekvivallens &#xe1;ll&#xed;t&#xe1;sok"/>
+</node>
+</node>
+<node CREATED="1460988744246" FOLDED="true" ID="ID_937977471" MODIFIED="1460993411810" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
+<node CREATED="1460988755502" ID="ID_1314459037" MODIFIED="1460988759995" TEXT="Fourier m&#xe1;trixok">
+<node COLOR="#338800" CREATED="1460992853335" ID="ID_1892377650" MODIFIED="1460993039214" TEXT="A (c_1,c_1..c_n)-&gt;(g(0), g(2pi/N), ..., g(2(N-1)pi/N)) lek&#xe9;pez&#xe9;s line&#xe1;ris &#xe9;s m&#xe1;trixa [e^(2pi i /N  mn)] 0&lt;=m,n&lt;N"/>
+<node COLOR="#ff0000" CREATED="1460993029070" ID="ID_1204071097" MODIFIED="1460993036516" TEXT="omeg&#xe1;val &#xe9;s epszilonnal"/>
+<node CREATED="1460993052662" ID="ID_396356787" MODIFIED="1460993056104" TEXT="Tulajdons&#xe1;gaik"/>
+</node>
+<node CREATED="1460988761943" ID="ID_810666270" MODIFIED="1460988770404" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;ci&#xf3;">
+<node COLOR="#ff0000" CREATED="1460993112088" ID="ID_1081889472" MODIFIED="1460993136350" TEXT="x-&gt;X=F_n*x"/>
+<node CREATED="1460993142007" ID="ID_678692770" MODIFIED="1460993143859" TEXT="DFT"/>
+<node COLOR="#006699" CREATED="1460993150062" ID="ID_585168816" MODIFIED="1460993191167" TEXT="Tulajdons&#xe1;gai">
+<node CREATED="1460993185120" ID="ID_1539687167" MODIFIED="1460993186787" TEXT="IDFT"/>
+</node>
+</node>
+<node CREATED="1460988771510" ID="ID_1889165163" MODIFIED="1460988779523" TEXT="Gyors Fourier transzform&#xe1;ci&#xf3;">
+<node CREATED="1460993382358" ID="ID_338517895" MODIFIED="1460993384884" TEXT="Algoritmus"/>
+<node CREATED="1460993386589" ID="ID_447131468" MODIFIED="1460993403709" TEXT="diagon&#xe1;lis &#xe9;s permut&#xe1;ci&#xf3; m&#xe1;trixok szerepe"/>
+</node>
 </node>
 </node>
 <node CREATED="1459215136069" ID="ID_124795280" MODIFIED="1459215154670" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
