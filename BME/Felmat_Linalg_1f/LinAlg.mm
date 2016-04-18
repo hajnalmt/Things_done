@@ -668,7 +668,7 @@
 <node COLOR="#006699" CREATED="1460988553926" ID="ID_544424322" MODIFIED="1460988571646" TEXT="A pszeudoinverz &#xe9;s a min. absz&#xe9;rt&#xe9;k&#x171; optim&#xe1;lis megold&#xe1;s"/>
 </node>
 </node>
-<node CREATED="1459215100013" FOLDED="true" ID="ID_577983907" MODIFIED="1460993421049" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1459215100013" FOLDED="true" ID="ID_577983907" MODIFIED="1461018594456" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460988709078" FOLDED="true" ID="ID_535438581" MODIFIED="1460993418624" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
 <node COLOR="#ff0000" CREATED="1460989681965" ID="ID_415398161" MODIFIED="1460989794721" TEXT="OR-ortogon&#xe1;lis rendszer">
@@ -759,7 +759,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215136069" ID="ID_124795280" MODIFIED="1459215154670" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
+<node CREATED="1459215136069" FOLDED="true" ID="ID_124795280" MODIFIED="1461018440438" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460994022487" FOLDED="true" ID="ID_1773392264" MODIFIED="1461015205493" TEXT="Saj&#xe1;t&#xe9;rt&#xe9;k, saj&#xe1;tvektor, saj&#xe1;talt&#xe9;r">
 <node COLOR="#ff0000" CREATED="1460994114319" ID="ID_1120203668" MODIFIED="1460994255279" TEXT="lamda sz&#xe1;m az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke, ha l&#xe9;tezik olyan nemnulla x vektor, melyre Ax=lambda*x"/>
@@ -870,14 +870,14 @@
 <node COLOR="#006699" CREATED="1461017060110" ID="ID_949434806" MODIFIED="1461017088311" TEXT="Az AEC^n*n m&#xe1;trix pontosan akkor unit&#xe9;ren diagoniz&#xe1;lhat&#xf3;, ha norm&#xe1;lis"/>
 </node>
 </node>
-<node CREATED="1460994062503" ID="ID_789389527" MODIFIED="1460994066555" TEXT="Kvadratikus form&#xe1;k">
+<node CREATED="1460994062503" FOLDED="true" ID="ID_789389527" MODIFIED="1461018438353" TEXT="Kvadratikus form&#xe1;k">
 <node CREATED="1461017154486" ID="ID_784686208" MODIFIED="1461017173436" TEXT="Homog&#xe9;n m&#xe1;sodfok&#xfa; polinomok m&#xe1;trixszorzatos alakja"/>
-<node CREATED="1461017215230" ID="ID_755495880" MODIFIED="1461017220389" TEXT="F&#x151;tengelyt&#xe9;tel">
+<node CREATED="1461017215230" FOLDED="true" ID="ID_755495880" MODIFIED="1461018437272" TEXT="F&#x151;tengelyt&#xe9;tel">
 <node COLOR="#006699" CREATED="1461017222278" ID="ID_317884598" MODIFIED="1461017309136" TEXT="A egy n-edrend&#x171; val&#xf3;s szimmetrikus m&#xe1;trix Q^T*A*Q=diag ortogon&#xe1;lis diagonaliz&#xe1;l&#xe1;sa. Az x=Qy helyettes&#xed;t&#xe9;s az x^T*A*x kvadratikus form&#xe1;t az y^T*diag*y kvadratikus form&#xe1;ba transzform&#xe1;lja, mely kifejtve csak n&#xe9;gyzetes tagokat tartalmaz"/>
 <node COLOR="#006699" CREATED="1461017310359" ID="ID_1663005974" MODIFIED="1461017377230" TEXT="x^T*A*x=y^T*diag *y= sum lambda_i(y_i^2)"/>
 <node COLOR="#006699" CREATED="1461017347590" ID="ID_1137445392" MODIFIED="1461017377510" TEXT="ahol lambda_i az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;kei. V&#xe1;laszhat&#xf3; Q &#xfa;gy, hogy det(Q)=1"/>
 </node>
-<node CREATED="1461017397246" ID="ID_565322405" MODIFIED="1461017639912" TEXT="M&#xe1;trixok definits&#xe9;ge">
+<node CREATED="1461017397246" FOLDED="true" ID="ID_565322405" MODIFIED="1461018435025" TEXT="M&#xe1;trixok definits&#xe9;ge">
 <node COLOR="#ff0000" CREATED="1461017489742" ID="ID_1511968582" MODIFIED="1461017508022" TEXT="f(x)=x^T*A*x kvadratikus forma"/>
 <node COLOR="#ff0000" CREATED="1461017428966" ID="ID_1254347771" MODIFIED="1461017517182" TEXT="pozit&#xed;v,poz szemi, negat&#xed;v, negat&#xed;v szemidefinit"/>
 <node COLOR="#ff0000" CREATED="1461017465300" ID="ID_574107451" MODIFIED="1461017488198" TEXT="f indefinit ha pozit&#xed;v &#xe9;s negat&#xed;v &#xe9;rt&#xe9;keket is felvesz"/>
@@ -891,7 +891,7 @@
 <node CREATED="1461017743775" ID="ID_870460541" MODIFIED="1461017758029" TEXT="indefinit, ha A-nak van pozit&#xed;v &#xe9;s negat&#xed;v saj&#xe1;t&#xe9;rt&#xe9;ke is"/>
 </node>
 </node>
-<node CREATED="1461017764942" ID="ID_716513497" MODIFIED="1461017771796" TEXT="F&#x151;minorok &#xe9;s definits&#xe9;g">
+<node CREATED="1461017764942" FOLDED="true" ID="ID_716513497" MODIFIED="1461018433514" TEXT="F&#x151;minorok &#xe9;s definits&#xe9;g">
 <node COLOR="#ff0000" CREATED="1461017777303" ID="ID_1845490331" MODIFIED="1461017836310" TEXT="V&#xe1;lasszuk ki egy n&#xe9;gyzetes m&#xe1;trix n&#xe9;h&#xe1;ny sor&#xe1;t &#xe9;s ugyanannyiadik sorsz&#xe1;m&#xfa; oszlop&#xe1;t, a t&#xf6;bbi sort &#xe9;s oszlopot hagyjuk el. Az &#xed;gy kapott n&#xe9;gyzetes r&#xe9;szm&#xe1;trix determin&#xe1;ns&#xe1;t a m&#xe1;trix f&#x151;minor&#xe1;nak nevezz&#xfc;k."/>
 <node COLOR="#ff0000" CREATED="1461017837367" ID="ID_1521613479" MODIFIED="1461017880557" TEXT="Ha az els&#x151; k sort &#xe9;s az els&#x151; k oszlopoz v&#xe1;lasztjuk ki, vezet&#x151; f&#x151;minorr&#xf3;l besz&#xe9;l&#xfc;nk, pontosabban a k-adrend&#x171; vagy k-adik vezet&#x151; f&#x151;minorr&#xf3;l."/>
 <node COLOR="#006699" CREATED="1461017948975" ID="ID_1054594644" MODIFIED="1461017954446" TEXT="Definit m&#xe1;trixok f&#x151;minorai &#xe9;s vezet&#x151; f&#x151;minorai">
@@ -904,6 +904,17 @@
 </node>
 </node>
 </node>
+</node>
+<node CREATED="1461018445252" ID="ID_323471265" MODIFIED="1461018547969" POSITION="right" TEXT="7) Szingul&#xe1;ris &#xe9;rt&#xe9;kek">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1461018523550" ID="ID_82136292" MODIFIED="1461018530380" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k"/>
+<node CREATED="1461018531430" ID="ID_1816998740" MODIFIED="1461018533403" TEXT="Norma"/>
+<node CREATED="1461018534470" ID="ID_963728032" MODIFIED="1461018538275" TEXT="M&#xe1;trixnorma"/>
+<node CREATED="1461018539454" ID="ID_10120100" MODIFIED="1461018544891" TEXT="Alkalmaz&#xe1;sok"/>
+</node>
+<node CREATED="1461018549574" ID="ID_281617371" MODIFIED="1461018590785" POSITION="left" TEXT="8) Jordan-f&#xe9;le norm&#xe1;lalak">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1461018573950" ID="ID_409405841" MODIFIED="1461018585292" TEXT="&#xc1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektor"/>
 </node>
 </node>
 </map>
