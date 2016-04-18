@@ -831,11 +831,79 @@
 </node>
 </node>
 </node>
-<node CREATED="1460994038105" ID="ID_223729740" MODIFIED="1460994043907" TEXT="A saj&#xe1;t&#xe9;rt&#xe9;k kisz&#xe1;m&#xed;t&#xe1;sa">
-<node CREATED="1461015210830" ID="ID_1516109798" MODIFIED="1461015217099" TEXT="Gersgorin-k&#xf6;r&#xf6;k"/>
+<node CREATED="1460994038105" FOLDED="true" ID="ID_223729740" MODIFIED="1461017148082" TEXT="A saj&#xe1;t&#xe9;rt&#xe9;k kisz&#xe1;m&#xed;t&#xe1;sa">
+<node CREATED="1461015210830" ID="ID_1516109798" MODIFIED="1461015217099" TEXT="Gersgorin-k&#xf6;r&#xf6;k">
+<node COLOR="#ff0000" CREATED="1461015601894" ID="ID_1403231161" MODIFIED="1461015734446" TEXT="Az n*n-es val&#xf3;s vagy komplex A m&#xe1;trix Gersgorin-k&#xf6;rei az a_ii k&#xf6;z&#xe9;p&#x171; r_i^sor sorrang&#xfa; G_i^sor, illetve r_i^osz sugar&#xfa; G_i^osz k&#xf6;r&#xf6;ket &#xe9;rtj&#xfc;k, ahol r_i^sor= sum abs(a_ij), r_i^osz=sum(absz(a_ji))"/>
 </node>
-<node CREATED="1460994047470" ID="ID_1738244361" MODIFIED="1460994060404" TEXT="Ortogon&#xe1;lis &#xe9;s unit&#xe9;r diagoniz&#xe1;l&#xe1;s"/>
-<node CREATED="1460994062503" ID="ID_789389527" MODIFIED="1460994066555" TEXT="Kvadratikus form&#xe1;k"/>
+<node CREATED="1461015807510" ID="ID_1659918500" MODIFIED="1461015809371" TEXT="T&#xe9;telek">
+<node COLOR="#006699" CREATED="1461015831998" ID="ID_296369399" MODIFIED="1461016002351" TEXT="szigma(A) r&#xe9;szhalmaza a G_i^sorok uni&#xf3;j&#xe1;nak"/>
+<node COLOR="#006699" CREATED="1461015866014" ID="ID_1703085018" MODIFIED="1461016002566" TEXT="szigma(A) r&#xe9;szhalmaza a G_i^oszlopok uni&#xf3;j&#xe1;nak "/>
+<node COLOR="#006699" CREATED="1461015866014" ID="ID_630750836" MODIFIED="1461016002807" TEXT="szigma(A) r&#xe9;szhalmaza a G_i^oszlopok uni&#xf3;j&#xe1;nak a G_i^sorok uni&#xf3;j&#xe1;nak metszet&#xe9;nek"/>
+<node COLOR="#006699" CREATED="1461015942630" ID="ID_1239526203" MODIFIED="1461016003022" TEXT="Ha a G_i^sor k&#xf6;r&#xf6;k egy k-elem&#x171; r&#xe9;szhalmaza diszjunk a marad&#xe9;k n-k k&#xf6;r mindegyik&#xe9;t&#x151;l, akkor uni&#xf3;juk multiplicit&#xe1;ssal sz&#xe1;molva pontosan k saj&#xe1;t&#xe9;rt&#xe9;ket tartalmaz"/>
+<node CREATED="1461016005726" ID="ID_1573301243" MODIFIED="1461016075824" TEXT="B&#xe1;rmely soronk&#xe9;nt domin&#xe1;ns f&#x151;&#xe1;tl&#xf3;j&#xfa; val&#xf3;s vagy komplex m&#xe1;trix invert&#xe1;lhat&#xf3;. Hasonl&#xf3; igaz az oszloponk&#xe9;nt domin&#xe1;ns f&#x151;&#xe1;tl&#xf3;j&#xfa; m&#xe1;trixokra is. (Hisz Gersgorin-k&#xf6;rei nem tartalmazz&#xe1;k az orig&#xf3;t)"/>
+</node>
+<node CREATED="1461016099591" ID="ID_1417204591" MODIFIED="1461016326576" TEXT="Hatv&#xe1;nym&#xf3;dszer">
+<node COLOR="#ff0000" CREATED="1461016105991" ID="ID_96401334" MODIFIED="1461016159886" TEXT="Egy saj&#xe1;t&#xe9;rt&#xe9;k szigor&#xfa;an domni&#xe1;ns, ha egyszeres multiplicit&#xe1;s&#xfa;, &#xe9;s abszol&#xfa;t &#xe9;rt&#xe9;kben nagyobb az &#xf6;sszes t&#xf6;bbin&#xe9;l. (szigor&#xfa;an domin&#xe1;ns saj&#xe1;tvektor, saj&#xe1;talt&#xe9;r, saj&#xe1;tp&#xe1;r)"/>
+<node COLOR="#006699" CREATED="1461016200992" ID="ID_810110158" MODIFIED="1461016324038" TEXT="Ha lambda_1 az AER^n*n m&#xe1;trix szigor&#xfa;an domin&#xe1;ns saj&#xe1;t&#xe9;rt&#xe9;ke, akkor l&#xe9;tezik olyan x_0 vektor, hoyg az x_k=A^k*x_0 vektorok &#xe1;ltal kifesz&#xed;tett alterek sorozata a domin&#xe1;ns saj&#xe1;talt&#xe9;rhez konverg&#xe1;l, m&#xed;g x_k^T*A*x_k / x_k^T*x_k  -&gt; lambda "/>
+<node COLOR="#006699" CREATED="1461016327447" ID="ID_372537435" MODIFIED="1461016343198" TEXT="&#xfa;n. Rayleigh h&#xe1;nyadosok"/>
+</node>
+</node>
+<node CREATED="1460994047470" FOLDED="true" ID="ID_1738244361" MODIFIED="1461017151515" TEXT="Ortogon&#xe1;lis &#xe9;s unit&#xe9;r diagoniz&#xe1;l&#xe1;s">
+<node CREATED="1461016379079" ID="ID_1828428902" MODIFIED="1461016400612" TEXT="Val&#xf3;s m&#xe1;trixok ortogon&#xe1;lis diagonaliz&#xe1;l&#xe1;sa">
+<node COLOR="#ff0000" CREATED="1461016406673" ID="ID_441606111" MODIFIED="1461016461238" TEXT="Az A m&#xe1;trxi ortogon&#xe1;lisan diagonaliz&#xe1;lhat&#xf3;, ha tal&#xe1;lunk egy ortogon&#xe1;lis Q &#xe9;s egy diagon&#xe1;lis diag m&#xe1;trixot, hogy Q^T*A*Q=diag"/>
+<node COLOR="#338800" CREATED="1461016472446" ID="ID_214577886" MODIFIED="1461016495710" TEXT="Szimmetrkus m&#xe1;trix b&#xe1;rmely k&#xe9;t k&#xfc;l&#xf6;nb&#xf6;z&#x151; saj&#xe1;taltere mer&#x151;leges egym&#xe1;sra"/>
+<node COLOR="#006699" CREATED="1461016498999" ID="ID_418425433" MODIFIED="1461016529097" TEXT="Val&#xf3;s spektr&#xe1;lalt&#xe9;r: A val&#xf3;s A m&#xe1;trix pontosan akkor diagoniz&#xe1;lhat&#xf3; ortogon&#xe1;lisan, ha szimmetrikus">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1461016579127" ID="ID_1937848035" MODIFIED="1461016585588" TEXT="Schur-felbont&#xe1;s">
+<node COLOR="#006699" CREATED="1461016587411" ID="ID_1890948463" MODIFIED="1461016682735" TEXT="Minden val&#xf3;s n&#xe9;gyzetes A m&#xe1;trix, melynek &#xf6;sszes saj&#xe1;t&#xe9;rt&#xe9;ke val&#xf3;s ortogon&#xe1;ilsan hasonl&#xf3; egy T fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;trixhoz, azaz van olyan Q ortogon&#xe1;lis m&#xe1;trix, hogy A=Q*T*Q^T"/>
+<node COLOR="#006699" CREATED="1461016700158" ID="ID_1186998516" MODIFIED="1461016747062" TEXT="Minden komplex n&#xe9;gyzetes A m&#xe1;trix unit&#xe9;ren hasonl&#xf3; egy T fels&#x151; h&#xe1;romsz&#xf6;gm&#xe1;trixhoz, azaz van olyan U unit&#xe9;r m&#xe1;trix, hogy A=U*T*U^H"/>
+</node>
+<node CREATED="1461016757070" ID="ID_1780410875" MODIFIED="1461016763452" TEXT="Hessenberger m&#xe1;trix">
+<node COLOR="#ff0000" CREATED="1461016765302" ID="ID_1447117483" MODIFIED="1461016791750" TEXT="Fels&#x151; Hessenberg-m&#xe1;trix: a subdiagon&#xe1;lis alatt minden elem nulla"/>
+<node COLOR="#006699" CREATED="1461016792886" ID="ID_1553367286" MODIFIED="1461016835982" TEXT="Minden val&#xf3;s n&#xe9;gyzetes A m&#xe1;trix ortogon&#xe1;lisan hasonl&#xf3; egy H fels&#x151; Hessenberg-m&#xe1;trixhoz, azaz van olyan Q ortogon&#xe1;lis m&#xe1;trix, hogy A=Q*H*Q^T"/>
+</node>
+<node CREATED="1461016851454" ID="ID_1175275410" MODIFIED="1461016865796" TEXT="M&#xe1;trixok unit&#xe9;r diagonaliz&#xe1;l&#xe1;sa">
+<node COLOR="#ff0000" CREATED="1461016866775" ID="ID_486950587" MODIFIED="1461016925174" TEXT="A unit&#xe9;ren diagoniz&#xe1;lhat&#xf3;, ha van olyan U unit&#xe9;r &#xe9;s diag diagon&#xe1;lis m&#xe1;trix, melyre U^H*A*U=diag (illetve A=U*diag*U^H)"/>
+<node COLOR="#ff0000" CREATED="1461016929246" ID="ID_1716886769" MODIFIED="1461016957350" TEXT="Az AE C^n*n norm&#xe1;lis ha A^H*A=A*A^H"/>
+<node COLOR="#006699" CREATED="1461017060110" ID="ID_949434806" MODIFIED="1461017088311" TEXT="Az AEC^n*n m&#xe1;trix pontosan akkor unit&#xe9;ren diagoniz&#xe1;lhat&#xf3;, ha norm&#xe1;lis"/>
+</node>
+</node>
+<node CREATED="1460994062503" ID="ID_789389527" MODIFIED="1460994066555" TEXT="Kvadratikus form&#xe1;k">
+<node CREATED="1461017154486" ID="ID_784686208" MODIFIED="1461017173436" TEXT="Homog&#xe9;n m&#xe1;sodfok&#xfa; polinomok m&#xe1;trixszorzatos alakja"/>
+<node CREATED="1461017215230" ID="ID_755495880" MODIFIED="1461017220389" TEXT="F&#x151;tengelyt&#xe9;tel">
+<node COLOR="#006699" CREATED="1461017222278" ID="ID_317884598" MODIFIED="1461017309136" TEXT="A egy n-edrend&#x171; val&#xf3;s szimmetrikus m&#xe1;trix Q^T*A*Q=diag ortogon&#xe1;lis diagonaliz&#xe1;l&#xe1;sa. Az x=Qy helyettes&#xed;t&#xe9;s az x^T*A*x kvadratikus form&#xe1;t az y^T*diag*y kvadratikus form&#xe1;ba transzform&#xe1;lja, mely kifejtve csak n&#xe9;gyzetes tagokat tartalmaz"/>
+<node COLOR="#006699" CREATED="1461017310359" ID="ID_1663005974" MODIFIED="1461017377230" TEXT="x^T*A*x=y^T*diag *y= sum lambda_i(y_i^2)"/>
+<node COLOR="#006699" CREATED="1461017347590" ID="ID_1137445392" MODIFIED="1461017377510" TEXT="ahol lambda_i az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;kei. V&#xe1;laszhat&#xf3; Q &#xfa;gy, hogy det(Q)=1"/>
+</node>
+<node CREATED="1461017397246" ID="ID_565322405" MODIFIED="1461017639912" TEXT="M&#xe1;trixok definits&#xe9;ge">
+<node COLOR="#ff0000" CREATED="1461017489742" ID="ID_1511968582" MODIFIED="1461017508022" TEXT="f(x)=x^T*A*x kvadratikus forma"/>
+<node COLOR="#ff0000" CREATED="1461017428966" ID="ID_1254347771" MODIFIED="1461017517182" TEXT="pozit&#xed;v,poz szemi, negat&#xed;v, negat&#xed;v szemidefinit"/>
+<node COLOR="#ff0000" CREATED="1461017465300" ID="ID_574107451" MODIFIED="1461017488198" TEXT="f indefinit ha pozit&#xed;v &#xe9;s negat&#xed;v &#xe9;rt&#xe9;keket is felvesz"/>
+<node CREATED="1461017532086" ID="ID_1856347199" MODIFIED="1461017569397" TEXT="az A m&#xe1;trixot pozitv, negat&#xed;v, definitnek/szemidefinitnek nevezz&#xfc;k, ha a hozz&#xe1;tartoz&#xf3; kvadratikus forma az."/>
+<node CREATED="1461017578519" ID="ID_420133056" MODIFIED="1461017600388" TEXT="Tetsz&#x151;leges A val&#xf3;s m&#xe1;trix eset&#xe9;n A^T*A pozit&#xed;v szemidefinit"/>
+<node CREATED="1461017640958" ID="ID_482731429" MODIFIED="1461017658116" TEXT="val&#xf3;s szimmetrikus A m&#xe1;trix pontosan akkor">
+<node CREATED="1461017660542" ID="ID_638935850" MODIFIED="1461017676882" TEXT="pozit&#xed;v definit, ha A minden saj&#xe1;t&#xe9;rt&#xe9;ke pozit&#xed;v"/>
+<node CREATED="1461017660542" ID="ID_1147748935" MODIFIED="1461017705004" TEXT="pozit&#xed;v szemidefinit, ha A minden saj&#xe1;t&#xe9;rt&#xe9;ke nemnegat&#xed;v"/>
+<node CREATED="1461017660542" ID="ID_1241694373" MODIFIED="1461017719515" TEXT="negat&#xed;v definit, ha A minden saj&#xe1;t&#xe9;rt&#xe9;ke negat&#xed;v"/>
+<node CREATED="1461017660542" ID="ID_143362279" MODIFIED="1461017741204" TEXT="negat&#xed;v szemidefinit, ha A minden saj&#xe1;t&#xe9;rt&#xe9;ke nempozit&#xed;v"/>
+<node CREATED="1461017743775" ID="ID_870460541" MODIFIED="1461017758029" TEXT="indefinit, ha A-nak van pozit&#xed;v &#xe9;s negat&#xed;v saj&#xe1;t&#xe9;rt&#xe9;ke is"/>
+</node>
+</node>
+<node CREATED="1461017764942" ID="ID_716513497" MODIFIED="1461017771796" TEXT="F&#x151;minorok &#xe9;s definits&#xe9;g">
+<node COLOR="#ff0000" CREATED="1461017777303" ID="ID_1845490331" MODIFIED="1461017836310" TEXT="V&#xe1;lasszuk ki egy n&#xe9;gyzetes m&#xe1;trix n&#xe9;h&#xe1;ny sor&#xe1;t &#xe9;s ugyanannyiadik sorsz&#xe1;m&#xfa; oszlop&#xe1;t, a t&#xf6;bbi sort &#xe9;s oszlopot hagyjuk el. Az &#xed;gy kapott n&#xe9;gyzetes r&#xe9;szm&#xe1;trix determin&#xe1;ns&#xe1;t a m&#xe1;trix f&#x151;minor&#xe1;nak nevezz&#xfc;k."/>
+<node COLOR="#ff0000" CREATED="1461017837367" ID="ID_1521613479" MODIFIED="1461017880557" TEXT="Ha az els&#x151; k sort &#xe9;s az els&#x151; k oszlopoz v&#xe1;lasztjuk ki, vezet&#x151; f&#x151;minorr&#xf3;l besz&#xe9;l&#xfc;nk, pontosabban a k-adrend&#x171; vagy k-adik vezet&#x151; f&#x151;minorr&#xf3;l."/>
+<node COLOR="#006699" CREATED="1461017948975" ID="ID_1054594644" MODIFIED="1461017954446" TEXT="Definit m&#xe1;trixok f&#x151;minorai &#xe9;s vezet&#x151; f&#x151;minorai">
+<node COLOR="#006699" CREATED="1461017884014" ID="ID_1637262146" MODIFIED="1461018365286" TEXT="A val&#xf3;s szimmetrikus m&#xe1;trix, illetve az x^T*A*x kvadratikus forma pontosan akkor ">
+<node COLOR="#006699" CREATED="1461017959654" ID="ID_2259427" MODIFIED="1461018367614" TEXT="pozit&#xed;v definit, ha A minden f&#x151;minora pozit&#xed;v"/>
+<node COLOR="#006699" CREATED="1461017959654" ID="ID_7489524" MODIFIED="1461018367854" TEXT="pozit&#xed;v szemidefinit, ha A minden f&#x151;minora nemneg&#xed;t&#xed;v"/>
+<node COLOR="#006699" CREATED="1461017660542" ID="ID_1035966161" MODIFIED="1461018368070" TEXT="pozit&#xed;v definit, ha A minden vezet&#x151; f&#x151;minora negat&#xed;v"/>
+<node COLOR="#006699" CREATED="1461017660542" ID="ID_1246394025" MODIFIED="1461018368269" TEXT="negat&#xed;v definit, ha A minden p&#xe1;ratlan rend&#x171; vezet&#x151; f&#x151;minora negat&#xed;v, p&#xe1;ros rend&#x171; vezet&#x151; f&#x151;minora pozit&#xed;v"/>
+</node>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
