@@ -14,8 +14,7 @@ INSTALLED_PACKS=$(dpkg -l | grep ^ii | sed 's_  _\t_g' | cut -f 2)
 # Wanted Packages stored in an array, just extend it by adding packages to it
 WANTED_PACKS=(
 	codeblocks dos2unix filezilla firefox git giggle gimp gparted geany \
-	ktorrent libappindicator1 libindicator7 libxss1 lm-sensors lp-solve mc \
-	mypaint p7zip p7zip-full putty qtcreator synaptic texlive \
+	gthumb ktorrent libappindicator1 libindicator7 libxss1 lm-sensors \		lp-solve mc mypaint p7zip p7zip-full putty qtcreator synaptic texlive \
 	texlive-full texlive-lang-hungarian ttf-mscorefonts-installer vifm vim \
 	vlc wpagui wpasupplicant
 )
