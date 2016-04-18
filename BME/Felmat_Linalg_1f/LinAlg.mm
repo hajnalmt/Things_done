@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1458615581084" ID="ID_411259303" MODIFIED="1459156492030" TEXT="Fels&#x151;bb Matematika - Halad&#xf3; Line&#xe1;ris Algebra">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1460410487538" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
+<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1460989791456" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459156608018" FOLDED="true" ID="ID_718278855" MODIFIED="1459160549313" TEXT="Vektor">
 <node CREATED="1459156706914" ID="ID_1518623961" MODIFIED="1459156719434" TEXT="A 2 &#xe9;s 3 dimenzi&#xf3;s t&#xe9;r vektorai">
@@ -670,9 +670,62 @@
 </node>
 <node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1460988731881" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1460988709078" ID="ID_535438581" MODIFIED="1460988712957" TEXT="Ortonorm&#xe1;lt b&#xe1;zis"/>
-<node CREATED="1460988714190" ID="ID_695015043" MODIFIED="1460988723292" TEXT="Ortogon&#xe1;lis m&#xe1;trix"/>
-<node CREATED="1460988724342" ID="ID_731440512" MODIFIED="1460988729355" TEXT="QR-felbont&#xe1;s"/>
+<node CREATED="1460988709078" ID="ID_535438581" MODIFIED="1460988712957" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
+<node COLOR="#ff0000" CREATED="1460989681965" ID="ID_415398161" MODIFIED="1460989794721" TEXT="OR-ortogon&#xe1;lis rendszer">
+<node CREATED="1460989697793" ID="ID_1642925638" MODIFIED="1460989722713" TEXT="Lehet k&#xf6;zt&#xfc;k z&#xe9;ruvektor"/>
+</node>
+<node COLOR="#ff0000" CREATED="1460989725206" ID="ID_561352526" MODIFIED="1460989795446" TEXT="ONR-ortonorm&#xe1;lt rendszer"/>
+<node COLOR="#006699" CREATED="1460989749719" ID="ID_988404765" MODIFIED="1460989801616" TEXT="p&#xe1;ronk&#xe9;nt ortogon&#xe1;lis nem nullvektorok">
+<font NAME="SansSerif" SIZE="12"/>
+<node CREATED="1460989778087" ID="ID_716075146" MODIFIED="1460989817841" TEXT="f&#xfc;ggetlenek is"/>
+</node>
+<node COLOR="#006699" CREATED="1460989851399" ID="ID_347630349" MODIFIED="1460989976118" TEXT="Legjobb k&#xf6;zel&#xed;t&#xe9;s ONB eset&#xe9;n">
+<node CREATED="1460989887096" ID="ID_1176165067" MODIFIED="1460989928150" TEXT="v kalap A &#xe1;ltal kifesz&#xed;tett elt&#xe9;rben v vet&#xfc;lete"/>
+</node>
+</node>
+<node CREATED="1460988714190" ID="ID_695015043" MODIFIED="1460991224925" TEXT="Ortogon&#xe1;lis m&#xe1;trix">
+<node COLOR="#ff0000" CREATED="1460990001910" ID="ID_121028315" MODIFIED="1460990227225" TEXT="n&#xe9;gyzetes m&#xe1;trix ortogon&#xe1;lis, ha sorvektorai vagy oszlopvektorai ONR-t alkotnak"/>
+<node CREATED="1460990035967" ID="ID_598216937" MODIFIED="1460990050724" TEXT="nem n&#xe9;gyzetes  &gt; szemiortogon&#xe1;lis"/>
+<node CREATED="1460990059751" ID="ID_983195066" MODIFIED="1460990077135" TEXT="forgat&#xe1;s, t&#xfc;kr&#xf6;z&#xe9;s &#xe9;s minden permut&#xe1;ci&#xf3;m&#xe1;trix ortogon&#xe1;lis"/>
+<node COLOR="#006699" CREATED="1460990106013" ID="ID_1286260616" MODIFIED="1460990214502" TEXT="szemiortogon&#xe1;lis m&#xe1;trix &#xe9;s transzpon&#xe1;ltj&#xe1;nak szorzata az egys&#xe9;gm&#xe1;trixot adja">
+<icon BUILTIN="back"/>
+<icon BUILTIN="forward"/>
+</node>
+<node COLOR="#338800" CREATED="1460990199096" ID="ID_1214007167" MODIFIED="1460990208726" TEXT="determin&#xe1;nsuk abszolut&#xe9;rt&#xe9;ke egy"/>
+<node COLOR="#338800" CREATED="1460990411728" ID="ID_418843816" MODIFIED="1460990446245" TEXT="Oszlop &#xe9;s sorrangjuk z&#xe1;rt a szorz&#xe1;sra &#xe9;s az invert&#xe1;l&#xe1;sra n&#xe9;zve"/>
+<node COLOR="#006699" CREATED="1460990452303" ID="ID_1676111774" MODIFIED="1460990537481" TEXT="Ortogon&#xe1;lis m&#xe1;trixhoz tartoz&#xf3; m&#xe1;trix lek&#xe9;pez&#xe9;s">
+<node COLOR="#006699" CREATED="1460990475230" ID="ID_1663041945" MODIFIED="1460990537102" TEXT="Ekvivalens &#xe1;ll&#xed;t&#xe1;sok">
+<node COLOR="#006699" CREATED="1460990487728" ID="ID_274378853" MODIFIED="1460990536102" TEXT="Q ortogon&#xe1;lis"/>
+<node COLOR="#006699" CREATED="1460990493194" ID="ID_129273522" MODIFIED="1460990535710" TEXT="abs(Qx)= abs(x)"/>
+<node COLOR="#006699" CREATED="1460990520879" ID="ID_1991496966" MODIFIED="1460990535328" TEXT="Qy*Qy=x*y"/>
+</node>
+</node>
+<node COLOR="#006699" CREATED="1460990581393" ID="ID_1928339650" MODIFIED="1460990642038" TEXT="MInden O(2)-be es&#x151; ortogon&#xe1;lis m&#xe1;trix vagy egy alpha sz&#xf6;g&#x171; forgat&#xe1;s, vagy egy alpha/2 sz&#xf6;g&#x171; egyenesre val&#xf3; t&#xfc;kr&#xf6;z&#xe9;s m&#xe1;trixa"/>
+<node COLOR="#006699" CREATED="1460990961280" ID="ID_709545417" MODIFIED="1460991039551" TEXT="A harmadrend&#x171; egy determin&#xe1;ns&#xfa; ortogon&#xe1;lis transzform&#xe1;ci&#xf3;k a forgat&#xe1;sok a -1 determin&#xe1;ns&#xfa;ak, azaz O(3) -SO(3) elemei egy t&#xfc;kr&#xf6;z&#xe9;s &#xe9;s egy forgat&#xe1;s egym&#xe1;s ut&#xe1;ni alkalmaz&#xe1;s&#xe1;val megkaphat&#xf3;ak"/>
+<node COLOR="#ff0000" CREATED="1460991057166" ID="ID_372961947" MODIFIED="1460991064414" TEXT="Givens forgat&#xe1;s">
+<node CREATED="1460991067446" ID="ID_1714556288" MODIFIED="1460991076310" TEXT="Forgat&#xe1;s egy s&#xed;kban minden m&#xe1;s helyben marad"/>
+</node>
+<node COLOR="#ff0000" CREATED="1460991080822" ID="ID_1244915928" MODIFIED="1460991088330" TEXT="Householder t&#xfc;kr&#xf6;z&#xe9;s">
+<node CREATED="1460991092287" ID="ID_833355100" MODIFIED="1460991128643" TEXT="Egy adott a!=0 vektorra mer&#x151;leges hipers&#xed;kre val&#xf3; t&#xfc;kr&#x151;z&#xe9;st Householder t&#xfc;kr&#xf6;z&#xe9;snek nevez&#xfc;nk"/>
+<node COLOR="#006699" CREATED="1460991151438" ID="ID_957432657" MODIFIED="1460991217575" TEXT="a &#xe9;s b azonos hossz&#xfa;s&#xe1;g&#xfa;ak, akkor az (a-b)_|_ hipers&#xed;kra val&#xf3; H-t&#xfc;kr&#xf6;z&#xe9;s a-t &#xe9;s b-t f&#xf6;lcser&#xe9;li"/>
+</node>
+</node>
+<node CREATED="1460991240166" ID="ID_518837658" MODIFIED="1460991252721" TEXT="Ortogonaliz&#xe1;ci&#xf3;">
+<node COLOR="#006699" CREATED="1460991275852" ID="ID_1809500630" MODIFIED="1460991295950" TEXT="Gram-Schmid-ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1460991308857" ID="ID_1018504523" MODIFIED="1460991331269" TEXT="L&#xe9;tezik f&#xfc;ggetlen vektorrendszerhez ortogon&#xe1;lils vektorrendszer"/>
+<node CREATED="1460991346606" ID="ID_1457631938" MODIFIED="1460991363342" TEXT="ezt ortonorm&#xe1;lni is lehet teh&#xe1;t ONR is l&#xe9;tezik"/>
+</node>
+</node>
+<node CREATED="1460988724342" ID="ID_731440512" MODIFIED="1460988729355" TEXT="QR-felbont&#xe1;s">
+<node COLOR="#ff0000" CREATED="1460991444560" ID="ID_1772156742" MODIFIED="1460991505882" TEXT="Minden teljes oszloprang&#xfa; A m&#xe1;trixhoz l&#xe9;tezik A=QR, hogy Q szemiortogon&#xe1;lis, R pedig n&#xe9;gyzete fels&#x151;h&#xe1;romsz&#xf6;g m&#xe1;trix"/>
+<node COLOR="#006699" CREATED="1460991525844" ID="ID_409992054" MODIFIED="1460991541166" TEXT="l&#xe9;tezik &#xe9;s egy&#xe9;rtelm&#x171; a QR felbont&#xe1;s"/>
+<node CREATED="1460992035214" ID="ID_84803263" MODIFIED="1460992047412" TEXT="Gram-Schmidt elj&#xe1;r&#xe1;b&#xf3;l megkaphat&#xf3;"/>
+<node CREATED="1460992081959" ID="ID_23087489" MODIFIED="1460992091436" TEXT="Givens forgat&#xe1;sokkal is megkaphat&#xf3;"/>
+<node CREATED="1460992128248" ID="ID_1487100816" MODIFIED="1460992140916" TEXT="Householder m&#xf3;dszerrel is megkaphat&#xf3;"/>
+<node COLOR="#006699" CREATED="1460992154270" ID="ID_494985761" MODIFIED="1460992175614" TEXT="Egyenletrendszer optim&#xe1;lis megold&#xe1;sa QR felbont&#xe1;ssal">
+<node CREATED="1460992176712" ID="ID_693237455" MODIFIED="1460992235228" TEXT="Az Ax=b egyyenletrendszer egyetlen optim&#xe1;lis megold&#xe1;sa x_kalap= R^(-1)*Q^T*b"/>
+</node>
+</node>
 <node CREATED="1460988733807" ID="ID_1197934020" MODIFIED="1460988741891" TEXT="Komplex skal&#xe1;r szorz&#xe1;s"/>
 <node CREATED="1460988744246" ID="ID_937977471" MODIFIED="1460988755107" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
 <node CREATED="1460988755502" ID="ID_1314459037" MODIFIED="1460988759995" TEXT="Fourier m&#xe1;trixok"/>
