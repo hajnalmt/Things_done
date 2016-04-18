@@ -574,9 +574,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215085071" ID="ID_158843376" MODIFIED="1460410602654" POSITION="left" TEXT="4) Line&#xe1;ris lek&#xe9;pez&#xe9;s">
+<node CREATED="1459215085071" FOLDED="true" ID="ID_158843376" MODIFIED="1460988603201" POSITION="left" TEXT="4) Line&#xe1;ris lek&#xe9;pez&#xe9;s">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459215935008" ID="ID_892286750" MODIFIED="1460411115589" TEXT="M&#xe1;trixlek&#xe9;pez&#xe9;s, line&#xe1;ris lek&#xe9;pez&#xe9;s">
+<node CREATED="1459215935008" FOLDED="true" ID="ID_892286750" MODIFIED="1460988601740" TEXT="M&#xe1;trixlek&#xe9;pez&#xe9;s, line&#xe1;ris lek&#xe9;pez&#xe9;s">
 <node COLOR="#ff0000" CREATED="1459217467123" ID="ID_746422661" MODIFIED="1460411125302" TEXT="Fogalma"/>
 <node COLOR="#ff0000" CREATED="1459217485913" ID="ID_1161043136" MODIFIED="1460411127630" TEXT="k&#xe9;pt&#xe9;r, magt&#xe9;r - oszlopt&#xe9;r, nullt&#xe9;r"/>
 <node CREATED="1459217516523" ID="ID_1145014383" MODIFIED="1459217520483" TEXT="M&#x171;veletek"/>
@@ -597,66 +597,88 @@
 </node>
 <node COLOR="#338800" CREATED="1459217736876" ID="ID_1591396859" MODIFIED="1460411172149" TEXT="V-&gt;W lek&#xe9;pez&#xe9;s line&#xe1;ris transzform&#xe1;ci&#xf3; ha V=W"/>
 </node>
-<node CREATED="1459217786340" ID="ID_345535053" MODIFIED="1459217791628" TEXT="Ekvivalens &#xe1;ll&#xed;t&#xe1;sok">
-<node COLOR="#338800" CREATED="1459217799370" ID="ID_934549223" MODIFIED="1460411174637" TEXT="line&#xe1;ris"/>
-<node COLOR="#338800" CREATED="1459217803232" ID="ID_112740990" MODIFIED="1460411175244" TEXT="A(cx+y)=cA(x)+A(y)"/>
-<node COLOR="#338800" CREATED="1459217832496" ID="ID_70015907" MODIFIED="1460411175597" TEXT="A(c_1x_1+...+c_kx_k)=c_1Ax_1+...+c_kAx_k"/>
+<node COLOR="#006699" CREATED="1459217786340" ID="ID_345535053" MODIFIED="1460987692351" TEXT="Ekvivalens &#xe1;ll&#xed;t&#xe1;sok">
+<font NAME="SansSerif" SIZE="12"/>
+<node COLOR="#006699" CREATED="1459217799370" ID="ID_934549223" MODIFIED="1460987696966" TEXT="line&#xe1;ris"/>
+<node COLOR="#006699" CREATED="1459217803232" ID="ID_112740990" MODIFIED="1460987699016" TEXT="A(cx+y)=cA(x)+A(y)"/>
+<node COLOR="#006699" CREATED="1459217832496" ID="ID_70015907" MODIFIED="1460987698359" TEXT="A(c_1x_1+...+c_kx_k)=c_1Ax_1+...+c_kAx_k"/>
 </node>
-<node CREATED="1459217985245" ID="ID_570316491" MODIFIED="1459218014134" TEXT="Line&#xe1;ris f&#xfc;ggv&#xe9;ny ha l&#xe9;tezik A m&#xe1;trix"/>
+<node COLOR="#006699" CREATED="1459217985245" ID="ID_570316491" MODIFIED="1460987768926" TEXT="Line&#xe1;ris f&#xfc;ggv&#xe9;ny ha l&#xe9;tezik A m&#xe1;trix">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
 <node CREATED="1459218111532" ID="ID_1789124089" MODIFIED="1459218122406" TEXT="A m&#xe1;trixtraf&#xf3;k k&#xfc;l&#xf6;nb&#xf6;z&#x151; b&#xe1;zisokban"/>
-<node CREATED="1459218132836" ID="ID_1419901410" MODIFIED="1459218141145" TEXT="M&#xe1;trix hasonl&#xf3;s&#xe1;g sassal">
-<node CREATED="1459218163311" ID="ID_1017323150" MODIFIED="1459218178979" TEXT="Pontosan akkor ha van b&#xe1;zistranszform&#xe1;ci&#xf3;"/>
-<node CREATED="1459218191134" ID="ID_1631725036" MODIFIED="1459218194539" TEXT="tulajdons&#xe1;gok"/>
+<node COLOR="#006699" CREATED="1459218132836" ID="ID_1419901410" MODIFIED="1460987797462" TEXT="M&#xe1;trix hasonl&#xf3;s&#xe1;g sassal">
+<node COLOR="#006699" CREATED="1459218163311" ID="ID_1017323150" MODIFIED="1460987909198" TEXT="Pontosan akkor ha van b&#xe1;zistranszform&#xe1;ci&#xf3;"/>
+<node COLOR="#006699" CREATED="1459218191134" ID="ID_1631725036" MODIFIED="1460987825567" TEXT="tulajdons&#xe1;gok">
+<node CREATED="1460987832918" ID="ID_1754612413" MODIFIED="1460987876508" TEXT="rangunk, nullter&#xfc;k dimenzi&#xf3;ja, determin&#xe1;nsuk, nyomuk megegyezik"/>
 </node>
 </node>
-<node CREATED="1459215951677" FOLDED="true" ID="ID_555219046" MODIFIED="1460410661025" TEXT="Alkalmaz&#xe1;s: differenci&#xe1;lhat&#xf3;s&#xe1;g">
+</node>
+<node COLOR="#ff0000" CREATED="1459215951677" FOLDED="true" ID="ID_555219046" MODIFIED="1460988598768" TEXT="Alkalmaz&#xe1;s: differenci&#xe1;lhat&#xf3;s&#xe1;g">
 <node CREATED="1459218225839" ID="ID_1951758783" MODIFIED="1459218230654" TEXT="Differenci&#xe1;lhat&#xf3;s&#xe1;g"/>
 <node CREATED="1459218272259" ID="ID_1622825938" MODIFIED="1459218277342" TEXT="Deriv&#xe1;ltlek&#xe9;pez&#xe9;s"/>
-<node CREATED="1459218326756" ID="ID_1861540908" MODIFIED="1459218330990" TEXT="Jacobi m&#xe1;trix">
+<node COLOR="#006699" CREATED="1459218326756" ID="ID_1861540908" MODIFIED="1460987961150" TEXT="Jacobi m&#xe1;trix">
 <node CREATED="1459218363890" ID="ID_1314305752" MODIFIED="1459218373865" TEXT="Integr&#xe1;ltranszform&#xe1;ci&#xf3;n&#xe1;l"/>
 </node>
-<node CREATED="1459218379368" ID="ID_1090741748" MODIFIED="1459218382874" TEXT="l&#xe1;ncszab&#xe1;ly"/>
+<node COLOR="#006699" CREATED="1459218379368" ID="ID_1090741748" MODIFIED="1460988178299" TEXT="L&#xe1;ncszab&#xe1;ly"/>
 </node>
-<node CREATED="1459215971988" ID="ID_965367797" MODIFIED="1460410667681" TEXT="2- &#xe9;s 3-dimenzi&#xf3;s geometriai transzform&#xe1;ci&#xf3;k m&#xe1;trixa">
-<node CREATED="1459218472362" ID="ID_1477717140" MODIFIED="1459218476091" TEXT="Forgat&#xe1;s">
-<node CREATED="1459218477008" ID="ID_1782408467" MODIFIED="1459218480713" TEXT="2D-ben"/>
-<node CREATED="1459218487883" ID="ID_1869829862" MODIFIED="1459218494829" TEXT="tengelyk&#xf6;r&#xfc;l 3D-ben"/>
+<node CREATED="1459215971988" FOLDED="true" ID="ID_965367797" MODIFIED="1460988597682" TEXT="2- &#xe9;s 3-dimenzi&#xf3;s geometriai transzform&#xe1;ci&#xf3;k m&#xe1;trixa">
+<node COLOR="#338800" CREATED="1459218472362" ID="ID_1477717140" MODIFIED="1460988191150" TEXT="Forgat&#xe1;s">
+<node COLOR="#338800" CREATED="1459218477008" ID="ID_1782408467" MODIFIED="1460988192631" TEXT="2D-ben"/>
+<node COLOR="#338800" CREATED="1459218487883" ID="ID_1869829862" MODIFIED="1460988193078" TEXT="tengelyk&#xf6;r&#xfc;l 3D-ben"/>
 </node>
-<node CREATED="1459218499749" ID="ID_463841647" MODIFIED="1459218508779" TEXT="Rodrigues formula">
+<node COLOR="#006699" CREATED="1459218499749" ID="ID_463841647" MODIFIED="1460988195287" TEXT="Rodrigues formula">
 <node CREATED="1459218521183" ID="ID_1291196467" MODIFIED="1459218536391" TEXT="Egys&#xe9;gvektor egyenese k&#xf6;r&#xfc;l alpha sz&#xf6;ggel forgat&#xe1;s"/>
 </node>
-<node CREATED="1459218547629" ID="ID_113780766" MODIFIED="1459218554498" TEXT="kvaterni&#xf3;kal">
+<node COLOR="#006699" CREATED="1459218547629" ID="ID_113780766" MODIFIED="1460988197567" TEXT="kvaterni&#xf3;kal">
 <node CREATED="1459218521183" ID="ID_991401409" MODIFIED="1459218536391" TEXT="Egys&#xe9;gvektor egyenese k&#xf6;r&#xfc;l alpha sz&#xf6;ggel forgat&#xe1;s"/>
 <node CREATED="1459218627855" ID="ID_1924105796" MODIFIED="1459218631960" TEXT="sz&#xe1;mol&#xe1;s vel&#xfc;k"/>
 </node>
-<node CREATED="1459218652645" ID="ID_1638870721" MODIFIED="1459218670381" TEXT="Egyenesre val&#xf3; mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trixa"/>
-<node CREATED="1459218695667" ID="ID_1085385745" MODIFIED="1459218704143" TEXT="S&#xed;kra val&#xf3; mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trixa"/>
-<node CREATED="1459218774659" ID="ID_1028565411" MODIFIED="1459218799224" TEXT="s&#xed;kbeli t&#xfc;kr&#xf6;z&#xe9;s az alpha/2 egyenesre"/>
-<node CREATED="1459218803724" ID="ID_366660338" MODIFIED="1459218812047" TEXT="s&#xed;kra val&#xf3; t&#xfc;kr&#xf6;z&#xe9;s m&#xe1;trixa"/>
-<node CREATED="1459218861221" ID="ID_704763249" MODIFIED="1459218869228" TEXT="eltol&#xe1;s"/>
+<node COLOR="#338800" CREATED="1459218652645" ID="ID_1638870721" MODIFIED="1460988207078" TEXT="Egyenesre val&#xf3; mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trixa"/>
+<node COLOR="#338800" CREATED="1459218695667" ID="ID_1085385745" MODIFIED="1460988207526" TEXT="S&#xed;kra val&#xf3; mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trixa"/>
+<node COLOR="#338800" CREATED="1459218774659" ID="ID_1028565411" MODIFIED="1460988207838" TEXT="s&#xed;kbeli t&#xfc;kr&#xf6;z&#xe9;s az alpha/2 egyenesre"/>
+<node COLOR="#338800" CREATED="1459218803724" ID="ID_366660338" MODIFIED="1460988208958" TEXT="s&#xed;kra val&#xf3; t&#xfc;kr&#xf6;z&#xe9;s m&#xe1;trixa"/>
+<node COLOR="#338800" CREATED="1459218861221" ID="ID_704763249" MODIFIED="1460988209927" TEXT="eltol&#xe1;s"/>
 </node>
-<node CREATED="1459215997269" FOLDED="true" ID="ID_1110107617" MODIFIED="1459220676958" TEXT="Mer&#x151;leges vet&#xed;t&#xe9;s &#xe9;s a legjobb k&#xf6;zel&#xed;t&#xe9;s">
-<node CREATED="1459218912533" ID="ID_1376184085" MODIFIED="1459218931410" TEXT="Alterek direkt &#xf6;sszege"/>
-<node CREATED="1459218932729" ID="ID_1449354893" MODIFIED="1459218948401" TEXT="komplementer alt&#xe9;r-kieg&#xe9;sz&#xed;t&#x151; alt&#xe9;r"/>
-<node CREATED="1459219007783" ID="ID_1594761356" MODIFIED="1459219020772" TEXT="A mer&#x151;leges vet&#xed;t&#xe9;s R^n altere"/>
-<node CREATED="1459219487879" ID="ID_1367125699" MODIFIED="1459219508445" TEXT="Mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trix pontosan akkor ha P=P^T=P^2"/>
-<node CREATED="1459219580691" ID="ID_928204867" MODIFIED="1459219591306" TEXT="alt&#xe9;r&#x151;l val&#xf3; t&#xe1;vols&#xe1;g"/>
-<node CREATED="1459219593460" ID="ID_719329242" MODIFIED="1459219620330" TEXT="legjobb k&#xf6;zel&#xed;t&#xe9;s a mer&#x151;leges vet&#xfc;let"/>
-<node CREATED="1459219813025" ID="ID_821834129" MODIFIED="1459219819756" TEXT="Egyenletrendszer optim&#xe1;lis megold&#xe1;sa"/>
-<node CREATED="1459219908466" ID="ID_559570698" MODIFIED="1459219910507" TEXT="Vet&#xed;t&#xe9;s">
-<node CREATED="1459220041274" ID="ID_970760046" MODIFIED="1459220044207" TEXT="Tulajdons&#xe1;gai"/>
+<node CREATED="1459215997269" FOLDED="true" ID="ID_1110107617" MODIFIED="1460988596360" TEXT="Mer&#x151;leges vet&#xed;t&#xe9;s &#xe9;s a legjobb k&#xf6;zel&#xed;t&#xe9;s">
+<node COLOR="#ff0000" CREATED="1459218912533" ID="ID_1376184085" MODIFIED="1460988227863" TEXT="Alterek direkt &#xf6;sszege"/>
+<node COLOR="#ff0000" CREATED="1459218932729" ID="ID_1449354893" MODIFIED="1460988232879" TEXT="komplementer alt&#xe9;r-kieg&#xe9;sz&#xed;t&#x151; alt&#xe9;r"/>
+<node COLOR="#006699" CREATED="1459219007783" ID="ID_1594761356" MODIFIED="1460988246287" TEXT="A mer&#x151;leges vet&#xed;t&#xe9;s R^n altere"/>
+<node COLOR="#006699" CREATED="1459219487879" ID="ID_1367125699" MODIFIED="1460988265223" TEXT="Mer&#x151;leges vet&#xed;t&#xe9;s m&#xe1;trix pontosan akkor ha P=P^T=P^2"/>
+<node COLOR="#ff0000" CREATED="1459219580691" ID="ID_928204867" MODIFIED="1460988270278" TEXT="alt&#xe9;r&#x151;l val&#xf3; t&#xe1;vols&#xe1;g"/>
+<node COLOR="#006699" CREATED="1459219593460" ID="ID_719329242" MODIFIED="1460988283054" TEXT="legjobb k&#xf6;zel&#xed;t&#xe9;s a mer&#x151;leges vet&#xfc;let"/>
+<node COLOR="#ff0000" CREATED="1459219813025" ID="ID_821834129" MODIFIED="1460988292831" TEXT="Egyenletrendszer optim&#xe1;lis megold&#xe1;sa">
+<node COLOR="#006699" CREATED="1460988315808" ID="ID_1577795604" MODIFIED="1460988335958" TEXT="Megegyezik a norm&#xe1;legyenletrendszer megold&#xe1;s&#xe1;val"/>
+</node>
+<node COLOR="#006699" CREATED="1460988360535" ID="ID_476481273" MODIFIED="1460988375014" TEXT="Line&#xe1;ris &#xe9;s polinomi&#xe1;lis regresszi&#xf3;"/>
+<node COLOR="#ff0000" CREATED="1459219908466" ID="ID_559570698" MODIFIED="1460988395587" TEXT="Vet&#xed;t&#xe9;s">
+<node COLOR="#006699" CREATED="1459220041274" ID="ID_970760046" MODIFIED="1460988396910" TEXT="Tulajdons&#xe1;gai"/>
 </node>
 </node>
-<node CREATED="1459216016727" FOLDED="true" ID="ID_1680684532" MODIFIED="1459220675207" TEXT="Pszeudoinverz">
-<node CREATED="1459220138736" ID="ID_315271239" MODIFIED="1459220155866" TEXT="sort&#xe9;r &#xe9;s oszlopt&#xe9;r k&#xf6;z&#xf6;tt van k&#xf6;lcs&#xf6;n&#xf6;sen egy&#xe9;rtelm&#x171; megfeleltet&#xe9;s"/>
-<node CREATED="1459220172982" ID="ID_1597584356" MODIFIED="1459220184740" TEXT="moore-penrose-f&#xe9;le pszeudoinverz">
+<node CREATED="1459216016727" FOLDED="true" ID="ID_1680684532" MODIFIED="1460988595145" TEXT="Pszeudoinverz">
+<node COLOR="#338800" CREATED="1459220138736" ID="ID_315271239" MODIFIED="1460988417718" TEXT="sort&#xe9;r &#xe9;s oszlopt&#xe9;r k&#xf6;z&#xf6;tt van k&#xf6;lcs&#xf6;n&#xf6;sen egy&#xe9;rtelm&#x171; megfeleltet&#xe9;s"/>
+<node COLOR="#ff0000" CREATED="1459220172982" ID="ID_1597584356" MODIFIED="1460988428198" TEXT="moore-penrose-f&#xe9;le pszeudoinverz">
 <node CREATED="1459220190736" ID="ID_1290968201" MODIFIED="1459220194271" TEXT="A^+"/>
 </node>
-<node CREATED="1459220377997" ID="ID_1672792386" MODIFIED="1459220391136" TEXT="pontosan akkor ha a n&#xe9;gy felt&#xe9;tel fenn&#xe1;ll"/>
+<node CREATED="1460988455766" ID="ID_705225720" MODIFIED="1460988462913" TEXT="N&#xe9;h&#xe1;ny pszeudoinverz"/>
+<node CREATED="1460988472743" ID="ID_727602795" MODIFIED="1460988478024" TEXT="Kisz&#xe1;m&#xed;t&#xe1;sa"/>
+<node COLOR="#006699" CREATED="1459220377997" ID="ID_1672792386" MODIFIED="1460988544414" TEXT="Pontosan akkor ha a n&#xe9;gy felt&#xe9;tel fenn&#xe1;ll">
+<node CREATED="1460988511406" ID="ID_157081258" MODIFIED="1460988541084" TEXT="AXA=A, XAX=X, (AX)^T=AX, (XA)^T=XA"/>
+</node>
+<node COLOR="#006699" CREATED="1460988553926" ID="ID_544424322" MODIFIED="1460988571646" TEXT="A pszeudoinverz &#xe9;s a min. absz&#xe9;rt&#xe9;k&#x171; optim&#xe1;lis megold&#xe1;s"/>
 </node>
 </node>
-<node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1459215109832" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1460988731881" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1460988709078" ID="ID_535438581" MODIFIED="1460988712957" TEXT="Ortonorm&#xe1;lt b&#xe1;zis"/>
+<node CREATED="1460988714190" ID="ID_695015043" MODIFIED="1460988723292" TEXT="Ortogon&#xe1;lis m&#xe1;trix"/>
+<node CREATED="1460988724342" ID="ID_731440512" MODIFIED="1460988729355" TEXT="QR-felbont&#xe1;s"/>
+<node CREATED="1460988733807" ID="ID_1197934020" MODIFIED="1460988741891" TEXT="Komplex skal&#xe1;r szorz&#xe1;s"/>
+<node CREATED="1460988744246" ID="ID_937977471" MODIFIED="1460988755107" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
+<node CREATED="1460988755502" ID="ID_1314459037" MODIFIED="1460988759995" TEXT="Fourier m&#xe1;trixok"/>
+<node CREATED="1460988761943" ID="ID_810666270" MODIFIED="1460988770404" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;ci&#xf3;"/>
+<node CREATED="1460988771510" ID="ID_1889165163" MODIFIED="1460988779523" TEXT="Gyors Fourier transzform&#xe1;ci&#xf3;"/>
+</node>
 </node>
 <node CREATED="1459215136069" ID="ID_124795280" MODIFIED="1459215154670" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
