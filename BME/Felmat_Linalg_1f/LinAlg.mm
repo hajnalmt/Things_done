@@ -759,7 +759,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215136069" FOLDED="true" ID="ID_124795280" MODIFIED="1461018440438" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
+<node CREATED="1459215136069" FOLDED="true" ID="ID_124795280" MODIFIED="1461599736978" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460994022487" FOLDED="true" ID="ID_1773392264" MODIFIED="1461015205493" TEXT="Saj&#xe1;t&#xe9;rt&#xe9;k, saj&#xe1;tvektor, saj&#xe1;talt&#xe9;r">
 <node COLOR="#ff0000" CREATED="1460994114319" ID="ID_1120203668" MODIFIED="1460994255279" TEXT="lamda sz&#xe1;m az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke, ha l&#xe9;tezik olyan nemnulla x vektor, melyre Ax=lambda*x"/>
@@ -907,7 +907,11 @@
 </node>
 <node CREATED="1461018445252" ID="ID_323471265" MODIFIED="1461018547969" POSITION="right" TEXT="7) Szingul&#xe1;ris &#xe9;rt&#xe9;kek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461018523550" ID="ID_82136292" MODIFIED="1461018530380" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k"/>
+<node CREATED="1461018523550" ID="ID_82136292" MODIFIED="1461018530380" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k">
+<node COLOR="#ff0000" CREATED="1461599781334" ID="ID_1832613215" MODIFIED="1461599919492" TEXT="A szigma sz&#xe1;mok az r-rang&#xfa; val&#xf3;s m&#xe1;trix szingul&#xe1;ris &#xe9;rt&#xe9;kei, ha van olyan v_r ONB-a a sort&#xe9;nek (konjug&#xe1;ltj&#xe1;nak) &#xe9;s u_r ONB-a az oszlopt&#xe9;rnek, hogy A*v_i=szigma_i*u_i">
+<node COLOR="#ff0000" CREATED="1461599925377" ID="ID_535509646" MODIFIED="1461599960824" TEXT="A v_i vektorokat jobb az u_i vekorokat bal szingul&#xe1;ris vektoroknak nevezz&#xfc;k"/>
+</node>
+</node>
 <node CREATED="1461018531430" ID="ID_1816998740" MODIFIED="1461018533403" TEXT="Norma"/>
 <node CREATED="1461018534470" ID="ID_963728032" MODIFIED="1461018538275" TEXT="M&#xe1;trixnorma"/>
 <node CREATED="1461018539454" ID="ID_10120100" MODIFIED="1461018544891" TEXT="Alkalmaz&#xe1;sok"/>
@@ -915,6 +919,9 @@
 <node CREATED="1461018549574" ID="ID_281617371" MODIFIED="1461018590785" POSITION="left" TEXT="8) Jordan-f&#xe9;le norm&#xe1;lalak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1461018573950" ID="ID_409405841" MODIFIED="1461018585292" TEXT="&#xc1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektor"/>
+</node>
+<node CREATED="1461018701094" ID="ID_673370017" MODIFIED="1461018721608" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
 </node>
 </map>
