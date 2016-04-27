@@ -3078,5 +3078,11 @@
 </node>
 </node>
 </node>
+<node CREATED="1461754104908" ID="ID_767244862" MODIFIED="1461754183597" POSITION="left" TEXT="10) Oldalszerkeszt&#xe9;s, m&#xe9;ret, elforgat&#xe1;s, has&#xe1;bok">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1461754185540" ID="ID_435126214" MODIFIED="1461754196314" TEXT="Hosszabb dokumentum feldarabol&#xe1;sa">
+<node CREATED="1461754241316" ID="ID_748617543" MODIFIED="1461754289086" TEXT="Ha nagy m&#xe1;vet &#xed;runk, &#xe1;ttekinthet&#x151;bb, ha minden fejezetet k&#xfc;l&#xf6;n .tex f&#xe1;jlba &#xed;runk, majd a v&#xe9;g&#xe9;n &#xf6;sszef&#x171;zz&#xfc;k &#x151;ket!"/>
+</node>
+</node>
 </node>
 </map>
