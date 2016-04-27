@@ -3081,7 +3081,47 @@
 <node CREATED="1461754104908" ID="ID_767244862" MODIFIED="1461754183597" POSITION="left" TEXT="10) Oldalszerkeszt&#xe9;s, m&#xe9;ret, elforgat&#xe1;s, has&#xe1;bok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1461754185540" ID="ID_435126214" MODIFIED="1461754196314" TEXT="Hosszabb dokumentum feldarabol&#xe1;sa">
-<node CREATED="1461754241316" ID="ID_748617543" MODIFIED="1461754289086" TEXT="Ha nagy m&#xe1;vet &#xed;runk, &#xe1;ttekinthet&#x151;bb, ha minden fejezetet k&#xfc;l&#xf6;n .tex f&#xe1;jlba &#xed;runk, majd a v&#xe9;g&#xe9;n &#xf6;sszef&#x171;zz&#xfc;k &#x151;ket!"/>
+<node CREATED="1461754241316" ID="ID_748617543" MODIFIED="1461754999586" TEXT="Ha nagy m&#x171;vet &#xed;runk, &#xe1;ttekinthet&#x151;bb, ha minden fejezetet k&#xfc;l&#xf6;n .tex f&#xe1;jlba &#xed;runk, majd a v&#xe9;g&#xe9;n &#xf6;sszef&#x171;zz&#xfc;k &#x151;ket!"/>
+<node CREATED="1461755004504" ID="ID_1871236000" MODIFIED="1461755052582" TEXT="A dokumentumok felszabdal&#xe1;s&#xe1;t az \include{} parancs t&#xe1;mogatja, melynek argumentum&#xe1;ban kell megadni a f&#xe1;jl nev&#xe9;t, ak&#xe1;r a .tex kiterjeszt&#xe9;s n&#xe9;lk&#xfc;l."/>
+<node CREATED="1461755054307" ID="ID_1111550299" MODIFIED="1461755292571" TEXT="az \include{} parancs hat&#xe1;s&#xe1;ra &#xfa;j oldal kezd&#x151;dik (mivel alapvet&#x151;en chapter-ek beilleszt&#xe9;s&#xe9;re tervezt&#xe9;k). Ha ez nem tetszik, akkor az \input{} felhaszn&#xe1;l&#xe1;s&#xe1;val oldalt&#xf6;r&#xe9;s n&#xe9;lk&#xfc;l is beilleszthet&#xfc;nk f&#xe1;jlokat.">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      \documentclass[a4paper,10pt]{report} ... \begin{document} ... \includeonly{bevezeto} % most csak ezen dolgozunk \include{bevezeto} \include{modell.tex} ... \include{befejezes} ... \end{document}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1461755390762" ID="ID_358309454" MODIFIED="1461755404384" TEXT="T&#xf6;bbhas&#xe1;bos szed&#xe9;s">
+<node CREATED="1461755415326" ID="ID_139928215" MODIFIED="1461755417459" TEXT="El&#x151;fordulhat, hogy t&#xf6;bb has&#xe1;bos dokumentumot szeretn&#xe9;nk">
+<node CREATED="1461755428677" ID="ID_1631747509" MODIFIED="1461755429715" TEXT="Ha k&#xe9;t has&#xe1;bot szeretn&#xe9;nk, akkor a dokumentumoszt&#xe1;ly defin&#xed;ci&#xf3;j&#xe1;n&#xe1;l a twocolumn ad erre lehet&#x151;s&#xe9;get. (\documentclass[11pt,twocolumn]{article})"/>
+<node CREATED="1461755441535" ID="ID_287626062" MODIFIED="1461755442389" TEXT="V&#xe1;lt&#xe1;s \twocolumn &#xe9;s \onecolumn (egy &#xfa;j oldalon m&#xe1;r 1 has&#xe1;bos lesz a szed&#xe9;s)"/>
+<node CREATED="1461755446742" ID="ID_779426837" MODIFIED="1461755452281" TEXT="M&#xe1;sik lehet&#x151;s&#xe9;g">
+<node CREATED="1461755524817" ID="ID_60438116" MODIFIED="1461755525991" TEXT="A multicol csomagban tal&#xe1;lhat&#xf3; multicols k&#xf6;rnyezet (javallott ezt haszn&#xe1;lni!)"/>
+<node CREATED="1461755534955" ID="ID_200487737" MODIFIED="1461755536017" TEXT="\begin{multicols}{has&#xe1;bok sz&#xe1;ma max 9 lehet!} Ide j&#xf6;n a sok sz&#xf6;veg, amit a k&#xf6;rnyezet arg.- ban megadott sz&#xe1;m&#xfa; has&#xe1;bot alkotja \end{multicols}"/>
+<node CREATED="1461755544191" ID="ID_1881574985" MODIFIED="1461755545246" TEXT="A has&#xe1;bok k&#xf6;z&#xf6;tti t&#xe1;vols&#xe1;g 10 pt alapesetben, de ez &#xe1;ll&#xed;that&#xf3; pl. 1 cm-re:"/>
+<node CREATED="1461755556278" ID="ID_561379066" MODIFIED="1461755556791" TEXT="\setlength{\columnsep}{1cm}"/>
+</node>
+</node>
+</node>
+<node CREATED="1461755569002" ID="ID_1869971663" MODIFIED="1461755583997" TEXT="A LaTeX-ben alkalmazott m&#xe9;rt&#xe9;kegys&#xe9;gek">
+<node CREATED="1461755590513" ID="ID_518241085" MODIFIED="1461755624474" TEXT="Az oldal m&#xe9;ret megad&#xe1;sokn&#xe1;l a LaTeX a nyomd&#xe1;szatban alkalmazott m&#xe9;rt&#xe9;kegys&#xe9;geket haszn&#xe1;lja">
+<node CREATED="1461755630812" ID="ID_1047391518" MODIFIED="1461755637823" TEXT="fix m&#xe9;rt&#xe9;kegys&#xe9;gek">
+<node CREATED="1461755638568" ID="ID_280707124" MODIFIED="1461755640406" TEXT="mm"/>
+<node CREATED="1461755641885" ID="ID_302084432" MODIFIED="1461755644273" TEXT="cm"/>
+<node CREATED="1461755645488" ID="ID_291921724" MODIFIED="1461755685208" TEXT="in (inch, 1 in = 25,4 mm)"/>
+<node CREATED="1461755648956" ID="ID_1528828979" MODIFIED="1461755667604" TEXT="pt (pont, 1 pt=0.3515 mm)"/>
+</node>
+<node CREATED="1461755690124" ID="ID_506049379" MODIFIED="1461755696189" TEXT="Relat&#xed;v m&#xe9;rt&#xe9;kegys&#xe9;gek">
+<node CREATED="1461755697165" ID="ID_521710583" MODIFIED="1461755725699" TEXT="ex (aktu&#xe1;lis bet&#x171;alakzatba az &quot;x&quot; magass&#xe1;ga"/>
+<node CREATED="1461755728319" ID="ID_431749689" MODIFIED="1461755741319" TEXT="em (aktu&#xe1;lis bet&#x171;fokozat m&#xe9;rete)"/>
+</node>
+</node>
 </node>
 </node>
 </node>
