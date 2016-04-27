@@ -668,7 +668,7 @@
 <node COLOR="#006699" CREATED="1460988553926" ID="ID_544424322" MODIFIED="1460988571646" TEXT="A pszeudoinverz &#xe9;s a min. absz&#xe9;rt&#xe9;k&#x171; optim&#xe1;lis megold&#xe1;s"/>
 </node>
 </node>
-<node CREATED="1459215100013" FOLDED="true" ID="ID_577983907" MODIFIED="1461018594456" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1461773314857" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460988709078" FOLDED="true" ID="ID_535438581" MODIFIED="1460993418624" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
 <node COLOR="#ff0000" CREATED="1460989681965" ID="ID_415398161" MODIFIED="1460989794721" TEXT="OR-ortogon&#xe1;lis rendszer">
@@ -716,17 +716,17 @@
 <node CREATED="1460991346606" ID="ID_1457631938" MODIFIED="1460991363342" TEXT="ezt ortonorm&#xe1;lni is lehet teh&#xe1;t ONR is l&#xe9;tezik"/>
 </node>
 </node>
-<node CREATED="1460988724342" FOLDED="true" ID="ID_731440512" MODIFIED="1460993412985" TEXT="QR-felbont&#xe1;s">
+<node CREATED="1460988724342" FOLDED="true" ID="ID_731440512" MODIFIED="1461773342649" TEXT="QR-felbont&#xe1;s">
 <node COLOR="#ff0000" CREATED="1460991444560" ID="ID_1772156742" MODIFIED="1460991505882" TEXT="Minden teljes oszloprang&#xfa; A m&#xe1;trixhoz l&#xe9;tezik A=QR, hogy Q szemiortogon&#xe1;lis, R pedig n&#xe9;gyzete fels&#x151;h&#xe1;romsz&#xf6;g m&#xe1;trix"/>
 <node COLOR="#006699" CREATED="1460991525844" ID="ID_409992054" MODIFIED="1460991541166" TEXT="l&#xe9;tezik &#xe9;s egy&#xe9;rtelm&#x171; a QR felbont&#xe1;s"/>
 <node CREATED="1460992035214" ID="ID_84803263" MODIFIED="1460992047412" TEXT="Gram-Schmidt elj&#xe1;r&#xe1;b&#xf3;l megkaphat&#xf3;"/>
 <node CREATED="1460992081959" ID="ID_23087489" MODIFIED="1460992091436" TEXT="Givens forgat&#xe1;sokkal is megkaphat&#xf3;"/>
-<node CREATED="1460992128248" ID="ID_1487100816" MODIFIED="1460992140916" TEXT="Householder m&#xf3;dszerrel is megkaphat&#xf3;"/>
+<node CREATED="1460992128248" ID="ID_1487100816" MODIFIED="1461773326388" TEXT="Householder m&#xf3;dszerrel is megkaphat&#xf3;"/>
 <node COLOR="#006699" CREATED="1460992154270" ID="ID_494985761" MODIFIED="1460992175614" TEXT="Egyenletrendszer optim&#xe1;lis megold&#xe1;sa QR felbont&#xe1;ssal">
 <node CREATED="1460992176712" ID="ID_693237455" MODIFIED="1460992235228" TEXT="Az Ax=b egyyenletrendszer egyetlen optim&#xe1;lis megold&#xe1;sa x_kalap= R^(-1)*Q^T*b"/>
 </node>
 </node>
-<node CREATED="1460988733807" FOLDED="true" ID="ID_1197934020" MODIFIED="1460993410865" TEXT="Komplex skal&#xe1;r szorz&#xe1;s">
+<node CREATED="1460988733807" ID="ID_1197934020" MODIFIED="1461773362258" TEXT="Komplex skal&#xe1;r szorz&#xe1;s">
 <node CREATED="1460992401126" ID="ID_1585709606" MODIFIED="1460992433398" TEXT="Komplex m&#xe1;trix adjung&#xe1;ltja">
 <node CREATED="1460992442791" ID="ID_1801518944" MODIFIED="1460992466622" TEXT="Elemenk&#xe9;nti konjug&#xe1;ltj&#xe1;nak transzpon&#xe1;ltj&#xe1;a"/>
 <node CREATED="1460992502478" ID="ID_872879287" MODIFIED="1460992516805" TEXT="A^H vagy A*"/>
@@ -759,7 +759,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215136069" FOLDED="true" ID="ID_124795280" MODIFIED="1461599736978" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
+<node CREATED="1459215136069" ID="ID_124795280" MODIFIED="1461773334874" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460994022487" FOLDED="true" ID="ID_1773392264" MODIFIED="1461015205493" TEXT="Saj&#xe1;t&#xe9;rt&#xe9;k, saj&#xe1;tvektor, saj&#xe1;talt&#xe9;r">
 <node COLOR="#ff0000" CREATED="1460994114319" ID="ID_1120203668" MODIFIED="1460994255279" TEXT="lamda sz&#xe1;m az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke, ha l&#xe9;tezik olyan nemnulla x vektor, melyre Ax=lambda*x"/>
