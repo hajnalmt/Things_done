@@ -905,9 +905,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1461018445252" ID="ID_323471265" MODIFIED="1461959221452" POSITION="right" TEXT="7) Szingul&#xe1;ris &#xe9;rt&#xe9;kek">
+<node CREATED="1461018445252" FOLDED="true" ID="ID_323471265" MODIFIED="1461972945483" POSITION="right" TEXT="7) Szingul&#xe1;ris &#xe9;rt&#xe9;kek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461018523550" ID="ID_82136292" MODIFIED="1461960174053" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k">
+<node CREATED="1461018523550" FOLDED="true" ID="ID_82136292" MODIFIED="1461964857426" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k">
 <node CREATED="1461960237724" ID="ID_1488705494" MODIFIED="1461960247406" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;kek &#xe9;s meghat&#xe1;roz&#xe1;sa">
 <node COLOR="#ff0000" CREATED="1461599781334" ID="ID_1832613215" MODIFIED="1461599919492" TEXT="A szigma sz&#xe1;mok az r-rang&#xfa; val&#xf3;s m&#xe1;trix szingul&#xe1;ris &#xe9;rt&#xe9;kei, ha van olyan v_r ONB-a a sort&#xe9;nek (konjug&#xe1;ltj&#xe1;nak) &#xe9;s u_r ONB-a az oszlopt&#xe9;rnek, hogy A*v_i=szigma_i*u_i">
 <node COLOR="#ff0000" CREATED="1461599925377" ID="ID_535509646" MODIFIED="1461599960824" TEXT="A v_i vektorokat jobb az u_i vekorokat bal szingul&#xe1;ris vektoroknak nevezz&#xfc;k"/>
@@ -956,11 +956,96 @@
 <node CREATED="1461962599069" ID="ID_1003167148" MODIFIED="1461962604187" TEXT="Pol&#xe1;rfelbont&#xe1;s">
 <node COLOR="#ff0000" CREATED="1461962633925" ID="ID_217291365" MODIFIED="1461962677468" TEXT="Pol&#xe1;rfelbont&#xe1;son egy n&#xe9;gyzetes m&#xe1;trixnak egy pozit&#xed;v szemidefinit &#xe9;s egy ortogon&#xe1;lis m&#xe1;trix szorzat&#xe1;ra val&#xf3; felbont&#xe1;s&#xe1;t &#xe9;rtj&#xfc;k."/>
 <node COLOR="#338800" CREATED="1461962714549" ID="ID_840345589" MODIFIED="1461962831789" TEXT="B&#xe1;rmely komplex (val&#xf3;s) n&#xe9;gyzetes A m&#xe1;trix el&#x151;&#xe1;ll A=P*Q alakban, ahol P pozit&#xed;v szemidefinit &#xf6;nadjung&#xe1;lt (szimmetrikus) m&#xe1;trix, Q pedig unit&#xe9;r (ortogon&#xe1;lis). Ha A invert&#xe1;lhat&#xf3; akkor P pozit&#xed;v definit, &#xe9;s a felbont&#xe1;s egy&#xe9;rtelm&#x171;"/>
+<node CREATED="1461964036077" ID="ID_691916540" MODIFIED="1461964082532" TEXT="anal&#xf3;gia a determin&#xe1;nson is: det P = r, det Q = e^(i*phi) (hisz Q unit&#xe9;r), det A = r*e^(i*phi)"/>
+<node CREATED="1461964103014" ID="ID_1521434478" MODIFIED="1461964143747" TEXT="Ford&#xed;tott sorrend: azonos unit&#xe9;r (ortogon&#xe1;lis) m&#xe1;trixszal: A = U*Szumma*V^H= Q*P^"/>
+<node CREATED="1461964150541" ID="ID_1846531848" MODIFIED="1461964230292" TEXT="Val&#xf3;s pol&#xe1;rfelbont&#xe1;s geometriai jelent&#xe9;se: minden m&#xe1;trixlek&#xe9;pez&#xe9;s k&#xe9;t olyan lek&#xe9;pez&#xe9;s kompoz&#xed;ci&#xf3;ja, amelyekb&#x151;l az egyik forgatja vagy forgatva t&#xfc;kr&#xf6;zi a teret (Q), a m&#xe1;sik pedig egy ortonorm&#xe1;lt b&#xe1;zis tengelyei ment&#xe9;n ny&#xfa;jtja/&#xf6;sszenyomja a teret minden tengelyir&#xe1;nyban egy-egy nemneg&#xed;tv t&#xe9;nyez&#x151;vel."/>
+</node>
+<node CREATED="1461964336918" ID="ID_1569591041" MODIFIED="1461964342835" TEXT="Pszeudoinverz">
+<node COLOR="#338800" CREATED="1461964343414" ID="ID_1687480162" MODIFIED="1461964468337" TEXT="SVD: A=U_1*Szumma_1*V_1^T, illetve A= U*Szumma*V^T. Ekkor A^+ = V_1*Szumma_1^(-1)*U_1^T= V*Szumma^+*U^T"/>
 </node>
 </node>
-<node CREATED="1461018531430" ID="ID_1816998740" MODIFIED="1461018533403" TEXT="Norma"/>
-<node CREATED="1461018534470" ID="ID_963728032" MODIFIED="1461018538275" TEXT="M&#xe1;trixnorma"/>
-<node CREATED="1461018539454" ID="ID_10120100" MODIFIED="1461018544891" TEXT="Alkalmaz&#xe1;sok"/>
+<node CREATED="1461018531430" FOLDED="true" ID="ID_1816998740" MODIFIED="1461972017539" TEXT="Norma">
+<node COLOR="#ff0000" CREATED="1461964511173" ID="ID_186771817" MODIFIED="1461964551821" TEXT="Az x vektor euklideszi norm&#xe1;ja vagy m&#xe1;s n&#xe9;ven abszol&#xfa;t &#xe9;rt&#xe9;ke ||x||_2"/>
+<node CREATED="1461964561910" ID="ID_1863541940" MODIFIED="1461964575086" TEXT="Manhattan norma (|x|+|y|)"/>
+<node CREATED="1461964576190" ID="ID_1304128404" MODIFIED="1461964597059" TEXT="k&#xe9;pm&#xe9;retez&#xe9;s (max{|x|,|y|})"/>
+<node COLOR="#ff0000" CREATED="1461964609718" ID="ID_988101405" MODIFIED="1461964717957" TEXT="A p &gt;=1 val&#xf3;sra az xelme C^n vektor p-norm&#xe1;ja ||x||_p = (szumma n-ig |x_i|^p)^1/p m&#xed;g ennek hat&#xe1;r&#xe9;rt&#xe9;ke a v&#xe9;gtelen norma , azaz ||x|| v&#xe9;gtelen">
+<node CREATED="1461964726070" ID="ID_1224001286" MODIFIED="1461964737956" TEXT="1-norma = r&#xe1;csnorma= Manhattan-norma"/>
+<node CREATED="1461964746926" ID="ID_1681797453" MODIFIED="1461964760382" TEXT="maximum norma = v&#xe9;gtelen norma "/>
+</node>
+<node COLOR="#006699" CREATED="1461964831486" ID="ID_265413016" MODIFIED="1461964848726" TEXT="Az el&#x151;z&#x151; norm&#xe1;k alaptulajdons&#xe1;gai">
+<node COLOR="#006699" CREATED="1461964875726" ID="ID_443618572" MODIFIED="1461964934222" TEXT="abszol&#xfa;t&#xe9;rt&#xe9;k nagyobb mint 0"/>
+<node COLOR="#006699" CREATED="1461964887685" ID="ID_255886173" MODIFIED="1461964934525" TEXT="a t&#xe1;vols&#xe1;gf&#xfc;ggv&#xe9;ny szepar&#xe1;lja a pontokat"/>
+<node COLOR="#006699" CREATED="1461964910694" ID="ID_1063932482" MODIFIED="1461964934766" TEXT="pozit&#xed;v homogenit&#xe1;s"/>
+<node COLOR="#006699" CREATED="1461964918246" ID="ID_159141954" MODIFIED="1461964934998" TEXT="h&#xe1;romsz&#xf6;gegyenl&#x151;tlens&#xe9;g"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461964937719" ID="ID_1886141878" MODIFIED="1461964975885" TEXT="Az f: R^n-&gt;R, vagy f C^n -&gt; R f&#xfc;ggv&#xe9;ny norma, ha ">
+<node COLOR="#ff0000" CREATED="1461964976638" ID="ID_457601167" MODIFIED="1461965002766" TEXT="f(x) &gt;=0 minden x vektorra, &#xe9;s f(x) =0 pontosan akkor &#xe1;ll fenn, ha x= 0"/>
+<node COLOR="#ff0000" CREATED="1461965004390" ID="ID_426975702" MODIFIED="1461965100169" TEXT="f(c*x) = absz(c)*f(x) minden x vektorra"/>
+<node COLOR="#ff0000" CREATED="1461965101550" ID="ID_1102346745" MODIFIED="1461965127142" TEXT="f(x+y) &lt;= f(x) +f(y)"/>
+</node>
+<node CREATED="1461965155430" ID="ID_841758196" MODIFIED="1461965166571" TEXT="eml&#xed;t&#xe9;sek">
+<node CREATED="1461965167246" ID="ID_872352450" MODIFIED="1461965180484" TEXT="x norm&#xe1;ja megyegyezik -x-&#xe9;vel"/>
+<node CREATED="1461965181078" ID="ID_1040687004" MODIFIED="1461965193188" TEXT="h&#xe1;romsz&#xf6;geyenlt&#x151;lens&#xe9;g m&#xe1;shogy is &#xed;rhat&#xf3;"/>
+<node CREATED="1461965194174" ID="ID_823427294" MODIFIED="1461965234405" TEXT="h&#xe1;romsz&#xf6;gegyenl&#x151;tlens&#xe9;g p-norm&#xe1;n&#xe1;l: Minkowski-egyenl&#x151;tlens&#xe9;g"/>
+<node CREATED="1461965239326" ID="ID_1089878444" MODIFIED="1461965286299" TEXT="A H&#xf6;lder egyenl&#x151;tlens&#xe9;g a Couschy-Schwarz Bunyakovszkij egyenl&#x151;tlens&#xe9;g &#xe1;ltal&#xe1;nos alakja"/>
+<node CREATED="1461966896239" ID="ID_102985914" MODIFIED="1461966934774" TEXT="norm&#xe1;k (sup, Ax)"/>
+<node CREATED="1461966935862" ID="ID_402990593" MODIFIED="1461966952405" TEXT="gy&#xf6;k &#xe9;s szum egyenl&#x151;tlens&#xe9;g"/>
+<node CREATED="1461966953438" ID="ID_1647272444" MODIFIED="1461966971489" TEXT="egyenl&#x151;tlens&#xe9;gek"/>
+<node CREATED="1461966972863" ID="ID_621505720" MODIFIED="1461966980524" TEXT="Minden norma folytonos f&#xfc;ggv&#xe9;ny"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461970869736" ID="ID_352816145" MODIFIED="1461970954784" TEXT="A ||.||_a &#xe9;s ||.||_b norm&#xe1;k ekvivalensek, ha van olyan c &#xe9;s d pozit&#xed;v val&#xf3;s sz&#xe1;m, hogy ||.||_a &lt;= c* ||.||_b &#xe9;s ||.||_b&lt;= d* ||.||_a">
+<node CREATED="1461970990352" ID="ID_536258307" MODIFIED="1461971005054" TEXT="Az 1-, 2- &#xe9;s v&#xe9;telen norm&#xe1;k ekvivalensek"/>
+<node COLOR="#ff0000" CREATED="1461971046704" ID="ID_1123529700" MODIFIED="1461971103553" TEXT="A K^n t&#xe9;ren &#xe9;rtelmezett b&#xe1;rmely k&#xe9;t norma ekvivalens (K=R vagy C)"/>
+<node CREATED="1461971070256" ID="ID_234636051" MODIFIED="1461971100607" TEXT="Ez csak v&#xe9;ges dimenzi&#xf3;s terekven igaz, itt teh&#xe1;t a konvergenciak&#xe9;rd&#xe9;sekhez b&#xe1;rmelyik norma j&#xf3;."/>
+</node>
+</node>
+<node CREATED="1461018534470" FOLDED="true" ID="ID_963728032" MODIFIED="1461972015970" TEXT="M&#xe1;trixnorma">
+<node CREATED="1461971129863" ID="ID_379961856" MODIFIED="1461971134343" TEXT="Vektornorma m&#xe1;trixokon">
+<node COLOR="#ff0000" CREATED="1461971135208" ID="ID_1891022567" MODIFIED="1461971227863" TEXT="Az A eleme C^m*n m&#xe1;trix Frobenius-norm&#xe1;ja ||A||_F"/>
+<node COLOR="#338800" CREATED="1461971207928" ID="ID_1655561238" MODIFIED="1461971227432" TEXT="Frobenius-norma ekvivalens alakjai:"/>
+<node COLOR="#006699" CREATED="1461971250503" ID="ID_701279800" MODIFIED="1461971322200" TEXT="B&#xe1;rmely x eleme C^n vektorra &#xe9;s A eleme C^m*n m&#xe1;trixra ||Ax||_2 &lt;= ||A||_F* || x ||_2">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1461971353584" ID="ID_502146217" MODIFIED="1461971807070" TEXT="M&#xe1;trixnorma &#xe1;ltal&#xe1;nos alakja">
+<node COLOR="#ff0000" CREATED="1461971461432" ID="ID_1547818114" MODIFIED="1461971524296" TEXT="||.||: K^n -&gt; R m&#xe1;trixnorma, ha ">
+<node COLOR="#ff0000" CREATED="1461971484240" ID="ID_583258505" MODIFIED="1461971524640" TEXT="||A||&gt;= 0 &#xe9;s ||A|=0 pontosan akkor &#xe1;ll fenn, ha A=O"/>
+<node COLOR="#ff0000" CREATED="1461971526912" ID="ID_64940862" MODIFIED="1461971546880" TEXT="||cA|| = |c|*||A||"/>
+<node COLOR="#ff0000" CREATED="1461971548216" ID="ID_1382837414" MODIFIED="1461971590200" TEXT="||A+B|| &lt;= ||A||+||B||"/>
+<node COLOR="#ff0000" CREATED="1461971569840" ID="ID_625723697" MODIFIED="1461971589968" TEXT="||A*C|| &lt;= ||A||*||C||"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461971600344" ID="ID_1882245091" MODIFIED="1461971680457" TEXT="||.|| egy tetsz&#x151;leges vektornorma . Ekkor az ||A||=max ||A*x|| egyenl&#x151;s&#xe9;ggel defini&#xe1;lt f&#xfc;ggv&#xe9;nyt a vektornorma &#xe1;ltal induk&#xe1;lt m&#xe1;trixnorm&#xe1;nak nevezz&#xfc;k.">
+<node CREATED="1461971698305" ID="ID_1368113906" MODIFIED="1461971712781" TEXT="Jel&#xf6;l&#xe9;s"/>
+<node CREATED="1461971715392" ID="ID_605488693" MODIFIED="1461971733369" TEXT="Ha line&#xe1;ris lek&#xe9;pez&#xe9;sre &#xe9;rtelmezz&#xfc;k, oper&#xe1;tornorm&#xe1;r&#xf3;l besz&#xe9;l&#xfc;nk."/>
+<node CREATED="1461971739288" ID="ID_1265851971" MODIFIED="1461971782973" TEXT="A norm&#xe1;k ekvivalenci&#xe1;j&#xe1;b&#xf3;l ~-&gt; b&#xe1;rmely norm&#xe1;ban az egys&#xe9;gg&#xf6;mb korl&#xe1;tos &#xe9;s z&#xe1;rt ~-&gt; a x-&gt;Ax f&#xfc;ggv&#xe9;nynek van maximuma &#xe9;s minimuma"/>
+<node CREATED="1461971786360" ID="ID_1114775100" MODIFIED="1461971793109" TEXT="Ekvivalens alakok"/>
+</node>
+</node>
+<node CREATED="1461971811792" ID="ID_1819569622" MODIFIED="1461971825214" TEXT="Az 1-, 2- &#xe9;s v&#xe9;gtelen norma m&#xe1;trixokra">
+<node CREATED="1461971827336" ID="ID_482392338" MODIFIED="1461971860799" TEXT="Legyen A eleme C^m*n">
+<node CREATED="1461971863960" ID="ID_929023437" MODIFIED="1461971881682" TEXT="legnagyobb abszol&#xfa;t oszlop&#xf6;sszeg"/>
+<node CREATED="1461971884256" ID="ID_75652277" MODIFIED="1461971896318" TEXT="legnagyobb abszol&#xfa;t sor&#xf6;sszeg"/>
+<node CREATED="1461971987999" ID="ID_1355700864" MODIFIED="1461971998427" TEXT="||A||_2"/>
+<node CREATED="1461971920616" ID="ID_995946164" MODIFIED="1461971937502" TEXT="szigma_n az A legkisebb (pozit&#xed;v) szingul&#xe1;ris &#xe9;rt&#xe9;ke"/>
+</node>
+<node CREATED="1461971947072" ID="ID_152287149" MODIFIED="1461971981500" TEXT="Az 1- a v&#xe9;gtelen- &#xe9;s a 2-norm&#xe1;ra szok&#xe1;sos m&#xe1;sik elnevez&#xe9;se: oszlopnorma, sornorma, &#xe9;s spektr&#xe1;lorma"/>
+</node>
+</node>
+<node CREATED="1461018539454" FOLDED="true" ID="ID_10120100" MODIFIED="1461972937147" TEXT="Alkalmaz&#xe1;sok">
+<node CREATED="1461972026928" ID="ID_1060393894" MODIFIED="1461972032567" TEXT="Inform&#xe1;ci&#xf3;t&#xf6;m&#xf6;r&#xed;t&#xe9;s">
+<node COLOR="#338800" CREATED="1461972035136" ID="ID_1627069033" MODIFIED="1461972199593" TEXT="Kis rang&#xfa; approxim&#xe1;ci&#xf3; t&#xe9;tele- Eckart-Young-t&#xe9;tel A r-rang&#xfa;, k-adik szingul&#xe1;ris &#xe9;rt&#xe9;ke szigma_k, jobb &#xe9;s bal szingul&#xe1;ris vektorra v_k, illetve u_k. Legyen A_k= szumma (szigma_i * u_i * v_i ^T) "/>
+<node COLOR="#338800" CREATED="1461972168890" ID="ID_385656621" MODIFIED="1461972199400" TEXT="Ekkor A_k az A m&#xe1;trix legjobb legf&#xf6;ljebb k-rang&#xfa; k&#xf6;zel&#xed;t&#xe9;se"/>
+</node>
+<node CREATED="1461972219703" ID="ID_1525867150" MODIFIED="1461972227558" TEXT="M&#xf6;g&#xf6;ttes tartalom anal&#xed;zise">
+<node CREATED="1461972228304" ID="ID_1695744653" MODIFIED="1461972637569" TEXT="latent sematic indexing (LSI) vagy latent semantic analysis (LSA)"/>
+<node CREATED="1461972642976" ID="ID_1930818422" MODIFIED="1461972695684" TEXT="Az egy dokumentumban szerepl&#x151; szavakat &#xf6;sszekapcsolja a dokumentum tartalma, e kapcsolatokat - a szavak m&#xf6;g&#xf6;tt l&#xe9;v&#x151; tartalmat - az SVD kiemeli, mint l&#xe9;nyeges inform&#xe1;ci&#xf3;t."/>
+<node CREATED="1461972696883" ID="ID_237441080" MODIFIED="1461972772055" TEXT="A sorai a szavakat. oszlopai a dokumentumokat reprezent&#xe1;lj&#xe1;k. t_ij az i-edik sz&#xf3; gyakoris&#xe1;ga a j-edik dokumentumban &#xe9;s T_i a teljes sz&#xf6;veggy&#x171;jtem&#xe9;nyben a_ij"/>
+<node CREATED="1461972775752" ID="ID_1963004334" MODIFIED="1461972813662" TEXT="az els&#x151; t&#xe9;nyez&#x151; egy csak az i-edik sz&#xf3;nak az eg&#xe9;sz gy&#x171;jtem&#xe9;nyhez val&#xf3; kapcsolat&#xe1;t&#xf3;l f&#xfc;gg&#x151; glob&#xe1;lis s&#xfa;ly, a m&#xe1;sodik csak a lok&#xe1;lis &#xe9;rt&#xe9;k f&#xfc;ggv&#xe9;nye."/>
+<node CREATED="1461972827025" ID="ID_764657390" MODIFIED="1461972864606" TEXT="A= U*Szumma*V^T &#xe9;s k&#xf6;zel&#xed;t&#xe9;se A_k= U_k *Szumma_k* V_k^T">
+<node CREATED="1461972866384" ID="ID_985665737" MODIFIED="1461972900564" TEXT="U_k, illetve V_k oszlopainak vektorter&#xe9;ben a szavak, illetve dokumentumok kapcsolat&#xe1;t a hozz&#xe1;juk tartoz&#xf3; vektorok helyzete jellemzi"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1461018549574" ID="ID_281617371" MODIFIED="1461018590785" POSITION="left" TEXT="8) Jordan-f&#xe9;le norm&#xe1;lalak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
