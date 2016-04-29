@@ -759,7 +759,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215136069" FOLDED="true" ID="ID_124795280" MODIFIED="1461959230660" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
+<node CREATED="1459215136069" FOLDED="true" ID="ID_124795280" MODIFIED="1461973031547" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460994022487" FOLDED="true" ID="ID_1773392264" MODIFIED="1461015205493" TEXT="Saj&#xe1;t&#xe9;rt&#xe9;k, saj&#xe1;tvektor, saj&#xe1;talt&#xe9;r">
 <node COLOR="#ff0000" CREATED="1460994114319" ID="ID_1120203668" MODIFIED="1460994255279" TEXT="lamda sz&#xe1;m az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke, ha l&#xe9;tezik olyan nemnulla x vektor, melyre Ax=lambda*x"/>
@@ -1049,7 +1049,14 @@
 </node>
 <node CREATED="1461018549574" ID="ID_281617371" MODIFIED="1461018590785" POSITION="left" TEXT="8) Jordan-f&#xe9;le norm&#xe1;lalak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461018573950" ID="ID_409405841" MODIFIED="1461018585292" TEXT="&#xc1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektor"/>
+<node CREATED="1461018573950" ID="ID_409405841" MODIFIED="1461973511417" TEXT="&#xc1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektor">
+<node CREATED="1461973075896" ID="ID_1129164484" MODIFIED="1461973080958" TEXT="Invari&#xe1;ns alterek">
+<node COLOR="#ff0000" CREATED="1461973082216" ID="ID_1853382580" MODIFIED="1461973152127" TEXT="Azt mondjuk, hogy az U&lt;= V alt&#xe9;r az L: V-&gt;V line&#xe1;ris transzform&#xe1;ci&#xf3; (illetve az L valamely b&#xe1;zisbel L m&#xe1;trix&#xe1;nak) invari&#xe1;ns altere, ha minden x eleme U vektorra Lx eleme U"/>
+<node COLOR="#338800" CREATED="1461973154032" ID="ID_1059267631" MODIFIED="1461973226410" TEXT="Az U &lt;= V alt&#xe9;r pontosan akkor invari&#xe1;ns alt&#xe9;r az L line&#xe1;ris transzform&#xe1;ci&#xfc;ra n&#xe9;tva, ha U egy {u_i} b&#xe1;zis&#xe1;nak minden vektor&#xe1;ra L*u_i eleme U"/>
+</node>
+</node>
+<node CREATED="1461973037110" ID="ID_114545250" MODIFIED="1461973044941" TEXT="Jordan-f&#xe9;le norm&#xe1;lalak"/>
+<node CREATED="1461973047904" ID="ID_1894050109" MODIFIED="1461973058783" TEXT="Minim&#xe1;lpolinom"/>
 </node>
 <node CREATED="1461018701094" ID="ID_673370017" MODIFIED="1461018721608" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
