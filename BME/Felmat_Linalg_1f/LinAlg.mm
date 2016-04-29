@@ -668,7 +668,7 @@
 <node COLOR="#006699" CREATED="1460988553926" ID="ID_544424322" MODIFIED="1460988571646" TEXT="A pszeudoinverz &#xe9;s a min. absz&#xe9;rt&#xe9;k&#x171; optim&#xe1;lis megold&#xe1;s"/>
 </node>
 </node>
-<node CREATED="1459215100013" ID="ID_577983907" MODIFIED="1461773314857" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1459215100013" FOLDED="true" ID="ID_577983907" MODIFIED="1461773408571" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460988709078" FOLDED="true" ID="ID_535438581" MODIFIED="1460993418624" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
 <node COLOR="#ff0000" CREATED="1460989681965" ID="ID_415398161" MODIFIED="1460989794721" TEXT="OR-ortogon&#xe1;lis rendszer">
@@ -740,7 +740,7 @@
 <node CREATED="1460992701366" ID="ID_1571026222" MODIFIED="1460992705190" TEXT="Ekvivallens &#xe1;ll&#xed;t&#xe1;sok"/>
 </node>
 </node>
-<node CREATED="1460988744246" FOLDED="true" ID="ID_937977471" MODIFIED="1460993411810" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
+<node CREATED="1460988744246" ID="ID_937977471" MODIFIED="1461773397580" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
 <node CREATED="1460988755502" ID="ID_1314459037" MODIFIED="1460988759995" TEXT="Fourier m&#xe1;trixok">
 <node COLOR="#338800" CREATED="1460992853335" ID="ID_1892377650" MODIFIED="1460993039214" TEXT="A (c_1,c_1..c_n)-&gt;(g(0), g(2pi/N), ..., g(2(N-1)pi/N)) lek&#xe9;pez&#xe9;s line&#xe1;ris &#xe9;s m&#xe1;trixa [e^(2pi i /N  mn)] 0&lt;=m,n&lt;N"/>
 <node COLOR="#ff0000" CREATED="1460993029070" ID="ID_1204071097" MODIFIED="1460993036516" TEXT="omeg&#xe1;val &#xe9;s epszilonnal"/>
@@ -759,7 +759,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459215136069" ID="ID_124795280" MODIFIED="1461773334874" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
+<node CREATED="1459215136069" FOLDED="true" ID="ID_124795280" MODIFIED="1461959230660" POSITION="left" TEXT="6) M&#xe1;trixok saj&#xe1;toss&#xe1;gai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1460994022487" FOLDED="true" ID="ID_1773392264" MODIFIED="1461015205493" TEXT="Saj&#xe1;t&#xe9;rt&#xe9;k, saj&#xe1;tvektor, saj&#xe1;talt&#xe9;r">
 <node COLOR="#ff0000" CREATED="1460994114319" ID="ID_1120203668" MODIFIED="1460994255279" TEXT="lamda sz&#xe1;m az A m&#xe1;trix saj&#xe1;t&#xe9;rt&#xe9;ke, ha l&#xe9;tezik olyan nemnulla x vektor, melyre Ax=lambda*x"/>
@@ -831,7 +831,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1460994038105" FOLDED="true" ID="ID_223729740" MODIFIED="1461017148082" TEXT="A saj&#xe1;t&#xe9;rt&#xe9;k kisz&#xe1;m&#xed;t&#xe1;sa">
+<node CREATED="1460994038105" ID="ID_223729740" MODIFIED="1461773387531" TEXT="A saj&#xe1;t&#xe9;rt&#xe9;k kisz&#xe1;m&#xed;t&#xe1;sa">
 <node CREATED="1461015210830" ID="ID_1516109798" MODIFIED="1461015217099" TEXT="Gersgorin-k&#xf6;r&#xf6;k">
 <node COLOR="#ff0000" CREATED="1461015601894" ID="ID_1403231161" MODIFIED="1461015734446" TEXT="Az n*n-es val&#xf3;s vagy komplex A m&#xe1;trix Gersgorin-k&#xf6;rei az a_ii k&#xf6;z&#xe9;p&#x171; r_i^sor sorrang&#xfa; G_i^sor, illetve r_i^osz sugar&#xfa; G_i^osz k&#xf6;r&#xf6;ket &#xe9;rtj&#xfc;k, ahol r_i^sor= sum abs(a_ij), r_i^osz=sum(absz(a_ji))"/>
 </node>
@@ -905,12 +905,29 @@
 </node>
 </node>
 </node>
-<node CREATED="1461018445252" ID="ID_323471265" MODIFIED="1461018547969" POSITION="right" TEXT="7) Szingul&#xe1;ris &#xe9;rt&#xe9;kek">
+<node CREATED="1461018445252" ID="ID_323471265" MODIFIED="1461959221452" POSITION="right" TEXT="7) Szingul&#xe1;ris &#xe9;rt&#xe9;kek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461018523550" ID="ID_82136292" MODIFIED="1461018530380" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k">
+<node CREATED="1461018523550" ID="ID_82136292" MODIFIED="1461960174053" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k">
+<node CREATED="1461960237724" ID="ID_1488705494" MODIFIED="1461960247406" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;kek &#xe9;s meghat&#xe1;roz&#xe1;sa">
 <node COLOR="#ff0000" CREATED="1461599781334" ID="ID_1832613215" MODIFIED="1461599919492" TEXT="A szigma sz&#xe1;mok az r-rang&#xfa; val&#xf3;s m&#xe1;trix szingul&#xe1;ris &#xe9;rt&#xe9;kei, ha van olyan v_r ONB-a a sort&#xe9;nek (konjug&#xe1;ltj&#xe1;nak) &#xe9;s u_r ONB-a az oszlopt&#xe9;rnek, hogy A*v_i=szigma_i*u_i">
 <node COLOR="#ff0000" CREATED="1461599925377" ID="ID_535509646" MODIFIED="1461599960824" TEXT="A v_i vektorokat jobb az u_i vekorokat bal szingul&#xe1;ris vektoroknak nevezz&#xfc;k"/>
+<node CREATED="1461960441612" ID="ID_1706705373" MODIFIED="1461960588876" TEXT="Ha u_i abszolut&#xe9;rt&#xe9;kei egyenl&#x151;k 1-el, akkor A*v_i abszolut&#xe9;rt&#xe9;ke szigma_i-vel egyenl&#x151;"/>
 </node>
+<node CREATED="1461960711101" ID="ID_1302602619" MODIFIED="1461960721737" TEXT="Jel&#x151;l&#xe9;sek">
+<node CREATED="1461960723029" ID="ID_1162635140" MODIFIED="1461960738634" TEXT="szumma = diag (szigma_i)"/>
+<node CREATED="1461960829149" ID="ID_1283437968" MODIFIED="1461960863290" TEXT="A*V=U*Szumma"/>
+</node>
+<node CREATED="1461960897460" ID="ID_938578545" MODIFIED="1461960908874" TEXT="Szigul&#xe1;ris (&#xe9;rt&#xe9;k szerinti) felbont&#xe1;s, SVD">
+<node COLOR="#ff0000" CREATED="1461960910852" ID="ID_401586009" MODIFIED="1461960949326" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k szerinti felbont&#xe1;s, vagy szingul&#xe1;ris felbont&#xe1;s A = U*Szumma*V^H "/>
+<node COLOR="#ff0000" CREATED="1461960950477" ID="ID_259953126" MODIFIED="1461960990332" TEXT="Reduk&#xe1;lt szingul&#xe1;ris felbont&#xe1;s: A = U_1*Szumma_1*V_1^H"/>
+<node COLOR="#ff0000" CREATED="1461960992156" ID="ID_1166655780" MODIFIED="1461961029142" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k szerinti diadikus felbont&#xe1;s vagy a szigul&#xe1;ris felbont&#xe1;s diadikus alakja">
+<node CREATED="1461961046660" ID="ID_1697797736" MODIFIED="1461961133628" TEXT="A= szigma_i*u_i*v_i^T (szumma i-re- r-ig)"/>
+</node>
+</node>
+</node>
+<node CREATED="1461960226421" ID="ID_1673737484" MODIFIED="1461960233277" TEXT="Az SVD meghat&#xe1;roz&#xe1;sa"/>
+<node CREATED="1461960254725" ID="ID_341516412" MODIFIED="1461960269786" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k szerinti felbont&#xe1;s l&#xe9;tez&#xe9;se"/>
+<node CREATED="1461960270861" ID="ID_444919186" MODIFIED="1461960285219" TEXT="Szingul&#xe1;ris felbont&#xe1;s geometriai interpret&#xe1;ci&#xf3;ja"/>
 </node>
 <node CREATED="1461018531430" ID="ID_1816998740" MODIFIED="1461018533403" TEXT="Norma"/>
 <node CREATED="1461018534470" ID="ID_963728032" MODIFIED="1461018538275" TEXT="M&#xe1;trixnorma"/>
