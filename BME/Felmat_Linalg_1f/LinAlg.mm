@@ -668,9 +668,9 @@
 <node COLOR="#006699" CREATED="1460988553926" ID="ID_544424322" MODIFIED="1460988571646" TEXT="A pszeudoinverz &#xe9;s a min. absz&#xe9;rt&#xe9;k&#x171; optim&#xe1;lis megold&#xe1;s"/>
 </node>
 </node>
-<node CREATED="1459215100013" FOLDED="true" ID="ID_577983907" MODIFIED="1461773408571" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
+<node CREATED="1459215100013" FOLDED="true" ID="ID_577983907" MODIFIED="1461962068303" POSITION="right" TEXT="5) Ortogonaliz&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1460988709078" FOLDED="true" ID="ID_535438581" MODIFIED="1460993418624" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
+<node CREATED="1460988709078" FOLDED="true" ID="ID_535438581" MODIFIED="1461962061199" TEXT="Ortonorm&#xe1;lt b&#xe1;zis">
 <node COLOR="#ff0000" CREATED="1460989681965" ID="ID_415398161" MODIFIED="1460989794721" TEXT="OR-ortogon&#xe1;lis rendszer">
 <node CREATED="1460989697793" ID="ID_1642925638" MODIFIED="1460989722713" TEXT="Lehet k&#xf6;zt&#xfc;k z&#xe9;ruvektor"/>
 </node>
@@ -683,7 +683,7 @@
 <node CREATED="1460989887096" ID="ID_1176165067" MODIFIED="1460989928150" TEXT="v kalap A &#xe1;ltal kifesz&#xed;tett elt&#xe9;rben v vet&#xfc;lete"/>
 </node>
 </node>
-<node CREATED="1460988714190" FOLDED="true" ID="ID_695015043" MODIFIED="1460993416866" TEXT="Ortogon&#xe1;lis m&#xe1;trix">
+<node CREATED="1460988714190" FOLDED="true" ID="ID_695015043" MODIFIED="1461962060088" TEXT="Ortogon&#xe1;lis m&#xe1;trix">
 <node COLOR="#ff0000" CREATED="1460990001910" ID="ID_121028315" MODIFIED="1460990227225" TEXT="n&#xe9;gyzetes m&#xe1;trix ortogon&#xe1;lis, ha sorvektorai vagy oszlopvektorai ONR-t alkotnak"/>
 <node CREATED="1460990035967" ID="ID_598216937" MODIFIED="1460990050724" TEXT="nem n&#xe9;gyzetes  &gt; szemiortogon&#xe1;lis"/>
 <node CREATED="1460990059751" ID="ID_983195066" MODIFIED="1460990077135" TEXT="forgat&#xe1;s, t&#xfc;kr&#xf6;z&#xe9;s &#xe9;s minden permut&#xe1;ci&#xf3;m&#xe1;trix ortogon&#xe1;lis"/>
@@ -726,7 +726,7 @@
 <node CREATED="1460992176712" ID="ID_693237455" MODIFIED="1460992235228" TEXT="Az Ax=b egyyenletrendszer egyetlen optim&#xe1;lis megold&#xe1;sa x_kalap= R^(-1)*Q^T*b"/>
 </node>
 </node>
-<node CREATED="1460988733807" ID="ID_1197934020" MODIFIED="1461773362258" TEXT="Komplex skal&#xe1;r szorz&#xe1;s">
+<node CREATED="1460988733807" FOLDED="true" ID="ID_1197934020" MODIFIED="1461962064206" TEXT="Komplex skal&#xe1;r szorz&#xe1;s">
 <node CREATED="1460992401126" ID="ID_1585709606" MODIFIED="1460992433398" TEXT="Komplex m&#xe1;trix adjung&#xe1;ltja">
 <node CREATED="1460992442791" ID="ID_1801518944" MODIFIED="1460992466622" TEXT="Elemenk&#xe9;nti konjug&#xe1;ltj&#xe1;nak transzpon&#xe1;ltj&#xe1;a"/>
 <node CREATED="1460992502478" ID="ID_872879287" MODIFIED="1460992516805" TEXT="A^H vagy A*"/>
@@ -740,7 +740,7 @@
 <node CREATED="1460992701366" ID="ID_1571026222" MODIFIED="1460992705190" TEXT="Ekvivallens &#xe1;ll&#xed;t&#xe1;sok"/>
 </node>
 </node>
-<node CREATED="1460988744246" ID="ID_937977471" MODIFIED="1461773397580" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
+<node CREATED="1460988744246" FOLDED="true" ID="ID_937977471" MODIFIED="1461962066966" TEXT="Diszkr&#xe9;t Fourier transzform&#xe1;lt">
 <node CREATED="1460988755502" ID="ID_1314459037" MODIFIED="1460988759995" TEXT="Fourier m&#xe1;trixok">
 <node COLOR="#338800" CREATED="1460992853335" ID="ID_1892377650" MODIFIED="1460993039214" TEXT="A (c_1,c_1..c_n)-&gt;(g(0), g(2pi/N), ..., g(2(N-1)pi/N)) lek&#xe9;pez&#xe9;s line&#xe1;ris &#xe9;s m&#xe1;trixa [e^(2pi i /N  mn)] 0&lt;=m,n&lt;N"/>
 <node COLOR="#ff0000" CREATED="1460993029070" ID="ID_1204071097" MODIFIED="1460993036516" TEXT="omeg&#xe1;val &#xe9;s epszilonnal"/>
@@ -925,9 +925,38 @@
 </node>
 </node>
 </node>
-<node CREATED="1461960226421" ID="ID_1673737484" MODIFIED="1461960233277" TEXT="Az SVD meghat&#xe1;roz&#xe1;sa"/>
-<node CREATED="1461960254725" ID="ID_341516412" MODIFIED="1461960269786" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k szerinti felbont&#xe1;s l&#xe9;tez&#xe9;se"/>
-<node CREATED="1461960270861" ID="ID_444919186" MODIFIED="1461960285219" TEXT="Szingul&#xe1;ris felbont&#xe1;s geometriai interpret&#xe1;ci&#xf3;ja"/>
+<node CREATED="1461960226421" ID="ID_1673737484" MODIFIED="1461960233277" TEXT="Az SVD meghat&#xe1;roz&#xe1;sa">
+<node CREATED="1461961263340" ID="ID_382978669" MODIFIED="1461961298986" TEXT="Az &#xf6;tlet: A^H*A= V*Szumma^H*Szumma * V^H"/>
+<node CREATED="1461961305725" ID="ID_266039364" MODIFIED="1461961354020" TEXT="Szumma^H*szumma = diag(szigmai_i^2,0...0)"/>
+<node CREATED="1461961379637" ID="ID_575072488" MODIFIED="1461961419109" TEXT="Kisz&#xe1;m&#xed;t&#xe1;sa:">
+<node COLOR="#006699" CREATED="1461961419965" ID="ID_445618969" MODIFIED="1461962083637" TEXT="1) meghat&#xe1;rozzuk A^T*A saj&#xe1;t&#xe9;rt&#xe9;keit (lambda_i) &#xe9;s saj&#xe1;tvektorait (x_i)"/>
+<node COLOR="#006699" CREATED="1461961468580" ID="ID_1293481486" MODIFIED="1461962083213" TEXT="2) a saj&#xe1;t&#xe9;r&#xe9;tkek gy&#xf6;kei a szingul&#xe1;ris &#xe9;rt&#xe9;kek (szigma_i= gy&#xf6;k alatt (lambda_i))"/>
+<node COLOR="#006699" CREATED="1461961555645" ID="ID_859691109" MODIFIED="1461962082925" TEXT="3) a jobb szingul&#xe1;ris vektorok a saj&#xe1;tvektorok (v_i=x_i/absz(x_i) )"/>
+<node COLOR="#006699" CREATED="1461961589357" ID="ID_417462618" MODIFIED="1461962082717" TEXT="4) bal szingul&#xe1;ris vektorok : mivel A*v_i = szigma_i*u_i, ez&#xe9;rt u_i = A*v_i/szigma_i">
+<font NAME="SansSerif" SIZE="12"/>
+<node CREATED="1461961649884" ID="ID_518669947" MODIFIED="1461961710169" TEXT="alternat&#xed;va: a bal szingul&#xe1;ris vektorok megegyeznek az A*A^T saj&#xe1;tvektoraival, innen v_i= A^T*u_i/szigma_i"/>
+</node>
+<node COLOR="#006699" CREATED="1461961713317" ID="ID_1156229347" MODIFIED="1461962082461" TEXT="5) a szingul&#xe1;ris vektorokb&#xf3;l f&#xf6;l&#xed;rhat&#xf3; V_1 &#xe9;s U_1, a reduk&#xe1;lt szingul&#xe1;ris felbont&#xe1;s &#xe9;s a diadikus alak"/>
+<node COLOR="#006699" CREATED="1461961800692" ID="ID_380885048" MODIFIED="1461962081917" TEXT="6) a V-hez ki kell eg&#xe9;sz&#xed;teni a {v_1 ... v_r} vektorokat ONB-s&#xe1; (hasonl&#xf3;k&#xe9;pp U-hoz)"/>
+</node>
+</node>
+<node CREATED="1461960254725" ID="ID_341516412" MODIFIED="1461960269786" TEXT="Szingul&#xe1;ris &#xe9;rt&#xe9;k szerinti felbont&#xe1;s l&#xe9;tez&#xe9;se">
+<node CREATED="1461961863284" ID="ID_1365083156" MODIFIED="1461961890729" TEXT="a szingul&#xe1;ris &#xe9;rt&#xe9;kek l&#xe9;tez&#xe9;se &#xe9;s egy&#xe9;rtelm&#x171;s&#xe9;ge">
+<node COLOR="#338800" CREATED="1461961894660" ID="ID_825594544" MODIFIED="1461962085989" TEXT="Minden r-rang&#xfa; komplex A m&#xe1;trixnak l&#xe9;tezik r (pozit&#xed;v) szingul&#xe1;ris &#xe9;rt&#xe9;ke. ezek megegyeznek A^H*A (illetve az A*A^H) pozit&#xed;v saj&#xe1;t&#xe9;rt&#xe9;keinek n&#xe9;gyzetgy&#xf6;keivel. A szingul&#xe1;ris &#xe9;rt&#xe9;kek monoton cs&#xf6;kken&#x151; sorozata egy&#xe9;rtelm&#x171;.">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+</node>
+<node CREATED="1461960270861" ID="ID_444919186" MODIFIED="1461960285219" TEXT="Szingul&#xe1;ris felbont&#xe1;s geometriai interpret&#xe1;ci&#xf3;ja">
+<node COLOR="#338800" CREATED="1461962332805" ID="ID_1473059897" MODIFIED="1461962489653" TEXT="A egy r-rang&#xfa;, m*n-es val&#xf3;s m&#xe1;trix. Az x-&gt;A*x lek&#xe9;pez&#xe9;s R^n az e^T*e=1 egyenletet kiel&#xe9;g&#xed;t&#x151;, egys&#xe9;ggomb fel&#xfc;let&#xe9;n l&#xe9;v&#x151; pontjait, R^m egy r-dimenzi&#xf3;s altere">
+<node COLOR="#338800" CREATED="1461962458637" ID="ID_1237774468" MODIFIED="1461962490885" TEXT="egy ellipszoidj&#xe1;nak fel&#xfc;let&#xe9;re k&#xe9;pzi, ha r=n, &#xe9;s"/>
+<node COLOR="#338800" CREATED="1461962491981" ID="ID_1153331258" MODIFIED="1461962509909" TEXT="egy ellipszoidja &#xe1;ltal hat&#xe1;rolt tartom&#xe1;ny&#xe1;ra k&#xe9;pzi, ha r&lt;n"/>
+</node>
+</node>
+<node CREATED="1461962599069" ID="ID_1003167148" MODIFIED="1461962604187" TEXT="Pol&#xe1;rfelbont&#xe1;s">
+<node COLOR="#ff0000" CREATED="1461962633925" ID="ID_217291365" MODIFIED="1461962677468" TEXT="Pol&#xe1;rfelbont&#xe1;son egy n&#xe9;gyzetes m&#xe1;trixnak egy pozit&#xed;v szemidefinit &#xe9;s egy ortogon&#xe1;lis m&#xe1;trix szorzat&#xe1;ra val&#xf3; felbont&#xe1;s&#xe1;t &#xe9;rtj&#xfc;k."/>
+<node COLOR="#338800" CREATED="1461962714549" ID="ID_840345589" MODIFIED="1461962831789" TEXT="B&#xe1;rmely komplex (val&#xf3;s) n&#xe9;gyzetes A m&#xe1;trix el&#x151;&#xe1;ll A=P*Q alakban, ahol P pozit&#xed;v szemidefinit &#xf6;nadjung&#xe1;lt (szimmetrikus) m&#xe1;trix, Q pedig unit&#xe9;r (ortogon&#xe1;lis). Ha A invert&#xe1;lhat&#xf3; akkor P pozit&#xed;v definit, &#xe9;s a felbont&#xe1;s egy&#xe9;rtelm&#x171;"/>
+</node>
 </node>
 <node CREATED="1461018531430" ID="ID_1816998740" MODIFIED="1461018533403" TEXT="Norma"/>
 <node CREATED="1461018534470" ID="ID_963728032" MODIFIED="1461018538275" TEXT="M&#xe1;trixnorma"/>
