@@ -1102,6 +1102,16 @@
 </node>
 <node CREATED="1461018701094" ID="ID_673370017" MODIFIED="1461018721608" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1461976221153" ID="ID_1127444333" MODIFIED="1461976227493" TEXT="M&#xe1;trixok &#xf6;sszehasonl&#xed;t&#xe1;sa"/>
+<node CREATED="1461976229841" ID="ID_703937426" MODIFIED="1461976233087" TEXT="Pozit&#xed;v m&#xe1;trixok"/>
+<node CREATED="1461976238007" ID="ID_1305374600" MODIFIED="1461976244540" TEXT="Nemnegat&#xed;v m&#xe1;trixok"/>
+<node CREATED="1461976273313" ID="ID_1730497327" MODIFIED="1461976280934" TEXT="Sztochasztikus m&#xe9;trixok"/>
+</node>
+<node CREATED="1461976149057" ID="ID_1560831818" MODIFIED="1461976166340" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1461976171256" ID="ID_230735225" MODIFIED="1461976177967" TEXT="Diagoniz&#xe1;lhat&#xf3; m&#xe1;trixok f&#xfc;ggv&#xe9;nyei"/>
+<node CREATED="1461976179086" ID="ID_622407094" MODIFIED="1461976188494" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;nyek a Jordan-alakb&#xf3;l"/>
+<node CREATED="1461976189893" ID="ID_121271482" MODIFIED="1461976200558" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;ny Hermite-polinommal"/>
 </node>
 </node>
 </map>
