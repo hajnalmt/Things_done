@@ -2,9 +2,9 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1458615581084" ID="ID_411259303" MODIFIED="1459156492030" TEXT="Fels&#x151;bb Matematika - Halad&#xf3; Line&#xe1;ris Algebra">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1460989791456" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
+<node CREATED="1459156487977" ID="ID_1554243761" MODIFIED="1462013719570" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459156608018" FOLDED="true" ID="ID_718278855" MODIFIED="1459160549313" TEXT="Vektor">
+<node CREATED="1459156608018" ID="ID_718278855" MODIFIED="1462013721529" TEXT="Vektor">
 <node CREATED="1459156706914" ID="ID_1518623961" MODIFIED="1459156719434" TEXT="A 2 &#xe9;s 3 dimenzi&#xf3;s t&#xe9;r vektorai">
 <node CREATED="1459156721643" ID="ID_896621507" MODIFIED="1459156817271" TEXT="Szabad vektor">
 <node CREATED="1459156827433" ID="ID_232326231" MODIFIED="1459156852117" TEXT="Ha az ir&#xe1;ny&#xed;tott szakasz a hal, a vektor a halraj"/>
@@ -1241,16 +1241,16 @@
 </node>
 </node>
 </node>
-<node CREATED="1461976149057" ID="ID_1560831818" MODIFIED="1461976166340" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
+<node CREATED="1461976149057" FOLDED="true" ID="ID_1560831818" MODIFIED="1461983991767" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461976171256" ID="ID_230735225" MODIFIED="1461976177967" TEXT="Diagoniz&#xe1;lhat&#xf3; m&#xe1;trixok f&#xfc;ggv&#xe9;nyei">
+<node CREATED="1461976171256" FOLDED="true" ID="ID_230735225" MODIFIED="1461983988485" TEXT="Diagoniz&#xe1;lhat&#xf3; m&#xe1;trixok f&#xfc;ggv&#xe9;nyei">
 <node CREATED="1461981621051" ID="ID_691204498" MODIFIED="1461981647489" TEXT="B&#xe1;rmely diagoniz&#xe1;lhat&#xf3; a m&#xe1;trixra &#xe9;rtelmezhet&#x151; az e^A hatv&#xe1;ny"/>
 <node CREATED="1461981653483" ID="ID_280851958" MODIFIED="1461981665160" TEXT="hasonl&#xf3;an ln (I+A) m&#xe1;trixf&#xfc;ggv&#xe9;ny is"/>
 <node CREATED="1461981677379" ID="ID_1893091840" MODIFIED="1461981722495" TEXT="Egy hatv&#xe1;nysorba fejthet&#x151; f&#xfc;ggv&#xe9;nynek egy diagon&#xe1;lis m&#xe1;trixban - &#xe9;s &#xed;gy b&#xe1;rmely diagoniz&#xe1;lhat&#xf3; m&#xe1;trixban - f&#xf6;lvett &#xe9;rt&#xe9;k&#xe9;t a f&#xfc;ggv&#xe9;nynek csak a saj&#xe1;t&#xe9;rt&#xe9;kekven val&#xf3; viselked&#xe9;se befoly&#xe1;solja."/>
 <node CREATED="1461981723275" ID="ID_341383480" MODIFIED="1461981804822" TEXT="A Cayley-Hamilton-t&#xe9;tel szerint minden m&#xe1;tirx kiel&#xe9;g&#xed;ti saj&#xe1;t karakterisztikus egyenlet&#xe9;t, &#xed;gy egy n-edrend&#x171; m&#xe1;trix minden hatv&#xe1;nya legf&#xf6;ljebb n-1-edik hatv&#xe1;nyok line&#xe1;ris kombin&#xe1;ci&#xf3;j&#xe1;val helyettes&#xed;ther&#x151;, azaz a f&#xfc;ggv&#xe9;ny &#xe9;rt&#xe9;ke egy polinomba val&#xf3; helyettes&#xed;t&#xe9;ssel is kisz&#xe1;m&#xed;that&#xf3;"/>
 <node COLOR="#338800" CREATED="1461981809563" ID="ID_250700551" MODIFIED="1461981911892" TEXT="Legyen A eleme C^n*n m&#xe1;trix Jordan-felvont&#xe1;sa A= CJC^(-1) &#xe9;s p eleme C[x] egy tetsz&#x151;leges polinom. ekkor p(A)= C* p(J) C^(-1)"/>
 </node>
-<node CREATED="1461976179086" ID="ID_622407094" MODIFIED="1461976188494" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;nyek a Jordan-alakb&#xf3;l">
+<node CREATED="1461976179086" FOLDED="true" ID="ID_622407094" MODIFIED="1461983989605" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;nyek a Jordan-alakb&#xf3;l">
 <node CREATED="1461982344274" ID="ID_1845327089" MODIFIED="1461982362866" TEXT="Spektrumon defini&#xe1;lt f&#xfc;ggv&#xe9;ny">
 <node COLOR="#ff0000" CREATED="1461982363818" ID="ID_1291968259" MODIFIED="1461982512160" TEXT="Legyen az A m&#xe1;trix spektruma {lambda_i}, a lambda_i saj&#xe1;t&#xe9;rt&#xe9;khez tartoz&#xf3;  legnagyobb Jordan-blokk rendj&#xe9;t jel&#xf6;lje m_i. Azt mondjuk, hogy f defini&#xe1;lva az A spektrum&#xe1;n, ha az f^(j) (lambda_i) &#xe9;rt&#xe9;kek l&#xe9;teznek. Azt mondjuk, hogy ezek az &#xe9;rt&#xe9;kek az f &#xe9;rt&#xe9;kei az A spektrum&#xe1;n."/>
 <node CREATED="1461982517338" ID="ID_1560908930" MODIFIED="1461982613555" TEXT="Minden f&#xfc;ggv&#xe9;ny, mely C minden pontj&#xe1;ban ak&#xe1;h&#xe1;nyszor differenci&#xe1;lhat&#xf3;, tetsz&#x151;leges m&#xe1;trixra &#xe9;rtelmezve van annak spektrum&#xe1;n. &#xcd;gy minden polinom &#xe9;rtelmezve van minden m&#xe1;trix spektrum&#xe1;n, ami &#xf6;sszhangban lesz azzal, hogy minden n&#xe9;gyzetes m&#xe1;trixnak b&#xe1;rmely polinomf&#xfc;ggv&#xe9;nye &#xe9;rtelmezve van."/>
@@ -1260,7 +1260,7 @@
 <node COLOR="#ff0000" CREATED="1461982738858" ID="ID_1701102370" MODIFIED="1461982789543" TEXT="f(A)= C*f(J)*C^(-1) = C* diag(f(J_1),.., f(J_k))*C^(-1)"/>
 </node>
 </node>
-<node CREATED="1461976189893" ID="ID_121271482" MODIFIED="1461976200558" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;ny Hermite-polinommal">
+<node CREATED="1461976189893" FOLDED="true" ID="ID_121271482" MODIFIED="1461983990534" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;ny Hermite-polinommal">
 <node CREATED="1461983164449" ID="ID_1463718167" MODIFIED="1461983210033" TEXT="Spektrumon azonos &#xe9;rt&#xe9;keket ad&#xf3; polinomok ">
 <node COLOR="#338800" CREATED="1461983216046" ID="ID_1073648277" MODIFIED="1461983285248" TEXT="Tetsz&#x151;leges p &#xe9;s q polinomokra &#xe9;s A eleme C^n*n m&#xe1;trixra p(A) = q(A), pontosan akkor teljes&#xfc;l, ha p &#xe9;s q &#xe9;rt&#xe9;kei A spektrum&#xe1;n azonosak."/>
 </node>
