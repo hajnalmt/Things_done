@@ -1047,16 +1047,58 @@
 </node>
 </node>
 </node>
-<node CREATED="1461018549574" ID="ID_281617371" MODIFIED="1461018590785" POSITION="left" TEXT="8) Jordan-f&#xe9;le norm&#xe1;lalak">
+<node CREATED="1461018549574" FOLDED="true" ID="ID_281617371" MODIFIED="1461976084223" POSITION="left" TEXT="8) Jordan-f&#xe9;le norm&#xe1;lalak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461018573950" ID="ID_409405841" MODIFIED="1461973511417" TEXT="&#xc1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektor">
+<node CREATED="1461018573950" FOLDED="true" ID="ID_409405841" MODIFIED="1461976082891" TEXT="&#xc1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektor">
 <node CREATED="1461973075896" ID="ID_1129164484" MODIFIED="1461973080958" TEXT="Invari&#xe1;ns alterek">
 <node COLOR="#ff0000" CREATED="1461973082216" ID="ID_1853382580" MODIFIED="1461973152127" TEXT="Azt mondjuk, hogy az U&lt;= V alt&#xe9;r az L: V-&gt;V line&#xe1;ris transzform&#xe1;ci&#xf3; (illetve az L valamely b&#xe1;zisbel L m&#xe1;trix&#xe1;nak) invari&#xe1;ns altere, ha minden x eleme U vektorra Lx eleme U"/>
-<node COLOR="#338800" CREATED="1461973154032" ID="ID_1059267631" MODIFIED="1461973226410" TEXT="Az U &lt;= V alt&#xe9;r pontosan akkor invari&#xe1;ns alt&#xe9;r az L line&#xe1;ris transzform&#xe1;ci&#xfc;ra n&#xe9;tva, ha U egy {u_i} b&#xe1;zis&#xe1;nak minden vektor&#xe1;ra L*u_i eleme U"/>
+<node COLOR="#006699" CREATED="1461973154032" ID="ID_1059267631" MODIFIED="1461973745969" TEXT="Az U &lt;= V alt&#xe9;r pontosan akkor invari&#xe1;ns alt&#xe9;r az L line&#xe1;ris transzform&#xe1;ci&#xfc;ra n&#xe9;tva, ha U egy {u_i} b&#xe1;zis&#xe1;nak minden vektor&#xe1;ra L*u_i eleme U"/>
+</node>
+<node CREATED="1461973651568" ID="ID_1426438270" MODIFIED="1461973657230" TEXT="Blokkdiagon&#xe1;lis m&#xe1;trixok">
+<node COLOR="#006699" CREATED="1461973658143" ID="ID_789852322" MODIFIED="1461973743264" TEXT="Blokkdiagon&#xe1;lis m&#xe1;tricok &#xe9;s az invaro&#xe1;ns altere L! az L: V-&gt;V lin traf&#xf3; k&#xe9;t ivnari&#xe1;ns altere U &#xe9;s W. Ha V= U(+)W, akkor L m&#xe1;trix [ U O; O W ] a V minden olyan b&#xe1;zis&#xe1;ban, mely az U &#xe9;s W b&#xe1;zis&#xe1;nak uni&#xf3;ja"/>
+<node CREATED="1461973747455" ID="ID_166187775" MODIFIED="1461973774774" TEXT="&#xe1;lal&#xe1;nos&#xed;tani is lehet"/>
+<node CREATED="1461973838916" ID="ID_1656375751" MODIFIED="1461973848524" TEXT="&#xc1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektorok &#xe9;s a Jordan-blokk">
+<node CREATED="1461973856639" ID="ID_279551746" MODIFIED="1461973872113" TEXT="Egy A m&#xe1;trix hat&#xe1;sa a standard b&#xe1;zison"/>
+<node CREATED="1461973893000" ID="ID_1003580267" MODIFIED="1461973901056" TEXT="A-4 I hat&#xe1;s&#xe1;nak diagrammja"/>
 </node>
 </node>
-<node CREATED="1461973037110" ID="ID_114545250" MODIFIED="1461973044941" TEXT="Jordan-f&#xe9;le norm&#xe1;lalak"/>
-<node CREATED="1461973047904" ID="ID_1894050109" MODIFIED="1461973058783" TEXT="Minim&#xe1;lpolinom"/>
+<node COLOR="#ff0000" CREATED="1461973917016" ID="ID_918932533" MODIFIED="1461974098896" TEXT="Az x!=0 vektort a n&#xe9;gyzetes A m&#xe1;tix lambda saj&#xe1;t&#xe9;rt&#xe9;k&#xe9;hez tartoz&#xfc; &#xe1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektor&#xe1;nak nevezz&#xfc;k, ha valameilyen k term&#xe9;szetes sz&#xe1;mra (A-lambda*I)^k*x=0."/>
+<node COLOR="#ff0000" CREATED="1461973993239" ID="ID_1523290915" MODIFIED="1461974098742" TEXT="k = 1 eset&#xe9;n cx saj&#xe1;tvektor. Az &#xe1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvekzorokb&#xf3;l &#xe1;ll&#xf3; x_i sorozatot Jordan-l&#xe1;ncnak nevezz&#xfc;k, ha (A-lambda*I)*x_i = x_i-1 &#xe9;s (A-lambda*I) *x_i = 0"/>
+<node COLOR="#ff0000" CREATED="1461974071768" ID="ID_1566039978" MODIFIED="1461974098528" TEXT="Egy t&#xe9;r &#xe1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektorokb&#xf3;l &#xe1;ll&#xf3; b&#xe1;zis&#xe1;t Jordan-b&#xe1;zisnak nevezz&#xfc;k"/>
+<node CREATED="1461974177267" ID="ID_980767593" MODIFIED="1461974184794" TEXT="(korrekt defin&#xed;ci&#xf3;)"/>
+<node CREATED="1461974548645" ID="ID_1062968155" MODIFIED="1461974554126" TEXT="Jordan-blokk ">
+<node COLOR="#ff0000" CREATED="1461974555083" ID="ID_1997803178" MODIFIED="1461974596296" TEXT="Azt a n&#xe9;gyzetes m&#xe1;trixot, melynek f&#x151;&#x171;tl&#xf3;j&#xe1;ban azonos lambda &#xe9;rt&#xe9;kek, f&#xf6;l&#xf6;tte 1-esek, m&#xe1;shol 0-k &#xe1;llnak, Jordan-blokknak nevezz&#xfc;k"/>
+<node CREATED="1461974618856" ID="ID_448099471" MODIFIED="1461974649598" TEXT="Egy Jordan-blokknak a standarb b&#xe1;zis minden vektora &#xe1;ltal&#xe1;nos&#xed;tott saj&#xe1;tvektora">
+<node CREATED="1461974665307" ID="ID_1977305282" MODIFIED="1461974670958" TEXT="Jordan-l&#xe1;nc"/>
+</node>
+<node CREATED="1461974673928" ID="ID_1070408822" MODIFIED="1461974705534" TEXT="S&#x151;t, ha egy m&#xe1;trix Jordan blokkokb&#xf3;l &#xe1;ll&#xf3; blokkdiagon&#xe1;lis m&#xe1;trix, akkor a standard b&#xe1;zis Jordan-l&#xe1;ncokb&#xf3;l &#xe1;ll."/>
+</node>
+</node>
+<node CREATED="1461973037110" FOLDED="true" ID="ID_114545250" MODIFIED="1461976079707" TEXT="Jordan-f&#xe9;le norm&#xe1;lalak">
+<node CREATED="1461975004297" ID="ID_216586978" MODIFIED="1461975011852" TEXT="Jordan-f&#xe9;le norm&#xe1;lalak">
+<node CREATED="1461974925480" ID="ID_1009780554" MODIFIED="1461975014666" TEXT="Az A=C*J*C^(-1) alak&#xfa; felbont&#xe1;s&#xe1;t az A Jordan-felbont&#xe1;s&#xe1;nak nevezz&#xfc;k"/>
+<node CREATED="1461974886648" ID="ID_1639247093" MODIFIED="1461975016838" TEXT="A k&#xfc;l&#xf6;nb&#xf6;z&#x151; Jordan-blokkok k&#xfc;l&#xf6;nb&#xf6;z&#x151; saj&#xe1;tvektorokhoz tartoznak, de egy saj&#xe1;t&#xe9;rt&#xe9;k t&#xf6;bb Jordan-blokkban is szerepelhet."/>
+<node CREATED="1461974847160" ID="ID_1619008135" MODIFIED="1461975019793" TEXT="MInden komplec line&#xe1;ris transzform&#xe1;ci&#xf3;hoz van olyan b&#xe1;zis, melyben m&#xe1;trixa Jordan norm&#xe1;lalak&#xfa; ( a b&#xe1;zis a C oszlopvektoraib&#xf3;l &#xe1;ll)"/>
+<node COLOR="#006699" CREATED="1461974717345" ID="ID_205824912" MODIFIED="1461975022325" TEXT="B&#xe1;rmely A eleme C^*n*n-bel m&#xe1;trix hasonl&#xf3; egy Jordan blokkokb&#xf3;l &#xe1;ll&#xf3; blokkdiagon&#xe1;lis m&#xe1;trixhoz, azaz l&#xe9;tezi C: J = C^(-1)*A*C, J = diag J_i, ahol k az A f&#xfc;ggetlen saj&#xe1;tvektorainak macim&#xe1;lis sz&#xe1;ma &#xe9;s J_i az i-edik saj&#xe1;tvektorhoz tartoz&#xf3; Jordan-blokk."/>
+</node>
+<node CREATED="1461975031824" ID="ID_1891351927" MODIFIED="1461975042716" TEXT="A Jordan-alak egy&#xe9;rtelm&#x171;s&#xe9;ge">
+<node CREATED="1461975053401" ID="ID_715317181" MODIFIED="1461975075790" TEXT="Egy komplex m&#xe1;trix Jordan-norm&#xe1;lalakja a Jordan-blokkok sorrendj&#xe9;t&#x151;l eltekintve egy&#xe9;rtelm&#x171;"/>
+</node>
+</node>
+<node CREATED="1461973047904" FOLDED="true" ID="ID_1894050109" MODIFIED="1461976081332" TEXT="Minim&#xe1;lpolinom">
+<node COLOR="#ff0000" CREATED="1461975506658" ID="ID_1039851668" MODIFIED="1461975601960" TEXT="A eleme F^n*n minim&#xe1;lpolinomja olyan minim&#xe1;lis foksz&#xe1;m&#xfa; M&#x171;_A f&#x151;polinom (azaz 1 f&#x151;egy&#xfc;tthat&#xf3;j&#xfa;), melyre M&#x171;_A(A) = O. (A:V -&gt; V line&#xe1;ris transzform&#xe1;ci&#xf3; minim&#xe1;lpolinomja hasonl&#xf3;an) "/>
+<node CREATED="1461975612937" ID="ID_1249256294" MODIFIED="1461975630518" TEXT="M&#x171;_1(x) = x-1"/>
+<node CREATED="1461975632553" ID="ID_1439488806" MODIFIED="1461975668841" TEXT="A~B, akkor minim&#x171;lpolinomjaik egyenl&#x151;ek."/>
+<node CREATED="1461975685617" ID="ID_1141938297" MODIFIED="1461975719586" TEXT="A minim&#xe1;lpolinom invari&#xe1;ns a m&#xe1;trixok hasonl&#xf3;s&#xe1;g&#xe1;ra (line&#xe1;ris transzform&#xe1;ci&#xf3; minim&#xe1;lpolinomja megyegyezik b&#xe1;rmely b&#xe1;zisban f&#xf6;l&#xed;rt m&#xe1;trxi&#xe1;nak minim&#xe1;lpolinomj&#xe1;val)"/>
+<node COLOR="#006699" CREATED="1461975729089" ID="ID_836165089" MODIFIED="1461975742809" TEXT="A eleme F^n*n">
+<node COLOR="#006699" CREATED="1461975743225" ID="ID_1536225816" MODIFIED="1461975901090" TEXT="a) A-nak pontosan egy M&#x171;_A minim&#xe1;lpolinomja van."/>
+<node COLOR="#006699" CREATED="1461975779017" ID="ID_131611537" MODIFIED="1461975901473" TEXT="B&#xe1;rmely p polinomra p(A) = O pontosan akkor &#xe1;ll fenn, ha p marad&#xe9;k n&#xe9;lk&#xfc;l oszthat&#xf3; M&#x171;_A polinommal"/>
+<node COLOR="#006699" CREATED="1461975814313" ID="ID_1429073891" MODIFIED="1461975901701" TEXT="A Khi_A karakterisztikus polinom oszthat&#xf3; a M&#x171;_A minim&#xe1;lpolinommal."/>
+<node COLOR="#006699" CREATED="1461975877082" ID="ID_426926918" MODIFIED="1461975901905" TEXT="A minden saj&#xe1;t&#xe9;rt&#xe9;ke gy&#xf6;ke M&#x171;_A-nak."/>
+<node CREATED="1461975914560" ID="ID_1529673005" MODIFIED="1461975949422" TEXT="Ha A nilpontend. (A_k = O, de A^k-1 != O). Ekkor M&#x171;_A(x) = x^k."/>
+</node>
+<node COLOR="#006699" CREATED="1461975908583" ID="ID_1881484174" MODIFIED="1461976071866" TEXT="A eleme C^n*n spektruma {lambda i s-gi} a lambda_i saj&#xe1;t&#xe9;rt&#xe9;k algebrai multiplicit&#xe1;sa a_i, &#xe9;s A Jordan f&#xe9;le norm&#xe1;lalakj&#xe1;ban a lambda_i-hez tartoz&#xf3; legnagyobb Jordan-blokk m&#xe9;rete legyen m_i. Ekkor M&#x171;_a(x) = produktum i-&gt;s (y-lambda_i ) ^(m_i)"/>
+</node>
 </node>
 <node CREATED="1461018701094" ID="ID_673370017" MODIFIED="1461018721608" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
