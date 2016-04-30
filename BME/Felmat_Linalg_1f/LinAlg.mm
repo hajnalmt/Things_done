@@ -1102,10 +1102,144 @@
 </node>
 <node CREATED="1461018701094" ID="ID_673370017" MODIFIED="1461018721608" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461976221153" ID="ID_1127444333" MODIFIED="1461976227493" TEXT="M&#xe1;trixok &#xf6;sszehasonl&#xed;t&#xe1;sa"/>
-<node CREATED="1461976229841" ID="ID_703937426" MODIFIED="1461976233087" TEXT="Pozit&#xed;v m&#xe1;trixok"/>
-<node CREATED="1461976238007" ID="ID_1305374600" MODIFIED="1461976244540" TEXT="Nemnegat&#xed;v m&#xe1;trixok"/>
-<node CREATED="1461976273313" ID="ID_1730497327" MODIFIED="1461976280934" TEXT="Sztochasztikus m&#xe9;trixok"/>
+<node CREATED="1461976221153" ID="ID_1127444333" MODIFIED="1461976227493" TEXT="M&#xe1;trixok &#xf6;sszehasonl&#xed;t&#xe1;sa">
+<node COLOR="#ff0000" CREATED="1461978415960" ID="ID_1228710437" MODIFIED="1461978465385" TEXT="A &gt; B, ha a_ij &gt; b_ij b&#xe1;rmely i &#xe9;s j eset&#xe9;n pozit&#xed;v: A &gt; O ( nemnegat&#xed;v: A&gt;= O, azaz ha a_ij &gt;0 ( a_ij &gt;= 0)"/>
+<node CREATED="1461978467537" ID="ID_748757772" MODIFIED="1461978472367" TEXT="N&#xe9;h&#xe1;ny &#xe9;szrev&#xe9;tel">
+<node COLOR="#338800" CREATED="1461978472954" ID="ID_625200429" MODIFIED="1461978565129" TEXT="A &gt;= 0 &lt;-&gt; Ax &gt;= 0 minden x &gt;= 0 vektorr"/>
+<node COLOR="#338800" CREATED="1461978504642" ID="ID_1357632961" MODIFIED="1461978565449" TEXT="A &gt; 0 &lt;-&gt; Ax &gt; 0 minden x &gt;= 0, x != 0 vektorra"/>
+<node COLOR="#338800" CREATED="1461978532826" ID="ID_620740211" MODIFIED="1461978565674" TEXT="A &gt;= 0, &#xe9;s x &gt;= y &gt;= 0 -&gt; Ax &gt; Ay"/>
+</node>
+<node CREATED="1461978568530" ID="ID_1550623529" MODIFIED="1461978581862" TEXT="A m&#xe1;trixok pozitivit&#xe1;s&#xe1;nak 4 fok&#xe1;t defini&#xe1;ljuk:">
+<node COLOR="#ff0000" CREATED="1461978584442" ID="ID_857895815" MODIFIED="1461978701452" TEXT="A pozi&#xed;v">
+<node COLOR="#ff0000" CREATED="1461978600530" ID="ID_175161558" MODIFIED="1461978702128" TEXT="b&#xe1;rmely i, j a_ij&gt;0"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461978620234" ID="ID_577286944" MODIFIED="1461978700962" TEXT="A primit&#xed;v">
+<node COLOR="#ff0000" CREATED="1461978638066" ID="ID_378115958" MODIFIED="1461978702385" TEXT="l&#xe9;tezik k b&#xe1;rmely i,j a_ij ^(k) &gt; 0"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461978624177" ID="ID_949558505" MODIFIED="1461978703027" TEXT="A irreducibilis">
+<node COLOR="#ff0000" CREATED="1461978657714" ID="ID_1742811033" MODIFIED="1461978700345" TEXT="b&#xe1;rmely i,j l&#xe9;tezik k a_ij ^(k) &gt; 0"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461978631434" ID="ID_1961948310" MODIFIED="1461978703286" TEXT="A reducibilis">
+<node COLOR="#ff0000" CREATED="1461978680305" ID="ID_549694428" MODIFIED="1461978700138" TEXT="l&#xe9;tezik i, j b&#xe1;rmely k a_ij ^(k) = 0"/>
+</node>
+</node>
+</node>
+<node CREATED="1461976229841" ID="ID_703937426" MODIFIED="1461976233087" TEXT="Pozit&#xed;v m&#xe1;trixok">
+<node CREATED="1461978715215" ID="ID_1349268711" MODIFIED="1461978768115" TEXT="Perron-t&#xe9;tel">
+<node COLOR="#006699" CREATED="1461978772122" ID="ID_333518192" MODIFIED="1461978890146" TEXT="pozit&#xed;v saj&#xe1;t&#xe9;rt&#xe9;k &#xe9;s saj&#xe1;tvektor Ha A &gt; O, akkor ">
+<node COLOR="#006699" CREATED="1461978811706" ID="ID_1708140644" MODIFIED="1461978889313" TEXT="r&gt;0, (r= r&#xf3;(A) a spektr&#xe1;lsug&#xe1;r),"/>
+<node COLOR="#006699" CREATED="1461978834266" ID="ID_1269705241" MODIFIED="1461978889099" TEXT="r saj&#xe1;t&#xe9;rt&#xe9;k egy pozit&#xed;v saj&#xe1;tvektorral,"/>
+<node COLOR="#006699" CREATED="1461978850182" ID="ID_1069647258" MODIFIED="1461978888858" TEXT="A-nak e pozit&#xed;v saj&#xe1;tvektor skal&#xe1;rszorosain k&#xed;v&#xfc;l nincs m&#xe1;s nemnegat&#xed;v saj&#xe1;tvektora"/>
+</node>
+<node COLOR="#ff0000" CREATED="1461978897930" ID="ID_1917925785" MODIFIED="1461978962071" TEXT="p Perron-vektor &#xe9;s q bal Perron vektor Ap = rp, q^TA= rq^T"/>
+<node CREATED="1461978968218" ID="ID_187885886" MODIFIED="1461978986559" TEXT="Perron-t&#xe9;tel: egyszeres &#xe9;s domin&#xe1;ns saj&#xe1;t&#xe9;rt&#xe9;k Ha A&gt;O, akkor ">
+<node COLOR="#006699" CREATED="1461978987369" ID="ID_1856454983" MODIFIED="1461979023209" TEXT="az r saj&#xe1;t&#xe9;r&#xe9;k algebrai multiplicit&#xe1;sa 1."/>
+<node COLOR="#006699" CREATED="1461978998666" ID="ID_1892422926" MODIFIED="1461979023033" TEXT="r domin&#xe1;ns, azaz minden tov&#xe1;bbi lambda saj&#xe1;t&#xe9;rt&#xe9;kre lambda abszol&#xfa;t&#xe9;rt&#xe9;ke &lt; r"/>
+</node>
+</node>
+</node>
+<node CREATED="1461976238007" ID="ID_1305374600" MODIFIED="1461976244540" TEXT="Nemnegat&#xed;v m&#xe1;trixok">
+<node CREATED="1461979033827" ID="ID_1006434868" MODIFIED="1461979047175" TEXT="A Perron-t&#xe9;tel nem &#xe1;ll a nem-negat&#xed;v m&#xe1;trixokra"/>
+<node COLOR="#006699" CREATED="1461979089650" ID="ID_1140256467" MODIFIED="1461979104913" TEXT="Perron-Frobenius-t&#xe9;tel -gyenge v&#xe1;ltozat">
+<node COLOR="#006699" CREATED="1461979105874" ID="ID_1189165784" MODIFIED="1461979155314" TEXT="Ha A &gt;= O, akkor az r = r&#xf3;(A) spektr&#xe1;lsug&#xe1;r saj&#xe1;t&#xe9;rt&#xe9;ke A-nak, melyhez tartozik nemnegat&#xed;v saj&#xe1;tvektor"/>
+</node>
+<node COLOR="#006699" CREATED="1461979168800" ID="ID_137396267" MODIFIED="1461979182858" TEXT="Collatz-Wielandt-t&#xe9;tel">
+<node CREATED="1461979184185" ID="ID_147692909" MODIFIED="1461979210252" TEXT="Az A &gt;= O m&#xe1;trix r spektr&#xe1;lsugar&#xe1;ra r = max max c "/>
+</node>
+<node CREATED="1461979238722" ID="ID_380985881" MODIFIED="1461979252118" TEXT="Nemnegat&#xed;v m&#xe1;trixok spektr&#xe1;lsugar&#xe1;nak becsl&#xe9;se">
+<node CREATED="1461979261914" ID="ID_1980784982" MODIFIED="1461979294220" TEXT="Ha A&gt;=O, akkor a spektr&#xe1;lsug&#xe1;r a sor&#xf6;sszegek minimuma &#xe9;s maximuma, illetve az oszlop&#xf6;sszegek minimuma &#xe9;s maximuma k&#xf6;z&#xe9; esik, azaz"/>
+</node>
+<node CREATED="1461979295753" ID="ID_802418251" MODIFIED="1461979345037" TEXT="Konstans sor&#xf6;sszeg vagy oszlop&#xf6;sszeg ">
+<node CREATED="1461979345559" ID="ID_1375066112" MODIFIED="1461979345863" TEXT="Ha A&gt;=O &#xe9;s minden sor&#xf6;sszeg c, akkor a spektr&#xe1;lsug&#xe1;r c (oszlop&#xf6;sszegre is)"/>
+</node>
+<node CREATED="1461979351802" ID="ID_979677002" MODIFIED="1461979357376" TEXT="Irreducibilis m&#xe1;trixok">
+<node CREATED="1461979365891" ID="ID_1193600213" MODIFIED="1461979467502" TEXT="Az A&gt;= O m&#xe1;trix pontosan akkor reducibilis, ha a sorok &#xe9;s oszlopok azonos permut&#xe1;ci&#xf3;j&#xe1;val [ X Y; O, Z] alakra hozthat&#xf3;, ahol X &#xe9;s Z n&#xe9;gyzetes m&#xe1;trixok (l&#xe9;tezik olyan P permut&#xe1;ci&#xf3;m&#xe1;trix, hogy PAP^T a fenti alak&#xfa;). "/>
+<node CREATED="1461979468834" ID="ID_1381548485" MODIFIED="1461979469097" TEXT="Pontosan azok a m&#xe1;trixok irreducibiliesek, amelyek nem hozhat&#xf3;k ilyen alakra."/>
+<node CREATED="1461979551410" ID="ID_937227255" MODIFIED="1461979555887" TEXT="Permut&#xe1;l&#xf3; m&#xe1;trix">
+<node CREATED="1461979556733" ID="ID_388125308" MODIFIED="1461979599501" TEXT="A reducibilis: az els&#x151; &#xe9;s utols&#xf3; sorok &#xe9;s oszlopok cser&#xe9;je megfelel"/>
+<node CREATED="1461979601162" ID="ID_1369540376" MODIFIED="1461979614727" TEXT="sorok &#xe9;s oszlopok azonos permut&#xe1;ci&#xf3;ja, nem elemi sorm&#x171;veletek!"/>
+</node>
+</node>
+<node CREATED="1461979631338" ID="ID_1098277264" MODIFIED="1461979633367" TEXT="&#xd6;sszefoglal&#xe1;s">
+<node CREATED="1461978568530" ID="ID_1996395486" MODIFIED="1461979706408" TEXT="A">
+<node CREATED="1461979708634" ID="ID_884209470" MODIFIED="1461979711863" TEXT="algebrai felt&#xe9;tel">
+<node CREATED="1461979712666" ID="ID_220141959" MODIFIED="1461979717919" TEXT="gr&#xe1;felm&#xe9;leti felt&#xe9;tel"/>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1461978584442" ID="ID_710702369" MODIFIED="1461979675907" TEXT="A pozi&#xed;v">
+<node COLOR="#ff0000" CREATED="1461978600530" ID="ID_39398852" MODIFIED="1461978702128" TEXT="b&#xe1;rmely i, j a_ij&gt;0">
+<node CREATED="1461979697586" ID="ID_998164475" MODIFIED="1461979742775" TEXT="ir&#xe1;ny&#xed;tott teljes gr&#xe1;f"/>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1461978620234" ID="ID_1948003673" MODIFIED="1461978700962" TEXT="A primit&#xed;v">
+<node COLOR="#ff0000" CREATED="1461978638066" ID="ID_777358737" MODIFIED="1461978702385" TEXT="l&#xe9;tezik k b&#xe1;rmely i,j a_ij ^(k) &gt; 0">
+<node CREATED="1461979744050" ID="ID_767541918" MODIFIED="1461979755722" TEXT="b&#xe1;rmely k&#xe9;t cs&#xfa;cs k&#xf6;z&#xf6;tt fut k-hossz&#xfa; &#xfa;t"/>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1461978624177" ID="ID_907652655" MODIFIED="1461979682654" TEXT="A irreducibilis">
+<node COLOR="#ff0000" CREATED="1461978657714" ID="ID_1568369841" MODIFIED="1461978700345" TEXT="b&#xe1;rmely i,j l&#xe9;tezik k a_ij ^(k) &gt; 0">
+<node CREATED="1461979757978" ID="ID_1309807790" MODIFIED="1461979762338" TEXT="er&#x151;sen &#xf6;sszef&#xfc;gg&#x151;"/>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1461978631434" ID="ID_1892540272" MODIFIED="1461979690718" TEXT="A reducibilis">
+<node COLOR="#ff0000" CREATED="1461978680305" ID="ID_78525500" MODIFIED="1461978700138" TEXT="l&#xe9;tezik i, j b&#xe1;rmely k a_ij ^(k) = 0">
+<node CREATED="1461979763938" ID="ID_1536326045" MODIFIED="1461979772223" TEXT="nem er&#x151;sen &#xf6;sszef&#xfc;gg&#x151;"/>
+</node>
+</node>
+</node>
+<node CREATED="1461979788442" ID="ID_1950374366" MODIFIED="1461979801903" TEXT="Perron-Frobenius 1.">
+<node CREATED="1461979803379" ID="ID_1444835163" MODIFIED="1461979816087" TEXT="Ha az A&gt;=O irreducibilis, akkor ">
+<node CREATED="1461979817033" ID="ID_1202728442" MODIFIED="1461979821049" TEXT="r&gt;0"/>
+<node CREATED="1461979825682" ID="ID_84126112" MODIFIED="1461979841088" TEXT="r saj&#xe1;t&#xe9;rt&#xe9;ke A-nak, melyhez tartozik pozit&#xed;v saj&#xe1;tvektor"/>
+<node CREATED="1461979842050" ID="ID_1937253954" MODIFIED="1461979861051" TEXT="A-nak e pozit&#xed;v saj&#xe1;tvektor skal&#xe1;rszorosain k&#xed;v&#xfc;l nincs m&#xe1;s nemnegat&#xed;v saj&#xe1;tvektora"/>
+<node CREATED="1461979861931" ID="ID_1733349817" MODIFIED="1461979866216" TEXT="r egyszeres saj&#xe1;t&#xe9;rt&#xe9;k"/>
+</node>
+</node>
+<node CREATED="1461979961024" ID="ID_1200962137" MODIFIED="1461979970288" TEXT="Primit&#xed;v &#xe9;s imprimit&#xed;v m&#xe1;trixok ">
+<node CREATED="1461979974857" ID="ID_237450177" MODIFIED="1461980009263" TEXT="A perron-t&#xe9;tel &#xe1;ll&#xed;t&#xe1;sai k&#xf6;z&#xfc;l nem maradt igaz az irreducibilis nemnegat&#xed;v m&#xe1;trixokra az, hogy a spektr&#xe1;lk&#xf6;r&#xf6;n csk egyelen saj&#xe1;t&#xe9;rt&#xe9;k van."/>
+<node COLOR="#006699" CREATED="1461980011753" ID="ID_1609031634" MODIFIED="1461980072756" TEXT="Felt&#xe9;tel m&#xe1;trix primitvit&#xe1;s&#xe1;ra">
+<node COLOR="#006699" CREATED="1461980057523" ID="ID_848829491" MODIFIED="1461980072561" TEXT="Ha A&gt;= O irreducibilis &#xe9;s f&#x151;&#xe1;tl&#xf3;j&#xe1;ban van pozit&#xed;v elem, akkor primit&#xed;v."/>
+</node>
+</node>
+<node CREATED="1461980184961" ID="ID_1879065365" MODIFIED="1461980199306" TEXT="Perron-Frobenius-t&#xe9;tel 2.">
+<node COLOR="#006699" CREATED="1461980201555" ID="ID_400688055" MODIFIED="1461980713883" TEXT="Perron-Forbenius-t&#xe9;tel - saj&#xe1;t&#xe9;rt&#xe9;kek a spektr&#xe1;lk&#xf6;r&#xf6;n">
+<node COLOR="#006699" CREATED="1461980217209" ID="ID_904407704" MODIFIED="1461980714090" TEXT="Ha A &gt;=O irreducibilis, akkor">
+<node COLOR="#006699" CREATED="1461980338034" ID="ID_462194481" MODIFIED="1461980717082" TEXT="a spektr&#xe9;lk&#xf6;r hat&#xe1;s&#xe1;ra es&#x151; seaj&#xe1;t&#xe9;rt&#xe9;kek 1 multiplicit&#xe1;s&#xfa;ak, &#xe9;s (r, r*epszillon, ... , r*epszilon ^(k-1)} alakban &#xed;rhat&#xf3;k, ahol epszilon = e^(2 pi * i /k )"/>
+<node COLOR="#006699" CREATED="1461980424113" ID="ID_1411836979" MODIFIED="1461980716738" TEXT="A pontosan akor primit&#xed;v, ha a spektr&#xe1;lk&#xf6;r&#xe9;n csak egy saj&#xe1;t&#xe9;rt&#xe9;k van ( azaz minden lambda != r saj&#xe1;t&#xe9;rt&#xe9;kre absz (lambda) &lt; r)"/>
+<node COLOR="#006699" CREATED="1461980461339" ID="ID_1095027205" MODIFIED="1461980715787" TEXT="A pontosan akkor primit&#xed;v, ha l&#xe9;tezik a lim k-&gt; v&#xe9;gtelenbe (A/r)^k hat&#xe1;r&#xe9;rt&#xe9;k.">
+<node COLOR="#006699" CREATED="1461980492043" ID="ID_4369628" MODIFIED="1461980716138" TEXT="Ekkor e hat&#xe1;r&#xe9;rt&#xe9;k megegyezik az A spektr&#xe1;lfelbont&#xe1;s&#xe1;ban szerepl&#x151;, az r saj&#xe1;t&#xe9;rt&#xe9;khez tartoz&#xf3; vet&#xed;t&#x151; m&#xe1;trixszal, azaz lim k-&gt; v&#xe9;gtelen (A/r) ^k  = p*q^T/q^T*p &gt; 0, ahol p a Perron-vektor, q a bal Perron vektor."/>
+</node>
+<node COLOR="#006699" CREATED="1461980642211" ID="ID_1593180335" MODIFIED="1461980714378" TEXT="Ha A imprimit&#xed;v akkor im k-&gt; v&#xe9;gtelen (I + (A/r) +...+ (A/r)^k-1)/k = p*q^T/q^T*p &gt; 0,"/>
+</node>
+</node>
+</node>
+</node>
+<node COLOR="#ff0000" CREATED="1461976273313" ID="ID_1730497327" MODIFIED="1461980856386" TEXT="Sztochasztikus m&#xe1;trixok">
+<node COLOR="#ff0000" CREATED="1461980788323" ID="ID_1869578339" MODIFIED="1461980856162" TEXT="A nemnegat&#xed;v vektort sztochasztikusnak nevezz&#xfc;k, ha koordin&#xe1;t&#xe1;inak &#xf6;sszege 1 (azaz 1-norm&#xe1;ja 1). A nemnegat&#xed;v A m&#xe1;trix sztochasztikus, ha minden oszlopvektora szochasztikus. (Sorsztochasztikus, ha minden sora)">
+<node CREATED="1461980860891" ID="ID_958659633" MODIFIED="1461980894745" TEXT="Ha A &#xe9;s v sztochasztikus, akor u=A*v is"/>
+<node CREATED="1461980896802" ID="ID_868700443" MODIFIED="1461980916395" TEXT="sztochasztikus m&#xe1;trixok szorzata sztochasztikus m&#xe1;trix."/>
+<node CREATED="1461980919506" ID="ID_274638058" MODIFIED="1461980951033" TEXT="Az A m&#xe1;trix pontosan akkor szochasztikus, ha A-nak az 1 vektor bal saj&#xe1;tvektora 1 saj&#xe1;t&#xe9;rt&#xe9;kkel"/>
+</node>
+<node COLOR="#006699" CREATED="1461980954602" ID="ID_1292566019" MODIFIED="1461981122250" TEXT="Ha S sztochasztikus m&#xe1;trix, akkor">
+<node COLOR="#006699" CREATED="1461980967027" ID="ID_268832627" MODIFIED="1461981122041" TEXT="lambda = 1 egy saj&#xe1;t&#xe9;rt&#xe9;k"/>
+<node COLOR="#006699" CREATED="1461981021450" ID="ID_376100238" MODIFIED="1461981123354" TEXT="a spektr&#xe1;lsugara 1, &#xe9;s"/>
+<node COLOR="#006699" CREATED="1461981030147" ID="ID_34113914" MODIFIED="1461981123076" TEXT="ha S primit&#xed;v, akkor lambda != 1 eset&#xe9;n absz (lambda) &lt; 1"/>
+</node>
+<node CREATED="1461981081210" ID="ID_457717831" MODIFIED="1461981089297" TEXT="Dupl&#xe1;n sztochasztikus m&#xe1;trixok">
+<node COLOR="#ff0000" CREATED="1461981092154" ID="ID_827006221" MODIFIED="1461981117916" TEXT="Dupl&#xe1;n sztochasztikus ha sor &#xe9;s oszlopsztochasztikus is">
+<node CREATED="1461981124675" ID="ID_961843139" MODIFIED="1461981136521" TEXT="szorzatuk is az"/>
+<node CREATED="1461981137411" ID="ID_1426427957" MODIFIED="1461981149235" TEXT="minden permut&#xe1;ci&#xf3;m&#xe1;trix dupl&#xe1;n sztochasztikus"/>
+<node CREATED="1461981161570" ID="ID_172510625" MODIFIED="1461981191073" TEXT="Ha U = [u_ij] unit&#xe9;r akkor A = absz(u_ij)^2 dupl&#xe1;n sztochasztikus"/>
+</node>
+<node COLOR="#006699" CREATED="1461981298019" ID="ID_1585463235" MODIFIED="1461981351683" TEXT="Frobenius-K&#x151;nig t&#xe9;tel">
+<node COLOR="#006699" CREATED="1461981307154" ID="ID_1970616246" MODIFIED="1461981351892" TEXT="Az n-edrend&#x171; A m&#xe1;trixban pontosan akkor eleme minden k&#xed;gyonak a 0, ha A r&#xe9;szm&#xe1;tricai kozt van olyan s * t m&#xe9;ret&#x171; z&#xe9;rusm&#xe1;trix, hogy s+t = n+1"/>
+<node CREATED="1461981353027" ID="ID_150956991" MODIFIED="1461981374780" TEXT="Minden dupl&#xe1;n sztochasztikus m&#xe1;trixban van legal&#xe1;bb egy k&#xed;gy&#xf3; melynek minden eleme pozit&#xed;v"/>
+</node>
+<node COLOR="#006699" CREATED="1461981377379" ID="ID_1797709927" MODIFIED="1461981384251" TEXT="Birkhoff-t&#xe9;tel">
+<node CREATED="1461981384459" ID="ID_114491158" MODIFIED="1461981429694" TEXT="Minden n -edrend&#x171; dupl&#xe1;n szto chasztikus m&#xe1;trix el&#x151;&#xe1;ll permut&#xe1;ci&#xf3;m&#xe1;trixok konvex line&#xe1;ris kombin&#xe1;ci&#xf3;jak&#xe9;nt, azaz a dupl&#xe1;n szto chasztikus m&#xe1;trixok az R^n*n t&#xe9;rben olyan konvex poli&#xe9;dert alkotnak, melynek cs&#xfa;csai a permut&#xe1;ci&#xf3;m&#xe1;trixok."/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1461976149057" ID="ID_1560831818" MODIFIED="1461976166340" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
