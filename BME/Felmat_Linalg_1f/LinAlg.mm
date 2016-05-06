@@ -65,7 +65,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459156654325" FOLDED="true" ID="ID_337565563" MODIFIED="1459161461662" TEXT="Algebrai strukt&#xfa;r&#xe1;k">
+<node CREATED="1459156654325" ID="ID_337565563" MODIFIED="1462016003392" TEXT="Algebrai strukt&#xfa;r&#xe1;k">
 <node CREATED="1459160563256" ID="ID_1934438310" MODIFIED="1459160568855" TEXT="Test &#xe9;s gy&#x171;r&#x171;">
 <node COLOR="#006699" CREATED="1459160629951" ID="ID_1163561122" MODIFIED="1459160672701" TEXT="Egy legal&#xe1;bb k&#xe9;telem&#x171; halmazt testnek nevez&#xfc;nk, ha">
 <node COLOR="#006699" CREATED="1459160673934" ID="ID_1523356914" MODIFIED="1459160747182" TEXT="&#xe9;rtelmezve van F elemp&#xe1;rjain egy &#xf6;sszead&#xe1;s &#xe9;s szorz&#xe1;s nev&#x171; bin&#xe1;ris m&#x171;velet"/>

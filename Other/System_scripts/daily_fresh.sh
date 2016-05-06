@@ -1,5 +1,5 @@
 #!/bin/bash
 
-date > Time_stamp
+date > $PWD/Time_stamp
 
-./commit.sh "Daily Refresh on timestamp"
+#$PWD/commit.sh "Daily Refresh on timestamp"
