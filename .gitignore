@@ -1,6 +1,7 @@
 ### Pictures ###
 *.jpg
 *.png
+*.eps
 
 ### LaTex ###
 *.pdf
@@ -27,3 +28,6 @@ Elte/Prog_1f/hf2/hf2_RJBSCJ/bin/
 ### Any kind of archive file ###
 *.zip
 *.tar.gz
+
+### Any kind of swap files ###
+*.swp
