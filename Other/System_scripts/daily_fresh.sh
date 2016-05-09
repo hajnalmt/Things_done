@@ -1,5 +1,5 @@
 #!/bin/bash
 
-date > $PWD/Time_stamp
+date > /home/hunolulu/Repos_Mate/Things_done/Other/System_scripts/Time_stamp
 
-#$PWD/commit.sh "Daily Refresh on timestamp"
+/home/hunolulu/Repos_Mate/Things_done/Other/System_scripts/commit.sh "Daily Refresh on timestamp"
