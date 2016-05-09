@@ -142,7 +142,7 @@ info "Freemind installed and added o PATH"
 
 # Git Settings, change it to yours
 git config --global user.name "Hajnal Máté"
-git config --global user.email hajnalmt@gmail.com
+git config --global user.email "hajnalmt@gmail.com"
 git config --global core.editor subl
 git config --global push.default simple
 info "Git is configured"
