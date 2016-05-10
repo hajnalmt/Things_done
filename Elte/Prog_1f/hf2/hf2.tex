@@ -1,0 +1,71 @@
+% Készítette: Hajnal Máté
+% Az Elte Programtervező Informatikus szakához tartozó Programozás tantárgyhoz tartozó házi feladatom.
+% A feladatok közül a 11-es
+
+\documentclass[12pt,a4paper]{article}			%Article dokumentum
+\usepackage[utf8]{inputenc}						%UTF-8-as kódolás
+\usepackage{t1enc}								%Furcsa betűk
+\usepackage{fancyhdr}							%For footer and header
+
+%LANGUAGE-FONT
+%texlive-lang-hungarian package should be installed!
+\usepackage[english,magyar]{babel}				%Magyar nyelv 
+\usepackage{mathptmx}							%Times New Roman font
+\usepackage[shortlabels]{enumitem}							%For enumerations
+\usepackage{url}								%For URL-s
+\usepackage[headheight=56pt]{geometry}			%For the heading gap
+
+%MATHEMATICAL EXPRESSIONS
+\usepackage[fleqn]{amsmath}						%Mathematical expressions
+\usepackage{amsfonts}							%Mathematical fonts
+\usepackage{bm}									%Bolding
+
+%TABLES, TABULATING, DRAWING
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{stuki}
+
+%HEADER
+\sloppy
+\fancyhead{}
+\fancyhead[C]{\textbf{1.beadandó feladat/11.feladat}}
+\fancyhead[R]{\today}
+\fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
+\pagestyle{fancy}
+
+%Fejezet stílus deklaráció
+\newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{5mm}}}}
+
+%DOCUMENT
+\begin{document}
+	\pagenumbering{arabic}
+	
+	%% Feladat fejezet %%
+	\fejezet{Feladat}\\
+	\textit{Egy étteremben a pincérek által felvett rendeléseket egy szekvenciális input fájlban tartják nyilván az ételek neve, azon belül a rendelések időpontja szerint rendezett formában. Feltehetjük, hogy a fájl nem üres. A tárolt adatok: a rendelt étel neve, a rendelés időpontja, rendelt adagok száma, egy adag ára. Melyik étel hozta az étteremnek a legtöbb bevételt (összesített darab*egységár)?}
+	\vspace{5mm}
+
+	%% Specifikáció fejezet %%
+	\fejezet{Specifikáció}\\
+	A feladat állapottere többféleképpen felírható
+	% A feladat állapottere
+	\begin{flalign*}
+		A=(f:Infile(&\mathbb{K}),~cout:Outfile(\mathbb{K}))\\
+		A=(f:Infile(&Sor),~cout:Outfile(Sor))\\
+		A=(f:Infile(&Rendeles), cout:String)\\
+		&Rendeles=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
+	\end{flalign*}
+	Számunkra a legideálisabb rendelés nevű rekordokkal dolgozni egy felsorolóban. A feladat szempontjából az a legegyszerűbb ha két részfeladatban oldjuk meg. Az első részben egy szekvenciális input fájlban összegezzük minden ételre a bevételt, a másodikban megkeressük a maximumbevételt hozót. Tehát egy összegzésről és egy maximum keresésről van szó.  
+	% Összegzés, összefűzés
+	\begin{flalign*}
+	A=(t:Infile(Rendeles_1),~cout:Outfile(&Rendeles_2))\\
+	Rendeles_1=\textbf{rec}(nev:String,& ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
+	&Rendeles_2=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
+	Ef=(t=t'~\wedge~|t'||>0~\wedge~t.azon\downarrow(t.ido\downarrow))\\
+	Uf=((max, elem.nev)=\max_{e\in t'}{e.ar*e.adag})\\
+	\end{flalign*}	
+	
+\end{document}
