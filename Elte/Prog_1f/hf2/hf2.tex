@@ -58,16 +58,66 @@
 		A=(f:Infile(&Rendeles), cout:String)\\
 		&Rendeles=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
 	\end{flalign*}
-	Számunkra a legideálisabb rendelés nevű rekordokkal dolgozni egy felsorolóban. A feladatot két részfeladatra bontással oldjuk meg. Az első részben egy szekvenciális input fájlban összegezzük minden ételre a bevételt ezt ki is írjuk egy szekvenciális inputfájlba, a másodikban megkeressük a maximumbevételt hozót. Tehát egy összegzésről és egy maximum keresésről van szó.\\
+	Számunkra a legideálisabb rendelés nevű rekordokkal dolgozni egy felsorolóban. A feladatot két részfeladatra bontással oldjuk meg. Az első részben egy szekvenciális input fájlban összegezzük minden ételre a bevételt ezt ki is írjuk egy szekvenciális inputfájlba, a másodikban megkeressük a maximumbevételt hozót. Tehát egyfelsorolókra való összegzésről (azon belül is egy sima összegzésről) és egy maximum keresésről van szó.\\
 	% Összegzés, összefűzés
 	Az összegzés:
 	\begin{flalign*}
-	&A=(t:Enor(Rendeles_1),~cout:Enor(Rendeles_2))\\
+	&A=(x:Enor(Rendeles_1),~y:Enor(Rendeles_2))\\
 	&\hspace{25mm}Rendeles_1=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
 	&\hspace{60mm}Rendeles_2=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
-	&Ef=(t=t'~\wedge~|t'|>0~\wedge~t.azon\uparrow(t.ido\uparrow))\\
-	&Uf=((y = \bigoplus_{e\in t'} <(bevetel,~elso.nev)=\sum\limits_{e\in t'~\wedge~elso.nev = e.nev}{(e.ar*e.adag)}~\wedge~\\
-	&~\wedge~elso.nev\neq e.nev\rightarrow elso.nev=e.nev >\\
+	&Ef=(x=x'~\wedge~|x'|>0~\wedge~x.azon\uparrow(x.ido\uparrow))\\
+	&Uf=(y=\bigoplus_{e\in x'} <(bevetel,~elso.nev)=\sum\limits_{e\in x'~\wedge~elso.nev = e.nev}{(e.ar*e.adag)}~\wedge~\\
+	&~\wedge~elso.nev\neq e.nev\rightarrow elso.nev=e.nev >)
 	\end{flalign*}	
+	A maximumkeresés:
+	\begin{flalign*}
+	&A=(y:Enor(Rendeles_2),~cout:String,~max:\mathbb{N},~elem:Rendeles_2)\\
+	&Ef=(y=y'~\wedge~|y'|>0~\wedge~y.azon\uparrow)\\
+	&Uf=((max,~elem)=\max_{e\in y'}{(e.bevetel)}~\wedge~cout=elem.nev)
+	\end{flalign*}
+	\newpage
+	%% Absztrakt prgram fejezet %%
+	\fejezet{Absztrakt~program}\\
+	\begin{center}
+	\begin{tabular}{|lll|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Maximum~keresés}}\\
+		\hline
+		t & $\sim$ & \textit{Rendelések bevételeivel való felsorolója}\\
+		+,0 & $\sim$~ & \textit{+,0}\\
+		f(e) & $\sim$ & \textit{e.bevetel}\\
+		\hline
+	\end{tabular}
+
+	\noindent\hfill
+		\begin{stuki}[12cm]
+			\stm{t.First()}
+			\stm{max,~elem:=t.Current().bevetel,~t.Current()}
+			\stm{t.Next()}
+			\begin{WHILE}{4}{\stm{\lnot t.End()}}
+				\begin{IF}[70]{2}{\stm{t.Current().bevetel>max}}
+					\stm{max,~elem:=t.Current().bevetel,~t.Current()}
+				\ELSE
+					\stm{SKIP}
+				\end{IF}
+				\stm{t.Next()}
+			\end{WHILE}
+			\stm{cout:=elem.nev}
+		\end{stuki}
+		\vspace{5mm}
+	Rendelések bevételeivel való felsorolója:
+	\begin{tabular}{|l|l|}
 	
+	\end{tabular}
+
+	\begin{tabular}{|lll|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Összegzés~keresés}}\\
+		\hline
+		t & $\sim$ & \textit{Rendelések bevételeivel való felsorolója}\\
+		+,0 & $\sim$~ & \textit{+,0}\\
+		f(e) & $\sim$ & \textit{e.bevetel}\\
+		\hline
+	\end{tabular}
+	\end{center}
 \end{document}
