@@ -58,14 +58,16 @@
 		A=(f:Infile(&Rendeles), cout:String)\\
 		&Rendeles=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
 	\end{flalign*}
-	Számunkra a legideálisabb rendelés nevű rekordokkal dolgozni egy felsorolóban. A feladat szempontjából az a legegyszerűbb ha két részfeladatban oldjuk meg. Az első részben egy szekvenciális input fájlban összegezzük minden ételre a bevételt, a másodikban megkeressük a maximumbevételt hozót. Tehát egy összegzésről és egy maximum keresésről van szó.  
+	Számunkra a legideálisabb rendelés nevű rekordokkal dolgozni egy felsorolóban. A feladatot két részfeladatra bontással oldjuk meg. Az első részben egy szekvenciális input fájlban összegezzük minden ételre a bevételt ezt ki is írjuk egy szekvenciális inputfájlba, a másodikban megkeressük a maximumbevételt hozót. Tehát egy összegzésről és egy maximum keresésről van szó.\\
 	% Összegzés, összefűzés
+	Az összegzés:
 	\begin{flalign*}
-	A=(t:Infile(Rendeles_1),~cout:Outfile(&Rendeles_2))\\
-	Rendeles_1=\textbf{rec}(nev:String,& ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
-	&Rendeles_2=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
-	Ef=(t=t'~\wedge~|t'||>0~\wedge~t.azon\downarrow(t.ido\downarrow))\\
-	Uf=((max, elem.nev)=\max_{e\in t'}{e.ar*e.adag})\\
+	&A=(t:Enor(Rendeles_1),~cout:Enor(Rendeles_2))\\
+	&\hspace{25mm}Rendeles_1=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
+	&\hspace{60mm}Rendeles_2=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
+	&Ef=(t=t'~\wedge~|t'|>0~\wedge~t.azon\uparrow(t.ido\uparrow))\\
+	&Uf=((y = \bigoplus_{e\in t'} <(bevetel,~elso.nev)=\sum\limits_{e\in t'~\wedge~elso.nev = e.nev}{(e.ar*e.adag)}~\wedge~\\
+	&~\wedge~elso.nev\neq e.nev\rightarrow elso.nev=e.nev >\\
 	\end{flalign*}	
 	
 \end{document}

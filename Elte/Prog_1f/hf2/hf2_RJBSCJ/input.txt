@@ -1,9 +1,7 @@
-
-
-Elmewnt alma hawza alwma
-alma találwta sowha
-
-hal neve Wanda
-
-
-almwafaw
+kaja 2104 6 250
+kaja 2122 5 120
+kaja 2123 3 120
+kaja 2210 2 120
+kaja 2312 6 120
+kaja 2356 1 120
+kajb 1011 2 15000
