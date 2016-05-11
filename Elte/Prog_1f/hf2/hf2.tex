@@ -100,52 +100,43 @@
 	\textbf{Rendelések bevételeivel való felsorolója:}
 	\vspace{5mm}\\
 		\begin{tabular}{|l|l|}
-		\hline
-		\textit{enor(Rendeles)}& \textit{First(),Next(),Current(),End()}\\
-		\hline
-		\textit{f:Infile(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$) }& \textit{First()$\sim$ akt.nev=f:read.ido, akt.bevetel=}\\
-		\textit{nev:String,st:Status} & \textit{=f:read.adag*f:read.ar, st, f:read; Next}\\
-		\textit{akt:Rendeles} & \textit{Next()$\sim$ lsd.külön}\\
-		\textit{elso:String }&\textit{Current()$\sim$ akt}\\
-		&\textit{End() $\sim$ st=abnorm}\\
-		\hline
+			\hline
+			\textit{enor(Rendeles)}& \textit{First(),Next(),Current(),End()}\\
+			\hline
+			\textit{f:Infile(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$) }& \textit{First()$\sim$ st, $akt_f$, f:read;}\\
+			\textit{st:Status} & \textit{akt.nev=$akt_f.nev$, akt.bevetel=$akt_f.adag*akt_f.ar$}\\
+			\textit{elso:String} & \textit{elso=akt.nev; Next()}\\
+			\textit{akt:Rendeles} & \textit{Next()$\sim$ lsd.külön}\\
+			\textit{$akt_f$:rec(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$)} & \textit{Current()$\sim$ akt}\\
+			&\textit{End() $\sim$ st=abnorm}\\
+			\hline
 		\end{tabular}
 	\vspace{5mm}\\
-	\indent A First művelettel beolvastunk a szekvenciális input fájlunkból egy elemet, úgy hogy az input fájlból az idő parametert eldobtuk, a név paramétert pedig elmentettük az akt rendelés neveként, az adag és ar szorzatát pedig a bevételeként. Ezen kívül még csinál egy mentést az elso nevű változóba. Elmenti az első aktuális nevét.
-	\indent Next művelet esetünkben
+	\indent A First művelettel beolvastunk a szekvenciális input fájlunkból egy rendelés elemet, melyet az $akt_f$ rekordban tárolunk a státusz jelzéssel együtt \\
+	\indent A Next művelet esetünkben több feladatot, kell ellásson. Ahhoz, hogy a felsorolás megvalósuljon, addig kell olvasson a szekvenciális input fájlból, amít a rendelés nevek megegyeznek, vagy véget nem ér a fájl. Ezen kívül összegeznie kell az adag*ár értékeket az azonos nevű rendeléseknél. Tehát, ahogy az $akt_f$-be olvassuk az értékeket az aktuális felsoroló elem bevétel nevű változóját növelgetjük az adag*ár értékekkel. Hogyha egy új nevű rendelést olvastunk be, akkor az első változót még al kell tárolnunk
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Az összegzés:
-	\begin{flalign*}
-	&A=(x:Enor(Rendeles_1),~y:Enor(Rendeles_2))\\
-	&\hspace{25mm}Rendeles_1=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
-	&\hspace{60mm}Rendeles_2=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
-	&Ef=(x=x'~\wedge~|x'|>0~\wedge~x.azon\uparrow(x.ido\uparrow))\\
-	&Uf=(y=\bigoplus_{e\in x'} <(bevetel,~elso.nev)=\sum\limits_{e\in x'~\wedge~elso.nev = e.nev}{(e.ar*e.adag)}~\wedge~\\
-	&~\wedge~elso.nev\neq e.nev\rightarrow elso.nev=e.nev >)
+	\begin{flalign*}	
+	&A^{Next}=(f:Infile(nev:String,ido:\mathbb{N},adag:\mathbb{N},ar:\mathbb{N}),elso:String,st:Status,\\
+	&\hspace{30mm}act_f:rec(nev:String,ido:\mathbb{N},adag:\mathbb{N},ar:\mathbb{N}),akt:Rendeles)\\
+	&Ef^{Next}=(f=f^1~\wedge~elso=elso^1~\wedge~st=st^1~\wedge~akt=akt^1)~\wedge~akt_f=akt_f^1)\\
+	&Uf^{Next}=(st^2,{akt_f}^2,f^2)=((akt.nev,akt.bevetel)=\sum\limits_{akt_f\in {akt_f}^1,f^1}^{elso=akt_f.nev \wedge st=norm}{(akt_f.nev,} \\
+	&\hspace{10mm}akt.bevetel+akt_f.adag*akt_f.ar)~\wedge\\
+	&\hspace{10mm}(st=norm\rightarrow elso=akt.bevetel\\
+	&\hspace{30mm}\wedge~akt.bevetel^2=akt_f.adag*akt_f.ar\\
+	&\hspace{30mm}\wedge~akt.nev^2=akt_f.nev)
 	\end{flalign*}	
-	
-	\begin{center}
-	\begin{tabular}{|lll|}
-		\hline
-		\multicolumn{3}{|c|}{\textbf{Összegzés~keresés}}\\
-		\hline
-		t & $\sim$ & \textit{Rendelések bevételeivel való felsorolója}\\
-		+,0 & $\sim$~ & \textit{+,0}\\
-		f(e) & $\sim$ & \textit{e.bevetel}\\
-		\hline
-	\end{tabular}
-	\end{center}
+
+	\noindent\hfill
+		\begin{stuki}[12cm]
+			\begin{IF}[70]{2}{\stm{st=norm}}
+				\stm{elso,akt.bevetel=akt.nev,akt_f.adag*akt_f.ar}
+			\ELSE
+				\stm{SKIP}
+			\end{IF}
+			\begin{WHILE}{2}{\stm{elso=akt_f.nev \wedge st=norm}}			
+				\stm{st,akt_f,f:read}
+				\stm{akt.nev,akt.bevetel:=akt_f.nev,akt.bevetel+akt_f.adag*akt_f.ar}
+			\end{WHILE}
+		\end{stuki}
+		\vspace{5mm}
 \end{document}
