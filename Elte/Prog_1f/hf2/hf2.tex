@@ -112,18 +112,18 @@
 			\hline
 		\end{tabular}
 	\vspace{5mm}\\
-	\indent A First művelettel beolvastunk a szekvenciális input fájlunkból egy rendelés elemet, melyet az $akt_f$ rekordban tárolunk a státusz jelzéssel együtt \\
-	\indent A Next művelet esetünkben több feladatot, kell ellásson. Ahhoz, hogy a felsorolás megvalósuljon, addig kell olvasson a szekvenciális input fájlból, amít a rendelés nevek megegyeznek, vagy véget nem ér a fájl. Ezen kívül összegeznie kell az adag*ár értékeket az azonos nevű rendeléseknél. Tehát, ahogy az $akt_f$-be olvassuk az értékeket az aktuális felsoroló elem bevétel nevű változóját növelgetjük az adag*ár értékekkel. Hogyha egy új nevű rendelést olvastunk be, akkor az első változót még al kell tárolnunk
+	\indent A First művelettel beolvastunk a szekvenciális input fájlunkból egy rendelés elemet, melyet az $akt_f$ rekordban tárolunk. A beolvasás sikerességét a státusz jelzés jelzi nekünk. \\
+	\indent A Next művelet több feladatot, kell ellásson. Addig kell olvasson a szekvenciális input fájlból, amíg a rendelés nevek megegyeznek, vagy véget nem ér a fájl. Ehhez először egy elso nevű változóban eltároljuk az aktuális rendelés nevét, továbbá ehhez hasonlóan egy akt nevű változóban eltároljuk a szükséges rendelés paramétereket, (név és bevétel=adag*ár). Az összegzést, úgy valósítjuk meg, hogy az $akt_f$-be beolvasott input fájl értékek segítségével (az adag*ár értékekkel) az aktuális felsoroló elem $akt$ bevétel nevű változóját növelgetjük. A ciklus akkor marad abba, ha a beolvasás nem sikerült, vagy új rendelésünk van.
 
 	\begin{flalign*}	
 	&A^{Next}=(f:Infile(nev:String,ido:\mathbb{N},adag:\mathbb{N},ar:\mathbb{N}),elso:String,st:Status,\\
 	&\hspace{30mm}act_f:rec(nev:String,ido:\mathbb{N},adag:\mathbb{N},ar:\mathbb{N}),akt:Rendeles)\\
-	&Ef^{Next}=(f=f^1~\wedge~elso=elso^1~\wedge~st=st^1~\wedge~akt=akt^1)~\wedge~akt_f=akt_f^1)\\
-	&Uf^{Next}=(st^2,{akt_f}^2,f^2)=((akt.nev,akt.bevetel)=\sum\limits_{akt_f\in {akt_f}^1,f^1}^{elso=akt_f.nev \wedge st=norm}{(akt_f.nev,} \\
-	&\hspace{10mm}akt.bevetel+akt_f.adag*akt_f.ar)~\wedge\\
-	&\hspace{10mm}(st=norm\rightarrow elso=akt.bevetel\\
-	&\hspace{30mm}\wedge~akt.bevetel^2=akt_f.adag*akt_f.ar\\
-	&\hspace{30mm}\wedge~akt.nev^2=akt_f.nev)
+	&Ef^{Next}=(f=f^1~\wedge~st=st^1~\wedge~akt_f=akt_f^1)\\
+	&Uf^{Next}=((st=norm\rightarrow elso=akt_f^1.nev\\
+	&\hspace{30mm}\wedge~akt.bevetel^2=akt_f^1.adag*akt_f^1.ar\\
+	&\hspace{30mm}\wedge~akt.nev^2=akt_f^1.nev)~\wedge~\\
+	&(st^2,{akt_f}^2,f^2)=((akt.nev,akt.bevetel)=\sum\limits_{akt_f\in {akt_f}^1,f^1}^{elso=akt_f.nev \wedge st=norm}{(akt_f.nev,} \\
+	&\hspace{10mm}akt.bevetel+akt_f.adag*akt_f.ar)\\
 	\end{flalign*}	
 
 	\noindent\hfill
@@ -139,4 +139,6 @@
 			\end{WHILE}
 		\end{stuki}
 		\vspace{5mm}
+	%% Absztrakt prgram fejezet %%
+	\fejezet{Implementáció}		
 \end{document}
