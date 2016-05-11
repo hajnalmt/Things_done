@@ -62,10 +62,10 @@
 	% Összegzés, összefűzés
 	A maximumkeresés:
 	\begin{flalign*}
-	&A=(y:Enor(Rendeles),~cout:String,~max:\mathbb{N},~elem:Rendeles)\\
+	&A=(t:Enor(Rendeles),~cout:String,~max:\mathbb{N},~elem:Rendeles)\\
 	&\hspace{25mm}Rendeles=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
-	&Ef=(y=y'~\wedge~|y'|>0~\wedge~y.azon\uparrow)\\
-	&Uf=((max,~elem)=\max_{e\in y'}{(e.bevetel)}~\wedge~cout=elem.nev)
+	&Ef=(t=t'~\wedge~|t'|>0~\wedge~t.azon\uparrow)\\
+	&Uf=((max,~elem)=\max_{e\in t'}{(e.bevetel)}~\wedge~cout=elem.nev)
 	\end{flalign*}
 	%% Absztrakt prgram fejezet %%
 	\fejezet{Absztrakt~program}
@@ -103,12 +103,11 @@
 			\hline
 			\textit{enor(Rendeles)}& \textit{First(),Next(),Current(),End()}\\
 			\hline
-			\textit{f:Infile(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$) }& \textit{First()$\sim$ st, $akt_f$, f:read;}\\
-			\textit{st:Status} & \textit{akt.nev=$akt_f.nev$, akt.bevetel=$akt_f.adag*akt_f.ar$}\\
-			\textit{elso:String} & \textit{elso=akt.nev; Next()}\\
-			\textit{akt:Rendeles} & \textit{Next()$\sim$ lsd.külön}\\
-			\textit{$akt_f$:rec(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$)} & \textit{Current()$\sim$ akt}\\
-			&\textit{End() $\sim$ st=abnorm}\\
+			\textit{f:Infile(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$) }& \textit{First()$\sim$ st, $akt_f$, f:read;Next()}\\
+			\textit{st:Status} & \textit{Next()$\sim$ lsd.külön}\\
+			\textit{elso:String} & \textit{Current()$\sim$ akt}\\
+			\textit{akt:Rendeles} & \textit{End() $\sim$ st=abnorm}\\
+			\textit{$akt_f$:rec(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$)} & \\
 			\hline
 		\end{tabular}
 	\vspace{5mm}\\
@@ -129,7 +128,8 @@
 	\noindent\hfill
 		\begin{stuki}[12cm]
 			\begin{IF}[70]{2}{\stm{st=norm}}
-				\stm{elso,akt.bevetel=akt.nev,akt_f.adag*akt_f.ar}
+				\stm{elso,akt.nev,akt.bevetel=\\
+					akt_f.nev,akt_f.nev,akt_f.adag*akt_f.ar}
 			\ELSE
 				\stm{SKIP}
 			\end{IF}

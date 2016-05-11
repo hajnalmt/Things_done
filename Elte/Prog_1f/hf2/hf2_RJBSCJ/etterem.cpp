@@ -25,17 +25,18 @@ using namespace std;
 //              Ennek segítségével a a megfogalmazott kiválogatás elvégezhetõ.
 int main()
 {
-    Enor1 x("input.txt");
-    string max_nev;
-    string max_bevetel;
-    for(x.First();!x.End();x.Next()){
-        Bekezdes e = t.Current();
-        if(e.jo) cout << e.sorsz << ":\t" << (float)e.db/(float)e.ossz << endl;
+    Enor t("input.txt");
+
+    t.First();
+    unsigned int max=t.Current().bevetel;
+    Rendeles elem=t.Current();
+
+    for(;!t.End();t.Next()){
+        if(t.Current().bevetel>max){
+            max=t.Current().bevetel;
+            elem=t.Current();
+        }
     }
-    for(y.First();!y.End();y.Next()){
-        Bekezdes e = t.Current();
-        if(e.jo) cout << e.sorsz << ":\t" << (float)e.db/(float)e.ossz << endl;
-    }
-    cout "A legtobb bevetelt hozo etel neve" << max_nev << endl;
+    cout << "A legtobb bevetelt hozo etel neve" << elem.nev << endl;
     return 0;
 }

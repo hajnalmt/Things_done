@@ -18,7 +18,7 @@ using namespace std;
 //Kimenõ adatok:alapértelmezett felsoroló
 //Tevékenység:	Megnyitja a felsoroló hátterében levõ szöveges állományt olvasásra
 //              inicializálja a bekezdések sorszámozását
-Enor::Enor_1(const string &str)
+Enor::Enor(const string &str)
 {
     f.open(str.c_str());
     if(f.fail()){
@@ -26,15 +26,7 @@ Enor::Enor_1(const string &str)
         exit(1);
     }
 }
-//Mindkét felsorolóra ugyanaz
-Enor::Enor_2(const string &str)
-{
-    f.open(str.c_str());
-    if(f.fail()){
-        cout << "Nem lehet megnyitni az inputfajlt!\n";
-        exit(1);
-    }
-}
+
 
 //Feladat: 		A felsoroló Next() mûvelete.
 //Bemenõ adatok:alapértelmezett felsoroló
@@ -47,7 +39,16 @@ Enor::Enor_2(const string &str)
 //              Egy soron belül felsoroltatja a szavakat, amelyekben 'w' betût a find() függvénnyel keres.
 void Enor::Next()
 {
-
+    if(st=norm) {
+        elso=akt_f.nev;
+        akt.nev=akt_f.nev;
+        akt.bevetel=akt_f.adag*akt_f.ar;
+    }
+    while(elso==akt_f.nev && st ==norm){
+        Read();
+        akt.nev=akt_f.nev;
+        akt.bevetel=akt.bevetel+akt_f.adag*akt_f.ar;
+    }
 }
 
 //Feladat: 		folyó szöveg beolvasása.
@@ -55,27 +56,15 @@ void Enor::Next()
 //Kimenõ adatok:alapértelmezett felsoroló
 //Tevékenység:	Olvas egy újabb rendelést olvas be a szöveges állományból,
 //              ha nem sikerül az olvasás státuszát abnorm-ra állítja, különben norm-ra
-//              a beolvasott sort istringstream objektumba helyezi.
-void Enor1::Read()
+
+void Enor::Read()
 {
     if(!f.fail() || !f.eof()){
         st = norm;
-        x >> akt.nev;
-        x >> akt.ido;
-        x >> akt.adag;
-        x >> akt.ar;
-    }
-    else st = abnorm;
-}
-//Mindkét felsorolóra ugyanaz
-void Enor2::Read()
-{
-    if(!f.fail() || !f.eof()){
-        st = norm;
-        x >> akt.nev;
-        x >> akt.ido;
-        x >> akt.adag;
-        x >> akt.ar;
+        f >> akt_f.nev;
+        f >> akt_f.ido;
+        f >> akt_f.adag;
+        f >> akt_f.ar;
     }
     else st = abnorm;
 }
