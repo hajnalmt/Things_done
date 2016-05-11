@@ -58,17 +58,17 @@
 		A=(f:Infile(&Rendeles), cout:String)\\
 		&Rendeles=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
 	\end{flalign*}
-	Számunkra a legideálisabb már egy olyan felsorolón dolgozni, ami rendelés nevű rekordokat dolgozni, melyek a rendelések nevét és hozzájuk tartozó bevételeket tartalmazzák. Erre a felsorolóra kell nekünk egy maximum keresést írni.\\
+	Számunkra a legideálisabb rendelés nevű rekordokkal dolgozni egy felsorolóban. A feladatot két részfeladatra bontással oldjuk meg. Az első részben egy szekvenciális input fájlban összegezzük minden ételre a bevételt ezt ki is írjuk egy szekvenciális inputfájlba, a másodikban megkeressük a maximumbevételt hozót. Tehát egyfelsorolókra való összegzésről (azon belül is egy sima összegzésről) és egy maximum keresésről van szó.\\
 	% Összegzés, összefűzés
 	A maximumkeresés:
 	\begin{flalign*}
-	&A=(y:Enor(Rendeles),~cout:String,~max:\mathbb{N},~elem:Rendeles)\\
-	&\hspace{25mm}Rendeles=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
+	&A=(y:Enor(Rendeles_2),~cout:String,~max:\mathbb{N},~elem:Rendeles_2)\\
 	&Ef=(y=y'~\wedge~|y'|>0~\wedge~y.azon\uparrow)\\
 	&Uf=((max,~elem)=\max_{e\in y'}{(e.bevetel)}~\wedge~cout=elem.nev)
 	\end{flalign*}
+	\newpage
 	%% Absztrakt prgram fejezet %%
-	\fejezet{Absztrakt~program}
+	\fejezet{Absztrakt~program}\\
 	\begin{center}
 	\begin{tabular}{|lll|}
 		\hline
@@ -98,34 +98,20 @@
 		\end{stuki}
 		\vspace{5mm}
 	\textbf{Rendelések bevételeivel való felsorolója:}
-	\vspace{5mm}\\
-		\begin{tabular}{|l|l|}
+	\vspace{5mm}
+
+	
+	\begin{tabular}{|l|l|}
 		\hline
-		\textit{enor(Rendeles)}& \textit{First(),Next(),Current(),End()}\\
+		$enor(Rendeles) $&$ First(),Next(),Current(),End()$\\
 		\hline
-		\textit{f:Infile(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$) }& \textit{First()$\sim$ akt.nev=f:read.ido, akt.bevetel=}\\
-		\textit{nev:String,st:Status} & \textit{=f:read.adag*f:read.ar, st, f:read; Next}\\
-		\textit{akt:Rendeles} & \textit{Next()$\sim$ lsd.külön}\\
-		\textit{elso:String }&\textit{Current()$\sim$ akt}\\
-		&\textit{End() $\sim$ st=abnorm}\\
+		f:Infile(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$),nev:String,st:Státusz &$ First()\sim akt.nev=f:read.ido, akt.bevetel=f:read.adag*f:read.ar, st, f:read; Next$\\
+		$akt:Rendeles $&$ Next()\sim lsd.külön$\\
+		$elso:String $&$ Current()\sim akt$\\
+		&$ End() \sim st=abnorm$\\
 		\hline
-		\end{tabular}
-	\vspace{5mm}\\
-	\indent A First művelettel beolvastunk a szekvenciális input fájlunkból egy elemet, úgy hogy az input fájlból az idő parametert eldobtuk, a név paramétert pedig elmentettük az akt rendelés neveként, az adag és ar szorzatát pedig a bevételeként. Ezen kívül még csinál egy mentést az elso nevű változóba. Elmenti az első aktuális nevét.
-	\indent Next művelet esetünkben
-
-
-
-
-
-
-
-
-
-
-
-
-
+	\end{tabular}
+	
 
 Az összegzés:
 	\begin{flalign*}
