@@ -19,22 +19,26 @@
 \usepackage[fleqn]{amsmath}						%Mathematical expressions
 \usepackage{amsfonts}							%Mathematical fonts
 \usepackage{bm}									%Bolding
+\usepackage{libertine}%% Only as example for the romans/sans fonts
+\usepackage[scaled=0.85]{beramono}
 
 %TABLES, TABULATING, DRAWING
 \usepackage{array}
 \usepackage{tabu}
+\usepackage{mdframed}
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{tikz}
 \usepackage{stuki}
-
+\usetikzlibrary[shadows]
 %HEADER
 \sloppy
 \fancyhead{}
-\fancyhead[C]{\textbf{1.beadandó feladat/11.feladat}}
+\fancyhead[C]{\textbf{2.beadandó feladat/11.feladat}}
 \fancyhead[R]{\today}
 \fancyhead[L]{Hajnal~Máté \newline RJBSCJ \newline \url{hajnalmt@inf.elte.hu} \newline 5.csoport}
 \pagestyle{fancy}
+
 
 %Fejezet stílus deklaráció
 \newcommand{\fejezet}[1]{\noindent \textbf{\textit{\large #1 \vspace{5mm}}}}
@@ -119,26 +123,81 @@
 	&\hspace{30mm}act_f:rec(nev:String,ido:\mathbb{N},adag:\mathbb{N},ar:\mathbb{N}),akt:Rendeles)\\
 	&Ef^{Next}=(f=f^1~\wedge~st=st^1~\wedge~akt_f=akt_f^1)\\
 	&Uf^{Next}=((st=norm\rightarrow elso=akt_f^1.nev\\
-	&\hspace{30mm}\wedge~akt.bevetel^2=akt_f^1.adag*akt_f^1.ar\\
-	&\hspace{30mm}\wedge~akt.nev^2=akt_f^1.nev)~\wedge~\\
+	&\hspace{30mm}\wedge~akt.bevetel^2=0)~\wedge~\\
 	&(st^2,{akt_f}^2,f^2)=((akt.nev,akt.bevetel)=\sum\limits_{akt_f\in {akt_f}^1,f^1}^{elso=akt_f.nev \wedge st=norm}{(akt_f.nev,} \\
 	&\hspace{10mm}akt.bevetel+akt_f.adag*akt_f.ar)\\
-	\end{flalign*}	
+	\end{flalign*}
 
 	\noindent\hfill
 		\begin{stuki}[12cm]
 			\begin{IF}[70]{2}{\stm{st=norm}}
 				\stm{elso,akt.nev,akt.bevetel=\\
-					akt_f.nev,akt_f.nev,akt_f.adag*akt_f.ar}
+					akt_f.nev,0}
 			\ELSE
 				\stm{SKIP}
 			\end{IF}
-			\begin{WHILE}{2}{\stm{elso=akt_f.nev \wedge st=norm}}			
-				\stm{st,akt_f,f:read}
+			\begin{WHILE}{2}{\stm{elso=akt_f.nev \wedge st=norm}}		
 				\stm{akt.nev,akt.bevetel:=akt_f.nev,akt.bevetel+akt_f.adag*akt_f.ar}
+				\stm{st,akt_f,f:read}
 			\end{WHILE}
 		\end{stuki}
 		\vspace{5mm}
 	%% Absztrakt prgram fejezet %%
-	\fejezet{Implementáció}		
+	\fejezet{Implementáció}\\
+	Program váz: A program több állományból áll: \texttt{etterem.cpp, enor.h, enor.cpp} \\
+	\begin{center}
+	\begin{tabular} {|l|l|l|}
+		\hline
+		\textbf{etterem.cpp} & \textbf{enor.h} & \textbf{enor.cpp} \\
+		\hline
+		\texttt{int main()} & \texttt{struct} $Akt_f$ & \texttt{Enor::Read()} \\
+		& \texttt{struct Rendeles} & \texttt{Enor::Enor()} \\
+		& \texttt{Enor()} & \texttt{Enor::Next()} \\
+		& \texttt{void First()} & \\
+		& \texttt{void Next()} & \\
+		& \texttt{Rendeles Current()} & \\
+		& \texttt{bool End()} & \\
+		\hline
+	\end{tabular}
+	\end{center}
+	A függvények kapcsolódási szerkezete:\\
+	\begin{center}
+		\begin{tikzpicture}
+			[grow=right, align=center, root/.style={rectangle, draw=black, thick, drop shadow, fill=white, text width=5em, rounded corners, minimum height=2em}, leaf/.style={rectangle, draw=black, thick, drop shadow, fill=orange!40, text width=5em, rounded corners, minimum height=2em}, level distance=5cm];
+			\node [root] (main) {\textbf{main()}}
+				child {node [leaf] (current) {\textbf{Current()}}}
+				child {node [leaf] (end) {\textbf{End()}}}
+				child {node [leaf] (next) {\textbf{Next()}}
+					child {node [leaf] (readb) {\textbf{Read()}}}
+				}
+				child {node [leaf] (first) {\textbf{First()}}
+					child {node [leaf] (reada) {\textbf{Read()}}}
+				}				
+				child {node [leaf] (enor) {\textbf{Enor()}}};
+		\end{tikzpicture}\vspace{2mm}\\
+	\end{center}
+	A felsoroló osztálya\\
+		\begin{mdframed}
+			\texttt{
+			\begin{tabbing}
+			\hspace{1cm}\=\textbf{class} Enor\{ \+\\
+			    \hspace{1cm}\=\textbf{private:} \+\\
+			        \hspace{1cm}\=std::ifstream f;\+\\
+			        Status st;\\
+			        Rendeles akt;\\
+			        $Akt_f$ $akt_f$;\\
+			        std::string elso;\\
+			        \textbf{void} Read();\\
+			\-\\
+			    \textbf{public:}\+\\
+			        Enor(const std::string \&str);\\
+			        \textbf{void} First() \{Read(); Next();\}\\
+			        \textbf{void} Next();\\
+			        Rendeles Current() \textbf{const} \{ return akt;\}\\
+			        \textbf{bool} End() \textbf{const} \{ return st==abnorm;\}\-\-\\
+			\};\-\\
+			\end{tabbing}
+			}
+		\end{mdframed}
+
 \end{document}
