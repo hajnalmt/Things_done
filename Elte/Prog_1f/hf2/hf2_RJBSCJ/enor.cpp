@@ -39,15 +39,14 @@ Enor::Enor(const string &str)
 //              Egy soron belül felsoroltatja a szavakat, amelyekben 'w' betût a find() függvénnyel keres.
 void Enor::Next()
 {
-    if(st=norm) {
+    if(st==norm) {
         elso=akt_f.nev;
-        akt.nev=akt_f.nev;
-        akt.bevetel=akt_f.adag*akt_f.ar;
+        akt.bevetel=0;
     }
-    while(elso==akt_f.nev && st ==norm){
-        Read();
+    while((!elso.compare(akt_f.nev)) && (st==norm)) {
         akt.nev=akt_f.nev;
         akt.bevetel=akt.bevetel+akt_f.adag*akt_f.ar;
+        Read();
     }
 }
 
@@ -59,9 +58,9 @@ void Enor::Next()
 
 void Enor::Read()
 {
+    f >> akt_f.nev;
     if(!f.fail() || !f.eof()){
         st = norm;
-        f >> akt_f.nev;
         f >> akt_f.ido;
         f >> akt_f.adag;
         f >> akt_f.ar;

@@ -31,12 +31,13 @@ int main()
     unsigned int max=t.Current().bevetel;
     Rendeles elem=t.Current();
 
-    for(;!t.End();t.Next()){
+    for(;!t.End();){
+        t.Next();
         if(t.Current().bevetel>max){
             max=t.Current().bevetel;
             elem=t.Current();
         }
     }
-    cout << "A legtobb bevetelt hozo etel neve" << elem.nev << endl;
+    cout << "A legtobb bevetelt hozo etel neve: " << elem.nev << endl;
     return 0;
 }
