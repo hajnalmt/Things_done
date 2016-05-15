@@ -19,8 +19,8 @@
 \usepackage[fleqn]{amsmath}						%Mathematical expressions
 \usepackage{amsfonts}							%Mathematical fonts
 \usepackage{bm}									%Bolding
-\usepackage{libertine}%% Only as example for the romans/sans fonts
-\usepackage[scaled=0.85]{beramono}
+\usepackage{libertine}							%Only as example for the romans/sans fonts
+\usepackage[scaled=0.85]{beramono}				%for bolding
 
 %TABLES, TABULATING, DRAWING
 \usepackage{array}
@@ -31,6 +31,8 @@
 \usepackage{tikz}
 \usepackage{stuki}
 \usetikzlibrary[shadows]
+\setlist[enumerate]{nosep, topsep=0pt}
+
 %HEADER
 \sloppy
 \fancyhead{}
@@ -128,6 +130,17 @@
 	&\hspace{10mm}akt.bevetel+akt_f.adag*akt_f.ar)\\
 	\end{flalign*}
 
+	\begin{center}
+	\begin{tabular}{|lll|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Összegzés}}\\
+		\hline
+		+,0 & $\sim$~ & \textit{+,0}\\
+		f(e) & $\sim$ & $akt.bevetel:(akt_f.adag*akt_f.ar)$ \\
+		\hline
+	\end{tabular}
+	\end{center}
+
 	\noindent\hfill
 		\begin{stuki}[12cm]
 			\begin{IF}[70]{2}{\stm{st=norm}}
@@ -142,7 +155,7 @@
 			\end{WHILE}
 		\end{stuki}
 		\vspace{5mm}
-	%% Absztrakt prgram fejezet %%
+	%% Implementáció fejezet %%
 	\fejezet{Implementáció}\\
 	Program váz: A program több állományból áll: \texttt{etterem.cpp, enor.h, enor.cpp} \\
 	\begin{center}
@@ -176,7 +189,7 @@
 				child {node [leaf] (enor) {\textbf{Enor()}}};
 		\end{tikzpicture}\vspace{2mm}\\
 	\end{center}
-	A felsoroló osztálya\\
+	A felsoroló osztálya:\\
 		\begin{mdframed}
 			\texttt{
 			\begin{tabbing}
@@ -199,5 +212,46 @@
 			\end{tabbing}
 			}
 		\end{mdframed}
-
+		
+		\indent Az osztályon belül az input fájl tartalmát egy streamben tároljuk $(ifstream)$, melyből a beolvasás a $<<$ operátor segítségével történik. Az input fájl neve tetszőleges lehet, esetünkben az \texttt{input.txt} nevet kapta. A Read() függvény tölti fel az operátor segítségével az $akt_f$ struktúra változónkat a megfelelő értékekkel.\\
+		\indent Az aktuális rendelést az $akt$ változóban tároljuk, melynek típusa szintén egy struktúra, neve Rendeles.
+	\vspace{5mm}\\
+	%% Tesztelési terv fejezet %%
+	\fejezet{Tesztelési terv}\\
+	\indent A megoldás során két programozási tételt alkalmaztunk az összegzését és a maximum keresését is. Ebből az összegzés tétele annyiszor történik meg, ahány különböző nevű rendelés van. A tesztesetek tehát két részre bomlanak, a maximum keresés teszteseteire és az összegzés teszteseteire, előbbit az utóbbi minden permutációjára meg kell nézni.
+	\vspace{2mm}\\
+	A fekete doboz tesztesetei:
+	\renewcommand{\labelenumi}{\Alph{enumi}.}
+	\renewcommand{\labelenumii}{\arabic{enumii}.}
+	\begin{enumerate}
+		\item \textbf{Maximum keresés} tesztesetei:\\
+			\textbf{intervallum hossza} szerint
+			\begin{enumerate}
+				\item Üres állomány 
+				\item Egyetlen üres sort tartalmazó állomány
+				\item Egyetlen rendelés
+				\item Több rendelés
+			\end{enumerate}
+			\textbf{intervallum elejes és vége} szerint
+			\begin{enumerate}
+				\setcounter{enumii}{4}
+				\item Az intervallum elején van
+				\item Az intervallum közepén van 
+				\item Az intervallum végén van
+			\end{enumerate}
+		\item \textbf{Összegzés} tesztesetei
+			\begin{enumerate}
+				\setcounter{enumii}{7}
+				\item Egy elemet kell összegezni
+				\item Több elemet kell összegezni
+			\end{enumerate}
+	\end{enumerate}
+	\vspace{2mm}
+	A megoldó programra épülő (fehér doboz) tesztesek:
+	\renewcommand{\labelenumi}{\arabic{enumi}.}
+	\begin{enumerate}
+		\item Hibás vagy nem létező állománynév megadása.
+		\item Nem megfelelően kivitelezett bemeneti állomány -> nem megfelelő eredmény, de a beolvasások megtörténnek.
+	\end{enumerate}
+	Mindkét tesztesetet a feladat szerint kizárhatjuk.
 \end{document}
