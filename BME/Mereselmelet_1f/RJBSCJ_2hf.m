@@ -11,7 +11,7 @@ N=60;
 % A bázis
 c=zeros(N,N);
 for k=1:N
-    c(k,:)=(exp(1i*2*pi/(N/(k-1))*(0:N-1)));
+    c(k,:)=(exp(1j*2*pi/(N/(k-1))*(0:N-1)));
 end
 % A reciprokbázis
 %for k=1:N
@@ -67,7 +67,7 @@ stem(t,y);
 
 % Súlytényező meghatározása reciprokbázissal (jegyzet (202). képlet)
 x=g*y';
-
+disp(x);
 % Ellenőrzés
 y_check=c'*x;
 
@@ -113,8 +113,72 @@ subplot(3,1,3); plot(y2_delta); title('y és y becslő különbsége, a hibajel'
 
 %%% 5.feladat %%%
 %Zajgenerátor: Gauss eloszlású rendszerzaj+megfigyelési zaj 
-sigma_noise=1;             %A zaj szórása, állítható paraméter
+sigma_sys=1;             %A zaj szórása, állítható paraméter
+sigma_obs=0.001;
 mu_noise=0;                %A zaj várható értéke
 %normrnd függvénnyel normál eloszlású jel generálása
-noise_system = normrnd(mu_noise,sigma_noise,N,1); 
-noise_observ = normrnd(mu_noise,sigma_noise,N,1); 
+noise_sys = normrnd(mu_noise,sigma_sys,N,1); 
+noise_obs = normrnd(mu_noise,sigma_obs,N,1);
+
+%%% 6.feladat %%%
+% A jelanalizátor Kalman-prediktorrá alakítása
+% Jegyzet: 8.ea/5.oldal (175) és környéke,
+% illetve 34. ábra
+%
+% A rendszermodell: x(n+1)=Ax(n)+w(n)
+% A megfigyelés: y(n)=Cx(n)+n(n)
+% ,ahol A - A rendszermátrix
+%       C - a megfigyelési mátrix
+%
+% A Kálmán prediktor egyenletei:
+% X_b(n+1)= A*X_b(n)+G(n)*(y(n)-C*X_b(n))
+% G(n)=A*P(n)*C'*[C*P(n)*C'+R(n)]^-1
+% P(n+1)=(A-G(n)*C)*P(n)*A'+Q(n)
+% 
+%  ,ahol 
+%  P - a paraméterbecslés "kovariancia" mátrixa
+%  G - a prediktor erősítése
+%  Q, R - korrekciós mátrixok
+%   ,ahol
+%    Q=E{w(n)*w(n)'}
+%    R=E{n(n)*n(n)'}  
+%     ,ahol n - megfigyelési zaj 
+%           w - rendszerzaj
+
+% A súlybecslőnk lenullázása
+x_b = zeros(N,N);
+
+% Leállási korlát
+epsilon = 1e-4;
+diff = 1;
+
+Q = eye(N);
+C = ones(N,N);
+P = Q;
+R = 0;
+i = 0;
+G = zeros(N,N);
+% Akkor állunk le, amikor a becslő relatív változása elér egy előre
+% meghatározott értéket
+while((diff > epsilon) || (i < 3*N))
+    idx = mod(i,N)+1;
+    i = i + 1;
+    y = C(:,idx).'* x + noise_obs(idx);                 %y(n)
+    x = x + noise_sys + 1j*noise_sys;                   %x(n+1)
+    y_b(i) = C(:,idx).'* x_b(:,i);                      %y_b(n)
+    y_delta = y - y_b(i);                               %y_delta
+    R = (((sqrt(R)*(i-1)) + y_delta)/(i)).^2;           %varianca becslő
+    G(:,i) = P*C(:,idx)*inv(C(:,idx).'*P*C(:,idx) + R); %G(n)
+    x_b(:,i+1) = x_b(:,i) + G(:,i)*y_delta;             %x_b(n)
+    P = (eye(N) - G(:,i)*C(:,idx).')*P + Q;             %P(n+1)
+    Ew = x_b(:,i+1)-x_b(:,i);                           %variancia becslő
+    Q = (sqrt((sqrt(Q)*(i-1)).^2 + Ew*Ew.')/(i)).^2;
+    if(i > 1)
+        %leállási feltétel számítása
+        change = x_b(:,i) - x_b(:,i-1);
+        diff = norm(change)/norm(x_b(:,i));
+    end
+end
+
+figure(5)
+plot(real(y_b));
