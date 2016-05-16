@@ -113,9 +113,9 @@ subplot(3,1,3); plot(y2_delta); title('y és y becslő különbsége, a hibajel'
 
 %%% 5.feladat %%%
 %Zajgenerátor: Gauss eloszlású rendszerzaj+megfigyelési zaj 
-sigma_sys=1;             %A zaj szórása, állítható paraméter
+sigma_sys=0.001;             %A zajok szórásai állítható paraméterek
 sigma_obs=0.001;
-mu_noise=0;                %A zaj várható értéke
+mu_noise=0;              %A zaj várható értéke
 %normrnd függvénnyel normál eloszlású jel generálása
 noise_sys = normrnd(mu_noise,sigma_sys,N,1); 
 noise_obs = normrnd(mu_noise,sigma_obs,N,1);
@@ -145,40 +145,72 @@ noise_obs = normrnd(mu_noise,sigma_obs,N,1);
 %     ,ahol n - megfigyelési zaj 
 %           w - rendszerzaj
 
-% A súlybecslőnk lenullázása
-x_b = zeros(N,N);
 
-% Leállási korlát
-epsilon = 1e-4;
-diff = 1;
+%Q és R előállítása
+Q=noise_sys*noise_sys';
+R=noise_obs*noise_obs';
 
-Q = eye(N);
+%Az A mátrix előállítása: főátlóban zm elemek, máshol nulla
+m = 0:N-1; 
+zm = exp((2*pi*m * 1j)/N);
+A = diag(zm);
+
+%Kicsatolás mátrixa: csupa 1-es
 C = ones(N,N);
-P = Q;
-R = 0;
-i = 0;
-G = zeros(N,N);
-% Akkor állunk le, amikor a becslő relatív változása elér egy előre
-% meghatározott értéket
-while((diff > epsilon) || (i < 3*N))
-    idx = mod(i,N)+1;
-    i = i + 1;
-    y = C(:,idx).'* x + noise_obs(idx);                 %y(n)
-    x = x + noise_sys + 1j*noise_sys;                   %x(n+1)
-    y_b(i) = C(:,idx).'* x_b(:,i);                      %y_b(n)
-    y_delta = y - y_b(i);                               %y_delta
-    R = (((sqrt(R)*(i-1)) + y_delta)/(i)).^2;           %varianca becslő
-    G(:,i) = P*C(:,idx)*inv(C(:,idx).'*P*C(:,idx) + R); %G(n)
-    x_b(:,i+1) = x_b(:,i) + G(:,i)*y_delta;             %x_b(n)
-    P = (eye(N) - G(:,i)*C(:,idx).')*P + Q;             %P(n+1)
-    Ew = x_b(:,i+1)-x_b(:,i);                           %variancia becslő
-    Q = (sqrt((sqrt(Q)*(i-1)).^2 + Ew*Ew.')/(i)).^2;
-    if(i > 1)
-        %leállási feltétel számítása
-        change = x_b(:,i) - x_b(:,i-1);
-        diff = norm(change)/norm(x_b(:,i));
-    end
+G = inv(c');
+
+%X becslő init
+X_b=zeros(N,N);
+
+%Paraméterbecslő mátrix (nulladik)
+P=zeros(N);
+P=(A-G*C)*P*A'+Q;
+
+%Kálmán prediktor:
+for i = 1 : N-1
+    X_b(i+1,:)=A*X_b(i,:)'+G*(y-C*X_b(i,:)');
+    G=A*P*C'*(C*P*C'+R)^-1;
+    P=(A-G*C)*P*A'+Q;
+    
 end
 
+
+% A súlybecslőnk lenullázása
+%x_b = zeros(N,N);
+
+% Leállási korlát
+%epsilon = 1e-4;
+%diff = 1;
+
+%Q = eye(N);
+%C = ones(N,N);
+%P = Q;
+%R = 0;
+%i = 0;
+%G = zeros(N,N);
+% Akkor állunk le, amikor a becslő relatív változása elér egy előre
+% meghatározott értéket
+%while((diff > epsilon) && (i < 3*N))
+%    idx = mod(i,N)+1;
+%    i = i + 1;
+%    y = C(:,idx).'* x + noise_obs(idx);                 %y(n)
+%    x = x + noise_sys + 1j*noise_sys;                   %x(n+1)
+%    y_b(i) = C(:,idx).'* x_b(:,i);                      %y_b(n)
+%    y_delta = y - y_b(i);                               %y_delta
+%    R = (((sqrt(R)*(i-1)) + y_delta)/(i)).^2;           %varianca becslő
+%    G(:,i) = P*C(:,idx)*inv(C(:,idx).'*P*C(:,idx) + R); %G(n)
+%    x_b(:,i+1) = x_b(:,i) + G(:,i)*y_delta;             %x_b(n)
+%    P = (eye(N) - G(:,i)*C(:,idx).')*P + Q;             %P(n+1)
+%    Ew = x_b(:,i+1)-x_b(:,i);                           %variancia becslő
+%    Q = (sqrt((sqrt(Q)*(i-1)).^2 + Ew*Ew.')/(i)).^2;
+%    if(i > 1)
+        %leállási feltétel számítása
+%        change = x_b(:,i) - x_b(:,i-1);
+%        diff = norm(change)/norm(x_b(:,i));
+%    end
+%end
+
 figure(5)
-plot(real(y_b));
+plot(real(x_b));
+figure(6)
+plot(G);
