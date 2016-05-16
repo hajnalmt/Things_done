@@ -5,7 +5,7 @@ clear all
 close all
 
 % Paraméterek
-N=60;
+N=120;
 
 %%% 1. feladat %%%
 % A bázis
