@@ -39,3 +39,4 @@ BME/Mereselmelet_1f/2hf/
 ### Any kind of swap files ###
 *.swp
 *~
+.~*
