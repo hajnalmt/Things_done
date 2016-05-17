@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1458615581084" ID="ID_411259303" MODIFIED="1459156492030" TEXT="Fels&#x151;bb Matematika - Halad&#xf3; Line&#xe1;ris Algebra">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1459156487977" ID="ID_1554243761" MODIFIED="1462013719570" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
+<node CREATED="1459156487977" FOLDED="true" ID="ID_1554243761" MODIFIED="1463368976468" POSITION="right" TEXT="1) Egyenletrendszerek, vektorok (a line&#xe1;ris algebra forr&#xe1;sai)">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459156608018" ID="ID_718278855" MODIFIED="1462013721529" TEXT="Vektor">
 <node CREATED="1459156706914" ID="ID_1518623961" MODIFIED="1459156719434" TEXT="A 2 &#xe9;s 3 dimenzi&#xf3;s t&#xe9;r vektorai">
@@ -1100,7 +1100,7 @@
 <node COLOR="#006699" CREATED="1461975908583" ID="ID_1881484174" MODIFIED="1461976071866" TEXT="A eleme C^n*n spektruma {lambda i s-gi} a lambda_i saj&#xe1;t&#xe9;rt&#xe9;k algebrai multiplicit&#xe1;sa a_i, &#xe9;s A Jordan f&#xe9;le norm&#xe1;lalakj&#xe1;ban a lambda_i-hez tartoz&#xf3; legnagyobb Jordan-blokk m&#xe9;rete legyen m_i. Ekkor M&#x171;_a(x) = produktum i-&gt;s (y-lambda_i ) ^(m_i)"/>
 </node>
 </node>
-<node CREATED="1461018701094" FOLDED="true" ID="ID_673370017" MODIFIED="1461981617325" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
+<node CREATED="1461018701094" FOLDED="true" ID="ID_673370017" MODIFIED="1463368985433" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1461976221153" FOLDED="true" ID="ID_1127444333" MODIFIED="1461981614078" TEXT="M&#xe1;trixok &#xf6;sszehasonl&#xed;t&#xe1;sa">
 <node COLOR="#ff0000" CREATED="1461978415960" ID="ID_1228710437" MODIFIED="1461978465385" TEXT="A &gt; B, ha a_ij &gt; b_ij b&#xe1;rmely i &#xe9;s j eset&#xe9;n pozit&#xed;v: A &gt; O ( nemnegat&#xed;v: A&gt;= O, azaz ha a_ij &gt;0 ( a_ij &gt;= 0)"/>
@@ -1241,7 +1241,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1461976149057" FOLDED="true" ID="ID_1560831818" MODIFIED="1461983991767" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
+<node CREATED="1461976149057" FOLDED="true" ID="ID_1560831818" MODIFIED="1463437850648" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1461976171256" FOLDED="true" ID="ID_230735225" MODIFIED="1461983988485" TEXT="Diagoniz&#xe1;lhat&#xf3; m&#xe1;trixok f&#xfc;ggv&#xe9;nyei">
 <node CREATED="1461981621051" ID="ID_691204498" MODIFIED="1461981647489" TEXT="B&#xe1;rmely diagoniz&#xe1;lhat&#xf3; a m&#xe1;trixra &#xe9;rtelmezhet&#x151; az e^A hatv&#xe1;ny"/>
