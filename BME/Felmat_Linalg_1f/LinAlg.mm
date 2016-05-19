@@ -1100,9 +1100,9 @@
 <node COLOR="#006699" CREATED="1461975908583" ID="ID_1881484174" MODIFIED="1461976071866" TEXT="A eleme C^n*n spektruma {lambda i s-gi} a lambda_i saj&#xe1;t&#xe9;rt&#xe9;k algebrai multiplicit&#xe1;sa a_i, &#xe9;s A Jordan f&#xe9;le norm&#xe1;lalakj&#xe1;ban a lambda_i-hez tartoz&#xf3; legnagyobb Jordan-blokk m&#xe9;rete legyen m_i. Ekkor M&#x171;_a(x) = produktum i-&gt;s (y-lambda_i ) ^(m_i)"/>
 </node>
 </node>
-<node CREATED="1461018701094" FOLDED="true" ID="ID_673370017" MODIFIED="1463368985433" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
+<node CREATED="1461018701094" FOLDED="true" ID="ID_673370017" MODIFIED="1463660802716" POSITION="right" TEXT="9) Nemnegat&#xed;v m&#xe1;trixok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461976221153" FOLDED="true" ID="ID_1127444333" MODIFIED="1461981614078" TEXT="M&#xe1;trixok &#xf6;sszehasonl&#xed;t&#xe1;sa">
+<node CREATED="1461976221153" ID="ID_1127444333" MODIFIED="1463649958158" TEXT="M&#xe1;trixok &#xf6;sszehasonl&#xed;t&#xe1;sa">
 <node COLOR="#ff0000" CREATED="1461978415960" ID="ID_1228710437" MODIFIED="1461978465385" TEXT="A &gt; B, ha a_ij &gt; b_ij b&#xe1;rmely i &#xe9;s j eset&#xe9;n pozit&#xed;v: A &gt; O ( nemnegat&#xed;v: A&gt;= O, azaz ha a_ij &gt;0 ( a_ij &gt;= 0)"/>
 <node CREATED="1461978467537" ID="ID_748757772" MODIFIED="1461978472367" TEXT="N&#xe9;h&#xe1;ny &#xe9;szrev&#xe9;tel">
 <node COLOR="#338800" CREATED="1461978472954" ID="ID_625200429" MODIFIED="1461978565129" TEXT="A &gt;= 0 &lt;-&gt; Ax &gt;= 0 minden x &gt;= 0 vektorr"/>
@@ -1124,7 +1124,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1461976229841" FOLDED="true" ID="ID_703937426" MODIFIED="1461981615204" TEXT="Pozit&#xed;v m&#xe1;trixok">
+<node CREATED="1461976229841" ID="ID_703937426" MODIFIED="1463649964052" TEXT="Pozit&#xed;v m&#xe1;trixok">
 <node CREATED="1461978715215" ID="ID_1349268711" MODIFIED="1461978768115" TEXT="Perron-t&#xe9;tel">
 <node COLOR="#006699" CREATED="1461978772122" ID="ID_333518192" MODIFIED="1461978890146" TEXT="pozit&#xed;v saj&#xe1;t&#xe9;rt&#xe9;k &#xe9;s saj&#xe1;tvektor Ha A &gt; O, akkor ">
 <node COLOR="#006699" CREATED="1461978811706" ID="ID_1708140644" MODIFIED="1461978889313" TEXT="r&gt;0, (r= r&#xf3;(A) a spektr&#xe1;lsug&#xe1;r),"/>
@@ -1241,16 +1241,16 @@
 </node>
 </node>
 </node>
-<node CREATED="1461976149057" FOLDED="true" ID="ID_1560831818" MODIFIED="1463437850648" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
+<node CREATED="1461976149057" FOLDED="true" ID="ID_1560831818" MODIFIED="1463692647548" POSITION="left" TEXT="10) M&#xe1;trixf&#xfc;ggv&#xe9;nyek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1461976171256" FOLDED="true" ID="ID_230735225" MODIFIED="1461983988485" TEXT="Diagoniz&#xe1;lhat&#xf3; m&#xe1;trixok f&#xfc;ggv&#xe9;nyei">
+<node CREATED="1461976171256" FOLDED="true" ID="ID_230735225" MODIFIED="1463660814131" TEXT="Diagoniz&#xe1;lhat&#xf3; m&#xe1;trixok f&#xfc;ggv&#xe9;nyei">
 <node CREATED="1461981621051" ID="ID_691204498" MODIFIED="1461981647489" TEXT="B&#xe1;rmely diagoniz&#xe1;lhat&#xf3; a m&#xe1;trixra &#xe9;rtelmezhet&#x151; az e^A hatv&#xe1;ny"/>
 <node CREATED="1461981653483" ID="ID_280851958" MODIFIED="1461981665160" TEXT="hasonl&#xf3;an ln (I+A) m&#xe1;trixf&#xfc;ggv&#xe9;ny is"/>
 <node CREATED="1461981677379" ID="ID_1893091840" MODIFIED="1461981722495" TEXT="Egy hatv&#xe1;nysorba fejthet&#x151; f&#xfc;ggv&#xe9;nynek egy diagon&#xe1;lis m&#xe1;trixban - &#xe9;s &#xed;gy b&#xe1;rmely diagoniz&#xe1;lhat&#xf3; m&#xe1;trixban - f&#xf6;lvett &#xe9;rt&#xe9;k&#xe9;t a f&#xfc;ggv&#xe9;nynek csak a saj&#xe1;t&#xe9;rt&#xe9;kekven val&#xf3; viselked&#xe9;se befoly&#xe1;solja."/>
 <node CREATED="1461981723275" ID="ID_341383480" MODIFIED="1461981804822" TEXT="A Cayley-Hamilton-t&#xe9;tel szerint minden m&#xe1;tirx kiel&#xe9;g&#xed;ti saj&#xe1;t karakterisztikus egyenlet&#xe9;t, &#xed;gy egy n-edrend&#x171; m&#xe1;trix minden hatv&#xe1;nya legf&#xf6;ljebb n-1-edik hatv&#xe1;nyok line&#xe1;ris kombin&#xe1;ci&#xf3;j&#xe1;val helyettes&#xed;ther&#x151;, azaz a f&#xfc;ggv&#xe9;ny &#xe9;rt&#xe9;ke egy polinomba val&#xf3; helyettes&#xed;t&#xe9;ssel is kisz&#xe1;m&#xed;that&#xf3;"/>
 <node COLOR="#338800" CREATED="1461981809563" ID="ID_250700551" MODIFIED="1461981911892" TEXT="Legyen A eleme C^n*n m&#xe1;trix Jordan-felvont&#xe1;sa A= CJC^(-1) &#xe9;s p eleme C[x] egy tetsz&#x151;leges polinom. ekkor p(A)= C* p(J) C^(-1)"/>
 </node>
-<node CREATED="1461976179086" FOLDED="true" ID="ID_622407094" MODIFIED="1461983989605" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;nyek a Jordan-alakb&#xf3;l">
+<node CREATED="1461976179086" FOLDED="true" ID="ID_622407094" MODIFIED="1463692646511" TEXT="M&#xe1;trixf&#xfc;ggv&#xe9;nyek a Jordan-alakb&#xf3;l">
 <node CREATED="1461982344274" ID="ID_1845327089" MODIFIED="1461982362866" TEXT="Spektrumon defini&#xe1;lt f&#xfc;ggv&#xe9;ny">
 <node COLOR="#ff0000" CREATED="1461982363818" ID="ID_1291968259" MODIFIED="1461982512160" TEXT="Legyen az A m&#xe1;trix spektruma {lambda_i}, a lambda_i saj&#xe1;t&#xe9;rt&#xe9;khez tartoz&#xf3;  legnagyobb Jordan-blokk rendj&#xe9;t jel&#xf6;lje m_i. Azt mondjuk, hogy f defini&#xe1;lva az A spektrum&#xe1;n, ha az f^(j) (lambda_i) &#xe9;rt&#xe9;kek l&#xe9;teznek. Azt mondjuk, hogy ezek az &#xe9;rt&#xe9;kek az f &#xe9;rt&#xe9;kei az A spektrum&#xe1;n."/>
 <node CREATED="1461982517338" ID="ID_1560908930" MODIFIED="1461982613555" TEXT="Minden f&#xfc;ggv&#xe9;ny, mely C minden pontj&#xe1;ban ak&#xe1;h&#xe1;nyszor differenci&#xe1;lhat&#xf3;, tetsz&#x151;leges m&#xe1;trixra &#xe9;rtelmezve van annak spektrum&#xe1;n. &#xcd;gy minden polinom &#xe9;rtelmezve van minden m&#xe1;trix spektrum&#xe1;n, ami &#xf6;sszhangban lesz azzal, hogy minden n&#xe9;gyzetes m&#xe1;trixnak b&#xe1;rmely polinomf&#xfc;ggv&#xe9;nye &#xe9;rtelmezve van."/>
