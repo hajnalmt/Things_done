@@ -32,6 +32,9 @@ A maximumkeresés:
 %----------------------------------------------------------------------------
 \section{Absztrakt program}
 %----------------------------------------------------------------------------
+\begin{table}[htb]
+\caption{Absztrakció}
+\label{tab:Abstraction}
 \begin{center}
 \begin{tabular}{|lll|}
 	\hline
@@ -43,6 +46,7 @@ A maximumkeresés:
 	\hline
 \end{tabular}
 \end{center}
+\end{table}
 
 \noindent\hfill
 	\begin{stuki}[12cm]
@@ -60,8 +64,11 @@ A maximumkeresés:
 		\stm{cout:=elem.nev}
 	\end{stuki}
 \vspace{5mm}
-\textbf{Rendelések bevételeivel való felsorolója:}
-\vspace{5mm}\\
+\textbf{Rendelések bevételeivel való felsorolója:}\\
+	\begin{table}[htb]
+	\caption{Felsoroló}
+	\label{tab:Felsorolo}
+	\begin{center}
 	\begin{tabular}{|l|l|}
 		\hline
 		\textit{enor(Rendeles)}& \textit{First(),Next(),Current(),End()}\\
@@ -73,7 +80,8 @@ A maximumkeresés:
 		\textit{$akt_f$:rec(nev:String,ido:$\mathbb{N}$,adag:$\mathbb{N}$,ar:$\mathbb{N}$)} & \\
 		\hline
 	\end{tabular}
-\vspace{5mm}\\
+	\end{center}
+	\end{table}
 \indent A First művelettel beolvastunk a szekvenciális input fájlunkból egy rendelés elemet, melyet az $akt_f$ rekordban tárolunk. A beolvasás sikerességét a státusz jelzés jelzi nekünk.\\
 \indent A Next művelet több feladatot, kell ellásson. Addig kell olvasson a szekvenciális input fájlból, amíg a rendelés nevek megegyeznek, vagy véget nem ér a fájl. Ehhez először egy elso nevű változóban eltároljuk az aktuális rendelés nevét, továbbá ehhez hasonlóan egy akt nevű változóban eltároljuk a szükséges rendelés paramétereket, (név és bevétel=adag*ár). Az összegzést, úgy valósítjuk meg, hogy az $akt_f$-be beolvasott input fájl értékek segítségével (az adag*ár értékekkel) az aktuális felsoroló elem $akt$ bevétel nevű változóját növelgetjük. A ciklus akkor marad abba, ha a beolvasás nem sikerült, vagy új rendelésünk van.
 \begin{flalign*}	
@@ -86,6 +94,9 @@ A maximumkeresés:
 	&\hspace{10mm}akt.bevetel+akt_f.adag*akt_f.ar)\\
 \end{flalign*}
 
+\begin{table}[htb]
+\caption{Összegzés}
+\label{tab:Osszegzes}
 \begin{center}
 \begin{tabular}{|lll|}
 	\hline
@@ -96,6 +107,7 @@ A maximumkeresés:
 	\hline
 \end{tabular}
 \end{center}
+\end{table}
 
 \noindent\hfill
 \begin{stuki}[12cm]
@@ -116,6 +128,9 @@ A maximumkeresés:
 \section{Implementáció}
 %----------------------------------------------------------------------------
 Program váz: A program több állományból áll: \texttt{etterem.cpp, enor.h, enor.cpp}
+\begin{table}[htb]
+\caption{Állományok}
+\label{tab:Allomanyok}
 \begin{center}
 \begin{tabular} {|l|l|l|}
 	\hline
@@ -131,6 +146,7 @@ Program váz: A program több állományból áll: \texttt{etterem.cpp, enor.h, 
 	\hline
 \end{tabular}
 \end{center}
+\end{table}
 A függvények kapcsolódási szerkezete:\\
 \begin{center}
 	\begin{tikzpicture}
@@ -146,31 +162,31 @@ A függvények kapcsolódási szerkezete:\\
 			}				
 			child {node [leaf] (enor) {\textbf{Enor()}}};
 	\end{tikzpicture}\vspace{2mm}\\
-\end{center}
+\end{center}\newpage
 A felsoroló osztálya:
-	\begin{mdframed}
-		\texttt{
-		\begin{tabbing}
-		\hspace{1cm}\=\textbf{class} Enor\{ \+\\
-		    \hspace{1cm}\=\textbf{private:} \+\\
-		        \hspace{1cm}\=std::ifstream f;\+\\
-		        Status st;\\
-		        Rendeles akt;\\
-		        $Akt_f$ $akt_f$;\\
-		        std::string elso;\\
-		        \textbf{void} Read();\\
-			\-\\
-		    \textbf{public:}\+\\
-		        Enor(const std::string \&str);\\
-		        \textbf{void} First() \{Read(); Next();\}\\
-		        \textbf{void} Next();\\
-		        Rendeles Current() \textbf{const} \{ return akt;\}\\
-		        \textbf{bool} End() \textbf{const} \{ return st==abnorm;\}\-\-\\
-		\};\-\\
-		\end{tabbing}
-		}
-	\end{mdframed}
-\vspace{5mm}
+\begin{mdframed}
+	\texttt{
+	\begin{tabbing}
+	\hspace{1cm}\=\textbf{class} Enor\{ \+\\
+	    \hspace{1cm}\=\textbf{private:} \+\\
+	        \hspace{1cm}\=std::ifstream f;\+\\
+	        Status st;\\
+	        Rendeles akt;\\
+	        $Akt_f$ $akt_f$;\\
+	        std::string elso;\\
+	        \textbf{void} Read();\\
+	\-\\
+	    \textbf{public:}\+\\
+	        Enor(const std::string \&str);\\
+	        \textbf{void} First() \{Read(); Next();\}\\
+	        \textbf{void} Next();\\
+	        Rendeles Current() \textbf{const} \{ return akt;\}\\
+		\textbf{bool} End() \textbf{const} \{ return st==abnorm;\}\-\-\\
+	\};\-\\
+	\end{tabbing}
+	}
+\end{mdframed}
+\vspace{2mm}
 \hspace{2mm} Az osztályon belül az input fájl tartalmát egy streamben tároljuk $(ifstream)$, melyből a beolvasás a $<<$ operátor segítségével történik. Az input fájl neve tetszőleges lehet, esetünkben az \texttt{input.txt} nevet kapta. A Read() függvény tölti fel az operátor segítségével az $akt_f$ struktúra változónkat a megfelelő értékekkel.\\
 \indent Az aktuális rendelést az $akt$ változóban tároljuk, melynek típusa szintén egy struktúra, neve Rendeles.
 
@@ -211,3 +227,15 @@ A megoldó programra épülő (fehér doboz) tesztesek:
 	\item Nem megfelelően kivitelezett bemeneti állomány -> nem megfelelő eredmény, de a beolvasások megtörténnek.
 \end{enumerate}
 Mindkét tesztesetet a feladat szerint kizárhatjuk.
+
+
+%----------------------------------------------------------------------------
+\section{Hivatkozások}
+%----------------------------------------------------------------------------
+\hspace{2mm} Hogy pályázatunk szép legyen így a \sectref{Visions}. fejezetben elhelyeztünk egy fekete ruhás hölgy képét (\figref{FeketeNo}). Hogy ez az imázs megmaradjon a \sectref{Place}. fejezetben is folytattuk a képek beillesztését (\figref{Moulin}, \figref{Eiffel}, \figref{Stamps}). A \sectref{ProgHF}. fejezeben lévő  maximumkereséseshez és összegzéshez tartozó táblázatok (\tabref{Abstraction}, \tabref{Felsorolo}, \tabref{Osszegzes}, \tabref{Allomanyok}) biztosítják számunkra a megfelelő mennyiséget. 
+\begin{align}
+\label{eq:Integral}
+\int_{-\infty}^\infty \mathrm{e}^{-\alpha x^2} \mathrm{d}x = \sqrt{\frac{\pi}{\alpha}}
+\end{align}
+
+A fentebbi \eqref{Integral} egyenlet pedig még egy megfelelő képlettel is szolgál nekünk. 

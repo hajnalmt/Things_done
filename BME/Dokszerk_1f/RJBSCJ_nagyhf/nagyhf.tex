@@ -18,7 +18,7 @@
 \usepackage{anysize}
 \usepackage{sectsty}
 \usepackage{setspace}  % Ettol a tablazatok, abrak, labjegyzetek maradnak 1-es sorkozzel!
-\usepackage[hang]{caption}
+\usepackage[hang,skip=0pt]{caption}
 \usepackage{url}								%For URL-s
 \usepackage[headheight=56pt]{geometry}			%For the heading gap
 
@@ -93,15 +93,9 @@
 % define references
 \newcommand{\figref}[1]{\ref{fig:#1}.}
 \renewcommand{\eqref}[1]{(\ref{eq:#1})}
-\newcommand{\listref}[1]{\ref{listing:#1}.}
 \newcommand{\sectref}[1]{\ref{sect:#1}}
 \newcommand{\tabref}[1]{\ref{tab:#1}.}
 
-\DeclareMathOperator*{\argmax}{arg\,max}
-%\DeclareMathOperator*[1]{\floor}{arg\,max}
-\DeclareMathOperator{\sign}{sgn}
-\DeclareMathOperator{\rot}{rot}
-\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
 
 \author{\szerzo}
 \title{\title}
@@ -109,7 +103,8 @@
 	titlepage,%
 	chapter1,%
 	chapter2,%
-	chapter10, %
+	chapter3, %
+	chapter4, %
 	acknowledgement,%
 }
 %--------------------------------------------------------------------------------------
@@ -154,8 +149,8 @@ aboveskip=10pt}
 \tableofcontents\vfill
 \include{chapter1}
 \include{chapter2}
-
-\include{chapter10}
+\include{chapter3}
+\include{chapter4}
 \include{acknowledgement}
 
 %\listoffigures\addcontentsline{toc}{chapter}{Ábrák jegyzéke}
