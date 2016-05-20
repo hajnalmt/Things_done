@@ -6,7 +6,7 @@
 \section{Feladat}
 %----------------------------------------------------------------------------
 
-\textit{Egy étteremben a pincérek által felvett rendeléseket egy szekvenciális input fájlban tartják nyilván az ételek neve, azon belül a rendelések időpontja szerint rendezett formában. Feltehetjük, hogy a fájl nem üres. A tárolt adatok: a rendelt étel neve, a rendelés időpontja, rendelt adagok száma, egy adag ára. Melyik étel hozta az étteremnek a legtöbb bevételt (összesített darab*egységár)?}\\
+\textit{\indent Egy étteremben a pincérek által felvett rendeléseket egy szekvenciális input fájlban tartják nyilván az ételek neve, azon belül a rendelések időpontja szerint rendezett formában. Feltehetjük, hogy a fájl nem üres. A tárolt adatok: a rendelt étel neve, a rendelés időpontja, rendelt adagok száma, egy adag ára. Melyik étel hozta az étteremnek a legtöbb bevételt (összesített darab*egységár)?}
 
 %----------------------------------------------------------------------------
 \section{Specifikáció}
@@ -17,16 +17,16 @@ A feladat állapottere többféleképpen felírható
 	A=(f:Infile(&\mathbb{K}),~cout:Outfile(\mathbb{K}))\\
 	A=(f:Infile(&Sor),~cout:Outfile(Sor))\\
 	A=(f:Infile(&Rendeles), cout:String)\\
-	&Rendeles=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})\\
+	&Rendeles=\textbf{rec}(nev:String, ido:\mathbb{N}, adag:\mathbb{N}, ar:\mathbb{N})
 \end{flalign*}
-Számunkra a legideálisabb már egy olyan felsorolón dolgozni, ami rendelés nevű rekordokat dolgozni, melyek a rendelések nevét és hozzájuk tartozó bevételeket tartalmazzák. Erre a felsorolóra kell nekünk egy maximum keresést írni.\\
+\indent Számunkra a legideálisabb már egy olyan felsorolón dolgozni, ami rendelés nevű rekordokat dolgozni, melyek a rendelések nevét és hozzájuk tartozó bevételeket tartalmazzák. Erre a felsorolóra kell nekünk egy maximum keresést írni.\\
 % Összegzés, összefűzés
 A maximumkeresés:
 \begin{flalign*}
 	&A=(t:Enor(Rendeles),~cout:String,~max:\mathbb{N},~elem:Rendeles)\\
 	&\hspace{25mm}Rendeles=\textbf{rec}(nev:String, bevetel:\mathbb{N})\\
 	&Ef=(t=t'~\wedge~|t'|>0~\wedge~t.azon\uparrow)\\
-	&Uf=((max,~elem)=\max_{e\in t'}{(e.bevetel)}~\wedge~cout=elem.nev)\\
+	&Uf=((max,~elem)=\max_{e\in t'}{(e.bevetel)}~\wedge~cout=elem.nev)
 \end{flalign*}
 
 %----------------------------------------------------------------------------
@@ -147,7 +147,7 @@ A függvények kapcsolódási szerkezete:\\
 			child {node [leaf] (enor) {\textbf{Enor()}}};
 	\end{tikzpicture}\vspace{2mm}\\
 \end{center}
-A felsoroló osztálya:\\
+A felsoroló osztálya:
 	\begin{mdframed}
 		\texttt{
 		\begin{tabbing}
@@ -170,14 +170,14 @@ A felsoroló osztálya:\\
 		\end{tabbing}
 		}
 	\end{mdframed}
-\vspace{2mm}
-Az osztályon belül az input fájl tartalmát egy streamben tároljuk $(ifstream)$, melyből a beolvasás a $<<$ operátor segítségével történik. Az input fájl neve tetszőleges lehet, esetünkben az \texttt{input.txt} nevet kapta. A Read() függvény tölti fel az operátor segítségével az $akt_f$ struktúra változónkat a megfelelő értékekkel.\\
-Az aktuális rendelést az $akt$ változóban tároljuk, melynek típusa szintén egy struktúra, neve Rendeles.\\
+\vspace{5mm}
+\hspace{2mm} Az osztályon belül az input fájl tartalmát egy streamben tároljuk $(ifstream)$, melyből a beolvasás a $<<$ operátor segítségével történik. Az input fájl neve tetszőleges lehet, esetünkben az \texttt{input.txt} nevet kapta. A Read() függvény tölti fel az operátor segítségével az $akt_f$ struktúra változónkat a megfelelő értékekkel.\\
+\indent Az aktuális rendelést az $akt$ változóban tároljuk, melynek típusa szintén egy struktúra, neve Rendeles.
 
 %----------------------------------------------------------------------------
 \section{Tesztelési terv}
 %----------------------------------------------------------------------------
-A megoldás során két programozási tételt alkalmaztunk az összegzését és a maximum keresését is. Ebből az összegzés tétele annyiszor történik meg, ahány különböző nevű rendelés van. A tesztesetek tehát két részre bomlanak, a maximum keresés teszteseteire és az összegzés teszteseteire, előbbit az utóbbi minden permutációjára meg kell nézni.\vspace{2mm}\\
+\hspace{2mm} A megoldás során két programozási tételt alkalmaztunk az összegzését és a maximum keresését is. Ebből az összegzés tétele annyiszor történik meg, ahány különböző nevű rendelés van. A tesztesetek tehát két részre bomlanak, a maximum keresés teszteseteire és az összegzés teszteseteire, előbbit az utóbbi minden permutációjára meg kell nézni.\vspace{2mm}\\
 A fekete doboz tesztesetei:
 \renewcommand{\labelenumi}{\Alph{enumi}.}
 \renewcommand{\labelenumii}{\arabic{enumii}.}

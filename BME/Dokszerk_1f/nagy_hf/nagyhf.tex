@@ -42,13 +42,10 @@
 %--------------------------------------------------------------------------------------
 % Main variables
 %--------------------------------------------------------------------------------------
-\newcommand{\vikszerzo}{Hajnal Máté}
-\newcommand{\vikkonzulens}{dr.~Szedmák Bálint}
-\newcommand{\vikcim}{Gólyabál pályázat \& Programozás beadandó}
-\newcommand{\viktanszek}{AIIT}
-\newcommand{\vikdoktipus}{Diplomaterv}
-\newcommand{\vikdepartmentr}{Hajnal Máté}
-
+\newcommand{\szerzo}{Hajnal Máté}
+\newcommand{\palyazok}{Szedmák Bálint \& Hajnal Máté}
+\newcommand{\cim}{BME-VIK \& ELTE PPK Gólyabál pályázat \\ Programozás beadandó}
+\newcommand{\doktipus}{Palyazat}
 %--------------------------------------------------------------------------------------
 % Page layout setup
 %--------------------------------------------------------------------------------------
@@ -105,11 +102,12 @@
 \DeclareMathOperator{\rot}{rot}
 \definecolor{lightgray}{rgb}{0.95,0.95,0.95}
 
-\author{\vikszerzo}
-\title{\viktitle}
+\author{\szerzo}
+\title{\title}
 \includeonly{
 	titlepage,%
 	chapter2,%
+	acknowledgement,%
 }
 %--------------------------------------------------------------------------------------
 %	Setup captions
@@ -130,10 +128,10 @@ aboveskip=10pt}
 %--------------------------------------------------------------------------------------
 \hypersetup{
     unicode=true,              % non-Latin characters in Acrobat’s bookmarks
-    pdftitle={\vikcim},        % title
-    pdfauthor={\vikszerzo},    % author
-    pdfsubject={\vikdoktipus}, % subject of the document
-    pdfcreator={\vikszerzo},   % creator of the document
+    pdftitle={\cim},           % title
+    pdfauthor={\szerzo},       % author
+    pdfsubject={\doktipus},    % subject of the document
+    pdfcreator={\szerzo},      % creator of the document
     pdfproducer={Producer},    % producer of the document
     pdfkeywords={keywords},    % list of keywords
     pdfnewwindow=true,         % links in new window
@@ -150,7 +148,9 @@ aboveskip=10pt}
 \begin{document}
 \onehalfspacing
 \include{titlepage}
+\tableofcontents\vfill
 \include{chapter2}
+\include{acknowledgement}
 
 %\listoffigures\addcontentsline{toc}{chapter}{Ábrák jegyzéke}
 %\listoftables\addcontentsline{toc}{chapter}{Táblázatok jegyzéke}

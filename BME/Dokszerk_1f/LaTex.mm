@@ -849,7 +849,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1457906052873" FOLDED="true" ID="ID_1925636455" MODIFIED="1459007127970" POSITION="right" TEXT="3) LaTex alapok">
+<node CREATED="1457906052873" FOLDED="true" ID="ID_1925636455" MODIFIED="1463698185683" POSITION="right" TEXT="3) LaTex alapok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1457906069760" FOLDED="true" ID="ID_348226869" MODIFIED="1457906822459" TEXT="Minden LaTeX dokumentum k&#xf6;telez&#x151;en kell, hogy tartalmazza az els&#x151; sor&#xe1;ban a k&#xf6;vetkez&#x151; utas&#xed;t&#xe1;st:\documentclass[opci&#xf3;k]{dokumentumoszt&#xe1;ly neve}">
 <node CREATED="1457906508817" ID="ID_597971807" MODIFIED="1457906627636" TEXT="minden LaTeX parancs &#x201e;\&#x201d;-lel kezd&#x151;dik!"/>
@@ -914,13 +914,13 @@
 <node CREATED="1457907348264" ID="ID_1789645389" MODIFIED="1457907348854" TEXT="Alap be&#xe1;ll&#xed;t&#xe1;sok: 10pt, letterpaper, twoside, titlepage, openright, final."/>
 </node>
 </node>
-<node CREATED="1457907364881" FOLDED="true" ID="ID_1902669929" MODIFIED="1457912262772" TEXT="Magyar sz&#xf6;vegn&#xe9;l">
+<node CREATED="1457907364881" FOLDED="true" ID="ID_1902669929" MODIFIED="1463698180332" TEXT="Magyar sz&#xf6;vegn&#xe9;l">
 <node CREATED="1457907403281" FOLDED="true" ID="ID_547801405" MODIFIED="1457907639187" TEXT="haszn&#xe1;ljunk packaget a begin el&#x151;tt">
 <node CREATED="1457907410191" ID="ID_965482794" MODIFIED="1457907416879" TEXT="\usepackage[utf8]{inputenc}"/>
 <node CREATED="1457907441777" ID="ID_1192430397" MODIFIED="1457907442440" TEXT="Figyelem! Bizonyos sz&#xf6;vegszerkeszt&#x151;k nem UTF-8-ban mentik a f&#xe1;jlokat, hanem k&#xf6;z&#xe9;p-eur&#xf3;pai k&#xf3;dol&#xe1;ssal. Ha &#xed;gy lenne, akkor utf8 helyett latin2-t kell &#xed;rni."/>
 </node>
 <node CREATED="1457907454033" ID="ID_1153509466" MODIFIED="1457907459293" TEXT="Sz&#xfc;ks&#xe9;ges lehet m&#xe9;g a \usepackage{t1enc}, ha egy&#xe9;b speci&#xe1;lis nyelvi karakter megjelen&#xed;t&#xe9;s&#xe9;re van sz&#xfc;ks&#xe9;g&#xfc;nk, pl.: &#xd0;urdevac, &#xde;&#xf3;rsh&#xf6;fn"/>
-<node CREATED="1457907478264" FOLDED="true" ID="ID_1194330534" MODIFIED="1457907658668" TEXT="A babel csomaggal magyar&#xed;thatjuk a LaTeX-et">
+<node CREATED="1457907478264" ID="ID_1194330534" MODIFIED="1463697813772" TEXT="A babel csomaggal magyar&#xed;thatjuk a LaTeX-et">
 <node CREATED="1457907493833" ID="ID_1026275974" MODIFIED="1457907494215" TEXT="\usepackage[magyar]{babel}"/>
 <node CREATED="1457907520810" ID="ID_689422923" MODIFIED="1457907521592" TEXT="B&#xe1;r a csomag &#xe1;ltal&#xe1;ban j&#xf3;l v&#xe1;laszt el, azonban van, amit nem tudhat, pl. kar&#xf3;ra (kar&#xf3;-ra, vagy kar-&#xf3;ra). Ilyenkor k&#xe9;t lehet&#x151;s&#xe9;g&#xfc;nk van:">
 <node CREATED="1457907523200" ID="ID_1791539902" MODIFIED="1457907540143" TEXT="Lok&#xe1;lis">
@@ -936,7 +936,7 @@
 </node>
 <node CREATED="1457907652849" ID="ID_1498930207" MODIFIED="1457907653527" TEXT="Ha t&#xf6;bbnyelv&#x171; dokumentumot szeretn&#xe9;nk &#xed;rni: \usepackage[english,magyar]{babel} paranccsal indulunk, &#xe9;s a \selectlanguage{nyelv} paranccsal lehet kiv&#xe1;lasztani az aktu&#xe1;lis nyelve"/>
 </node>
-<node CREATED="1457907680849" FOLDED="true" ID="ID_788974773" MODIFIED="1457908260413" TEXT="Speci&#xe1;lis karakterek">
+<node CREATED="1457907680849" FOLDED="true" ID="ID_788974773" MODIFIED="1463698182284" TEXT="Speci&#xe1;lis karakterek">
 <node CREATED="1457907692822" ID="ID_940872150" MODIFIED="1457907745458" TEXT="Vannak olyan karakterek, melyeket a ford&#xed;t&#xf3; parancsnak &#xe9;rtelmez."/>
 <node CREATED="1457907752441" ID="ID_723909783" MODIFIED="1457907759077" TEXT="Foglalt karakterek">
 <node CREATED="1457907760025" ID="ID_1521919184" MODIFIED="1457907772543" TEXT="\ (backslash) parancsok ezzel kezd&#x151;dnek,"/>
@@ -961,7 +961,7 @@
 <node CREATED="1457908014121" ID="ID_485675470" MODIFIED="1457908040280" TEXT="A dokumentumokat bekezd&#xe9;sekkel struktur&#xe1;ljuk. &#xda;j bekezd&#xe9;s: k&#xe9;t &#x201e;rep&#x201d; karakter \\ (k&#xe9;s&#x151;bb r&#xe9;szletesen)"/>
 <node CREATED="1457908066529" ID="ID_1644581415" MODIFIED="1457908066919" TEXT="Nem t&#xf6;rhet&#x151; sz&#xf3;k&#xf6;z: tilde (~): II.~R&#xe1;k&#xf3;czi~Ferenc"/>
 <node CREATED="1457908078954" ID="ID_1194413313" MODIFIED="1457908079333" TEXT="Blokkos&#xed;t&#xe1;s: \mbox{valami}: \mbox{II. R&#xe1;k&#xf3;czi Ferenc} (k&#xe9;s&#x151;bb r&#xe9;szletesen)"/>
-<node CREATED="1457908117873" FOLDED="true" ID="ID_1530749988" MODIFIED="1457908240532" TEXT="stilisztikai megjegyz&#xe9;sek">
+<node CREATED="1457908117873" ID="ID_1530749988" MODIFIED="1463697846116" TEXT="stilisztikai megjegyz&#xe9;sek">
 <node CREATED="1457908128769" ID="ID_971059695" MODIFIED="1457908146494" TEXT="IOO (&#x201e;kisel, nagy&#xf3;, nagy&#xf3;&#x201d;) &#x2260; 100 (sz&#xe1;z),"/>
 <node CREATED="1457908152802" ID="ID_1394201345" MODIFIED="1457908153495" TEXT="Magyarban tizedesvessz&#x151; van, angolban pont! 3,14 vagy 3.14."/>
 <node CREATED="1457908161906" ID="ID_1485151122" MODIFIED="1457908162549" TEXT="M&#xe9;rt&#xe9;kegys&#xe9;g, p&#xe9;nznemek: nem t&#xf6;rhet&#x151; sz&#xf3;k&#xf6;zzel: 1~cm"/>
@@ -971,12 +971,12 @@
 <node CREATED="1457908219338" ID="ID_1438770972" MODIFIED="1457908230111" TEXT="h&#xfc;velyk (&quot; shift+2) b&#xe1;r m&#xe1;s t&#xf6;rdel&#x151;kben ezt haszn&#xe1;ljuk, itt nem j&#xf3;!) Ez nem id&#xe9;z&#x151;jel!!! Az id&#xe9;z&#x151;jelek helyes megjelen&#xed;t&#xe9;s&#xe9;hez sz&#xfc;ks&#xe9;ges a t1enc csomag!"/>
 </node>
 </node>
-<node CREATED="1457908264529" FOLDED="true" ID="ID_1013605735" MODIFIED="1457908452251" TEXT="Ligat&#xfa;r&#xe1;k">
+<node CREATED="1457908264529" FOLDED="true" ID="ID_1013605735" MODIFIED="1463698183714" TEXT="Ligat&#xfa;r&#xe1;k">
 <node CREATED="1457908345546" ID="ID_466110268" MODIFIED="1457908345846" TEXT="Ligat&#xfa;r&#xe1;n a bet&#x171;knek a szok&#xe1;sosn&#xe1;l szorosabb &#xf6;sszek&#xf6;t&#xe9;s&#xe9;t &#xe9;rtik. A legismertebbek a k&#xf6;vetkez&#x151;, &#xfa;n. f-ligat&#xfa;r&#xe1;k: ff fi fl ffi ffl. A LaTeX ezt automatikusan megcsin&#xe1;lja, ha nem k&#xe9;r&#xfc;nk bel&#x151;le, akkor a tr&#xfc;kk: ef{}f&#xe9;le."/>
 <node CREATED="1457908387425" ID="ID_757401363" MODIFIED="1457908387895" TEXT="Mondatk&#xf6;z: Alap&#xe9;rtelmez&#xe9;sben a LaTeX a mondatok k&#xf6;z&#xe9; nagyobb t&#xe9;rk&#xf6;zt tesz, mint a szavak k&#xf6;z&#xe9;. Ett&#x151;l olvashat&#xf3;bb&#xe1; v&#xe1;lik a nyomtatott sz&#xf6;veg. Ha nem akarjuk, a \frenchspacing paranccsal kikapcsolhatjuk. De p&#xe9;ld&#xe1;ul az 1. &#xe1;bra nem mondatv&#xe9;g, hi&#xe1;ba van pont, ez&#xe9;rt 1.~&#xe1;bra."/>
 <node CREATED="1457908418096" ID="ID_1637751725" MODIFIED="1457908418507" TEXT="Megjegyz&#xe9;s: LATEX alatt nem baj, ha t&#xf6;bb space-t &#xfc;t&#xf6;tt le az ember: h&#xe1;rom&#x2fd;holl&#xf3;&#x2fd;=&#x2fd;h&#xe1;rom&#x2fd;&#x2fd;&#x2fd;&#x2fd;holl&#xf3; = h&#xe1;rom holl&#xf3;"/>
 </node>
-<node CREATED="1457908440601" FOLDED="true" ID="ID_1949219879" MODIFIED="1457908514820" TEXT="K&#xf6;t&#x151;jel">
+<node CREATED="1457908440601" FOLDED="true" ID="ID_1949219879" MODIFIED="1463698184650" TEXT="K&#xf6;t&#x151;jel">
 <node CREATED="1457908447753" ID="ID_56611405" MODIFIED="1457908450094" TEXT="K&#xf6;t&#x151;jel (-): sima &#x201e;-&#x201d; jel. Haszn&#xe1;lata: &#x201e;K&#xe9;rek 3-4 darab paradicsomot&#x201d;."/>
 <node CREATED="1457908454706" ID="ID_780654534" MODIFIED="1457908464886" TEXT="Nagy k&#xf6;t&#x151;jel = gondolatjel (&#x2013;): &#x201e;--&#x201d; (m&#xed;nusz m&#xed;nusz) tartom&#xe1;ny meghat&#xe1;roz&#xe1;s&#xe1;ra szolg&#xe1;l, pl.: &#x201e;100&#x2013;150 oldalas tank&#xf6;nyv&#x201d;."/>
 <node CREATED="1457908469618" ID="ID_1050470699" MODIFIED="1457908469847" TEXT="Hossz&#xfa; gondolatjel (&#x2014;): &#x201e;---&#x201d; (magyarban nem haszn&#xe1;ljuk)"/>
@@ -1319,18 +1319,18 @@
 </node>
 </node>
 </node>
-<node CREATED="1458732549815" FOLDED="true" ID="ID_1052090580" MODIFIED="1460363519779" POSITION="right" TEXT="7) K&#xe9;pek, &#xe1;br&#xe1;k beillleszt&#xe9;se, dobozok">
+<node CREATED="1458732549815" ID="ID_1052090580" MODIFIED="1463698190207" POSITION="right" TEXT="7) K&#xe9;pek, &#xe1;br&#xe1;k beillleszt&#xe9;se, dobozok">
 <font BOLD="true" NAME="SansSerif" SIZE="11"/>
-<node CREATED="1458732581518" FOLDED="true" ID="ID_1982760856" MODIFIED="1459007084256" TEXT="K&#xe9;pek beilleszt&#xe9;se ">
+<node CREATED="1458732581518" FOLDED="true" ID="ID_1982760856" MODIFIED="1463698214052" TEXT="K&#xe9;pek beilleszt&#xe9;se ">
 <node CREATED="1458732591988" ID="ID_1735679269" MODIFIED="1458732627863" TEXT="&#xc1;br&#xe1;k beilleszt&#xe9;s&#xe9;hez sz&#xfc;ks&#xe9;g van a graphics csomagra"/>
 <node CREATED="1458732629660" ID="ID_1217318738" MODIFIED="1458732682570" TEXT="A k&#xe9;peket c&#xe9;lszer&#x171; elhelyezni a forr&#xe1;s&#xe1;llom&#xe1;nyt tartalmaz&#xf3; k&#xf6;nyvt&#xe1;rba, mert akkor el&#xe9;g a nev&#xfc;kre hivatkozni"/>
 <node CREATED="1458732659943" FOLDED="true" ID="ID_951117075" MODIFIED="1459007084237" TEXT="De ha pl. egy &#x201e;grafikonok&#x201d; nev&#x171; alk&#xf6;nyvt&#xe1;rba helyezz&#xfc;k a k&#xe9;peket, akkor a preambulumba &#xed;rjuk be a k&#xf6;vetkez&#x151;t:">
 <node CREATED="1458732706313" ID="ID_1307505084" MODIFIED="1458732739787" TEXT="\graphicspath{{./grafikonok/}}"/>
 </node>
-<node CREATED="1458732743703" FOLDED="true" ID="ID_36387561" MODIFIED="1459007084244" TEXT="&#xc1;ra beilleszt&#xe9;se:">
+<node CREATED="1458732743703" ID="ID_36387561" MODIFIED="1463698211696" TEXT="&#xc1;bra beilleszt&#xe9;se:">
 <node CREATED="1458732752521" ID="ID_942809043" MODIFIED="1458732765631" TEXT="\includegraphics{abra}"/>
 </node>
-<node CREATED="1458732780691" FOLDED="true" ID="ID_703988280" MODIFIED="1459007084245" TEXT="Beilleszthet&#x151; &#xed;gy:">
+<node CREATED="1458732780691" ID="ID_703988280" MODIFIED="1463698197570" TEXT="Beilleszthet&#x151; &#xed;gy:">
 <node CREATED="1458732788536" ID="ID_443907651" MODIFIED="1458732808701" TEXT="jpg, png, pdf, eps"/>
 </node>
 <node CREATED="1458732812689" FOLDED="true" ID="ID_1462810425" MODIFIED="1459007084246" TEXT="EPS beilleszt&#xe9;se eset&#xe9;n csmag is kell">
@@ -3078,7 +3078,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1461754104908" ID="ID_767244862" MODIFIED="1461754183597" POSITION="left" TEXT="10) Oldalszerkeszt&#xe9;s, m&#xe9;ret, elforgat&#xe1;s, has&#xe1;bok">
+<node CREATED="1461754104908" FOLDED="true" ID="ID_767244862" MODIFIED="1463697795536" POSITION="left" TEXT="10) Oldalszerkeszt&#xe9;s, m&#xe9;ret, elforgat&#xe1;s, has&#xe1;bok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1461754185540" ID="ID_435126214" MODIFIED="1461754196314" TEXT="Hosszabb dokumentum feldarabol&#xe1;sa">
 <node CREATED="1461754241316" ID="ID_748617543" MODIFIED="1461754999586" TEXT="Ha nagy m&#x171;vet &#xed;runk, &#xe1;ttekinthet&#x151;bb, ha minden fejezetet k&#xfc;l&#xf6;n .tex f&#xe1;jlba &#xed;runk, majd a v&#xe9;g&#xe9;n &#xf6;sszef&#x171;zz&#xfc;k &#x151;ket!"/>
@@ -3093,8 +3093,7 @@
       \documentclass[a4paper,10pt]{report} ... \begin{document} ... \includeonly{bevezeto} % most csak ezen dolgozunk \include{bevezeto} \include{modell.tex} ... \include{befejezes} ... \end{document}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1461755390762" ID="ID_358309454" MODIFIED="1461755404384" TEXT="T&#xf6;bbhas&#xe1;bos szed&#xe9;s">
