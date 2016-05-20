@@ -3,12 +3,15 @@
 *.png
 *.eps
 
-### LaTex ###
+### LaTeX ###
 *.pdf
 *.log
 *.aux
 *.toc
 *.out
+# BibTeX #
+*.bbl
+*.blg
 # Not Latex document types #
 *.odt
 *.doc
