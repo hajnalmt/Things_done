@@ -3,7 +3,8 @@
 
 %\PassOptionsToPackage{chapternumber=Huordinal}{magyar.ldf}
 \usepackage{t1enc}
-\usepackage[latin2]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,magyar]{babel}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{enumerate}
@@ -15,19 +16,15 @@
 %\usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{anysize}
-\usepackage[english,magyar]{babel}
 \usepackage{sectsty}
 \usepackage{setspace}  % Ettol a tablazatok, abrak, labjegyzetek maradnak 1-es sorkozzel!
 \usepackage[hang]{caption}
-\usepackage{hyperref}
 \usepackage{url}								%For URL-s
 \usepackage[headheight=56pt]{geometry}			%For the heading gap
 
+
 %MATHEMATICAL EXPRESSIONS
-\usepackage[fleqn]{amsmath}						%Mathematical expressions
-\usepackage{amsfonts}							%Mathematical fonts
 \usepackage{bm}									%Bolding
-\usepackage{libertine}							%Only as example for the romans/sans fonts
 \usepackage[scaled=0.85]{beramono}				%for bolding
 
 %TABLES, TABULATING, DRAWING
@@ -36,12 +33,13 @@
 \usepackage{mdframed}
 \usepackage{multirow}
 \usepackage{tabularx}
-\usepackage{tikz}
-\usepackage{stuki}
+\usepackage{tikz}								%For drawing see --
+\usepackage{stuki}								%For struktogramms see --
+\usepackage{hyperref}
 
 \usetikzlibrary[shadows]
-\setlist[enumerate]{nosep, topsep=0pt}
---------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------------------
 % Main variables
 %--------------------------------------------------------------------------------------
 \newcommand{\vikszerzo}{Hajnal Máté}
@@ -71,26 +69,6 @@
 \setcounter{secnumdepth}{2}
 \singlespacing
 \frenchspacing
-
-%--------------------------------------------------------------------------------------
-%	Setup hyperref package
-%--------------------------------------------------------------------------------------
-\hypersetup{
-    bookmarks=true,            % show bookmarks bar?
-    unicode=false,             % non-Latin characters in Acrobat’s bookmarks
-    pdftitle={\vikcim},        % title
-    pdfauthor={\vikszerzo},    % author
-    pdfsubject={\vikdoktipus}, % subject of the document
-    pdfcreator={\vikszerzo},   % creator of the document
-    pdfproducer={Producer},    % producer of the document
-    pdfkeywords={keywords},    % list of keywords
-    pdfnewwindow=true,         % links in new window
-    colorlinks=true,           % false: boxed links; true: colored links
-    linkcolor=black,           % color of internal links
-    citecolor=black,           % color of links to bibliography
-    filecolor=black,           % color of file links
-    urlcolor=black             % color of external links
-}
 
 %--------------------------------------------------------------------------------------
 % Set up listings
@@ -130,17 +108,8 @@
 \author{\vikszerzo}
 \title{\viktitle}
 \includeonly{
-	guideline,%
-	project,%
 	titlepage,%
-	declaration,%
-	abstract,%
-	introduction,%
-	chapter1,%
 	chapter2,%
-	chapter3,%
-	acknowledgement,%
-	appendices,%
 }
 %--------------------------------------------------------------------------------------
 %	Setup captions
@@ -155,20 +124,33 @@ aboveskip=10pt}
 \renewcommand{\captionlabelfont}{\small\bf}
 \renewcommand{\captionfont}{\footnotesize\it}
 
+
+%--------------------------------------------------------------------------------------
+%	Setup hyperref package
+%--------------------------------------------------------------------------------------
+\hypersetup{
+    unicode=true,              % non-Latin characters in Acrobat’s bookmarks
+    pdftitle={\vikcim},        % title
+    pdfauthor={\vikszerzo},    % author
+    pdfsubject={\vikdoktipus}, % subject of the document
+    pdfcreator={\vikszerzo},   % creator of the document
+    pdfproducer={Producer},    % producer of the document
+    pdfkeywords={keywords},    % list of keywords
+    pdfnewwindow=true,         % links in new window
+    colorlinks=true,           % false: boxed links; true: colored links
+    linkcolor=black,           % color of internal links
+    citecolor=black,           % color of links to bibliography
+    filecolor=black,           % color of file links
+    urlcolor=black             % color of external links
+}
+
 %--------------------------------------------------------------------------------------
 % Table of contents and the main text
 %--------------------------------------------------------------------------------------
 \begin{document}
 \onehalfspacing
 \include{titlepage}
-\tableofcontents\vfill
-\include{declaration}
-\include{abstract}
-\include{introduction}
-\include{chapter1}
 \include{chapter2}
-\include{chapter3}
-\include{acknowledgement}
 
 %\listoffigures\addcontentsline{toc}{chapter}{Ábrák jegyzéke}
 %\listoftables\addcontentsline{toc}{chapter}{Táblázatok jegyzéke}
@@ -177,7 +159,6 @@ aboveskip=10pt}
 \addcontentsline{toc}{chapter}{Irodalomjegyzék}
 \bibliographystyle{plain}
 
-\include{appendices}
 
 \label{page:last}
 \end{document}
