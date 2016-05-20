@@ -35,6 +35,7 @@
 \usepackage{tabularx}
 \usepackage{tikz}								%For drawing see --
 \usepackage{stuki}								%For struktogramms see --
+\usepackage{wrapfig}
 \usepackage{hyperref}
 
 \usetikzlibrary[shadows]
@@ -44,7 +45,7 @@
 %--------------------------------------------------------------------------------------
 \newcommand{\szerzo}{Hajnal Máté}
 \newcommand{\palyazok}{Szedmák Bálint \& Hajnal Máté}
-\newcommand{\cim}{BME-VIK \& ELTE PPK Gólyabál pályázat \\ Programozás beadandó}
+\newcommand{\cim}{BME VIK \& ELTE PPK Gólyabál pályázat \\ Programozás beadandó}
 \newcommand{\doktipus}{Palyazat}
 %--------------------------------------------------------------------------------------
 % Page layout setup
@@ -106,6 +107,7 @@
 \title{\title}
 \includeonly{
 	titlepage,%
+	chapter1,%
 	chapter2,%
 	acknowledgement,%
 }
@@ -149,6 +151,7 @@ aboveskip=10pt}
 \onehalfspacing
 \include{titlepage}
 \tableofcontents\vfill
+\include{chapter1}
 \include{chapter2}
 \include{acknowledgement}
 
