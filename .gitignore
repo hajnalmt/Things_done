@@ -1,0 +1,45 @@
+### Pictures ###
+*.jpg
+*.png
+*.eps
+
+### LaTeX ###
+*.pdf
+*.log
+*.aux
+*.toc
+*.out
+# BibTeX #
+*.bbl
+*.blg
+# Not Latex document types #
+*.odt
+*.doc
+*.xlsx
+*.docx
+*.pptx
+
+### Codeblocks ###
+*.depend
+*.layout
+*.cbp
+# Directories #
+Elte/Prog_1f/hf0/obj/
+Elte/Prog_1f/hf0/bin/
+Elte/Prog_1f/hf1/hf1_RJBSCJ/obj/
+Elte/Prog_1f/hf1/hf1_RJBSCJ/bin/
+Elte/Prog_1f/hf2/hf2_RJBSCJ/obj/
+Elte/Prog_1f/hf2/hf2_RJBSCJ/bin/
+Elte/Prog_1f/Else
+BME/Mereselmelet_1f/2hf/
+
+### Any kind of archive file ###
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+### Any kind of swap files ###
+*.swp
+*~
+.~*
