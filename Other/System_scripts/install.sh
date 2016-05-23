@@ -58,6 +58,8 @@ if [ $ANSWER == "Y" ]; then
 		echo -e 'export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"' >> ~/.bashrc 
 		echo -e 'export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"' >> ~/.bashrc 
 		info "Homebrew (Linuxbrew) configured, use node -v and npm -v for testing it out. Also use brew update or brew upgrade node for checking out new versions. (Uninstallation by the brew uninstall node command)"
+		brew update
+		brew install node
 	fi
 fi
 
