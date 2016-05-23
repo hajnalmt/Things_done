@@ -1,0 +1,47 @@
+<div id="add-task-btn-group">
+    <div class="btn-group">
+    </div>
+</div>
+<div layout="row" class="menubar">
+    <md-button class="md-raised button" ng-href="index.html">Home</md-button>
+    <md-button class="md-raised button" ng-click="gantt.saveToGDrive()">Save to GDrive</md-button>
+    <md-button class="md-raised button" ng-click="gantt.saveLocally()">Save locally</md-button>
+</div>
+
+<md-input-container id="project-name">
+    <label>Name of the project</label>
+    <input ng-model="gantt.project.name" size="20"/>
+</md-input-container>
+
+<div ng-show="gantt.project.tasks.length > 0">
+    <div id="zoom">
+        Zoom: <md-slider id="slider" ng-model="gantt.zoomLevel" min="10" max="500" ng-mouseup="gantt.handleZoom()"
+                         ng-keyup="gantt.handleZoom()"></md-slider>
+    </div>
+
+    <md-card id="gantt">
+        <md-card-content layout="row">
+            <div id="taskWrapper" resizable>
+                <span id="tasks"></span>
+            </div>
+            <div id="timeLineWrapper" flex>
+                <span id="timeLine"></span>
+            </div>
+        </md-card-content>
+    </md-card>
+
+    <span id="arrows">
+        <span id="addBefore"><<</span>
+        <span id="addAfter">>></span>
+    </span>
+</div>
+<div ng-show="gantt.project.tasks.length == 0">
+    No task has been defined
+</div>
+
+<md-button class="md-fab" id="add-button" ng-click="gantt.newTask()">
+    +
+</md-button>
+
+<md-button class="md-raised md-primary button" ng-click="gantt.editResources()">Edit available resources</md-button>
+<md-button class="md-raised md-primary button" ng-click="gantt.editCalendar()">Edit working hours</md-button>

@@ -1,0 +1,175 @@
+<md-dialog aria-label="New task" flex-gt-md="60" flex="90">
+    <form >
+        <md-dialog-content class="sticky-container" class="content">
+            <md-subheader class="md-sticky-no-effect">
+                <h2>
+                    {{taskDetailController.task.isNew ? "New" : "Edit"}}
+                    {{taskDetailController.isSummary ? "Wrapper" : "Task"}}
+                    <span ng-show="taskDetailController.task.name.length != 0">({{taskDetailController.task.name}})</span>
+                </h2>
+            </md-subheader>
+            <md-tabs md-dynamic-height="true" layout-padding>
+                <md-tab>
+                    <md-tab-label>Details</md-tab-label>
+                    <md-tab-body>
+                        <div layout="column" >
+                            <h5></h5>
+                            <md-checkbox ng-model="taskDetailController.task.isSummary"
+                                         aria-label="Task is summary" ng-disabled="!taskDetailController.task.isNew">
+                                Task is summary
+                            </md-checkbox>
+
+                            <md-input-container flex>
+                                <label>Name</label>
+                                <input type="text" ng-model="taskDetailController.task.name"/>
+                            </md-input-container>
+
+                            <md-input-container flex>
+                                <label>Description</label>
+                                <input type="text" ng-model="taskDetailController.task.description"/>
+                            </md-input-container>
+
+                            <md-input-container>
+                                <label>Parent</label>
+                                <md-select ng-model="taskDetailController.task.parent">
+                                    <md-option ng-value="summary" ng-repeat="summary in taskDetailController.project.getAllSummaries()">
+                                        {{summary.name}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+
+
+                            <md-checkbox ng-model="taskDetailController.task.hasEarliestConstraint"
+                                         aria-label="Has earliest constraint checkbox">
+                                Has earliest constraint
+                            </md-checkbox>
+                            <md-input-container flex ng-show="taskDetailController.task.hasEarliestConstraint">
+                                <label>Earliest constraint
+                                    ({{taskDetailController.task.earliestStartConstraint}})</label>
+                                <input type="datetime-local"
+                                       ng-model="taskDetailController.task.earliestStartConstraint"/>
+                            </md-input-container>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+                <md-tab ng-show="!taskDetailController.task.isSummary">
+                    <md-tab-label>Duration</md-tab-label>
+                    <md-tab-body>
+                        <div layout layout-sm="column">
+                            <md-input-container flex>
+                                <label>Day</label>
+                                <input type="number" step="any" required
+                                       ng-model="taskDetailController.task.duration.day">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>Hour</label>
+                                <input type="number" step="any" required
+                                       ng-model="taskDetailController.task.duration.hour">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>Minute</label>
+                                <input type="number" step="any" required
+                                       ng-model="taskDetailController.task.duration.minute">
+                            </md-input-container>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+                <md-tab>
+                    <md-tab-label>Dependencies</md-tab-label>
+                    <md-tab-body>
+                        <h4>New dependency</h4>
+
+                        <md-input-container>
+                            <label>Task</label>
+                            <md-select ng-model="taskDetailController.newDependency.task">
+                                <md-option ng-value="task" ng-repeat="task in taskDetailController.project.getAllTasks()">
+                                    {{task.name}}
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <h5>Lag</h5>
+
+                        <div layout layout-sm="column">
+                            <md-input-container flex>
+                                <label>Day</label>
+                                <input type="number" step="any" required
+                                       ng-model="taskDetailController.newDependency.lag.day">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>Hour</label>
+                                <input type="number" step="any" required
+                                       ng-model="taskDetailController.newDependency.lag.hour">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>Minute</label>
+                                <input type="number" step="any" required
+                                       ng-model="taskDetailController.newDependency.lag.minute">
+                            </md-input-container>
+                        </div>
+
+                        <md-button class="md-raised" ng-click="taskDetailController.addDependency()">Add</md-button>
+
+                        <h4>Current dependencies</h4>
+                        <md-list>
+                            <md-list-item ng-repeat="dependency in taskDetailController.task.dependencies">
+                                <p>
+                                    {{dependency.task.name}}&nbsp;
+                                    <span class="lag">({{dependency.lag.day}} days {{dependency.lag.hour}} hours {{dependency.lag.minute}} mins)</span>
+                                    <img class="remove-icon" ng-src="img/remove.png"
+                                         ng-click="taskDetailController.removeDependency(dependency)"/>
+                                </p>
+                            </md-list-item>
+                        </md-list>
+
+                    </md-tab-body>
+                </md-tab>
+                <md-tab>
+                    <md-tab-label>Resources</md-tab-label>
+                    <md-tab-body>
+                        <h4>New resource usage</h4>
+
+                        <md-input-container>
+                            <label>Resource</label>
+                            <md-select ng-model="taskDetailController.newResourceUsage.resource">
+                                <md-option ng-value="resource" ng-repeat="resource in taskDetailController.project.resourceTypes">
+                                    {{resource.name}}
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <div layout layout-sm="column">
+                            <md-input-container flex>
+                                <label>Required quantity</label>
+                                <input type="number" step="1" required min="0"
+                                       ng-model="taskDetailController.newResourceUsage.need">
+                            </md-input-container>
+                        </div>
+
+                        <md-button class="md-raised" ng-click="taskDetailController.addResourceUsage()">Add
+                        </md-button>
+
+                        <h4>Current resource usages</h4>
+                        <md-list>
+                            <md-list-item ng-repeat="resourceUsage in taskDetailController.task.resourceUsages">
+                                <p>
+                                    {{resourceUsage.resource.name}}&nbsp;
+                                    <span class="lag">({{resourceUsage.need}})</span>
+                                    <img class="remove-icon" ng-src="gantt/components/taskDetail/remove.png"
+                                         ng-click="taskDetailController.removeResourceUsage(resourceUsage)"/>
+                                </p>
+                            </md-list-item>
+                        </md-list>
+                    </md-tab-body>
+                </md-tab>
+            </md-tabs>
+        </md-dialog-content>
+        <div class="md-actions" layout="row">
+            <span flex></span>
+            <md-button class="md-primary" ng-click="taskDetailController.save()">Save</md-button>
+            <md-button class="md-primary" ng-click="taskDetailController.cancel()">Cancel</md-button>
+            <md-button class="md-primary delete" ng-click="taskDetailController.delete()" ng-hide="taskDetailController.task.isNew">Delete</md-button>
+        </div>
+    </formlayout-padding>
+</md-dialog>
+

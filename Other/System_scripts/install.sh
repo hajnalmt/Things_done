@@ -18,6 +18,8 @@ WANTED_PACKS=(
 	lp-solve ntfs-3g mc mypaint pinta p7zip p7zip-full putty qtcreator synaptic texlive \
 	texlive-full texlive-lang-hungarian ttf-mscorefonts-installer usb-creator-kde \
 	vifm vim vlc wpagui wpasupplicant
+	# packages for Node.js and NPM
+	build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
 )
 
 # Install packages and autoremove needless ones
@@ -31,11 +33,22 @@ done
 if [ $ANSWER == "Y" ]; then
 	sudo apt-get -y install ${WANTED_PACKS[@]}
 	sudo apt-get autoremove
+	info "Core packages installed"
 fi
-info "Core packages installed"
 
 #################### Additional Packages ###################
 # Additional Packages, which should be downloaded from the web
+echo -e "Do you want to install Homebrew package manager }"
+read ANSWER
+while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
+do 
+	echo "Please answer [Y/N]" 
+	read ANSWER
+done
+if [ $ANSWER == "Y" ]; then
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+fi
+
 
 # Architecture type
 ARCH=$(uname -m)
@@ -133,23 +146,34 @@ fi
 if [ ! -e $HOME/bin/freemind.sh ]; then
 	if [ $ARCH = "x86_64" ];then
 		ln -s ~/Programs_64/Freemind/freemind.sh $HOME/bin/freemind.sh
+		info "Freemind installed and added o PATH"
 	elif [ $ARCH = "i386" ]; then
 		ln -s ~/Programs_32/Freemind/freemind.sh $HOME/bin/freemind.sh
+	info "Freemind installed and added o PATH"
 	else exit
 	fi
 fi
-info "Freemind installed and added o PATH"
 
 # Git Settings, change it to yours
-git config --global user.name "Hajnal Máté"
-git config --global user.email "hajnalmt@gmail.com"
-git config --global core.editor subl
-git config --global push.default simple
-info "Git is configured"
+echo -e "Do you want to add these packages to your system? [Y/N] \n ${WANTED_PACKS[@]}"
+read ANSWER
+while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
+do 
+	echo "Please answer [Y/N]" 
+	read ANSWER
+done
+if [ $ANSWER == "Y" ]; then
+	git config --global user.name "Hajnal Máté"
+	git config --global user.email "hajnalmt@gmail.com"
+	git config --global core.editor subl
+	git config --global push.default simple
+	info "Git is configured"
+fi
+
 
 # Set system core editor to sublime
 IS_EDITOR_SETTED=$(grep 'EDITOR="/usr/bin/subl" ; export EDITOR' ~/.bashrc)
 if [[ "$IS_EDITOR_SETTED" == "" ]]; then
 	echo -e '\nEDITOR="/usr/bin/subl" ; export EDITOR' >> ~/.bashrc 
+	info "Base Editor Setted to sublime"
 fi
-info "Base Editor Setted to sublime"

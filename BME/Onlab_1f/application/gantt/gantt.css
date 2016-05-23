@@ -1,0 +1,113 @@
+#gantt {
+    display: flex;
+}
+
+.menubar {
+    margin-bottom: 15px;
+}
+
+.menubar .fab {
+    height: 50px;
+    /* position: relative;*/
+    /*top: -100px;*/
+    margin-bottom: 20px;
+}
+
+.menubar md-fab-trigger button {
+    width: 130px;
+    height: 50px
+}
+
+md-content {
+    overflow: auto;
+}
+
+#taskWrapper {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 200px;
+    max-width: 400px;
+    /*border: 3px solid lightgray;*/
+    border-right: 0;
+    /*resize: horizontal;*/
+    vertical-align: top;
+}
+
+#timeLineWrapper {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    overflow-x: scroll;
+    /*border: 3px solid lightgray;*/
+    border-left: 0;
+    border-bottom: 0;
+}
+
+#arrows {
+    /*display: inline-block;*/
+    /*width: 800px;*/
+}
+
+#addBefore {
+    display: inline-block;
+    float: left;
+}
+
+#addAfter {
+    display: inline-block;
+    float: right;
+}
+
+#zoom {
+    margin-left: 266px;
+}
+
+#slider {
+    max-width: 300px;
+    /*margin-right: 20px;*/
+    /*display: inline-block;*/
+}
+
+#project-name {
+    max-width: 250px;
+    font-size: 20px;
+}
+
+/******************************************/
+.middle {
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: auto;
+    height: 100%;
+}
+
+#add-button {
+    margin-top: 20px;
+    margin-left: 90%;
+    font-size: 35px;
+}
+
+.remove-icon {
+    height: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+md-dialog-content {
+    padding: 10px;
+}
+
+.delete {
+    color: #ff0000 !important;
+}
+
+md-input-container.small {
+    margin: 0;
+}
+
+.number-input {
+    text-align: center;
+}
