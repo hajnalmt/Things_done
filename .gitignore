@@ -8,6 +8,7 @@
 *.log
 *.aux
 *.toc
+*.thm
 *.out
 # BibTeX #
 *.bbl
