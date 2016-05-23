@@ -3,9 +3,13 @@
 # The additional packages will be downloaded in a bin directory at your home, which is loaded when you boot your computer.
 # So a reboot is necessarry
 
-# Function just to print green info messages
+# Function just to print green info messages, and yellow questions
 function info {
-        tput setaf 2; echo $@; tput setaf 7
+        tput setaf 2; echo -e $@; tput setaf 7
+}
+
+function ask {
+        tput setaf 3; echo -e $@; tput setaf 7
 }
 
 #################### Core Packages ###################
@@ -19,11 +23,12 @@ WANTED_PACKS=(
 	texlive-full texlive-lang-hungarian ttf-mscorefonts-installer usb-creator-kde \
 	vifm vim vlc wpagui wpasupplicant
 	# packages for Node.js and NPM
-	build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+	build-essential curl m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
 )
 
 # Install packages and autoremove needless ones
-echo -e "Do you want to add these packages to your system? [Y/N] \n ${WANTED_PACKS[@]}"
+ask "Do you want to add these packages to your system? [Y/N]" 
+echo "${WANTED_PACKS[@]}"
 read ANSWER
 while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
 do 
@@ -38,7 +43,7 @@ fi
 
 #################### Additional Packages ###################
 # Additional Packages, which should be downloaded from the web
-echo -e "Do you want to install Homebrew package manager }"
+ask "Do you want to install Homebrew (Linuxbrew) package manager for Node.js and NPM? [Y/N]"
 read ANSWER
 while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
 do 
@@ -47,6 +52,13 @@ do
 done
 if [ $ANSWER == "Y" ]; then
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+	IS_LINUXBREW_ADDED=$(grep 'PATH="$HOME/.linuxbrew/bin:$PATH"' ~/.bashrc)
+	if [[ "$IS_EDITOR_SETTED" == "" ]]; then
+		echo -e 'export PATH="$HOME/.linuxbrew/bin:$PATH"' >> ~/.bashrc 
+		echo -e 'export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"' >> ~/.bashrc 
+		echo -e 'export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"' >> ~/.bashrc 
+		info "Homebrew (Linuxbrew) configured, use node -v and npm -v for testing it out. Also use brew update or brew upgrade node for checking out new versions. (Uninstallation by the brew uninstall node command)"
+	fi
 fi
 
 
@@ -127,35 +139,43 @@ fi
 info "All additional packages installed"
 #################### Additional Programs & Settings ####################
 
-echo $PWD
 # Freemind
-# The starting method is the same, download the package, but in this case we unzip it 
-if [ ! -e "freemind-bin-max-1.0.1.zip" ]; then
-	wget http://downloads.sourceforge.net/project/freemind/freemind/1.0.1/freemind-bin-max-1.0.1.zip
-fi
-if [ ! -d "Freemind" ]; then
-	mkdir Freemind
-else
-	cd ./Freemind
-	unzip ../freemind-bin-max-1.0.1.zip
-fi
-if [ ! -e "$HOME/bin" ]; then
-	mkdir $HOME/bin
-fi
+ask "Do you want to install Freemind? [Y/N]"
+read ANSWER
+while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
+do 
+	echo "Please answer [Y/N]" 
+	read ANSWER
+done
+if [ $ANSWER == "Y" ]; then
 
-if [ ! -e $HOME/bin/freemind.sh ]; then
-	if [ $ARCH = "x86_64" ];then
-		ln -s ~/Programs_64/Freemind/freemind.sh $HOME/bin/freemind.sh
+	# The starting method is the same, download the package, but in this case we unzip it 
+	if [ ! -e "freemind-bin-max-1.0.1.zip" ]; then
+		wget http://downloads.sourceforge.net/project/freemind/freemind/1.0.1/freemind-bin-max-1.0.1.zip
+	fi
+	if [ ! -d "Freemind" ]; then
+		mkdir Freemind
+	else
+		cd ./Freemind
+		unzip ../freemind-bin-max-1.0.1.zip
+	fi
+	if [ ! -e "$HOME/bin" ]; then
+		mkdir $HOME/bin
+	fi
+
+	if [ ! -e $HOME/bin/freemind.sh ]; then
+		if [ $ARCH = "x86_64" ];then
+			ln -s ~/Programs_64/Freemind/freemind.sh $HOME/bin/freemind.sh
+			info "Freemind installed and added o PATH"
+		elif [ $ARCH = "i386" ]; then
+			ln -s ~/Programs_32/Freemind/freemind.sh $HOME/bin/freemind.sh
 		info "Freemind installed and added o PATH"
-	elif [ $ARCH = "i386" ]; then
-		ln -s ~/Programs_32/Freemind/freemind.sh $HOME/bin/freemind.sh
-	info "Freemind installed and added o PATH"
-	else exit
+		else exit
+		fi
 	fi
 fi
-
 # Git Settings, change it to yours
-echo -e "Do you want to add these packages to your system? [Y/N] \n ${WANTED_PACKS[@]}"
+ask "Do you want to configure and set your git? [Y/N]"
 read ANSWER
 while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
 do 
