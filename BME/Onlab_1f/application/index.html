@@ -1,101 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta charset="utf-8"/>
+	<title>TypeScript HTML App</title>
+	<link rel="stylesheet" href="app.css"/>
 
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
-    <link rel="stylesheet" href="bower_modules/angular-material/angular-material.min.css"/>
-    <link rel="stylesheet" href="bower_modules/angular-material-icons/angular-material-icons.css"/>
-    <!--link rel="stylesheet" href="bower_modules/angular-simple-calendar/dist/angular-simple-calendar.css"/-->
-
-    <link rel="stylesheet" href="app.css"/>
-    <link rel="stylesheet" href="gantt/gantt.css"/>
-    <link rel="stylesheet" href="components/SelectItemDialog/selectItem.css"/>
-
-    <title>TypeScript HTML App</title>
+	<script src="lib/jquery.js"></script>
+	<script src="lib/kineticjs.js"></script>
+	<script src="lib/jquery-resize.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 
-    <script src="bower_modules/jquery/dist/jquery.min.js"></script>
-    <script src="bower_modules/konva/konva.min.js"></script>
+	<script src="app/Util/Hashable.js"></script>
+	<script src="app/Util/HashSet.js"></script>
+	<script src="app/Util/IComparable.js"></script>
+	<script src="app/Util/IntervalList/IInterval.js"></script>
+	<script src="app/Util/IntervalList/IntervalOverlapError.js"></script>
+	<script src="app/Util/IntervalList/IntervalBoundariesError.js"></script>
+	<script src="app/Util/IntervalList/IntervalList.js"></script>
+	<script src="app/Util/IntervalList/IntervalDate.js"></script>
 
-    <script src="bower_modules/angular/angular.min.js"></script>
-    <script src="bower_modules/angular-aria/angular-aria.min.js"></script>
-    <script src="bower_modules/angular-animate/angular-animate.min.js"></script>
-    <script src="bower_modules/angular-messages/angular-messages.min.js"></script>
-    <script src="bower_modules/angular-material/angular-material.min.js"></script>
-    <script src="bower_modules/angular-route/angular-route.min.js"></script>
-    <script src="bower_modules/angular-google-gapi/angular-google-gapi.min.js"></script>
-    <script src="bower_modules/filepicker-js/filepicker.js"></script>
-    <script src="bower_modules/ng-file-upload/ng-file-upload.min.js"></script>
-    <script src="bower_modules/ngFitText/dist/ng-FitText.min.js"></script>
-    <script src="bower_modules/angular-material-icons/angular-material-icons.min.js"></script>
-    <script src="lib/cycle/cycle.js"></script>
+	<script src="app/Model/WorkingCalendar/Duration.js"></script>
+	<script src="app/Model/WorkingCalendar/WorkingHour.js"></script>
+	<script src="app/Model/WorkingCalendar/WorkingDay.js"></script>
+	<script src="app/Model/WorkingCalendar/Exclusion.js"></script>
+	<script src="app/Model/WorkingCalendar/WorkingCalendar.js"></script>
 
-    <script src="bower_modules/systemjs/build/system.min.js"></script>
-    <script>
-        System.defaultJSExtensions = true;
-        System.import('app');
-    </script>
 
+	<script src="app/Model/Schedulers/ResourceManager.js"></script>
+	<script src="app/Model/Schedulers/Scheduler.js"></script>
+	<script src="app/Model/Schedulers/LeastSlackTimeScheduler.js"></script>
+
+	<script src="app/Model/Resources/ResourceType.js"></script>
+	<script src="app/Model/Resources/ResourceUsage.js"></script>
+
+
+
+	<script src="app/Model/Task.js"></script>
+	<script src="app/Model/Dependency.js"></script>
+	<script src="app/Model/Summary.js"></script>
+	<script src="app/Model/Schedulable.js"></script>
+	<script src="app/Model/Project.js"></script>
+
+	<script src="app/Util/ProjectGenerator.js"></script>
+
+	<script src="app/View/Utils.js"></script>
+	<script src="app/View/TimeLineDrawer.js"></script>
+	<script src="app/View/TaskDrawer.js"></script>
+	<script src="app/View/SchedulableDrawer.js"></script>
+	<script src="app/View/SummaryDrawer.js"></script>
+	<script src="app/View/TaskDrawerFactory.js"></script>
+	<script src="app/View/ProjectDrawer.js"></script>
+
+	<script src="app.js"></script>
 </head>
+<body>
 
-<body ng-controller="LayoutController as layout">
-<!--md-toolbar layout="row">
-    <md-button class="menu" hide-gt-md ng-click="layout.toggleList()" aria-label="Show User List">
-        <md-icon md-svg-src="menu"></md-icon>
-    </md-button>
-    <h1>Gantt-Diagram Application</h1>
-</md-toolbar-->
-
-<div>
-
-    <!--md-sidenav class="md-whiteframe-z2" md-component-id="left">
-        <md-list ng-controller="SidenavController as sidenavCtrl">
-            <md-item>
-                <md-button ng-click="sidenavCtrl.new()">
-                    <h3>New</h3>
-                </md-button>
-            </md-item>
-            <md-item>
-                <md-button ng-click="sidenavCtrl.toggleMenu('open')">
-                    <h3>Open</h3>
-                </md-button>
-                <span ng-show="sidenavCtrl.isMenuOpen('open')" class="toggle">
-                    <md-list>
-                        <md-item>
-                            <md-button ng-click="sidenavCtrl.openFromGoogleDrive()">Google drive</md-button>
-                        </md-item>
-                        <md-item>
-                            <input filepicker type="filepicker" data-fp-services="computer" on-success="onSuccess(event.fpfile)" />;
-                            <md-button ng-click="sidenavCtrl.openFromLocal()">Local</md-button>
-                        </md-item>
-                    </md-list>
-                </span>
-            </md-item>
-            <md-item>
-                <md-button ng-click="sidenavCtrl.toggleMenu('save')">
-                    <h3>Save</h3>
-                </md-button>
-                <span ng-show="sidenavCtrl.isMenuOpen('save')" class="toggle">
-                    <md-list>
-                        <md-item>
-                            <md-button ng-click="sidenavCtrl.saveToGoogleDrive()">Google drive</md-button>
-                        </md-item>
-                        <md-item>
-                            <md-button ng-click="sidenavCtrl.saveToLocal()">Local</md-button>
-                        </md-item>
-                    </md-list>
-                </span>
-            </md-item>
-        </md-list>
-
-    </md-sidenav-->
-
-    <div flex layout="column" layout-align="center stretch" id="content" ng-view></div>
+<h1>Gantt diagram HTML App</h1>
+<div id="zoom">
+	<span id="slider"></span>
+	<span id="zoomValue"></span>
 </div>
+
+
+<div id="taskWrapper">
+	<span id="tasks"></span>
+</div><div id="timeLineWrapper">
+	<span id="timeLine"></span>
+</div>
+<span id="arrows">
+	<span id="addBefore"><<</span>
+	<span id="addAfter">>></span>
+</span>
 
 </body>
 </html>
