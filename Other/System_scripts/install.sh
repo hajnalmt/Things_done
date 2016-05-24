@@ -42,6 +42,16 @@ if [ $ANSWER == "Y" ]; then
 fi
 
 #################### Additional Packages ###################
+# Install sublime package manager
+if [ -e "$HOME/.config/sublime-text-3/Installed Packages/Package Control.sublime-package" ]; then
+	SUBLIME_PACKAGE_PATH="$HOME/.config/sublime-text-3/Installed Packages/"
+	cd "$SUBLIME_PACKAGE_PATH"
+	echo "$PWD"
+	#wget https://packagecontrol.io/Package%20Control.sublime-package
+	info "Sublime Package Controller installed"
+fi
+
+
 # Additional Packages, which should be downloaded from the web
 ask "Do you want to install Homebrew (Linuxbrew) package manager for Node.js and NPM? [Y/N]"
 read ANSWER
@@ -57,10 +67,11 @@ if [ $ANSWER == "Y" ]; then
 		echo -e 'export PATH="$HOME/.linuxbrew/bin:$PATH"' >> ~/.bashrc 
 		echo -e 'export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"' >> ~/.bashrc 
 		echo -e 'export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"' >> ~/.bashrc 
-		info "Homebrew (Linuxbrew) configured, use node -v and npm -v for testing it out. Also use brew update or brew upgrade node for checking out new versions. (Uninstallation by the brew uninstall node command)"
 		brew update
 		brew install node
+ 		info "Homebrew (Linuxbrew) configured, use node -v and npm -v for testing it out. Also use brew update or brew upgrade node for checking out new versions. (Uninstallation by the brew uninstall node command)"
 	fi
+	cd [! -e "$HOME/.config/sublime-text-3/Installed Packages/Package Control.sublime-package" ]
 fi
 
 
