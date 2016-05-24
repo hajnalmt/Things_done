@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<title>Gantt chart application</title>
-	</head>
-	<body>
-		<section>
-			<h1 class="project-name">Gantt chart application></h1>
-		</section>
-	</body>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>TypeScript HTML App</title>
+	<link rel="stylesheet" href="app.css"/>
+
+	<script src="lib/jquery.js"></script>
+	<script src="lib/konva.min.js"></script>
+	<script src="lib/jquery-resize.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+	<script src="app/Util/Hashable.js"></script>
+	<script src="app/Util/HashSet.js"></script>
+	<script src="app/Util/IComparable.js"></script>
+	<script src="app/Util/IntervalList/IInterval.js"></script>
+	<script src="app/Util/IntervalList/IntervalOverlapError.js"></script>
+	<script src="app/Util/IntervalList/IntervalBoundariesError.js"></script>
+	<script src="app/Util/IntervalList/IntervalList.js"></script>
+	<script src="app/Util/IntervalList/IntervalDate.js"></script>
+
+	<script src="app/Model/WorkingCalendar/Duration.js"></script>
+	<script src="app/Model/WorkingCalendar/WorkingHour.js"></script>
+	<script src="app/Model/WorkingCalendar/WorkingDay.js"></script>
+	<script src="app/Model/WorkingCalendar/Exclusion.js"></script>
+	<script src="app/Model/WorkingCalendar/WorkingCalendar.js"></script>
+
+
+	<script src="app/Model/Schedulers/ResourceManager.js"></script>
+	<script src="app/Model/Schedulers/Scheduler.js"></script>
+	<script src="app/Model/Schedulers/LeastSlackTimeScheduler.js"></script>
+
+	<script src="app/Model/Resources/ResourceType.js"></script>
+	<script src="app/Model/Resources/ResourceUsage.js"></script>
+
+
+
+	<script src="app/Model/Task.js"></script>
+	<script src="app/Model/Dependency.js"></script>
+	<script src="app/Model/Summary.js"></script>
+	<script src="app/Model/Schedulable.js"></script>
+	<script src="app/Model/Project.js"></script>
+
+	<script src="app/Util/ProjectGenerator.js"></script>
+
+	<script src="app/View/Utils.js"></script>
+	<script src="app/View/TimeLineDrawer.js"></script>
+	<script src="app/View/TaskDrawer.js"></script>
+	<script src="app/View/SchedulableDrawer.js"></script>
+	<script src="app/View/SummaryDrawer.js"></script>
+	<script src="app/View/TaskDrawerFactory.js"></script>
+	<script src="app/View/ProjectDrawer.js"></script>
+
+	<script src="app.js"></script>
+</head>
+<body>
+
+<h1>Gantt diagram HTML App</h1>
+<div id="zoom">
+	<span id="slider"></span>
+	<span id="zoomValue"></span>
+</div>
+
+
+<div id="taskWrapper">
+	<span id="tasks"></span>
+</div><div id="timeLineWrapper">
+	<span id="timeLine"></span>
+</div>
+<span id="arrows">
+	<span id="addBefore"><<</span>
+	<span id="addAfter">>></span>
+</span>
+
+</body>
 </html>
