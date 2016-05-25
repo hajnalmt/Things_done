@@ -71,7 +71,6 @@ if [ $ANSWER == "Y" ]; then
 		brew install node
  		info "Homebrew (Linuxbrew) configured, use node -v and npm -v for testing it out. Also use brew update or brew upgrade node for checking out new versions. (Uninstallation by the brew uninstall node command)"
 	fi
-	cd [! -e "$HOME/.config/sublime-text-3/Installed Packages/Package Control.sublime-package" ]
 fi
 
 
