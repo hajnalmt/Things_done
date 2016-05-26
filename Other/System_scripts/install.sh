@@ -21,7 +21,7 @@ WANTED_PACKS=(
 	gnome-paint grub-pc-bin gthumb ktorrent libappindicator1 libindicator7 libxss1 lm-sensors \	
 	lp-solve ntfs-3g mc mypaint pinta p7zip p7zip-full putty qtcreator synaptic texlive \
 	texlive-full texlive-lang-hungarian ttf-mscorefonts-installer usb-creator-kde \
-	vifm vim vlc wpagui wpasupplicant
+	unetbootin vifm vim vlc wpagui wpasupplicant
 	# packages for Node.js and NPM
 	build-essential curl m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
 )
