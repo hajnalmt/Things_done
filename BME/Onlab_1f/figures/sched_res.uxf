@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>170</y>
+      <w>290</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Scheduler
+--
++schedule(tasksParam: Schedulable[])
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>410</x>
+      <y>170</y>
+      <w>280</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>LeastSlackTimeScheduler
+--
+-resourceManger: ResourceManager
++constructor()
+--
++schedule(taskParam: Schedulable[])
+-allocateResources(task: Schedulable)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>730</x>
+      <y>180</y>
+      <w>550</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ResourceManager
+--
+-resourceUsage: IntervalList&lt;IntervalDate&gt;[][]
++constructor()
+--
++allocateResource(resourceType: ResourceType, from: Date, to: Date): Date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>260</x>
+      <y>170</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;150;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>650</x>
+      <y>180</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>310</x>
+      <y>180</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>implements* </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>260</x>
+      <y>370</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ResourceType
+--
+-id: number
+-available: number
+-name: string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>510</x>
+      <y>370</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ResourceUsage
+--
+-id: number
+-resource: ResourceType
+-need: number</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>430</x>
+      <y>380</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;80;30</additional_attributes>
+  </element>
+</diagram>

@@ -4,9 +4,9 @@
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>300</x>
-      <y>30</y>
+      <y>20</y>
       <w>410</w>
-      <h>240</h>
+      <h>250</h>
     </coordinates>
     <panel_attributes>Project
 --
@@ -14,6 +14,7 @@
 +finish: Date
 +name: String
 +earliestFinish: Date
++tasks: Task[]  
 +workingcalendar: WorkingCalendar
 +scheduler: Scheduler
 --
@@ -129,23 +130,23 @@
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>220</x>
-      <y>100</y>
+      <y>90</y>
       <w>100</w>
-      <h>50</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>30;30;80;30</additional_attributes>
+    <additional_attributes>30;40;80;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>190</x>
-      <y>170</y>
+      <y>160</y>
       <w>130</w>
-      <h>130</h>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>30;110;110;30</additional_attributes>
+    <additional_attributes>30;120;110;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.custom.Text</type>

@@ -25,7 +25,7 @@ Ezek alapján négy részből állítottam össze a programot, amik mindent tudn
 
 %----------------------------------------------------------------------------
 \section{Project}
-A \figref{project_uml} ábra mutatja a Projekt UML diagramját
+\hspace{2mm} A \figref{project_uml} ábra mutatja a Projekt UML diagramját. A Project rész magja a ProjectGenerator osztály, ebben tudjuk megadni az egyes feladatokat, azok summaryjét ha kell továbbá a lageket is, továbbá ez indítja el a többi osztály generálását is, ennek hatására készül el a Project osztály, a maga tulajdonságaival és függvényeivel, mint a kezdési-végzési dátum, a munkanaptár, az ütemező és természetesen a projekthez tartoző taskok. A taskok maguk egy külön osztályt képviselnek, minden tasknak meg vannak a saját egyedi tulajdonságai, mint a neve és a hozzá tartozó leírás, továbbá magukhoz a feladatokhoz a függőségeket egy Dependecy osztályokból álló tömbben tárolódhatjuk el. Egy ilyen függőség lehet egy másik feladat vagy akár lag vagy időtartam (Duration), amit részletesebben a WorkingCalendar osztálynál fogunk megismerni. Ezeken kívül a Taskokat a Summary osztály segítségével csoportosíthatjuk egy tömbbe, mely a fentebbi követleményekben megfogalmazott összefogó Task-ot jelöli. Hogyha a feladatunk az ütemezővel be ütemezhető akkor az LST algoritmus által szolgáltatott adatokat a Taskról a Schedulable osztály fogja eltárolni.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth, keepaspectratio]{figures/project_uml.png}
@@ -34,7 +34,7 @@ A \figref{project_uml} ábra mutatja a Projekt UML diagramját
 \end{figure} 
 %----------------------------------------------------------------------------
 \section{WorkingCalendar}
-A \figref{workingcal_uml} ábra mutatja a Working Calendar UML diagramját
+\hspace{2mm} A \figref{workingcal_uml} ábra mutatja a Working Calendar UML diagramját. Az alkalmazás talán legbonyolultabb része a WorkingCalendar. Ez kezel minden idővel kapcsolatos osztályt. A fő osztály a WorkingCalendar mely eltárolja azokat a napokat amikor dolgozunk, ebben a Duration és Exclusion osztályok segítik, az egyik percre pontos időintervallumokat tud tárolni a másik pedig a kihagyott napokat. Egy munkanap egy WorkingDay osztály felel meg, a Calendart ezek és Exclusion osztály napjai teszik ki összesen. Az hogy egy nap workingDay-e egy sima bool változó jelöli a Calendaron belül. Egy munkanaphoz pedig munkaórák listája tartozik, az egyes munkaórákat pedig a percre pontos kezdési és végzési időpontokkal reprezentált WorkingHour osztály teszi ki.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth, keepaspectratio]{figures/workingcal_uml.png}
@@ -44,11 +44,11 @@ A \figref{workingcal_uml} ábra mutatja a Working Calendar UML diagramját
 
 %----------------------------------------------------------------------------
 \section{Schedulers, Resources}
-
-A \figref{sched_res_uml} ábra mutatja a Working Calendar UML diagramját
+\hspace{2mm} A \figref{sched_res_uml} ábra mutatja a Scheduler és a Resources UML diagramját. Már csak ez a két részünk maradt. Ezek egyszerűbb osztályok, magát egy erőforrást a típusával tudunk megadni, melyhez tartozik egy sima id a neve és egy szám érték az elérhetőség kifejezésére, azt pedig, hogy éppen mennyire van egy erőforrásra szükségünk a ResourceUsage osztály kezeli.
+\hspace{2mm} Az algoritmusokat a Scheduler, ütemező osztály valósítja meg, a schedule() függvény segítségével, ez egyelőr a LeastSlackTimeScheduler osztályban van implementálva. Ez az az osztály is ami az erőforrásokat menedzseli egy ResourceManager osztály segítségével. 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth, keepaspectratio]{figures/sched_res_uml.png}
-\caption{A Schedulers és Resources rész UML diagramja} 
+\caption{A Scheduler és Resources rész UML diagramja} 
 \label{fig:sched_res_uml}
 \end{figure} 
