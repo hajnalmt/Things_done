@@ -10,8 +10,7 @@
       A BME szabadonv&#225;lasztott dokumentumszerkeszt&#233;s nevezet&#369; t&#225;rgy&#225;hoz k&#233;sz&#252;lt mindmap.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1457897196830" FOLDED="true" ID="ID_1169635182" MODIFIED="1463710754320" POSITION="right" TEXT="1) Hogyan n&#xe9;z ki egy ig&#xe9;nyes domkumentum?">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -22,8 +21,7 @@
       N&#233;h&#225;ny sz&#243;ban az alapvet&#337; tipogr&#225;fiai szab&#225;lyokr&#243;l.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1457897300022" FOLDED="true" ID="ID_373378360" MODIFIED="1457897672649" TEXT="Megfelel&#x151; sz&#xf6;vegszerkeszt&#x151;!">
 <node CREATED="1457897356874" ID="ID_1939913387" MODIFIED="1457897370598" TEXT="Sublime Linuxon"/>
@@ -1401,8 +1399,7 @@
       \end{figure}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1458733182213" FOLDED="true" ID="ID_752114919" MODIFIED="1459008706235" TEXT="&#xc1;bra manipul&#xe1;l&#xe1;sa figure k&#xf6;rnyezetben">
 <node CREATED="1458733899500" ID="ID_1018389258" MODIFIED="1458733981863" TEXT="Az &#xe1;br&#xe1;k manipl&#xe1;l&#xe1;sa itt is lehets&#xe9;ges">
@@ -1638,8 +1635,7 @@
       \end{wrapfigure}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="12"/>
 </node>
 <node CREATED="1458735111247" FOLDED="true" ID="ID_248249771" MODIFIED="1459007084263" TEXT="T&#xf6;bb &#xe1;bra megjelen&#xed;t&#xe9;se egym&#xe1;s mellett">
@@ -3083,7 +3079,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1461754104908" FOLDED="true" ID="ID_767244862" MODIFIED="1463697795536" POSITION="left" TEXT="10) Oldalszerkeszt&#xe9;s, m&#xe9;ret, elforgat&#xe1;s, has&#xe1;bok">
+<node CREATED="1461754104908" ID="ID_767244862" MODIFIED="1464548479021" POSITION="left" TEXT="10) Oldalszerkeszt&#xe9;s, m&#xe9;ret, elforgat&#xe1;s, has&#xe1;bok">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1461754185540" ID="ID_435126214" MODIFIED="1461754196314" TEXT="Hosszabb dokumentum feldarabol&#xe1;sa">
 <node CREATED="1461754241316" ID="ID_748617543" MODIFIED="1461754999586" TEXT="Ha nagy m&#x171;vet &#xed;runk, &#xe1;ttekinthet&#x151;bb, ha minden fejezetet k&#xfc;l&#xf6;n .tex f&#xe1;jlba &#xed;runk, majd a v&#xe9;g&#xe9;n &#xf6;sszef&#x171;zz&#xfc;k &#x151;ket!"/>
