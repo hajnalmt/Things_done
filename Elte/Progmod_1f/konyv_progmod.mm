@@ -18,9 +18,9 @@
   </body>
 </html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531014862" FOLDED="true" ID="ID_1305375914" MODIFIED="1460579778873" POSITION="right" TEXT="1. Alapfogalmak">
+<node CREATED="1457531014862" ID="ID_1305375914" MODIFIED="1464646100945" POSITION="right" TEXT="1. Alapfogalmak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1459341195608" TEXT="Halmazok">
+<node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1464647816786" TEXT="Halmazok">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -129,7 +129,7 @@
 <node CREATED="1458139481338" ID="ID_284261828" MODIFIED="1458139515041" TEXT="r&#xe9;szhalmazaiknak halmaza (hatv&#xe1;nyhalmaz) - &#x2118;(H) "/>
 <node CREATED="1458139499707" ID="ID_1353014323" MODIFIED="1458139550270" TEXT="v&#xe9;ges r&#xe9;szhalmazainak halmaza - F(H)"/>
 </node>
-<node CREATED="1459335523781" FOLDED="true" ID="ID_1160143481" MODIFIED="1459344828179" TEXT="Sorozatok">
+<node CREATED="1459335523781" FOLDED="true" ID="ID_1160143481" MODIFIED="1464647815547" TEXT="Sorozatok">
 <node CREATED="1459335539544" ID="ID_1522442326" MODIFIED="1459335572607" TEXT="alpha ...-al a v&#xe9;g&#xe9;n=A-beli v&#xe9;ges vagy v&#xe9;gtelen sorozat"/>
 <node CREATED="1459335575298" ID="ID_664599994" MODIFIED="1459335609478" TEXT="alpha utols&#xf3; elemmel=A -beli v&#xe9;ges sorozat">
 <node CREATED="1459335610724" ID="ID_125158985" MODIFIED="1459335632822" TEXT="abszol&#xfa;t&#xe9;rt&#xe9;k alpha a sz&#xe1;moss&#xe1;ga"/>
@@ -155,7 +155,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459336328036" FOLDED="true" ID="ID_1701911780" MODIFIED="1460555691818" TEXT="Rel&#xe1;ci&#xf3;k">
+<node CREATED="1459336328036" FOLDED="true" ID="ID_1701911780" MODIFIED="1464647813611" TEXT="Rel&#xe1;ci&#xf3;k">
 <node CREATED="1459336341794" ID="ID_1992704245" MODIFIED="1459336426763" TEXT="AxB direktszorzat">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -310,7 +310,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459341220768" FOLDED="true" ID="ID_375610773" MODIFIED="1459344831867" TEXT="M&#x171;veletek">
+<node CREATED="1459341220768" FOLDED="true" ID="ID_375610773" MODIFIED="1464647812703" TEXT="M&#x171;veletek">
 <node CREATED="1459341447711" ID="ID_880296425" MODIFIED="1459341484650" TEXT="Kompoz&#xed;ci&#xf3;">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -416,7 +416,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459342936964" FOLDED="true" ID="ID_821975961" MODIFIED="1460555646192" TEXT="Logikai rel&#xe1;ci&#xf3;k">
+<node CREATED="1459342936964" ID="ID_821975961" MODIFIED="1464647818443" TEXT="Logikai rel&#xe1;ci&#xf3;k">
 <node CREATED="1459343003034" ID="ID_168719900" MODIFIED="1459343015680" TEXT="R &#x2286; A &#xd7; L">
 <node CREATED="1459343016560" ID="ID_889833285" MODIFIED="1459343021314" TEXT="Ahol A tetsz&#x151;leges halmaz"/>
 </node>
