@@ -18,9 +18,9 @@
   </body>
 </html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531014862" ID="ID_1305375914" MODIFIED="1464646100945" POSITION="right" TEXT="1. Alapfogalmak">
+<node CREATED="1457531014862" ID="ID_1305375914" MODIFIED="1464812838406" POSITION="right" TEXT="1. Alapfogalmak">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1464647816786" TEXT="Halmazok">
+<node CREATED="1457531063935" FOLDED="true" ID="ID_1965263102" MODIFIED="1464813225956" TEXT="Halmazok">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -129,7 +129,7 @@
 <node CREATED="1458139481338" ID="ID_284261828" MODIFIED="1458139515041" TEXT="r&#xe9;szhalmazaiknak halmaza (hatv&#xe1;nyhalmaz) - &#x2118;(H) "/>
 <node CREATED="1458139499707" ID="ID_1353014323" MODIFIED="1458139550270" TEXT="v&#xe9;ges r&#xe9;szhalmazainak halmaza - F(H)"/>
 </node>
-<node CREATED="1459335523781" FOLDED="true" ID="ID_1160143481" MODIFIED="1464647815547" TEXT="Sorozatok">
+<node CREATED="1459335523781" FOLDED="true" ID="ID_1160143481" MODIFIED="1464813227350" TEXT="Sorozatok">
 <node CREATED="1459335539544" ID="ID_1522442326" MODIFIED="1459335572607" TEXT="alpha ...-al a v&#xe9;g&#xe9;n=A-beli v&#xe9;ges vagy v&#xe9;gtelen sorozat"/>
 <node CREATED="1459335575298" ID="ID_664599994" MODIFIED="1459335609478" TEXT="alpha utols&#xf3; elemmel=A -beli v&#xe9;ges sorozat">
 <node CREATED="1459335610724" ID="ID_125158985" MODIFIED="1459335632822" TEXT="abszol&#xfa;t&#xe9;rt&#xe9;k alpha a sz&#xe1;moss&#xe1;ga"/>
@@ -155,7 +155,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459336328036" FOLDED="true" ID="ID_1701911780" MODIFIED="1464647813611" TEXT="Rel&#xe1;ci&#xf3;k">
+<node CREATED="1459336328036" FOLDED="true" ID="ID_1701911780" MODIFIED="1464813575534" TEXT="Rel&#xe1;ci&#xf3;k">
 <node CREATED="1459336341794" ID="ID_1992704245" MODIFIED="1459336426763" TEXT="AxB direktszorzat">
 <richcontent TYPE="NOTE"><html>
   <head>
@@ -416,7 +416,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1459342936964" ID="ID_821975961" MODIFIED="1464647818443" TEXT="Logikai rel&#xe1;ci&#xf3;k">
+<node CREATED="1459342936964" FOLDED="true" ID="ID_821975961" MODIFIED="1464812705743" TEXT="Logikai rel&#xe1;ci&#xf3;k">
 <node CREATED="1459343003034" ID="ID_168719900" MODIFIED="1459343015680" TEXT="R &#x2286; A &#xd7; L">
 <node CREATED="1459343016560" ID="ID_889833285" MODIFIED="1459343021314" TEXT="Ahol A tetsz&#x151;leges halmaz"/>
 </node>
@@ -490,7 +490,7 @@
 <node CREATED="1457531102895" ID="ID_1702385452" MODIFIED="1457531119089" POSITION="right" TEXT="3. Specifik&#xe1;ci&#xf3;">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
-<node CREATED="1457531071847" ID="ID_409542244" MODIFIED="1457531091539" POSITION="left" TEXT="2. A programoz&#xe1;s alapfogalmai">
+<node CREATED="1457531071847" FOLDED="true" ID="ID_409542244" MODIFIED="1464812702061" POSITION="left" TEXT="2. A programoz&#xe1;s alapfogalmai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1459344213020" FOLDED="true" ID="ID_858321385" MODIFIED="1460581709952" TEXT="&#xc1;llapott&#xe9;r">
 <node CREATED="1460555809251" ID="ID_710115402" MODIFIED="1460555819715" TEXT="A t&#xed;pus&#xe9;rt&#xe9;khalmazok direkt szorzata"/>
@@ -532,7 +532,7 @@
 <node CREATED="1457531122294" ID="ID_1888957416" MODIFIED="1457531134727" POSITION="left" TEXT="4. Kiterjeszt&#xe9;sek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
-<node CREATED="1464548567798" ID="ID_979999161" MODIFIED="1464548586649" POSITION="right" TEXT="Vizsg&#xe1;ra">
+<node CREATED="1464548567798" ID="ID_979999161" MODIFIED="1464813202793" POSITION="right" TEXT="Vizsg&#xe1;ra">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1464548588099" ID="ID_170583475" MODIFIED="1464548854739" TEXT="Specifik&#xe1;ci&#xf3; t&#xe9;tele"/>
 <node CREATED="1464548857852" ID="ID_206657371" MODIFIED="1464548870425" TEXT="T&#xed;pusspecifik&#xe1;ci&#xf3; t&#xe9;tele"/>
@@ -585,6 +585,11 @@
 <node CREATED="1464549320027" ID="ID_607803617" MODIFIED="1464549327754" TEXT="t&#xed;pusspecifik&#xe1;ci&#xf3; t&#xe9;tele"/>
 </node>
 </node>
+</node>
+<node CREATED="1464812711096" ID="ID_1573682155" MODIFIED="1464812738233" POSITION="left" TEXT="Gyakorl&#xe1;s">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1464812739483" ID="ID_360134290" MODIFIED="1464812754735" TEXT="1.r&#xe9;sz"/>
+<node CREATED="1464825131441" ID="ID_1411383153" MODIFIED="1464825134453" TEXT="2.r&#xe9;sz"/>
 </node>
 </node>
 </map>
