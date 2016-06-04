@@ -43,12 +43,41 @@ fi
 
 #################### Additional Packages ###################
 # Install sublime package manager
-if [ -e "$HOME/.config/sublime-text-3/Installed Packages/Package Control.sublime-package" ]; then
-	SUBLIME_PACKAGE_PATH="$HOME/.config/sublime-text-3/Installed Packages/"
-	cd "$SUBLIME_PACKAGE_PATH"
-	echo "$PWD"
-	#wget https://packagecontrol.io/Package%20Control.sublime-package
-	info "Sublime Package Controller installed"
+if [ ! -e "$HOME/.config/sublime-text-3/Installed Packages/Package Control.sublime-package" ]; then
+	ask "Do you want to install sublime package manager? [Y/N]"
+	read ANSWER
+	while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
+	do
+	     	echo "Please answer [Y/N]" 
+	        read ANSWER
+	done
+	if [ $ANSWER == "Y" ]; then
+		SUBLIME_PACKAGE_PATH="$HOME/.config/sublime-text-3/Installed Packages/"
+		cd "$SUBLIME_PACKAGE_PATH"
+		wget https://packagecontrol.io/Package%20Control.sublime-package
+		info "Sublime Package Controller installed"
+	fi
+fi
+
+# Install google-drive-ocamlfuse
+ask "Do you want to mount your Google drive? [Y/N]"
+read ANSWER
+while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
+do
+	echo "Please answer [Y/N]" 
+        read ANSWER
+done
+if [ $ANSWER == "Y" ]; then
+	sudo add-apt-repository ppa:alessandro-strada/ppa
+	sudo apt-get update
+	sudo apt-get install google-drive-ocamlfuse ocaml camlp4-extra
+	# if the above process reports that OPAM could not be installed, as it is not provided by any package for your distribution, you have to compile and install it using following commands
+	# git clone https://github.com/OCamlPro/opam.git
+	# cd opam
+	# ./configure
+	# make
+	# sudo make install
+	info "Your Google drive is mounted."
 fi
 
 
