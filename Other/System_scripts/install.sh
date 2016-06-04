@@ -70,14 +70,42 @@ done
 if [ $ANSWER == "Y" ]; then
 	sudo add-apt-repository ppa:alessandro-strada/ppa
 	sudo apt-get update
-	sudo apt-get install google-drive-ocamlfuse ocaml camlp4-extra
+	sudo apt-get install google-drive-ocamlfuse ocaml camlp4-extra m4 libcurl4-gnutls-dev libfuse-dev libsqlite3-dev
 	# if the above process reports that OPAM could not be installed, as it is not provided by any package for your distribution, you have to compile and install it using following commands
 	# git clone https://github.com/OCamlPro/opam.git
 	# cd opam
 	# ./configure
 	# make
 	# sudo make install
-	info "Your Google drive is mounted."
+	opam init
+	opam update
+	opam install google-drive-ocamlfuse
+	info "Please authenticate yourself in the opening web browser and then accept the terms and conditions!"	
+	google-drive-ocamlfuse
+	info "After you gave your password again, give permission to the gfuse OAuth2 to access your Google account, and hit Enter in the terminal!"
+	read ANSWER
+	info "Mounting google drive to your home directory ~/google-drive"
+	mkdir ~/google-drive
+	google-drive-ocamlfuse -/google-drive 
+	# With df command you can check the diskspace usage
+	# If you have more than one account you can run use following command.
+	# google-drive-ocamlfuse -label label [mountpoint]
+	# The label options is used to distingush different accounts under directory ~/.gdfuse/label to host configuration, application state, and file cache
+	# to unmount the google Drive, you have to run:
+	# fusermount -u -/google-drive
+	# for more options and help, run:
+	# google-drive-ocamlfuse -help
+	info "Your Google Drive is mounted."
+	ask "Do you want to mount your account automatically with start up? [Y/N]"
+	read ANSWER
+	while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
+	do
+        	echo "Please answer [Y/N]" 
+        	read ANSWER
+	done
+	if [ $ANSWER == "Y" ]; then
+	
+	fi
 fi
 
 
