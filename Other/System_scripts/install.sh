@@ -96,7 +96,7 @@ if [ $ANSWER == "Y" ]; then
 	# for more options and help, run:
 	# google-drive-ocamlfuse -help
 	info "Your Google Drive is mounted."
-	ask "Do you want to mount your account automatically with start up? [Y/N]"
+	ask "Do you want to mount your account automatically with boot? [Y/N]"
 	read ANSWER
 	while [[ $ANSWER != "Y" && $ANSWER != "N" ]];
 	do
@@ -104,7 +104,7 @@ if [ $ANSWER == "Y" ]; then
         	read ANSWER
 	done
 	if [ $ANSWER == "Y" ]; then
-	
+		
 	fi
 fi
 
