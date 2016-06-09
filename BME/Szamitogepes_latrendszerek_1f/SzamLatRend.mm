@@ -547,11 +547,159 @@
 <node CREATED="1465435257570" ID="ID_1277537816" MODIFIED="1465435264478" TEXT="40. Hogyan oldhat&#xf3; meg egy homog&#xe9;n line&#xe1;ris egyenletrendszer LS m&#xf3;dszerrel? Mit &#xe9;rt&#xfc;nk szingul&#xe1;ris &#xe9;rt&#xe9;k &#xe9;s vektor alatt?">
 <node CREATED="1465435295145" ID="ID_1259101973" MODIFIED="1465435295768" TEXT="Az SVD (szingul&#xe1;ris &#xe9;rt&#xe9;k) felbont&#xe1;s b&#xe1;zistranszform&#xe1;ci&#xf3;, arra haszn&#xe1;ljuk, hogy a m&#xe1;trixainkat olyan ortonorm&#xe1;lt b&#xe1;zisban &#xed;rhassuk fel, ahol diagon&#xe1;lisak. A diagon&#xe1;lis m&#xe1;trixokat az&#xe9;rt szeretj&#xfc;k, mert ir&#xe1;nyf&#xfc;gg&#x151; er&#x151;s&#xed;t&#xe9;seket jellemeznek (legnagyobb, legkisebb -&gt; rendszerek stabilit&#xe1;sa). A = U &#x2219; &#x3a3; &#x2219; V T , ahol U &#x2208; R m&#xd7;m , &#x3a3; &#x2208; R m&#xd7;n , V &#x2208; R n&#xd7;n U &#xe9;s V b&#xe1;zistranszform&#xe1;ci&#xf3;s m&#xe1;trixok, ortogon&#xe1;lisak (ez&#xe9;rt ortonorm&#xe1;lt b&#xe1;zisokra visznek). &#x3a3;: a szingul&#xe1;ris &#xe9;rt&#xe9;kekb&#x151;l (&#x3c3; 1 , &#x3c3; 2 ... &#x3c3; m ) k&#xe9;pzett diagon&#xe1;lis m&#xe1;trix. Konvencion&#xe1;lisan a szingul&#xe1;ris &#xe9;rt&#xe9;kek cs&#xf6;kken&#x151; sorrendben szerepelnek. A pozit&#xed;v &#x3c3; 1 &#x2265;&#x3c3; 2 &#x2265;...&#x2265;&#x3c3; r &gt;0 sz&#xe1;mok az r-rang&#xfa; val&#xf3;s (komplex) A m&#xe1;trix szingul&#xe1;ris &#xe9;rt&#xe9;kei, ha van olyan {v 1 , ..., v r } ortonorm&#xe1;lt b&#xe1;zisa a sort&#xe9;rnek (konjug&#xe1;ltj&#xe1;nak) &#xe9;s {u 1 , ..., u r } ortonorm&#xe1;lt b&#xe1;zisa az oszlopt&#xe9;rnek (konjug&#xe1;ltj&#xe1;nak), hogy A &#x2219; v i = &#x3c3; i &#x2219; u i , i = 1, ... , r A v i vektorokat bal, az u i vektorokat jobb szingul&#xe1;ris vektoroknak nevezz&#xfc;k."/>
 </node>
+<node CREATED="1465435565670" ID="ID_457181542" MODIFIED="1465435566237" TEXT="41. Adja meg a lehets&#xe9;ges geometriai transzform&#xe1;ci&#xf3;k t&#xed;pusait, &#xe9;s a m&#xe1;trixaik &#xe1;ltal&#xe1;nos alakj&#xe1;t! Milyen transzform&#xe1;ci&#xf3;kat engednek meg &#xe9;s milyen tulajdons&#xe1;gokat &#x151;riznek meg az egyes t&#xed;pusok?">
+<node CREATED="1465435571073" ID="ID_184208297" MODIFIED="1465435579690" TEXT="Euklideszi transzform&#xe1;ci&#xf3;">
+<node CREATED="1465435581247" ID="ID_1089337586" MODIFIED="1465435584178" TEXT="Nincs sk&#xe1;l&#xe1;z&#xe1;s"/>
 </node>
-<node CREATED="1465399130488" ID="ID_952979736" MODIFIED="1465435175492" TEXT="8. Kameramodellek, kalibr&#xe1;ci&#xf3;"/>
-<node CREATED="1465399143974" ID="ID_1876980175" MODIFIED="1465435181074" TEXT="9. 3D rekonstrukci&#xf3;"/>
-<node CREATED="1465399151760" ID="ID_907448420" MODIFIED="1465435201399" TEXT="10. K&#xe9;pilleszt&#xe9;s"/>
-<node CREATED="1465399160385" ID="ID_1390726951" MODIFIED="1465435205694" TEXT="11. Tanul&#xf3; l&#xe1;t&#xe1;s"/>
+<node CREATED="1465435589288" ID="ID_407668145" MODIFIED="1465435593562" TEXT="Hasonl&#xf3;s&#xe1;gi transzform&#xe1;ci&#xf3;">
+<node CREATED="1465435594682" ID="ID_447933712" MODIFIED="1465435604271" TEXT="Nincs ir&#xe1;nyf&#xfc;gg&#x151; sk&#xe1;l&#xe1;z&#xe1;s"/>
+<node CREATED="1465435605463" ID="ID_1445475743" MODIFIED="1465435637175" TEXT="Nincs ny&#xed;r&#xe1;s"/>
+</node>
+<node CREATED="1465435648791" ID="ID_671223104" MODIFIED="1465435655226" TEXT="Afffin transzform&#xe1;ci&#xf3;">
+<node CREATED="1465435656594" ID="ID_171494339" MODIFIED="1465435663946" TEXT="Meg&#x151;rzi az ide&#xe1;lis pontokat"/>
+</node>
+<node CREATED="1465435665310" ID="ID_1447548752" MODIFIED="1465435673823" TEXT="Projekt&#xed;v transzform&#xe1;ci&#xf3;"/>
+</node>
+<node CREATED="1465436059145" ID="ID_533892915" MODIFIED="1465436065692" TEXT="42. Mik a homog&#xe9;n koordin&#xe1;t&#xe1;k &#xe9;s mik a haszn&#xe1;latuk el&#x151;nyei? Mi az az ide&#xe1;lis pont?">
+<node CREATED="1465436505902" ID="ID_1835078247" MODIFIED="1465436506382" TEXT="Az olyan koordin&#xe1;ta-rendszereket nevezik homog&#xe9;nnek, amelyekben a pontot azonos&#xed;t&#xf3; rendezett p&#xe1;r (h&#xe1;rmas, n&#xe9;gyes stb.) elemeit egy null&#xe1;t&#xf3;l k&#xfc;l&#xf6;nb&#xf6;z&#x151; sz&#xe1;mmal megszorozva ugyanazt a pontot azonos&#xed;t&#xf3; p&#xe1;rt (h&#xe1;rmast, n&#xe9;gyest...) kapjuk. (x 0 , x 1 ) = (&#x3bc; &#x2219; x 0 , &#x3bc; &#x2219; x 1 ) A homog&#xe9;n koordin&#xe1;t&#xe1;k igazi jelent&#x151;s&#xe9;g&#xe9;t az adja, hogy haszn&#xe1;latukkal az ide&#xe1;lis t&#xe9;relemek (pont, egyenes, s&#xed;k) is megadhat&#xf3;k"/>
+<node CREATED="1465436523478" ID="ID_639952838" MODIFIED="1465436524149" TEXT="Az egyenes (1D-t&#xe9;r) projekt&#xed;v koordin&#xe1;t&#xe1;i"/>
+<node CREATED="1465436532661" ID="ID_661576321" MODIFIED="1465436533234" TEXT="A projekt&#xed;v rendszert az egyenesen k&#xed;v&#xfc;li pontb&#xf3;l indul&#xf3; k&#xe9;t b&#xe1;zis-vektorral (a 0 , a 1 ) adjuk meg. A k&#xe9;t b&#xe1;zis egy tetsz&#x151;leges line&#xe1;ris kombin&#xe1;ci&#xf3;ja egy olyan vektort ad meg, aminek egyenese az adott egyenest egy P pontban metszi."/>
+<node CREATED="1465436708456" ID="ID_602586370" MODIFIED="1465436709094" TEXT="de&#xe1;lis pont: A s&#xed;k k&#xe9;t egyenese vagy p&#xe1;rhuzamos, vagy pedig van egy k&#xf6;z&#xf6;s pontjuk. Ezt a k&#xe9;tf&#xe9;les&#xe9;get megsz&#xfc;ntethetj&#xfc;k az&#xe1;ltal, hogy az egyenes pontjainak az &#xf6;sszess&#xe9;g&#xe9;t egy ide&#xe1;lis pontnak (v&#xe9;gtelen t&#xe1;voli pont) mondott elemmel b&#x151;v&#xed;tj&#xfc;k, m&#xe9;gpedig k&#xe9;t egyenes pontjainak az &#xf6;sszess&#xe9;g&#xe9;t akkor &#xe9;s csak akkor b&#x151;v&#xed;tj&#xfc;k ugyanazzal az &#xfa;j elemmel, ha a k&#xe9;t egyenes p&#xe1;rhuzamos. Az egy s&#xed;kban fekv&#x151; egyenesek ide&#xe1;lis pontjai alkotj&#xe1;k a s&#xed;k ide&#xe1;lis egyenes&#xe9;t. A p&#xe1;rhuzamos s&#xed;kok ide&#xe1;lis egyenesei k&#xf6;z&#xf6;sek. A t&#xe1;jk&#xe9;pen a v&#xed;zszintes s&#xed;kok ide&#xe1;lis egyeneseinek k&#xe9;pe a horizont. A t&#xe9;r k&#xfc;l&#xf6;nb&#xf6;z&#x151; &#xe1;ll&#xe1;s&#xfa; s&#xed;kjainak ide&#xe1;lis egyenesei alkotj&#xe1;k a t&#xe9;r (egyetlen) ide&#xe1;lis s&#xed;kj&#xe1;t."/>
+</node>
+<node CREATED="1465436073840" ID="ID_1719878487" MODIFIED="1465436075768" TEXT="43. Adja meg a projekt&#xed;v t&#xe9;rb&#x151;l a projekt&#xed;v s&#xed;kra t&#xf6;rt&#xe9;n&#x151; vet&#xed;t&#xe9;s egyenlet&#xe9;t! Mi az elt&#x171;n&#x151; pont?">
+<node CREATED="1465436885741" ID="ID_1162955318" MODIFIED="1465436886655" TEXT="Vet&#xed;t&#xe9;s a projekt&#xed;v t&#xe9;rb&#x151;l a projekt&#xed;v s&#xed;kra: P 3 &#x2192; P 2"/>
+<node CREATED="1465436888786" ID="ID_1502702788" MODIFIED="1465436900993" TEXT="Elt&#x171;n&#x151; pont P&#xe1;rhuzamos P 3 -beli egyenesek metsz&#xe9;spontja, az adott ir&#xe1;nyban l&#xe9;v&#x151; ide&#xe1;lis pont."/>
+<node CREATED="1465436915460" ID="ID_1056656483" MODIFIED="1465436917990" TEXT="A P 3 -beli ide&#xe1;lis pont k&#xe9;pe P 2 -ben nem biztos, hogy ide&#xe1;lis pont lesz!">
+<node CREATED="1465436927756" ID="ID_595011958" MODIFIED="1465436937630" TEXT="Csak, ha (X,Y,Z) mer&#x151;leges (t 31 , t 32 , t 33 )-ra"/>
+<node CREATED="1465436934292" ID="ID_1447224560" MODIFIED="1465436934651" TEXT="Ha az egyenesek p&#xe1;rhuzamosak a k&#xe9;ps&#xed;kkal!"/>
+</node>
+</node>
+</node>
+<node CREATED="1465399130488" ID="ID_952979736" MODIFIED="1465435175492" TEXT="8. Kameramodellek, kalibr&#xe1;ci&#xf3;">
+<node CREATED="1465436083895" ID="ID_948563789" MODIFIED="1465436084505" TEXT="44. Ismertesse a pinhole kameramodellt! (Rajz, egyenletek, param&#xe9;terek, m&#xe1;trixok)">
+<node CREATED="1465437366655" ID="ID_1630623432" MODIFIED="1465437367333" TEXT="T&#xe1;volabbi objektumok kisebbek, p&#xe1;rhuzamos egyenesek tal&#xe1;lkoznak."/>
+<node CREATED="1465437373774" ID="ID_1930363102" MODIFIED="1465437374388" TEXT="A vil&#xe1;g koordin&#xe1;t&#xe1;i: X, Y, Z A k&#xe9;p koordin&#xe1;t&#xe1;i: x, y"/>
+<node CREATED="1465437382876" ID="ID_575159506" MODIFIED="1465437383243" TEXT="Vet&#xed;t&#xe9;s egyenlete: x = A &#x2219; [R t] &#x2219; X = P &#x2219; X A vet&#xed;t&#xe9;s m&#xe1;trixa: P = A &#x2219; [R t]"/>
+<node CREATED="1465437391219" ID="ID_799819874" MODIFIED="1465437391923" TEXT="A vet&#xed;t&#xe9;s m&#xe1;trixa felbonthat&#xf3; bels&#x151; &#xe9;s k&#xfc;ls&#x151; param&#xe9;terekre.">
+<node CREATED="1465437397667" ID="ID_1448253339" MODIFIED="1465437398005" TEXT="K&#xfc;ls&#x151;: T ext = [R t] - A kamera helyzet&#xe9;t&#x151;l f&#xfc;ggenek a vil&#xe1;g koordin&#xe1;tarendszerben"/>
+<node CREATED="1465437404288" ID="ID_102936410" MODIFIED="1465437404697" TEXT="Bels&#x151;: A - A kamera param&#xe9;terei (kameram&#xe1;trix)">
+<node CREATED="1465437412048" ID="ID_1805366342" MODIFIED="1465437412495" TEXT="o Pixels&#x171;r&#x171;s&#xe9;g (pix/mm) (k,l)"/>
+<node CREATED="1465437420614" ID="ID_128482829" MODIFIED="1465437421118" TEXT="F&#xf3;kuszt&#xe1;v (f)"/>
+<node CREATED="1465437430237" ID="ID_316039085" MODIFIED="1465437430528" TEXT="Skew (&#x398;)"/>
+<node CREATED="1465437435701" ID="ID_550400762" MODIFIED="1465437435996" TEXT="Princip&#xe1;lis pont (p x , p y )"/>
+</node>
+</node>
+</node>
+<node CREATED="1465436092716" ID="ID_898578488" MODIFIED="1465436093274" TEXT="45. Mi a kamerakalibr&#xe1;ci&#xf3; c&#xe9;lja? Ismertesse a 3D markeres kalibr&#xe1;ci&#xf3; elv&#xe9;t &#xe9;s mutassa be a l&#xe9;p&#xe9;seit!">
+<node CREATED="1465437484330" ID="ID_1719699226" MODIFIED="1465437484652" TEXT="Ha a k&#xe9;peket a k&#xe9;s&#x151;bbiekben analiz&#xe1;lni akarjuk, akkor a be&#xe1;ll&#xed;t&#xe1;s pontoss&#xe1;g&#xe1;t, a vizsg&#xe1;lt ter&#xfc;let m&#xe9;reteit &#xe9;s azonos&#xed;t&#xe1;si pontjait fel kell t&#xe9;rk&#xe9;pezn&#xfc;nk. Szeretn&#xe9;nk a kamera bels&#x151; &#xe9;s k&#xfc;ls&#x151; param&#xe9;tereit kisz&#xe1;molni!"/>
+<node CREATED="1465437496695" ID="ID_1744944281" MODIFIED="1465437497819" TEXT="Elve: Van egy 3D objektumunk, azon el&#x151;re ismert markerek. A markerek k&#xe9;p&#xe9;t akarjuk meghat&#xe1;rozni."/>
+<node CREATED="1465437499631" ID="ID_10682007" MODIFIED="1465437502160" TEXT="L&#xe9;p&#xe9;sei">
+<node CREATED="1465437542396" ID="ID_1495377393" MODIFIED="1465437588349" TEXT="Markerek megkeres&#xe9;se ">
+<node CREATED="1465437555224" ID="ID_1612819366" MODIFIED="1465437556343" TEXT="Sarokdetekt&#xe1;l&#xe1;ssal "/>
+<node CREATED="1465437572525" ID="ID_1206670038" MODIFIED="1465437573052" TEXT="Egyenesek metsz&#xe9;spontja"/>
+</node>
+<node CREATED="1465437581781" ID="ID_1310464944" MODIFIED="1465437582213" TEXT="2. P meghat&#xe1;roz&#xe1;sa (projekci&#xf3;s m&#xe1;trix)"/>
+<node CREATED="1465437608203" ID="ID_1254375535" MODIFIED="1465437608530" TEXT="A, R, t meghat&#xe1;roz&#xe1;sa (k&#xfc;ls&#x151;-bels&#x151; param&#xe9;terek)"/>
+<node CREATED="1465437631802" ID="ID_1581028810" MODIFIED="1465437636870" TEXT="Becsl&#xe9;sek finom&#xed;t&#xe1;sa"/>
+</node>
+</node>
+<node CREATED="1465436099697" ID="ID_1349788263" MODIFIED="1465436100344" TEXT="46. Mi a kamerakalibr&#xe1;ci&#xf3; c&#xe9;lja? Ismertesse a sakkt&#xe1;bl&#xe1;s kalibr&#xe1;ci&#xf3; elv&#xe9;t &#xe9;s mutassa be a l&#xe9;p&#xe9;seit! (azokat is, amelyek a 3D markeres kalibr&#xe1;ci&#xf3;ban ugyanazok)">
+<node CREATED="1465437665975" ID="ID_1348204570" MODIFIED="1465437666326" TEXT="Elve: gyakran nincsen 3D kalibr&#xe1;ci&#xf3;s objektum, ekkor 2D objektumot haszn&#xe1;lunk. Ismert sz&#xe1;m&#xfa; sakkt&#xe1;blaszer&#x171;en elhelyezked&#x151; marker&#xfc;nk van. Az egym&#xe1;st&#xf3;l m&#xe9;rt t&#xe1;vols&#xe1;guk is ismert."/>
+<node CREATED="1465437675437" ID="ID_1695280623" MODIFIED="1465437675924" TEXT="Sarokdetekt&#xe1;l&#xe1;s">
+<node CREATED="1465437677004" ID="ID_660177652" MODIFIED="1465437683437" TEXT="Mivel nincs 3D inform&#xe1;ci&#xf3;nk a markerekr&#x151;l, P m&#xe1;trix nem hat&#xe1;rozhat&#xf3; meg egy&#xe9;rtelm&#x171;en."/>
+</node>
+<node CREATED="1465437696262" ID="ID_1874034726" MODIFIED="1465437696916" TEXT="Homogr&#xe1;fia (H m&#xe1;trix meghat&#xe1;roz&#xe1;sa DLT- vel)"/>
+</node>
+<node CREATED="1465436107191" ID="ID_1282342705" MODIFIED="1465436107598" TEXT="47. Hogyan lehet a kamer&#xe1;k torz&#xed;t&#xe1;s&#xe1;t figyelembe venni a kalibr&#xe1;ci&#xf3; sor&#xe1;n?">
+<node CREATED="1465437816662" ID="ID_1033659643" MODIFIED="1465437817165" TEXT="Csak a radi&#xe1;lis torz&#xed;t&#xe1;st vessz&#xfc;k figyelembe, mert &#xe1;ltal&#xe1;ban ez a domin&#xe1;ns."/>
+<node CREATED="1465437832744" ID="ID_864200020" MODIFIED="1465437833125" TEXT="Az ide&#xe1;lis &#xe9;s a t&#xe9;nyleges pont k&#xf6;zti kapcsolat"/>
+</node>
+<node CREATED="1465436114290" ID="ID_1016119224" MODIFIED="1465436114668" TEXT="48. Hogyan n&#xe9;z ki a sztere&#xf3; elrendez&#xe9;s? Mi az epipol&#xe1;ris egyenes? Mi az esszenci&#xe1;lis &#xe9;s a fundament&#xe1;lis m&#xe1;trix?">
+<node CREATED="1465437927701" ID="ID_315744675" MODIFIED="1465437933023" TEXT="sztere&#xf3; erendez&#xe9;s">
+<node CREATED="1465437975123" ID="ID_663152896" MODIFIED="1465437982122" TEXT="O_L &#xe9;s O_R"/>
+</node>
+<node CREATED="1465437971991" ID="ID_325627928" MODIFIED="1465437973086" TEXT="Epipol&#xe1;ris egyenes: Azok az egyenesek, amelyek ment&#xe9;n az elmozdul&#xe1;s t&#xf6;rt&#xe9;nik! (piros)">
+<node CREATED="1465438002987" ID="ID_22973644" MODIFIED="1465438021640" TEXT="Nem biztos, hogy a k&#xe9;pen is egyenesek (torz&#xed;t&#xe1;s, stb)"/>
+<node CREATED="1465438023334" ID="ID_1062823075" MODIFIED="1465438027742" TEXT="Rektifik&#xe1;ci&#xf3;"/>
+</node>
+<node CREATED="1465438063451" ID="ID_682484896" MODIFIED="1465438063842" TEXT="Az esszenci&#xe1;lis m&#xe1;trix (E) csak a k&#xe9;t k&#xe9;ps&#xed;k koordin&#xe1;ta rendszer k&#xf6;z&#xf6;tti kapcsolatot &#xed;rja le, a fundament&#xe1;lis m&#xe1;trix (F) a pixelkoordin&#xe1;t&#xe1;k k&#xf6;z&#xf6;tti &#xf6;sszef&#xfc;gg&#xe9;st is tartalmazza. Ez teh&#xe1;t azt jelenti, hogy az esszenci&#xe1;lis m&#xe1;trixhoz a k&#xfc;ls&#x151;, m&#xed;g a fundament&#xe1;lis m&#xe1;trixhoz a k&#xfc;ls&#x151; &#xe9;s bels&#x151; param&#xe9;terek is sz&#xfc;ks&#xe9;gesek. F m&#xe1;trix 3x3-as, de rangja 2 kell legyen, nem invert&#xe1;lhat&#xf3;. A fundament&#xe1;lis m&#xe1;trix seg&#xed;ts&#xe9;g&#xe9;vel fel&#xed;rhat&#xf3; az &#xfa;gynevezett epipol&#xe1;ris &#xf6;sszef&#xfc;gg&#xe9;s egyenlete: P LT &#x2219; F &#x2219; P R = 0, ahol P LT a bal oldali k&#xe9;ppont transzpon&#xe1;ltja, P R pedig a jobb oldali k&#xe9;ppont. Abban az esetben, ha m&#xe1;r vannak k&#xe9;ppontjaink, ezen egyenletet felhaszn&#xe1;lva &#xed;rhat&#xf3; k&#xe9;ppontp&#xe1;ros&#xed;t&#xf3; algoritmus. A fundament&#xe1;lis &#xe9;s esszenci&#xe1;lis m&#xe1;trix egym&#xe1;sb&#xf3;l kisz&#xe1;m&#xed;that&#xf3;, ha ismerj&#xfc;k a sztere&#xf3; rendszer k&#xfc;ls&#x151; &#xe9;s bels&#x151; param&#xe9;tereit. Amennyiben valamelyik param&#xe9;terk&#xe9;szlet hi&#xe1;nyzik, a m&#xe1;trixokat csak megk&#xf6;zel&#xed;t&#x151;leg tudjuk kisz&#xe1;molni."/>
+</node>
+<node CREATED="1465436125030" ID="ID_1090601763" MODIFIED="1465436125470" TEXT="49. Mi a sztere&#xf3; kalibr&#xe1;ci&#xf3; c&#xe9;lja? Ismertesse a 7 &#xe9;s 8 pontos kalibr&#xe1;ci&#xf3;s algoritmusok elv&#xe9;t &#xe9;s mutassa be a l&#xe9;p&#xe9;seiket!">
+<node CREATED="1465438303477" ID="ID_1037001270" MODIFIED="1465438303762" TEXT="K&#xe9;palkot&#xe1;s: P 3 &#x2192; P 2 Ha vissza akarjuk &#xe1;ll&#xed;tani a t&#xe9;rbeli (3D) inform&#xe1;ci&#xf3;t, legal&#xe1;bb k&#xe9;t k&#xe9;p kell. A k&#xe9;t k&#xe9;p k&#xf6;zti kapcsolatot fel kell t&#xe1;rni!"/>
+<node CREATED="1465438312643" ID="ID_104413006" MODIFIED="1465438312988" TEXT="7 pontos elve:">
+<node CREATED="1465438343283" ID="ID_1137649233" MODIFIED="1465438382707" TEXT="Fundament&#xe1;lis m&#xe1;trix szingul&#xe1;ris m&#xe1;trix kell, hogy legyen. Plusz egy megk&#xf6;t&#xe9;s &#x2192; 7 pont el&#xe9;g L&#xe9;p&#xe9;sek">
+<node CREATED="1465438346594" ID="ID_744915572" MODIFIED="1465438392998" TEXT="1. DLT m&#xf3;dszerrel &#xe1;ltal&#xe1;nos megold&#xe1;s, 2 dimenzi&#xf3;s megold&#xe1;shalmaz"/>
+<node CREATED="1465438365667" ID="ID_1981587514" MODIFIED="1465438377448" TEXT="2. Megold&#xe1;s alakja: f = &#x3bb; &#x2219; f 0 + &#x3bc; &#x2219; f 1"/>
+<node CREATED="1465438471508" ID="ID_541451774" MODIFIED="1465438471770" TEXT="3. det(F)=0 felt&#xe9;telb&#x151;l a param&#xe9;terek sz&#xe1;mol&#xe1;sa"/>
+</node>
+</node>
+<node CREATED="1465438483217" ID="ID_1341547115" MODIFIED="1465438483768" TEXT="8 pontos elve:">
+<node CREATED="1465438511012" ID="ID_423230459" MODIFIED="1465438511485" TEXT="F szingul&#xe1;ris kell, hogy legyen: 8 pontos m&#xf3;dszerrel nem lesz az!">
+<node CREATED="1465438525980" ID="ID_906148282" MODIFIED="1465438532867" TEXT="1. Kisz&#xe1;moljuk F SVD felbont&#xe1;s&#xe1;t"/>
+<node CREATED="1465438539258" ID="ID_1900194987" MODIFIED="1465438540064" TEXT="2. A legkisebb szingul&#xe1;ris &#xe9;rt&#xe9;ket null&#xe1;ra &#xe1;ll&#xed;tjuk"/>
+<node CREATED="1465438548648" ID="ID_64208898" MODIFIED="1465438549038" TEXT="3. A kapott F&apos; lesz az F-hez legk&#xf6;zelebb l&#xe9;v&#x151; szingul&#xe1;ris m&#xe1;trix"/>
+</node>
+<node CREATED="1465438558014" ID="ID_922520381" MODIFIED="1465438558314" TEXT="A 8 pontos kalibr&#xe1;ci&#xf3; rossz eredm&#xe9;nyt ad zaj eset&#xe9;n! &#xc9;rz&#xe9;keny a sk&#xe1;l&#xe1;ra &#xe9;s az orig&#xf3; megv&#xe1;laszt&#xe1;s&#xe1;ra!"/>
+<node CREATED="1465438569874" ID="ID_1901828994" MODIFIED="1465438570802" TEXT="Pontok normaliz&#xe1;l&#xe1;sa:">
+<node CREATED="1465438580624" ID="ID_913532523" MODIFIED="1465438581111" TEXT="A pontokat &#xfa;gy toljuk el, hogy az &#xe1;tlaguk pont az orig&#xf3;ban legyen!"/>
+<node CREATED="1465438588429" ID="ID_424812863" MODIFIED="1465438589188" TEXT="A sk&#xe1;lafaktort &#xfa;gy v&#xe1;lasszuk meg, hogy a pontok RMS t&#xe1;vols&#xe1;ga az orig&#xf3;t&#xf3;l pont &#x221a;2 legyen."/>
+</node>
+<node COLOR="#ff0000" CREATED="1465438614199" ID="ID_311142069" MODIFIED="1465438617807" TEXT="SOHA NE HASZN&#xc1;LJUK A 8 PONTOS ALGORITMUST NORMALIZ&#xc1;LATLAN PONTOKKAL!!!"/>
+</node>
+</node>
+<node CREATED="1465436135241" ID="ID_1040793855" MODIFIED="1465436135624" TEXT="50. Ismertesse a RANSAC algoritmust (elv, m&#x171;k&#xf6;d&#xe9;s, el&#x151;ny&#xf6;k, h&#xe1;tr&#xe1;nyok) &#xe9;s a felhaszn&#xe1;l&#xe1;si lehet&#x151;s&#xe9;geit!">
+<node CREATED="1465438729332" ID="ID_229272301" MODIFIED="1465438729773" TEXT="RANdom SAmple Consensus"/>
+<node CREATED="1465438745021" ID="ID_499004312" MODIFIED="1465438746158" TEXT="Felhaszn&#xe1;l&#xe1;si lehet&#x151;s&#xe9;gek:">
+<node CREATED="1465438792442" ID="ID_1048798824" MODIFIED="1465438792923" TEXT="Felhaszn&#xe1;l&#xe1;si lehet&#x151;s&#xe9;gek: Univerz&#xe1;lis algoritmus, iterat&#xed;v robusztus becsl&#xe9;si elj&#xe1;r&#xe1;s, nem csak kalibr&#xe1;ci&#xf3;ra, hanem nagyon sok egy&#xe9;b param&#xe9;terilleszt&#xe9;si feladatra haszn&#xe1;lhat&#xf3;. Kalibr&#xe1;ci&#xf3;, 2D/3D alakfelismer&#xe9;s. Nem determinisztikus, csak egy adott val&#xf3;sz&#xed;n&#x171;s&#xe9;ggel ad helyes eredm&#xe9;nyt, ez a val&#xf3;sz&#xed;n&#x171;s&#xe9;g az iter&#xe1;ci&#xf3;k sz&#xe1;m&#xe1;nak n&#xf6;vel&#xe9;s&#xe9;vel n&#xf6;velhet&#x151;."/>
+</node>
+<node CREATED="1465438751654" ID="ID_684074968" MODIFIED="1465438753280" TEXT="L&#xe9;p&#xe9;sei">
+<node CREATED="1465438839901" ID="ID_1164463775" MODIFIED="1465438840790" TEXT="Kiindul&#xe1;s: sok pontp&#xe1;runk van"/>
+<node CREATED="1465438847474" ID="ID_61779014" MODIFIED="1465438847817" TEXT="1. V&#xe9;letlen 7/8 pontp&#xe1;r halmazok kiv&#xe1;laszt&#xe1;sa"/>
+<node CREATED="1465438859079" ID="ID_950900108" MODIFIED="1465438859546" TEXT="2. 7/8 pontos kalibr&#xe1;ci&#xf3; elv&#xe9;gz&#xe9;se minden halmazra"/>
+<node CREATED="1465438873457" ID="ID_20537130" MODIFIED="1465438873922" TEXT="3. Megn&#xe9;zni, hogy h&#xe1;ny pontp&#xe1;r illeszkedik kis hib&#xe1;val az adott fundament&#xe1;lis m&#xe1;trixra"/>
+<node CREATED="1465438880353" ID="ID_1946536500" MODIFIED="1465438880627" TEXT="4. A legjobb kiv&#xe1;laszt&#xe1;sa"/>
+</node>
+<node CREATED="1465438754742" ID="ID_1206112728" MODIFIED="1465438761485" TEXT="El&#x151;ny&#xf6;k">
+<node CREATED="1465438920985" ID="ID_1988790668" MODIFIED="1465438925298" TEXT="Egyszer&#x171;"/>
+<node CREATED="1465438932703" ID="ID_832235439" MODIFIED="1465438933321" TEXT="50%-n&#xe1;l nagyobb ar&#xe1;ny&#xfa; outlier (piros pontok) eset&#xe9;n is m&#x171;k&#xf6;dik"/>
+<node CREATED="1465438942754" ID="ID_662155807" MODIFIED="1465438943345" TEXT="Zajos esetben is j&#xf3;l haszn&#xe1;lhat&#xf3;, ekkora m&#xe9;rt&#xe9;k&#x171; zaj eset&#xe9;n az LS becsl&#xe9;s teljesen cs&#x151;d&#xf6;t mond"/>
+</node>
+<node CREATED="1465438763491" ID="ID_1912163494" MODIFIED="1465438766624" TEXT="H&#xe1;tr&#xe1;nyok">
+<node CREATED="1465438958178" ID="ID_213484251" MODIFIED="1465438958474" TEXT="V&#xe9;letlenszer&#x171;, nem garant&#xe1;lt, hogy megtal&#xe1;lja a j&#xf3; megold&#xe1;st!"/>
+<node CREATED="1465438967568" ID="ID_181894036" MODIFIED="1465438967913" TEXT="Ha szeretn&#xe9;nk biztosra menni, akkor nagyon sok v&#xe9;letlen jel&#xf6;ltet kell &#xe1;ll&#xed;tani: nagyon lass&#xfa; tud lenni!"/>
+</node>
+</node>
+</node>
+<node CREATED="1465399143974" ID="ID_1876980175" MODIFIED="1465435181074" TEXT="9. 3D rekonstrukci&#xf3;">
+<node CREATED="1465436147569" ID="ID_564994811" MODIFIED="1465436148240" TEXT="51. Adja meg &#xe9;s r&#xf6;viden ismertesse a 3D rekonstrukci&#xf3; l&#xe9;p&#xe9;seit!"/>
+<node CREATED="1465436157519" ID="ID_1987565888" MODIFIED="1465436157975" TEXT="52. Mi a rektifik&#xe1;ci&#xf3;? Mi a jelent&#x151;s&#xe9;ge?"/>
+<node CREATED="1465436164286" ID="ID_554730058" MODIFIED="1465436164546" TEXT="53. Mi a diszparit&#xe1;s? Milyen m&#xf3;dszereket ismer a k&#xe9;pz&#xe9;s&#xe9;re?"/>
+<node CREATED="1465436178682" ID="ID_1849639921" MODIFIED="1465436179161" TEXT="54. Hogyan m&#x171;k&#xf6;dik a Block Matching (BM) algoritmus? Milyen probl&#xe9;ma megold&#xe1;s&#xe1;ra haszn&#xe1;lhat&#xf3; m&#xe9;g fel? Milyen m&#xf3;dszereket ismer a diszparit&#xe1;s simas&#xe1;g&#xe1;nak biztos&#xed;t&#xe1;s&#xe1;ra?"/>
+<node CREATED="1465436186671" ID="ID_1432556869" MODIFIED="1465436187238" TEXT="55. Hogyan lehet egy pont 3D koordin&#xe1;t&#xe1;it megkapni, amennyiben a kamer&#xe1;k param&#xe9;terei, valamint a pont k&#xe9;pei ismertek?"/>
+<node CREATED="1465436196741" ID="ID_1116488345" MODIFIED="1465436197102" TEXT="56. Mi(k) a metrikus rekonstrukci&#xf3; lehets&#xe9;gess&#xe9;g&#xe9;nek felt&#xe9;tele(i)? Mi a rekonstrukci&#xf3; bizonytalans&#xe1;ga, ha ezek csak r&#xe9;szben vagy egy&#xe1;ltal&#xe1;n nem teljes&#xfc;lnek?"/>
+</node>
+<node CREATED="1465399151760" ID="ID_907448420" MODIFIED="1465435201399" TEXT="10. K&#xe9;pilleszt&#xe9;s">
+<node CREATED="1465436206339" ID="ID_1568432041" MODIFIED="1465436206761" TEXT="57. Ismertesse az optikai &#xe1;raml&#xe1;s (optical flow) algoritmus c&#xe9;lj&#xe1;t, alapelv&#xe9;t &#xe9;s felt&#xe9;telez&#xe9;seit! &#xcd;rja fel az intenzit&#xe1;s &#xe1;raml&#xe1;s egyenletet! Milyen probl&#xe9;m&#xe1;i vannak az algoritmusnak?"/>
+<node CREATED="1465436213130" ID="ID_439393628" MODIFIED="1465436214127" TEXT="58. Mutassa be a Lucas-Kanade algoritmus elv&#xe9;t &#xe9;s m&#x171;k&#xf6;d&#xe9;s&#xe9;t! Milyen m&#xf3;dszereket ismer a gyors mozg&#xe1;sok k&#xf6;vet&#xe9;s&#xe9;re optikai &#xe1;raml&#xe1;s seg&#xed;ts&#xe9;g&#xe9;vel?"/>
+<node CREATED="1465436228497" ID="ID_802942210" MODIFIED="1465436228927" TEXT="59. Mit nevez&#xfc;nk sarokszer&#x171; k&#xe9;pr&#xe9;szletnek? Ismertesse a Harris oper&#xe1;tor elv&#xe9;t &#xe9;s mutassa be a m&#x171;k&#xf6;d&#xe9;s&#xe9;t!"/>
+<node CREATED="1465436244347" ID="ID_1594457381" MODIFIED="1465436244689" TEXT="60. Milyen k&#xe9;ptranszform&#xe1;ci&#xf3;kat ismer? Ezek k&#xf6;z&#xfc;l melyekre invari&#xe1;ns a Harris oper&#xe1;tor?"/>
+<node CREATED="1465436253161" ID="ID_1881709040" MODIFIED="1465436253535" TEXT="61. Milyen elv alapj&#xe1;n lehet sk&#xe1;lainvari&#xe1;ns m&#xf3;don k&#xe9;pjellemz&#x151;ket detekt&#xe1;lni? Mi az a DoG sz&#x171;r&#x151;, &#xe9;s hogyan sz&#xe1;moljuk ki? Mit ad meg a DoG sz&#x171;r&#x151; v&#xe1;lasza?"/>
+<node CREATED="1465436278395" ID="ID_641843353" MODIFIED="1465436278865" TEXT="62. Mi az a gradienshisztogram &#xe9;s hogyan sz&#xe1;molhat&#xf3;? Hogyan haszn&#xe1;lhatjuk fel SIFT le&#xed;r&#xf3; vektor gener&#xe1;l&#xe1;s&#xe1;ra? Milyen m&#xf3;don biztos&#xed;thatjuk a rot&#xe1;ci&#xf3; invarianci&#xe1;t?"/>
+</node>
+<node CREATED="1465399160385" ID="ID_1390726951" MODIFIED="1465435205694" TEXT="11. Tanul&#xf3; l&#xe1;t&#xe1;s">
+<node CREATED="1465436296187" ID="ID_859521778" MODIFIED="1465436296659" TEXT="63. Mit jelent az objektumfelismer&#xe9;s, illetve az oszt&#xe1;lyoz&#xe1;s? Milyen neh&#xe9;zs&#xe9;gekkel ker&#xfc;l&#xfc;nk szembe az egyes feladatok eset&#xe9;n?"/>
+<node CREATED="1465436303579" ID="ID_1381619438" MODIFIED="1465436303915" TEXT="64. Mit &#xe9;rt&#xfc;nk tanul&#xf3; algoritmus alatt? Milyen elemekb&#x151;l &#xe9;p&#xfc;l fel? Milyen t&#xed;pusait ismeri a g&#xe9;pi tanul&#xe1;snak?"/>
+<node CREATED="1465436311064" ID="ID_115740849" MODIFIED="1465436311471" TEXT="65. Milyen gyakori probl&#xe9;m&#xe1;k ad&#xf3;dhatnak g&#xe9;pi tanul&#xe1;s haszn&#xe1;lata eset&#xe9;n. Milyen technik&#xe1;k/m&#xe9;r&#x151;sz&#xe1;mok seg&#xed;ts&#xe9;g&#xe9;vel h&#xe1;r&#xed;that&#xf3;ak ezek el?"/>
+<node CREATED="1465436321635" ID="ID_593204248" MODIFIED="1465436322308" TEXT="66. Ismertesse a Bayes h&#xe1;l&#xf3;k fel&#xe9;p&#xed;t&#xe9;s&#xe9;t! Mit jelk&#xe9;peznek a csom&#xf3;pontok, illetve az &#xe9;lek? Mi az inferencia, a diagn&#xf3;zis, illetve a predikci&#xf3;? Milyen probl&#xe9;m&#xe1;k eset&#xe9;n haszn&#xe1;lhat&#xf3;?"/>
+<node CREATED="1465436336750" ID="ID_390270822" MODIFIED="1465436338178" TEXT="67. Ismertesse a KNN algoritmus m&#x171;k&#xf6;d&#xe9;s&#xe9;t. Milyen probl&#xe9;m&#xe1;k eset&#xe9;n haszn&#xe1;lhat&#xf3;?"/>
+<node CREATED="1465436344931" ID="ID_1675717117" MODIFIED="1465436345225" TEXT="68. Adja meg a perceptron/neuron fel&#xe9;p&#xed;t&#xe9;s&#xe9;t! Milyen probl&#xe9;m&#xe1;k eset&#xe9;n haszn&#xe1;lhat&#xf3;? Hogyan k&#xe9;pes d&#xf6;nteni, illetve tanulni? Hogyan terjeszthet&#x151; ki nemline&#xe1;ris esetre?"/>
+<node CREATED="1465436353064" ID="ID_1849103434" MODIFIED="1465436353532" TEXT="69. Ismertesse a Support Vector Machine (SVM) algoritmust! Mikor haszn&#xe1;lhat&#xf3;? Mi az a kernel f&#xfc;ggv&#xe9;ny, &#xe9;s mire haszn&#xe1;lhat&#xf3;? Hogyan v&#xe1;lasszuk ki?"/>
+<node CREATED="1465436368034" ID="ID_103200904" MODIFIED="1465436369824" TEXT="70. Mi a klaszterez&#xe9;s, mire j&#xf3;? Ismertessen klaszterez&#x151; algoritmusokat! Mi az er&#x151;s &#xe9;s a gyenge hozz&#xe1;rendel&#xe9;s, &#xe9;s hogyan kapcsol&#xf3;dik az egyes algoritmusokhoz?"/>
+<node CREATED="1465436379501" ID="ID_1238577091" MODIFIED="1465436379907" TEXT="71. Mi a dimenzi&#xf3; redukci&#xf3;? Mire haszn&#xe1;lhat&#xf3; a f&#x151;komponens anal&#xed;zis (PCA) algoritmus? Mutassa be a m&#x171;k&#xf6;d&#xe9;s&#xe9;t! Miben k&#xfc;l&#xf6;nb&#xf6;zik az LDA algoritmus?"/>
+<node CREATED="1465436388787" ID="ID_289898685" MODIFIED="1465436389115" TEXT="72. R&#xf6;viden ismertesse a Bag of Words, illetve a konstell&#xe1;ci&#xf3;s/r&#xe9;sz alap&#xfa; oszt&#xe1;lyoz&#xf3;k elv&#xe9;t."/>
+<node CREATED="1465436398721" ID="ID_1637359627" MODIFIED="1465436399235" TEXT="73. Mi az a m&#xe9;ly tanul&#xe1;s, milyen el&#x151;nyei &#xe9;s h&#xe1;tr&#xe1;nyai vannak? Mutassa be az autoencoderek m&#x171;k&#xf6;d&#xe9;s&#xe9;t."/>
+<node CREATED="1465436411333" ID="ID_1954385499" MODIFIED="1465436411829" TEXT="74. Mutassa be a konvol&#xfa;ci&#xf3;s neur&#xe1;lis h&#xe1;l&#xf3;k fel&#xe9;p&#xed;t&#xe9;s&#xe9;t, m&#x171;k&#xf6;d&#xe9;s&#xe9;t, &#xe9;s el&#x151;nyeit."/>
+</node>
 </node>
 <node CREATED="1465399171748" ID="ID_178493250" MODIFIED="1465399192565" POSITION="right" TEXT="III. Val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei, paradigm&#xe1;i">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
