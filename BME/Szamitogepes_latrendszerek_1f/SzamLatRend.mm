@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1465397811030" ID="ID_1674655376" MODIFIED="1465399010558" TEXT="SzamLatRend">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1465399011850" ID="ID_1281635146" MODIFIED="1465399030195" POSITION="right" TEXT="I. A 2D k&#xe9;pfeldolgoz&#xe1;s alapjai">
+<node CREATED="1465399011850" FOLDED="true" ID="ID_1281635146" MODIFIED="1465435116125" POSITION="right" TEXT="I. A 2D k&#xe9;pfeldolgoz&#xe1;s alapjai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1465399035722" FOLDED="true" ID="ID_432972438" MODIFIED="1465427444016" TEXT="1. Sz&#xe1;m&#xed;t&#xf3;g&#xe9;pes l&#xe1;t&#xe1;s alapok">
 <node CREATED="1465399397279" FOLDED="true" ID="ID_824510851" MODIFIED="1465419647821" TEXT="1. Ismertesse a k&#xe9;p fogalm&#xe1;t: mire vagyunk k&#xed;v&#xe1;ncsiak? Mit nevez&#xfc;nk k&#xe9;pnek? Milyen k&#xe9;ple&#xed;r&#xe1;si lehet&#x151;s&#xe9;gek &#xe1;llnak rendelkez&#xe9;s&#xfc;nkre? Mit jelent a videofolyam?">
@@ -291,28 +291,250 @@
 </node>
 </node>
 <node CREATED="1465399072127" ID="ID_928763801" MODIFIED="1465427470862" TEXT="4. Bin&#xe1;ris k&#xe9;pek">
-<node CREATED="1465427218094" ID="ID_954531938" MODIFIED="1465427218428" TEXT="21. Mit jelent a bin&#xe1;ris k&#xe9;p? Mit jelent a k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s? Milyen lehet&#x151;s&#xe9;geink vannak? Mit jelent a dupla-k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s?"/>
-<node CREATED="1465427227534" ID="ID_207203279" MODIFIED="1465427227822" TEXT="22. Ismertesse a bin&#xe1;ris k&#xe9;pen v&#xe9;gezhet&#x151; logikai m&#x171;veleteket &#xe9;s azok fontosabb feladatait. Ismertesse az objektum alap&#xfa; logik&#xe1;t &#xe9;s felhaszn&#xe1;l&#xe1;si lehet&#x151;s&#xe9;geit."/>
-<node CREATED="1465427235086" ID="ID_1030828232" MODIFIED="1465427235380" TEXT="23. Mit jelent az er&#xf3;zi&#xf3; &#xe9;s a dilat&#xe1;ci&#xf3;? Hogyan v&#xe9;gz&#xfc;nk nyit&#xe1;st &#xe9;s z&#xe1;r&#xe1;st? Mire j&#xf3;k ezek a m&#x171;veletek, mit&#x151;l f&#xfc;gg, hogy melyiket alkalmazzuk? Hogyan tudunk e m&#x171;veletekkel kont&#xfa;rt keresni? Mi az olvaszt&#xe1;smentes dilat&#xe1;ci&#xf3;? Sz&#xfc;rke&#xe1;rnyalatos k&#xe9;pen hogy lehet &#xe9;rtelmezni ezeket a m&#x171;veleteket?"/>
-<node CREATED="1465427241583" ID="ID_560240410" MODIFIED="1465427241797" TEXT="24. Mit jelent a 4- &#xe9;s 8-szomsz&#xe9;d&#xfa; t&#xe1;vols&#xe1;g? Mik az el&#x151;nyei &#xe9;s h&#xe1;tr&#xe1;nyai az euklid&#xe9;szi t&#xe1;vols&#xe1;ghoz k&#xe9;pest?"/>
-<node CREATED="1465427249182" ID="ID_606641494" MODIFIED="1465427250094" TEXT="25. Ismertesse a csontv&#xe1;z defin&#xed;ci&#xf3;j&#xe1;t &#xe9;s a csontv&#xe1;zas&#xed;t&#xe1;s egy lehets&#xe9;ges megval&#xf3;s&#xed;t&#xe1;s&#xe1;t."/>
-<node CREATED="1465427266014" ID="ID_1248175120" MODIFIED="1465427266292" TEXT="26. Hogyan tudunk bin&#xe1;ris k&#xe9;pen objektumokat keresni &#xe9;s megsz&#xe1;ml&#xe1;lni? Ismertesse az elj&#xe1;r&#xe1;sokat."/>
+<node CREATED="1465427218094" FOLDED="true" ID="ID_954531938" MODIFIED="1465435111451" TEXT="21. Mit jelent a bin&#xe1;ris k&#xe9;p? Mit jelent a k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s? Milyen lehet&#x151;s&#xe9;geink vannak? Mit jelent a dupla-k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s?">
+<node CREATED="1465428730839" ID="ID_1585066497" MODIFIED="1465428731150" TEXT="Bin&#xe1;ris k&#xe9;p: Minden pixel csak k&#xe9;t &#xe9;rt&#xe9;ket vehet fel (megjelen&#xed;t&#xe9;s tipikusan fekete/feh&#xe9;r sz&#xed;nnel). A pixelekhez hozz&#xe1;rendelend&#x151; &#xe9;rt&#xe9;ket valamilyen k&#xe9;pi tulajdons&#xe1;g (f&#xe9;nyer&#x151;, sz&#xed;nintenzit&#xe1;s stb.) k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s&#xe9;vel hat&#xe1;rozzuk meg."/>
+<node CREATED="1465428745719" ID="ID_280015807" MODIFIED="1465428746134" TEXT="K&#xfc;sz&#xf6;b&#xf6;z&#xe9;s (thresholding): A legegyszer&#x171;bb elj&#xe1;r&#xe1;s, aminek seg&#xed;ts&#xe9;g&#xe9;vel egy szegment&#xe1;l&#xe1;st (objektum(ok) &#xe9;s a h&#xe1;tt&#xe9;r sz&#xe9;tv&#xe1;laszt&#xe1;sa) v&#xe9;gezhet&#xfc;nk. Egy tulajdons&#xe1;ghoz hozz&#xe1;rendel&#xfc;nk k&#xfc;sz&#xf6;b&#xe9;rt&#xe9;ket, majd a vizsg&#xe1;land&#xf3; k&#xe9;p minden pixel&#xe9;n v&#xe9;gigmegy&#xfc;nk &#xe9;s &#xf6;sszehasonl&#xed;tjuk az &#xe9;rt&#xe9;keket. A v&#xe9;geredm&#xe9;ny egy bin&#xe1;ris k&#xe9;p. P&#xe9;ld&#xe1;ul f&#xe9;nyintenzit&#xe1;s alapj&#xe1;n bizonyos &#xe9;rt&#xe9;k f&#xf6;l&#xf6;tt &#xe9;s alatt sz&#xe9;tv&#xe1;lasztom a k&#xe9;pet."/>
+<node CREATED="1465428868759" ID="ID_1997883232" MODIFIED="1465428869204" TEXT="Szegment&#xe1;l&#xe1;si lehet&#x151;s&#xe9;gek">
+<node CREATED="1465428877727" ID="ID_1604328436" MODIFIED="1465428878037" TEXT="Hisztogram alap&#xfa; -&gt; K&#xdc;SZ&#xd6;B&#xd6;Z&#xc9;S"/>
+<node CREATED="1465428885399" ID="ID_872057790" MODIFIED="1465428885780" TEXT="Oszt&#xe1;lyoz&#xe1;s alap&#xfa;">
+<node CREATED="1465428889983" ID="ID_410430544" MODIFIED="1465428896084" TEXT="Sz&#xed;nek"/>
+<node CREATED="1465428897375" ID="ID_1380862259" MODIFIED="1465428904509" TEXT="Form&#xe1;k: pl.:egyenes, k&#xf6;r"/>
+</node>
+<node CREATED="1465428907647" ID="ID_1407511991" MODIFIED="1465428914253" TEXT="K&#xf6;rnyezetf&#xfc;gg&#x151;">
+<node CREATED="1465428914927" ID="ID_1516402863" MODIFIED="1465428922133" TEXT="Lok&#xe1;lis: inhmoog&#xe9;n h&#xe1;tt&#xe9;r eset&#xe9;n"/>
+</node>
+</node>
+<node CREATED="1465428930615" ID="ID_1762416264" MODIFIED="1465428952381" TEXT="Dupla k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s">
+<node CREATED="1465428952799" ID="ID_1051009077" MODIFIED="1465428959725" TEXT="M&#xe1;s n&#xe9;ven hiszter&#xe9;zises k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s. A probl&#xe9;ma az, hogy elk&#xfc;l&#xf6;n&#xed;tend&#x151; objektumok mellett m&#xe1;s hasonl&#xf3; (kin&#xe9;zet&#x171;, sz&#xed;n&#x171; stb) objektumok is vannak, melyek k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s ut&#xe1;n megmaradnak. Ez&#xe9;rt kett&#x151; k&#xfc;sz&#xf6;b haszn&#xe1;lat&#xe1;val l&#xe9;trehozunk k&#xe9;t k&#xe9;pet, melyet azt&#xe1;n &#xc9;S kapcsolatba helyez&#xfc;nk."/>
+<node CREATED="1465429089407" ID="ID_121251514" MODIFIED="1465429091845" TEXT="P&#xe9;lda">
+<node CREATED="1465429092591" ID="ID_1995506028" MODIFIED="1465429094294" TEXT="1. Eredeti k&#xe9;p 2. Eredeti k&#xe9;p k&#xfc;sz&#xf6;b&#xf6;z&#xe9;se 3. Eredeti k&#xe9;pen &#xe9;lkeres&#xe9;s 4. &#xc9;lkeresett k&#xe9;p k&#xfc;sz&#xf6;b&#xf6;z&#xe9;se 5. &#x201e;4&#x201d; maszkol&#xe1;sa &#x201e;2&#x201d;-vel"/>
+</node>
+</node>
+</node>
+<node CREATED="1465427227534" FOLDED="true" ID="ID_207203279" MODIFIED="1465435109466" TEXT="22. Ismertesse a bin&#xe1;ris k&#xe9;pen v&#xe9;gezhet&#x151; logikai m&#x171;veleteket &#xe9;s azok fontosabb feladatait. Ismertesse az objektum alap&#xfa; logik&#xe1;t &#xe9;s felhaszn&#xe1;l&#xe1;si lehet&#x151;s&#xe9;geit.">
+<node CREATED="1465429147527" ID="ID_1638608929" MODIFIED="1465429148142" TEXT="Adott k&#xe9;t k&#xe9;p: A, B">
+<node CREATED="1465429160791" ID="ID_1971651785" MODIFIED="1465429161221" TEXT="Neg&#xe1;l&#xe1;s: p&#xe9;ld&#xe1;ul kont&#xfa;rkeres&#xe9;sn&#xe9;l"/>
+<node CREATED="1465429169343" ID="ID_1956730079" MODIFIED="1465429170323" TEXT="AND: f&#x151;leg k&#xe9;pek maszkol&#xe1;s&#xe1;n&#xe1;l van jelent&#x151;s&#xe9;ge, k&#xe9;t k&#xe9;p &#xe1;tfed&#xe9;s&#xe9;nek megjelen&#xed;t&#xe9;se (metszet)"/>
+<node CREATED="1465429180671" ID="ID_107793055" MODIFIED="1465429181035" TEXT="OR: uni&#xf3; (k&#xe9;t k&#xe9;p &#xe1;ltal az adott k&#xe9;ppont m&#xe1;trixb&#xf3;l egy&#xfc;ttesen elfoglalt k&#xe9;ppontok)"/>
+<node CREATED="1465429189303" ID="ID_1443564767" MODIFIED="1465429205272" TEXT="XOR: csup&#xe1;n egyik&#xfc;k &#xe1;ltal elfoglalt k&#xe9;ppontok"/>
+</node>
+<node COLOR="#ff0000" CREATED="1465429253375" ID="ID_1945951635" MODIFIED="1465429259240" TEXT="Objektum alap&#xfa; logika?"/>
+</node>
+<node CREATED="1465427235086" FOLDED="true" ID="ID_1030828232" MODIFIED="1465435108059" TEXT="23. Mit jelent az er&#xf3;zi&#xf3; &#xe9;s a dilat&#xe1;ci&#xf3;? Hogyan v&#xe9;gz&#xfc;nk nyit&#xe1;st &#xe9;s z&#xe1;r&#xe1;st? Mire j&#xf3;k ezek a m&#x171;veletek, mit&#x151;l f&#xfc;gg, hogy melyiket alkalmazzuk? Hogyan tudunk e m&#x171;veletekkel kont&#xfa;rt keresni? Mi az olvaszt&#xe1;smentes dilat&#xe1;ci&#xf3;? Sz&#xfc;rke&#xe1;rnyalatos k&#xe9;pen hogy lehet &#xe9;rtelmezni ezeket a m&#x171;veleteket?">
+<node CREATED="1465429274864" ID="ID_180730534" MODIFIED="1465429281283" TEXT="Er&#xf3;zi&#xf3;: Cs&#xf6;kkent&#xe9;s (feh&#xe9;r ter&#xfc;letek cs&#xf6;kkent&#xe9;se fekete-feh&#xe9;r &#xe1;tmenetekn&#xe9;l). A pixelszer&#x171; zajok cs&#xf6;kkent&#xe9;se."/>
+<node CREATED="1465429288279" ID="ID_1364832500" MODIFIED="1465429288558" TEXT="Dilat&#xe1;ci&#xf3;: Sz&#xe9;les&#xed;t&#xe9;s (feh&#xe9;r ter&#xfc;letek n&#xf6;vel&#xe9;se fekete-feh&#xe9;r &#xe1;tmenetekn&#xe9;l) A v&#xe1;ltoz&#xe1;s m&#xe9;rt&#xe9;ke f&#xfc;gg a felhaszn&#xe1;lt kernel nagys&#xe1;g&#xe1;t&#xf3;l. Nagy sz&#xe1;m&#xed;t&#xe1;sig&#xe9;ny. A nulla zajokat t&#xfc;ntetem el, cser&#xe9;be megn&#x151; az objektum m&#xe9;rete."/>
+<node CREATED="1465429329407" ID="ID_1382607002" MODIFIED="1465429330101" TEXT="Z&#xe1;r&#xe1;s Dilat&#xe1;ci&#xf3; + er&#xf3;zi&#xf3;: nullzajok kiszed&#xe9;se (fekete p&#xf6;tty&#xf6;k)"/>
+<node CREATED="1465429338303" ID="ID_1603512771" MODIFIED="1465429338709" TEXT="Nyit&#xe1;s Er&#xf3;zi&#xf3; + dilat&#xe1;ci&#xf3;: feh&#xe9;r pixelhib&#xe1;k kiszed&#xe9;s&#xe9;re (Gyakran egy&#xfc;tt haszn&#xe1;lj&#xe1;k a kett&#x151;t.)"/>
+<node CREATED="1465429363703" ID="ID_582801732" MODIFIED="1465429367173" TEXT="Felhaszn&#xe1;l&#xe1;s">
+<node CREATED="1465429368543" ID="ID_1409217068" MODIFIED="1465429379221" TEXT="pixelhib&#xe1;k, pixelszer&#x171; zajok elt&#xfc;ntet&#xe9;se bin&#xe1;ris k&#xe9;pr&#x151;l"/>
+<node CREATED="1465429385871" ID="ID_1738837994" MODIFIED="1465429386341" TEXT="kont&#xfa;rkeres&#xe9;s: Img AND INVERSE( dilate(Img) )"/>
+<node CREATED="1465429401535" ID="ID_679952988" MODIFIED="1465429401877" TEXT="&#xe9;lkeres&#xe9;s &#xe9;s lyukak kit&#xf6;lt&#xe9;se"/>
+</node>
+<node CREATED="1465429412383" ID="ID_1562744145" MODIFIED="1465429412607" TEXT="Olvaszt&#xe1;smentes dilat&#xe1;ci&#xf3;">
+<node CREATED="1465429418743" ID="ID_1040705903" MODIFIED="1465429418965" TEXT="Egym&#xe1;ssal &#xe9;rintkez&#x151; objektumok &#xe9;ldetekt&#xe1;l&#xe1;s&#xe1;n&#xe1;l seg&#xed;t ez a m&#xf3;dszer."/>
+</node>
+<node CREATED="1465429424503" ID="ID_459967325" MODIFIED="1465429424758" TEXT="Sz&#xfc;rke&#xe1;rnyalatos k&#xe9;pen:">
+<node CREATED="1465429429767" ID="ID_1744823300" MODIFIED="1465429430002" TEXT="er&#xf3;zi&#xf3;: minimum sz&#x171;r&#x151; (s&#xf6;t&#xe9;t&#xed;t)"/>
+<node CREATED="1465429435647" ID="ID_1198344634" MODIFIED="1465429435983" TEXT="dilat&#xe1;ci&#xf3;: maximum sz&#x171;r&#x151; (vil&#xe1;gos&#xed;t)"/>
+</node>
+</node>
+<node CREATED="1465427241583" FOLDED="true" ID="ID_560240410" MODIFIED="1465435106442" TEXT="24. Mit jelent a 4- &#xe9;s 8-szomsz&#xe9;d&#xfa; t&#xe1;vols&#xe1;g? Mik az el&#x151;nyei &#xe9;s h&#xe1;tr&#xe1;nyai az euklid&#xe9;szi t&#xe1;vols&#xe1;ghoz k&#xe9;pest?">
+<node CREATED="1465429518127" ID="ID_1922813293" MODIFIED="1465429519754" TEXT="Kernelek eset&#xe9;n a kernel k&#xf6;z&#xe9;ppontj&#xe1;t&#xf3;l a pixelekben m&#xe9;rt t&#xe1;vols&#xe1;g a sz&#xe9;lek fel&#xe9; haladva."/>
+<node CREATED="1465429544447" ID="ID_1923475186" MODIFIED="1465429544784" TEXT="4 szomsz&#xe9;d: csak akkor tekintj&#xfc;k szomsz&#xe9;dnak, ha van k&#xf6;z&#xf6;s &#xe9;l, &#xe1;tl&#xf3;san 2 a t&#xe1;vols&#xe1;g."/>
+<node CREATED="1465429550503" ID="ID_813924273" MODIFIED="1465429551135" TEXT="8 szomsz&#xe9;d: a cs&#xfa;csn&#xe1;l &#xe9;rintkez&#x151;t is szomsz&#xe9;dnak vessz&#xfc;k"/>
+<node CREATED="1465429560119" ID="ID_1969763642" MODIFIED="1465429560572" TEXT="euklid&#xe9;szi: pontos t&#xe1;vols&#xe1;g (pitagorasz)">
+<node CREATED="1465429565511" ID="ID_1344272229" MODIFIED="1465429566888" TEXT="4/8 szomsz&#xe9;d: gyors, pontatlan"/>
+<node CREATED="1465429571791" ID="ID_635422857" MODIFIED="1465429572196" TEXT="EDM: pontos, sz&#xe1;m&#xed;t&#xe1;sig&#xe9;nyesebb"/>
+</node>
+</node>
+<node CREATED="1465427249182" FOLDED="true" ID="ID_606641494" MODIFIED="1465435104906" TEXT="25. Ismertesse a csontv&#xe1;z defin&#xed;ci&#xf3;j&#xe1;t &#xe9;s a csontv&#xe1;zas&#xed;t&#xe1;s egy lehets&#xe9;ges megval&#xf3;s&#xed;t&#xe1;s&#xe1;t.">
+<node CREATED="1465429589639" ID="ID_1676958980" MODIFIED="1465429589855" TEXT="Defin&#xed;ci&#xf3;: Maxim&#xe1;lis k&#xf6;r&#xf6;k orig&#xf3;ja mely egy adott objektumba helyezhet&#x151;."/>
+<node CREATED="1465429609023" ID="ID_352526542" MODIFIED="1465429609862" TEXT="Megval&#xf3;s&#xed;t&#xe1;s: iterat&#xed;v er&#xf3;zi&#xf3;, de nincs er&#xf3;zi&#xf3;, ha kett&#xe9;szakadna az objektum vagy ha az objektum v&#xe9;g&#xe9;n vagyunk. Lehet 4/8 szomsz&#xe9;d vagy EDM. Felhaszn&#xe1;l&#xe1;s: ujjlenyomat ellen&#x151;rz&#xe9;s"/>
+</node>
+<node CREATED="1465427266014" FOLDED="true" ID="ID_1248175120" MODIFIED="1465435105738" TEXT="26. Hogyan tudunk bin&#xe1;ris k&#xe9;pen objektumokat keresni &#xe9;s megsz&#xe1;ml&#xe1;lni? Ismertesse az elj&#xe1;r&#xe1;sokat.">
+<node CREATED="1465429653783" ID="ID_1782028279" MODIFIED="1465429654068" TEXT="Objektumkeres&#xe9;s Egy 2x2-es ablakkal v&#xe9;gigp&#xe1;szt&#xe1;zunk minden pixelt &#xe9;s indexelj&#xfc;k az egyes pixeleket."/>
+<node CREATED="1465429660351" ID="ID_173041127" MODIFIED="1465429660553" TEXT="Objektumsz&#xe1;ml&#xe1;l&#xe1;s Egy 2x2-es ablakkal v&#xe9;gigp&#xe1;szt&#xe1;zunk minden pixelt &#xe9;s n&#xf6;velj&#xfc;k, vagy cs&#xf6;kkentj&#xfc;k (hogy az algoritmus ne sz&#xe1;moljon egy objektumot t&#xf6;bbsz&#xf6;r) a sz&#xe1;ml&#xe1;l&#xf3;nk &#xe9;rt&#xe9;k&#xe9;t."/>
+</node>
 </node>
 <node CREATED="1465399079943" ID="ID_678498442" MODIFIED="1465427434286" TEXT="5. M&#xe9;r&#xe9;sek">
-<node CREATED="1465427321966" ID="ID_529769400" MODIFIED="1465427322453" TEXT="27. Hogyan defini&#xe1;lhatjuk egy objektum poz&#xed;ci&#xf3;j&#xe1;t a k&#xe9;pen (pixeltartom&#xe1;nyban)? Ismertessea poz&#xed;ci&#xf3;m&#xe9;r&#xe9;s lehet&#x151;s&#xe9;geit. Mutassa meg, hogy lehet a poz&#xed;ci&#xf3; &#xe9;rt&#xe9;k&#xe9;t meghat&#xe1;rozni bin&#xe1;ris &#xe9;s maszkolt sz&#xfc;rke&#xe1;rnyalatos k&#xe9;peken."/>
-<node CREATED="1465427328262" ID="ID_828443661" MODIFIED="1465427328567" TEXT="28. Hogyan defini&#xe1;lhatjuk egy objektum orient&#xe1;ci&#xf3;j&#xe1;t a k&#xe9;pen (pixeltartom&#xe1;nyban)? Sorolja fel az orient&#xe1;ci&#xf3;m&#xe9;r&#xe9;s lehet&#x151;s&#xe9;geit, illetve r&#xf6;viden ismertesse ezek alapelv&#xe9;t."/>
-<node CREATED="1465427335454" ID="ID_1993645939" MODIFIED="1465427335732" TEXT="29. Mit jelent az Euler-sz&#xe1;m? Mire haszn&#xe1;lhat&#xf3;? Adja meg a mell&#xe9;kelt &#xe1;bra Euler-sz&#xe1;m&#xe1;t."/>
-<node CREATED="1465427342751" ID="ID_1297159618" MODIFIED="1465427343121" TEXT="30. Mit jelent a l&#xe1;nck&#xf3;d? Mire haszn&#xe1;lhat&#xf3;? Mi a k&#xfc;l&#xf6;nbs&#xe9;g a 4-szomsz&#xe1;dos &#xe9;s 8- szomsz&#xe9;dos l&#xe1;nck&#xf3;d k&#xf6;z&#xf6;tt? Mik az el&#x151;nyei &#xe9;s a h&#xe1;tr&#xe1;nyai az &#xed;gy &#xe1;br&#xe1;zolt objektumoknak? Hogyan tudunk seg&#xed;ts&#xe9;g&#xe9;vel ker&#xfc;let- &#xe9;s hossz-sz&#xe1;m&#xed;t&#xe1;st v&#xe9;gezni? Milyen probl&#xe9;m&#xe1;k ad&#xf3;dnak?"/>
-<node CREATED="1465427350655" ID="ID_483190349" MODIFIED="1465427350868" TEXT="31. Ismertessen szubpixeles elj&#xe1;r&#xe1;sokat. Hogyan tudunk poz&#xed;ci&#xf3;t, ker&#xfc;letet, ill. ter&#xfc;letet m&#xe9;rni seg&#xed;ts&#xe9;g&#xfc;kkel?"/>
-<node CREATED="1465427356471" ID="ID_1371132170" MODIFIED="1465427356725" TEXT="32. Ismertesse az egyenesekre vonatkoz&#xf3; Hough-transzform&#xe1;ci&#xf3; m&#x171;k&#xf6;d&#xe9;s&#xe9;t."/>
+<node CREATED="1465427321966" FOLDED="true" ID="ID_529769400" MODIFIED="1465435103244" TEXT="27. Hogyan defini&#xe1;lhatjuk egy objektum poz&#xed;ci&#xf3;j&#xe1;t a k&#xe9;pen (pixeltartom&#xe1;nyban)? Ismertessea poz&#xed;ci&#xf3;m&#xe9;r&#xe9;s lehet&#x151;s&#xe9;geit. Mutassa meg, hogy lehet a poz&#xed;ci&#xf3; &#xe9;rt&#xe9;k&#xe9;t meghat&#xe1;rozni bin&#xe1;ris &#xe9;s maszkolt sz&#xfc;rke&#xe1;rnyalatos k&#xe9;peken.">
+<node CREATED="1465429831295" ID="ID_1078571568" MODIFIED="1465429831619" TEXT="Egy 2D-s k&#xe9;pet &#xe1;br&#xe1;zolhatunk egy der&#xe9;ksz&#xf6;g&#x171; koordin&#xe1;tarendszerben, ahol az egyes pixelekhez hozz&#xe1;rendelhet&#xfc;nk egy (x,y) eg&#xe9;sz koordin&#xe1;tap&#xe1;rt. A koordin&#xe1;tarendszer k&#xf6;z&#xe9;ppontja tetsz&#x151;legesen, feladatt&#xf3;l f&#xfc;gg&#x151;en megv&#xe1;laszthat&#xf3;, de &#xe1;ltal&#xe1;ban a bal fels&#x151; sarokban l&#xe9;v&#x151; pixelhez rendelj&#xfc;k hozz&#xe1; a (0,0)-t. Egy objektum poz&#xed;ci&#xf3;ja az objektum egy jellegzetes koordin&#xe1;tap&#xe1;rj&#xe1;val jellemezhet&#x151;. Ez a koordin&#xe1;tap&#xe1;r lehet:">
+<node CREATED="1465429879295" ID="ID_1960719305" MODIFIED="1465429879540" TEXT="geometriai k&#xf6;z&#xe9;ppont (az objektumot befoglal&#xf3; t&#xe9;glalap/k&#xf6;r k&#xf6;z&#xe9;ppontja)"/>
+<node CREATED="1465429892767" ID="ID_492299873" MODIFIED="1465429928855" TEXT="t&#xf6;megk&#xf6;z&#xe9;ppont"/>
+</node>
+<node CREATED="1465429943543" ID="ID_1470716409" MODIFIED="1465430000865" TEXT="T&#xf6;megk&#xf6;z&#xe9;ppont (x c , y c ) meghat&#xe1;roz&#xe1;sa">
+<node CREATED="1465429961631" ID="ID_1464421808" MODIFIED="1465429962308" TEXT="A k&#xe9;p m&#xe9;rete: M*N pixel (M az oszlopok sz&#xe1;ma, N a sorok&#xe9;)">
+<node CREATED="1465429970079" ID="ID_1254758513" MODIFIED="1465429970446" TEXT="p x (x) az x koordin&#xe1;t&#xe1;j&#xfa; oszlopban a vizsg&#xe1;lt objektum pixeleinek sz&#xe1;ma"/>
+<node CREATED="1465429981143" ID="ID_1018050979" MODIFIED="1465429981406" TEXT="p y (y) az y koordin&#xe1;t&#xe1;j&#xfa; sorban a vizsg&#xe1;lt objektum pixeleinek sz&#xe1;ma"/>
+</node>
+<node CREATED="1465430002040" ID="ID_332613033" MODIFIED="1465430002533" TEXT="a) Bin&#xe1;ris k&#xe9;pekre"/>
+<node CREATED="1465430007447" ID="ID_157890574" MODIFIED="1465430007692" TEXT="b) Sz&#xfc;rke&#xe1;rnyalatos k&#xe9;pekre">
+<node CREATED="1465430012391" ID="ID_1630981721" MODIFIED="1465430012598" TEXT="I(x,y): intenzit&#xe1;sf&#xfc;ggv&#xe9;ny"/>
+</node>
+</node>
+<node CREATED="1465430126439" ID="ID_1253914592" MODIFIED="1465430176964" TEXT="Geometriai k&#xf6;z&#xe9;ppont (x g , y g ) meghat&#xe1;roz&#xe1;sa">
+<node CREATED="1465430176965" ID="ID_1252192359" MODIFIED="1465430180914" TEXT="a) Meghat&#xe1;roz&#xe1;s a befoglal&#xf3; t&#xe9;glalap alapj&#xe1;n">
+<node CREATED="1465430132247" ID="ID_1236655402" MODIFIED="1465430132486" TEXT="x min , x max , y min , y max : az objektum legsz&#xe9;ls&#x151; pixeleinek koordin&#xe1;t&#xe1;i"/>
+</node>
+<node CREATED="1465430143744" ID="ID_442655397" MODIFIED="1465430144772" TEXT="b) Meghat&#xe1;roz&#xe1;s a befoglal&#xf3; k&#xf6;r alapj&#xe1;n">
+<node CREATED="1465430146831" ID="ID_735497320" MODIFIED="1465430156101" TEXT="egy&#xe9;rtelm&#x171;, ha 3 ponton &#xe9;rinti a k&#xf6;rt"/>
+<node CREATED="1465430157087" ID="ID_163023015" MODIFIED="1465430169591" TEXT="k&#xf6;r &#xe1;tl&#xf3;j&#xe1;ig egy&#xe9;rtelm&#x171;, ha 2 ponton &#xe9;rinti a k&#xf6;rt"/>
+</node>
+</node>
+</node>
+<node CREATED="1465427328262" FOLDED="true" ID="ID_828443661" MODIFIED="1465435102267" TEXT="28. Hogyan defini&#xe1;lhatjuk egy objektum orient&#xe1;ci&#xf3;j&#xe1;t a k&#xe9;pen (pixeltartom&#xe1;nyban)? Sorolja fel az orient&#xe1;ci&#xf3;m&#xe9;r&#xe9;s lehet&#x151;s&#xe9;geit, illetve r&#xf6;viden ismertesse ezek alapelv&#xe9;t.">
+<node CREATED="1465430220648" ID="ID_1499358177" MODIFIED="1465430221160" TEXT="Objektum orient&#xe1;ci&#xf3;j&#xe1;n egy objektum egy olyan 1D-s jellemz&#xe9;s&#xe9;t &#xe9;rtj&#xfc;k, mely ir&#xe1;ny-, sz&#xf6;ginform&#xe1;ci&#xf3;kat szolg&#xe1;ltat az adott objektumr&#xf3;l. Objektum orient&#xe1;ci&#xf3;ja megadhat&#xf3; a">
+<node CREATED="1465430231879" ID="ID_1002734141" MODIFIED="1465430232602" TEXT="befoglal&#xf3; t&#xe9;glalap ar&#xe1;nyaival &#xe9;s m&#xe9;reteivel"/>
+<node CREATED="1465430245375" ID="ID_685461321" MODIFIED="1465430245997" TEXT="legnagyobb t&#xe1;vols&#xe1;ggal az objektumon bel&#xfc;l"/>
+<node CREATED="1465430254199" ID="ID_1885517342" MODIFIED="1465430254477" TEXT="k&#xf6;z&#xe9;ppontt&#xf3;l vett legnagyobb t&#xe1;vols&#xe1;ggal"/>
+<node CREATED="1465430294375" ID="ID_917928568" MODIFIED="1465430294637" TEXT="r&#xe1; illeszthet&#x151; legkisebb nyomat&#xe9;k&#xfa; tengellyel"/>
+</node>
+<node CREATED="1465430302287" ID="ID_829476139" MODIFIED="1465430302287" TEXT="Orient&#xe1;ci&#xf3;m&#xe9;r&#xe9;s lehet&#x151;s&#xe9;gei">
+<node CREATED="1465430312751" ID="ID_1789123058" MODIFIED="1465430314470" TEXT="P&#xe9;ld&#xe1;ul: Az aut&#xf3; elektronik&#xe1;ban az &#xf6;nj&#xe1;r&#xf3; aut&#xf3;kn&#xe1;l a s&#xe1;vk&#xf6;vet&#xe9;st &#xe9;s az aut&#xf3;k k&#xf6;z&#xf6;tti t&#xe1;vols&#xe1;gtart&#xe1;st is orient&#xe1;ci&#xf3;m&#xe9;r&#xe9;s alapj&#xe1;n hat&#xe1;rozz&#xe1;k meg. S&#xe1;vk&#xf6;vet&#xe9;s: egyenes festett vonalakat &#xe9;lkeres&#xe9;ssel keres az algoritmus &#xe9;s a vonalak a k&#xe9;pen befel&#xe9; haladva sz&#x171;k&#xfc;lnek, ami ir&#xe1;nyt ad az orient&#xe1;ci&#xf3;nak. T&#xe1;vols&#xe1;gtart&#xe1;s: Befogad&#xf3; t&#xe9;glalap vagy trap&#xe9;z ar&#xe1;nyaival meghat&#xe1;rozhat&#xf3; milyen t&#xe1;vol van az el&#x151;l halad&#xf3; objektum."/>
+</node>
+</node>
+<node CREATED="1465427335454" FOLDED="true" ID="ID_1993645939" MODIFIED="1465435101658" TEXT="29. Mit jelent az Euler-sz&#xe1;m? Mire haszn&#xe1;lhat&#xf3;? Adja meg a mell&#xe9;kelt &#xe1;bra Euler-sz&#xe1;m&#xe1;t.">
+<node CREATED="1465430393768" ID="ID_681831707" MODIFIED="1465430393974" TEXT="Az Euler-sz&#xe1;m egyike a topol&#xf3;giai tulajdons&#xe1;goknak, melyek egy k&#xe9;p geometriai le&#xed;r&#xe1;s&#xe1;t seg&#xed;tik el&#x151;. Fontos r&#xe9;sze az ilyen tulajdons&#xe1;goknak, hogy rubber-sheet jelleg&#x171; transzorm&#xe1;ci&#xf3;kra invari&#xe1;ns. Az ilyen jelleg&#x171; tulajdons&#xe1;gok j&#xf3;l haszn&#xe1;lhat&#xf3;k form&#xe1;k keres&#xe9;s&#xe9;re, objektumok felismer&#xe9;s&#xe9;re, adatb&#xe1;zisbeli keres&#xe9;sre. Euler-sz&#xe1;m fontos szerepet j&#xe1;tszik p&#xe9;ld&#xe1;ul orvosi k&#xe9;pfeldolgoz&#xe1;sban, fert&#x151;z&#xf6;tt sejtek felismer&#xe9;s&#xe9;ben.">
+<node CREATED="1465430447103" ID="ID_1306955306" MODIFIED="1465430447341" TEXT="Euler-sz&#xe1;m = (egybef&#xfc;gg&#x151; r&#xe9;gi&#xf3;k sz&#xe1;ma) &#x2013; (lyukak sz&#xe1;ma)"/>
+</node>
+</node>
+<node CREATED="1465427342751" FOLDED="true" ID="ID_1297159618" MODIFIED="1465435100275" TEXT="30. Mit jelent a l&#xe1;nck&#xf3;d? Mire haszn&#xe1;lhat&#xf3;? Mi a k&#xfc;l&#xf6;nbs&#xe9;g a 4-szomsz&#xe1;dos &#xe9;s 8- szomsz&#xe9;dos l&#xe1;nck&#xf3;d k&#xf6;z&#xf6;tt? Mik az el&#x151;nyei &#xe9;s a h&#xe1;tr&#xe1;nyai az &#xed;gy &#xe1;br&#xe1;zolt objektumoknak? Hogyan tudunk seg&#xed;ts&#xe9;g&#xe9;vel ker&#xfc;let- &#xe9;s hossz-sz&#xe1;m&#xed;t&#xe1;st v&#xe9;gezni? Milyen probl&#xe9;m&#xe1;k ad&#xf3;dnak?">
+<node CREATED="1465430471512" ID="ID_340013509" MODIFIED="1465430471756" TEXT="A l&#xe1;nck&#xf3;d egy vesztes&#xe9;gmentes t&#xf6;m&#xf6;r&#xed;t&#xe9;si algoritmus bin&#xe1;ris k&#xe9;pekhez. L&#xe1;nck&#xf3;d seg&#xed;ts&#xe9;g&#xe9;vel alakfelismer&#xe9;st, sarokdetekt&#xe1;l&#xe1;st v&#xe9;gezhet&#xfc;nk. (A k&#xf3;db&#xf3;l egy&#xe9;rtelm&#x171;en l&#xe1;tszik, hol vannak pl.: dudorok, bem&#xe9;lyed&#xe9;sek.) Az objektum egy sz&#xe9;ls&#x151; pixel&#xe9;t&#x151;l elindulva szomsz&#xe9;dos, hat&#xe1;r menti pixelekre l&#xe9;pked&#xfc;nk. Att&#xf3;l f&#xfc;gg&#x151;en, hogy milyen ir&#xe1;nyba l&#xe9;p&#xfc;nk tov&#xe1;bb a pixelhez egy sz&#xe1;mot rendel&#xfc;nk hozz&#xe1;. Ez a sz&#xe1;msorozat alkotja a l&#xe1;nck&#xf3;dot.">
+<node CREATED="1465430479855" ID="ID_227981425" MODIFIED="1465430480821" TEXT="4-szomsz&#xe9;dos: csak azok a pixelek sz&#xe1;m&#xed;tanak szomsz&#xe9;dosnak, amiknek van k&#xf6;z&#xf6;s &#xe9;l&#xfc;k">
+<node CREATED="1465430587727" ID="ID_936636515" MODIFIED="1465430589415" TEXT="4-szomsz&#xe9;dos l&#xe1;nck&#xf3;d maxim&#xe1;lis hiba: 41% (45&#xb0;-os &#xe1;tl&#xf3;s egyenes)"/>
+</node>
+<node CREATED="1465430570184" ID="ID_326007066" MODIFIED="1465430582812" TEXT="8-szomsz&#xe9;dos: k&#xf6;z&#xf6;s &#xe9;l, vagy k&#xf6;z&#xf6;s cs&#xfa;cs">
+<node CREATED="1465430608199" ID="ID_418632311" MODIFIED="1465430608832" TEXT="8-szomsz&#xe9;dos l&#xe1;nck&#xf3;d maxim&#xe1;lis hiba: 7.9% (~18-27&#xb0;-os &#xe1;tl&#xf3;s egyenes)"/>
+</node>
+</node>
+<node CREATED="1465430668487" ID="ID_31374760" MODIFIED="1465430668749" TEXT="Ker&#xfc;let = k&#xf3;dhossz"/>
+<node CREATED="1465430687319" ID="ID_1902034035" MODIFIED="1465430688598" TEXT="Hossz sz&#xe1;m&#xed;t&#xe1;sn&#xe1;l ker&#xfc;l el&#x151; az a probl&#xe9;ma, hogy n&#xe9;gyzetes pixelek eset&#xe9;n egy &#xe1;tl&#xf3;s l&#xe9;p&#xe9;s val&#xf3;s&#xe1;gos hossza sqrt(2) egys&#xe9;g. 4-szomsz&#xe9;dos l&#xe1;nck&#xf3;d 2 egys&#xe9;g hossz&#xfa;nak, m&#xed;g a 8-szomsz&#xe9;dos esetben 1 egys&#xe9;g hossz&#xfa;nak veszi alapb&#xf3;l. Ha sz&#xfc;ks&#xe9;ges akkor ezt kompenz&#xe1;lni kell."/>
+</node>
+<node CREATED="1465427350655" FOLDED="true" ID="ID_483190349" MODIFIED="1465435099450" TEXT="31. Ismertessen szubpixeles elj&#xe1;r&#xe1;sokat. Hogyan tudunk poz&#xed;ci&#xf3;t, ker&#xfc;letet, ill. ter&#xfc;letet m&#xe9;rni seg&#xed;ts&#xe9;g&#xfc;kkel?">
+<node CREATED="1465430713184" ID="ID_890203675" MODIFIED="1465430713573" TEXT="Interpol&#xe1;ci&#xf3; alap&#xfa; elj&#xe1;r&#xe1;s, mely seg&#xed;ts&#xe9;g&#xe9;vel pixel alatti pontoss&#xe1;ggal illeszthet&#xfc;nk g&#xf6;rb&#xe9;t egy objektumra. Megfelel&#x151; algoritmussal ak&#xe1;r 0.1% pontoss&#xe1;g is el&#xe9;rhet&#x151;."/>
+<node CREATED="1465430752720" ID="ID_518514954" MODIFIED="1465430753038" TEXT="Elj&#xe1;r&#xe1;s sz&#xfc;rke&#xe1;rnyalatos k&#xe9;pekhez">
+<node CREATED="1465430759351" ID="ID_476527667" MODIFIED="1465430759565" TEXT="Sz&#xfc;rke&#xe1;rnyalatos k&#xe9;peket el&#x151;sz&#xf6;r is binariz&#xe1;ljuk."/>
+<node CREATED="1465430771767" ID="ID_43914393" MODIFIED="1465430772037" TEXT="Visszat&#xe9;rve az eredeti k&#xe9;phez (fekete-feh&#xe9;r k&#xe9;p alapj&#xe1;n) az &#xe1;tmenetekn&#xe9;l l&#xe9;v&#x151; pixelekhez egy s&#xfa;lyt&#xe9;nyez&#x151;t (&#xe9;rt&#xe9;ke lehet t&#xf6;rt, megadja az interpol&#xe1;ci&#xf3; finoms&#xe1;g&#xe1;t) rendel&#xfc;nk att&#xf3;l f&#xfc;gg&#x151;en, hogy mennyire vil&#xe1;gos/s&#xf6;t&#xe9;t az adott pixel."/>
+</node>
+</node>
+<node CREATED="1465427356471" FOLDED="true" ID="ID_1371132170" MODIFIED="1465435098563" TEXT="32. Ismertesse az egyenesekre vonatkoz&#xf3; Hough-transzform&#xe1;ci&#xf3; m&#x171;k&#xf6;d&#xe9;s&#xe9;t.">
+<node CREATED="1465430882399" ID="ID_1515353738" MODIFIED="1465430888711" TEXT="Hough-transzform&#xe1;ci&#xf3;">
+<node CREATED="1465430894848" ID="ID_8632809" MODIFIED="1465430895316" TEXT="A Hough-transzform&#xe1;ci&#xf3; seg&#xed;ts&#xe9;g&#xe9;vel a k&#xe9;pen &#xe1;ltal&#xe1;ban az f(x, y; a 1 , a 2 , ... , a n ) = 0, ahol a 1 , a 2 , ... , a n param&#xe9;terekkel explicit alakban megadhat&#xf3; g&#xf6;rb&#xe9;ket keress&#xfc;k. A Hough-transzform&#xe1;ci&#xf3; alkalmaz&#xe1;sa c&#xe9;lravezet&#x151;, ha ismert alak&#xfa; (&#xe9;s m&#xe9;ret&#x171;) objektumokat keres&#xfc;nk a k&#xe9;pen. Akkor is c&#xe9;lszer&#x171;, ha az egyenesek r&#xe9;szben takartak vagy zajosak."/>
+</node>
+<node CREATED="1465430905063" ID="ID_1162964521" MODIFIED="1465430905306" TEXT="&#xc1;tt&#xe9;r&#xe9;s a Hough-t&#xe9;rbe">
+<node CREATED="1465430911039" ID="ID_1910320352" MODIFIED="1465430911255" TEXT="Az input (k&#xe9;p)t&#xe9;r egy (x i , y i ) pontj&#xe1;nak az r = x i &#x2219; cos&#x3c6; + y i &#x2219; sin&#x3c6; szinuszos g&#xf6;rbe felel meg a Hough-t&#xe9;rben. Az egy egyenesbe es&#x151; pontokhoz tartoz&#xf3; szinuszos g&#xf6;rb&#xe9;k egy pontban metszik egym&#xe1;st."/>
+</node>
+<node CREATED="1465430919055" ID="ID_905683487" MODIFIED="1465430919356" TEXT="Egyenesek meghat&#xe1;roz&#xe1;sa">
+<node CREATED="1465430926287" ID="ID_198363246" MODIFIED="1465430926517" TEXT="Egy (&#xe9;l)pont a k&#xe9;pt&#xe9;rben megfelel egy szinuszos g&#xf6;rb&#xe9;nek a Hough-t&#xe9;rben. K&#xe9;t pontnak k&#xe9;t g&#xf6;rbe felel meg."/>
+<node CREATED="1465431255168" ID="ID_561398627" MODIFIED="1465431255513" TEXT="K&#xe9;t (vagy t&#xf6;bb) ilyen g&#xf6;rbe metsz&#xe9;spontja &#xe1;ltal reprezent&#xe1;lt egyenesre ekkor kett&#x151; (vagy t&#xf6;bb) szavazat esett."/>
+<node CREATED="1465431264855" ID="ID_1660881418" MODIFIED="1465431265206" TEXT="Az &#xed;gy kapott egyenes valamennyi r&#xe1; szavaz&#xf3; ponton &#xe1;tmegy a k&#xe9;pt&#xe9;rben."/>
+<node CREATED="1465431272733" MODIFIED="1465431272733" TEXT="A Hough-t&#xe9;r k&#xfc;sz&#xf6;b&#xf6;l&#xe9;s&#xe9;vel megkapjuk a k&#xe9;pt&#xe9;r egyeneseit."/>
+</node>
+</node>
 </node>
 <node CREATED="1465427310103" ID="ID_1871098806" MODIFIED="1465427440165" TEXT="6. Szegment&#xe1;l&#xe1;s">
-<node CREATED="1465427365319" ID="ID_1077856890" MODIFIED="1465427365628" TEXT="33. Mit jelent a szegment&#xe1;l&#xe1;s? Mikor van r&#xe1; sz&#xfc;ks&#xe9;g? Mik a f&#x151;bb neh&#xe9;zs&#xe9;gei? Mit jelent a szegment&#xe1;l&#xe1;s sor&#xe1;n az id&#x151;-konzisztencia? A Szegment&#xe1;l&#xe1;s param&#xe9;terter&#xe9;ben milyen &#xf6;sszetev&#x151;ket alkalmazhatunk?"/>
-<node CREATED="1465427371078" ID="ID_997623405" MODIFIED="1465427371319" TEXT="34. Sorolja fel a fontosabb szegment&#xe1;l&#xe1;si m&#xf3;dszereket. P&#xe1;r sz&#xf3;ban mutassa be &#x151;ket."/>
-<node CREATED="1465427376319" ID="ID_34889247" MODIFIED="1465427376540" TEXT="35. Ismertesse a k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s alap&#xfa; szegment&#xe1;l&#xe1;si elj&#xe1;r&#xe1;sokat (bele&#xe9;rtve a hisztogram-alap&#xfa; sz&#xe9;tv&#xe1;laszt&#xe1;st). Milyen el&#x151;nyeik &#xe9;s h&#xe1;tr&#xe1;nyaik vannak? Milyen m&#xf3;don tudjuk meghat&#xe1;rozni a k&#xfc;sz&#xf6;bszint(ek)et?"/>
-<node CREATED="1465427383022" ID="ID_1337270206" MODIFIED="1465427383452" TEXT="36. Ismertesse a K-Means &#xe9;s a Mean Shift algoritmusokat. Milyen el&#x151;nyeik &#xe9;s h&#xe1;tr&#xe1;nyaik vannak? Mikor haszn&#xe1;ljuk &#x151;ket?"/>
-<node CREATED="1465427391038" ID="ID_1162569344" MODIFIED="1465427391438" TEXT="37. Ismertesse a text&#xfa;raalap&#xfa; szegment&#xe1;l&#xe1;s alapjait, m&#xf3;dszereit (G&#xe1;bor sz&#x171;r&#x151;, frekvencia tartom&#xe1;nybeli sz&#x171;r&#xe9;sek, egy&#xe9;b megold&#xe1;sok)."/>
-<node CREATED="1465427399325" ID="ID_544496559" MODIFIED="1465427399548" TEXT="38. Milyen r&#xe9;gi&#xf3;n&#xf6;vel&#x151; elj&#xe1;r&#xe1;sokat ismer&#xfc;nk. P&#xe1;r sz&#xf3;ban mutassa be &#x151;ket."/>
+<node CREATED="1465427365319" FOLDED="true" ID="ID_1077856890" MODIFIED="1465435096819" TEXT="33. Mit jelent a szegment&#xe1;l&#xe1;s? Mikor van r&#xe1; sz&#xfc;ks&#xe9;g? Mik a f&#x151;bb neh&#xe9;zs&#xe9;gei? Mit jelent a szegment&#xe1;l&#xe1;s sor&#xe1;n az id&#x151;-konzisztencia? A Szegment&#xe1;l&#xe1;s param&#xe9;terter&#xe9;ben milyen &#xf6;sszetev&#x151;ket alkalmazhatunk?">
+<node CREATED="1465431300848" ID="ID_272133917" MODIFIED="1465431301189" TEXT="Szegment&#xe1;l&#xe1;s: A k&#xe9;pszegment&#xe1;l&#xe1;s a k&#xe9;pfeldolgoz&#xe1;s egyik legfontosabb alapprobl&#xe9;m&#xe1;ja, mely a hasonl&#xf3; tulajdons&#xe1;g&#xfa; pixelek homog&#xe9;n ter&#xfc;letekbe t&#xf6;rt&#xe9;n&#x151; csoportos&#xed;t&#xe1;s&#xe1;val foglalkozik."/>
+<node CREATED="1465431335064" ID="ID_1370372891" MODIFIED="1465431335349" TEXT="Sz&#xfc;ks&#xe9;ges/Felhaszn&#xe1;l&#xe1;s">
+<node CREATED="1465431345648" ID="ID_1813139209" MODIFIED="1465431346054" TEXT="Fel&#xfc;letle&#xed;r&#xe1;s"/>
+<node CREATED="1465431352632" ID="ID_1502933099" MODIFIED="1465431353069" TEXT="Sztere&#xf3; l&#xe1;t&#xe1;s (&#xe9;lek megfeleltet&#xe9;se =&gt; 3D rekonstrukci&#xf3;)"/>
+<node CREATED="1465431358703" ID="ID_1568658058" MODIFIED="1465431359037" TEXT="Alakfelismer&#xe9;s"/>
+<node CREATED="1465431365216" ID="ID_138012037" MODIFIED="1465431365613" TEXT="K&#xe9;pi adatb&#xe1;zis indexel&#xe9;se, keres&#xe9;s"/>
+</node>
+<node CREATED="1465431370032" ID="ID_790194679" MODIFIED="1465431377094" TEXT="Neh&#xe9;zs&#xe9;gek">
+<node CREATED="1465431383368" ID="ID_776704416" MODIFIED="1465431383632" TEXT="sz&#xed;nhasonl&#xf3;s&#xe1;g"/>
+<node CREATED="1465431390904" ID="ID_473432866" MODIFIED="1465431398005" TEXT="mozg&#xe1;s (elmos&#xf3;dott &#xe9;lek)"/>
+<node CREATED="1465431400936" ID="ID_511459798" MODIFIED="1465431405227" TEXT="def&#xf3;kusz&#xe1;lts&#xe1;g"/>
+<node CREATED="1465431407760" ID="ID_1851402853" MODIFIED="1465431412198" TEXT="hasonl&#xf3; text&#xfa;r&#xe1;k"/>
+</node>
+<node CREATED="1465431423240" ID="ID_1354645675" MODIFIED="1465431423654" TEXT="Egy vide&#xf3;folyam sor&#xe1;n egy adott szegmens/alak form&#xe1;ja v&#xe1;ltozhat, elfordulhat stb."/>
+<node CREATED="1465431599527" ID="ID_1311338273" MODIFIED="1465431599994" TEXT="A Szegment&#xe1;l&#xe1;s param&#xe9;terter&#xe9;ben milyen &#xf6;sszetev&#x151;ket alkalmazhatunk? r, &#x3c6;"/>
+</node>
+<node CREATED="1465427371078" FOLDED="true" ID="ID_997623405" MODIFIED="1465435095843" TEXT="34. Sorolja fel a fontosabb szegment&#xe1;l&#xe1;si m&#xf3;dszereket. P&#xe1;r sz&#xf3;ban mutassa be &#x151;ket.">
+<node CREATED="1465431666767" ID="ID_1150309729" MODIFIED="1465431667085" TEXT="K&#xfc;sz&#xf6;b&#xf6;z&#xe9;s, hisztogram alap&#xfa;"/>
+<node CREATED="1465431673655" ID="ID_237236543" MODIFIED="1465431674350" TEXT="&#xc9;ldetekt&#xe1;l&#xe1;s alap&#xfa;"/>
+<node CREATED="1465431700864" ID="ID_271679223" MODIFIED="1465431701359" TEXT="Klaszterez&#xe9;s:">
+<node CREATED="1465431703440" ID="ID_1537919945" MODIFIED="1465431708310" TEXT="sz&#xed;ncsatorn&#xe1;k"/>
+<node CREATED="1465431709519" ID="ID_1889176008" MODIFIED="1465431713125" TEXT="t&#xe9;rbeli eloszl&#xe1;s"/>
+<node CREATED="1465431715104" ID="ID_1989231151" MODIFIED="1465431719319" TEXT="id&#x151;beli eloszl&#xe1;s"/>
+</node>
+<node CREATED="1465431721560" ID="ID_1614716081" MODIFIED="1465431724355" TEXT="R&#xe9;gi&#xf3;n&#xf6;vel&#xe9;s"/>
+<node CREATED="1465431725648" ID="ID_1507321266" MODIFIED="1465431734414" TEXT="T&#xf6;m&#xf6;r&#xed;t&#xe9;s-alap&#xfa; m&#xf3;dszerek"/>
+<node CREATED="1465431736127" ID="ID_1616317636" MODIFIED="1465431746151" TEXT="Param&#xe9;teres megold&#xe1;sok, g&#xf6;rbeilleszt&#xe9;s"/>
+<node CREATED="1465431751919" ID="ID_1134431749" MODIFIED="1465431756085" TEXT="Modell alap&#xfa;"/>
+<node CREATED="1465431757144" ID="ID_1306628573" MODIFIED="1465431760909" TEXT="Tanul&#xf3; rendszerek"/>
+</node>
+<node CREATED="1465427376319" FOLDED="true" ID="ID_34889247" MODIFIED="1465435089162" TEXT="35. Ismertesse a k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s alap&#xfa; szegment&#xe1;l&#xe1;si elj&#xe1;r&#xe1;sokat (bele&#xe9;rtve a hisztogram-alap&#xfa; sz&#xe9;tv&#xe1;laszt&#xe1;st). Milyen el&#x151;nyeik &#xe9;s h&#xe1;tr&#xe1;nyaik vannak? Milyen m&#xf3;don tudjuk meghat&#xe1;rozni a k&#xfc;sz&#xf6;bszint(ek)et?">
+<node CREATED="1465431881368" ID="ID_1460213475" MODIFIED="1465431882066" TEXT="Intenzit&#xe1;s alap&#xfa;, sz&#xed;n alap&#xfa;"/>
+<node CREATED="1465431901256" ID="ID_1983344149" MODIFIED="1465431901853" TEXT="f(x,y) &#x2013; a k&#xe9;p x,y koordin&#xe1;t&#xe1;kn&#xe1;l m&#xe9;rt intenzit&#xe1;sa"/>
+<node CREATED="1465431913624" ID="ID_1281655167" MODIFIED="1465431913967" TEXT="p(x,y) &#x2013; pont lok&#xe1;lis tulajdons&#xe1;ga (pl. x,y k&#xf6;z&#xe9;ppont&#xfa; szomsz&#xe9;ds&#xe1;g &#xe1;tlaga)"/>
+<node CREATED="1465431962064" ID="ID_570379783" MODIFIED="1465431962474" TEXT="g(x,y) legyen a k&#xfc;sz&#xf6;b&#xf6;z&#xf6;tt k&#xe9;p: 1, ha f(x,y)&gt;T g(x,y)= 0, ha f(x,y)&lt;=T">
+<node CREATED="1465431981648" ID="ID_431009508" MODIFIED="1465431982013" TEXT="ha T csak f(x,y)-t&#xf3;l f&#xfc;gg &#xf0e0; glob&#xe1;lis"/>
+<node CREATED="1465431993832" ID="ID_185804402" MODIFIED="1465431994486" TEXT="ha T f(x,y)-t&#xf3;l &#xe9;s p(x,y)-t&#xf3;l is f&#xfc;gg &#xf0e0; lok&#xe1;lis"/>
+<node CREATED="1465432013288" ID="ID_144360594" MODIFIED="1465432013518" TEXT="ha T f&#xfc;gg x,y-t&#xf3;l is &#xf0e0; dinamikus"/>
+</node>
+<node CREATED="1465432021056" ID="ID_805689967" MODIFIED="1465432021270" TEXT="Glob&#xe1;lis k&#xfc;sz&#xf6;b&#xf6;z&#xe9;s lehet az is, ha pl. egy glob&#xe1;lis hisztogram tulajdons&#xe1;gai (medi&#xe1;n stb.) alapj&#xe1;n hat&#xe1;rozzuk meg a k&#xe9;s&#x151;bb felhaszn&#xe1;land&#xf3; k&#xfc;sz&#xf6;b&#xe9;rt&#xe9;ket. (Ez csak akkor m&#x171;k&#xf6;dik j&#xf3;l, ha mi befoly&#xe1;soljuk a megvil&#xe1;g&#xed;t&#xe1;s k&#xf6;r&#xfc;lm&#xe9;nyeit.)"/>
+</node>
+<node CREATED="1465427383022" FOLDED="true" ID="ID_1337270206" MODIFIED="1465435093996" TEXT="36. Ismertesse a K-Means &#xe9;s a Mean Shift algoritmusokat. Milyen el&#x151;nyeik &#xe9;s h&#xe1;tr&#xe1;nyaik vannak? Mikor haszn&#xe1;ljuk &#x151;ket?">
+<node CREATED="1465432179440" ID="ID_896519691" MODIFIED="1465432186372" TEXT="Param&#xe9;terek:">
+<node CREATED="1465432142624" ID="ID_615559295" MODIFIED="1465432187766" TEXT="Kiindul&#xe1;s">
+<node CREATED="1465432157728" ID="ID_1685077495" MODIFIED="1465432162330" TEXT="iter&#xe1;ci&#xf3;">
+<node CREATED="1465432163920" ID="ID_134545869" MODIFIED="1465432165710" TEXT="el&#x151;ny">
+<node CREATED="1465432167008" ID="ID_1942908341" MODIFIED="1465432174759" TEXT="h&#xe1;tr&#xe1;ny"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1465432192152" ID="ID_1268064320" MODIFIED="1465432196462" TEXT="K-Means">
+<node CREATED="1465432197399" ID="ID_1671919515" MODIFIED="1465432245607" TEXT="Klaszterek sz&#xe1;ma (K)">
+<node CREATED="1465432262552" ID="ID_975152960" MODIFIED="1465432274455" TEXT="1. Pontokat a legk&#xf6;zelebbi maghoz rendelni">
+<node CREATED="1465432329328" ID="ID_1108504948" MODIFIED="1465432364654" TEXT="egyszer&#x171; (gyors) (helyes kiindul&#xe1;si &#xe9;rt&#xe9;kek eset&#xe9;n">
+<node CREATED="1465432367432" ID="ID_299466008" MODIFIED="1465432375657" TEXT="Sz&#xfc;ks&#xe9;g van a klaszterek sz&#xe1;m&#xe1;ra"/>
+<node CREATED="1465432376984" ID="ID_1519185706" MODIFIED="1465432385568" TEXT="&#xc9;rz&#xe9;keny a kiindul&#xe1;si k&#xf6;z&#xe9;ppontokre"/>
+<node CREATED="1465432390432" ID="ID_805496778" MODIFIED="1465432487753" TEXT="&#xc9;rz&#xe9;keny az outlier-ekre (amikor egy-egy ponthalmaz nagyon messze esik a t&#xf6;bbit&#x151;l)"/>
+</node>
+<node CREATED="1465432337832" ID="ID_984242607" MODIFIED="1465432348438" TEXT="K&#xf6;nnyen implement&#xe1;lhat&#xf3;"/>
+</node>
+<node CREATED="1465432284368" ID="ID_1077182779" MODIFIED="1465432284646" TEXT="2. &#xda;j klaszterk&#xf6;z&#xe9;ppontok (&#xe1;tlag) sz&#xe1;m&#xed;t&#xe1;sa"/>
+<node CREATED="1465432294920" ID="ID_1310953910" MODIFIED="1465432295230" TEXT="3. Ism&#xe9;tl&#xe9;s, am&#xed;g &#x201e;nagy&#x201d; a v&#xe1;ltoz&#xe1;s"/>
+</node>
+<node CREATED="1465432246712" ID="ID_690619614" MODIFIED="1465432257909" TEXT="Kiindul&#xe1;si klaszterk&#xf6;z&#xe9;ppontok (magok)"/>
+</node>
+<node CREATED="1465432516560" ID="ID_68050658" MODIFIED="1465432520597" TEXT="Mean-Shift">
+<node CREATED="1465432521440" ID="ID_730367325" MODIFIED="1465432529833" TEXT="Kernel t&#xed;pusa (Fiat, Gauss..)">
+<node CREATED="1465432551023" ID="ID_1090252637" MODIFIED="1465432551295" TEXT="1. Pontot a kernelen bel&#xfc;li pontok &#xe1;tlag&#xe1;hoz tolni">
+<node CREATED="1465432567320" ID="ID_1853934871" MODIFIED="1465432580379" TEXT="&#xc1;ltal&#xe1;nos, alkalmaz&#xe1;sf&#xfc;ggetlen">
+<node CREATED="1465432603024" ID="ID_188798845" MODIFIED="1465432604785" TEXT="Lass&#xfa;"/>
+</node>
+<node CREATED="1465432583064" ID="ID_1122008465" MODIFIED="1465432591454" TEXT="Csak egy param&#xe9;ter sz&#xfc;ks&#xe9;ges (h)"/>
+<node CREATED="1465432592824" ID="ID_567457623" MODIFIED="1465432597493" TEXT="Robosztus"/>
+</node>
+<node CREATED="1465432558568" ID="ID_1666970128" MODIFIED="1465432558823" TEXT="2. Ism&#xe9;tl&#xe9;s, am&#xed;g &#x201e;nagy&#x201d; a v&#xe1;ltoz&#xe1;s"/>
+</node>
+<node CREATED="1465432531656" ID="ID_1837399810" MODIFIED="1465432535087" TEXT="Kernel m&#xe9;rete (h)"/>
+</node>
+</node>
+<node CREATED="1465427391038" FOLDED="true" ID="ID_1162569344" MODIFIED="1465435083699" TEXT="37. Ismertesse a text&#xfa;raalap&#xfa; szegment&#xe1;l&#xe1;s alapjait, m&#xf3;dszereit (G&#xe1;bor sz&#x171;r&#x151;, frekvencia tartom&#xe1;nybeli sz&#x171;r&#xe9;sek, egy&#xe9;b megold&#xe1;sok).">
+<node CREATED="1465432636536" ID="ID_1456670251" MODIFIED="1465432636830" TEXT="Egy k&#xe9;pen egy ter&#xfc;letnek &#xe1;lland&#xf3; text&#xfa;r&#xe1;ja van, ha a lok&#xe1;lis statisztik&#xe1;k vagy egy&#xe9;b lok&#xe1;lis tulajdons&#xe1;gok &#xe1;lland&#xf3;ak, lassan v&#xe1;ltoznak, vagy megk&#xf6;zel&#xed;t&#x151;leg periodikusak. Ez lehet determinisztikus vagy v&#xe9;letlen is. Egy text&#xfa;r&#xe1;lt fel&#xfc;letet homog&#xe9;nnek &#xe9;rz&#xe9;kel&#xfc;nk, de a g&#xe9;p sz&#xe1;m&#xe1;ra ez a legkev&#xe9;sb&#xe9; sem trivi&#xe1;lis."/>
+<node CREATED="1465432647712" ID="ID_327859294" MODIFIED="1465432648061" TEXT="A text&#xfa;r&#xe1;k statisztikai le&#xed;r&#xe1;sa olyan text&#xfa;ra-jellemz&#x151;ket &#xe1;ll&#xed;t el&#x151;, melyek egy r&#xe9;gi&#xf3;n bel&#xfc;l homog&#xe9;nek, &#xed;gy a szegment&#xe1;l&#xe1;s viszonylag k&#xf6;nnyen elv&#xe9;gezhet&#x151;. H&#xe1;rom f&#x151; t&#xed;pus:">
+<node CREATED="1465432656288" ID="ID_1781133613" MODIFIED="1465432667887" TEXT="hisztogram (els&#x151;rend&#x171; statisztika)"/>
+<node CREATED="1465432675584" ID="ID_1254293356" MODIFIED="1465432675889" TEXT="egy&#xfc;ttes el&#x151;fordul&#xe1;si (co-occurence) m&#xe1;trix (m&#xe1;sodrend&#x171; statisztika)"/>
+<node CREATED="1465432726568" ID="ID_29188555" MODIFIED="1465432726834" TEXT="text&#xfa;ra elemek eloszl&#xe1;sa egy ablakon bel&#xfc;l"/>
+</node>
+<node CREATED="1465432741183" FOLDED="true" ID="ID_942358189" MODIFIED="1465435082419" TEXT="G&#xe1;bor sz&#x171;r&#x151;">
+<node CREATED="1465432753327" ID="ID_586314599" MODIFIED="1465432783550" TEXT="Line&#xe1;ris sz&#x171;r&#x151; &#xe9;ldetekt&#xe1;l&#xe1;sra "/>
+<node CREATED="1465432784568" ID="ID_723001026" MODIFIED="1465432853236" TEXT="A frekvencia &#xe9;s orient&#xe1;ci&#xf3; reprezent&#xe1;ci&#xf3;ja a sz&#x171;r&#x151;nek hasonl&#xf3; az emberi l&#xe1;t&#xf3;rendszer&#xe9;hez, &#xed;gy megfelel&#x151; text&#xfa;ra reprezent&#xe1;ci&#xf3;ra &#xe9;s diszkrimin&#xe1;ci&#xf3;ra"/>
+</node>
+</node>
+<node CREATED="1465427399325" FOLDED="true" ID="ID_544496559" MODIFIED="1465435114650" TEXT="38. Milyen r&#xe9;gi&#xf3;n&#xf6;vel&#x151; elj&#xe1;r&#xe1;sokat ismer&#xfc;nk. P&#xe1;r sz&#xf3;ban mutassa be &#x151;ket.">
+<node CREATED="1465432960212" FOLDED="true" ID="ID_1334437380" MODIFIED="1465435078594" TEXT="Kiindul&#xe1;skor a pixelek egyenk&#xe9;nt k&#xfc;l&#xf6;n halmazokat alkotnak. &#xd6;sszehasonl&#xed;tjuk &#x151;ket a szomsz&#xe9;daikkal, hasonl&#xf3;s&#xe1;g eset&#xe9;n &#xf6;sszevonjuk a halmazokat. Hasonl&#xf3;s&#xe1;g lehet:">
+<node CREATED="1465432973212" ID="ID_1414255782" MODIFIED="1465432973874" TEXT="Kiv&#xe1;lasztott (sz&#xed;n)csatorn&#xe1;k"/>
+<node CREATED="1465432975696" ID="ID_414451328" MODIFIED="1465432979339" TEXT="def&#xf3;kusz&#xe1;lts&#xe1;g"/>
+<node CREATED="1465432980561" ID="ID_1024456505" MODIFIED="1465432985530" TEXT="M&#xe9;lys&#xe9;g (m&#xe9;lys&#xe9;gi k&#xe9;pen)"/>
+</node>
+<node CREATED="1465433116777" ID="ID_942361203" MODIFIED="1465433117272" TEXT="SRM (Statisztikus r&#xe9;gi&#xf3;n&#xf6;vel&#xe9;s) Gr&#xe1;f s&#xfa;lyoz&#xe1;s a k&#xfc;l. alapj&#xe1;n."/>
+<node CREATED="1465433122751" ID="ID_461504293" MODIFIED="1465433123092" TEXT="Split &amp; Merge &#xf0b7; Sz&#xe9;tv&#xe1;laszt&#xe1;s csak hasonl&#xf3; (bel&#xfc;l) elemekre &#xf0b7; Hasonl&#xf3;s&#xe1;g alapj&#xe1;n egyes&#xed;t&#xe9;s"/>
+</node>
 </node>
 </node>
 <node CREATED="1465399090795" ID="ID_601877595" MODIFIED="1465399104988" POSITION="left" TEXT="II. A 3D k&#xe9;pfeldolgoz&#xe1;s alapjai">
