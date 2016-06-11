@@ -537,7 +537,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1465399090795" ID="ID_601877595" MODIFIED="1465399104988" POSITION="left" TEXT="II. A 3D k&#xe9;pfeldolgoz&#xe1;s alapjai">
+<node CREATED="1465399090795" FOLDED="true" ID="ID_601877595" MODIFIED="1465603989303" POSITION="left" TEXT="II. A 3D k&#xe9;pfeldolgoz&#xe1;s alapjai">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1465399113539" FOLDED="true" ID="ID_1071678878" MODIFIED="1465448091062" TEXT="7. Matematikai alapok, Projekt&#xed;v geometria">
 <node CREATED="1465435247117" FOLDED="true" ID="ID_233351485" MODIFIED="1465448088638" TEXT="39. Adja meg egy inhomog&#xe9;n line&#xe1;ris egyenletrendszer &#xe1;ltal&#xe1;nos alakj&#xe1;t! Mutassa be a legkisebb n&#xe9;gyzetek (LS) m&#xf3;dszer&#xe9;t!">
@@ -843,12 +843,12 @@
 <node CREATED="1465436411333" ID="ID_1954385499" MODIFIED="1465436411829" TEXT="74. Mutassa be a konvol&#xfa;ci&#xf3;s neur&#xe1;lis h&#xe1;l&#xf3;k fel&#xe9;p&#xed;t&#xe9;s&#xe9;t, m&#x171;k&#xf6;d&#xe9;s&#xe9;t, &#xe9;s el&#x151;nyeit."/>
 </node>
 </node>
-<node CREATED="1465399171748" ID="ID_178493250" MODIFIED="1465399192565" POSITION="right" TEXT="III. Val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei, paradigm&#xe1;i">
+<node CREATED="1465399171748" FOLDED="true" ID="ID_178493250" MODIFIED="1465603986748" POSITION="right" TEXT="III. Val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei, paradigm&#xe1;i">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1465399192977" ID="ID_730765938" MODIFIED="1465448182095" TEXT="12. A val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei">
+<node CREATED="1465399192977" FOLDED="true" ID="ID_730765938" MODIFIED="1465603977840" TEXT="12. A val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei">
 <node CREATED="1465448164227" ID="ID_1705379749" MODIFIED="1465448174930" TEXT="75. Ismertesse a val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s sor&#xe1;n haszn&#xe1;latos eszk&#xf6;z&#xf6;kben alkalmazott paradigm&#xe1;k f&#x151;bb oszt&#xe1;lyait. Adjon p&#xe9;ld&#xe1;kat ezekre."/>
 </node>
-<node CREATED="1465399208504" ID="ID_764211038" MODIFIED="1465448187098" TEXT="13. GPGPU, CUDA">
+<node CREATED="1465399208504" FOLDED="true" ID="ID_764211038" MODIFIED="1465603975640" TEXT="13. GPGPU, CUDA">
 <node CREATED="1465448244980" ID="ID_1078730025" MODIFIED="1465448245316" TEXT="76. Mi&#xe9;rt alkalmasak a grafikai c&#xe9;lra kialak&#xed;tott feldolgoz&#xf3; egys&#xe9;gek k&#xe9;pfeldolgoz&#xe1;si c&#xe9;lokra? Mi jelenti &#xe1;ltal&#xe1;noss&#xe1;gban egy grafikus k&#xe1;rty&#xe1;n implement&#xe1;lt k&#xe9;pfeldolgoz&#xe1;si elj&#xe1;r&#xe1;s sor&#xe1;n a sz&#x171;k keresztmetszetet? Mi&#xe9;rt?"/>
 <node CREATED="1465448250674" ID="ID_900838976" MODIFIED="1465448251057" TEXT="77. Mit jelent a grafikus cs&#x151;vezet&#xe9;k? Rajzolja fel a Direct3D grafikus cs&#x151;rendszer&#xe9;t, &#xe9;s r&#xf6;viden ismertesse az egyes &#xe1;llom&#xe1;sokat."/>
 <node CREATED="1465448255802" ID="ID_11597245" MODIFIED="1465448256120" TEXT="78. Mi az &#xe1;rnyal&#xf3;, mire lehet alkalmazni? Melyik &#xe1;rnyal&#xf3;t lehet a k&#xe9;pfeldolgoz&#xe1;sban legink&#xe1;bb haszn&#xe1;lni? Hogyan m&#x171;k&#xf6;dik? Milyen er&#x151;forr&#xe1;sok &#xe1;llnak rendelkez&#xe9;sre haszn&#xe1;latukkor?"/>
@@ -869,7 +869,7 @@
 <node CREATED="1465448367511" ID="ID_639690589" MODIFIED="1465448367845" TEXT="d, er&#xf3;zi&#xf3;/dilat&#xe1;ci&#xf3; (adott kernel alapj&#xe1;n)"/>
 </node>
 </node>
-<node CREATED="1465399223200" ID="ID_247211429" MODIFIED="1465448191288" TEXT="14. K&#xe9;pfeldolgoz&#xe1;s mobileszk&#xf6;z&#xf6;kkel">
+<node CREATED="1465399223200" FOLDED="true" ID="ID_247211429" MODIFIED="1465603979163" TEXT="14. K&#xe9;pfeldolgoz&#xe1;s mobileszk&#xf6;z&#xf6;kkel">
 <node CREATED="1465448374962" ID="ID_1346919418" MODIFIED="1465448375368" TEXT="90. Mik az alapvet&#x151; hardveres k&#xfc;l&#xf6;nbs&#xe9;gek a l&#xe1;t&#xf3; rendszerek szempontj&#xe1;b&#xf3;l az asztali g&#xe9;pek &#xe9;s a mobil eszk&#xf6;z&#xf6;k k&#xf6;z&#xf6;tt?"/>
 <node CREATED="1465448383603" ID="ID_1447909718" MODIFIED="1465448383901" TEXT="91. Ismertesse a NEON elv&#xe9;t. Milyen jelleg&#x171; m&#x171;veleteket v&#xe9;gezhet&#xfc;nk vele?"/>
 <node CREATED="1465448389792" ID="ID_1719004387" MODIFIED="1465448390092" TEXT="92. Mi a RenderScript? Milyen c&#xe9;lb&#xf3;l hozt&#xe1;k l&#xe9;tre? Milyen rendszereken &#xe9;s eszk&#xf6;z&#xf6;k&#xf6;n haszn&#xe1;lhat&#xf3;? Mi a k&#xfc;l&#xf6;nbs&#xe9;g a RenderScript &#xe9;s a FilterScript k&#xf6;z&#xf6;tt?"/>
@@ -888,7 +888,7 @@
 <node CREATED="1465448463312" ID="ID_881685611" MODIFIED="1465448463744" TEXT="100. Milyen feladatokat v&#xe9;gz&#xfc;nk OpenGL ES eset&#xe9;n a vertex &#xe1;rnyal&#xf3;ban? Mi az MVP M&#xe1;trix szerepe?"/>
 <node CREATED="1465448468831" ID="ID_1269935297" MODIFIED="1465448469169" TEXT="101. &#xcd;rjon GLSL kernelt (fragmens&#xe1;rnyal&#xf3;) egy megadott specifik&#xe1;ci&#xf3; szerint. a, K&#xfc;sz&#xf6;b&#xf6;z&#xe9;s (sz&#xfc;rke&#xe1;rnyalatos k&#xe9;pen, vagy csatorn&#xe1;nk&#xe9;nt)"/>
 </node>
-<node CREATED="1465399241325" ID="ID_1417413276" MODIFIED="1465448196023" TEXT="15. L&#xe1;t&#xe1;s programozhat&#xf3; hardvereszk&#xf6;z&#xf6;kkel">
+<node CREATED="1465399241325" FOLDED="true" ID="ID_1417413276" MODIFIED="1465603980509" TEXT="15. L&#xe1;t&#xe1;s programozhat&#xf3; hardvereszk&#xf6;z&#xf6;kkel">
 <node CREATED="1465448478490" ID="ID_422197187" MODIFIED="1465448478731" TEXT="102. Mit jelent a &#x201e;programozhat&#xf3;&#x201d; hardver? Hogyan val&#xf3;s&#xed;tj&#xe1;k meg programozhat&#xf3;s&#xe1;got? Rajzolja fel egy &#xfa;tvonalv&#xe1;laszt&#xf3; &#xe9;s egy k&#xe9;t bemenet&#x171; programozhat&#xf3; kapu megval&#xf3;s&#xed;t&#xe1;s&#xe1;t."/>
 <node CREATED="1465448483809" ID="ID_752178561" MODIFIED="1465448484168" TEXT="103. Mi a programozhat&#xf3; hardvereszk&#xf6;z&#xf6;k&#xf6;n t&#xf6;rt&#xe9;n&#x151; tervez&#xe9;s menete?"/>
 <node CREATED="1465448491998" ID="ID_1786755793" MODIFIED="1465448492947" TEXT="04. Tipikusan milyen elemekb&#x151;l &#xe9;p&#xfc;l fel egy FPGA? Milyen m&#xf3;don haszn&#xe1;lhatjuk egy tipikus FPGA (pl. Xilinx) Look-Up Table egys&#xe9;geit?"/>
@@ -902,7 +902,7 @@
 <node CREATED="1465448540931" ID="ID_778764284" MODIFIED="1465448541265" TEXT="109. Mi&#xe9;rt van sz&#xfc;ks&#xe9;g hardver-szoftver egy&#xfc;ttes tervez&#xe9;sre? Mik az el&#x151;nyei egy e tervez&#xe9;si m&#xf3;dszer &#xe1;ltal l&#xe9;trehozott feldolgoz&#xf3; rendszernek?"/>
 <node CREATED="1465448546977" ID="ID_1389105908" MODIFIED="1465448547272" TEXT="110. Mit jelent az &#xfa;jrakonfigur&#xe1;lhat&#xf3; illetve &#xf6;nkonfigur&#xe1;l&#xf3; hardver fogalma? Mire haszn&#xe1;lhatjuk &#x151;ket?"/>
 </node>
-<node CREATED="1465399253115" ID="ID_1706545883" MODIFIED="1465448200665" TEXT="16. CMOS alap&#xfa; el&#x151;feldolgoz&#xe1;s">
+<node CREATED="1465399253115" FOLDED="true" ID="ID_1706545883" MODIFIED="1465603983852" TEXT="16. CMOS alap&#xfa; el&#x151;feldolgoz&#xe1;s">
 <node CREATED="1465448553566" ID="ID_883425568" MODIFIED="1465448553853" TEXT="111. Ismertesse az akt&#xed;v &#xe9;s passz&#xed;v szenzoros &#xe9;rz&#xe9;kel&#x151;k fel&#xe9;p&#xed;t&#xe9;s&#xe9;t, el&#x151;nyeit &#xe9;s h&#xe1;tr&#xe1;nyait."/>
 <node CREATED="1465448561571" ID="ID_690018839" MODIFIED="1465448562783" TEXT="112. Ismertesse a Cellul&#xe1;ris Neur&#xe1;lis h&#xe1;l&#xf3;zatok m&#x171;k&#xf6;d&#xe9;s&#xe9;nek elv&#xe9;t, fel&#xe9;p&#xed;t&#xe9;s&#xe9;t (Cellul&#xe1;ris h&#xe1;l&#xf3;zat, neur&#xe1;lis h&#xe1;l&#xf3;zat...)"/>
 <node CREATED="1465448568335" ID="ID_1707263148" MODIFIED="1465448568696" TEXT="113. Adja meg az al&#xe1;bbi feladathoz tartoz&#xf3; CNN egy lehets&#xe9;ges param&#xe9;terk&#xe9;szlet&#xe9;t (A, B, I):">
