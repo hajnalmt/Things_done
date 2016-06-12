@@ -843,7 +843,7 @@
 <node CREATED="1465436411333" ID="ID_1954385499" MODIFIED="1465436411829" TEXT="74. Mutassa be a konvol&#xfa;ci&#xf3;s neur&#xe1;lis h&#xe1;l&#xf3;k fel&#xe9;p&#xed;t&#xe9;s&#xe9;t, m&#x171;k&#xf6;d&#xe9;s&#xe9;t, &#xe9;s el&#x151;nyeit."/>
 </node>
 </node>
-<node CREATED="1465399171748" FOLDED="true" ID="ID_178493250" MODIFIED="1465603986748" POSITION="right" TEXT="III. Val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei, paradigm&#xe1;i">
+<node CREATED="1465399171748" FOLDED="true" ID="ID_178493250" MODIFIED="1465742847695" POSITION="right" TEXT="III. Val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei, paradigm&#xe1;i">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1465399192977" FOLDED="true" ID="ID_730765938" MODIFIED="1465603977840" TEXT="12. A val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s eszk&#xf6;zei">
 <node CREATED="1465448164227" ID="ID_1705379749" MODIFIED="1465448174930" TEXT="75. Ismertesse a val&#xf3;sidej&#x171; l&#xe1;t&#xe1;s sor&#xe1;n haszn&#xe1;latos eszk&#xf6;z&#xf6;kben alkalmazott paradigm&#xe1;k f&#x151;bb oszt&#xe1;lyait. Adjon p&#xe9;ld&#xe1;kat ezekre."/>
@@ -902,10 +902,10 @@
 <node CREATED="1465448540931" ID="ID_778764284" MODIFIED="1465448541265" TEXT="109. Mi&#xe9;rt van sz&#xfc;ks&#xe9;g hardver-szoftver egy&#xfc;ttes tervez&#xe9;sre? Mik az el&#x151;nyei egy e tervez&#xe9;si m&#xf3;dszer &#xe1;ltal l&#xe9;trehozott feldolgoz&#xf3; rendszernek?"/>
 <node CREATED="1465448546977" ID="ID_1389105908" MODIFIED="1465448547272" TEXT="110. Mit jelent az &#xfa;jrakonfigur&#xe1;lhat&#xf3; illetve &#xf6;nkonfigur&#xe1;l&#xf3; hardver fogalma? Mire haszn&#xe1;lhatjuk &#x151;ket?"/>
 </node>
-<node CREATED="1465399253115" FOLDED="true" ID="ID_1706545883" MODIFIED="1465603983852" TEXT="16. CMOS alap&#xfa; el&#x151;feldolgoz&#xe1;s">
+<node CREATED="1465399253115" FOLDED="true" ID="ID_1706545883" MODIFIED="1465742846359" TEXT="16. CMOS alap&#xfa; el&#x151;feldolgoz&#xe1;s">
 <node CREATED="1465448553566" ID="ID_883425568" MODIFIED="1465448553853" TEXT="111. Ismertesse az akt&#xed;v &#xe9;s passz&#xed;v szenzoros &#xe9;rz&#xe9;kel&#x151;k fel&#xe9;p&#xed;t&#xe9;s&#xe9;t, el&#x151;nyeit &#xe9;s h&#xe1;tr&#xe1;nyait."/>
 <node CREATED="1465448561571" ID="ID_690018839" MODIFIED="1465448562783" TEXT="112. Ismertesse a Cellul&#xe1;ris Neur&#xe1;lis h&#xe1;l&#xf3;zatok m&#x171;k&#xf6;d&#xe9;s&#xe9;nek elv&#xe9;t, fel&#xe9;p&#xed;t&#xe9;s&#xe9;t (Cellul&#xe1;ris h&#xe1;l&#xf3;zat, neur&#xe1;lis h&#xe1;l&#xf3;zat...)"/>
-<node CREATED="1465448568335" ID="ID_1707263148" MODIFIED="1465448568696" TEXT="113. Adja meg az al&#xe1;bbi feladathoz tartoz&#xf3; CNN egy lehets&#xe9;ges param&#xe9;terk&#xe9;szlet&#xe9;t (A, B, I):">
+<node CREATED="1465448568335" FOLDED="true" ID="ID_1707263148" MODIFIED="1465742844942" TEXT="113. Adja meg az al&#xe1;bbi feladathoz tartoz&#xf3; CNN egy lehets&#xe9;ges param&#xe9;terk&#xe9;szlet&#xe9;t (A, B, I):">
 <node CREATED="1465448575974" MODIFIED="1465448575974" TEXT="a, f&#xe9;nyess&#xe9;g"/>
 <node CREATED="1465448575975" MODIFIED="1465448575975" TEXT="b, kontraszt"/>
 <node CREATED="1465448575976" MODIFIED="1465448575976" TEXT="c, invert&#xe1;l&#xe1;s"/>
