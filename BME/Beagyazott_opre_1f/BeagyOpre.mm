@@ -4,10 +4,10 @@
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1465604045747" ID="ID_219817326" MODIFIED="1465604080353" POSITION="right" TEXT="I. Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1465604089347" ID="ID_1529659344" MODIFIED="1465604105691" TEXT="1.1 Bevezet&#xe9;s a z&#xe1;tgy fel&#xe9;p&#xed;t&#xe9;se tematik&#xe1;ja">
+<node CREATED="1465604089347" FOLDED="true" ID="ID_1529659344" MODIFIED="1465845533590" TEXT="1.1 Bevezet&#xe9;s a z&#xe1;tgy fel&#xe9;p&#xed;t&#xe9;se tematik&#xe1;ja">
 <node CREATED="1465604106940" ID="ID_40895493" MODIFIED="1465604139532" TEXT="5 oper&#xe1;ci&#xf3;s rendszerr&#x151;l lesz sz&#xf3;, v&#xe9;g&#xfc;l egy esettanulm&#xe1;nnyal"/>
 </node>
-<node CREATED="1465604154800" ID="ID_138764484" MODIFIED="1465604174458" TEXT="1.2 Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek piaci &#xe1;ttekint&#xe9;s">
+<node CREATED="1465604154800" FOLDED="true" ID="ID_138764484" MODIFIED="1465845530268" TEXT="1.2 Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek piaci &#xe1;ttekint&#xe9;s">
 <node CREATED="1465743031665" ID="ID_329817080" MODIFIED="1465743077371" TEXT="A piacon tal&#xe1;lhat&#xf3; be&#xe1;gyazott eszk&#xf6;z&#xf6;k 30%-&#xe1;n semmilyen oper&#xe1;ci&#xf3;s rendszer nincs">
 <node CREATED="1465743113844" ID="ID_1283515213" MODIFIED="1465743122084" TEXT="Az&#xe9;rt mert &#xe1;ltal&#xe1;ban nagyon egyszer&#x171; a feladat"/>
 <node CREATED="1465743136060" ID="ID_221965533" MODIFIED="1465743166713" TEXT="n&#xe9;h&#xe1;ny megszak&#xed;t&#xe1;si rutin &#xe9;s egy ciklus &#xed;r&#xe1;s&#xe1;val megoldhat&#xf3;"/>
@@ -42,15 +42,15 @@
 <node CREATED="1465775372467" ID="ID_1231819418" MODIFIED="1465775389134" TEXT="H&#xe1;zon bel&#xfc;li OS-ek"/>
 </node>
 </node>
-<node CREATED="1465743447912" ID="ID_780489737" MODIFIED="1465818756576" TEXT="1.3 Megszak&#xed;t&#xe1;sok kezel&#xe9;se">
+<node CREATED="1465743447912" FOLDED="true" ID="ID_780489737" MODIFIED="1465845527777" TEXT="1.3 Megszak&#xed;t&#xe1;sok kezel&#xe9;se">
 <node CREATED="1465818768272" ID="ID_100673633" MODIFIED="1465818828800" TEXT="k&#xf6;z&#xf6;s mem&#xf3;riakezel&#xe9;si probl&#xe9;ma - k&#xf6;z&#xf6;s adatkezel&#xe9;si probl&#xe9;ma"/>
 <node CREATED="1465818842172" ID="ID_994706059" MODIFIED="1465818857372" TEXT="atomi m&#x171;veletek, kritikus szakaszok"/>
-<node CREATED="1465819205058" ID="ID_1639785760" MODIFIED="1465819275111" TEXT="1.3.2 Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek architekt&#xfa;r&#xe1;ja">
+<node CREATED="1465819205058" FOLDED="true" ID="ID_1639785760" MODIFIED="1465845513702" TEXT="1.3.2 Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek architekt&#xfa;r&#xe1;ja">
 <node CREATED="1465823180995" ID="ID_319984449" MODIFIED="1465823181482" TEXT="A real-time oper&#xe1;ci&#xf3;s rendszerek legfontosabb tulajdons&#xe1;ga, azonban az hogy a feladatok &#x2013; taszkok is &#xfc;temezhet&#x151;ek, teh&#xe1;t fut&#xe1;suk b&#xe1;rmikor megszak&#xed;that&#xf3;, &#xe9;s egy m&#xe1;sik taszk b&#xe1;rmikor elind&#xed;that&#xf3;"/>
 <node CREATED="1465823210659" ID="ID_367047061" MODIFIED="1465823229775" TEXT="overhead - nem l&#xe9;nyeges dolgokkal foglalj&#xe1;k a processzort"/>
 <node CREATED="1465823230978" ID="ID_767294477" MODIFIED="1465823248792" TEXT="a v&#xe1;laszid&#x151;k viszonylag &#xe1;tlag&#xe9;rt&#xe9;ken maradnak"/>
 </node>
-<node CREATED="1465819276073" ID="ID_1259072444" MODIFIED="1465819304639" TEXT="1.3.3 Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek alapvet&#x151; szolg&#xe1;ltat&#xe1;sai">
+<node CREATED="1465819276073" FOLDED="true" ID="ID_1259072444" MODIFIED="1465845510766" TEXT="1.3.3 Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek alapvet&#x151; szolg&#xe1;ltat&#xe1;sai">
 <node CREATED="1465819311137" ID="ID_830341909" MODIFIED="1465823258660" TEXT="id&#x151;z&#xed;t&#xe9;s szerinti m&#x171;k&#xf6;d&#xe9;s"/>
 <node CREATED="1465819341274" FOLDED="true" ID="ID_920535469" MODIFIED="1465845421207" TEXT="el&#x151;re meghat&#xe1;rozhat&#xf3; legyen egy adott feladat elv&#xe9;gz&#xe9;si ideje">
 <node CREATED="1465819376201" ID="ID_705998246" MODIFIED="1465819388060" TEXT="determinisztikus rendszerek"/>
@@ -253,6 +253,33 @@
 <node CREATED="1465845382204" ID="ID_1855624700" MODIFIED="1465845393202" TEXT="a m&#xe1;sik hogyha vannak speci&#xe1;lis f&#xfc;ggv&#xe9;nyeink"/>
 </node>
 </node>
+</node>
+</node>
+</node>
+<node CREATED="1465845543289" ID="ID_1700496069" MODIFIED="1465845560904" TEXT="1.4. MicroC/OS-II oper&#xe1;ci&#xf3;s rendszer">
+<node CREATED="1465845613716" ID="ID_1553864851" MODIFIED="1465845629368" TEXT="C nyelven &#xed;rt j&#xf3;l &#xe9;rthet&#x151;"/>
+<node CREATED="1465845638953" ID="ID_1497710272" MODIFIED="1465845655495" TEXT="&#xdc;zleti c&#xe9;lokra csak licensz d&#xed;jak megfizet&#xe9;s&#xe9;vel"/>
+<node CREATED="1465845676728" ID="ID_1197448760" MODIFIED="1465845683125" TEXT="Sz&#xe1;mtalan processzort t&#xe1;mogat"/>
+<node CREATED="1465845692787" ID="ID_1982028856" MODIFIED="1465845726863" TEXT="Amit nem t&#xe1;mogat arra is k&#xf6;nnyen elk&#xe9;sz&#xed;thetj&#xfc;k a sz&#xfc;ks&#xe9;ges illeszt&#x151;f&#xe1;jlokat"/>
+<node CREATED="1465845741956" ID="ID_1764840406" MODIFIED="1465845749104" TEXT="1.4.1 T&#xf6;rt&#xe9;nete">
+<node CREATED="1465845752825" ID="ID_362560897" MODIFIED="1465845776788" TEXT="Mr Labrosse sikert&#xf6;rt&#xe9;nete"/>
+</node>
+<node CREATED="1465846218456" ID="ID_96756672" MODIFIED="1465846246753" TEXT="1.4.2 A MicroC/OS-II fel&#xe9;p&#xed;t&#xe9;se">
+<node CREATED="1465846197005" ID="ID_76069601" MODIFIED="1465846254606" TEXT="Az oper&#xe1;ci&#xf3;s rendszer nem nagy terjedelm&#x171;, 16 f&#xe1;jlb&#xf3;l &#xe1;ll"/>
+<node CREATED="1465846492201" ID="ID_1079245116" MODIFIED="1465846497301" TEXT="H&#xe1;rom r&#xe9;szre bonthat&#xf3;">
+<node CREATED="1465846498277" ID="ID_1855797574" MODIFIED="1465846542897" TEXT="Processzort&#xf3;l f&#xfc;gg&#x151;en megval&#xf3;s&#xed;tand&#xf3; feladatok">
+<node CREATED="1465846546184" ID="ID_980522344" MODIFIED="1465846553823" TEXT="&#xda;gynevezett PORT f&#xe1;jlok"/>
+<node CREATED="1465846696317" ID="ID_888800925" MODIFIED="1465846702738" TEXT="OS_CPU.H">
+<node CREATED="1465846720344" ID="ID_1868707626" MODIFIED="1465846729032" TEXT="Processzorspedifikus defin&#xed;ci&#xf3;k"/>
+<node CREATED="1465846807059" ID="ID_860895874" MODIFIED="1465846813345" TEXT="Speci&#xe1;lis adatt&#xed;pusok"/>
+<node CREATED="1465846836614" ID="ID_353922862" MODIFIED="1465846844308" TEXT="Kritikus szakaszok atomiv&#xe1; t&#xe9;tele">
+<node CREATED="1465846844989" ID="ID_324708364" MODIFIED="1465846854391" TEXT="OS_ENTER_CRITICAL()"/>
+<node CREATED="1465846858966" ID="ID_1292605948" MODIFIED="1465846863940" TEXT="OS_EXITNTER_CRITICAL() "/>
+</node>
+</node>
+</node>
+<node CREATED="1465846647809" ID="ID_238414852" MODIFIED="1465846659544" TEXT="Processzorf&#xfc;ggetlen feladatok"/>
+<node CREATED="1465846640890" ID="ID_1319308350" MODIFIED="1465846646161" TEXT="Alkalmaz&#xe1;sspecifikus f&#xe1;jlok"/>
 </node>
 </node>
 </node>
