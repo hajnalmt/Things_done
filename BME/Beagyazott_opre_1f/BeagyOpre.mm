@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1461865652258" ID="ID_667829746" MODIFIED="1461865721911" TEXT="Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1465604045747" ID="ID_219817326" MODIFIED="1465604080353" POSITION="right" TEXT="I. Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek">
+<node CREATED="1465604045747" FOLDED="true" ID="ID_219817326" MODIFIED="1465859886290" POSITION="right" TEXT="I. Be&#xe1;gyazott oper&#xe1;ci&#xf3;s rendszerek">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1465604089347" FOLDED="true" ID="ID_1529659344" MODIFIED="1465845533590" TEXT="1.1 Bevezet&#xe9;s a z&#xe1;tgy fel&#xe9;p&#xed;t&#xe9;se tematik&#xe1;ja">
 <node CREATED="1465604106940" ID="ID_40895493" MODIFIED="1465604139532" TEXT="5 oper&#xe1;ci&#xf3;s rendszerr&#x151;l lesz sz&#xf3;, v&#xe9;g&#xfc;l egy esettanulm&#xe1;nnyal"/>
@@ -256,30 +256,69 @@
 </node>
 </node>
 </node>
-<node CREATED="1465845543289" ID="ID_1700496069" MODIFIED="1465845560904" TEXT="1.4. MicroC/OS-II oper&#xe1;ci&#xf3;s rendszer">
+<node CREATED="1465845543289" FOLDED="true" ID="ID_1700496069" MODIFIED="1465859884573" TEXT="1.4. MicroC/OS-II oper&#xe1;ci&#xf3;s rendszer">
 <node CREATED="1465845613716" ID="ID_1553864851" MODIFIED="1465845629368" TEXT="C nyelven &#xed;rt j&#xf3;l &#xe9;rthet&#x151;"/>
 <node CREATED="1465845638953" ID="ID_1497710272" MODIFIED="1465845655495" TEXT="&#xdc;zleti c&#xe9;lokra csak licensz d&#xed;jak megfizet&#xe9;s&#xe9;vel"/>
 <node CREATED="1465845676728" ID="ID_1197448760" MODIFIED="1465845683125" TEXT="Sz&#xe1;mtalan processzort t&#xe1;mogat"/>
 <node CREATED="1465845692787" ID="ID_1982028856" MODIFIED="1465845726863" TEXT="Amit nem t&#xe1;mogat arra is k&#xf6;nnyen elk&#xe9;sz&#xed;thetj&#xfc;k a sz&#xfc;ks&#xe9;ges illeszt&#x151;f&#xe1;jlokat"/>
-<node CREATED="1465845741956" ID="ID_1764840406" MODIFIED="1465845749104" TEXT="1.4.1 T&#xf6;rt&#xe9;nete">
+<node CREATED="1465845741956" FOLDED="true" ID="ID_1764840406" MODIFIED="1465847812045" TEXT="1.4.1 T&#xf6;rt&#xe9;nete">
 <node CREATED="1465845752825" ID="ID_362560897" MODIFIED="1465845776788" TEXT="Mr Labrosse sikert&#xf6;rt&#xe9;nete"/>
 </node>
-<node CREATED="1465846218456" ID="ID_96756672" MODIFIED="1465846246753" TEXT="1.4.2 A MicroC/OS-II fel&#xe9;p&#xed;t&#xe9;se">
+<node CREATED="1465846218456" FOLDED="true" ID="ID_96756672" MODIFIED="1465847810612" TEXT="1.4.2 A MicroC/OS-II fel&#xe9;p&#xed;t&#xe9;se">
 <node CREATED="1465846197005" ID="ID_76069601" MODIFIED="1465846254606" TEXT="Az oper&#xe1;ci&#xf3;s rendszer nem nagy terjedelm&#x171;, 16 f&#xe1;jlb&#xf3;l &#xe1;ll"/>
-<node CREATED="1465846492201" ID="ID_1079245116" MODIFIED="1465846497301" TEXT="H&#xe1;rom r&#xe9;szre bonthat&#xf3;">
-<node CREATED="1465846498277" ID="ID_1855797574" MODIFIED="1465846542897" TEXT="Processzort&#xf3;l f&#xfc;gg&#x151;en megval&#xf3;s&#xed;tand&#xf3; feladatok">
+<node CREATED="1465846492201" FOLDED="true" ID="ID_1079245116" MODIFIED="1465847809387" TEXT="H&#xe1;rom r&#xe9;szre bonthat&#xf3;">
+<node CREATED="1465846498277" FOLDED="true" ID="ID_1855797574" MODIFIED="1465847806642" TEXT="Processzort&#xf3;l f&#xfc;gg&#x151;en megval&#xf3;s&#xed;tand&#xf3; feladatok">
 <node CREATED="1465846546184" ID="ID_980522344" MODIFIED="1465846553823" TEXT="&#xda;gynevezett PORT f&#xe1;jlok"/>
 <node CREATED="1465846696317" ID="ID_888800925" MODIFIED="1465846702738" TEXT="OS_CPU.H">
 <node CREATED="1465846720344" ID="ID_1868707626" MODIFIED="1465846729032" TEXT="Processzorspedifikus defin&#xed;ci&#xf3;k"/>
 <node CREATED="1465846807059" ID="ID_860895874" MODIFIED="1465846813345" TEXT="Speci&#xe1;lis adatt&#xed;pusok"/>
 <node CREATED="1465846836614" ID="ID_353922862" MODIFIED="1465846844308" TEXT="Kritikus szakaszok atomiv&#xe1; t&#xe9;tele">
 <node CREATED="1465846844989" ID="ID_324708364" MODIFIED="1465846854391" TEXT="OS_ENTER_CRITICAL()"/>
-<node CREATED="1465846858966" ID="ID_1292605948" MODIFIED="1465846863940" TEXT="OS_EXITNTER_CRITICAL() "/>
+<node CREATED="1465846858966" ID="ID_1292605948" MODIFIED="1465847188812" TEXT="OS_EXIT_CRITICAL() "/>
+</node>
+</node>
+<node CREATED="1465847220582" ID="ID_701349814" MODIFIED="1465847234160" TEXT="OS_CPU.C, OS_CPU.ASM">
+<node CREATED="1465847277240" ID="ID_1316403585" MODIFIED="1465847304367" TEXT="hardver id&#x151;z&#xed;t&#x151; megszak&#xed;t&#xe1;s kezel&#x151; f&#xfc;ggv&#xe9;nye"/>
+<node CREATED="1465847310088" ID="ID_1209671594" MODIFIED="1465847327959" TEXT="kontextusv&#xe1;lt&#xe1;shoz sz&#xfc;ks&#xe9;ges k&#xf3;dr&#xe9;szletek"/>
+<node CREATED="1465847347728" ID="ID_1744915798" MODIFIED="1465847352494" TEXT="hook f&#xfc;ggv&#xe9;nyek">
+<node CREATED="1465847364997" ID="ID_949728655" MODIFIED="1465847372488" TEXT="kulcsfontoss&#xe1;g&#xf3; f&#xfc;ggv&#xe9;nyek kieg&#xe9;sz&#xed;t&#xe9;se"/>
+<node CREATED="1465847378692" ID="ID_604978965" MODIFIED="1465847401165" TEXT="OSTaskCreateHook()"/>
+<node CREATED="1465847402371" ID="ID_16176823" MODIFIED="1465847416361" TEXT="OSInitHookBegin()"/>
 </node>
 </node>
 </node>
-<node CREATED="1465846647809" ID="ID_238414852" MODIFIED="1465846659544" TEXT="Processzorf&#xfc;ggetlen feladatok"/>
-<node CREATED="1465846640890" ID="ID_1319308350" MODIFIED="1465846646161" TEXT="Alkalmaz&#xe1;sspecifikus f&#xe1;jlok"/>
+<node CREATED="1465846647809" FOLDED="true" ID="ID_238414852" MODIFIED="1465847805767" TEXT="Processzorf&#xfc;ggetlen feladatok">
+<node CREATED="1465847453560" ID="ID_627842199" MODIFIED="1465847476685" TEXT="UCOS_II.C, UCOS_II.H"/>
+<node CREATED="1465847508277" ID="ID_41874120" MODIFIED="1465847513496" TEXT="OS_CORE.C">
+<node CREATED="1465847514449" ID="ID_584216587" MODIFIED="1465847518914" TEXT="&#xfc;temez&#x151; k&#xf3;dja"/>
+</node>
+<node CREATED="1465847530799" ID="ID_1040137976" MODIFIED="1465847535893" TEXT="OS_TASK.C">
+<node CREATED="1465847536500" ID="ID_1660242888" MODIFIED="1465847540147" TEXT="Taszk kezel&#xe9;s"/>
+</node>
+<node CREATED="1465847542487" ID="ID_867658791" MODIFIED="1465847546947" TEXT="OS_TIME.C">
+<node CREATED="1465847549012" ID="ID_990312274" MODIFIED="1465847553173" TEXT="id&#x151;z&#xed;t&#x151;"/>
+</node>
+<node CREATED="1465847571144" FOLDED="true" ID="ID_676152518" MODIFIED="1465847804602" TEXT="Enged&#xe9;lyezhet&#x151; &#xe9;s tilthat&#xf3; szolg&#xe1;ltat&#xe1;sok">
+<node CREATED="1465847591811" ID="ID_424544625" MODIFIED="1465847592825" TEXT="OS_FLAG.C &#x2013; Esem&#xe9;ny jelz&#x151; flagek megval&#xf3;s&#xed;t&#xe1;sa"/>
+<node CREATED="1465847604743" ID="ID_435116692" MODIFIED="1465847605846" TEXT="OS_SEM.C &#x2013; Szemafor megval&#xf3;s&#xed;t&#xe1;sa"/>
+<node CREATED="1465847612300" ID="ID_845544577" MODIFIED="1465847613202" TEXT="OS_MUTEX.C &#x2013; Mutex megval&#xf3;s&#xed;t&#xe1;sa"/>
+<node CREATED="1465847624504" ID="ID_1632158363" MODIFIED="1465847625110" TEXT="OS_MBOX.C &#x2013; Postal&#xe1;da megval&#xf3;s&#xed;t&#xe1;sa"/>
+<node CREATED="1465847640446" ID="ID_929073638" MODIFIED="1465847641112" TEXT="OS_Q.C &#x2013; V&#xe1;rakoz&#xe1;si sorok megval&#xf3;s&#xed;t&#xe1;sa"/>
+<node CREATED="1465847674517" ID="ID_509291180" MODIFIED="1465847675343" TEXT="OS_MEM.C - Mem&#xf3;ria menedzsment szolg&#xe1;ltat&#xe1;sok"/>
+</node>
+</node>
+<node CREATED="1465846640890" FOLDED="true" ID="ID_1319308350" MODIFIED="1465847807795" TEXT="Alkalmaz&#xe1;sspecifikus f&#xe1;jlok">
+<node CREATED="1465847758168" ID="ID_734438731" MODIFIED="1465847761629" TEXT="INCLUDES.H"/>
+<node CREATED="1465847764476" ID="ID_178684630" MODIFIED="1465847768252" TEXT="OS_CFG.H"/>
+</node>
+</node>
+</node>
+<node CREATED="1465847801232" ID="ID_1663940999" MODIFIED="1465847824389" TEXT="1.4.3 A MicroC/OS-II konfigur&#xe1;l&#xe1;sa">
+<node CREATED="1465848322214" ID="ID_190966838" MODIFIED="1465848337456" TEXT="maximum &#xe9;rt&#xe9;kek f&#x151;leg, de pl system tick is"/>
+</node>
+<node CREATED="1465848342328" ID="ID_1054904476" MODIFIED="1465848357311" TEXT="1.4.4 A MicroC/OS II taszk &#xe1;llapotai">
+<node CREATED="1465848657754" ID="ID_81535509" MODIFIED="1465848663752" TEXT="szok&#xe1;sosak + t&#xf6;r&#xf6;lve">
+<node CREATED="1465848670980" ID="ID_288402552" MODIFIED="1465848678368" TEXT="Post felszabad&#xed;t, Pend foglal"/>
 </node>
 </node>
 </node>
