@@ -8,6 +8,7 @@ When you go on a lunch break just run (Windows key and R) the %work_break% comma
 #### Usage
   * Firstly place your Munkaido_nyilv_YEAR.xlsx file which you get from the HR assistants in a directory called Work_registration on your Dektop.
   * After that, place the downloaded work.ps1 file next to it (also in this directory).
+  * Write into the script your personal data (XXXXXX places)
   * Now you can run the script in Powershell and that's all. (Windows key, type Powershell and then go into the Work_registration directory and you can run it by the .\work.ps1 command)
 
 #### Before running be aware of
