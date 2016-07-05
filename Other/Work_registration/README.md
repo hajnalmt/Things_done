@@ -3,7 +3,7 @@ This script was made to make easier the handling of the work registrator excel f
 Special thanks for the Flextronics Ltd. to provide appropriate environment for the developing.
 
 The script logs into the Excel file, the time you start up and shut down your computer. 
-When you go on a lunch break just run (Windows key and R) the %work_break% command, each time you are go and come back. It's an additional function which runs the script again with the help of a work_break environment variable.
+When you go on a lunch break just run (Windows key and R) the %work_break% command, each time you go and come back. It's an additional function which runs the script again with the help of a work_break environment variable.
 
 #### Usage
   * Firstly place your Munkaido_nyilv_YEAR.xlsx file which you get from the HR assistants in a directory called Work_registration on your Dektop.
