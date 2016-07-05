@@ -11,7 +11,7 @@ When you go on a lunch break just run (Windows key and R) the %work_break% comma
   * Write into the script your personal data (XXXXXX places)
   * Now you can run the script in Powershell and that's all. (Windows key, type Powershell and then go into the Work_registration directory and you can run it by the .\work.ps1 command)
 
-#### Before running be aware of
+#### When running be aware of
   * Your script is runable. (Set-ExecutionPolicy Unrestricted)
   * None of your excel files worksheets are protected. (Under Windows Excel 2013 versions, you can make your sheets unprotected by [this method](https://uknowit.uwgb.edu/page.php?id=28850).)
   * Check that your shutdown and startup scripts are running. (Windows key + R -> gpedit.msc -> Computer Configuration -> Windows Settings -> Scripts -> Startup/Shutdown -> Add -> work.cmd)
