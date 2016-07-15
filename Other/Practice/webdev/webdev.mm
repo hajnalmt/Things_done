@@ -30,8 +30,7 @@
   <body>
     html tag
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1468275580355" ID="ID_1743564396" MODIFIED="1468275583880" TEXT="body tag"/>
 </node>
@@ -255,7 +254,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1468277808515" FOLDED="true" ID="ID_1548837472" MODIFIED="1468282463186" TEXT="Links">
+<node CREATED="1468277808515" FOLDED="true" ID="ID_1548837472" MODIFIED="1468615462843" TEXT="Links">
 <node CREATED="1468281796467" ID="ID_1581940867" MODIFIED="1468281797149" TEXT="HTML links are hyperlinks."/>
 <node CREATED="1468281798907" ID="ID_832108543" MODIFIED="1468281808040" TEXT="You can click on a link and jump to another document. "/>
 <node CREATED="1468281815338" ID="ID_831441741" MODIFIED="1468281816330" TEXT="Note: A link does not have to be text. It can be an image or any other HTML element."/>
