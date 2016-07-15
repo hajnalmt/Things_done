@@ -4,7 +4,7 @@
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1468162732615" ID="ID_835441060" MODIFIED="1468162740607" POSITION="right" TEXT="1. HTML">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1468162741197" ID="ID_503210694" MODIFIED="1468162794316" TEXT="Tutorial">
+<node CREATED="1468162741197" ID="ID_503210694" MODIFIED="1468618370141" TEXT="Tutorial">
 <node CREATED="1468162794829" FOLDED="true" ID="ID_1025799643" MODIFIED="1468277758965" TEXT="Introduction">
 <node CREATED="1468275331393" ID="ID_527244464" MODIFIED="1468275335034" TEXT="What is HTML?">
 <node CREATED="1468275340723" ID="ID_1393530167" MODIFIED="1468275341023" TEXT="HTML stands for Hyper Text Markup Language"/>
@@ -254,7 +254,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1468277808515" FOLDED="true" ID="ID_1548837472" MODIFIED="1468615462843" TEXT="Links">
+<node CREATED="1468277808515" FOLDED="true" ID="ID_1548837472" MODIFIED="1468618439842" TEXT="Links">
 <node CREATED="1468281796467" ID="ID_1581940867" MODIFIED="1468281797149" TEXT="HTML links are hyperlinks."/>
 <node CREATED="1468281798907" ID="ID_832108543" MODIFIED="1468281808040" TEXT="You can click on a link and jump to another document. "/>
 <node CREATED="1468281815338" ID="ID_831441741" MODIFIED="1468281816330" TEXT="Note: A link does not have to be text. It can be an image or any other HTML element."/>
@@ -302,6 +302,109 @@
 </node>
 </node>
 </node>
+<node CREATED="1468616978423" FOLDED="true" ID="ID_1969364499" MODIFIED="1468619015819" TEXT="Images">
+<node CREATED="1468616986530" ID="ID_977640807" MODIFIED="1468617029657" TEXT="&lt;img&gt; tag"/>
+<node CREATED="1468617091438" ID="ID_1238106960" MODIFIED="1468617243607" TEXT="the tag is empty, it contains attributes onlym and doesn`t have closing tag"/>
+<node CREATED="1468617256210" ID="ID_731743333" MODIFIED="1468617270891" TEXT="src attribute specifise the URL"/>
+<node CREATED="1468617275927" ID="ID_1024815713" MODIFIED="1468617387900" TEXT="alt attribute provides an alternate text for an image">
+<node CREATED="1468617389774" ID="ID_4353513" MODIFIED="1468617390388" TEXT="if the user for some reason canot view it (because of slow connection, an error in the srv attribute, or if the user uses a screen reader). "/>
+<node CREATED="1468617401770" ID="ID_1295420659" MODIFIED="1468617425329" TEXT="If a browser cannot find an image, it will display the value of the alt attribute"/>
+<node COLOR="#ff0000" CREATED="1468617434221" ID="ID_1463553857" MODIFIED="1468617588883" TEXT="IT`S NEEDED the web page won`t be valid without it."/>
+</node>
+<node CREATED="1468617395163" ID="ID_1392073725" MODIFIED="1468617495788" TEXT="Screen readers">
+<node CREATED="1468617501075" ID="ID_1585724942" MODIFIED="1468617501449" TEXT="A screen reader is a software program that reads the HTML code, converts the text, and allows the user to &quot;listen&quot; to the content. Screen readers are useful for people who are blind, visually impaired, or learning disabled.  "/>
+</node>
+<node CREATED="1468617523721" ID="ID_440217009" MODIFIED="1468617534022" TEXT="image style">
+<node CREATED="1468617535174" ID="ID_706158663" MODIFIED="1468617537900" TEXT="You can use the style attribute to specify the width and height of an image.">
+<node CREATED="1468617544756" ID="ID_1105395289" MODIFIED="1468617545138" TEXT="The values are specified in pixels (use px after the value):"/>
+</node>
+<node CREATED="1468617568937" ID="ID_1674502580" MODIFIED="1468617569907" TEXT="Alternatively, you can use the width and height attributes. Here, the values are specified in pixels by default:"/>
+<node COLOR="#ff0000" CREATED="1468617591808" ID="ID_1800708638" MODIFIED="1468617605026" TEXT="Always specify the width and height of an image. If width and height are not specified, the page will flicker while the image loads."/>
+<node CREATED="1468617623400" ID="ID_888176871" MODIFIED="1468617630894" TEXT="Style is prefered"/>
+</node>
+<node CREATED="1468617714116" ID="ID_20949786" MODIFIED="1468617716119" TEXT="Placing">
+<node CREATED="1468617671778" ID="ID_508228120" MODIFIED="1468617722059" TEXT="Folder">
+<node CREATED="1468617678440" ID="ID_1997969084" MODIFIED="1468617679207" TEXT="If not specified, the browser expects to find the image in the same folder as the web page."/>
+<node CREATED="1468617688301" ID="ID_1262553164" MODIFIED="1468617688667" TEXT="However, it is common to store images in a sub-folder. You must then include the folder name in the src attribute:"/>
+</node>
+<node CREATED="1468617725359" ID="ID_586777540" MODIFIED="1468617729957" TEXT="Server">
+<node CREATED="1468617730492" ID="ID_1137470290" MODIFIED="1468617746101" TEXT="Some web sites store their images on image servers."/>
+<node CREATED="1468617747604" ID="ID_965126846" MODIFIED="1468617781174" TEXT="Actually, you can access images from any web address in the world"/>
+</node>
+</node>
+<node CREATED="1468617795771" ID="ID_1801574911" MODIFIED="1468617798050" TEXT="Animated">
+<node CREATED="1468617799116" ID="ID_1687947296" MODIFIED="1468617799668" TEXT="Note that the syntax of inserting animated images is no different from non-animated images.  "/>
+<node CREATED="1468617803916" ID="ID_104564299" MODIFIED="1468617809494" TEXT="It`s allowed"/>
+</node>
+<node CREATED="1468617820210" ID="ID_960802083" MODIFIED="1468617826205" TEXT="Usage as link">
+<node CREATED="1468617836151" ID="ID_476777402" MODIFIED="1468617836750" TEXT=" To use an image as a link, simply nest the &lt;img&gt; tag inside the &lt;a&gt; tag:"/>
+<node COLOR="#338800" CREATED="1468617859103" ID="ID_1832567990" MODIFIED="1468617879305" TEXT=" border:0; is added in style to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link)."/>
+</node>
+<node CREATED="1468617929454" ID="ID_980374439" MODIFIED="1468617931773" TEXT="Floating">
+<node CREATED="1468617932813" ID="ID_1493879734" MODIFIED="1468617980216" TEXT="use the css float property to let the image float to the right or to the left of a text"/>
+</node>
+<node COLOR="#ff0000" CREATED="1468618004748" ID="ID_1444802502" MODIFIED="1468618009444" TEXT="MAPS">
+<node CREATED="1468617988209" ID="ID_1561024201" MODIFIED="1468618012959" TEXT="Use the &lt;map&gt; tag to define an image-map. An image-map is an image with clickable areas."/>
+<node CREATED="1468618015705" ID="ID_945338165" MODIFIED="1468618025785" TEXT="The name attribute of the &lt;map&gt; tag is associated with the &lt;img&gt;&apos;s usemap attribute and creates a relationship between the image and the map."/>
+<node CREATED="1468618051113" ID="ID_1132820019" MODIFIED="1468618051472" TEXT="The &lt;map&gt; tag contains a number of &lt;area&gt; tags, that defines the clickable areas in the image-map:"/>
+</node>
+</node>
+<node CREATED="1468618119681" ID="ID_1026720971" MODIFIED="1468618125148" TEXT="Tables">
+<node CREATED="1468619022417" ID="ID_624305230" MODIFIED="1468619173166" TEXT="An HTML table is defined with the &lt;table&gt; tag"/>
+<node CREATED="1468619182940" ID="ID_1583490091" MODIFIED="1468619254621" TEXT="Each table row is defines with the &lt;tr&gt; tag. A table header is defined with the &lt;th&gt; ta. By default, table headings are bold and centered. A table data/cell is defined with the &lt;td&gt; tag."/>
+<node CREATED="1468619278315" ID="ID_1282255875" MODIFIED="1468619278891" TEXT="The &lt;td&gt; elements are the data containers of the table."/>
+<node CREATED="1468619281846" ID="ID_1639515039" MODIFIED="1468619289804" TEXT="They can contain all sorts of HTML elements; text, images, lists, other tables, etc."/>
+<node CREATED="1468619312558" ID="ID_1320513173" MODIFIED="1468619316331" TEXT="Adding a Border">
+<node CREATED="1468619317436" ID="ID_636881119" MODIFIED="1468619375088" TEXT="If you do not specify a border for the table, it will be displayed without borders."/>
+<node CREATED="1468619376551" ID="ID_1444953803" MODIFIED="1468619394329" TEXT="A border is set using the CSS border property"/>
+<node COLOR="#ff0000" CREATED="1468619404219" ID="ID_1573134510" MODIFIED="1468619434214" TEXT="REMEMBER TO DEFINE BORDERS FOR Both the table and the table cells"/>
+</node>
+<node CREATED="1468619438014" ID="ID_176714868" MODIFIED="1468619449955" TEXT="Collapsed Borders">
+<node CREATED="1468619462387" ID="ID_788944190" MODIFIED="1468619463648" TEXT="If you want the borders to collapse into one border, add the CSS border-collapse property:  "/>
+</node>
+<node CREATED="1468619503191" ID="ID_1011918989" MODIFIED="1468619509653" TEXT="Adding Cell Padding">
+<node CREATED="1468619513100" ID="ID_1835296282" MODIFIED="1468619531890" TEXT="Cell padding specifies the space between the cell content and its borders"/>
+<node CREATED="1468619534033" ID="ID_1648336152" MODIFIED="1468619567631" TEXT="If you do not specify a padding, the table cells will be displayed without padding"/>
+<node CREATED="1468619574607" ID="ID_130509141" MODIFIED="1468619587173" TEXT="to set padding, use the CSS padding proprty"/>
+</node>
+<node CREATED="1468619989262" ID="ID_1126436676" MODIFIED="1468620021866" TEXT="By default, table headings are bold and centered."/>
+<node CREATED="1468620026578" ID="ID_1100370312" MODIFIED="1468620047135" TEXT="Left-align headings">
+<node CREATED="1468620047903" ID="ID_253462808" MODIFIED="1468620066869" TEXT="By deafult, table headings are bold and centered"/>
+<node CREATED="1468620068395" ID="ID_1067774107" MODIFIED="1468620098341" TEXT="To left-align the table headings, use the CSS text-align property"/>
+</node>
+<node CREATED="1468620102329" ID="ID_1235084796" MODIFIED="1468620120278" TEXT="Adding Border Spacing">
+<node CREATED="1468620121549" ID="ID_462555184" MODIFIED="1468620136468" TEXT="Border spacing specifies the space between the cells"/>
+<node CREATED="1468620139929" ID="ID_1157166419" MODIFIED="1468620168218" TEXT="To set the border spacing for a table, use the CSS border-spacing property"/>
+<node COLOR="#ff0000" CREATED="1468620173978" ID="ID_634628388" MODIFIED="1468620206707" TEXT="If the table has collapsed borders, border-spacing has no effect"/>
+</node>
+<node CREATED="1468620210081" ID="ID_1401821406" MODIFIED="1468620224723" TEXT="Cells that Span Many Columns">
+<node CREATED="1468620233811" ID="ID_1260094504" MODIFIED="1468620254661" TEXT="To make a cell span more than one column, use the colspan attribute:"/>
+</node>
+<node CREATED="1468620265599" ID="ID_1344677632" MODIFIED="1468620276082" TEXT="Cells that Span Many Rows">
+<node CREATED="1468620278314" ID="ID_1361564653" MODIFIED="1468620281716" TEXT="To make a cell span more than one row, use the rowspan attribute:"/>
+</node>
+<node CREATED="1468620312129" ID="ID_188606745" MODIFIED="1468620317535" TEXT="Adding a Caption">
+<node CREATED="1468620319639" ID="ID_395257611" MODIFIED="1468620344715" TEXT="To add a caption to a table, use the &lt;caption&gt; tag"/>
+<node COLOR="#ff0000" CREATED="1468620349589" ID="ID_1242786631" MODIFIED="1468620382309" TEXT="The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag"/>
+</node>
+<node CREATED="1468620392286" ID="ID_1327445603" MODIFIED="1468620403562" TEXT="A special style for one table">
+<node CREATED="1468620404459" ID="ID_388449539" MODIFIED="1468620428206" TEXT="To define a special style for a special table, add an id attribute to the table"/>
+<node CREATED="1468620482049" ID="ID_863554668" MODIFIED="1468620496231" TEXT="nth-child for additional info"/>
+</node>
+</node>
+<node CREATED="1468618126634" ID="ID_1642628950" MODIFIED="1468618128680" TEXT="Lists"/>
+<node CREATED="1468618129966" ID="ID_300310645" MODIFIED="1468618134422" TEXT="Blocks"/>
+<node CREATED="1468618313685" ID="ID_607286371" MODIFIED="1468618317108" TEXT="Classes"/>
+<node CREATED="1468618319650" ID="ID_693344166" MODIFIED="1468618322812" TEXT="Iframes"/>
+<node CREATED="1468618324529" ID="ID_1303884249" MODIFIED="1468618331505" TEXT="Javascript"/>
+<node CREATED="1468618333607" ID="ID_49758897" MODIFIED="1468618336764" TEXT="Head"/>
+<node CREATED="1468618339505" ID="ID_1114776905" MODIFIED="1468618343198" TEXT="Layout"/>
+<node CREATED="1468618344954" ID="ID_977105002" MODIFIED="1468618351832" TEXT="Responsive"/>
+<node CREATED="1468618353326" ID="ID_1723436294" MODIFIED="1468618356572" TEXT="Entities"/>
+<node CREATED="1468618357779" ID="ID_413541193" MODIFIED="1468618377021" TEXT="Symbols"/>
+<node CREATED="1468618381886" ID="ID_753921726" MODIFIED="1468618386622" TEXT="Charset"/>
+<node CREATED="1468618388723" ID="ID_1002068419" MODIFIED="1468618393971" TEXT="URL Encode"/>
+<node CREATED="1468618395497" ID="ID_226162359" MODIFIED="1468618400931" TEXT="XHTML"/>
 </node>
 </node>
 </node>
