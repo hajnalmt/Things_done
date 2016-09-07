@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1473157894888" ID="ID_1754477906" MODIFIED="1473157904667" TEXT="Java technol&#xf3;gia">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1473158212003" ID="ID_1237792070" MODIFIED="1473162563656" POSITION="right" TEXT="1.) A JAVA vil&#xe1;ga">
+<node CREATED="1473158212003" FOLDED="true" ID="ID_1237792070" MODIFIED="1473230414463" POSITION="right" TEXT="1.) A JAVA vil&#xe1;ga">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1473158230024" ID="ID_387345330" MODIFIED="1473158255695" TEXT="Hotspot">
 <node CREATED="1473158239850" ID="ID_872702783" MODIFIED="1473158327126" TEXT="&quot;A&quot; JVM, 7-es verzi&#xf3; &#xf3;ta ez a referencia implement&#xe1;ci&#xf3;"/>
