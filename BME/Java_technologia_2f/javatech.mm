@@ -152,7 +152,7 @@
 <node CREATED="1473159761835" ID="ID_430348163" MODIFIED="1473159781620" POSITION="left" TEXT="NIncs jelenl&#xe9;t ellen&#x151;rz&#xe9;s, egy HF van + vizsga">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 </node>
-<node CREATED="1473329523179" ID="ID_1059477012" MODIFIED="1473329962667" POSITION="right" TEXT="2.)  OOP">
+<node CREATED="1473329523179" FOLDED="true" ID="ID_1059477012" MODIFIED="1473335728547" POSITION="right" TEXT="2.)  OOP">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1473329963882" ID="ID_94576428" MODIFIED="1473329975789" TEXT="A java objektum-orient&#xe1;lt nyelv">
 <node CREATED="1473329980229" ID="ID_879077930" MODIFIED="1473329982598" TEXT="C++">
@@ -186,9 +186,74 @@
 <node CREATED="1473330299285" ID="ID_340057447" MODIFIED="1473330301160" TEXT="nem f&#xfc;ggv&#xe9;ny"/>
 </node>
 </node>
-<node CREATED="1473330310507" ID="ID_270196455" MODIFIED="1473330313798" TEXT="Oszt&#xe1;lyok">
+<node CREATED="1473330310507" FOLDED="true" ID="ID_270196455" MODIFIED="1473335722636" TEXT="Oszt&#xe1;lyok">
 <node CREATED="1473330327034" ID="ID_616510569" MODIFIED="1473330328837" TEXT="defini&#xe1;l&#xe1;s">
-<node CREATED="1473330329721" ID="ID_53026068" MODIFIED="1473330362417" TEXT="m&#xf3;dos&#xed;t&#xf3;k, class oszt&#xe1;lyn&#xe9;v { tagok}"/>
+<node CREATED="1473330329721" ID="ID_53026068" MODIFIED="1473330362417" TEXT="m&#xf3;dos&#xed;t&#xf3;k, class oszt&#xe1;lyn&#xe9;v { tagok}">
+<node CREATED="1473330460707" ID="ID_1048800064" MODIFIED="1473330468046" TEXT="extends - &#xf6;r&#xf6;kl&#xe9;si viszonyokhoz"/>
+</node>
+</node>
+<node CREATED="1473330419170" ID="ID_587334642" MODIFIED="1473330431342" TEXT="Az oszt&#xe1;ly tagjai (member)">
+<node CREATED="1473330432725" ID="ID_1682435256" MODIFIED="1473330476090" TEXT="konstruktorok">
+<node CREATED="1473330624902" ID="ID_130757301" MODIFIED="1473330638234" TEXT="megegyezik az oszt&#xe1;lyn&#xe9;vvel"/>
+<node CREATED="1473330666393" ID="ID_318527342" MODIFIED="1473330673837" TEXT="m&#xf3;dos&#xed;t&#xf3;k a konstruktor hozz&#xe1;f&#xe9;r&#xe9;sekre">
+<node CREATED="1473330675456" ID="ID_312167914" MODIFIED="1473330693326" TEXT="private, protected, public"/>
+</node>
+<node CREATED="1473330712981" ID="ID_1085226327" MODIFIED="1473330721983" TEXT="final kilcssz&#xf3;val param&#xe9;terek megad&#xe1;sa"/>
+<node CREATED="1473330726262" ID="ID_285321420" MODIFIED="1473330746388" TEXT="t&#xf6;bb konstruktor is lehet / oszt&#xe1;ly ja param&#xe9;terlista k&#xfc;l&#xf6;nb&#xf6;zik">
+<node CREATED="1473330776169" ID="ID_1088053277" MODIFIED="1473330788154" TEXT="k&#xfc;l&#xf6;nb&#xf6;z&#x151; ha">
+<node CREATED="1473330788724" ID="ID_1471057639" MODIFIED="1473330792698" TEXT="param&#xe9;tersz&#xe1;m m&#xe1;s"/>
+<node CREATED="1473330794659" ID="ID_212903730" MODIFIED="1473330799784" TEXT="param&#xe9;ter t&#xed;pusa m&#xe1;s">
+<node CREATED="1473330805571" ID="ID_1068076867" MODIFIED="1473330817703" TEXT="tetsz&#x151;leges JAVA t&#xed;pus lehet"/>
+</node>
+</node>
+</node>
+<node CREATED="1473330890545" ID="ID_597205104" MODIFIED="1473330901081" TEXT="H&#xe1;romfajta konstruktor h&#xed;v&#xe1;s lehet">
+<node CREATED="1473330904021" ID="ID_1994848947" MODIFIED="1473330913038" TEXT="implicit p&#xe9;ld&#xe1;nyos&#xed;t&#xe1;skor"/>
+<node CREATED="1473330915669" ID="ID_1413249998" MODIFIED="1473330917963" TEXT="explicit">
+<node CREATED="1473330938189" ID="ID_116741580" MODIFIED="1473330943384" TEXT="konstruktorok l&#xe1;ncol&#xe1;s"/>
+<node CREATED="1473330945126" ID="ID_790049634" MODIFIED="1473330952175" TEXT="inicializ&#xe1;l&#xe1;s t&#xf6;bb l&#xe9;p&#xe9;sben"/>
+<node CREATED="1473330953396" ID="ID_255413751" MODIFIED="1473330976539" TEXT="Az egyik konstruktob&#xf3;l &#xe1;t lehet h&#xed;vni a m&#xe1;sikba, nem kell k&#xf3;dot m&#xe1;solnunk"/>
+<node CREATED="1473331030029" ID="ID_159640843" MODIFIED="1473331033057" TEXT="this kulcssz&#xf3;"/>
+<node CREATED="1473331034329" ID="ID_148428990" MODIFIED="1473331050666" TEXT="KIHASZN&#xc1;LHATJUK, HOGY A JAVAban nincsenek default param&#xe9;terek"/>
+</node>
+<node CREATED="1473330919857" ID="ID_1059239686" MODIFIED="1473330928081" TEXT="&#x151;soszt&#xe1;ly konstruktorh&#xed;v&#xe1;sa">
+<node CREATED="1473331145422" ID="ID_1951355130" MODIFIED="1473331153976" TEXT="super kulcsssz&#xf3;val"/>
+<node COLOR="#990000" CREATED="1473331185946" ID="ID_94796814" MODIFIED="1473331198066" TEXT="csakis az els&#x151; utas&#xed;t&#xe1;sa lehet a konstruktornak"/>
+</node>
+</node>
+</node>
+<node CREATED="1473330477946" ID="ID_61067083" MODIFIED="1473330481310" TEXT="inicializ&#xe1;torok"/>
+<node CREATED="1473330485018" ID="ID_1404948565" MODIFIED="1473330490791" TEXT="met&#xf3;dusok"/>
+<node CREATED="1473330493004" ID="ID_1128907333" MODIFIED="1473330495028" TEXT="mez&#x151;k"/>
+<node CREATED="1473330496610" ID="ID_599913428" MODIFIED="1473330502984" TEXT="oszt&#xe1;lyok, interf&#xe9;szek"/>
+<node CREATED="1473330551054" ID="ID_541092420" MODIFIED="1473330562279" TEXT="MInden tag lehet a konstruktorok kiv&#xe9;tel&#xe9;vel">
+<node CREATED="1473330593663" ID="ID_1151191272" MODIFIED="1473330597724" TEXT="p&#xe9;ld&#xe1;nyhoz tartoz&#xf3;"/>
+<node CREATED="1473330599157" ID="ID_1795696035" MODIFIED="1473330602435" TEXT="oszt&#xe1;lyhoz tartoz&#xf3;">
+<node CREATED="1473330613683" ID="ID_379592321" MODIFIED="1473330618008" TEXT="konstruktorok mindig ehhez"/>
+</node>
+</node>
+<node CREATED="1473331310586" ID="ID_502796277" MODIFIED="1473331334927" TEXT="A pont oper&#xe1;torral f&#xe9;rhet&#xfc;nk az egyes tagokhoz."/>
+<node CREATED="1473331352531" ID="ID_1132713305" MODIFIED="1473331354527" TEXT="P&#xe9;ld&#xe1;nyok"/>
+</node>
+<node CREATED="1473332624960" ID="ID_1698511084" MODIFIED="1473332628507" TEXT="this van itt is"/>
+<node CREATED="1473332630624" ID="ID_845279822" MODIFIED="1473332644703" TEXT="statikus - nem statikus met&#xf3;dusok k&#xe9;rd&#xe9;s k&#xf6;re">
+<node CREATED="1473332647102" ID="ID_1547351658" MODIFIED="1473332660842" TEXT="van p&#xe9;d&#xe1;nymet&#xf3;dus is"/>
+<node CREATED="1473332661875" ID="ID_1554382527" MODIFIED="1473332667517" TEXT="Nem mindegy honnan h&#xed;vjuk"/>
+</node>
+<node CREATED="1473332888144" ID="ID_398619700" MODIFIED="1473332893013" TEXT="&#xd6;r&#xf6;kl&#x151;d&#xe9;s">
+<node CREATED="1473332994946" ID="ID_1324614020" MODIFIED="1473333000291" TEXT="extends kulcssz&#xf3;"/>
+<node CREATED="1473332684439" ID="ID_98249642" MODIFIED="1473333059706" TEXT="A final m&#xf3;dos&#xed;t&#xf3;val ell&#xe1;tott oszt&#xe1;lyokat nem lehet sz&#xe1;rmaztatni"/>
+<node CREATED="1473333066930" ID="ID_864101648" MODIFIED="1473333082831" TEXT="Az &#xf6;r&#xf6;kl&#x151;d&#xe9;s hat&#xe1;ssal van a referencia t&#xed;pusok haszn&#xe1;lat&#xe1;ra is"/>
+<node CREATED="1473333146885" ID="ID_331792198" MODIFIED="1473333154303" TEXT="referencia t&#xed;pusok konverzi&#xf3;ja">
+<node CREATED="1473334060292" ID="ID_638090279" MODIFIED="1473334074801" TEXT="instanceof">
+<node CREATED="1473334075190" ID="ID_1737259865" MODIFIED="1473334100029" TEXT="referenci&#xe1;l &#xe1;ltal mutatott objektumok t&#xed;pus&#xe1;nak fut&#xe1;si idej&#x171; lek&#xe9;rdez&#xe9;se, vizsg&#xe1;lata"/>
+</node>
+</node>
+<node CREATED="1473334362112" ID="ID_1871940266" MODIFIED="1473334370641" TEXT="konstruktorok nem &#xf6;r&#xf6;kl&#x151;dnek"/>
+<node CREATED="1473334372205" ID="ID_387832107" MODIFIED="1473334382921" TEXT="final kulcssz&#xf3;val is defin&#xe1;lhatunk oszt&#xe1;lyt"/>
+<node CREATED="1473335381999" ID="ID_1696169583" MODIFIED="1473335393877" TEXT="statikus t&#xed;pusok elrejt&#xe9;se &#xe9;rdekes t&#xe9;ma :)">
+<node CREATED="1473335694035" ID="ID_1455073578" MODIFIED="1473335705570" TEXT="&#xc1;rny&#xe9;kol&#xe1;s "/>
+</node>
 </node>
 </node>
 </node>
