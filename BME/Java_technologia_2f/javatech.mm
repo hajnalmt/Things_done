@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1473157894888" ID="ID_1754477906" MODIFIED="1473157904667" TEXT="Java technol&#xf3;gia">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1473158212003" FOLDED="true" ID="ID_1237792070" MODIFIED="1473230414463" POSITION="right" TEXT="1.) A JAVA vil&#xe1;ga">
+<node CREATED="1473158212003" FOLDED="true" ID="ID_1237792070" MODIFIED="1473330214291" POSITION="right" TEXT="1.) A JAVA vil&#xe1;ga">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1473158230024" ID="ID_387345330" MODIFIED="1473158255695" TEXT="Hotspot">
 <node CREATED="1473158239850" ID="ID_872702783" MODIFIED="1473158327126" TEXT="&quot;A&quot; JVM, 7-es verzi&#xf3; &#xf3;ta ez a referencia implement&#xe1;ci&#xf3;"/>
@@ -151,6 +151,46 @@
 </node>
 <node CREATED="1473159761835" ID="ID_430348163" MODIFIED="1473159781620" POSITION="left" TEXT="NIncs jelenl&#xe9;t ellen&#x151;rz&#xe9;s, egy HF van + vizsga">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1473329523179" ID="ID_1059477012" MODIFIED="1473329962667" POSITION="right" TEXT="2.)  OOP">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1473329963882" ID="ID_94576428" MODIFIED="1473329975789" TEXT="A java objektum-orient&#xe1;lt nyelv">
+<node CREATED="1473329980229" ID="ID_879077930" MODIFIED="1473329982598" TEXT="C++">
+<node CREATED="1473329990697" ID="ID_484581685" MODIFIED="1473330000191" TEXT="oszt&#xe1;lyok, absztrakt oszt&#xe1;lyok"/>
+<node CREATED="1473330079832" ID="ID_1304089041" MODIFIED="1473330094652" TEXT="F&#xfc;ggv&#xe1;nyek, v&#xe1;ltoz&#xf3;k oszt&#xe1;lyon k&#xed;v&#xfc;l is lehetnek"/>
+<node CREATED="1473330115430" ID="ID_1669007435" MODIFIED="1473330137076" TEXT="explicit deklar&#xe1;hat&#xf3; virtu&#xe1;lis met&#xf3;dusok"/>
+<node CREATED="1473330228009" ID="ID_1531903159" MODIFIED="1473330233594" TEXT="Egy f&#xe1;jl &#xe1;ltal&#xe1;ban t&#xf6;bb oszt&#xe1;ly"/>
+</node>
+<node CREATED="1473329985313" ID="ID_183320525" MODIFIED="1473329987348" TEXT="JAVA">
+<node CREATED="1473330064988" ID="ID_1792501676" MODIFIED="1473330076105" TEXT="oszt&#xe1;lyok, absztrakt osz&#xe1;lyok, interf&#xe9;szek"/>
+<node CREATED="1473330096448" ID="ID_406861202" MODIFIED="1473330109245" TEXT="Met&#xf3;dusok csak oszt&#xe1;lyokon bel&#xfc;l lehetnek"/>
+<node CREATED="1473330139267" ID="ID_1066122392" MODIFIED="1473330144260" TEXT="Minden met&#xf3;dus virtu&#xe1;lis">
+<node CREATED="1473330145025" ID="ID_739270489" MODIFIED="1473330150035" TEXT="fel&#xfc;l lehet csapni a"/>
+</node>
+<node CREATED="1473330158770" ID="ID_1038437576" MODIFIED="1473330163001" TEXT="Egyszeres &#xf6;r&#xf6;kl&#x151;d&#xe9;s">
+<node CREATED="1473330163853" ID="ID_874048687" MODIFIED="1473330167822" TEXT="NINCS T&#xd6;BBSZ&#xd6;R&#xd6;S"/>
+<node CREATED="1473330173394" ID="ID_1287810137" MODIFIED="1473330177066" TEXT="INTERF&#xc9;SZEK"/>
+<node CREATED="1473330193352" ID="ID_1945003816" MODIFIED="1473330203791" TEXT="MInden az objectnek k&#xf6;zvetett vagy k&#xf6;zvetlen lesz&#xe1;rmazottja"/>
+</node>
+<node CREATED="1473330189634" ID="ID_859674560" MODIFIED="1473330224756" TEXT="egy file - egy oszt&#xe1;ly"/>
+</node>
+</node>
+<node CREATED="1473330247884" ID="ID_1832707800" MODIFIED="1473330270130" TEXT="Sz&#xf3;haszn&#xe1;lat">
+<node CREATED="1473330251719" ID="ID_1364512038" MODIFIED="1473330255748" TEXT="oszt&#xe1;ly">
+<node CREATED="1473330261054" ID="ID_972119889" MODIFIED="1473330266060" TEXT="p&#xe9;ld&#xe1;nyok"/>
+</node>
+<node CREATED="1473330274404" ID="ID_1956729104" MODIFIED="1473330285732" TEXT="Mez&#x151;k nem &quot;v&#xe1;ltoz&#xf3;k&quot;">
+<node CREATED="1473330286556" ID="ID_898483188" MODIFIED="1473330292956" TEXT="A v&#xe1;ltoz&#xf3; m&#xe1;st jelent"/>
+</node>
+<node CREATED="1473330294492" ID="ID_705274171" MODIFIED="1473330298602" TEXT="Met&#xf3;dus">
+<node CREATED="1473330299285" ID="ID_340057447" MODIFIED="1473330301160" TEXT="nem f&#xfc;ggv&#xe9;ny"/>
+</node>
+</node>
+<node CREATED="1473330310507" ID="ID_270196455" MODIFIED="1473330313798" TEXT="Oszt&#xe1;lyok">
+<node CREATED="1473330327034" ID="ID_616510569" MODIFIED="1473330328837" TEXT="defini&#xe1;l&#xe1;s">
+<node CREATED="1473330329721" ID="ID_53026068" MODIFIED="1473330362417" TEXT="m&#xf3;dos&#xed;t&#xf3;k, class oszt&#xe1;lyn&#xe9;v { tagok}"/>
+</node>
+</node>
 </node>
 </node>
 </map>
