@@ -7,5 +7,9 @@
 <node CREATED="1473669910249" ID="ID_54848557" MODIFIED="1473669929432" TEXT="Bjarne Strousrtup - A C++ programoz&#xe1;si nyelv"/>
 <node CREATED="1473670096445" ID="ID_692477885" MODIFIED="1473670165795" TEXT="Scott Meyers: Hat&#xe9;kony C++"/>
 </node>
+<node CREATED="1473671517408" ID="ID_890675911" MODIFIED="1473671523163" POSITION="left" TEXT="Nyelvek t&#xf6;rt&#xe9;nete">
+<node CREATED="1473671524520" ID="ID_652713767" MODIFIED="1473671529544" TEXT="Iterat&#xed;v programoz&#xe1;s"/>
+</node>
+<node COLOR="#990000" CREATED="1473671594185" ID="ID_1220293625" MODIFIED="1473672728321" POSITION="left" TEXT="Programoz&#xe1;si paradigm&#xe1;k"/>
 </node>
 </map>
