@@ -7,10 +7,11 @@
 class Queue {
     private:
         int* queue;
+        int size;
     public:
-        enum EXCEPTIONS {FULLQUEUE};
+        enum EXCEPTIONS {FULLQUEUE, NOTEMPTY};
 
-        Queue() { queue = NULL; }
+        Queue() { queue = NULL; size = 0; }
         ~Queue() { if (queue != NULL) delete[] queue; }
         Queue(const Queue& other);
         Queue& operator=(const Queue& other);
@@ -23,7 +24,6 @@ class Queue {
 
         friend Queue operator+ (const int new_element);
         friend Queue operator+ (const Queue& other});
-
 }
 
 #endif // QUEUE_H_INCLUDED
