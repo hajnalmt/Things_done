@@ -7,12 +7,12 @@
 class Queue {
     private:
         int* queue;
-        int size;
+        unsigned int size;
     public:
-        enum EXCEPTIONS {FULLQUEUE, NOTEMPTY};
+        enum EXCEPTIONS {FULLQUEUE, NOTEMPTY, CANNOTREMOVE};
 
-        Queue() { queue = NULL; size = 0; }
-        ~Queue() { if (queue != NULL) delete[] queue; }
+        Queue() { this->queue = NULL; this->size = 0; }
+        ~Queue() { if (this->queue != NULL) delete[] this->queue; }
         Queue(const Queue& other);
         Queue& operator=(const Queue& other);
 
@@ -20,10 +20,10 @@ class Queue {
         bool isFull() const;
         unsigned int getSize() const;
         void Insert(const int new_element);
-        unsigned int Remove();
+        int Remove();
 
-        friend Queue operator+ (const int new_element);
-        friend Queue operator+ (const Queue& other});
+        friend std::istream& operator>> (std::istream& s, Queue& q);
+        friend std::ostream& operator<< (std::ostream& s, const Queue& q);
 }
 
 #endif // QUEUE_H_INCLUDED

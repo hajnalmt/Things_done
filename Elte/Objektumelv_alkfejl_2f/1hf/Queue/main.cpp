@@ -38,3 +38,15 @@ void Menu::Run() {
         }
     } while(c!=0);
 }
+
+void Menu::MenuWrite()
+{
+    cout << endl << endl;
+ cout << " 1. -Matrix feltoltese" << endl;
+ cout << " 2. -Matrix adott elemenek lekerdezese" << endl;
+ cout << " 3. -Matrix adott elemenek felulirasa" << endl;
+ cout << " 4. -Matrix kiirasa" << endl;
+ cout << " 5. -Matrixhoz egy masik matrix hozzaadasa" << endl;
+ cout << " 6. -Matrix szorzasa egy masik matrixszal" << endl;
+ cout << " 0. -Kilepes" << endl;
+}
