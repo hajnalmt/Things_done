@@ -1,33 +1,36 @@
 #include "queue.h"
+#include <iostream>
 
 using namespace std;
 
 Queue::Queue(const Queue& other) {
-    this->size = other.getSize();
-    this->queue = new int[size];
-    for(int i=0; i < this->size; ++i) this->queue[i] = other.queue[i];
-}
+	this->size = other.getSize();
+	this->queue = new int[other.getSize()];
+	for ( unsigned int i = 0;  i < other.getSize(); i++) {
+		this->queue[i] = other.queue[i];
+	} 
+};
 
 Queue& Queue::operator=(const Queue& other) {
-    if ( !this->isEmpty() ) throw NOTEMPTY;
-    if ( this == other ) return *this;
-    for (int i=0; i<other.size; ++i) this->queue[i] = other.queue[i];
-    return *this;
+	if (other.getSize() != this.getSize()) throw DIFFERENT;
+	if (this == &other) return *this;
+	for (unsigned int i = 0; i < other.getSize(); i++) this->queue[i] = other[i];
+	return *this;
 }
 
- bool Queue::isEmpty () const {
-    return this->size == 0;
- }
+bool Queue::isEmpty () const {
+	return this->queue.size == 0;
+}
 
- bool Queue::isFull() const {
-    return this->size == MAX_QUEUE_SIZE;
- }
+bool Queue::isFull () const {
+	return this->queue.size == MAX_QUEUE_SIZE;
+}
 
- unsigned int Queue::getSize() const {
-    return this->size;
- }
+unsigned int getSize() const {
+	return this->size;
+}
 
- void Queue::Insert(const int new_element) {
+void Queue::Insert(const int new_element) {
     if (this->isFull()) throw FULLQUEUE;
 
     int* tmp = new int[this->size+1];
@@ -47,7 +50,7 @@ int Queue::Remove() {
     delete[] this->queue;
     this->queue = tmp;
     size--;
-    return result
+    return result;
  }
 
 std::istream& operator>> (std::istream& s, Queue& q) {

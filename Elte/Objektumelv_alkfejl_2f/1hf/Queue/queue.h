@@ -9,7 +9,7 @@ class Queue {
         int* queue;
         unsigned int size;
     public:
-        enum EXCEPTIONS {FULLQUEUE, NOTEMPTY, CANNOTREMOVE};
+        enum EXCEPTIONS {DIFFERENT, FULLQUEUE, NOTEMPTY, CANNOTREMOVE};
 
         Queue() { this->queue = NULL; this->size = 0; }
         ~Queue() { if (this->queue != NULL) delete[] this->queue; }
@@ -24,6 +24,6 @@ class Queue {
 
         friend std::istream& operator>> (std::istream& s, Queue& q);
         friend std::ostream& operator<< (std::ostream& s, const Queue& q);
-}
+};
 
 #endif // QUEUE_H_INCLUDED
