@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>301</x>
+      <y>70</y>
+      <w>420</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>WorkingCalendar
+--
++workingDays: boolean[]
++normalWorkingDay: WorkingDay
+--
++constructor(): void
++getWorkingCalendar(): WorkingCalendar
++add(date: Date, duration: Duration): Date
++subTract(date: Date, duration: Duration)
+-addMinutes(date: Date, remainingMinutes: number, backward: boolean = false):void
++setToWorkingPeriod(date: Date, backward: boolean = false): void
++isWorkingDay(date: Date): boolean
+-getActualWorkingDay(date: Date, backward: boolean = false): WorkingDay
+-setToNextDay(date: Date, backward: boolean = false)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>287</x>
+      <y>413</y>
+      <w>518</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Workinghour
+--
++fromHour: number
++fromMinute: number
++toHour: number
++toMinute: number
+--
++constructor(fromHour: number, fromMinute: number, toHour: number, toMinute: number): void
++compare(t: any): number
++doOverLapWith(t: any): boolean 
+-getFromValue(): void
+-getToValue(): void
++add(date: Date,remainingMinutes: number): number
++subTract(date: Date,  remainingMinutes: number): number
++contains(hour: number, minute: number, backward: boolean = false): number</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>308</x>
+      <y>252</y>
+      <w>322</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>WorkingDay
+--
++workingHours: IntervalList&lt;WorkingHour&gt;
+--
++constructor(): void
++getWorkingCalendar(): WorkingCalendar
++add(date: Date,remainingMinutes: number): number
++subTract(date: Date,  remainingMinutes: number): number
++isEnd(date: Date, backward: boolean = false): boolean
++setTimeToPeriod(date: Date, backward: boolean = false): void
+-setTimeToPeriodBackward(date: Date): void
+-setTimeToPeriodForward(date: Date): void 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>644</x>
+      <y>245</y>
+      <w>98</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Exclusion
+--
++fromDay: Date
++toDay: Date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>735</x>
+      <y>70</y>
+      <w>182</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Duration
+--
++day: number
++hour: number
++minute: number
++hoursPerDay: number
++constructor(): void
++clone(other: Duration): Duration 
++add(duration: Duration): Duration
++equals(other: Duration): number
++addToDate(date: Date): Date
++getCost(): number</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>693</x>
+      <y>126</y>
+      <w>55</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;42;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>462</x>
+      <y>196</y>
+      <w>34</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>434</x>
+      <y>357</y>
+      <w>34</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>679</x>
+      <y>196</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;49</additional_attributes>
+  </element>
+</diagram>

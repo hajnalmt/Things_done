@@ -4,7 +4,7 @@
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1474359879280" ID="ID_1662785594" MODIFIED="1474359890413" POSITION="right" TEXT="Diszkr&#xe9;t l&#xe9;gr&#xe9;ses fojt&#xf3;">
 <node CREATED="1474360118811" ID="ID_476684824" MODIFIED="1474360128416" TEXT="Gerjeszt&#xe9;si t&#xf6;rv&#xe9;nyb&#x151;l">
-<node CREATED="1474360375096" ID="ID_232504041" MODIFIED="1474360393815" TEXT="Indukcu&#xf3;s t&#xf6;rv&#xe9;nt felhaszn&#xe1;lva meg van az induktivit&#xe1;s"/>
+<node CREATED="1474360375096" ID="ID_232504041" MODIFIED="1484748116354" TEXT="Indukci&#xf3;s t&#xf6;rv&#xe9;nt felhaszn&#xe1;lva meg van az induktivit&#xe1;s"/>
 <node CREATED="1474360720598" ID="ID_923398645" MODIFIED="1474360728451" TEXT="Fojt&#xf3; nagys&#xe1;gt&#xf3;l f&#xfc;gg&#x151;en">
 <node CREATED="1474360729550" ID="ID_919133001" MODIFIED="1474360802640" TEXT="ha kicsi akkor mehet ak&#xe1;r a 10A/mm^2"/>
 <node CREATED="1474360804455" ID="ID_985786954" MODIFIED="1474360825395" TEXT="ha nagy akkor legyen csak 2A/mm^2"/>
