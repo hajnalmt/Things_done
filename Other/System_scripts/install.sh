@@ -2,7 +2,7 @@
 # System distribution must be dpkg based
 # The additional packages will be downloaded in a bin directory at your home, which is loaded when you boot your computer.
 # So a reboot is necessarry
-
+#
 # Function just to print green info messages, and yellow questions
 function info {
         tput setaf 2; echo -e $@; tput setaf 7
