@@ -16,5 +16,8 @@ char str2[] = "false";
 
 void main(void)
 {
-    printf("%s-%s",str,str2);
+    printf("%s-%s-%s",str,str2,str3);
 }
+//Solution: false-true
+//if you undefine something with the #undef directive it's value will be 0.
+//if you not define a macro it's value will be 0 automaically 
