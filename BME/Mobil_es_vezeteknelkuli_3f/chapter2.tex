@@ -1,68 +1,46 @@
 %----------------------------------------------------------------------------
-\chapter{Cloud-RAN arhitektúra}\label{sect:CloudArch}
+\chapter{Cloud-RAN implementáció}\label{sect:CloudImp}
+Megismerkedhettünk az előző fejezetben a Cloud-RAN architektúrális felépítésével, ebben a fejezetben bemutatásra kerülnek a főbb implementációs lépések.\cite{BenefitsEricsson}
 %----------------------------------------------------------------------------
-
-\hspace{2mm} A feladatomhoz fontos volt a megfelelő kódolási eszközök felmérése és megismerése, ebben a fejezetben ezt részletezem. 
-
-\section{HTML, CSS}
-\hspace{2mm} Régebben komoly problémát jelentett, hogy a szabványok nem megfelelő megfogalmazásából adódóan a böngészők eltérően implementálták a dolgokat, így rendszeres megjelnésbeli külnbségek merültek fel. Ez persze az évek során nagyon sokat finomodott, míg végül a World Wide Web Consortium (W3C) lefektetett egy úgy látszik megfelelően magalapozott szabványt a HTML5-tel. Ez a szabvány egységesítette az előtte már kétirányba elhúzódó (XHTML és HTML4) szabványokat. A másik nagy előnye az volt ennek a szabványnak, hogy lehetőséget biztosított a modern kliens oldali fejlesztésnek (Canvas) és az oldal strukturáltáságát is javította renget új elem bevezetésével (article, nav stb...).
-
-A HTML alapvetően csak az oldal logikai struktúrájának leírását szolgálja, és ez a tulajdonsága az évek alatt nem is változott. Nem képes a komplexebb megjelenítési feladatok ellátására, csak az egyes felületelemeket tudjuk megadni ún. tagekkel deklaratív módon.
-
-Mivel a HTML-el nem tudjuk érdemben befolyásolni a lap kinézetét megszületett CSS (Cascading Style Sheets). A CSS segítségével gyakorlatilag minden HTML elemet akár külön-külön meg tudunk formálni, olyanná amilyenre szeretnénk. A CSS szabványok terén még nagyobb volt a káosz, mint a HTML-eknél, főleg amiatt, hogy gyorsan mentek végbe a változások, szerencsére a CSS szabványait végül a CSS3 egybegyúrta.  
-
+\section{Cloud-RAN kombináció}
+\hspace{2mm} 
+\indent A Cloud-RAN architektúrája kombinálhatja a koordináció, központosítás és virtualizáció területén négy fontos előrelépést.\cite{FutureCarrier} \cite{WirelessFull}
+\begin{itemize}
+\item erőforrások hatékonyabb kezelése: költséghatékonyabb processzor megosztás,
+\item méretezhetőség: hardver kapacitás rugalmasabb növelése,
+\item rétegek együttműködése: pl. alkalmazás réteg és RAN közötti szorosabb együttműködés,
+\item spektrális hatékonyság
+\end{itemize}
+Fontos megértenünk, hogy a kombináció melyik tagja miben jelent előrelépést. Ezeket az implementációs aspektusokat \figref{imp_aspects}-es táblázattal szemléltethetjük.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{figures/imp_aspects.png}
+\caption{Az implementációs aspektusok.} 
+\label{fig:imp_aspects}
+\end{figure} 
 %----------------------------------------------------------------------------
-\section{Javascript, Typescript}
-\hspace{2mm} A jelenleg legnépszerűbb nyelv a webes alkalmazások készítésére a Javascript. Gyakorlatilag minden böngésző támogatja semmilyen beépülő modulra nincs szükség. A böngészők a javascript belső implementációját igyekeztek egységeséteni a szabványnak megfelelően, továbbá a hatékonyság érdekében rengeteget könnyítettek a fejlesztéseken, egyre jobb memóriakezelést alkalmaztak és a böngészőmotorok fel lettek szerelve a töbszálú futás lehetőségével is így nagyobb alkalmazások is könnyen tudnak rajtuk futni.
-
-Magát a nyelvet 1997-ben ECMAScript néven szabványosították először. Az objektumorientált nyelvek családjába tartozik, azon belül is a prototipusos nyelvek közé. Ez a gyakorlatban annyit tesz, hogy nem rendes osztályok vannak a nyelvben, amiket aztán példányosítunk, hanem minden objektum egy prototipus objektum "lemásolásával" jön létre. Ez a nyelv és az egyes objektumok nagyon szabad kezelését teszi lehetővé, gyakorlatilag nyílt objektumaink vannak, amiket szabadon felruházhatunk új attribútumokkal metódusokkal a fejlesztés dinamikus és gyors lehet.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.5\textwidth, keepaspectratio]{figures/javascript.png}
-\caption{Egy Javascript objektum} 
-\label{fig:JS}
-\end{figure} 
-
-A \figref{JS}-es ábra mutat egy példát egy ilyen objektum létrehozására. Fontos megemlíteni, hogy a JavaScript változói dinamikusak, azaz csak futási időben kapnak értéket, és típusuk is csak ekkor derül ki, sőt akár változhat is. Egy további érdekessége a nyelvnek, hogy minden objektumként viselkedik még a függvények is, így értelmezve van mindennél a \textit{this} kulcsszó.
-
-A fenti prototípusosság azonban nagy hátrányt is jelenthet a fejlesztőknek, ugyanis semmilyen megkötés vagy követelés nincsen így arra, hogy az egy objektum milyen tulajdonságokkal rendelkezzen futási időben. Ez nagyon sok kényelmetlenséget okoz a hívó félnek és hívottnak is, ugyanis fel kell készülni, hogy az adott metódus bármilyen paramétert megkaphat, nem köthetjük ki a típusát. Ennek orvoslására rengeteg megoldás született, melyek más-más módokon segítik a fejlesztést. Én ezek közül a TypeScriptet választottam mely egy a Microsoft által fejlesztett scriptnyelv. \cite{Typescript}
-A fejleszése során előre készültek az ECMAScript2016-os szabványra, így az átállás nem lesz nehéz. Ez a nyelv gyakorlatilag egy plusz réteget biztosít a Javascript főlé, melyben garantálva van a típusosság. A legjobb tulajdonsága, hogy plain JavaScriptre fordul, azaz egy fordító egy az egyben JavaScript kódot állít elő a TypeScript kódunkból, gyakorlatilag semmilyen böngésző támogatásra nincs szükségünk. 
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{figures/typescript1.png}
-\caption{Typescript installáció} 
-\label{fig:TS1}
-\end{figure} 
-
-A TypeScript fordításához szükség van a NodeJS, npm telepítésére. Ezen kívül a fejlesztő környezet is kérdéses lehet, ugyanis egyre több jó szövegszerkesztő van amiben van TypeScript támogatás. 
-A legjobbak talán a Visual Studio Code, a Webstorm, az Atom, az Eclipse és a NetBeans, de van már vimben és Sublime Text-ben is támogatás. A telepítések automatizálására írtam egy shell scriptet (\figref{TS1}), a fejlesztőkörnyezetnek pedig a Sublime Text-et választottam (\figref{TS2}, ennek az editornak van külön package controllerje, amit a script szintén felrak ezután már csak a TypeScript packaget kell letölteni és kész is a támogatás. 
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\textwidth, keepaspectratio]{figures/typescript2.png}
-\caption{Typescript osztály és interfész Sublime Text-ben} 
-\label{fig:TS2}
-\end{figure} 
-
-A \figref{TS2}-es ábrán látható, egy egyszerű osztály és interfész. Az egyes osztályokat a \textit{module} kulcsszóval lehet csoportokba rendezni, ami hasonló a C++ namespace-eihez. Ha az osztály elé odarakjuk \textit{export} kulcsszót, akkor az az osztály kívülről is elérhetővé válik. Ezeken kívül már hasonló a szintaktika, kell konstruktor és lehet public vagy private változókat megadni, annyi talán a különbség, hogy a változó neve után írjuk a típust kettősponttal elválasztva. Az interfaceken keresztül metódusok érhetők el. A fordítás során keletkezik pár segéd fájl, ilyen pl. a map fájl mely a debuggernek segít a JavaScript TypeScript kódrészletek összepárosításához. 
-
-Meg kell említeni, hogy a nyelv rengeteg újszerű nyelvi elemet tartalmaz. Ilyen például az async/await mely az aszinkron műveletek kezelésében segít, az enum felsorolás típus, az import kulcsszó más fájlokra hivatkozáshoz de ide sorolhatjuk az any kulcsszót is, amivel dinamikusosan típusos változót készíthetünk Typescriptben is.
-
-Ennek a nyelvnek a legnagyobb előnye, hogy a fentiek miatt jól struktúrálható kódot készíthetünk.
+\section{Virtualizáció a Cloud-RAN-ban}
+\hspace{2mm}
+\indent Itt a rádiós hozzáférési protokoll által támasztott valós-idejűség követelményei jelentik az alapvető különbséget (számos szinkronizációs folyamat, amely a protokoll teljesítményét biztosítja, mikro-vagy nano szekundumos sebesség szintjén kell legyen). 
+Érdemes megjegyezni, hogy nem szükséges az összes RAN funkciót virtualizálni ahhoz, hogy a Cloud-RAN adta lehetőségeket kiaknázzuk. Így többek között képes biztosítani az elszigeteltséget, a méretezhetőséget, valamint rugalmasságot az RRC protokoll réteg szintjén.
 %----------------------------------------------------------------------------
-\section{Canvas, KonvaJS}
-
-Az alkalmazáson belül a diagram megjelenítésére több lehetőségem volt. Meg lehetett volna oldani csak HTML-el azonban ez a megoldás nem támogatja a különleges alakzatok (nem téglalap) megjelenítését, így ezt hamar elvetettem. Két lehetséges módszer maradt az SVG és a Canvas. Mindkettő megfelelt a feladat elvárásainak, azonban a Canvas mellett döntöttem, mivel ez egy újabb fejlődőbb technika több lehetőséggel. A Canvas pixelpontos rajzolást tesz lehetővé és bármilyen alakzatot könnyedén meg lehet vele rajzolni. A nagy hátránya az, hogyha megrajzoltunk egy alakzatot, akkor arra utána nem lehet már hivatkozni, az alakzatok között semmilyen kommunikáció nincs, nekünk kell elvégezni a nyilvántartást
-
-Utánajárva a problémának az alakzatok közötti eseménykezelést a KonvaJS függvénykönyvtár segítségével oldottam meg. \cite{KonvaJS} Több lehetőségem is volt, ez a függvénykönyvtár a már elavult KineticJS keretrendszerből fejlődött ki, és egy fél éve a KineticJS keretrendszer fejlesztője is ezt jelölte meg alternatívaként, azóta kijött 2016 március 30-án a ConcreteJS keretrendszer is, ám ez még elég fiatal, sok hasznos funkciója van, de még a KonvaJS melett maradtam.
-
+\section{Centralizáció a Cloud-RAN-ban}
+\hspace{2mm}
+\indent A Cloud-RAN-nal dolgozó központosított bázisállomás egyszerűsíti a hálózati menedzsmentet és lehetővé teszi az erőforrás összevonást (resource pooling), illetve a rádiós erőforrások koordinációját. A pooling, vagy a statisztikai multiplexálás egy végrehajtási platformot nyújt, amellyel ugyanazon feladatok láthatók el kevesebb hardver és kapacitás felhasználása mellett. A központosítás számos előnye közül érdemes kiemelni, hogy forgalomirányításnak és a mobilitás központosításnak köszönhetően kevesebb a handover hiba, illetve a heterogén hálózatokban kevesebb jelhiba lép fel. Ezen kívül a centralizáció azt is eredményezi, hogy az X2 interfész végpontjai közötti távolság megrövidül, így végső soron gyorsabb (kisebb késleltetés miatt) lesz az X2 interfészen való kommunikáció.\cite{BenefitsFujitsu}
+%----------------------------------------------------------------------------
+\section{Koordináció a Cloud-RAN-ban}
+\hspace{2mm}
+\indent A központosított koordináció különösen alkalmas a hálózat teljesítményének javítására, kiemelendő a handoverek, a carrier aggregáció és az interferencia menedzsment területén. Ezenfelül a többszintű koordináció olyan esetekben is lehetséges, amikor a centralizáció a rádiós protokoll magasabb rétegeire korlátozódik.\cite{BenefitsEricsson}\cite{NokiaSingle}
+%----------------------------------------------------------------------------
+\section{Implementációs nehézségek}
+\hspace{2mm}
+\indent A tiszta szoftverdefiniált rádiós rendszerben, az összes rádió funkció egy GPP-n (General Purpose Processor, általános célú processzor) fut. A virtuális környezet folyamatos interakcióban van a fizikai erőforrásokkal direkten vagy valamilyen emulációs rétegen keresztül. Ez virtuális szoftver eladható akár egy szolgáltatásként, mely valamilyen felhőben van kontrollálva. Ezáltal beszélhetünk RANaaS-ról azaz RAN as a Service-ről vagy általánosabban NaaS-ról, Network as a Service. Az ilyen hálózatoknak már több prototípusa is elkészült, melyekből rengeteg tanulságot vonhattunk le. (A legnagyobb kihívást jelenleg a csomagok késői megérkezései okozzák, melyek nagy hatással vannak a felhasználi élményre.)\cite{Architecture}\cite{ImplementationIssues}\cite{ImplementingGPP}
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.4\textwidth, keepaspectratio]{figures/konva.png}
-\caption{Egy egyszerű kör rajzolása KonvaJS segítségével} 
-\label{fig:Konva}
-\end{figure} 
-
-A függvénykönyvtár segítségével az egyes alakzatok csoportosíthatók. A \figref{Konva}-es ábra mutatja egy egyszerű kör rajzolását, egy sima API-n keresztül létre lehet hozni az alakzatot. Nagy segítség még a fejlesztéshez, hogy készült hozzá Typescript interfész is leírással.
+\includegraphics[width=\textwidth, keepaspectratio]{figures/cool.png}
+\caption{A Cloud-RAN eszköszök és előnyök} 
+\label{fig:cool}
+\end{figure}
+%----------------------------------------------------------------------------
+\section{Záró gondolat}
+\indent A Cloud-RAN új környezetében tehát lehetőség van arra, hogy az üzemeltetők nagyobb hálózati kapacitást és lefedettséget biztosíthassanak az előfizetőik számára kisebb összköltség (total cost of ownership, TCO) mellett, lsd \figref{cool}-es ábra. Mindez alapja lehet a jövő szélessávú mobilhálózatainak. Nyilván felmerül a kérdés, hogy vajon mikor kerül sor a Cloud-RAN ipari léptékű megvalósítására? A mobil hálózati architektúra forradalma a közelgő virtualizációval (Network functions virtualization, NFV) várható és a szolgáltatók a folyamatos fejlődés útján bizonyára nyitni fognak a Cloud-RAN koncepció irányába. 
