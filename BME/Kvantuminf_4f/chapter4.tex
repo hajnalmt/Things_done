@@ -11,9 +11,9 @@ Például egy sima böngésző az ideje nagy részében nem hajt végre semmilye
 
 \indent Egy technika, annak érdekében hogy a hálózat kevésbé legyen ilyen burstös, hogy összeköttetés prefetch-elést alkalmazunk, azaz megpróbálja browser megmondani, hogy mi lesz a következő tartalom amit a felhasználó le akar majd tölteni és előre leszedi a háttérben azt, még mielőtt a user rákattintana.
 Egy kvantumjelenség az ún. \textit{szupersűrű kódolás} lehetővé teszi a kvantum kliensnek, hogy letöltse, prefetchelje az adatot a kvantumszerverére, úgy hogy a kliensnek még ötlete sincs róla, hogy milyen adatra lesz szüksége a jövőben.
-
-\textbf{Tény 3} (szupersűrű kódolás) Ha egy kliens és egy szerver egy adott összefonódott qubiten osztozik (előre megosztott qubit), akkor a szerver elküldhet két klasszikus bitből álló információt a kliensnek egy szimpla qubit elküldésével.
-
+\vspace{2mm}
+\textbf{Tény 3}  \textit{(szupersűrű kódolás) Ha egy kliens és egy szerver egy adott összefonódott qubiten osztozik (előre megosztott qubit), akkor a szerver elküldhet két klasszikus bitből álló információt a kliensnek egy szimpla qubit elküldésével.}
+\vspace{2mm}
 \indent Ahhoz, hogy implementáljuk a prefetchelést a szupersűrű kódolást használva a szervernek folyamatosan kell összefonódott qubiteket gyártania, melyekből egyet elküld a kliensnek.
 Amikor a klens le szeretne tölteni valamilyen adat a gépére, akkor használhatja az összefonódott qubitjét, amin a szerverrel osztoznak, hogy átküldjön adatot \textit{kétszer} olyan nagy bitszámmal, mint amekkora a hálózati összeköttetés kapacitása.
 A szupersűrű kódolás megnövelheti a hálózat teljesítményét még akkor is amikor konstans sebességgel tud csak adatot letölteni a szerverről.
