@@ -1,0 +1,128 @@
+%----------------------------------------------------------------------------
+\chapter{A qx86-os gép}\label{sect:qx86}
+%----------------------------------------------------------------------------
+\hspace{2mm} A qFPGA architektúrát leírhatjuk, mint egy remek eszközközt elsődlegesen kis kvantumáramkörök számításainak elvégzésére.
+
+\indent Sokkal becsvágyóbb elképzelés már, ha lenne ha elképzelnénk egy x86-os processzort egy kvantum x86-os társ-processzerral.
+A qx86-os processzor nem csak a hagyományos x86-os utasításrendszerrel rendelkezne, hanem kvantum utásítás készlettel is, például megfeleltethetünk egy kvantum operátort a társproceszzor \textit{eax} regiszterének.
+Ezeket az utasításokat és egy elég nagy qx86-os számítógépet véve egy kvantum assembly programozó hatékonyan implementálhat a bármilyen kvantumalgoritmust, például emulálhat egy x86-os programot a programbenetek egy szuperpozíviójával, mint kvantumállapotokkal.
+
+\indent Egy ilyen qx86-os gép elkészítése sokkal nehezebb feladatnak tűnik, mint egy sima qFPGA elkészítése.
+Ahhoz, hogy támogassa a hagyományos x86-os programokat a gépnek implementálnia kell nem csak a logikáját az x86-os utasításkészletnek, de valahogy a kvantum RAM-nak is.
+Hogy kicsit több értelmet is nyerjen miért olyan nehéz ez képzeljünk csak el egy $n$-qubit-es kvantumáramkört, amelynek állapota egyfajta keveredése (szuperpozíciója) az $n$-bites sztringeknek.
+Egy qFPGA-nak elegendő a rendezett $n=2^{10}$  qubit támogatása.
+\indent Ezzel szemben egy x86-os gépet $M$ bites állapotok szuperpozíciójaként írhatunk le úgy, hogy a gép egész állapotát (RAM tartalom, caches, regiszterek, error flagek, stb...) is leírhatjuk $M$ biten.
+Ahhoz, hogy tudjuk számunkra érdekes x86-os programokat futtatni egy megfelelő méretű qx86-os processzorrnak kb. $M = 2^{20}$ állapot szuperpozícióját kell ttudnia kezelni vagy többet.
+Ez jóval nagyobb terjedelemben, mint egy qFPGA-é.
+
+\indent Hogyha feltételezzük, hogy tudunk már ilyen qx86-os processzort építeni, a programozása kész rémálom lenne: elég valószínűtlen, hogy egy átlagos programozónak lenne bármilyen ötlete arról, hogyan helyezze a saját programjait általános kvantum utaskészlet fölé.
+Bár talán ez a legkisebb probléma, hiszen hogyha feltételezzük, hogy qx86-os processzort építeni, akkor a hozzáírt operációs rendszer valószínűleg képes lesz arra, hogy egy magasabbszintű interfészt biztosítson a programozóknak, mely már érthetően megengedi ezek "kvantumosságának" kihasználását, anélkül, hogy nagyon be kellene piszkolnia a kezét.
+
+\indent Egy ilyen absztrakcionálási lehetőség a qthread API, mint egy programozási interfész, mely elrejti a kvantumhardver komlexitását és megengedi a programozóknak, hogy elérjék kvantumszámolások erejét.
+Először hát beszélünk a qthread API-ról, utána pedig leírjuk, hogyan lehet ezeket a qthreadeket a hagyományos rendszerproblémáj feladatira hatékonyan alkalmazni.
+
+%----------------------------------------------------------------------------
+\section{A qthread-ek API-ja}
+A \figref{qthreads}-es ábra mutatja azokat a rutinokat amiket az API-nk biztosít.
+Ez az API megengedi a programozónak, hogy készítsen egy gyűjteményt, melyből minden qthread (mint a pthrtead) vehet egy tetszőleges mennyiségű adattömeget, elvégezhet rajta valamilyen klasszikus számítást, és visszatérhet egy egész számmal.
+Minden qthread ugyanazt az kódot futtatja más-más bemenettel.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\textwidth, keepaspectratio]{figures/qthreads.png}
+\caption{A qthread-ek API-ja}
+\label{fig:qthreads}
+\end{figure}
+
+
+\indent Hogyha a programozó készített egy gyűjteményt a qthreadekből, akkor kérdezhet tőlük általános kérdéseket, mint például "Melyik qthread tért vissza, nem nulla értékkel?", "Mennyi qthread tért vissza, nem nulla értékkel?", "Melyik qthread ölte meg Kennedyt?" vagy "Melyik qthread tért vissza a legnagyobb egész számmal?".
+\indent A kvantum számítógépek sokkal hamarabb meg tudják válaszolni ezeket a kérdéseket, mint egy klasszikus számítógép.
+Például ahhoz, hogy megtaláljuk melyik qthread tért vissza nem nulla értékkel. a klasszikus számítógépnek végre kell hajtania a qthread rutint minden jelölt argumentumra amíg fel nem fedez egy qthreadet amelyre igaz az állítás.
+Viszont egy $N$ elemű qthread gyűjteményben minden qthread maximum $T$ lépésben (ciklusban) fut le.
+Ez azt jelenti, hogy a klasszikus gépnek $\Theta(NT)$ időre van szüksége legrosszabb esetben. Ezzel szemben a Grover algoritmust használó kvantum operációs rendszer megválaszolja a kérdést $\Theta(\sqrt{N}T)$ időben - kb egy $\sqrt{N}$ nagysagrenddel gyorsabban.
+
+\indent \textbf{Az absztrakció fontossága.} Használva a qthread-ek API-ját a programozó úgy tudja írni a kódot, mintha egy klasszikus programot írna, és az operációs rendszer megoldja a qthreadek futását a kvantumharveren.
+Ez egy fontos dolog, hiszen ezzel el tudjuk kerülni direkt kvantum programok írását, ami sokkal nehezebb, trükkösebb lenne.
+A hagyományos technikák a hibák megtalálására például a \code{gdb} és a \code{printf} debuggolás tönkretenné a kvantum masinánk működését, így magának a programnak a debuggolása megváltoztatná a program futását.
+(Ez amiatt a diszciplína miatt van, hogy a kvantum állapotok megfigyelése a kvantum állapotot összeomlasztja klasszikus állapottá)
+Tehát a futásidejű hibakeresés előnyét elveszítjük.
+Egy apró megjegyzés még, hogy a qthread-eknek nem lehetnek mellékhatásai, azaz egy olyan környezetben kell futniuk, ahol nincs megosztott memória vagy például I/O kezelés.
+
+%----------------------------------------------------------------------------
+\section{A qthread-ek alkalmazása}
+
+\textbf{A legérdekesebb munka előre ütemezés.} A qthredek lehetővé teszik bizonyos számítási feladatoknál, a legérdekesebb munka előre (Most Interesting Job First, MIJF) ütemező hatékony megírását.
+Minden qthread visszatér egy egész számmal, mely azt írja le, hogy az adott munka "mennyire" érdekes, annak függvényében amit számolt.
+Az ütemező pedig simán visszatérne a "legérdekesebb" qthread eredményével anélkül, hogy explicite lefuttatná az összes qthreadet.
+Egy $N$ feladatot tartalmazó gyűjteményben egy hagyományos ütemezőnek $N$ időbe telik a legérdekesebbnek a megtalálása, amíg egy kvantum qthread alapúnak ez a feladat csak $\sqrt{N}$ időbe telne.
+
+\indent Egy lehettséges alkalmazása lehetne a MIJF ütemezőnek a rendszerbiológia. Egy kiemelt probléma ezen a területen a \textit{legkisebb szerkesztési távolság problémája}: adva van két szting, keressük meg a legkisebb számú szükséges egy-karakteres szerkesztést (illesztés, törlés, helyettesítés), ahhoz hogy a sztringet egy másikba vigyünk.
+A biológusoknak rengetek ilyen egy-változtatásos számlálást kell tenniük (pl. ahhoz, hogy keressenek különböző géneket génállományokban ), de elsődlegesen az egymáshoz nagyon közel lévő (legkisebb szerkesztési távolsággal rendelkezőek) találatok nekik az érdekesek.
+
+\indent A biológusok tudnák az összes $N$ szerkesztéses számolást egy-egy külön qthreaden futtatni.
+Az $i$-edik qthread térne vissza az $i$-edik pár legkisebb szerkesztési távolságával.
+A \code{qthread\_join\_max} rutin meghívásával pedig megtalálhatnák az indexét a sztring párnak, melyik a legkisebb szerkesztési távolsággal rendelkeznek.
+Sokkal gyorsabban mint lefuttatva az összes $N$ legkisebb szerkesztési távolság számítást.
+
+\textbf{MapReduce jobs.} A MapReduce egy nészerű programozási model elosztott adatok analízisére.
+Bizonyos helyzetekben, ahol a \code{reduce} funckió kiszámolja az összegét a térképező kimeneteknek, a qthread API (használva a \code{qthread\_join\_sum}-ot) megengedi a programozónak, hogy lokálisan futtassa a MapReduce számításokat egy $N$ elemű térkép egyed gyűjteményen, amíg a \code{map} funkciót csak $O(t*\sqrt{N})$-szer futtatja, ahol $t$ a bithosszúsága az egyes térképek kimenetének.
+A hagyományos gépeknek ezzel szemben a \code{map} funkciót $N$-szer kell meghívnia
+
+\textbf{Unit testing.} Qthread-eket használva a programozó tud $N$ unit tesztet futtatni $\sqrt{N}$ költsggel.
+Ehhez csak írnia kell qthread rutint, mely inputként egy teszt esetet vesz - pl valamilyen scriptnyelven írva -és lefuttatja azt egy kódbázison.
+A programozó ezután csak felállít minden teszt esetre egy qthread-et.
+Minden teszt qthread visszatérne egy nem zéró státusz kóddal hiba esetén.
+A programozó pedig ezután csak megkérdezi az operácós rendszertől, hogy melyik qthread volt a bűnös, ha volt.
+%----------------------------------------------------------------------------
+\section{Implementációja a qthread-eknek}
+
+\indent Bár a qthread API ad a programozónak egy illúziót, hogy a program maga párhuzamosan több szálon fut, azonban ez egyáltalán nem takarja, hogy egy ilyen qthread-nek az implementációja éppen mit rejt.
+Ehelyett inkább úgy képzelhetjük el, hogy a qthreads API implementációját, mintha az operációs rendszer bekeretezné az összes \code{qthread\_join} műveltet, mint egy problémát, amit már be tudunk táplálni Grover algoritmusába.
+Az OS ezután betöltené a kódot a megfelelő Grover algoritmus variánsokkal a kvantum segéd-processzorba, ezáltal az összes dolgozó argumentummal együtt bekerülnek az adatok a segéd-processzor kvantum RAM-jába (qRAM).
+Ezutan a qx86-os gép végrehajtja a Gorver algoritmust és visszatér az eredményekkel az OS-nek.
+
+\indent Grover algoritmusánál, az implementálása a \code{qthread\_join} funkciónak ${O(\sqrt{N})}$ lekérdezést igényel a qRAM felé és egyszerre ${O(\sqrt{N})}$ hívást.
+Ezzel kontrasztban a klasszikus gépeken az implementálása a \code{qthread\_join} funkciónak ${\Theta(N)}$ hívást jelent, tehát $\sqrt{N}$-szeres gyorsulást érhetünk el.
+
+\indent Az implementációja a \code{qthread\_join\_count} és a \code{qthread\_join\_max}-nak, a Grover algoritmus COUNT és MAX variáns funkcióinak felelnek meg.
+Biztosítatni tudunk egy hozzávetőleges és egy pontos verziót is az API COUNT variánsának: Hogyha van $k$ nem-zéró qthread-ünk, a közelítőleges verzió visszaadja az eredmény egy 10%-os hibatűréssel $\sqrt{N/k}$ időbem, amíg a pontos verzió helyest választ szolgáltat $\sqrt{kN}$ időn belül.
+
+\indent Az operációs rendszer ezután a \code{qthread\_join\_sum} rutint implementálhatja a \code{qthread\_join\_count} segítségével.
+A miként megértéséhez feltételezzük, hogy minden qthread kimenete egy $t$-bites egész szám.
+Reprezentáljuk $N$ egész szám összegét, mint $\sum_{i=1}^{t}{2^{i-1}\cdot z_i}$, ahol minden $z_i$ az összege az $i$-edik számú bitnek az összes $N$ számnál.
+A SUM probléma így leredukálódott a $z_i$-k számolásának problémájává.
+De kisszomáolni az összegét a biteknek (0/1-eknek), ugyanaz mintha megszámoltuk volna az előforduló egyesek számát.
+Ezt a műveletet viszont már támogatja az API.
+
+\indent Ahhoz kiszámoljuk az összegét a $t$ bites egész számoknak le kell futtatnunk a \code{qthread\_join\_count} műveletet $t$-szer.
+Az $i$-edik futásnál pedig módosítjuk a qthreadek futását, hogy visszatérjenek az $i$-edik számú bittel.
+Ez az eljárás generálja majd a $z_1,...,z_t$ értékeket (ahol $z_i$ az eredménye az $i$-edik qthreadnek). Végül csak ki kell számolnunk $\sum_{i=1}^{t}{2^{i-1}\cdot z_i}$ értékét, hogy megkapjuk az összeg értékét.
+Az összegek majd hozzávetőlegesen is kiszámolhatók ugyanígy (a \code{qthread\_join\_count\_approx}-et használva).
+%----------------------------------------------------------------------------
+\section{Egy állandó háttértár}
+
+\indent Ideális esetben megfoghatnánk egy qx86-os programot és elmenthetnénnk egy lemezre oly módon, hogy vissza tudjuk állítani a program állapotát egy későbbi pillanatban.
+Azonban a "nem klónozási tétel következtében" lehetetlen lemásolni egy nem ismert kvantum állapotot.
+Emiatt egy olyan egyszerű feladat, mint a kvantum adataink elmentése is lehetetlen.
+Ezentúl még csak az se megy, hogy 'átreptessünk' egy egész kvantum állapotot egy másik helyre, hiszen nincs olyan lehetőség, hogy megfigyeljünk egy ilyen állapotot.
+Hogyha még valamilyen úton és módon meg is oldanánk, hogy egy kvantum állapotot kiolvassunk anélkül, hogy összezuhanna, akkor is rengeteg klasszikus bit kellene egy ilyen kvantum bit eltárolásához.
+
+\indent Mivel tehát a klasszikus diszk szerű tárolás nem opció, így kiváncsiak lehetünk valamilyen állandó kvantumalapú háttértárra.
+Ez nagyon sok kérdést vet fel, hiszen a mai fizikai kvantumbitek csak a másodperc törtrésze erejéig koherensek, ezek a tárolóeszközök pedig közel nem-felejtő típusúak (non-volatile).
+Mindenesetre optimisztikusak vagyunk, tegyük fel, hogy létezhezne egy ilyen eszköz és nézzük meg egy érdekes alkalmazását.
+
+\textbf{A meghamisíthatatlan háttértár.} Mondjuk azt, hogy egy számítógép tulajdonos Alice ledobja a laptopját az IT-soknál a munkahelyén.
+A technikusoknak lehet hozzá kell tudniuk férni Alcie tetszóleges fájljához, de Alice szeretné tudni, hogy nem módítottak a technikusok a a fájlokon, nem másolták-e például le őket.
+Egy klasszikus tárolónál ezt nem tudja megállapítani sehogyan sem.
+Egy klasszikus fájlrendszeren Alcie csak egy a fájlok timestampjét nézheti meg azt, hogy mikor használták el utoljára fájlt.
+Természetesen egy okosabb adminsiztrátornak ezt a timestampet sem tart semmiből meghekkelne, hogy még csak véletlen se lehessen lenyomozni őt.
+Egy ilyen kvantum tárolót használva, azonban Alice már valóban megnézheti, hogy valaki hozzáfért-e fájljaihoz.
+
+\indent Kölcsönveszünk egy ötletet a kvantumkulcs szétosztási protokolloktól, amiknek alapja, biztonságossága abban rejlik, hogy nem lehet egy nem ismert kvantumállapotot leklónozni.
+Hogy vázoljuk az ötletet: Amikor Alice megcsinálja a fájlját választ kettő 256 bites kulcsot: $k_{enc}$-et és $k_{tamper}$-t.
+Alice letitkosítja a fájlját $k_{enc}$-el (pl AES-t használva). Ezután pedig használja $k_{tamper}$-t, hogy letitkosítsa a $k_{enc}$-et kvantum állapotokra, amit eltárol a filenak a headerjében.
+(Azt feltételezzük, hogy a disk maga huzamosabb ideig tud eltárolni egy adott kvantumállapotot.)
+
+\indent Ezután, ha valaki hozzáfér a filehoz annak ki kell tudnia olvasni $k_{enc}$-et.
+Mindenki aki kiolvassa a fájlt az dekriptálja is a headert benne viszont, hogyha valaki, nem Alice - azaz olyan valaki nem ismeri $k_{tamper}$-t - megméri a kvantumállapotát $k_{enc}$-nek, azaz bezuhantatják a kvantumállapot melyet már nem fognak tudni visszaálítani.
+Később amikor Alice ránéz a fájl headerjére rögtön látni fogja a headerből, hogy valaki bizony megprobálta megnézni, megmérni $k_{enc}$-et.

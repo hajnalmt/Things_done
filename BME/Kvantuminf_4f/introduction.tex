@@ -1,0 +1,32 @@
+%----------------------------------------------------------------------------
+\chapter*{Bevezető}\addcontentsline{toc}{chapter}{Bevezetõ}
+%----------------------------------------------------------------------------
+
+\hspace{2mm} Az elmúlt néhány évben hatalmas fejlődés volt a nem-triviális kvantumszámítógépek készítése terén.
+Rengeteg start-up dolgozik a technológia üzleti alapokra helyezésével, a NIST standardizálja az új "post-quantum" titkostítási rendszerét, és ipari nagyóriások, mint a Google és a Microsoft, tesznek lépéseket manapság, hogy megvédjék rendszereiket a jövőben lehetséges rosszindulatú kvantumtámadásoktól.
+Ezek a széleskörben alkalmazható kvantumszámítógépek már a mi életünk alatt is megszülethetnek.
+
+\indent Az első elektromos számítógépek - a Mark I, Clossus, és ENIAC - drágák, nehezen használhatóak és lassú gépek voltak, elsősorban csak a kormánynak dolgozó kódfeltörőknek és a hadifegyver-készítőknek voltak csak hasznára.
+Hasonlóan ezekhez a gépekhez az első kvantumszámítógépek is drágák, lassúak lesznek és alkalmazásuk csak a hagyományos titkosítási rendszerek feltörésére, mint az RSA, valamint a fizaki szimulációk futtatására fog kiterjedni.
+
+\indent Szerencsére számunkra, az idővel a klasszikus számítógépek hardvere olcsóbbá és gyorsabbá vált, és a modern operációs rendszerek által biztosított hardver-absztrakciók, virtuális memória, és időosztás  a számítógéper könnyebben használhatóvá, biztonságosabbá és gyorsabbá tették a mindennap embere számára.
+
+\indent A kérdés tehát, hogy az új kvantumszámítógépeink milyen architektúrát igényelnek és, hogy a milyen operációs rendszer is fog ezeken a gépeken futni?
+Ebben a dokumentumban felfedezhetjük a \textit{kvantum operációs rendszer} lehetőségeit, kérdéseit azokkal a részleges válaszokkal, amik egy ilyen új típusú operációs rendszer tervezéséhez kellenek.
+\begin{itemize}
+\item Milyen új absztrakciók szükségesek egy kvantum operációs rendszer programozásához?
+\item A kvantum számítógépek ereje, hogyan tudja megnövelni a klasszikus rendszerek teljesítményét?
+\item Hogyan nézne ki egy elosztott kvantum számítógép? És milyen új funkcionalitást tud egy ilyen gép biztosítani?
+\end{itemize}
+
+\indent Ez a dokumentum szükségesen (és szégyenszerűen) spekulatív:
+Még túlságosan korai egy pontos leírást adni egy csak 20, 50 vagy 100 év múlva létező hardverre...
+Egyelőre annyit tehetünk, hogy a meglévő kvantumszámlálási modelleket ráillesztjük egy ilyen széleskörű kvantumszámítógépre, hogy elképzeljük milyen lesz majd az, amikor a jövőben megvalósul.
+
+\indent Az olvasó meglehetősen szkeptikusan nézheti most ezt a dokumentumot, mint egy összefoglalója a negatív eredményeknek: a jelenlegi ismereteink szerint, nincs túl sok olyan dolog most, amit a felhasználó egy kvantumszámítógéppel tud csak megcsinálni és egy hagyományos gyors klasszikus számítógéppel nem.
+A célünk hát szimplán, hogy tegyünk egy megjegyzést a kvantum számítógépeknél arra a logikus kérdésre, hogy milyen lenne, ha ott lenne mindannyiunk asztalán egy ilyen mágikus kvantumszámítógép?
+
+\indent A dokumentumban három lehetséges architektúrát vázolunk fel, haladva a legkevésbé merésztől a legmerészebb elképzelésig:
+Először is a kvantum FPGA-król ejtünk szót, utána a kvantum x86-os számítógépekről, és végül a kvantum elosztott rendszerekről.
+Mindegyiknél fogjuk tárgyalni, hogy a gép hogyan kezelné a legalapvetőbb feladatokat, mint a fuzz tesztelés, CPU ütemezés és párhuzamos programozás.
+Beszélünk arról is, hogy az egyes architektúrák hogyan felelnek meg a rendszerszintű kihívásoknal.

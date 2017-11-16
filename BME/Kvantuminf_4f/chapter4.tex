@@ -1,0 +1,35 @@
+%----------------------------------------------------------------------------
+\chapter{Elosztott rendszerek}\label{sect:distributed}
+%----------------------------------------------------------------------------
+\hspace{2mm} A legutolsó architektúra amit megnézünk az a legspekulatívabb is egyben.
+Tegyük fel, hogy van egy hálózatunk kvantumszámítógépekből, melynek összeköttetései, linkjei képesek qubitek átvitelére.
+Ebben a fejezetben felfedezzük, mint is tudnánk elérni egy ilyen rendszerrel.
+%----------------------------------------------------------------------------
+\section{A szupersűrű kódolás előrevetítése}
+\hspace{2mm} Rengeteg hálózati terhelés burstös, kis ideig nagymennyiségű.
+Például egy sima böngésző az ideje nagy részében nem hajt végre semmilyen kommunikációt, de minden oldal betöltéskor megabájt nagyságrendű adatot probál letölteni olyan gyorsan, ahogyan lehetséges.
+
+\indent Egy technika, annak érdekében hogy a hálózat kevésbé legyen ilyen burstös, hogy összeköttetés prefetch-elést alkalmazunk, azaz megpróbálja browser megmondani, hogy mi lesz a következő tartalom amit a felhasználó le akar majd tölteni és előre leszedi a háttérben azt, még mielőtt a user rákattintana.
+Egy kvantumjelenség az ún. \textit{szupersűrű kódolás} lehetővé teszi a kvantum kliensnek, hogy letöltse, prefetchelje az adatot a kvantumszerverére, úgy hogy a kliensnek még ötlete sincs róla, hogy milyen adatra lesz szüksége a jövőben.
+
+\textbf{Tény 3} (szupersűrű kódolás) Ha egy kliens és egy szerver egy adott összefonódott qubiten osztozik (előre megosztott qubit), akkor a szerver elküldhet két klasszikus bitből álló információt a kliensnek egy szimpla qubit elküldésével.
+
+\indent Ahhoz, hogy implementáljuk a prefetchelést a szupersűrű kódolást használva a szervernek folyamatosan kell összefonódott qubiteket gyártania, melyekből egyet elküld a kliensnek.
+Amikor a klens le szeretne tölteni valamilyen adat a gépére, akkor használhatja az összefonódott qubitjét, amin a szerverrel osztoznak, hogy átküldjön adatot \textit{kétszer} olyan nagy bitszámmal, mint amekkora a hálózati összeköttetés kapacitása.
+A szupersűrű kódolás megnövelheti a hálózat teljesítményét még akkor is amikor konstans sebességgel tud csak adatot letölteni a szerverről.
+Mondjuk azt, hogy a kliens és a szerver egy olyan hálüzati kábellel van összekötve, amelyen az átvitel sebesség 100 Mbps mindkét irányban.
+Ezt a szupersűrű kódolást használva, a klens a szerverről \textit{200Mbps}-el tudna adatot letölteni.
+Ahhoz, hogy ez sikerüljön összefonódott qubiteket kell küldenie a kliensnek a szerver felé 100Mbps-es sebességel, a szerver pedig visszaküldeni a kliensnek kódolt qubiteket 100Mbps-es sebességgel.
+A kliens így a csatornából 200Mbps-es sebességgel tudna információt szerezni, ezzel egy 100Mbps-es kétirányú kommunikációt 200Mbps-es iránymentes kommunikációvá változtatva.
+ 
+
+%----------------------------------------------------------------------------
+\section{Távoli keresés}
+\hspace{2mm} Számítógépek kvantum linkkekkel összekötve futtathatnak Grover algoritmust a hálózaton.
+Csak, hogy lássunk egy lehetséges alkalmazását ennek az ötletnek: Mondjuk azt, hogy egy kliens szeretne keresni egy speciális elemet egy nagy adattartományon ami $N$ elemből áll $(x_i,...,x_N)$ egy adott szerveren tárolva (pl. lehet szó akár terabájtnyi videó adatról.)
+Ebben az esetben lehetne a kliensnek egy osztályozója: $f:\{0,1\}\rightarrow \{0,1\}$ és szeretne egy indexet találni a szervern $i^*$-ot amelyre igaz, hogy $f(x_{i^*})=1$.
+A kliens nem szeretné letölteni az egész adatállományt a szerverről és nem is szeretné feltölteni a szerverére az $f$ osztályozóját, lehet hogy ez az osztályozó túl nagy, hogy elküldje vagy van benne valamilyen titkos input, algoritmus.
+
+\indent Egy ilyen esetben tudna akkor a szerveren futtatni egy Grover algoritmust a kliens a hálózaton keresztül, hogy találjon egyező értéket $x_{i^*}$, miközben a szerverrel csak alig $\Theta(\sqrt{N})$ qubitet kellett cserélnie az eredeti klasszikus $\Theta(N)$ bit helyett.
+Persze a számolást nem tudjuk megspórolni a kliens és a szerver oldalon, a kliensnek szükséges az osztályozóját kb. $\sqrt{N}$-el lefuttatnia és szervernek is szükséges, hogy lefuttasson kb. $\sqrt{N}$-szer lefuttatnia egy qRAM lekérdezést.
+Mindenesetre a hálózati szállításból nyert költség lehet, hogy arányaiban megérték ezt a számolási többletet.

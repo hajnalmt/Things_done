@@ -1,0 +1,38 @@
+%----------------------------------------------------------------------------
+\chapter{Alapok}\label{sect:Background}
+%----------------------------------------------------------------------------
+\hspace{2mm} Hogy felállítsuk elmélkedésünk alapját, először is nézzük át néhány kulcsfontosságú eredményét a kvantum számolálás szakirodalmának.
+A kvantum algoritmusok bizonyos esetekben meglepően nagy sebességnövekedést jelentenek a hagyományosakkal szemben. Nézzük meg az alábbi problémát
+
+%----------------------------------------------------------------------------
+\section{Egy egyszerű probléma}
+\vspace{2mm}
+\textbf{Probléma 1} \textit{(Struktúrálatlan Keresés). Adott egy funkció $f:\{1,...,N\} \rightarrow \{0,1\}$ keressünk olyan $x^* \in \{1,...,N\}$-et, hogy $f(x^*)=1$.}
+\vspace{2mm}
+
+\indent Hogyha úgy kezeljük az $f$ funkciót mint egy "fekete doboz", a legjobb klasszikus megoldás a problémára, hogyha brute-force keresünk: kiszámoljuk $f(1),f(2),f(3)$-at és így tovább, amíg meg nem találjuk a számunkra megfelelő $x^*$-ot, amire igaz, hogy $f(x^*)= 1$.
+Valóban minden klasszikus algoritmusnak meg kell hívnia az $f$-et legalább $\Omega(N)$-szer a jó valószínűséggel való sikeres végrehajtáshoz.
+Ezzel ellentétben a kvantum algoritmusok között van olyan mely, a probléma megoldásához $f$-et csak $\Omega(N)$-szer kell meghívja.
+
+\vspace{2mm}
+\textbf{Állítás 1} \textit{(Grover). Létezik kvantum algoritmus a Struktúrálatlan Keresés Problémájára, melynek $f$-et maximum $\Omega(\sqrt{N})$-szer kell csak meghívnia, ahhoz hogy a siker esélye legalább $2/3$-ad legyen.}
+\vspace{2mm}
+
+\indent Ahhoz, hogy megértsük, hogy ekkora sebességnövekedés egyáltalán, hogyan lehetséges rá kell jönnünk, hogy a klasszikus algoritmus, mely $f$-et egy fekete dobozként kezelte $f$-et kiértékelni csak egyenként tudja, egy bemenettel egyszerre - a klasszikus algoritmus \textit{lokálisan} működik.
+Ezzel szemben a kvantum algoritmus alapvetően a bemenetek egy "keveredésével" (szuperpozíciójával) értékeli ki a fekete doboz $f$ funkció és így minden meghívással egy kicsit több globális információra tesz szert.
+$f$-nek csupán $\Omega(\sqrt{N})$ meghívásából ismeri az egész tartományát, ezért meg tudja adni hamarabb $x^*$ értékét.
+
+\indent Ezenkívül, még az is igaz, hogyha $k$ bemenetre ad vissza $f$ $1$-et, akkor a Grover algoritmusa megtalál egy ilyen bemenetet f-nek alig $\Omega(\sqrt{N/k})$ meghívása alatt, még akkor is, hogyha nem ismerjük $k$ értékét előre.
+Ahogy ezt a következő szekciókban is leírjuk, azt várjuk, hogy Grover algoritmusa az egyik leghasznosabb eszköze lesz a kvantum programozóknak.
+
+\indent Egy fontos alapköve a kvanum számításoknak, hogy csak olyan műveletek engedélyezettek a kvantumállapotokon, melyek megfordíthatóak, reverzibilisek.
+Ezért ahhoz, hogy implementáljuk Grover algoritmusát egy kvantum számítógépen az $f$ funkciót reprezentálnunk kell egy megfordítható módon.
+Bár a klasszikus számítások közül néhány megfordíthatatlan (pl: és művelet egy-bites bemeneteknél), van sok standard technika arra, hogy áramköröket, Turing gépeket vagy akár RAM programokat megfordíthatóvá tegyünk.
+
+%----------------------------------------------------------------------------
+\section{Mik nem a kvantum számítógépek?}
+
+\hspace{2mm} Mielőtt belemélyedünk elmélkedésünkbe érdemes kihangsúlyozni, hogy \textit{nincs bizonyíték arra, hogy a kvantum számítógépek  meg tudnak oldalni NP-nehéz problémákat polinomiális idő alatt.}
+Például Grover algoritmusát a 3SAT problémára alkalmazva kijön, hogy bár gyorsabb, mint a klasszikus brute-force 3SAT algoritmus, viszont mindkettő exponenciális ideig fut.
+Ezen kívül, tudjuk, hogy Grover algoritmusa a legjobb lehetséges kvantum algoritmus a Struktúrálatlan Keresés problémájára. (Probléma 1).
+Ahogy jelenleg tudjuk csak egy pár nagyon specifikus probléma az, mint az egész szám faktorizáció, melyeknél a kvantum számítógépek dramatikusan felülteljesítenek klasszikus társaikon.

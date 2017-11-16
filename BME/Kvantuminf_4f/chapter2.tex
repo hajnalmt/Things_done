@@ -1,0 +1,61 @@
+%----------------------------------------------------------------------------
+\chapter{Kvantum FPGA-k}\label{sect:FPGA}
+%----------------------------------------------------------------------------
+\hspace{2mm} Egy elfogadható felépítése az általánoscélú kvantumszámítógépek első generációjának, hogy egy klasszikus processzor van összekötve klasszikus buszon keresztül egy kvantumalapú FPGA-hoz ún. qFPGA-hoz (quantum field programmable gate array).
+
+\indent Mint egy hagyományos FPGA, a qFPGA egy periférián keresztül tud csatlakozni egy klasszikus CPU-hoz (Lásd: \figref{fpga}es ábra).
+Mielőtt használni lehetne a qFPGA-t a programozónak előszöt ki kell találnia egy kvantumáramkört $C$-t, mely implementálja az általa megoldani kívánt problémát.
+A kvantumáramkör egy klasszikus bit-alapú áramkörhöz hasonlí, azzal a kivétellel, hogy alapul kvantumkapukat használ. (pl: Toffoli és Hadamard kapukat) nem pedig hagyományosakat (ÉS, VAGY, NEM).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\textwidth, keepaspectratio]{figures/fpga.png}
+\caption{Egy klasszikus számítógép egy kvantum FPGA-hoz kötve. A klasszikus processzor beprogramozza a qFPGA-t a kvantumáramkör leírásával $C:\{0,1\}^n \rightarrow {0,1}^n$. A CPU ezután elküldi a bemeneteket $x_i \in \{0,1\}^n$ és visszakapja a kvantumáramkör kimeneteket $C(x_i)$ minden $x_i$-re.}
+\label{fig:fpga}
+\end{figure}
+
+\indent A programozó ezután elküldi a kvantumáramkör leírását egy klasszikus buszon keresztül. Az áramkör felprogramozása után a CPU már küldheti is a bemeneteket a qFPGA számára.
+Egy klasszikus feldolgozó egység betáplálja a qFPGA minden kvantum kapujának eredményét qFPGA állapotregiszterébe szekvenciálisan.
+Végül a qFPGA visszaküldi a CPU-nal az áramkör kimeneteket, $C(x_i)$-ket minden $x_i$-re alkalmazva.
+A bemenetek, $x_i$ és kimenetek, $C(x_i)$ mind klasszikus bitsorozatok, így a CPU és a qFPGA egy klasszikus buszon keresztül is kommunikálhatnak.
+
+\indent A jelenlegi tudásunk szerint még nagyon-nagyon messze vagyunk, bármi hasonló, mint egy ilyen kvantum FPGA készítésétől. A jelenlegi generációja a kvantumszámítógépeknek csak pár qubiten tud egyelőre csak múveleteket végezni, így nagyságrendekkel le vagyunk egy ilyen FPGA-hoz hasonló eszköztől, ami esetleg nagy skálán tud kvantumszámításokat végezni.
+Attól viszont még el tudunk képzelni egy ilyen eszközt. Mire lennénk vele képesek?
+
+\indent Egy nyilvánvaló alkalmazása lenne, hogy Schor algoritmusát futtathatnánk rajta egész számok faktorizációjához és diszkrét logaritmusok számításához.
+Bár mire oda jutunk, hogy qFPGA-k elérhetőek lesznek, a világ már rég átvált a kvantumtámadásokra felkészített titkosításokra.
+Tehát ehelyett azt várjuk, hogy az elsődleges mindennapi használata ezeknek az eszközöknek a Grover keresések futattása lesz olyan programokon, melyek így nagyon kicsiny áramkörökre is lefordíthatóvá válnak.
+Két példát adunk az alkalmazásokra, az egyik az ún. code fuzzing  a másik pedig a jelszó feltörés.
+%----------------------------------------------------------------------------
+\section{Code fuzzing}
+
+\indent A code fuzzing ötlete mögött az van, hogy egy darabka kódrészletet futtatunk le nagy számú határesetszerű bemenettel, hogy megnézzük milyen esetekben nem működik a program rendeltetésszerűen.
+Erre az alkalmazásra lehetne qFPGA-t használni így biztosítva, hogy az egyes fordítók trükkös optimalizációi nem rontanak a program  működésének helyességén.
+Például, egy programozónak  lehet két bit-alapú áramköre $n$-bites egész számok összeszorzására: egy alap $M_{slow}$ natív C kódból fordítva, és egy optimalizált verzió $M_{fast}$.
+A programozó ekkor készíthet egy áramkört $C:\{1,...,N\}^2 \rightarrow \{0,1\}$, ami kiszámolja
+
+$$C(x,y)=
+		\begin{cases}
+		1 & \text{if } M_{slow}(x,y)\neq M_{fast}(x,y)\\
+		0 & \text{otherwise}
+		\end{cases}
+$$
+
+A qFPGA-n így futhat Gorver keresése $C$-n, a kiemeneti különbségekre.
+\indent A qFPGA-t használva a programozó megbizonyosodhat róla, hogy a két szorzás rutin ugyanúgy viselkedik a $2^{64}$-féle lehetséges bemeneten úgy, hogy mindösszesen $2^{32}$-szer kellett meghívni $M_{slow}$-t és $M_{fast}$-ot.
+Továbbá, hogyha egy hiba előjön az optimalizált áramkörön $k$-szor az $N$ bemenetből, akkor a qFPGA segítségével a programozó körülbelül $\sqrt{N/k}$ idő alatt meghatározhatja annak a bemenetnek az indexét, amely a hibát okozta.
+%----------------------------------------------------------------------------
+\section{Password cracking}
+\indent Abban az időben, amiben a kvantum FPGA-k elérhetőek lesznek, a "kvantumapokalipszis" már rég megölte a legtöbb mai kvantumsebezhető kriptográfiai algoritmusokat.
+Azonban, mint a makacs rovarok, akik túlélték a dinoszauruszok kipusztulását, azt várjuk, hogy az ember által választott mindenütt jelenlévő jelszavakra (bár talán kicsit vonakodva), de az igény megmarad a kvantum korban is.
+
+\indent Egy néhány becstelen alkalmazása a qFPGA-nak, amikről nem beszéltünk, hogy fel tudnak majd törni könnyen jelszavakat.
+Egy ilyen feltörés során a támadónak van egy kriptografikus hash-je $h$ a felhasználónak a jelszaváról, továbbá meg van neki a $H$ hash funkció is amivel titkosították és megszeretné találni azt a $p$ jelszót amire igaz, hogy $h=H(p)$.
+Mivel a felhasználók gyakran csak a jelszavak egy népszerű készletéből választanak $D$, a támadónak kitalálhatja a jelszót úgy, hogy megnézi ezeknek a népszerű jelszavaknak a hash-ét és megnézi, hogy van e olyan szó $d* \in D$, hogy $h=H(d*)$.
+
+\indent Amíg egy hagyományos támadónál a feltörés ideje nagyjából lineárisan megegyezik a szótár méretével $D$-vel, addig egy qFPGA háttérel rendelkezőnek csak $\sqrt{|D|}$-nyiszer kell meghívnia a hash funkciót.
+Csak, hogy konkrét számokról is beszéljünk: összesen 95 darab nyomtatható ASCII karakter van, azaz egy 10 betűs jelszónál $95^{10}\approx 2^{66}$ lehetséges variáció létezik. Hogyha minden egyes felhasználó egy irreálisan magas entriópiával rendelkező szórásból is választott, egy támadó visszafejtheti a hash funkció $H$ mintegy $\sqrt{2^{66}}=2^{33}$ meghívásával.
+Egy alacsony költségű qFPGA, tehát könnyen és gyorsan megoldaná nekünk ezt a feladatot.
+
+\indent A mai modern "memória-taró" jelszó hashelési funciók , nagyon nagy klasszikus áramköröket igényelnek, így talán kevésbé lesznek kitéve ezeknek a támadásoknak.
+Az viszont egy érdekes nyitott kérdés, hogy léteznek-e esetleg a Grover keresésnél hatékonyabb speciális kvantum támadások, melyekkel talán fel lehetne törni ezeket a funkciókat is.
